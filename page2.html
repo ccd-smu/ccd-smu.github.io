@@ -1,0 +1,80 @@
+<ons-page id="page2">
+          <script>
+var slider =  document.getElementById("range-1");
+slider.setAttribute('step', 10);
+slider.setAttribute('min', 0);
+slider.setAttribute('max', 50);
+              
+
+var slider = document.getElementById("range-1");
+var output = document.getElementById("dispDiv");
+output.innerHTML = 0;
+
+slider.oninput = function() {
+  switch (parseInt(this.value)) {
+    case 0:
+      output.innerHTML = "I feel extremely stressed";
+      break;
+    case 10:
+      output.innerHTML = "I feel a bit stressed";
+      break;
+    case 20:
+      output.innerHTML = "I feel ok";
+      break;
+    case 30:
+      output.innerHTML = "I feel little stress";
+      break;
+    case 40:
+      output.innerHTML = "I am not stressed";
+      break;
+    case 50:
+      output.innerHTML = "i am worried about how not stressed i am";
+      break;
+
+    default:
+      output.innerHTML = "Slide the slider according to how you are feeling right now, subjectively..";
+  }
+}      
+       
+           
+    </script>
+    
+    <ons-toolbar>
+      <div class="left">
+  <ons-back-button></ons-back-button>
+</div>
+    <div class="center">Distress vs Eustress</div>
+  </ons-toolbar>
+
+<div style="height: auto; padding: 1px 0 0 0;">
+  <div class="card card--material">
+    <div class="card__title card--material__title">Distress vs Eustress</div>
+    <div class="card__content card--material__content">A little bit of stress is not bad; Positive stress could give you energy, motivation and spark creativity; Also makes you more alert and helps you perform better in certain situations.</div>
+      
+          <ons-row style="margin-top: 20px;">
+      <ons-col width="40px" style="text-align: center; line-height: 31px;">
+        <ons-icon icon="md-thumb-down"></ons-icon>
+      </ons-col>
+      <ons-col>
+        <ons-range id="range-1" style="width: 100%;" value="50"></ons-range>
+      </ons-col>
+      <ons-col width="40px" style="text-align: center; line-height: 31px;">
+        <ons-icon icon="md-thumb-up"></ons-icon>
+      </ons-col>
+    </ons-row>
+    
+      <div id='dispDiv' style='margin-top:2em;'></div>
+  </div>
+</div>
+
+<div style="height: 200px; padding: 1px 0 0 0;">
+  <div class="card card--material">
+    <div class="card__title card--material__title">You probably have heard this before : A bit of stress is good.</div>
+    <div class="card__content card--material__content">But when does it become "bad", if at all?<br>
+      Well, if it becomes debilitating, to the point that you are not able to perform the functions required in a social setting. </div>
+      
+
+  </div>
+</div>    
+    
+</ons-page>

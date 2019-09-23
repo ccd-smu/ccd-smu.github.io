@@ -1,0 +1,28 @@
+<ons-page id="home">
+  <script>
+    const openMenu = () => {
+      document.querySelector('#menu').open();
+    };
+      document.addEventListener('prechange', ({ target, tabItem }) => {
+  if (target.matches('#tabbar')) {
+    document.querySelector('#home-toolbar .center').innerHTML = tabItem.getAttribute('label');
+  }
+});
+  </script>
+  <ons-toolbar id="home-toolbar" style="background-color: #00a3e0">
+    <div class="center" style="color: #fff">Content</div>
+
+    <div class="left">
+      <ons-toolbar-button onclick="openMenu()">
+        <ons-icon icon="md-menu" style="color: #fff"></ons-icon>
+      </ons-toolbar-button>
+    </div>
+  </ons-toolbar>
+
+
+  <ons-tabbar id="tabbar">
+    <ons-tab page="content.html" label="Home" icon="md-home"></ons-tab>
+    <ons-tab page="activities.html" label="Activities" icon="md-run"></ons-tab>
+    <ons-tab page="about.html" label="About"  icon="md-info"></ons-tab>  
+  </ons-tabbar>
+</ons-page>

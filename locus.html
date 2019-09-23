@@ -1,0 +1,141 @@
+<ons-page id="locus">
+<script type="text/javascript">
+function computeICI()
+{
+	var ici =
+		parseInt(document.ICI.Q1.options[document.ICI.Q1.selectedIndex].value) +
+		parseInt(document.ICI.Q2.options[document.ICI.Q2.selectedIndex].value) +
+		parseInt(document.ICI.Q3.options[document.ICI.Q3.selectedIndex].value) +
+		parseInt(document.ICI.Q4.options[document.ICI.Q4.selectedIndex].value) +
+		parseInt(document.ICI.Q5.options[document.ICI.Q5.selectedIndex].value) +
+		parseInt(document.ICI.Q6.options[document.ICI.Q6.selectedIndex].value) +
+		parseInt(document.ICI.Q7.options[document.ICI.Q7.selectedIndex].value) +
+		parseInt(document.ICI.Q8.options[document.ICI.Q8.selectedIndex].value) +
+		parseInt(document.ICI.Q9.options[document.ICI.Q9.selectedIndex].value) +
+		parseInt(document.ICI.Q10.options[document.ICI.Q10.selectedIndex].value) +
+		parseInt(document.ICI.Q11.options[document.ICI.Q11.selectedIndex].value) +
+		parseInt(document.ICI.Q12.options[document.ICI.Q12.selectedIndex].value) +
+		parseInt(document.ICI.Q13.options[document.ICI.Q13.selectedIndex].value) +
+		parseInt(document.ICI.Q14.options[document.ICI.Q14.selectedIndex].value) +
+		parseInt(document.ICI.Q15.options[document.ICI.Q15.selectedIndex].value) +
+		parseInt(document.ICI.Q16.options[document.ICI.Q16.selectedIndex].value) +
+		parseInt(document.ICI.Q17.options[document.ICI.Q17.selectedIndex].value) +
+		parseInt(document.ICI.Q18.options[document.ICI.Q18.selectedIndex].value) +
+		parseInt(document.ICI.Q19.options[document.ICI.Q19.selectedIndex].value) +
+		parseInt(document.ICI.Q20.options[document.ICI.Q20.selectedIndex].value) +
+		parseInt(document.ICI.Q21.options[document.ICI.Q21.selectedIndex].value) +
+		parseInt(document.ICI.Q22.options[document.ICI.Q22.selectedIndex].value) +
+		parseInt(document.ICI.Q23.options[document.ICI.Q23.selectedIndex].value) +
+		parseInt(document.ICI.Q24.options[document.ICI.Q24.selectedIndex].value) +
+		parseInt(document.ICI.Q25.options[document.ICI.Q25.selectedIndex].value) +
+		parseInt(document.ICI.Q26.options[document.ICI.Q26.selectedIndex].value) +
+		parseInt(document.ICI.Q27.options[document.ICI.Q27.selectedIndex].value) +
+		parseInt(document.ICI.Q28.options[document.ICI.Q28.selectedIndex].value)
+	document.ICI.ICIscore.value = ici
+}
+
+function results() {    
+var text;
+var results = document.getElementById("ICIscore").value;
+
+if (results<84) {
+document.getElementById("output").innerHTML = "Your choices indicate a belief that your life is controlled more by external forces than yourself, and the lower the value, the stronger that belief in the power of external forces"
+}
+      else if (results>84)
+          {
+document.getElementById("output").innerHTML = "Your choices indicate a belief that you are in control of your own life, with higher values indicating stronger belief in your own power"
+}
+          else
+          {
+document.getElementById("output").innerHTML = "Your choices indicate neither an internal nor external Locus of Control"
+}              
+}
+</script>
+
+  <ons-toolbar>
+      <div class="left">
+  <ons-back-button></ons-back-button>
+</div>
+    <div class="center">Internal Control Index</div>
+  </ons-toolbar>
+
+<div style="height: 200px; padding: 1px 0 0 0;">
+  <div class="card card--material">
+    <div class="card__title card--material__title">Internal Control Index</div>
+      <div class="card__content card--material__content">Choose the option in the dropdown boxes that you identify with. <br><b>Rarely</b> is less than 10% of the time<br><b>Occasionally</b> is 30% of the time,<br><b>Sometimes</b> is 50% of the time, <br><b>Frequently</b> is 70% of the time; and <br> <b>Usually</b> is 90% and above of the time.</div>
+      
+<form name="ICI" onload="computeICI()">
+<ons-list>
+<ons-list-item>
+When faced with a problem I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q1"> <option value="5">&nbsp;&nbsp;<b>rarely</b></option><option value="4">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="2">&nbsp;&nbsp;<b>frequently</b></option><option value="1">&nbsp;&nbsp;<b>usually</b></option></select> try to forget it.<br>
+</ons-list-item><ons-list-item>
+I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q2"><option value="5">&nbsp;&nbsp;<b>rarely</b></option><option value="4">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="2">&nbsp;&nbsp;<b>frequently</b></option><option value="1">&nbsp;&nbsp;<b>usually</b></option></select> need frequent encouragement from others to keep working at a difficult task.<br>
+</ons-list-item><ons-list-item>
+I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q3"><option value="1">&nbsp;&nbsp;<b>rarely</b></option><option value="2">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="4">&nbsp;&nbsp;<b>frequently</b></option><option value="5">&nbsp;&nbsp;<b>usually</b></option></select> like jobs where I can make decisions and be responsible for my own work.<br>
+</ons-list-item><ons-list-item>
+I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q4"><option value="5">&nbsp;&nbsp;<b>rarely</b></option><option value="4">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="2">&nbsp;&nbsp;<b>frequently</b></option><option value="1">&nbsp;&nbsp;<b>usually</b></option></select> change my opinion when someone I admire disagrees with me.<br>
+</ons-list-item><ons-list-item>
+If I want something I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q5"><option value="1">&nbsp;&nbsp;<b>rarely</b></option><option value="2">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="4">&nbsp;&nbsp;<b>frequently</b></option><option value="5">&nbsp;&nbsp;<b>usually</b></option></select> work hard to get it.<br>
+</ons-list-item><ons-list-item>
+I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q6"><option value="5">&nbsp;&nbsp;<b>rarely</b></option><option value="4">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="2">&nbsp;&nbsp;<b>frequently</b></option><option value="1">&nbsp;&nbsp;<b>usually</b></option></select> prefer to learn the facts about something from someone else rather than having to dig them out for myself.<br>
+</ons-list-item><ons-list-item>
+I will <select onchange="computeICI()" class="select-input select-input--underbar" name="Q7"><option value="1">&nbsp;&nbsp;<b>rarely</b></option><option value="2">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="4">&nbsp;&nbsp;<b>frequently</b></option><option value="5">&nbsp;&nbsp;<b>usually</b></option></select> accept jobs that require me to supervise others.<br>
+</ons-list-item><ons-list-item>
+I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q8"><option value="5">&nbsp;&nbsp;<b>rarely</b></option><option value="4">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="2">&nbsp;&nbsp;<b>frequently</b></option><option value="1">&nbsp;&nbsp;<b>usually</b></option></select> have a hard time saying "no" when someone tries to sell me something.<br>
+</ons-list-item><ons-list-item>
+I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q9"><option value="1">&nbsp;&nbsp;<b>rarely</b></option><option value="2">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="4">&nbsp;&nbsp;<b>frequently</b></option><option value="5">&nbsp;&nbsp;<b>usually</b></option></select> like to have a say in any decisions made by any group I'm in.<br>
+</ons-list-item><ons-list-item>
+I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q10"><option value="1">&nbsp;&nbsp;<b>rarely</b></option><option value="2">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="4">&nbsp;&nbsp;<b>frequently</b></option><option value="5">&nbsp;&nbsp;<b>usually</b></option></select> consider the different sides of an issue before making a decision.<br>
+</ons-list-item><ons-list-item>
+What other people think <select onchange="computeICI()" class="select-input select-input--underbar" name="Q11"><option value="5">&nbsp;&nbsp;<b>rarely</b></option><option value="4">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="2">&nbsp;&nbsp;<b>frequently</b></option><option value="1">&nbsp;&nbsp;<b>usually</b></option></select> has a great influence on my behaviour.<br>
+</ons-list-item><ons-list-item>
+Whenever something good happens to me I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q12"><option value="1">&nbsp;&nbsp;<b>rarely</b></option><option value="2">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="4">&nbsp;&nbsp;<b>frequently</b></option><option value="5">&nbsp;&nbsp;<b>usually</b></option></select> feel it is because I earned it.<br>
+</ons-list-item><ons-list-item>
+I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q13"><option value="1">&nbsp;&nbsp;<b>rarely</b></option><option value="2">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="4">&nbsp;&nbsp;<b>frequently</b></option><option value="5">&nbsp;&nbsp;<b>usually</b></option></select> enjoy being in a position of leadership.<br>
+</ons-list-item><ons-list-item>
+I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q14"><option value="5">&nbsp;&nbsp;<b>rarely</b></option><option value="4">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="2">&nbsp;&nbsp;<b>frequently</b></option><option value="1">&nbsp;&nbsp;<b>usually</b></option></select> need someone else to praise my work before I am satisfied with what I've done.<br>
+</ons-list-item><ons-list-item>
+I am <select onchange="computeICI()" class="select-input select-input--underbar" name="Q15"><option value="1">&nbsp;&nbsp;<b>rarely</b></option><option value="2">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="4">&nbsp;&nbsp;<b>frequently</b></option><option value="5">&nbsp;&nbsp;<b>usually</b></option></select> sure enough of my opinions to try to influence others.<br>
+</ons-list-item><ons-list-item>
+When something is going to affect me I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q16"><option value="1">&nbsp;&nbsp;<b>rarely</b></option><option value="2">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="4">&nbsp;&nbsp;<b>frequently</b></option><option value="5">&nbsp;&nbsp;<b>usually</b></option></select> learn as much as I can about it.<br>
+</ons-list-item><ons-list-item>
+I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q17"><option value="5">&nbsp;&nbsp;<b>rarely</b></option><option value="4">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="2">&nbsp;&nbsp;<b>frequently</b></option><option value="1">&nbsp;&nbsp;<b>usually</b></option></select> decide to do things on the spur of the moment.<br>
+</ons-list-item><ons-list-item>
+For me, knowing I've done something well is <select onchange="computeICI()" class="select-input select-input--underbar" name="Q18"><option value="1">&nbsp;&nbsp;<b>rarely</b></option><option value="2">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="4">&nbsp;&nbsp;<b>frequently</b></option><option value="5">&nbsp;&nbsp;<b>usually</b></option></select> more important than being praised by someone else.<br>
+</ons-list-item><ons-list-item>
+I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q19"><option value="5">&nbsp;&nbsp;<b>rarely</b></option><option value="4">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="2">&nbsp;&nbsp;<b>frequently</b></option><option value="1">&nbsp;&nbsp;<b>usually</b></option></select> let other people's demands keep me from doing things I want to do.<br>
+</ons-list-item><ons-list-item>
+I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q20"><option value="1">&nbsp;&nbsp;<b>rarely</b></option><option value="2">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="4">&nbsp;&nbsp;<b>frequently</b></option><option value="5">&nbsp;&nbsp;<b>usually</b></option></select> stick to my opinions when someone disagrees with me.<br>
+</ons-list-item><ons-list-item>
+I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q21"><option value="1">&nbsp;&nbsp;<b>rarely</b></option><option value="2">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="4">&nbsp;&nbsp;<b>frequently</b></option><option value="5">&nbsp;&nbsp;<b>usually</b></option></select> do what I feel like doing, not what other people think I ought to do.<br>
+</ons-list-item><ons-list-item>
+I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q22"><option value="5">&nbsp;&nbsp;<b>rarely</b></option><option value="4">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="2">&nbsp;&nbsp;<b>frequently</b></option><option value="1">&nbsp;&nbsp;<b>usually</b></option></select> get discouraged when doing something that takes a long time to achieve results.<br>
+</ons-list-item><ons-list-item>
+When part of a group I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q23"><option value="5">&nbsp;&nbsp;<b>rarely</b></option><option value="4">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="2">&nbsp;&nbsp;<b>frequently</b></option><option value="1">&nbsp;&nbsp;<b>usually</b></option></select> prefer to let other people make all the decisions.<br>
+</ons-list-item><ons-list-item>
+When I have a problem I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q24"><option value="5">&nbsp;&nbsp;<b>rarely</b></option><option value="4">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="2">&nbsp;&nbsp;<b>frequently</b></option><option value="1">&nbsp;&nbsp;<b>usually</b></option></select> follow the advice of friends or relatives.<br>
+</ons-list-item><ons-list-item>
+I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q25"><option value="1">&nbsp;&nbsp;<b>rarely</b></option><option value="2">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="4">&nbsp;&nbsp;<b>frequently</b></option><option value="5">&nbsp;&nbsp;<b>usually</b></option></select> enjoy trying to do difficult tasks more than I enjoy doing easy tasks.<br>
+</ons-list-item><ons-list-item>
+I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q26"><option value="5">&nbsp;&nbsp;<b>rarely</b></option><option value="4">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="2">&nbsp;&nbsp;<b>frequently</b></option><option value="1">&nbsp;&nbsp;<b>usually</b></option></select> prefer situations where I can depend on someone else's ability rather than my own.<br>
+</ons-list-item><ons-list-item>
+Having someone important tell me I did a good job is <select onchange="computeICI()" class="select-input select-input--underbar" name="Q27"><option value="5">&nbsp;&nbsp;<b>rarely</b></option><option value="4">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="2">&nbsp;&nbsp;<b>frequently</b></option><option value="1">&nbsp;&nbsp;<b>usually</b></option></select> more important to me than feeling I've done a good job.<br>
+</ons-list-item><ons-list-item>
+When I am involved in something I <select onchange="computeICI()" class="select-input select-input--underbar" name="Q28"><option value="1">&nbsp;&nbsp;<b>rarely</b></option><option value="2">&nbsp;&nbsp;<b>occasionally</b></option><option value="3" selected="selected">&nbsp;&nbsp;<b>sometimes</b></option><option value="4">&nbsp;&nbsp;<b>frequently</b></option><option value="5">&nbsp;&nbsp;<b>usually</b></option></select> try to find out all I can about what is going on, even when someone else is in charge.<br>
+</ons-list-item>
+    <ons-list-item>
+        <b>You internal locus of control score is &nbsp;&nbsp;<input type="text" class="textarea" name="ICIscore" id="ICIscore"></b><br>
+      </ons-list-item>
+</ons-list>
+<br><br>
+</form>
+      <ons-button onclick="results()">What does that number mean?</ons-button>
+
+      <p id="output"></p>
+      
+      
+      <ons-button onclick="OPENNEWPAGE">I still don't get it</ons-button>
+      
+  </div>
+</div>
+</ons-page>
