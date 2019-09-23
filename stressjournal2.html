@@ -1,0 +1,122 @@
+<ons-page id="stressjournal2">
+    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <ons-toolbar>
+      <div class="left">
+  <ons-back-button></ons-back-button>
+</div>
+    <div class="center">My stress journal</div>
+  </ons-toolbar>
+
+      <div style="height: auto; padding: 1px 0 0 0;">
+  <div class="card card--material">
+    <div class="card__title card--material__title">My Stress Journal</div>
+    <div class="card__content card--material__content">Fill in the blanks below to complete your stress journal. A copy will be sent to the email you provide below.
+
+<script>
+function generateEmail() {
+  var emailTo = $("#emailadd").val();
+  var emailCC = $("#CC").val();
+  var emailSubject = "My stress management entry on " + $("#theDate").val();
+  var emailBody = "Your stressor is " + $("#stressor").val() + "%0A%0A" + $("#area").val() + "To further help you manage your stressor, you can" + $("#question2").val() + "%0A%0AMy stressor should be " + $(".time:checked").val();
+    
+    
+    
+  location.href = "mailto:" + emailTo + "?" + 
+    (emailCC ? "cc=" + emailCC : "") + 
+    (emailSubject ? "&subject=" + emailSubject : "") + 
+    (emailBody ? "&body=" + emailBody : "");
+}
+      </script> 
+    
+    
+      
+    <b>Email</b>&nbsp;&nbsp;<input type="email" class="text-input" id="emailadd" style="width: 400px" placeholder="Your entry will be sent to this address">
+
+ 
+    
+<b>Date</b>&nbsp;&nbsp;<input type="date" class="text-input " id="theDate">
+            <script>
+var date = new Date();
+
+var day = date.getDate();
+var month = date.getMonth() + 1;
+var year = date.getFullYear();
+
+if (month < 10) month = "0" + month;
+if (day < 10) day = "0" + day;
+
+var today = year + "-" + month + "-" + day;       
+document.getElementById("theDate").value = today;
+    </script>
+   
+
+    
+    <b>Describe your stressor</b>&nbsp;&nbsp;<input type="text" class="textarea" rows="3" id="stressor" placeholder="I am current feeling stressed about the things here" style="width: 100%" >
+      
+
+ 
+<b>My stressor is</b>&nbsp;&nbsp;
+<select id="area" class="select-input">
+	<option value="For academic stress, we recommend that you: 
+                   %0AManage time wisely%0A
+                   Get organized (draw up a time-table if it helps)%0A
+                   Create a good study environment- find a good study buddy who is encouraging%0A
+                   Learn study skills%0A
+                   Seek help from classmates/ peers/ professors if you do not understand any concept or skills.%0A
+                   Create a vision/goals board and work towards your goals- do not feel disheartened if you fail at times, keep trying, change your perspective and never give up.%0A
+                   Get enough sleep;%0A
+                   and finally, see a professional/counsellor/therapist if you do not feel better
+
+">academic</option>
+	<option value="For academic stress, we recommend the following (if applicable):%0A
+                   Choose to spend time with resilient and positive people%0A
+                   Improve your planning- start making daily check lists- take action by organizing your weekly activities%0A
+                   Learn relaxation techniques/ practice yoga/ meditation%0A
+                   Pay attention to your diet, exercise and sleep%0A
+                   Count your daily blessings by unleashing gratitude%0A
+                   See a professional/counsellor/therapist if you do not feel better">personal</option>
+	<option value="For work-related stress, we recommend the following (if applicable):%0A
+                   Identify the aspects of the situation you can control and aspect you can’t.%0A
+                   Spend a few minutes to do some deep breathing if you feel overwhelmed or tensed.%0A
+                   If you’re not working on an important project, handle your small tasks the second they come in – and figure out an efficient system to complete the tasks quickly.%0A
+                   Eat right and sleep well.%0A
+                   See a professional/counsellor/therapist if you do not feel better
+">work</option>
+    <option value="For other types of stress aside from personal, academic and work, we cna only recommend general techniques to releif stress. We acknowledge that everyone has their own way of dealing with stress. Sometimes, you know yourself best.">unspecified</option>
+          </select>
+      
+      
+
+<b>My stressor is</b>&nbsp;&nbsp;
+<radiogroup>      
+<input type="radio" name="time" class="time" value="something to think about in a few months time" id="later">Long term (something that will occur in them next few weeks/months/years)<br>
+<input type="radio" name="time" class="time" value="something to think about now" id="now">Short term (Something that will occur in the next few hours/days)
+    </radiogroup>
+    
+
+Customer contact info
+<input type="text" class="textarea" id="question2" style="width: 100%">
+
+
+    
+    <p><b>For data collection purposes, please express if you consent to this information being sent to our Co-Curriculum Development team (<a href="mailto:cocurriculum@smu.edu.sg">cocurriculum@smu.edu.sg</a>). Your data will be  kept confidential and you may write to us to withdraw your information within 14 days.</b><br>Don't worry, you will still be able to complete this without sending us any data.</p>
+      
+<radiogroup>      
+<input type="radio" name="CC" value="co-curriculum@smu.edu.sg" id="CC">I agree<br>
+<input type="radio" name="CC" value="" id="CC">I disagree<br>      
+      </radiogroup>      
+     
+
+      <input type="submit" class="button" value="Generate email" onclick="generateEmail()">
+        
+        <button onclick="generateEmail()">Generate email</button>
+        
+         </div>
+  </div>
+</div> 
+    
+
+</ons-page>
