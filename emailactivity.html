@@ -2,6 +2,19 @@
     
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <ons-toolbar>
+      <div class="left">
+  <ons-back-button></ons-back-button>
+</div>
+    <div class="center">My stress journal</div>
+  </ons-toolbar>
+
+      <div style="height: auto; padding: 1px 0 0 0;">
+  <div class="card card--material">
+    <div class="card__title card--material__title">My Stress Journal</div>
+    <div class="card__content card--material__content">Fill in the blanks below to complete your stress journal. A copy will be sent to the email you provide below.
+
 <script>
 function generateEmail() {
   var emailTo = $("#emailadd").val();
@@ -18,28 +31,12 @@ function generateEmail() {
 }
       </script> 
     
-        <ons-toolbar>
-      <div class="left">
-  <ons-back-button></ons-back-button>
-</div>
-    <div class="center">My stress journal</div>
-  </ons-toolbar>
-
-      <div style="height: auto; padding: 1px 0 0 0;">
-  <div class="card card--material">
-    <div class="card__title card--material__title">My Stress Journal</div>
-    <div class="card__content card--material__content">Fill in the blanks below to complete your stress journal. A copy will be sent to the email you provide below.
-      </div>
-  </div>
-</div>
-
-<ons-list>
     
-<ons-list-item>      
+      
     <b>Email</b>&nbsp;&nbsp;<input type="email" class="text-input" id="emailadd" style="width: 400px" placeholder="Your entry will be sent to this address">
-</ons-list-item>
+
  
-<ons-list-item>    
+    
 <b>Date</b>&nbsp;&nbsp;<input type="date" class="text-input " id="theDate">
             <script>
 var date = new Date();
@@ -54,13 +51,13 @@ if (day < 10) day = "0" + day;
 var today = year + "-" + month + "-" + day;       
 document.getElementById("theDate").value = today;
     </script>
-</ons-list-item>   
+   
 
-<ons-list-item>    
+    
     <b>Describe your stressor</b>&nbsp;&nbsp;<input type="text" class="textarea" rows="3" id="stressor" placeholder="I am current feeling stressed about the things here" style="width: 100%" >
-</ons-list-item>      
+      
 
-<ons-list-item> 
+ 
 <b>My stressor is</b>&nbsp;&nbsp;
 <select id="area" class="select-input">
 	<option value="For academic stress, we recommend that you: 
@@ -90,32 +87,33 @@ document.getElementById("theDate").value = today;
 ">work</option>
     <option value="For other types of stress aside from personal, academic and work, we cna only recommend general techniques to releif stress. We acknowledge that everyone has their own way of dealing with stress. Sometimes, you know yourself best.">unspecified</option>
           </select>
-</ons-list-item>      
       
-<ons-list-item>
+      
+
 <b>My stressor is</b>&nbsp;&nbsp;
 <radiogroup>      
 <input type="radio" name="time" class="time" value="something to think about in a few months time" id="later">Long term (something that will occur in them next few weeks/months/years)<br>
 <input type="radio" name="time" class="time" value="something to think about now" id="now">Short term (Something that will occur in the next few hours/days)
     </radiogroup>
-</ons-list-item>    
-<ons-list-item>
+    
+
 Customer contact info
 <input type="text" class="textarea" id="question2" style="width: 100%">
-</ons-list-item>
 
-<ons-list-item>    
+
+    
     <p><b>For data collection purposes, please express if you consent to this information being sent to our Co-Curriculum Development team (<a href="mailto:cocurriculum@smu.edu.sg">cocurriculum@smu.edu.sg</a>). Your data will be  kept confidential and you may write to us to withdraw your information within 14 days.</b><br>Don't worry, you will still be able to complete this without sending us any data.</p>
       
 <radiogroup>      
 <input type="radio" name="CC" value="co-curriculum@smu.edu.sg" id="CC">I agree<br>
 <input type="radio" name="CC" value="" id="CC">I disagree<br>      
       </radiogroup>      
-</ons-list-item>     
-<ons-list-item>
+     
+
       <input type="submit" class="button" value="Generate email" onclick="generateEmail()">
-    </ons-list-item>
-</ons-list>    
+         </div>
+  </div>
+</div> 
     
 
 </ons-page>
