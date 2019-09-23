@@ -22,20 +22,33 @@ function generateEmail() {
   var emailSubject = "My stress management entry on " + $("#theDate").val();
   var emailBody = "Your stressor is " + $("#stressor").val() + "%0A%0A" + $("#area").val() + "To further help you manage your stressor, you can" + $("#question2").val() + "%0A%0AMy stressor should be " + $(".time:checked").val();
     
+}
     
-    
-location.href = "mailto:" + emailTo + "?" + 
+    function link()
+    var link = "mailto:" + emailTo + "?" + 
     (emailCC ? "cc=" + emailCC : "") + 
     (emailSubject ? "&subject=" + emailSubject : "") + 
     (emailBody ? "&body=" + emailBody : "");
-}
+    document.getElementById{"linky"}.href = link;
+        
+        
+    
       </script> 
     
     
       
     <b>Email</b>&nbsp;&nbsp;<input type="email" class="text-input" id="emailadd" style="width: 400px" placeholder="Your entry will be sent to this address">
 
- 
+ <!--
+
+    
+    
+location.href = "mailto:" + emailTo + "?" + 
+    (emailCC ? "cc=" + emailCC : "") + 
+    (emailSubject ? "&subject=" + emailSubject : "") + 
+    (emailBody ? "&body=" + emailBody : "");
+
+-->
     
 <b>Date</b>&nbsp;&nbsp;<input type="date" class="text-input " id="theDate">
             <script>
@@ -116,7 +129,7 @@ Customer contact info
         
 <a id="myLink" href="javascript:generateEmail();">link text</a>
         
-        <a id="myLink" href="#" onclick="generateEmail();return false;">link text</a>
+        <a id="linky">link text</a>
 
         
          </div>
