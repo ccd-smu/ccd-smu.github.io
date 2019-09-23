@@ -5,6 +5,21 @@
   <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
   <script src="https://unpkg.com/onsenui/js/onsenui.min.js">
   </script>
+    <script>
+function generateEmail() {
+  var emailTo = $("#emailadd").val();
+  var emailCC = $("#CC").val();
+  var emailSubject = "My stress management entry on " + $("#theDate").val();
+  var emailBody = "Your stressor is " + $("#stressor").val() + "%0A%0A" + $("#area").val() + "To further help you manage your stressor, you can" + $("#question2").val() + "%0A%0AMy stressor should be " + $(".time:checked").val();
+    
+    
+    
+  location.href = "mailto:" + emailTo + "?" + 
+    (emailCC ? "cc=" + emailCC : "") + 
+    (emailSubject ? "&subject=" + emailSubject : "") + 
+    (emailBody ? "&body=" + emailBody : "");
+}
+      </script> 
         <script>
     const loadPage = (page) => {
   document.querySelector('#menu').close();
