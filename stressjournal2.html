@@ -24,7 +24,7 @@ function generateEmail() {
     
     
     
-  window.location.href = "mailto:" + emailTo + "?" + 
+location.href = "mailto:" + emailTo + "?" + 
     (emailCC ? "cc=" + emailCC : "") + 
     (emailSubject ? "&subject=" + emailSubject : "") + 
     (emailBody ? "&body=" + emailBody : "");
