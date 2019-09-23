@@ -1,9 +1,4 @@
 <ons-page id="gallery">
-  <style>
-    .gallery-image {
-      width: 100%;
-    }
-  </style>
 
   <script>
       
@@ -17,25 +12,15 @@ var next = function() {
   carousel.next();
 };
 
-ons.ready(function() {
-  var carousel = document.addEventListener('postchange', function(event) {
-    console.log('Changed to ' + event.activeIndex)
-  });
+
+      
+document.addEventListener('postchange', function(event){
+  if (event.activeIndex === 0) {
+    document.getElementById("output").innerHTML = "DISTRESS IS BAD"
+  } else {
+      document.getElementById("output").innerHTML = "EUSTRESS IS GOOD"
+  }
 });
-      
-
-      
-      var cindex= document.querySelector('ons-carousel').getActiveIndex()
-      var outputdiv = document.getElementById("div")
-      if (cindex == 1){
-                output.innerHTML = "I feel extremely stressed";
-      } else {
-                output.innerHTML = "ok";
-
-      };
-      
-      
-      
       
   </script>
 
@@ -51,55 +36,47 @@ ons.ready(function() {
     <div class="card__title card--material__title">You probably have heard this before : A bit of stress is good.</div>
     <div class="card__content card--material__content">
       Well, if it becomes debilitating, to the point that you are not able to perform the functions required in a social setting. 
-        
-            <div class="left">
-      <ons-toolbar-button onclick="prev()">
-        <ons-icon icon="md-chevron-left"></ons-icon>
-      </ons-toolbar-button>
-    </div>
+              </div>
+      
+
+  </div>
+</div>  
+    
+    <ons-list>
+
     <div class="center">
-      <ons-carousel id="carousel" fullscreen swipeable auto-scroll auto-scroll-ratio="0.1">
+      <ons-carousel id="carousel" fullscreen swipeable auto-scroll auto-scroll-ratio="0.1" >
     <ons-carousel-item style="background-color: #085078;">
-      <div style="text-align: right; font-size: 120px; margin-top: 20px; color: #fff; height: 200px">
+      <div style="text-align: right; font-size: 120px; margin-top: 20px; color: #fff;">
        DISTRESS ver
       </div>
     </ons-carousel-item>
     <ons-carousel-item style="background-color: #373B44;">
-      <div style="text-align: left; font-size: 120px; margin-top: 20px; color: #fff; height: 200px">
+      <div style="text-align: left; font-size: 120px; margin-top: 20px; color: #fff;">
         sus EUSTRESS
       </div>
     </ons-carousel-item>
-    <!--<ons-carousel-item style="background-color: #D38312;">
-      <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
-        ORANGE
-      </div>
-    </ons-carousel-item>-->
   </ons-carousel>
-        </div>
-      
-          <div class="right">
-      <ons-toolbar-button onclick="next()">
+
+    </div>
+        
+        <ons-list-item>
+                      <ons-toolbar-button onclick="prev()">
+        <ons-icon icon="md-chevron-left"></ons-icon>
+      </ons-toolbar-button>
+                          <ons-toolbar-button onclick="next()">
         <ons-icon icon="md-chevron-right"></ons-icon>
       </ons-toolbar-button>
-    </div>
-      
-      </div>
-      
+        </ons-list-item>
+    </ons-list>
 
-  </div>
-</div>  
-    
-     <div style="height: 500px; padding: 1px 0 0 0;">
+ <div style="height: auto; padding: 1px 0 0 0;">
   <div class="card card--material">
     <div class="card__title card--material__title">You probably have heard this before : A bit of stress is good.</div>
-    <div class="card__content card--material__content">
-      Well, if it becomes debilitating, to the point that you are not able to perform the functions required in a social setting. 
-        
- <div id='div' style='margin-top:2em;'></div>
+    <div id="output" class="card__content card--material__content">
+DISTRESS IS BAD</div></div>
       
 
-  </div>
-</div>  
-    
+  </div>    
     
 </ons-page>
