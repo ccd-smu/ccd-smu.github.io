@@ -2,7 +2,22 @@
     
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+<script>
+function generateEmail() {
+  var emailTo = $("#emailadd").val();
+  var emailCC = $("#CC").val();
+  var emailSubject = "My stress management entry on " + $("#theDate").val();
+  var emailBody = "Your stressor is " + $("#stressor").val() + "%0A%0A" + $("#area").val() + "To further help you manage your stressor, you can" + $("#question2").val() + "%0A%0AMy stressor should be " + $(".time:checked").val();
+    
+    
+    
+  location.href = "mailto:" + emailTo + "?" + 
+    (emailCC ? "cc=" + emailCC : "") + 
+    (emailSubject ? "&subject=" + emailSubject : "") + 
+    (emailBody ? "&body=" + emailBody : "");
+}
+      </script> 
+    
         <ons-toolbar>
       <div class="left">
   <ons-back-button></ons-back-button>
@@ -14,42 +29,17 @@
   <div class="card card--material">
     <div class="card__title card--material__title">My Stress Journal</div>
     <div class="card__content card--material__content">Fill in the blanks below to complete your stress journal. A copy will be sent to the email you provide below.
+      </div>
+  </div>
+</div>
 
-<script>
-function generateEmail() {
-  var emailTo = $("#emailadd").val();
-  var emailCC = $("#CC").val();
-  var emailSubject = "My stress management entry on " + $("#theDate").val();
-  var emailBody = "Your stressor is " + $("#stressor").val() + "%0A%0A" + $("#area").val() + "To further help you manage your stressor, you can" + $("#question2").val() + "%0A%0AMy stressor should be " + $(".time:checked").val();
+<ons-list>
     
-}
-    
-    function link()
-    var link = "mailto:" + emailTo + "?" + 
-    (emailCC ? "cc=" + emailCC : "") + 
-    (emailSubject ? "&subject=" + emailSubject : "") + 
-    (emailBody ? "&body=" + emailBody : "");
-    document.getElementById{"linky"}.href = link;
-        
-        
-    
-      </script> 
-    
-    
-      
+<ons-list-item>      
     <b>Email</b>&nbsp;&nbsp;<input type="email" class="text-input" id="emailadd" style="width: 400px" placeholder="Your entry will be sent to this address">
-
- <!--
-
-    
-    
-location.href = "mailto:" + emailTo + "?" + 
-    (emailCC ? "cc=" + emailCC : "") + 
-    (emailSubject ? "&subject=" + emailSubject : "") + 
-    (emailBody ? "&body=" + emailBody : "");
-
--->
-    
+</ons-list-item>
+ 
+<ons-list-item>    
 <b>Date</b>&nbsp;&nbsp;<input type="date" class="text-input " id="theDate">
             <script>
 var date = new Date();
@@ -64,13 +54,13 @@ if (day < 10) day = "0" + day;
 var today = year + "-" + month + "-" + day;       
 document.getElementById("theDate").value = today;
     </script>
-   
+</ons-list-item>   
 
-    
+<ons-list-item>    
     <b>Describe your stressor</b>&nbsp;&nbsp;<input type="text" class="textarea" rows="3" id="stressor" placeholder="I am current feeling stressed about the things here" style="width: 100%" >
-      
+</ons-list-item>      
 
- 
+<ons-list-item> 
 <b>My stressor is</b>&nbsp;&nbsp;
 <select id="area" class="select-input">
 	<option value="For academic stress, we recommend that you: 
@@ -100,41 +90,32 @@ document.getElementById("theDate").value = today;
 ">work</option>
     <option value="For other types of stress aside from personal, academic and work, we cna only recommend general techniques to releif stress. We acknowledge that everyone has their own way of dealing with stress. Sometimes, you know yourself best.">unspecified</option>
           </select>
+</ons-list-item>      
       
-      
-
+<ons-list-item>
 <b>My stressor is</b>&nbsp;&nbsp;
 <radiogroup>      
 <input type="radio" name="time" class="time" value="something to think about in a few months time" id="later">Long term (something that will occur in them next few weeks/months/years)<br>
 <input type="radio" name="time" class="time" value="something to think about now" id="now">Short term (Something that will occur in the next few hours/days)
     </radiogroup>
-    
-
+</ons-list-item>    
+<ons-list-item>
 Customer contact info
 <input type="text" class="textarea" id="question2" style="width: 100%">
+</ons-list-item>
 
-
-    
+<ons-list-item>    
     <p><b>For data collection purposes, please express if you consent to this information being sent to our Co-Curriculum Development team (<a href="mailto:cocurriculum@smu.edu.sg">cocurriculum@smu.edu.sg</a>). Your data will be  kept confidential and you may write to us to withdraw your information within 14 days.</b><br>Don't worry, you will still be able to complete this without sending us any data.</p>
       
 <radiogroup>      
 <input type="radio" name="CC" value="co-curriculum@smu.edu.sg" id="CC">I agree<br>
 <input type="radio" name="CC" value="" id="CC">I disagree<br>      
       </radiogroup>      
-     
-
+</ons-list-item>     
+<ons-list-item>
       <input type="submit" class="button" value="Generate email" onclick="generateEmail()">
-        
-        <button onclick="generateEmail()">Generate email</button>
-        
-<a id="myLink" href="javascript:generateEmail();">link text</a>
-        
-        <a id="linky">link text</a>
-
-        
-         </div>
-  </div>
-</div> 
+    </ons-list-item>
+</ons-list>    
     
 
 </ons-page>
