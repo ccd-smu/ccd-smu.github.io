@@ -60,21 +60,23 @@ document.addEventListener('postchange', function(event){
 
     </div>
         
-        <ons-list-item>
+        <ons-row>
+            <ons-col width="50%" align="left">
                       <ons-toolbar-button onclick="prev()">
-        <ons-icon icon="md-chevron-left"></ons-icon>
-      </ons-toolbar-button>
+        <ons-icon icon="md-chevron-left" size="30px"></ons-icon>
+                </ons-toolbar-button></ons-col>
+            <ons-col width="50%" align="right">
                           <ons-toolbar-button onclick="next()">
-        <ons-icon icon="md-chevron-right"></ons-icon>
-      </ons-toolbar-button>
-        </ons-list-item>
+        <ons-icon icon="md-chevron-right" size="30px"></ons-icon>
+                </ons-toolbar-button></ons-col>
+        </ons-row>
     </ons-list>
 
  <div style="height: auto; padding: 1px 0 0 0;">
   <div class="card card--material">
-    <div class="card__title card--material__title">You probably have heard this before : A bit of stress is good.</div>
-    <div id="output" class="card__content card--material__content">
-DISTRESS IS BAD</div></div>
+    <div id="output" class="card__title card--material__title">DISTRESS IS BAD</div>
+    <div class="card__content card--material__content">
+elaboration</div></div>
       
 
   </div>    
