@@ -60,7 +60,7 @@ document.getElementById("output").innerHTML = "Your choices indicate neither an 
     <div class="card__title card--material__title">Internal Control Index</div>
       <div class="card__content card--material__content">Choose the option in the dropdown boxes that you identify with. <br><b>Rare</b> is less than 10% of the time<br><b>Seldom</b> is 30% of the time,<br><b>Sometimes</b> is 50% of the time, <br><b>Frequent</b> is 70% of the time; and <br> <b>Often</b> is 90% and above of the time.</div></div></div>
       
-<form name="ICI" onchange="computeICI()">
+<form name="ICI">
 <ons-list>
 <ons-list-item>
 When faced with a problem I try to forget it.<br>
@@ -716,7 +716,7 @@ Having someone important tell me I did a good job is more important to me than f
 </div>
 </ons-list-item><ons-list-item>
 When I am involved in something I try to find out all I can about what is going on, even when someone else is in charge.<br>
-<div class="segment" style="width: 100%; margin: 0 auto;" >
+<div class="segment" style="width: 100%; margin: 0 auto;" onchange="computeICI()">
   <div class="segment__item">
     <input type="radio" class="segment__input" name="Q28" value="5">
     <div class="segment__button">Rare</div>
