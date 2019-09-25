@@ -13,40 +13,25 @@
 </div>
     
     <ons-list id="list">
-  <ons-list-item expandable>
-    Identify your current stressor
-    <div class="expandable-content">
-      <ons-button onclick="loadPage('page1.html')">Click here</ons-button>
-    </div>
-  </ons-list-item>
-
-  <ons-list-item expandable>
-      Rationalising your stressor using 
-    <div class="expandable-content">
-      <ons-button onclick="loadPage('page2.html')">Click here</ons-button>
-    </div>
-  </ons-list-item>
-
-  <ons-list-item expandable>
-   My Stress Journal
-      <div class="expandable-content">
-      <ons-button onclick="loadPage('stressjournal2.html')">Click here</ons-button>
-    </div>
-  </ons-list-item>
-
-  <ons-list-item expandable>
-    Measuring my locus of control
-    <div class="expandable-content">
-      <ons-button onclick="loadPage('locus.html')">Click here</ons-button>
-    </div>
-  </ons-list-item>
-
-  <ons-list-item expandable>
-    What can I do?
-    <div class="expandable-content">
-      <ons-button onclick="loadPage('page5.html')">Click here</ons-button>
-    </div>
-  </ons-list-item>
-</ons-list>    
-    
+        
+        
+<ons-list-item onclick="loadPage('stressjournal2.html')"> 
+    <div class="left"><ons-icon icon="md-file-text" class="list-item__icon" size="20px"></ons-icon>
+</div>    
+<div class="center">My Stress Journal</div>
+<div class="right">
+<ons-icon icon="md-chevron-right"></ons-icon>
+</div>
+</ons-list-item>
+        
+    <ons-list-item onclick="loadPage('locus.html')"> 
+    <div class="left"><ons-icon icon="md-ruler" class="list-item__icon" size="20px"></ons-icon>
+</div>    
+<div class="center">Measuring my locus of control</div>
+<div class="right">
+<ons-icon icon="md-chevron-right"></ons-icon>
+</div>
+</ons-list-item>
+        
+  
 </ons-page>
