@@ -5,50 +5,76 @@
     <div class="card__content card--material__content">This mini app introduces some simple concepts and techniques that will help you manage your stress. The module is broadly divided into the topics below.</div>
   </div>
 </div>
-    
-    <ons-list id="list">
-  <ons-list-item expandable>
-    What is stress?
-    <div class="expandable-content">
-      <ons-button onclick="loadPage('page1.html')">Click here</ons-button>
-    </div>
-  </ons-list-item>
-
-  <ons-list-item expandable>
-    Distress vs. Eustress
-    <div class="expandable-content">
-      <ons-button onclick="loadPage('page2.html')">Click here</ons-button>
-    </div>
-  </ons-list-item>
-
-  <ons-list-item expandable>
-    Questions to ask
-    <div class="expandable-content">
-      <ons-button onclick="loadPage('page3.html')">Click here</ons-button>
-    </div>
-  </ons-list-item>
-
-  <ons-list-item expandable>
-    Stress and control
-    <div class="expandable-content">
-      <ons-button onclick="loadPage('page4.html')">Click here</ons-button>
-    </div>
-  </ons-list-item>
-
-  <ons-list-item expandable>
-    What can I do?
-    <div class="expandable-content">
-      <ons-button onclick="loadPage('page5.html')">Click here</ons-button>
-    </div>
-  </ons-list-item>
+    <script>
         
-      <ons-list-item expandable>
-Gallery
-    <div class="expandable-content">
-      <ons-button onclick="loadPage('gallery.html')">Click here</ons-button>
-    </div>
-  </ons-list-item>    
+        
+  ons.ready(function() {
+  var modal = document.querySelector('ons-modal');
+  modal.show();
+  });
+    function hideModal() {
+  var modal = document.querySelector('ons-modal');
+  modal.hide();
+}
+        
+
+</script>  
+    <ons-list id="list" onload="showModal">
+  
+<ons-list-item onclick="loadPage('page1.html')">      
+<div class="center">What is stress?</div>
+<div class="right">
+<ons-icon icon="md-chevron-right"></ons-icon>
+</div>
+</ons-list-item>
+
+<ons-list-item onclick="loadPage('page2.html')">
+<div class="center">Distress vs. Eustress</div>
+<div class="right">    
+        <ons-icon icon="md-chevron-right"></ons-icon>
+</div>
+</ons-list-item>
+        
+<ons-list-item onclick="loadPage('page3.html')">      
+<div class="center">Questions to ask</div>
+<div class="right">
+        <ons-icon icon="md-chevron-right"></ons-icon>
+</div>
+</ons-list-item>
+
+<ons-list-item onclick="loadPage('page4.html')">      
+<div class="center">Stress and Control</div>
+<div class="right">
+        <ons-icon icon="md-chevron-right"></ons-icon>
+</div>
+</ons-list-item>
+
+<ons-list-item  onclick="loadPage('page5.html')">      
+<div class="center">What can I do?</div>
+<div class="right">
+        <ons-icon icon="md-chevron-right"></ons-icon>
+</div>
+</ons-list-item>
+
+<ons-list-item onclick="loadPage('gallery.html')">      
+<div class="center">Gallery</div>
+<div class="right">        
+        <ons-icon icon="md-chevron-right"></ons-icon>
+</div>
+</ons-list-item> 
         
 </ons-list>
+<ons-modal direction="up" animation="lift" onclick="hideModal()">
+  <div class="center" style="text-align: center; background-color: #00a3e0; height: 800px; position: relative">
+    <p class="card__title card--material__title">
+   <img src="title.png">
+    </p>
+      <ons-button size="30px"
+  icon="md-close" onclick="hideModal()" style="background: transparent; position: absolute; top: 0; right: 0;">
+</ons-button>
 
+  </div>
+</ons-modal>    
+    
 </ons-page>
+

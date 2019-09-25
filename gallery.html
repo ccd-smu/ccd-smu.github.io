@@ -16,13 +16,16 @@ var next = function() {
       
 document.addEventListener('postchange', function(event){
   if (event.activeIndex === 0) {
-    document.getElementById("output").innerHTML = "DISTRESS IS BAD"
+    document.getElementById("output").innerHTML = "<p style='color:#FFF'>Stress is only beneficial if it is short-lived. Excessive or prolonged stress can lead to illnesses such as heart disease and mental health problems such as anxiety and depression.</p><div class='card__title card--material__title' style='color:#fff' >Eustress (Positive Stress)</div><p style='color:#FFF'>Motivates, focuses energy<br>Is perceived as within our coping abilities<br>Feels exciting<br>Improves performance</p>";
+    document.getElementById("card").style.backgroundColor = "#085078";
+    
   } else {
-      document.getElementById("output").innerHTML = "EUSTRESS IS GOOD"
+      document.getElementById("output").innerHTML = "<p style='color:#FFF'>A little bit of stress is not bad; Positive stress could give you energy, motivation and spark creativity; Also makes you more alert and helps you perform better in certain situations.</p><div class='card__title card--material__title' style='color:#fff'>Distress (Negative Stress)</div><p style='color:#FFF'>Causes anxiety or concern<br>Is perceived as outside of our coping abilities<br>Feels unpleasant<br>Decreases performance<br>Can lead to mental and physical problems</p>";
+      document.getElementById("card").style.backgroundColor = "#373B44";
   }
 });
-      
   </script>
+
 
   <ons-toolbar>
       <div class="left">
@@ -42,7 +45,7 @@ document.addEventListener('postchange', function(event){
   </div>
 </div>  
     
-    <ons-list>
+    <ons-list style="background: transparent">
 
     <div class="center">
       <ons-carousel id="carousel" fullscreen swipeable auto-scroll auto-scroll-ratio="0.1" >
@@ -56,29 +59,59 @@ document.addEventListener('postchange', function(event){
         sus EUSTRESS
       </div>
     </ons-carousel-item>
+                    
   </ons-carousel>
+
 
     </div>
         
         <ons-row>
-            <ons-col width="50%" align="left">
+            <ons-col class="left">
                       <ons-toolbar-button onclick="prev()">
         <ons-icon icon="md-chevron-left" size="30px"></ons-icon>
                 </ons-toolbar-button></ons-col>
-            <ons-col width="50%" align="right">
+            <ons-col class="right" style="text-align: right">
                           <ons-toolbar-button onclick="next()">
         <ons-icon icon="md-chevron-right" size="30px"></ons-icon>
                 </ons-toolbar-button></ons-col>
         </ons-row>
+        
+        
+          <div class="card card--material" id="card" style="background-color: #085078;">
+    <div class="card__title card--material__title" style="color: #fff;">You may have heard that a bit of stress is good for you</div>
+    <div id="output" class="card__content card--material__content">
+        <p style="color: #fff">Stress is only beneficial if it is short-lived. Excessive or prolonged stress can lead to illnesses such as heart disease and mental health problems such as anxiety and depression.</p>
+      
+      <div class='card__title card--material__title' style="color:#fff">Eustress (Positive Stress)</div>
+        <p style="color: #fff">Motivates, focuses energy<br>Is perceived as within our coping abilities<br>Feels exciting<br>Improves performance</p>
+      
+      </div></div>
+        
     </ons-list>
 
+    
  <div style="height: auto; padding: 1px 0 0 0;">
   <div class="card card--material">
-    <div id="output" class="card__title card--material__title">DISTRESS IS BAD</div>
+    <div class="card__title card--material__title">Negative stressors</div>
     <div class="card__content card--material__content">
-elaboration</div></div>
+<ul>
+<li>The death of a loved one</li>
+<li>Injury or illness (oneself or a family member)</li>
+<li>Conflict in interpersonal relationships</li>
+<li>Feeling unprepared for tests or exams</li>
+<li>Financial problems</li>
+<li>Class presentations/ public speaking</li>
+<li>Fears (fear of flying, heights, meeting new people)</li>
+<li>Lack of social self-confidence</li>
+<li>Unrealistic expectations</li>
+<li>Procrastination and failing to plan ahead</li>
+<li>Over scheduling</li>
+<li>Conflicts with close friends</li>
+</ul>
+    </div>
       
 
-  </div>    
+  </div>
+</div>  
     
 </ons-page>

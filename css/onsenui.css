@@ -25,6 +25,7 @@ ons-alert-dialog {
   right: 0;
   overflow: hidden;
   touch-action: manipulation; /* Remove click delay */
+
 }
 
 ons-toast {
