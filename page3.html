@@ -1,4 +1,20 @@
 <ons-page id="page3">
+
+    
+    
+<script>    
+    var controller = new ScrollMagic.Controller();
+var blockTween = new TweenMax.to('#block', 1.5, {
+    backgroundColor: 'red'
+});
+    var containerScene = new ScrollMagic.Scene({
+    triggerElement: '#container'
+})
+.setTween(blockTween)
+.addIndicators()
+.addTo(controller);
+    
+    </script>    
   <ons-toolbar>
       <div class="left">
   <ons-back-button></ons-back-button>
@@ -6,10 +22,9 @@
     <div class="center">Questions to ask</div>
   </ons-toolbar>
 
-<div style="height: 200px; padding: 1px 0 0 0;">
-  <div class="card card--material">
-    <div class="card__title card--material__title">Questions to ask</div>
-    <div class="card__content card--material__content">Questions to ask</div>
-  </div>
+<div id="container">
+    <div id="block">
+        Hi there !
+    </div>
 </div>
 </ons-page>

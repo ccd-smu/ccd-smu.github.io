@@ -1,10 +1,16 @@
 <ons-page id="content">
+    
+    
+    
+    <ons-row>
 <div style="height: auto; padding: 1px 0 0 0;">
-  <div class="card card--material">
+
     <div class="card__title card--material__title">Stress Management</div>
     <div class="card__content card--material__content">This mini app introduces some simple concepts and techniques that will help you manage your stress. The module is broadly divided into the topics below.</div>
-  </div>
+
 </div>
+    </ons-row>    
+        
     <script>
         
         
@@ -21,7 +27,9 @@
 </script>  
     <ons-list id="list" onload="showModal">
   
-<ons-list-item onclick="loadPage('page1.html')">      
+<ons-list-item onclick="loadPage('page1.html')">
+<div class="left"><ons-icon icon="md-info" class="list-item__icon" size="20px"></ons-icon>
+</div>      
 <div class="center">What is stress?</div>
 <div class="right">
 <ons-icon icon="md-chevron-right"></ons-icon>
@@ -29,6 +37,8 @@
 </ons-list-item>
 
 <ons-list-item onclick="loadPage('page2.html')">
+    <div class="left"><ons-icon icon="md-help" class="list-item__icon" size="20px"></ons-icon>
+</div>  
 <div class="center">Distress vs. Eustress</div>
 <div class="right">    
         <ons-icon icon="md-chevron-right"></ons-icon>
@@ -56,7 +66,9 @@
 </div>
 </ons-list-item>
 
-<ons-list-item onclick="loadPage('gallery.html')">      
+<ons-list-item onclick="loadPage('gallery.html')"> 
+    <div class="left"><ons-icon icon="md-help" class="list-item__icon" size="20px"></ons-icon>
+</div>  
 <div class="center">Gallery</div>
 <div class="right">        
         <ons-icon icon="md-chevron-right"></ons-icon>

@@ -6,16 +6,29 @@
     <div class="center">Stress and Control</div>
   </ons-toolbar>
 
+<script>    
+ $(function() {
+    var controller = new ScrollMagic.Controller();
+    var containerScene = new ScrollMagic.Scene({
+        triggerElement: '#container',
+        duration: 500
+    })
+    .setPin('#block')
+    .addIndicators()
+    .addTo(controller);
+});
     
-    <div class="center" style="background-color: red">
-        <h1>TEST</h1>
+    </script>    
+  <ons-toolbar>
+      <div class="left">
+  <ons-back-button></ons-back-button>
+</div>
+    <div class="center">Questions to ask</div>
+  </ons-toolbar>
+
+<div id="container">
+    <div id="block">
+        Hi there !
     </div>
-    
-    
-<div style="height: 200px; padding: 1px 0 0 0;">
-  <div class="card card--material">
-    <div class="card__title card--material__title">Stress and Control</div>
-    <div class="card__content card--material__content">Stress and Control</div>
-  </div>
 </div>
 </ons-page>
