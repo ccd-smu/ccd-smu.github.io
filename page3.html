@@ -1,30 +1,45 @@
 <ons-page id="page3">
-
-    
-    
-<script>    
-    var controller = new ScrollMagic.Controller();
-var blockTween = new TweenMax.to('#block', 1.5, {
-    backgroundColor: 'red'
-});
-    var containerScene = new ScrollMagic.Scene({
-    triggerElement: '#container'
-})
-.setTween(blockTween)
-.addIndicators()
-.addTo(controller);
-    
-    </script>    
+  
   <ons-toolbar>
       <div class="left">
   <ons-back-button></ons-back-button>
 </div>
     <div class="center">Questions to ask</div>
   </ons-toolbar>
+<ons-row style="background-color: #00a3e0; text-align: center">
+    
+    <ons-col>
+    <img src="title.png" width="50%">
 
-<div id="container">
-    <div id="block">
-        Hi there !
-    </div>
+    </ons-col>
+        </ons-row>
+
+
+<div id="reveal-elements">
+	<div class="box1 digit blue"><p>What is stress?</p></div>
+	<div class="box1 digit turqoise"><p>Good/bad stress?</p></div>
+	<div class="box1 digit red"><p>3</p></div>
+	<div class="box1 digit green"><p>4</p></div>
+	<div class="box1 digit orange"><p>5</p></div>
 </div>
+<div class="spacer s2"></div>
+    
+    
+    <script>    
+            var controller = new ScrollMagic.Controller();
+
+  	// build scenes
+		var revealElements = document.getElementsByClassName("digit");
+		for (var i=0; i<revealElements.length; i++) { // create a scene for each element
+			new ScrollMagic.Scene({
+								triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+								offset: 50,												 // start a little later
+								triggerHook: 0.9,
+							})
+							.setClassToggle(revealElements[i], "visible") // add class toggle
+							.addIndicators({name: "digit " + (i+1) }) // add indicators (requires plugin)
+							.addTo(controller);
+		}
+    
+    </script>  
 </ons-page>

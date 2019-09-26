@@ -3,12 +3,61 @@
     
     
     <ons-row>
-<div style="height: auto; padding: 1px 0 0 0;">
+        
+        
+<ons-row style="background-color: #00a3e0; text-align: center">
+    
+    <ons-col style="height: auto">
+              <div id="reveal-elements">
+    <img src="title.png" width="50%">
+        <div class="box1"><p style="font-size: 26px; padding: 0 10px 50px 10px;">This mini app introduces some simple concepts and techniques that will help you manage your stress. The module is broadly divided into the topics below.</p></div>
+        
+        
+        
+        
+  
+            
+            <div class="digit">
+                <div class="box1 blue" onclick="loadPage('page1.html')"><p>What is stress?</p></div></div>
+                 <div class="digit">
+                     <div class="box1 turqoise" onclick="loadPage('page2.html')"><p>Good/bad stress?</p></div></div>
+                      <div class="digit">
+                          <div class="box1 red" onclick="loadPage('page3.html')"><p>3</p></div></div>
+                           <div class="digit">
+                               <div class="box1 green" onclick="loadPage('page4.html')"><p>4</p></div></div>
+                                <div class="digit">
+                                    <div class="box1 orange" onclick="loadPage('page5.html')"><p>5</p></div></div>
+                                     <div class="digit">
+                                         <div class="box1 bordeaux" onclick="loadPage('gallery.html')"><p>gallery</p></div>
+                                            </div>
+            </div>
 
-    <div class="card__title card--material__title">Stress Management</div>
-    <div class="card__content card--material__content">This mini app introduces some simple concepts and techniques that will help you manage your stress. The module is broadly divided into the topics below.</div>
+    </ons-col>
+        </ons-row>
 
-</div>
+
+
+<div class="spacer s2"></div>
+    <script>    
+            var controller = new ScrollMagic.Controller();
+
+  	// build scenes
+		var revealElements = document.getElementsByClassName("digit");
+		for (var i=0; i<revealElements.length; i++) { // create a scene for each element
+			new ScrollMagic.Scene({
+								triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+								offset: -60,												 // start a little later
+								triggerHook: 0.8,
+							})
+							.setClassToggle(revealElements[i], "visible") // add class toggle
+							.addIndicators({name: "digit " + (i+1) }) // add indicators (requires plugin)
+							.addTo(controller);
+		}
+    
+    </script>  
+    
+        
+        
     </ons-row>    
         
     <script>
@@ -26,8 +75,9 @@
 
 </script>  
     <ons-list id="list" onload="showModal">
-  
-<ons-list-item onclick="loadPage('page1.html')">
+<!--
+
+<ons-list-item class="center" onclick="loadPage('page1.html')">
 <div class="left"><ons-icon icon="md-info" class="list-item__icon" size="20px"></ons-icon>
 </div>      
 <div class="center">What is stress?</div>
@@ -36,7 +86,7 @@
 </div>
 </ons-list-item>
 
-<ons-list-item onclick="loadPage('page2.html')">
+<ons-list-item class="center" onclick="loadPage('page2.html')">
     <div class="left"><ons-icon icon="md-help" class="list-item__icon" size="20px"></ons-icon>
 </div>  
 <div class="center">Distress vs. Eustress</div>
@@ -45,28 +95,28 @@
 </div>
 </ons-list-item>
         
-<ons-list-item onclick="loadPage('page3.html')">      
+<ons-list-item class="center" onclick="loadPage('page3.html')">      
 <div class="center">Questions to ask</div>
 <div class="right">
         <ons-icon icon="md-chevron-right"></ons-icon>
 </div>
 </ons-list-item>
 
-<ons-list-item onclick="loadPage('page4.html')">      
+<ons-list-item class="center" onclick="loadPage('page4.html')">      
 <div class="center">Stress and Control</div>
 <div class="right">
         <ons-icon icon="md-chevron-right"></ons-icon>
 </div>
 </ons-list-item>
 
-<ons-list-item  onclick="loadPage('page5.html')">      
+<ons-list-item class="center"  onclick="loadPage('page5.html')">      
 <div class="center">What can I do?</div>
 <div class="right">
         <ons-icon icon="md-chevron-right"></ons-icon>
 </div>
 </ons-list-item>
 
-<ons-list-item onclick="loadPage('gallery.html')"> 
+<ons-list-item class="center" onclick="loadPage('gallery.html')"> 
     <div class="left"><ons-icon icon="md-help" class="list-item__icon" size="20px"></ons-icon>
 </div>  
 <div class="center">Gallery</div>
@@ -74,7 +124,7 @@
         <ons-icon icon="md-chevron-right"></ons-icon>
 </div>
 </ons-list-item> 
-        
+-->
 </ons-list>
 <ons-modal direction="up" animation="lift" onclick="hideModal()">
   <div class="center" style="text-align: center; background-color: #00a3e0; height: 800px; position: relative">

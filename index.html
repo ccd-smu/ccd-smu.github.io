@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="/css/onsenui.css">
   <link rel="stylesheet" href="/css/onsen-css-components.min.css">
+    <link rel="stylesheet" href="/css/examples.css">
   <script src="/js/onsenui.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -29,7 +30,32 @@
     padding: 10px;
     border: 1px solid black;
     font-family: Helvetica;
-}    </style>
+}    
+    
+    .digit {
+		opacity: 0;
+		-webkit-transform: translateX(-40px);
+			 -moz-transform: translateX(-40px);
+				-ms-transform: translateX(-40px);
+				 -o-transform: translateX(-40px);
+						transform: translateX(-40px);
+		-webkit-transition: all 0.6s ease-out;
+			 -moz-transition: all 0.6s ease-out;
+				-ms-transition: all 0.6s ease-out;
+				 -o-transition: all 0.6s ease-out;
+						transition: all 0.6s ease-out;
+	}
+	.digit.visible {
+		opacity: 1;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+	}
+
+    
+    </style>
 </head>
 <body>
 <ons-splitter>
