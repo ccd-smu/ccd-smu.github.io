@@ -1,4 +1,4 @@
-<ons-page id="page1">
+<ons-page id="page1" style="background-color: #00a3e0;">
   <ons-toolbar>
       <div class="left">
   <ons-back-button></ons-back-button>
@@ -8,34 +8,38 @@
     
 
    <ons-row>     
-       <ons-list id="reveal-elements" style="background-color: #00a3e0; text-align: center;">
-
+       <ons-list id="reveal-elements" style="background-color: #00a3e0; text-align: center; width: 100%">
+<div class="row">
     <img src="title.png" width="50%">
-        <div class="box1"><p style="font-size: 26px; padding: 0 10px 50px 10px;">This mini app introduces some simple concepts and techniques that will help you manage your stress. The module is broadly divided into the topics below.</p></div>
-        
-        
-        
-       
             
+           
+           <div style="height: 400px;background-color: #006b94">
            <div class="digit">
-                <div class="box1 blue" onclick="loadPage('page1.html')"><p>What is stress?</p></div></div>
+                <div class="box1"><p style="font-size: 26px; padding: 0 10px 0px 10px;">Stress is a feeling of being under</p></div></div>
                 <div class="digit">
-                     <div class="box1 turqoise" onclick="loadPage('page2.html')"><p>Good/bad stress?</p></div></div>
-                     <div class="digit">
-                          <div class="box1 red" onclick="loadPage('page3.html')"><p>3</p></div></div>
-                          <div class="digit">
-                               <div class="box1 green" onclick="loadPage('page4.html')"><p>4</p></div></div>
-                               <div class="digit">
-                                    <div class="box1 orange" onclick="loadPage('page5.html')"><p>5</p></div></div>
-                                    <div class="digit">
-                                         <div class="box1 bordeaux" onclick="loadPage('gallery.html')"><p>gallery</p></div>
-                                            </div>
+                    <div class="box1"><p class="redblink" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;">abnormal pressure</p></div></div></div>
+    
+               
+           <ons-row style="height: 400px;" class="digit">
+                
+               <ons-col class="box1" width="100%"><p style="font-size: 26px; padding: 0:">It can be from different aspects of your day to day life, or your choices.</p></ons-col>
+               
+                <ons-col class="box1" style="width: 50%"><p class="red" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;">Academic</p></ons-col>
+                <ons-col class="box1" style="width: 50%"><p class="blue" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;">Personal</p></ons-col>
+               <ons-col class="box1" style="width: 50%"><p class="orange" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;">Work</p></ons-col>
+               <ons-col class="box1" style="width: 50%"><p class="black" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;">etc.</p></ons-col>
+    
+</ons-row>
+           
+    </div>       
+                 
 
+           
 
 </ons-list>
 
     </ons-row>    
-        <script>    
+    <script>    
             var controller = new ScrollMagic.Controller();
 
   	// build scenes

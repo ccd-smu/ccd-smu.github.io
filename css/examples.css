@@ -291,6 +291,15 @@ h1.badge.velocity:after {
 	font-weight: lighter;
 	color: white;
 }
+.reveal-elements .digit {
+	vertical-align: top;
+}
+.reveal-elements .digit p {
+	font-size: 15px;
+	font-weight: bold;
+    margin: 15px 5px;
+}
+
 #reveal-elements .digit {
 	vertical-align: top;
 }
