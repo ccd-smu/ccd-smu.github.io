@@ -9,30 +9,96 @@
 
    <ons-row>     
        <ons-list id="reveal-elements" style="background-color: #00a3e0; text-align: center; width: 100%">
-<div class="row">
-    <img src="title.png" width="50%">
+
+    <img src="title.png" height="500px;">
             
            
-           <div style="height: 400px;background-color: #006b94">
-           <div class="digit">
+           <div style="height: 600px;background-color: #006b94">
+           <div class="digit" style="padding-top: 200px;">
                 <div class="box1"><p style="font-size: 26px; padding: 0 10px 0px 10px;">Stress is a feeling of being under</p></div></div>
                 <div class="digit">
                     <div class="box1"><p class="redblink" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;">abnormal pressure</p></div></div></div>
     
                
-           <ons-row style="height: 400px;" class="digit">
+ <ons-row style="height: 600px;" id="reveal1">
                 
-               <ons-col class="box1" width="100%"><p style="font-size: 26px; padding: 0:">It can be from different aspects of your day to day life, or your choices.</p></ons-col>
+               <ons-col id="trigger1" class="box1" width="100%" style="padding-top: 200px;"><p style="font-size: 26px; padding: 0:">It can be from different aspects of your day to day life, or your choices.</p></ons-col>
+     
+     
+     
                
-                <ons-col class="box1" style="width: 50%"><p class="red" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;">Academic</p></ons-col>
-                <ons-col class="box1" style="width: 50%"><p class="blue" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;">Personal</p></ons-col>
-               <ons-col class="box1" style="width: 50%"><p class="orange" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;">Work</p></ons-col>
-               <ons-col class="box1" style="width: 50%"><p class="black" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;">etc.</p></ons-col>
+               <ons-row class="box1" id="trigger1"><p class="red" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;"><b>Academic</b></p></ons-row>
+               <ons-row class="box1"><p class="blue" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;"><b>Personal</b></p></ons-row>
+               <ons-row class="box1"><p class="orange" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;"><b>Work</b></p></ons-row>
+               <ons-row class="box1"><p class="black" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;"><b>etc.</b></p></ons-row>
+               					<script>
+							// build scene
+							new ScrollMagic.Scene({
+												triggerElement: "#trigger1",
+												triggerHook: 0.8, // show, when scrolled 10% into view
+												duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
+												offset: 50 // move trigger to center of element
+											})
+											.setClassToggle("#reveal1", "visible") // add class to reveal
+											.addIndicators() // add indicators (requires plugin)
+											.addTo(controller);
+					</script>
     
 </ons-row>
-           
-    </div>       
-                 
+    
+
+  
+				<section class="demo" id="section-wipes">
+					<style type="text/css">
+						#pinContainer {
+							width: 100%;
+							height: 100%;
+							overflow: hidden;
+						}
+						.panel {
+							height: 100%;
+							width: 100%;
+							position: absolute;
+						}
+					</style>
+					<div id="pinContainer">
+						<section class="panel blue">
+							<b>ONE</b>
+						</section>
+						<section class="panel turqoise">
+							<b>TWO</b>
+						</section>
+						<section class="panel green">
+							<b>THREE</b>
+						</section>
+						<section class="panel bordeaux">
+							<b>FOUR</b>
+						</section>
+					</div>
+					<script>
+						$(function () { // wait for document ready
+							// init
+							var controller = new ScrollMagic.Controller();
+
+							// define movement of panels
+							var wipeAnimation = new TimelineMax()
+								.fromTo("section.panel.turqoise", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+								.fromTo("section.panel.green",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+								.fromTo("section.panel.bordeaux", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+
+							// create scene to pin and link animation
+							new ScrollMagic.Scene({
+									triggerElement: "#pinContainer",
+									triggerHook: "onLeave",
+									duration: "300%"
+								})
+								.setPin("#pinContainer")
+								.setTween(wipeAnimation)
+								.addIndicators() // add indicators (requires plugin)
+								.addTo(controller);
+						});
+					</script>
+				</section>
 
            
 
@@ -40,7 +106,8 @@
 
     </ons-row>    
     <script>    
-            var controller = new ScrollMagic.Controller();
+// init controller
+						var controller = new ScrollMagic.Controller();
 
   	// build scenes
 		var revealElements = document.getElementsByClassName("digit");
@@ -54,6 +121,9 @@
 							.addIndicators({name: "digit " + (i+1) }) // add indicators (requires plugin)
 							.addTo(controller);
 		}
+        
+
+        
     
     </script>  
 <div style="height: 200px; padding: 1px 0 0 0;">
