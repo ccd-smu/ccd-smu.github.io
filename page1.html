@@ -45,10 +45,53 @@
 					</script>
     
 </ons-row>
-    
+
+        
+        				<ons-row class="demo">
+
+					<div class="spacer s1"></div>
+					<div id="trigger" class="spacer s1"></div>
+					<div class="spacer s0"></div>
+					<div id="destroybox" class="box1 blue">
+						<a href="#" id="destroy">Kill me now!</a>
+						<a href="#" class="viewsource">view source</a>
+					</div>
+					<div class="spacer s2"></div>
+					<script>
+						$(function () { // wait for document ready
+							// init controller
+							var controller = new ScrollMagic.Controller({loglevel: 3});
+
+							// build scene
+							var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 300, loglevel: 3})
+											.setPin("#destroybox")
+											.addIndicators() // add indicators (requires plugin)
+											.addTo(controller);
+
+						$("a#destroy").on("click", function (e) {
+							e.preventDefault();
+							if ($(this).hasClass("disabled")) {
+								alert("Already removed. Please reload page to try again.");
+								} else {
+									$(this).addClass("disabled");
+									var reset = $("#reset").prop("checked");
+									if ($("#destroyController").prop("checked")) {
+										controller.destroy(reset);
+										controller = null;
+									} else {
+										scene.destroy(reset);
+									}
+									scene = null;
+									tween = null;
+								}
+							});
+						});
+					</script>
+
+           </ons-row>
 
   
-				<section class="demo" id="section-wipes">
+				<ons-row class="demo" id="section-wipes">
 					<style type="text/css">
 						#pinContainer {
 							width: 100%;
@@ -89,7 +132,7 @@
 							// create scene to pin and link animation
 							new ScrollMagic.Scene({
 									triggerElement: "#pinContainer",
-									triggerHook: "onLeave",
+									triggerHook:"onLeave",
 									duration: "300%"
 								})
 								.setPin("#pinContainer")
@@ -98,7 +141,7 @@
 								.addTo(controller);
 						});
 					</script>
-				</section>
+				</ons-row>
 
            
 
