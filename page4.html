@@ -5,20 +5,7 @@
 </div>
     <div class="center">Stress and Control</div>
   </ons-toolbar>
-
-<script>    
- $(function() {
-    var controller = new ScrollMagic.Controller();
-    var containerScene = new ScrollMagic.Scene({
-        triggerElement: '#container',
-        duration: 500
-    })
-    .setPin('#block')
-    .addIndicators()
-    .addTo(controller);
-});
     
-    </script>    
   <ons-toolbar>
       <div class="left">
   <ons-back-button></ons-back-button>
@@ -26,9 +13,96 @@
     <div class="center">Questions to ask</div>
   </ons-toolbar>
 
-<div id="container">
-    <div id="block">
-        Hi there !
-    </div>
-</div>
+<section id="landing-page" class="hero-story hero hero1 scrollMajicFix">
+		<div class="full-col width-100">
+			<h1>Landing Screen</h1>
+		</div>		
+	</section>
+
+	<section id="rooms" class="hero-story hero second-hero hero2 scrollMajicFix">
+		<div class="left-col width-33">
+			<h2>Des chambres pour vous</h2>
+		</div>	
+		<div class="right-col width-66 delayed">
+			<h2>Contenu pour les chambres</h2>
+		</div>	
+	</section>	
+
+	<section id="you" class="hero-story hero second-hero hero3 scrollMajicFix">
+		<div class="left-col width-33 delayed">
+			<h2>Contenu gauche pour proche de vous</h2>
+		</div>
+		<div class="middle-col width-33">
+			<h2>Proche de vous</h2>
+		</div>
+		<div class="right-col width-33 delayed">
+			<h2>Contenu droite pour proche de vous</h2>
+		</div>
+	</section>
+	
+	<section id="near" class="hero-story hero second-hero hero4 scrollMajicFix">
+		<div class="left-col width-66 delayed">
+			<h2>Contenu pour proche de tout</h2>
+		</div>
+		<div class="right-col width-33">
+			<h2>Proche de tout</h2>
+		</div>
+	</section>	
+
+	<footer class="hero-story hero second-hero hero5 scrollMajicFix">
+		<h2>Contenu du footer</h2>
+	</footer>
+    
+<script>
+    $(document).ready(function(){
+  const controller = new ScrollMagic.Controller();
+const slides = $('section, footer');
+TweenLite.set('.delayed', {y: '100%'});  
+// build scene
+for (var i=0; i<slides.length; i++) {
+    new ScrollMagic.Scene({
+            triggerElement: slides[i],
+            triggerHook: 'onLeave',
+            duration: "200%" 
+        })
+        .setPin(slides[i], {pushFollowers: false})        
+        .addTo(controller);
+} 
+
+$('.hero').each(function(index,element) {  
+    
+    //up
+    new ScrollMagic.Scene({
+        triggerHook: 'onLeave',
+        triggerElement: this,
+        offset:-10 // small offset added to prevent overscrolling accidentally triggering
+    })
+    .on('leave', function (event) {
+          	TweenLite.to(window, 1, {scrollTo:{y:$(window).height() * (index-1), autoKill:false}, onComplete: function(){
+          		let delayed = $(".hero" + (index+1)).find('.delayed');
+				TweenLite.set(delayed, {y: '100%'});
+   			},	ease: Power4.easeOut})
+       })
+    .addTo(controller);  // scene end
+
+
+   	//down
+   	new ScrollMagic.Scene({
+        triggerElement: this,
+        triggerHook: 'onEnter',
+        offset:10 // small offset added to prevent overscrolling accidentally triggering
+    })
+      .addTo(controller)
+      .on('enter', function (event) {                             
+                  	TweenLite.to(window, 1, {scrollTo:{y:".hero" + (index+1), autoKill:false}, onStart: function(){
+			        	let delayed = $(".hero" + (index+1)).find('.delayed');
+		   			    TweenLite.to(delayed, 0.75, {y: '0%', ease:Power1.easeOut}, 0.33);
+	        			}, ease: Power4.easeOut});
+                  
+       }); // scene end
+   
+  
+}); //hero each
+    });</script>
+    
 </ons-page>
