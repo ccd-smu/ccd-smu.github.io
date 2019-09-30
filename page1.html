@@ -1,36 +1,91 @@
 <ons-page id="page1" style="background-color: #00a3e0;">
-  <ons-toolbar>
+    
+    
+  <ons-toolbar id="navbar">
       <div class="left">
   <ons-back-button></ons-back-button>
 </div>
     <div class="center">What is stress?</div>
   </ons-toolbar>
-    
+
+<script>
+							// build scene
+							new ScrollMagic.Scene({
+												triggerElement: "#navbar",
+												triggerHook: 0, // show, when scrolled 10% into view
+												duration: 44, // hide 10% before exiting view (80% + 10% from bottom)
+												offset: 0 // move trigger to center of element
+											})
+											.setClassToggle("#navbar", "visible") // add class to reveal
+											.addIndicators() // add indicators (requires plugin)
+											.addTo(controller);
+					</script>
 
    <ons-row>     
        <ons-list id="reveal-elements" style="background-color: #00a3e0; text-align: center; width: 100%">
-
-    <img src="title.png" height="500px;">
+<ons-row>
+    <img src="title2.png" height="500px;" style="margin: auto;"></ons-row>
             
            
-           <div style="height: 600px;background-color: #006b94">
-           <div class="digit" style="padding-top: 200px;">
-                <div class="box1"><p style="font-size: 26px; padding: 0 10px 0px 10px;">Stress is a feeling of being under</p></div></div>
-                <div class="digit">
-                    <div class="box1"><p class="redblink" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;">abnormal pressure</p></div></div></div>
-    
+           <ons-row style="height: auto;" id="trigger">
+        				<ons-row></ons-row>
+					<div id="destroybox" class="box1">
+                        
+                        <ons-col class="box1" width="100%" style="padding-top: 0px;"><p style="font-size: 26px; padding: 0:">It is a feeling of</p></ons-col>
+                        
+                        <ons-col id="destroy" class="redblink box1"><p style="font-size: 26px; padding: auto; margin: auto;">Abnormal Pressure</p></ons-col>					
                
- <ons-row style="height: 600px;" id="reveal1">
+               
+               </div>
+					<script>
+						$(function () { // wait for document ready
+							// init controller
+							var controller = new ScrollMagic.Controller({loglevel: 3});
+
+							// build scene
+							var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 200, loglevel: 3})
+											.setPin("#destroybox")
+											.addIndicators() // add indicators (requires plugin)
+											.addTo(controller);
+						});
+					</script>
+
+                <ons-row style="height: auto;">
                 
-               <ons-col id="trigger1" class="box1" width="100%" style="padding-top: 200px;"><p style="font-size: 26px; padding: 0:">It can be from different aspects of your day to day life, or your choices.</p></ons-col>
+               <ons-col class="box1" width="100%" style="padding-top: 100px;"><p style="font-size: 26px; padding: 0:">It can be from different aspects of your day to day life, or your choices.</p></ons-col>
      
      
      
-               
-               <ons-row class="box1" id="trigger1"><p class="red" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;"><b>Academic</b></p></ons-row>
-               <ons-row class="box1"><p class="blue" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;"><b>Personal</b></p></ons-row>
-               <ons-row class="box1"><p class="orange" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;"><b>Work</b></p></ons-row>
-               <ons-row class="box1"><p class="black" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;"><b>etc.</b></p></ons-row>
+<ons-row id="trigger1">               
+                <ons-col width="50%" class="box1 red" id="reveal1"><p style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;"><b>Academic</b><br>
+                   <br>Unhealthy competition with classmates and peers<br>
+High expectations on oneself<br>
+Exam anxiety<br>
+Impending deadlines
+                    </p></ons-col>
+    
+                <ons-col width="50%" class="box1" id="reveal2"><p class="blue" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;"><b>Personal</b><br>
+                    Building new friendships (New environment/culture)<br>
+Balancing social life vis a vis family and school<br>
+Managing financial burden<br>
+High expectations on oneself<br>
+Being overcommitted</p></ons-col>
+</ons-row>
+                    
+                    <ons-row style="height: 50px;">&nbsp;</ons-row>
+    
+<ons-row id="trigger2">      
+                <ons-col width="50%" class="box1" id="reveal3"><p class="orange" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;"><b>Work</b><br>
+New environment<br>
+Making a good impression<br>
+Long hours<br>
+Tight deadlines<br>
+Increasing demands from boss</p></ons-col>
+                
+                <ons-col width="50%" class="box1" id="reveal4"><p class="black" style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;"><b>etc.</b></p></ons-col>
+</ons-row>
+                    
+    <ons-row style="height: 50px;">&nbsp;</ons-row>
                					<script>
 							// build scene
 							new ScrollMagic.Scene({
@@ -39,15 +94,32 @@
 												duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
 												offset: 50 // move trigger to center of element
 											})
-											.setClassToggle("#reveal1", "visible") // add class to reveal
-											.addIndicators() // add indicators (requires plugin)
+											.setClassToggle("#reveal1,#reveal2", "visible")
+                                    		.addIndicators() // add indicators (requires plugin)
+											.addTo(controller);
+					</script>
+                    
+                                   					<script>
+							// build scene
+							new ScrollMagic.Scene({
+												triggerElement: "#trigger2",
+												triggerHook: 0.8, // show, when scrolled 10% into view
+												duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
+												offset: 50 // move trigger to center of element
+											})
+											.setClassToggle("#reveal3,#reveal4", "visible")
+                                    		.addIndicators() // add indicators (requires plugin)
 											.addTo(controller);
 					</script>
     
 </ons-row>
+               
+  </ons-row>
+               
+
 
         
-        				<ons-row class="demo">
+        			<!--	<ons-row class="demo">
 
 					<div class="spacer s1"></div>
 					<div id="trigger" class="spacer s1"></div>
@@ -88,34 +160,16 @@
 						});
 					</script>
 
-           </ons-row>
+           </ons-row>-->
 
   
-		
+
+           
+
 </ons-list>
 
     </ons-row>    
-    <script>    
-// init controller
-						var controller = new ScrollMagic.Controller();
-
-  	// build scenes
-		var revealElements = document.getElementsByClassName("digit");
-		for (var i=0; i<revealElements.length; i++) { // create a scene for each element
-			new ScrollMagic.Scene({
-								triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
-								offset: -60,												 // start a little later
-								triggerHook: 0.8,
-							})
-							.setClassToggle(revealElements[i], "visible") // add class toggle
-							.addIndicators({name: "digit " + (i+1) }) // add indicators (requires plugin)
-							.addTo(controller);
-		}
-        
-
-        
-    
-    </script>  
+ 
 <div style="height: 200px; padding: 1px 0 0 0;">
   <div class="card card--material">
     <div class="card__title card--material__title">Stress</div>

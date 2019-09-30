@@ -308,6 +308,27 @@ h1.badge.velocity:after {
 	font-weight: bold;
     margin: 15px 5px;
 }
+
+
+
+
+.reveal-elements .digit2 {
+	vertical-align: top;
+}
+.reveal-elements .digit2 p {
+	font-size: 15px;
+	font-weight: bold;
+    margin: 15px 5px;
+}
+
+#reveal-elements .digit2 {
+	vertical-align: top;
+}
+#reveal-elements .digit2 p {
+	font-size: 15px;
+	font-weight: bold;
+    margin: 15px 5px;
+}
 .box1 p:first-child {
 	margin-top: 0px;
 }
