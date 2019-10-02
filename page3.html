@@ -4,42 +4,31 @@
       <div class="left" style="background-color: #00a3e0; color: #fff">
   <ons-back-button></ons-back-button>
 </div>
-    <div class="center" style="background-color: #00a3e0; color: #fff">Questions to ask</div>
+    <div class="center" style="background-color: #00a3e0; color: #fff;">Test 3</div>
   </ons-toolbar>
-<ons-row style="background-color: #00a3e0; text-align: center">
     
-    <ons-col>
-    <img src="title.png" width="50%">
 
-    </ons-col>
+    
+    
+<ons-list style="background-color: transparent; text-align: center; height: 400vh;">
+        
+    <ons-row style="height: 100vh">
+             <ons-col>  
+                 <img src="title2.png" height="400px" style="margin: auto;" id="image">
+        
+        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+        </ons-col>
+        
         </ons-row>
+        
+        
+        <ons-row class="textbox" style="height: 100vh">
+               
+        
+        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+   
 
-
-<div id="reveal-elements">
-	<div class="box1 digit blue"><p>What is stress?</p></div>
-	<div class="box1 digit turqoise"><p>Good/bad stress?</p></div>
-	<div class="box1 digit red"><p>3</p></div>
-	<div class="box1 digit green"><p>4</p></div>
-	<div class="box1 digit orange"><p>5</p></div>
-</div>
-<div class="spacer s2"></div>
+    </ons-row>
     
-    
-    <script>    
-            var controller = new ScrollMagic.Controller();
-
-  	// build scenes
-		var revealElements = document.getElementsByClassName("digit");
-		for (var i=0; i<revealElements.length; i++) { // create a scene for each element
-			new ScrollMagic.Scene({
-								triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
-								offset: 50,												 // start a little later
-								triggerHook: 0.9,
-							})
-							.setClassToggle(revealElements[i], "visible") // add class toggle
-							.addIndicators({name: "digit " + (i+1) }) // add indicators (requires plugin)
-							.addTo(controller);
-		}
-    
-    </script>  
+        </ons-list>
 </ons-page>

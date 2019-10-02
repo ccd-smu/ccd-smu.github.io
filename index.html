@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="/css/examples.css">
   <script src="/js/onsenui.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+\    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
-    <script src="/js/jquery.ScrollMagic.js"></script>
+
 
         <script>
     const loadPage = (page) => {
@@ -19,9 +19,12 @@
   document.querySelector('#navigator').bringPageTop(page, { animation: 'fade' });
 };
     </script>
+ 
+    
+
     
     <style>
-
+  
 .redblink {
  -webkit-animation: NAME-YOUR-ANIMATION 2s infinite; /* Safari 4+ */
   -moz-animation:    NAME-YOUR-ANIMATION 2s infinite; /* Fx 5+ */
@@ -70,19 +73,12 @@
 						transform: none;
 	}
         
-    #destroybox {
+        .digit2 {
 		opacity: 0;
-	}
-	#destroybox.visible {
-		opacity: 1;
-	} 
-        
-        .digit3 {
-		opacity: 0;
-		-webkit-transform: translateY(-40px);
-			 -moz-transform: translateY(-40px);
-				-ms-transform: translateY(-40px);
-				 -o-transform: translateY(-40px);
+		-webkit-transform: translatey(-40px);
+			 -moz-transform: translatey(-40px);
+				-ms-transform: translatey(-40px);
+				 -o-transform: translatey(-40px);
 						transform: translatey(-40px);
 		-webkit-transition: all 0.6s ease-out;
 			 -moz-transition: all 0.6s ease-out;
@@ -90,8 +86,40 @@
 				 -o-transition: all 0.6s ease-out;
 						transition: all 0.6s ease-out;
 	}
-	.digit3.visible {
+	.digit2.visible {
 		opacity: 1;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+	}
+        
+    #destroybox {
+		opacity: 0;
+        		-webkit-transition: all 0.6s ease-out;
+			 -moz-transition: all 0.6s ease-out;
+				-ms-transition: all 0.6s ease-out;
+				 -o-transition: all 0.6s ease-out;
+						transition: all 0.6s ease-out;
+	}
+	#destroybox.visible {
+		opacity: 1;
+	} 
+        
+        #animate10.visible {
+		-webkit-transform: scale(2.5);
+			 -moz-transform: scale(2.5));
+				-ms-transform: scale(2.5);
+				 -o-transform: scale(2.5);
+						transform: scale(2.5);
+            		-webkit-transition: all 0.6s ease-out;
+			 -moz-transition: all 0.6s ease-out;
+				-ms-transition: all 0.6s ease-out;
+				 -o-transition: all 0.6s ease-out;
+						transition: all 0.6s ease-out;
+	}
+	#animate10 {
 		-webkit-transform: none;
 			 -moz-transform: none;
 				-ms-transform: none;
@@ -101,21 +129,33 @@
     
         
     </style>
-    					<style type="text/css">
+<style type="text/css">
 #reveal0 {
+    opacity: 0;
  -webkit-animation: good 2s infinite; /* Safari 4+ */
   -moz-animation:    good 2s infinite; /* Fx 5+ */
   -o-animation:      good 2s infinite; /* Opera 12+ */
   animation:         good 2s infinite; /* IE 10+, Fx 29+ */
     align-content: center;
+                		-webkit-transition: all 0.6s ease-out;
+			 -moz-transition: all 0.6s ease-out;
+				-ms-transition: all 0.6s ease-out;
+				 -o-transition: all 0.6s ease-out;
+						transition: all 0.6s ease-out;
 }
                             
 #reveal00 {
+    opacity: 0;
  -webkit-animation: bad 2s infinite; /* Safari 4+ */
   -moz-animation:    bad 2s infinite; /* Fx 5+ */
   -o-animation:      bad 2s infinite; /* Opera 12+ */
   animation:         bad 2s infinite; /* IE 10+, Fx 29+ */
     align-content: center;
+                		-webkit-transition: all 0.6s ease-out;
+			 -moz-transition: all 0.6s ease-out;
+				-ms-transition: all 0.6s ease-out;
+				 -o-transition: all 0.6s ease-out;
+						transition: all 0.6s ease-out;
 }
                             
 @-webkit-keyframes good {
@@ -153,10 +193,6 @@
     transform: scaleX(1.1);
   }
 }  
-						#title {opacity: 0;}  
-                            
-                        #title.visible {
-                            opacity: 1;}  
                             
 						#reveal1,#reveal3 {
 							opacity: 0;
