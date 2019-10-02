@@ -26,7 +26,7 @@
 					<div id="destroybox" class="box1" style="padding: 350px 0 200px 0;">
                                                       
 
-                        <ons-col class="box1" id="trigger" width="100%"><p style="font-size: 26px; padding: 0:">is a feeling of</p></ons-col>
+                        <ons-col class="box1" width="100%"><p style="font-size: 26px; padding: 0:">is a feeling of</p></ons-col>
                         <ons-col id="destroy" class="redblink box1"><p style="font-size: 26px; padding: 20px 0; margin: auto;">Abnormal Pressure</p></ons-col>					
                
                
@@ -150,11 +150,11 @@ Increasing demands from boss</p></ons-col>
 		// build scene
                                 new ScrollMagic.Scene({
 								triggerElement: "#trigger10",
-								triggerHook: 0.6, // show, when scrolled 10% into view
-								duration: 500, // hide 10% before exiting view (80% + 10% from bottom)
+								triggerHook: 0.4, // show, when scrolled 10% into view
+								duration: 200, // hide 10% before exiting view (80% + 10% from bottom)
 								offset: 100 // move trigger to center of element
 											})
-											.setClassToggle("#animate10", "visible")
+											.setClassToggle("#animate10,#trigger10", "visible")
                                     		.addIndicators() // add indicators (requires plugin)
 											.addTo(controller);
 </script>
