@@ -1,4 +1,55 @@
 <ons-page id="page1" style="background-color: #00a3e0;">
+
+           <script>
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}      
+    </script>
+               
+    
+<ons-fab id="btn1"
+onclick="smoothScroll(document.getElementById('one'));document.getElementById('btn2').style.display = 'none';document.getElementById('btn2').style.display = 'block';" position="bottom right">
+<ons-icon icon="md-chevron-down"></ons-icon>
+</ons-fab>  
+           
+<ons-fab id="btn2" style="display: none" onclick="smoothScroll(document.getElementById('trigger0'));document.getElementById('btn2').style.display = 'none';document.getElementById('btn3').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
+<ons-icon icon="md-chevron-down" class="ons-icon zmdi zmdi-chevron-down"></ons-icon>
+</span></ons-fab>    
+
+<ons-fab id="btn3" style="display: none" onclick="smoothScroll(document.getElementById('trigger1'));document.getElementById('btn3').style.display = 'none';document.getElementById('btn4').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
+<ons-icon icon="md-chevron-down" class="ons-icon zmdi zmdi-chevron-down"></ons-icon>
+</span></ons-fab>       
+    
+<ons-fab id="btn4" style="display: none" onclick="smoothScroll(document.getElementById('trigger10'));document.getElementById('btn4').style.display = 'none';document.getElementById('btn5').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
+<ons-icon icon="md-chevron-down" class="ons-icon zmdi zmdi-chevron-down"></ons-icon>
+</span></ons-fab>    
+    
+<ons-fab id="btn5" style="display: none" onclick="smoothScroll(document.getElementById('last'));document.getElementById('btn5').style.display = 'none';document.getElementById('btn6').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
+<ons-icon icon="md-chevron-down" class="ons-icon zmdi zmdi-chevron-down"></ons-icon>
+</span></ons-fab> 
+    
+<ons-fab id="btn6" style="display: none" onclick="smoothScroll(document.getElementById('one'));document.getElementById('btn6').style.display = 'none';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
+<ons-icon icon="md-chevron-up" class="ons-icon zmdi zmdi-chevron-up"></ons-icon>
+</span></ons-fab>     
     
     
   <ons-toolbar style="background-color: #00a3e0; color: #fff">
@@ -8,11 +59,9 @@
     <div class="center" style="background-color: #00a3e0; color: #fff;">What is stress?</div>
   </ons-toolbar>
 
-
        <ons-list id="reveal-elements" style="background-color: #00a3e0; text-align: center; width: 100%">
-
-            
            
+    
            <ons-row width="100%">
                
                  <img src="title2.png" style="margin: auto; position: fixed; top: 44px; left: 50%; margin-left: -20vh; display: block; z-index: 999; max-height: 40vh;">
@@ -22,8 +71,13 @@
                	
                
                 <ons-row width="100%" id="trigger" style="height: 100vh; background-color: darkblue; position: relative;">
+                    
+                    
+ 
+                    
+                    <div id="one" style="position: absolute; top: 30%; height: 10px"></div>
                
-					<div id="destroybox" class="box1" style="padding: 0; position: absolute; top: 50%">
+					<div id="destroybox" class="box1" style="padding: 0; position: absolute; top: 50%; height: 45vh">
                                                       
 
                         <ons-col class="box1" width="100%"><p style="font-size: 26px; padding: 0:">is a feeling of</p></ons-col>
@@ -37,7 +91,7 @@
 							var controller = new ScrollMagic.Controller({loglevel: 3});
 
 							// build scene
-							var scene = new ScrollMagic.Scene({triggerElement: "#destroybox", triggerHook: 0.5, offset: 0, duration: "45%"})
+							var scene = new ScrollMagic.Scene({triggerElement: "#destroybox", triggerHook: 0.5, offset: 0, duration: "55%"})
 											.addIndicators("HERE") // add indicators (requires plugin)
                                             .setPin("#destroybox")
                                             .setClassToggle("#destroybox", "visible") // add class toggle
@@ -45,6 +99,8 @@
                                             
 						});
 					</script>
+                    
+
            </ons-row>
            
            <ons-row style="height: 80vh; background-color: hotpink; position: relative;" id="trigger0">
@@ -52,7 +108,7 @@
                
      
 <ons-row style="position: absolute; top: 0%" id="row10">     
-    <ons-row class="box1" width="100%" ><p style="font-size: 26px; padding: 20px 0;">can be either</p></ons-row>
+    <ons-row class="box1" id="reveal000" width="100%" ><p style="font-size: 26px; padding: 20px 0;">can be either</p></ons-row>
                 <ons-col width="50%" class="box1 white" id="reveal0"><p style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;"><b>Good</b><br>
                    <br>known as Eustress<br>
                     </p></ons-col>
@@ -71,7 +127,7 @@
 												duration: "45%", // hide 10% before exiting view (80% + 10% from bottom)
 												offset: 0 // move trigger to center of element
 											})
-											.setClassToggle("#reveal0,#reveal00", "visible")
+											.setClassToggle("#reveal0,#reveal00,#reveal000", "visible")
                                             .setPin("#row10")
                                     		.addIndicators() // add indicators (requires plugin)
 											.addTo(controller);
@@ -118,26 +174,24 @@
     
 </ons-row>
                
-        <ons-row style="height: 40vh; background-color: coral;">
-
-                            
+        <ons-row style="height: 100vh; background-color: coral;">                        
   
                                 
-<div class="box1" id="trigger10"><p style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;">You should look out for signs before it</p>
+<div class="box1" id="trigger10"><p style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;">can be</p>
                             
 <div id="animate10" class="box1" style="background: darkgreen; z-index: 99;">
-    <p style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;">overwhelms</p>
+    <p style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;">overwhelming</p>
 
 </div>
                             
-              <p style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;">you</p></div>                             
+              <p style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;">for you</p></div>                             
 
 <div class="spacer s2"></div>
 <script>
 		// build scene
                                 new ScrollMagic.Scene({
 								triggerElement: "#trigger10",
-								triggerHook: 0.4, // show, when scrolled 10% into view
+								triggerHook: 0.5, // show, when scrolled 10% into view
 											})
 											.setClassToggle("#animate10,#trigger10", "visible")
                                             .setPin("#trigger10")
@@ -149,7 +203,7 @@
            </ons-row>
 
   
- <ons-row style="height: 100vh; background-color: black; position: relative;" id="reveal-element">
+ <ons-row style="height: 100vh; background-color: black; position: relative;" id="last">
            
      
      <ons-col style="position: absolute; bottom: 0;">
