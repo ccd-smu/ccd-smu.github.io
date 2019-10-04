@@ -26,7 +26,7 @@ window.smoothScroll = function(target) {
     </script>
                
     
-<ons-fab id="btn1"
+<ons-fab id="btn1" ripple
 onclick="smoothScroll(document.getElementById('one'));document.getElementById('btn2').style.display = 'none';document.getElementById('btn2').style.display = 'block';" position="bottom right">
 <ons-icon icon="md-chevron-down"></ons-icon>
 </ons-fab>  
@@ -47,30 +47,40 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
 <ons-icon icon="md-chevron-down" class="ons-icon zmdi zmdi-chevron-down"></ons-icon>
 </span></ons-fab> 
     
-<ons-fab id="btn6" style="display: none" onclick="smoothScroll(document.getElementById('one'));document.getElementById('btn6').style.display = 'none';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
+<ons-fab id="btn6" style="z-index: 999;" onclick="smoothScroll(document.getElementById('zero'));document.getElementById('btn6').style.display = 'none';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
 <ons-icon icon="md-chevron-up" class="ons-icon zmdi zmdi-chevron-up"></ons-icon>
-</span></ons-fab>     
-    
-    
+</span></ons-fab> 
+        
   <ons-toolbar style="background-color: #00a3e0; color: #fff">
       <div class="left" style="background-color: #00a3e0; color: #fff">
   <ons-back-button></ons-back-button>
 </div>
     <div class="center" style="background-color: #00a3e0; color: #fff;">What is stress?</div>
   </ons-toolbar>
-
-       <ons-list id="reveal-elements" style="background-color: #00a3e0; text-align: center; width: 100%">
+    <div id="zero"></div>
+       <ons-list id="reveal-elements" style="background-color: blueviolet; text-align: center; width: 100%">
            
     
            <ons-row width="100%">
                
                  <img src="title2.png" style="margin: auto; position: fixed; top: 44px; left: 50%; margin-left: -20vh; display: block; z-index: 999; max-height: 40vh;">
                </ons-row>
-               
+               <script>
+		// topbtnhide
+                                new ScrollMagic.Scene({
+								triggerElement: "#trigger",
+								triggerHook: 0, 
+                                offset: 50
+											})
+											.setClassToggle("#btn1", "hide")
+                                    		.addIndicators() // add indicators (requires plugin)
+											.addTo(controller);
+</script>
+
                
                	
                
-                <ons-row width="100%" id="trigger" style="height: 100vh; background-color: darkblue; position: relative;">
+                <ons-row width="100%" id="trigger" style="height: 100vh; background-color: #00a3e0; position: relative;">
                     
                     
  
@@ -81,7 +91,7 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
                                                       
 
                         <ons-col class="box1" width="100%"><p style="font-size: 26px; padding: 0:">is a feeling of</p></ons-col>
-                        <ons-col id="destroy" class="redblink box1"><p style="font-size: 26px; padding: 20px 0; margin: auto;">Abnormal Pressure</p></ons-col>					
+                        <ons-col id="destroy" class="redblink box1"><p style="font-size: 26px; padding: 20px 0; margin: auto;"><b>Abnormal Pressure</b></p></ons-col>					
                
                
                </div>
@@ -92,7 +102,6 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
 
 							// build scene
 							var scene = new ScrollMagic.Scene({triggerElement: "#destroybox", triggerHook: 0.5, offset: 0, duration: "55%"})
-											.addIndicators("HERE") // add indicators (requires plugin)
                                             .setPin("#destroybox")
                                             .setClassToggle("#destroybox", "visible") // add class toggle
 											.addTo(controller);
@@ -103,7 +112,7 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
 
            </ons-row>
            
-           <ons-row style="height: 80vh; background-color: hotpink; position: relative;" id="trigger0">
+           <ons-row style="height: 100vh; background-color: hotpink; position: relative;" id="trigger0">
                 
                
      
@@ -129,7 +138,6 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
 											})
 											.setClassToggle("#reveal0,#reveal00,#reveal000", "visible")
                                             .setPin("#row10")
-                                    		.addIndicators() // add indicators (requires plugin)
 											.addTo(controller);
 					</script>
                     
@@ -141,7 +149,7 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
            
                 <ons-row style="height: 60vh; background-color: blueviolet;" id="trigger1">
                 
-               <ons-col class="box1" width="100%"><p style="font-size: 26px; padding: 20px 0;">can be from different aspects of your day to day life, or your choices.</p></ons-col>
+               <ons-col class="box1" id="reveal0000" width="100%"><p style="font-size: 26px; padding: 20px 0;">can be from different aspects of your day to day life, or your choices.</p></ons-col>
      
 <ons-row>               
                 <ons-col width="50%" class="box1" id="reveal1"><p class="red" style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;"><b>Academic</b></p></ons-col>
@@ -153,7 +161,7 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
 <ons-row id="trigger2">      
                 <ons-col width="50%" class="box1" id="reveal3"><p class="orange" style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;"><b>Work</b></p></ons-col>
                 
-                <ons-col width="50%" class="box1" id="reveal4"><p class="black" style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;"><b>etc.</b></p></ons-col>
+                <ons-col width="50%" class="box1" id="reveal4"><p class="green" style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;"><b>etc.</b></p></ons-col>
 </ons-row>
                     
     <ons-row style="height: 150px;">&nbsp;</ons-row>
@@ -164,9 +172,8 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
 												triggerHook: 0.4, // show, when scrolled 10% into view
 												duration: "45%", // hide 10% before exiting view (80% + 10% from bottom)
 											})
-											.setClassToggle("#reveal1,#reveal2,#reveal3,#reveal4", "visible")
+											.setClassToggle("#reveal1,#reveal2,#reveal3,#reveal4,#reveal0000", "visible")
                                             .setPin("#trigger1")
-                                    		.addIndicators() // add indicators (requires plugin)
 											.addTo(controller);
 					</script>
                     
@@ -177,14 +184,14 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
         <ons-row style="height: 100vh; background-color: coral;">                        
   
                                 
-<div class="box1" id="trigger10"><p style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;">can be</p>
+<div class="box1" id="trigger10"><p style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;">can be</p>
                             
 <div id="animate10" class="box1" style="background: darkgreen; z-index: 99;">
-    <p style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;">overwhelming</p>
+    <p style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;"><b>overwhelming</b></p>
 
 </div>
                             
-              <p style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;">for you</p></div>                             
+              <p style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;">for you</p></div>                             
 
 <div class="spacer s2"></div>
 <script>
@@ -195,7 +202,6 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
 											})
 											.setClassToggle("#animate10,#trigger10", "visible")
                                             .setPin("#trigger10")
-                                    		.addIndicators() // add indicators (requires plugin)
 											.addTo(controller);
 </script>
                                 
@@ -203,22 +209,30 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
            </ons-row>
 
   
- <ons-row style="height: 100vh; background-color: black; position: relative;" id="last">
+ <ons-row style="height: 100vh; background-color: black; position: relative; z-index: 1">
            
      
      <ons-col style="position: absolute; bottom: 0;">
-           <div class="digit2" style="animation-delay: 0s;">
-                <div class="box1 blue" onclick="loadPage('page1.html')"><p>What is stress?</p></div></div>
-                <div class="digit2" style="animation-delay: 0.5s;">
-                     <div class="box1 turqoise" onclick="loadPage('page2.html')"><p>Good/bad stress?</p></div></div>
+         
+         <div class="digit2" style="animation-delay: 0s;">
+                <div class="box1 redblink" onclick="loadPage('page5.html')"><p>How do I know if I am stressed?</p></div></div>
+                
+         
+         
+         <div class="digit2" style="animation-delay: 0.5s;" onclick="loadPage('gallery.html')">
+                    <div class="box1" style="background: linear-gradient(90deg, #FFF 50%, #000 50%)">
+                        <p><span style="color: #000">"Good Stress"</span> &nbsp; "Bad Stress"</p>
+                    </div></div>
+         
+         
+         
                      <div class="digit2" style="animation-delay: 1s;">
-                          <div class="box1 red" onclick="loadPage('page3.html')"><p>test 3</p></div></div>
+                          <div class="box1" onclick="loadPage('page3.html')" style="background-image: linear-gradient(90deg, #cf3535 25%, #3883d8 25%, #3883d8 50%, #ea6300 50%, #ea6300 75%,#22d659 75%);"><p>Different stressors in life</p></div></div>
                           <div class="digit2" style="animation-delay: 1.5s;">
-                               <div class="box1 green" onclick="loadPage('page4.html')"><p>4</p></div></div>
-                               <div class="digit2" style="animation-delay: 2s;">
-                                    <div class="box1 orange" onclick="loadPage('page5.html')"><p>5</p></div></div>
-                                    <div class="digit2" style="animation-delay: 2.5s;">
-                                         <div class="box1 bordeaux" onclick="loadPage('gallery.html')"><p>gallery</p></div>
+                              <div class="box1" onclick="loadPage('page4.html')" style="background: darkgreen"><p>What to do if i am <span style="font-size: 25px; padding: 0">overwhelmed</span></p></div></div>
+
+                                    <div class="digit2" style="animation-delay: 2.5s;" id="last">
+                                         <div class="box1 bordeaux" id="lastbtn" onclick="loadPage('gallery.html')"><p>Activities</p></div>
                                             </div>
 
      </ons-col>
@@ -234,7 +248,6 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
 								triggerHook: 1,
 							})
 							.setClassToggle(revealElement[i], "visible") // add class toggle
-							.addIndicators({name: "digit2 " + (i+1) }) // add indicators (requires plugin)
 							.addTo(controller);
 		}
     

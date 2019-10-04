@@ -7,10 +7,8 @@
   <script src="/js/onsenui.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
 
 
         <script>
@@ -18,14 +16,17 @@
   document.querySelector('#menu').close();
   document.querySelector('#navigator').bringPageTop(page, { animation: 'fade' });
 };
-            
-
     </script>
  
-    
-
-    
     <style>
+        
+        #btn1.hide
+        {display: none;}
+        
+        #btn1
+        {display: block;}
+        
+        
 .redblink {
  -webkit-animation: NAME-YOUR-ANIMATION 2s infinite; /* Safari 4+ */
   -moz-animation:    NAME-YOUR-ANIMATION 2s infinite; /* Fx 5+ */
@@ -124,13 +125,13 @@
 	}
         
         @-webkit-keyframes ovh {
-  0% {
+  25% {
     transform: scale(1);
   }
   50% {
     transform: scale(2.5);
   }
-  100% {
+  75% {
     transform: scale(1);
   }
 }  
@@ -142,13 +143,12 @@
 						transform: none;
 	}
         
-        #reveal000{opacity: 0}
+        #reveal000,#reveal0000{opacity: 0}
     
-                #reveal000.visible{opacity: 1}
+                #reveal000.visible,#reveal0000.visible{opacity: 1}
         
-    </style>
-<style type="text/css">
-#reveal0 {
+    
+#reveal0,#link0 {
     opacity: 0;
  -webkit-animation: good 2s infinite; /* Safari 4+ */
   -moz-animation:    good 2s infinite; /* Fx 5+ */
@@ -162,7 +162,7 @@
 						transition: all 0.6s ease-out;
 }
                             
-#reveal00 {
+#reveal00,#link00 {
     opacity: 0;
  -webkit-animation: bad 2s infinite; /* Safari 4+ */
   -moz-animation:    bad 2s infinite; /* Fx 5+ */

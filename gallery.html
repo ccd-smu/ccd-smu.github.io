@@ -31,25 +31,17 @@ document.addEventListener('postchange', function(event){
 
 
   <ons-toolbar>
-      <div class="left">
+      <div class="left" style="background-color: white;">
   <ons-back-button></ons-back-button>
 </div>
-    <div class="center">Gallery</div>
+      <div class="center" style="background: linear-gradient(90deg, #FFF 50%, #000 50%)"><span style="color: #000">"Good Stress"</span> &nbsp; <span style="color: #fff">"Bad Stress"</span></div>
+      
+          <div class="right" style="background-color: #000">
+</div>
   </ons-toolbar>
 
- <div style="height: auto; padding: 1px 0 0 0;">
-  <div class="card card--material">
-    <div class="card__title card--material__title">You probably have heard this before : A bit of stress is good.</div>
-    <div class="card__content card--material__content">
-        
-        <p>A little bit of stress is not bad; Positive stress could give you energy, motivation and spark creativity; Also makes you more alert and helps you perform better in certain situations.</p>
-        <p>Stress is only beneficial if it is short-lived. Excessive or prolonged stress can lead to illnesses such as heart disease and mental health problems such as anxiety and depression.</p>    </div>
-      
 
-  </div>
-</div>  
-
-      <ons-carousel id="carousel" swipeable auto-scroll auto-scroll-ratio="0.1">
+      <ons-carousel id="carousel" swipeable auto-scroll auto-scroll-ratio="0.1" style="background: #085078;">
           
         <ons-carousel-item style="background-color: #085078; text-align: center" onclick="next()">
 
@@ -87,7 +79,17 @@ document.addEventListener('postchange', function(event){
               </ons-row>
     </ons-carousel-item>
         </ons-carousel>
-
+<ons-list>    
+<ons-row style="height: 100vh; background-color: #000">
+    
+    <div class="box1"> <p style="font-size: 26px; padding: 20px 0;"><b>A little bit of stress is not bad; Positive stress could give you energy, motivation and spark creativity; Also makes you more alert and helps you perform better in certain situations.
+        <br>
+        Stress is only beneficial if it is short-lived. Excessive or prolonged stress can lead to illnesses such as heart disease and mental health problems such as anxiety and depression.</b>
+</p>        
+    </div>
+    
+    </ons-row>
+    </ons-list>
 
         
     
