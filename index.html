@@ -26,6 +26,38 @@
         #btn1
         {display: block;}
         
+                
+        #btn6.hide
+        {display: block;}
+        
+        #btn6
+        {display: none;}
+        
+        .overwhelm {
+ -webkit-animation: ohm 2s infinite; /* Safari 4+ */
+  -moz-animation:    ohm 2s infinite; /* Fx 5+ */
+  -o-animation:      ohm 2s infinite; /* Opera 12+ */
+  animation:         ohm 2s infinite; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes ohm {
+  0% {
+    font-size: 100%;
+  }
+  25% {
+    font-size: 150%;  
+    }
+  40% {
+    font-size: 100%;
+  }
+  60% {
+    font-size: 150%;
+  }
+  100% {
+    font-size: 100%;
+    }
+}  
+        
         
 .redblink {
  -webkit-animation: NAME-YOUR-ANIMATION 2s infinite; /* Safari 4+ */
@@ -51,6 +83,31 @@
   }
   100% {
     transform: scale(1);
+  }
+}  
+        .redblink2 {
+ -webkit-animation: NAME 2s infinite; /* Safari 4+ */
+  -moz-animation:    NAME 2s infinite; /* Fx 5+ */
+  -o-animation:      NAME 2s infinite; /* Opera 12+ */
+  animation:         NAME 2s infinite; /* IE 10+, Fx 29+ */
+    align-content: center;
+}
+
+@-webkit-keyframes NAME {
+  0% {
+      background-color: red;
+  }
+  20% {
+      background-color: darkred;
+  }
+  40% {
+     background-color: red;
+  }
+  60% {
+      background-color: darkred;
+  }
+  100% {
+      background-color: red;
   }
 }  
         
@@ -175,7 +232,8 @@
 				 -o-transition: all 0.6s ease-out;
 						transition: all 0.6s ease-out;
 }
-                            
+
+        
 @-webkit-keyframes good {
   0% {
     transform: scaleX(1);
@@ -211,7 +269,39 @@
     transform: scaleX(1.1);
   }
 }  
-                            
+
+  bar {
+ -webkit-animation: bar 2s infinite; /* Safari 4+ */
+  -moz-animation:    bar 2s infinite; /* Fx 5+ */
+  -o-animation:      bar 2s infinite; /* Opera 12+ */
+  animation:         bar 2s infinite; /* IE 10+, Fx 29+ */
+            -webkit-transition: all 0.6s ease-out;
+			 -moz-transition: all 0.6s ease-out;
+				-ms-transition: all 0.6s ease-out;
+				 -o-transition: all 0.6s ease-out;
+						transition: all 0.6s ease-out;
+}
+                   
+@-webkit-keyframes bar {
+  0% {
+    transform: translateX(-40x);
+  }
+  20% {
+    transform: translateX(0x);
+  }
+  40% {
+    transform: translateX(40x);
+  }
+  60% {
+    transform: translateX(0x);
+  }
+  100% {
+    transform: translateX(-40x);
+  }
+}  
+        
+        
+        
 						#reveal1,#reveal3 {
 							opacity: 0;
 		-webkit-transform: translateX(-40px);

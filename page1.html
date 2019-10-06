@@ -31,23 +31,23 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
 <ons-icon icon="md-chevron-down"></ons-icon>
 </ons-fab>  
            
-<ons-fab id="btn2" style="display: none" onclick="smoothScroll(document.getElementById('trigger0'));document.getElementById('btn2').style.display = 'none';document.getElementById('btn3').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
+<ons-fab id="btn2" ripple style="display: none" onclick="smoothScroll(document.getElementById('trigger0'));document.getElementById('btn2').style.display = 'none';document.getElementById('btn3').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
 <ons-icon icon="md-chevron-down" class="ons-icon zmdi zmdi-chevron-down"></ons-icon>
 </span></ons-fab>    
 
-<ons-fab id="btn3" style="display: none" onclick="smoothScroll(document.getElementById('trigger1'));document.getElementById('btn3').style.display = 'none';document.getElementById('btn4').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
+<ons-fab id="btn3" ripple style="display: none" onclick="smoothScroll(document.getElementById('trigger1'));document.getElementById('btn3').style.display = 'none';document.getElementById('btn4').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
 <ons-icon icon="md-chevron-down" class="ons-icon zmdi zmdi-chevron-down"></ons-icon>
 </span></ons-fab>       
     
-<ons-fab id="btn4" style="display: none" onclick="smoothScroll(document.getElementById('trigger10'));document.getElementById('btn4').style.display = 'none';document.getElementById('btn5').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
+<ons-fab id="btn4" ripple style="display: none" onclick="smoothScroll(document.getElementById('trigger10'));document.getElementById('btn4').style.display = 'none';document.getElementById('btn5').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
 <ons-icon icon="md-chevron-down" class="ons-icon zmdi zmdi-chevron-down"></ons-icon>
 </span></ons-fab>    
     
-<ons-fab id="btn5" style="display: none" onclick="smoothScroll(document.getElementById('last'));document.getElementById('btn5').style.display = 'none';document.getElementById('btn6').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
+<ons-fab id="btn5" ripple style="display: none" onclick="smoothScroll(document.getElementById('last'));document.getElementById('btn5').style.display = 'none';document.getElementById('btn6').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
 <ons-icon icon="md-chevron-down" class="ons-icon zmdi zmdi-chevron-down"></ons-icon>
 </span></ons-fab> 
     
-<ons-fab id="btn6" style="z-index: 999;" onclick="smoothScroll(document.getElementById('zero'));document.getElementById('btn6').style.display = 'none';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
+<ons-fab id="btn6" ripple onclick="smoothScroll(document.getElementById('zero'));document.getElementById('btn5').style.display = 'none';document.getElementById('btn6').style.display = 'none'" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
 <ons-icon icon="md-chevron-up" class="ons-icon zmdi zmdi-chevron-up"></ons-icon>
 </span></ons-fab> 
         
@@ -72,7 +72,7 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
 								triggerHook: 0, 
                                 offset: 50
 											})
-											.setClassToggle("#btn1", "hide")
+											.setClassToggle("#btn1,#btn6", "hide")
                                     		.addIndicators() // add indicators (requires plugin)
 											.addTo(controller);
 </script>
@@ -214,8 +214,8 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
      
      <ons-col style="position: absolute; bottom: 0;">
          
-         <div class="digit2" style="animation-delay: 0s;">
-                <div class="box1 redblink" onclick="loadPage('page5.html')"><p>How do I know if I am stressed?</p></div></div>
+         <div class="digit2" style="animation-delay: 0s;" onclick="loadPage('page5.html')">
+                <div class="box1 redblink2"><p>How do I know if I am stressed?</p></div></div>
                 
          
          
@@ -226,13 +226,15 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
          
          
          
-                     <div class="digit2" style="animation-delay: 1s;">
-                          <div class="box1" onclick="loadPage('page3.html')" style="background-image: linear-gradient(90deg, #cf3535 25%, #3883d8 25%, #3883d8 50%, #ea6300 50%, #ea6300 75%,#22d659 75%);"><p>Different stressors in life</p></div></div>
-                          <div class="digit2" style="animation-delay: 1.5s;">
-                              <div class="box1" onclick="loadPage('page4.html')" style="background: darkgreen"><p>What to do if i am <span style="font-size: 25px; padding: 0">overwhelmed</span></p></div></div>
+                     <div class="digit2" style="animation-delay: 1s;" onclick="loadPage('page3.html')">
+                          <div class="box1" style="background-image: linear-gradient(90deg, #cf3535 25%, #3883d8 25%, #3883d8 50%, #ea6300 50%, #ea6300 75%,#22d659 75%);"><p>Different stressors in life</p></div></div>
+         
+         
+                          <div class="digit2" style="animation-delay: 1.5s;" onclick="loadPage('page4.html')">
+                              <div class="box1" style="background: darkgreen; overflow: hidden; height: 48px;"><p>What to do if i am <span class="overwhelm" style="padding: 0; margin: 0">overwhelmed</span></p></div></div>
 
-                                    <div class="digit2" style="animation-delay: 2.5s;" id="last">
-                                         <div class="box1 bordeaux" id="lastbtn" onclick="loadPage('gallery.html')"><p>Activities</p></div>
+                                    <div class="digit2" style="animation-delay: 2.5s;" id="last" onclick="loadPage('gallery.html')">
+                                         <div class="box1 bordeaux" id="lastbtn"><p>Activities</p></div>
                                             </div>
 
      </ons-col>
