@@ -211,7 +211,9 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
   
  <ons-row style="height: 100vh; background-color: black; position: relative; z-index: 1">
            
-     
+
+   <div class="box1" style="padding: 50px 0; position: absolute; top: 45%"><p style="font-size: 26px; padding: 0 10px 50px 10px;">This mini app introduces some simple concepts and techniques that will help you manage your stress. The module is broadly divided into the topics below.</p></div>
+
      <ons-col style="position: absolute; bottom: 0;">
          
          <div class="digit2" style="animation-delay: 0s;" onclick="loadPage('page5.html')">
@@ -233,8 +235,8 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
                           <div class="digit2" style="animation-delay: 1.5s;" onclick="loadPage('page4.html')">
                               <div class="box1" style="background: darkgreen; overflow: hidden; height: 48px;"><p>What to do if i am <span class="overwhelm" style="padding: 0; margin: 0">overwhelmed</span></p></div></div>
 
-                                    <div class="digit2" style="animation-delay: 2.5s;" id="last" onclick="loadPage('gallery.html')">
-                                         <div class="box1 bordeaux" id="lastbtn"><p>Activities</p></div>
+                                    <div class="digit2" style="animation-delay: 2.5s;" id="last" onclick="loadPage('activities.html')">
+                                         <div class="box1 turqoise" id="lastbtn"><p>Activities</p></div>
                                             </div>
 
      </ons-col>
@@ -259,6 +261,65 @@ onclick="smoothScroll(document.getElementById('one'));document.getElementById('b
            
 
 </ons-list>
+  <script>
+        
+        
+  ons.ready(function() {
+  var modal = document.querySelector('ons-modal');
+  modal.show();
+  });
+    function hideModal() {
+  var modal = document.querySelector('ons-modal');
+  modal.hide();
+}
+        
 
+</script> 
+    
+
+    <ons-list id="list" onload="showModal">
+
+</ons-list>
+<ons-modal direction="up" animation="lift" onclick="hideModal()">
+    
+    
+    <ons-fab ripple onclick="hideModal()" position="bottom right">
+<ons-icon icon="md-chevron-down"></ons-icon>
+</ons-fab>  
+    
+  <div class="center" style="text-align: center; background: rgba(0,0,0,0.3); height: 100vh; position: relative">
+      
+      <ons-row>
+          
+          <ons-col>
+    <p class="card__title card--material__title" style="padding: 10vh 100px">
+How to navigate:
+          </p>
+          </ons-col>
+              </ons-row>
+      
+      <ons-row style="padding: 10vh 100px">
+      <p>
+          Scroll down slowly to see the animations, or click on the button the bottom right  
+          to play the animation in succession.
+          </p></ons-row>
+      
+            <ons-row style="padding: 10vh 100px;">
+                <ons-col>
+      <p>
+          Tap or click anywhere to dismiss.
+                    </p></ons-col></ons-row>
+      
+      
+      <ons-button size="30px"
+  icon="md-close" onclick="hideModal()" style="background: transparent; position: absolute; top: 0; right: 0;">
+</ons-button>
+      
+      
+            <img src="arrow.png" style="position: fixed; right: 0;bottom: 0; width: 40%;">   
+
+
+  </div>
+</ons-modal>  
 
 </ons-page>
