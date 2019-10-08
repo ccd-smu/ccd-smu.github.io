@@ -12,32 +12,49 @@
            
         <ons-row style="text-align: center">   
 
-        <div class="box1" style="padding: 50px 0"><p style="font-size: 26px; padding: 0 10px 50px 10px;">This mini app introduces some simple concepts and techniques that will help you manage your stress. The module is broadly divided into the topics below.</p></div>
+        <div class="box1" style="padding: 20px 0"><p style="font-size: 26px; padding: 0 10px 50px 10px;">This mini app introduces some simple concepts and techniques that will help you manage your stress. The module is broadly divided into the topics below.</p></div>
         
         </ons-row>
         
        
              <ons-row>    
                  
-                 <ons-col style="align-content: center">
-           <div class="digit" onclick="loadPage('page1.html')" style="width: 100%">
+               
+           <div class="digit" onclick="loadPage('page1.html')" style="width: 100%; padding-bottom: 20px">
                 
-               <div style="border: 2px solid white; margin: auto; border-radius: 30px; color: #fff; margin: auto"><p style="font-size: 26px; padding: 10px 20px;">Start Here!</p></div></div>
-                 </ons-col>
+               <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto"><p style="font-size: 20px; padding: 10px 20px;">Watch the introduction&nbsp;&nbsp;&nbsp;<ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-right"></ons-icon></p></div></div>
+                 
+                 
+                 
+                     </ons-row>
            
-           <!--
-                <div class="digit">
-                     <div class="box1 turqoise" onclick="loadPage('page2.html')"><p>Good/bad stress?</p></div></div>
-                     <div class="digit">
-                          <div class="box1 red" onclick="loadPage('page3.html')"><p>test 3</p></div></div>
-                          <div class="digit">
-                               <div class="box1 green" onclick="loadPage('page4.html')"><p>4</p></div></div>
-                               <div class="digit">
-                                    <div class="box1 orange" onclick="loadPage('page5.html')"><p>5</p></div></div>
-                                    <div class="digit">
-                                         <div class="box1 bordeaux" onclick="loadPage('gallery.html')"><p>gallery</p></div>
-                                            </div>-->
+           
+     <ons-row>                        
+                <div class="digit" style="animation-delay: 0s; width: 100%;" onclick="loadPage('page5.html')">
+                <div class="box1"><p>Common <img src="sign_small.png" width="30px" style="vertical-align: middle"> of stress</p></div></div>
+                
+         
+         
+         <div class="digit" style="animation-delay: 0.5s; width: 100%" onclick="loadPage('gallery.html')">
+                    <div class="box1" style="background: linear-gradient(90deg, #FFF 50%, #000 50%)">
+                        <p style="color: #000;">Good Stress&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fff">Bad Stress</span></p>
+                    </div></div>
+         
+         
+         
+                    <div class="digit" style="animation-delay: 1s; width: 100%" onclick="loadPage('page3.html')">
+                          <div class="box1" style="background-image: linear-gradient(90deg, #cf3535 25%, #3883d8 25%, #3883d8 50%, #ea6300 50%, #ea6300 75%,#22d659 75%);"><p>Different stressors in life</p></div></div>
+         
+         
+                          <div class="digit" style="animation-delay: 1.5s; width: 100%" onclick="loadPage('page4.html')">
+                              <div class="box1" style="background: darkgreen; overflow: hidden; height: 48px;"><p>What can I do to handle stress?</p></div></div>
+
+         <div class="digit" style="animation-delay: 2s; width: 100%" onclick="loadPage('page2.html')">
+                              <div class="box1" style="background: darkgreen; overflow: hidden; height: 48px;"><p>Locus of Control??</p></div></div>
+                     
+
            </ons-row>
+           
 
 </ons-list>
 
@@ -49,7 +66,7 @@
 			new ScrollMagic.Scene({
 								triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
 								offset: -60,												 // start a little later
-								triggerHook: 0.8,
+								triggerHook: 1,
 							})
 							.setClassToggle(revealElements[i], "visible") // add class toggle
 							.addTo(controller);
@@ -59,10 +76,7 @@
     
         
         
-    </ons-row>    
-        
-  
-    
+    </ons-row> 
 
     
 </ons-page>
