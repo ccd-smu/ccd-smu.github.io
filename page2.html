@@ -3,7 +3,7 @@
 var slider =  document.getElementById("range-1");
 slider.setAttribute('step', 10);
 slider.setAttribute('min', 0);
-slider.setAttribute('max', 50);
+slider.setAttribute('max', 20);
               
 
 var slider = document.getElementById("range-1");
@@ -20,15 +20,6 @@ slider.oninput = function() {
       break;
     case 20:
       output.innerHTML = "I feel ok";
-      break;
-    case 30:
-      output.innerHTML = "I feel little stress";
-      break;
-    case 40:
-      output.innerHTML = "I am not stressed";
-      break;
-    case 50:
-      output.innerHTML = "i am worried about how not stressed i am";
       break;
 
     default:
@@ -146,17 +137,28 @@ slider.oninput = function() {
       
           <ons-row style="margin-top: 20px;">
       <ons-col width="40px" style="text-align: center; line-height: 31px;">
-        <ons-icon icon="md-thumb-down"></ons-icon>
+          <p style="font-size: 10px">Internal</p>
+          <div class="dot"></div>
       </ons-col>
-      <ons-col>
-        <ons-range id="range-1" style="width: 100%;" value="50"></ons-range>
+      <ons-col style="padding-top: 50px">
+        <ons-range id="range-1" style="width: 100%;" value="10"></ons-range>
       </ons-col>
       <ons-col width="40px" style="text-align: center; line-height: 31px;">
-        <ons-icon icon="md-thumb-up"></ons-icon>
+        <p style="font-size: 10px">External</p>
+        <div class="dot2"></div>
       </ons-col>
     </ons-row>
+      
+      <p>Locus of control is a continuum. No one has a 100 percent external or internal locus of control. Instead, most people lie somewhere on the continuum between the two extremes. These are characteristics of people with dominant internal or external locus of control.</p>
+
+      
     
       <div id='dispDiv' style='margin-top:2em;'></div>
+      
+      <h1>Academic</h1>
+      <p>What you can control vs what you cannot control</p>
+      
+      
   </div>
 </div>
 
