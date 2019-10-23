@@ -12,21 +12,6 @@ var next = function() {
   carousel.next();
 };
 
-
-      
-document.addEventListener('postchange', function(event){
-  if (event.activeIndex === 1) {
-    document.getElementById("carousel").style.backgroundColor = "#763C9E";
-
-
-    
-  } else {
-
-    document.getElementById("carousel").style.backgroundColor = "#085078";
-
-
-  }
-});
   </script>
 
 
@@ -39,7 +24,22 @@ document.addEventListener('postchange', function(event){
           <div class="right" style="background-color: #000">
 </div>
   </ons-toolbar>
+<ons-list>
+    <ons-row style="background: black;">
+    
+    <ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
+     
+<p style="font-size: 26px; padding: 10px 0;">A little bit of stress is not bad; Positive stress could give you energy, motivation and spark creativity; Also makes you more alert and helps you perform better in certain situations.</p>
 
+        
+<p style="font-size: 26px; padding: 10px 0;">Stress is only beneficial if it is short-lived. Excessive or prolonged stress can lead to illnesses such as heart disease and mental health problems such as anxiety and depression.</p>
+
+
+    </ons-col>
+
+    
+    </ons-row>
+    </ons-list>
 
       <ons-carousel id="carousel" swipeable auto-scroll auto-scroll-ratio="0.1" style="background: #085078;">
           
@@ -65,7 +65,11 @@ document.addEventListener('postchange', function(event){
 
     </ons-col>
             
-            <ons-col width="30px"><ons-icon icon="md-chevron-right" size="30px" style="color: white"></ons-icon></ons-col>
+            
+                <ons-fab ripple onclick="next()" position="middle right">
+<ons-icon icon="md-chevron-right"></ons-icon>
+</ons-fab>  
+            
 </ons-row>
     </ons-carousel-item>
           
@@ -76,8 +80,10 @@ document.addEventListener('postchange', function(event){
                   <img src="distress.png" width="400px">
               
               <ons-row style="width: 100%;">
-                  
-                  <ons-col width="30px"><ons-icon icon="md-chevron-left" size="30px" style="color: white"></ons-icon></ons-col>
+
+            <ons-fab ripple onclick="prev()" position="middle left">
+<ons-icon icon="md-chevron-left"></ons-icon>
+</ons-fab>  
                   
 <ons-col class="box1" width="80%" style="padding: 20px 0; font-size: 26px">
     
@@ -97,53 +103,11 @@ document.addEventListener('postchange', function(event){
     </ons-carousel-item>
         </ons-carousel>
 <ons-list>    
-<ons-row style="background: black;">
-    
-    <ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
-     
-<p style="font-size: 26px; padding: 10px 0;">A little bit of stress is not bad; Positive stress could give you energy, motivation and spark creativity; Also makes you more alert and helps you perform better in certain situations.</p>
-
-        
-<p style="font-size: 26px; padding: 10px 0;">Stress is only beneficial if it is short-lived. Excessive or prolonged stress can lead to illnesses such as heart disease and mental health problems such as anxiety and depression.</p>
-
-
-    </ons-col>
 
     
-    </ons-row>
-    
-<ons-row style="background: #763C9E;">
-    
-    <ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
-     
-        <p style="font-size: 26px; padding: 10px 0;"><b>Negative stressors</b></p>
-
-        
-<p style="font-size: 26px; padding: 0;">The death of a loved one</p>
-<p style="font-size: 26px; padding: 0;">Injury or illness (oneself or a family member)</p>
-<p style="font-size: 26px; padding: 0;">Conflict in interpersonal relationships</p>
-<p style="font-size: 26px; padding: 0;">Feeling unprepared for tests or exams</p>
-<p style="font-size: 26px; padding: 0;">Financial problems</p>
-<p style="font-size: 26px; padding: 0;">Class presentations/ public speaking</p>
-<p style="font-size: 26px; padding: 0;">Fears (fear of flying, heights, meeting new people)</p>
-        
-<p style="font-size: 26px; padding: 0;">Unrealistic expectations</p>
-
-<p style="font-size: 26px; padding: 0;">Lack of social self-confidence</p>
-<p style="font-size: 26px; padding: 0;">Procrastination and failing to plan ahead</p>
-<p style="font-size: 26px; padding: 0;">Over scheduling</p>
-<p style="font-size: 26px; padding: 0;">Conflicts with close friends</p>
-
-
-
-
-
-    </ons-col>
 
     
-    </ons-row>
-    
-    <ons-row style="background: #085078;">
+    <ons-row style="background: black;">
     
     <ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
      

@@ -17,7 +17,43 @@
            </ons-row>
     
     
-           <ons-row style="text-align: center; background-color: #cf3535">  
+           <ons-row style="text-align: center; background-color: #000">  
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
+    
+    <p style="font-size: 26px; padding: 10px 0"><b>You will be presented with a few scenarios below. Remember if you have a more external or internal locus of control form the activity, and look at the appropriate columns.</b>
+    <br><br>
+        
+    The objective of this activity is to build range in your locus of control. If you belong strongly to one category (internal or external) and find yourself feeling stressed, you can consider adopting a different or "opposite" perspective.
+    <br><br>
+    This can help you rationalise your stressors, and understand that they might be areas that are within out outside of your control.
+    </p>
+
+    </ons-col>
+
+    </ons-row>    
+               <ons-row style="text-align: center; background-color: #000">  
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
+    
+    <p style="font-size: 26px; padding: 10px 0">I tend to have a</p>
+
+    <p style="font-size: 26px; padding: 10px 0">Internal <ons-switch id="switch" checked></ons-switch> External </p>
+    
+    <p style="font-size: 26px; padding: 10px 0">locus of control</p>
+    </ons-col>
+
+    </ons-row>    
+ <script>   
+  $('#switch').change(function(){
+  if (this.checked) {
+    $('#acad').fadeIn('fast');
+     $('#person').fadeOut('fast');
+  } else {
+    $('#acad').fadeOut('fast');
+    $('#person').fadeIn('fast');
+  }                   
+  });  </script>
+    
+           <ons-row style="text-align: center; background-color: #cf3535" id="acad">  
 <ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
     
     <p style="font-size: 26px; padding: 10px 0"><b>Academic stressors</b></p>
@@ -34,7 +70,7 @@
     
 
     
-           <ons-row style="text-align: center; background-color: #3883d8">  
+           <ons-row style="text-align: center; background-color: #3883d8" id="person">  
 <ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
     
     <p style="font-size: 26px; padding: 10px 0"><b>Personal stressors</b></p>

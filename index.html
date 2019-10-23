@@ -19,6 +19,28 @@
     </script>
  
     <style>
+        .switch__toggle
+        {background-color: #44db5e;
+        box-shadow: none;
+        }
+        
+@-webkit-keyframes dot3 {
+  0% {
+      border: 3px solid transparent;
+}
+  50% {
+border: 3px solid white ;
+    }
+  100% {
+border: 3px solid transparent ;
+    }
+}              
+        
+        
+        #range-1{
+            background-image: linear-gradient(#0076ff,#0076ff);
+        }    
+        
 .triangle {
     color: #ff7f4f;
     width: 0;
@@ -122,22 +144,6 @@ opacity: 1;
     font-size: 100%;
     }
 }  
-        
-@-webkit-keyframes border-emphasis {
-  0% {
-border: 2px solid white;
-}
-
-  50% {
-border: 10px solid white;
-    opacity: 0.5
-    }
-    
-  100% {
-border: 2px solid white;
-    }
-}  
-        
         
 .redblink {
  -webkit-animation: NAME-YOUR-ANIMATION 2s infinite; /* Safari 4+ */
