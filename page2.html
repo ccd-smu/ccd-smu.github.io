@@ -8,22 +8,23 @@ slider.setAttribute('max', 20);
 
 var slider = document.getElementById("range-1");
 var output = document.getElementById("dispDiv");
-output.innerHTML = "I feel a bit stressed";
+output.innerHTML = "<p style='font-size: 26px'><b>Neither external nor internal locus of control</b></p><p style='font-size: 26px'>Jacob, a 21 years old undergraduate, received an “A-” for his Final Statistic grade. He believes that it was a results of his hard work, effort and his awesome groupmates. They worked hard together for their final project thereafter, they also helped him in areas that he did not understand.</p>";
 
 slider.oninput = function() {
   switch (parseInt(this.value)) {
     case 0:
-      output.innerHTML = "I feel extremely stressed";
+      output.innerHTML = "<p style='font-size: 26px'><b>High internal locus of control</b></p><p style='font-size: 26px'>Pamela, a 20 years old undergraduate student, received an “A+” for her Final Statistics examination. She believes that she did very well because she spent 3 hours every night for a month to practise and revise. It was her hard work and effort that paid off.</p>";
       break;
     case 10:
-      output.innerHTML = "I feel a bit stressed";
+      output.innerHTML = "<p style='font-size: 26px'><b>Neither external nor internal locus of control</b></p><p style='font-size: 26px'>Jacob, a 21 years old undergraduate, received an “A-” for his Final Statistic grade. He believes that it was a results of his hard work, effort and his awesome groupmates. They worked hard together for their final project thereafter, they also helped him in areas that he did not understand.</p>"
+;
       break;
     case 20:
-      output.innerHTML = "I feel ok";
+      output.innerHTML = "<p style='font-size: 26px'><b>High external locus of control</b></p><p style='font-size: 26px'>Andrew, 21 years old, undergraduate believes that he  received a “C-” in his statistics exams because his professor does not like him and also, because he was late for the exam because of the heavy downpour on the exam day.</p>";
       break;
 
     default:
-      output.innerHTML = "Slide the slider according to how you are feeling right now, subjectively..";
+      output.innerHTML = "<p style='font-size: 26px'><b>Neither external nor internal locus of control</b></p><p style='font-size: 26px'>Jacob, a 21 years old undergraduate, received an “A-” for his Final Statistic grade. He believes that it was a results of his hard work, effort and his awesome groupmates. They worked hard together for their final project thereafter, they also helped him in areas that he did not understand.</p>";
   }
 }      
 
@@ -127,49 +128,53 @@ slider.oninput = function() {
     </ons-col>
 
     </ons-row>
-    </ons-list>
-    
 
-<div style="height: auto; padding: 1px 0 0 0;">
-  <div class="card card--material">
-    <div class="card__title card--material__title">Locus of control continuum</div>
-    <div class="card__content card--material__content">Internal to external locus of control</div>
+    
+     <ons-row style="text-align: center; background-color: black; height: 100vh">  
+
+
+<ons-col class="box1" width="80%" style="padding: 20px 0; font-size: 26px">
+      <p style="font-size: 26px; padding: 10px 0"><b>Locus of Control</b></p>
       
-          <ons-row style="margin-top: 20px;">
-      <ons-col width="40px" style="text-align: center; line-height: 31px;">
-          <p style="font-size: 10px">Internal</p>
+    
+   
+      <p style="font-size: 22px">Locus of control exists on a continuum. No one has a 100% external or internal locus of control. Instead, most people lie somewhere on the continuum between the two extremes. </p>
+              
+    
+         <div id='dispDiv' style='margin-top:2em; color: white'></div>
+    
+    
+          <ons-row style="margin-top: 20px; padding: 20px 0;">
+      <ons-col width="10%" style="text-align: center; line-height: 31px;">
           <div class="dot"></div>
       </ons-col>
-      <ons-col style="padding-top: 50px">
+      <ons-col>
         <ons-range id="range-1" style="width: 100%;" value="10"></ons-range>
       </ons-col>
-      <ons-col width="40px" style="text-align: center; line-height: 31px;">
-        <p style="font-size: 10px">External</p>
+      <ons-col width="10%" style="text-align: center; line-height: 31px;">
         <div class="dot2"></div>
       </ons-col>
     </ons-row>
-      
-      <p>Locus of control is a continuum. No one has a 100 percent external or internal locus of control. Instead, most people lie somewhere on the continuum between the two extremes. These are characteristics of people with dominant internal or external locus of control.</p>
-
-      
     
-      <div id='dispDiv' style='margin-top:2em;'></div>
-      
-      <h1>Academic</h1>
-      <p>What you can control vs what you cannot control</p>
-      
-      
-  </div>
-</div>
+    
+    
+   
+          
+    <p style="font-size: 22px">These are characteristics of people with dominant internal or external locus of control.</p>
 
-<div style="height: 200px; padding: 1px 0 0 0;">
-  <div class="card card--material">
-    <div class="card__title card--material__title">You probably have heard this before : A bit of stress is good.</div>
-    <div class="card__content card--material__content">But when does it become "bad", if at all?<br>
-      Well, if it becomes debilitating, to the point that you are not able to perform the functions required in a social setting. </div>
       
+    <p style="font-size: 22px"><b>Remember that you always have the ability to change your situation.</b> There is no situation that you are in that you can’t improve through your own personal action. Sure, it might seem hopeless at the moment, but there are better roads forward from here, no matter what the situation.</p> 
+    <p style="font-size: 22px"><b>Make a list of possible actions you can take in response to a difficult situation.</b> Everyone faces serious challenges at some point in their life. Rather than looking at that challenge as an impenetrable wall, instead look for things you can to to handle this difficult situation. </p>
 
-  </div>
-</div>  
+    <p style="font-size: 22px"><b>Stop focusing on things that you cannot control about a situation, and when you catch yourself doing it, think instead about the aspects of the situation that you <i>can</i> control.</b> There are factors in every situation that you can’t control. You can’t control the personalities and responses of others. You can’t control natural events or physical accidents. So stop worrying about those things, because you can’t do much about them. Instead, look at what you can control – your responses to those situations, how you handle your emotions, and the daily choices you make. The better your responses and choices, the less impact those negative things you can’t control will have.</p>
+
+ 
+
+
+         </ons-col>
+
+    </ons-row>
+    </ons-list>
+ 
     
 </ons-page>

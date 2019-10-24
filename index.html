@@ -67,19 +67,13 @@ transform: scale(1);
 
 }
   50% {
-transform: scale(1);
+transform: scale(0.5);
     opacity: 1;
 
 }
-
-  75% {
-transform: scale(0.5);
-opacity: 0.3;
-    }
     
   100% {
-transform: scale(0.5);
-opacity: 0.3;
+transform: scale(1);
     }
 }  
         
@@ -87,7 +81,7 @@ opacity: 0.3;
     .dot2 {
   height: 25px;
   width: 25px;
-  background-color: transparent;
+  background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
 border: 2px solid #bbb; 
@@ -95,21 +89,13 @@ animation: dot2 2s infinite;
 }
         
 @-webkit-keyframes dot2 {
-  0% {
-    opacity: 1;
-
-}
-
-  50% {
-border: 2px solid #bbb ;
-opacity:1;
-    }
-  100% {
-border: 2px solid transparent ;
-opacity: 1;
-    }
-}      
-        
+		0% {
+          box-shadow: 0 0 0 0px rgba(255, 255, 255, 1);
+     }
+     100% {
+          box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+     }
+}    
         #btn1.hide
         {display: none;}
         
@@ -424,6 +410,11 @@ opacity: 1;
 									 -o-transform: none;
 											transform: none;
 						}
+        
+        
+        .skew{
+            transform: matrix(1,.2,0,1,0,0);
+        }
 					</style>
 </head>
 <body>
