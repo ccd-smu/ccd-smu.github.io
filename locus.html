@@ -27,6 +27,36 @@ function computeICI()
 		parseInt(document.querySelector('input[name = "Q27"]:checked').value) + parseInt(document.querySelector('input[name = "Q28"]:checked').value) 
 	document.ICI.ICIscore.value = ici
 }
+    </script>
+    
+ <script>   
+    
+
+function computeICI()
+{
+	var ici =
+		parseInt(document.querySelector('input[name = "Q1"]:checked').value) +
+        parseInt(document.querySelector('input[name = "Q2"]:checked').value) +
+		parseInt(document.querySelector('input[name = "Q3"]:checked').value) + parseInt(document.querySelector('input[name = "Q4"]:checked').value) +
+        parseInt(document.querySelector('input[name = "Q5"]:checked').value) +
+        parseInt(document.querySelector('input[name = "Q6"]:checked').value) +
+		parseInt(document.querySelector('input[name = "Q7"]:checked').value) + parseInt(document.querySelector('input[name = "Q8"]:checked').value) +
+        parseInt(document.querySelector('input[name = "Q9"]:checked').value) +
+        parseInt(document.querySelector('input[name = "Q10"]:checked').value) +
+		parseInt(document.querySelector('input[name = "Q11"]:checked').value) + parseInt(document.querySelector('input[name = "Q12"]:checked').value) +
+        parseInt(document.querySelector('input[name = "Q13"]:checked').value) +
+        parseInt(document.querySelector('input[name = "Q14"]:checked').value) +
+		parseInt(document.querySelector('input[name = "Q15"]:checked').value) + parseInt(document.querySelector('input[name = "Q16"]:checked').value) +
+		parseInt(document.querySelector('input[name = "Q17"]:checked').value) +
+		parseInt(document.querySelector('input[name = "Q18"]:checked').value) + parseInt(document.querySelector('input[name = "Q19"]:checked').value) +
+        parseInt(document.querySelector('input[name = "Q20"]:checked').value) +
+        parseInt(document.querySelector('input[name = "Q21"]:checked').value) +
+		parseInt(document.querySelector('input[name = "Q22"]:checked').value) + parseInt(document.querySelector('input[name = "Q23"]:checked').value) + parseInt(document.querySelector('input[name = "Q24"]:checked').value) +
+        parseInt(document.querySelector('input[name = "Q25"]:checked').value) +
+        parseInt(document.querySelector('input[name = "Q26"]:checked').value) +
+		parseInt(document.querySelector('input[name = "Q27"]:checked').value) + parseInt(document.querySelector('input[name = "Q28"]:checked').value) 
+	document.ICI.ICIscore.value = ici
+}
 
 function results() {    
 var text;
@@ -41,25 +71,38 @@ document.getElementById("output").innerHTML = "Your choices indicate a belief th
 }
           else
           {
-document.getElementById("output").innerHTML = "Your choices indicate neither an internal nor external Locus of Control"
+document.getElementById("output").innerHTML = "Your choices indicate neither an internal nor external Locus of Control<br><br>"
 }              
 }
-</script>
+
+ </script>    
+    
+    
+
 
   <ons-toolbar>
-      <div class="left">
+      <div class="left" style="background-color: indigo;">
   <ons-back-button></ons-back-button>
 </div>
-    <div class="center">Internal Control Index</div>
+    <div class="center" style="background-color: indigo; color: white">Internal Control Index</div> 
+      <div class="right" style="background-color: indigo;"></div>
   </ons-toolbar>
 
-<div style="height: 200px; padding: 1px 0 0 0;">
-  <div class="card card--material">
-    <div class="card__title card--material__title">Internal Control Index</div>
-      <div class="card__content card--material__content">Choose the option in the dropdown boxes that you identify with. <br><b>Rare</b> is less than 10% of the time<br><b>Seldom</b> is 30% of the time,<br><b>Sometimes</b> is 50% of the time, <br><b>Frequent</b> is 70% of the time; and <br> <b>Often</b> is 90% and above of the time.</div></div></div>
+            
+    <ons-row style="text-align: center; background-color: indigo" id="top3">  
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">    
+
+     
+    <p style="font-size: 26px; padding: 20px 0">Select the option that you identify with. </p>
+<p style="font-size: 22px; padding: 20px 0; text-align: left"><b>Rare</b> is less than 10% of the time<br><b>Seldom</b> is 30% of the time,<br><b>Sometimes</b> is 50% of the time, <br><b>Frequent</b> is 70% of the time; and <br> <b>Often</b> is 90% and above of the time.</p>
+    
+
+    
+        </ons-col>
+    </ons-row>
       
-<form name="ICI" onchange="computeICI()">
-<ons-list>
+<form name="ICI" onchange="computeICI();results()">
+<ons-list style="text-align: left; background-color: white">
 <ons-list-item>
 When faced with a problem I try to forget it.<br>
     
@@ -737,17 +780,59 @@ When I am involved in something I try to find out all I can about what is going 
   </div>
 </div>
 </ons-list-item>
-    <ons-list-item>
-        <b>You internal locus of control score is &nbsp;&nbsp;<input type="text" class="textarea" id="ICIscore" name="ICIscore"></b><br>
-      </ons-list-item>
+    
+    
+    <ons-row style="text-align: center; background-color: indigo">  
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">    
+    
+    <p style="text-align: left; font-size: 22px;"><b>Your internal locus of control score is &nbsp;&nbsp;<input type="text" class="textarea" id="ICIscore" name="ICIscore" style="background: black; color: white; border-radius: 0; border: none;"></b></p>    
+    
+    <p style="text-align: left; font-size: 22px; padding: 20px 0"><span id="output"></span></p>
+    
+        </ons-col></ons-row>
+    
+    
 </ons-list>
-<br><br>
-</form>
-      <ons-button onclick="results()">What does that number mean?</ons-button>
 
-      <p id="output"></p>
-      
-      
-      <ons-button onclick="OPENNEWPAGE">I still don't get it</ons-button>
+</form>
+           <ons-row style="text-align: center; background-color: indigo">  
+<ons-col class="box1" width="100%" style="padding: 20px 0;">
+    
+    <p style="font-size: 26px; padding: 10px 0">If you do not see a number in the box above, you might have skipped one of the statements.
+    </p>
+
+     <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto" onclick="smoothScroll(document.getElementById('top3'));">
+             <p style="font-size: 20px; padding: 10px 20px;"><ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-up"></ons-icon>&nbsp;&nbsp;&nbsp;Back to top</p></div>
+    
+    
+               <script>
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}      
+    </script>
+    
+    
+    </ons-col>
+
+               </ons-row>
 
 </ons-page>
