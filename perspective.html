@@ -21,7 +21,7 @@
            <ons-row style="text-align: center; background-color: #000;">  
 <ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
     
-    <p style="font-size: 26px; padding: 10px 0"><b>You will be presented with a few scenarios below. Remember if you have a more external or internal locus of control form the activity, and look at the appropriate columns.</b>
+    <p style="font-size: 26px; padding: 10px 0"><b>You will be presented with a few scenarios below. Remember if you have a more external or internal locus of control from the activity, and look at the appropriate columns.</b>
     <br><br>
         
     The objective of this activity is to build range in your locus of control. If you belong strongly to one category (internal or external) and find yourself feeling stressed, you can consider adopting a different or "opposite" perspective.
@@ -37,7 +37,7 @@
     
     <p style="font-size: 26px; padding: 10px 0">I tend to have a</p>
 
-    <p style="font-size: 26px; padding: 10px 0">Internal <ons-switch id="switch"></ons-switch> External </p>
+    <p style="font-size: 26px; padding: 10px 0"><span class="active" id="internal">Internal</span> <ons-switch id="switch"></ons-switch> <span id="external">External</span> </p>
     
     <p style="font-size: 26px; padding: 10px 0">locus of control</p>
     </ons-col>
@@ -52,6 +52,9 @@
      $('#internal1').fadeOut('fast');
        $('#internal2').fadeOut('fast');
        $('#internal3').fadeOut('fast');
+        $('#external').addClass('active');
+       $('#internal').removeClass('active');
+      
   } else {
     $('#external1').fadeOut('fast');
      $('#external2').fadeOut('fast');
@@ -59,6 +62,8 @@
      $('#internal1').fadeIn('fast');
        $('#internal2').fadeIn('fast');
        $('#internal3').fadeIn('fast');
+      $('#internal').addClass('active');
+       $('#external').removeClass('active');
   }                   
   });  </script>
     

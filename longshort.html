@@ -1,0 +1,265 @@
+<ons-page id="longshort">
+  
+  <ons-toolbar>
+      <div class="left" style="background-color: darkblue; color: #fff">
+  <ons-back-button></ons-back-button>
+</div>
+    <div class="center" style="background: darkblue; color: #fff;">Long Term &amp; Short Term Stress</div>
+      
+    <div class="right" style="background-color: darkblue; color: #fff;"></div>
+
+  </ons-toolbar>
+    <ons-list>
+       <ons-row style="text-align: center; background-color: darkblue;" id="top">  
+           
+                         <img src="areas.png" style="margin: auto; height: 40vh;">   
+           </ons-row>
+    
+    
+           <ons-row style="text-align: center; background-color: darkblue;">  
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
+    
+    <p style="font-size: 22px; padding: 10px 0"><b>Long term (Chronic) stress vs. Short term (Acute) stress</b>
+    <br><br>
+        
+    The objective of this activity is to build range in your locus of control. If you belong strongly to one category (internal or external) and find yourself feeling stressed, you can consider adopting a different or "opposite" perspective.
+    <br><br>
+    This can help you rationalise your stressors, and understand that they might be areas that are within out outside of your control.
+    </p>
+
+    </ons-col>
+
+    </ons-row>    
+               <ons-row style="text-align: center; background-color: #000;">  
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
+    
+    <p style="font-size: 22px; padding: 10px 0"><span id="long">Long-term</span> <ons-switch checked id="switch"></ons-switch> <span id="short" class="active">Short-term</span></p>
+    </ons-col>
+
+    </ons-row>    
+ <script>   
+  $('#switch').change(function(){
+  if (this.checked) {
+    $('#internal4').fadeIn('fast');
+     $('#internal5').fadeIn('fast');
+       $('#internal6').fadeIn('fast');
+     $('#external4').fadeOut('fast');
+       $('#external5').fadeOut('fast');
+       $('#external6').fadeOut('fast');
+      $('#short').addClass('active');
+       $('#long').removeClass('active');
+  } else {
+    $('#internal4').fadeOut('fast');
+     $('#internal5').fadeOut('fast');
+       $('#internal6').fadeOut('fast');
+     $('#external4').fadeIn('fast');
+       $('#external5').fadeIn('fast');
+        $('#external6').fadeIn('fast');
+       $('#long').addClass('active');
+       $('#short').removeClass('active');
+  }                   
+  });  </script>
+    
+    
+   
+
+          
+       
+ <ons-row style="text-align: center; background-color: #cf3535; display: none;" id="external4">  
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
+    
+    <p style="font-size: 22px; padding: 10px 0">Below are some long-term (chronic) stressors, along with some tips to manage them.</p>    
+    
+    
+    <p style="font-size: 22px; padding: 10px 0"><b>Academic</b></p>
+    
+    <p style="font-size: 22px; padding: 10px 0;">Unhealthy competition with classmates and peers- Being jealous when others succeed.
+
+<p style="font-size: 22px; padding: 10px 0;">High expectations on oneself and feeling demoralized when one does not succeed.
+</p>
+    
+    <p style="font-size: 22px; padding: 10px 0"><b>Tips</b></p>
+     
+    <p style="font-size: 22px; padding: 10px 0;">Act gracefully. You can’t guarantee that you will always succeed, but you can take charge of how you feel. Focus on showing good character. Be proud of others’ efforts and your own, no matter who comes out on top.</p>
+
+    <p style="font-size: 22px; padding: 10px 0;">Create a vision/goals board and work towards your goals- do not feel disheartened if you fail at times, keep trying, change your perspective and never give up.</p>
+
+    <p style="font-size: 22px; padding: 10px 0;">See a professional/counsellor/therapist if you do not feel better.</p>
+    
+     </ons-col>
+
+    </ons-row>
+          
+     <ons-row style="text-align: center; background-color: #cf3535; display: none;" id="external5">  
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
+
+    
+    <p style="font-size: 22px; padding: 10px 0"><b>Internship/Work</b></p>
+
+    
+    <p style="font-size: 22px; padding: 10px 0;">Balancing social life vis-a-vis family and school</p>
+
+    <p style="font-size: 22px; padding: 10px 0;">Managing financial burden</p>
+ 
+    <p style="font-size: 22px; padding: 10px 0;">High expectations on oneself</p>
+
+<p style="font-size: 22px; padding: 10px 0;">Being overcommitted </p>
+    
+    
+      <p style="font-size: 22px; padding: 10px 0"><b>Tip</b></p>
+
+    <p style="font-size: 22px; padding: 10px 0;">Choose to spend time with resilient and positive people</p>
+
+    <p style="font-size: 22px; padding: 10px 0;">Improve your planning- start making daily check lists- take action by organizing your weekly activities</p>
+    <p style="font-size: 22px; padding: 10px 0;">Get a Job that Doesn't Stress You out. Make a budget plan and stick to it</p>
+
+    <p style="font-size: 22px; padding: 10px 0;">Learn relaxation techniques/ practice yoga/ meditation</p>
+
+    <p style="font-size: 22px; padding: 10px 0;">Pay attention to your diet, exercise and sleep</p>
+
+    <p style="font-size: 22px; padding: 10px 0;">Count your daily blessings by unleashing gratitude</p>
+    <p style="font-size: 22px; padding: 10px 0;">See a professional/counsellor/therapist if you do not feel better</p>
+
+
+
+    </ons-col>
+
+    </ons-row>
+          
+          
+     <ons-row style="text-align: center; background-color: #cf3535; display: none;" id="external6">  
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
+
+    
+    <p style="font-size: 22px; padding: 10px 0"><b>Personal</b></p>
+
+     
+    
+    <p style="font-size: 22px; padding-bottom: 20px;">Increasing demands from work/ boss</p>
+<p style="font-size: 22px; padding-bottom: 20px;">Long hours at work 
+</p>
+
+    <p style="font-size: 22px; padding: 10px 0"><b>Tips</b></p>
+    <p style="font-size: 22px; padding-bottom: 20px;">Identify the aspects of the situation you can control and aspect you can’t.</p> 
+<p style="font-size: 22px; padding-bottom: 20px;">Gently confront your boss to set mutual expectations and priorities.</p>
+    <p style="font-size: 22px; padding-bottom: 20px;">Eat right and sleep well.</p>
+<p style="font-size: 22px; padding-bottom: 20px;">See a professional/counsellor/therapist if you do not feel better
+</p>
+
+    </ons-col>
+
+    </ons-row>
+        
+
+        
+
+
+                   <ons-row style="text-align: center; background-color: #3883d8" id="internal4">  
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
+    
+    
+    <p style="font-size: 22px; padding: 10px 0">Below are some short-term (acute) stressors, along with some tips to manage them.</p>    
+    
+    <p style="font-size: 22px; padding: 10px 0"><b>Academic</b></p>
+
+    <p style="font-size: 22px; padding: 10px 0;">Exam anxiety  before the start of the finals.</p>
+ <p style="font-size: 22px; padding: 10px 0;">Impending deadlines of assignments and projects.</p>
+    
+   <p style="font-size: 22px; padding: 10px 0"><b>Tips</b></p>
+    
+    <p style="font-size: 22px; padding: 10px 0">Manage time wisely- Get organized (draw up a time-table if it helps)</p>
+
+    <p style="font-size: 22px; padding: 10px 0">Create a good study environment- find a good study buddy who is encouraging.</p>
+
+    <p style="font-size: 22px; padding: 10px 0">Learn study skills from peers, classmates or professors.</p>
+
+    <p style="font-size: 22px; padding: 10px 0">Seek help from classmates/ peers/ professors if you do not understand any concept or skills.</p>
+
+<p style="font-size: 22px; padding: 10px 0">Get enough sleep</p>
+
+    
+    </ons-col>
+
+    </ons-row>  
+          
+          
+                     <ons-row style="text-align: center; background-color: #3883d8" id="internal5">  
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
+    
+    <p style="font-size: 22px; padding: 10px 0"><b>Internship/Work</b></p>
+    
+    <p style="font-size: 22px; padding: 10px 0;">New environment</p>
+    <p style="font-size: 22px; padding: 10px 0;">Tight deadlines</p>
+    
+        <p style="font-size: 22px; padding: 10px 0"><b>Tips</b></p>
+
+    
+    <p style="font-size: 22px; padding: 10px 0;">Spend a few minutes to do some deep breathing if you feel overwhelmed or tensed.</p>
+
+    <p style="font-size: 22px; padding: 10px 0;">If you’re not working on an important project, handle your small tasks the second they come in – and figure out an efficient system to complete the tasks quickly.</p>
+
+    </ons-col>
+
+    </ons-row>
+          
+          
+                <ons-row style="text-align: center; background-color: #3883d8"  id="internal6">  
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
+    
+    <p style="font-size: 22px; padding: 10px 0"><b>Personal</b></p>
+
+     
+<p style="font-size: 22px; padding-bottom: 20px;">Building new friendships (New environment/culture) 
+</p>
+    <p style="font-size: 22px; padding: 10px 0"><b>Tips</b></p>
+
+    <p style="font-size: 22px; padding-bottom: 20px;">Join a Co-curricular activity or volunteer for a cause</p>
+
+    
+    </ons-col>
+
+            </ons-row>         
+          
+
+           <ons-row style="text-align: center; background-color: #000">  
+<ons-col class="box1" width="100%" style="padding: 20px 0;">
+    
+    <p style="font-size: 22px; padding: 10px 0">Now that you've understood your perspective, click on the switch and understand a different perspective.
+    </p>
+
+     <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto" onclick="smoothScroll(document.getElementById('top'));">
+             <p style="font-size: 20px; padding: 10px 20px;"><ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-up"></ons-icon>&nbsp;&nbsp;&nbsp;Back to top</p></div>
+    
+    
+               <script>
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}      
+    </script>
+    
+    
+    </ons-col>
+
+               </ons-row>
+     
+    </ons-list>
+</ons-page>
