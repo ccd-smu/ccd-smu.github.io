@@ -43,17 +43,12 @@ var next = function() {
 
       <ons-carousel id="carousel" swipeable auto-scroll auto-scroll-ratio="0.1" style="background: #085078;">
           
-        <ons-carousel-item style="background-color: #085078; text-align: center" onclick="next()">
-
- <img src="eustress.png" width="400px;">
-
+        <ons-carousel-item style="background-color: #085078; text-align: center; position: relative" onclick="next()">
 
         <ons-row style="width: 100%;">
             
-            <ons-col width="30px"></ons-col>
-            
-<ons-col class="box1" width="80%" style="padding: 20px 0; font-size: 26px">
-    
+<ons-col class="box1" width="95%" style="padding: 20px 0; font-size: 26px">
+     <img src="eustress.png" width="400px;">
     <p style="font-size: 26px; padding: 10px 0"><b>Eustress (Positive Stress)</b></p>
 
      
@@ -61,32 +56,31 @@ var next = function() {
 <p style="font-size: 26px;">Is perceived as within our coping abilities</p>
 <p style="font-size: 26px;">Feels exciting</p>
 <p style="font-size: 26px;">Improves performance</p>
-
-
     </ons-col>
-            
-            
-                <ons-fab ripple onclick="next()" position="middle right">
-<ons-icon icon="md-chevron-right"></ons-icon>
-</ons-fab>  
+          
+                 <ons-col onclick="next()" class="box1" width="5%" style="padding: 20px 0; font-size: 26px;background: #085078;">     
+                 <ons-icon style="width: 25px; height: 25px; position: absolute; top: 250px; right: 0; color: #fff" icon="md-chevron-right">              
+                 </ons-icon></ons-col>
+
             
 </ons-row>
     </ons-carousel-item>
           
           
           
-          <ons-carousel-item style="background-color: #763C9E; text-align: center" onclick="prev()">
+          <ons-carousel-item style="background-color: #763C9E; text-align: center; position: relative" onclick="prev()">
 
-                  <img src="distress.png" width="400px">
-              
-              <ons-row style="width: 100%;">
-
-            <ons-fab ripple onclick="prev()" position="middle left">
-<ons-icon icon="md-chevron-left"></ons-icon>
-</ons-fab>  
                   
-<ons-col class="box1" width="80%" style="padding: 20px 0; font-size: 26px">
-    
+              
+              <ons-row style="width: 100%; position: relative">
+
+             <ons-col onclick="prev()" class="box1" width="5%" style="padding: 20px 0; font-size: 26px;background: #763C9E;">     
+                 <ons-icon style="width: 25px; height: 25px; position: absolute; top: 250px; left: 0; color: #fff" icon="md-chevron-left">              
+                 </ons-icon></ons-col>
+
+                  
+<ons-col class="box1" width="95%" style="padding: 20px 0; font-size: 26px; background: #763C9E;">
+    <img src="distress.png" width="400px">
     <p style="font-size: 26px; padding: 10px 0"><b>Distress (Negative Stress)</b></p>
 
      

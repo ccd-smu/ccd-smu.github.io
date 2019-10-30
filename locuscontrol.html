@@ -100,13 +100,13 @@ slider.oninput = function() {
     </ons-row>
         <ons-row style="text-align: center; background: linear-gradient(20deg, darkslateblue 50%, darkslategrey 50%)">  
 <ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
-    
-    <p style="font-size: 22px; padding: 10px 0"><b></b></p>
 
      
-    <p style="font-size: 22px; padding: 50px 0"><b>Internal</b> locus of control refers to people who believe that outcomes and <b>their success and failures are the result of their own actions and efforts</b> (Rotter, 1966). It can be defined as the events and outcomes which can be influenced by <b>people’s own beliefs and actions</b> (Ng, Sorensen, &amp; Eby, 2006). Similarly, individuals with internal locus of control believe that they are <b>able to control and manage their own lives by making decisions about the events</b> (James &amp; Wright, 1993). Additionally, Hsu (2011) found that individuals with high internal locus of control <b>accept that their achievements and failures depend on their own efforts and endeavours or briefly they have ability to determine their own outcomes and they are responsible for what happened.</b>
-
-</p>
+    <p style="font-size: 22px; padding: 10px 0; text-align: left">Internal locus of control refers to when individuals:</p>
+        
+<p style="font-size: 22px; padding: 10px 0; text-align: left">believe that outcomes and their success and failures are the result of their own actions and efforts.</p>
+<p style="font-size: 22px; padding: 10px 0; text-align: left">are able to control and manage their own lives by making decisions about the events.</p>
+<p style="font-size: 22px; padding: 10px 0; text-align: left">have the ability to determine their own outcomes and they are responsible for what happened.</p>
 
 
     </ons-col>
@@ -141,7 +141,7 @@ slider.oninput = function() {
       <p style="font-size: 22px; margin-bottom: 20px">Locus of control exists on a continuum. No one has a 100% external or internal locus of control. Instead, most people lie somewhere on the continuum between the two extremes.<br>These are characteristics of people with dominant internal or external locus of control.</p>
               
     
-    <div class="box1 green">
+    <div class="box1" style="background: darkgreen; border-radius: 30px;">
     
          <div id='dispDiv' style='margin-top: 20px; color: white'></div>
     
@@ -150,8 +150,11 @@ slider.oninput = function() {
       <ons-col width="10%" style="text-align: center; line-height: 31px;">
           <div class="dot"></div>
       </ons-col>
-      <ons-col>
-        <ons-range id="range-1" style="width: 100%;" value="10"></ons-range>
+      <ons-col style="position: relative">
+          <ons-range id="range-1" style="width: 100%;" value="10"></ons-range>
+          <div style="position: absolute; top: 6px; left: 10px; z-index: 999; font-size: 13px; color: #fff">more internal</div>
+          <div style="position: absolute; top: 6px; left: 45%; z-index: 999; font-size: 13px; color: #fff">neither</div>
+          <div style="position: absolute; top: 6px; right: 10px; z-index: 999; font-size: 13px; color: #fff">more external</div>
       </ons-col>
       <ons-col width="10%" style="text-align: center; line-height: 31px;">
         <div class="dot2"></div>

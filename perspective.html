@@ -19,9 +19,9 @@
     
     
            <ons-row style="text-align: center; background-color: #000;">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
     
-    <p style="font-size: 26px; padding: 10px 0"><b>You will be presented with a few scenarios below. Remember if you have a more external or internal locus of control from the activity, and look at the appropriate columns.</b>
+    <p style="font-size: 22px; padding: 10px 0"><b>You will be presented with a few scenarios below. Remember if you have a more external or internal locus of control from the activity, and look at the appropriate columns.</b>
     <br><br>
         
     The objective of this activity is to build range in your locus of control. If you belong strongly to one category (internal or external) and find yourself feeling stressed, you can consider adopting a different or "opposite" perspective.
@@ -32,15 +32,26 @@
     </ons-col>
 
     </ons-row>    
+        
+               <ons-row style="text-align: center; background-color: #000;" id="text2">  
+<ons-col class="box1" width="100%">
+        <p style="font-size: 22px;">I tend to have a</p>
+                   </ons-col>
+        </ons-row>    
+        
                <ons-row style="text-align: center; background-color: #000;">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
+<ons-col class="box1" width="100%" style="height: 48px" id="switch2">
     
-    <p style="font-size: 26px; padding: 10px 0">I tend to have a</p>
+ <p style="font-size: 20px; margin-top: 10px;"><span class="active2" id="internal">Internal</span> <ons-switch id="switch"></ons-switch> <span id="external">External</span> </p>
 
-    <p style="font-size: 26px; padding: 10px 0"><span class="active" id="internal">Internal</span> <ons-switch id="switch"></ons-switch> <span id="external">External</span> </p>
-    
-    <p style="font-size: 26px; padding: 10px 0">locus of control</p>
     </ons-col>
+                   
+                   
+                       <ons-row style="text-align: center; background-color: #000;" id="text2">  
+<ons-col class="box1" width="100%" style="padding-bottom: 20px;">
+        <p style="font-size: 22px;">locus of control</p>
+                   </ons-col>
+        </ons-row>
 
     </ons-row>    
  <script>   
@@ -52,8 +63,8 @@
      $('#internal1').fadeOut('fast');
        $('#internal2').fadeOut('fast');
        $('#internal3').fadeOut('fast');
-        $('#external').addClass('active');
-       $('#internal').removeClass('active');
+        $('#external').addClass('active2');
+       $('#internal').removeClass('active2');
       
   } else {
     $('#external1').fadeOut('fast');
@@ -62,31 +73,41 @@
      $('#internal1').fadeIn('fast');
        $('#internal2').fadeIn('fast');
        $('#internal3').fadeIn('fast');
-      $('#internal').addClass('active');
-       $('#external').removeClass('active');
+      $('#internal').addClass('active2');
+       $('#external').removeClass('active2');
   }                   
   });  </script>
     
     
+      <script>
+		// build scene
+                                new ScrollMagic.Scene({
+								triggerElement: "#trigger333",
+								triggerHook: 0.5,
+											})
+											.setClassToggle("#switch2,#text1,#text2", "scroll")
+											.addTo(controller);
+</script>
    
+        <div id="trigger333"></div>
 
           
        
  <ons-row style="text-align: center; background-color: #cf3535; display: none;" id="external1">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
     
-    <p style="font-size: 26px; padding: 10px 0">For someone that feels that there are more external forces that they are unable to control, do these seem familiar to you?</p>
+    <p style="font-size: 22px; padding: 10px 0">For someone that feels that there are more external forces that they are unable to control, do these seem familiar to you?</p>
     
     
-    <p style="font-size: 26px; padding: 10px 0"><b>Academic</b></p>
+    <p style="font-size: 22px; padding: 10px 0"><b>Academic</b></p>
 
      
     
-    <p style="font-size: 26px;">Performance in projects, assignments or exams being too “difficult/easy” or due to luck</p>
-    <p style="font-size: 26px;">Heavy rain or traffic jam in the morning. The bus arriving later.</p>
-    <p style="font-size: 26px;">Whether a student has an internal or external locus of control is thought to have a powerful effect on academic motivation, persistence, and achievement in school. In education, “internals” are considered more likely to work hard in order to learn, progress, and succeed, while “externals” are more likely to believe that working hard is “pointless” because someone or something else is treating them unfairly or holding them back. Students with an external locus of control may also believe that their accomplishments will not be acknowledged or their effort will not result in success.</p>
+    <p style="font-size: 22px;">Performance in projects, assignments or exams being too “difficult/easy” or due to luck</p>
+    <p style="font-size: 22px;">Heavy rain or traffic jam in the morning. The bus arriving later.</p>
+    <p style="font-size: 22px;">Whether a student has an internal or external locus of control is thought to have a powerful effect on academic motivation, persistence, and achievement in school. In education, “internals” are considered more likely to work hard in order to learn, progress, and succeed, while “externals” are more likely to believe that working hard is “pointless” because someone or something else is treating them unfairly or holding them back. Students with an external locus of control may also believe that their accomplishments will not be acknowledged or their effort will not result in success.</p>
 
-<p style="font-size: 26px;">Receiving negative treatment by peers/classmates or professors.
+<p style="font-size: 22px;">Receiving negative treatment by peers/classmates or professors.
     A person with an external locus of control will look at the results from that exam and attribute those results to things besides themselves, for better or worse. They will look at things like the difficulty of the exam, the difficulty of the teacher, the testing environment, and so on.</p>
 
 
@@ -96,17 +117,17 @@
     </ons-row>
           
      <ons-row style="text-align: center; background-color: #cf3535; display: none;" id="external2">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
 
     
-    <p style="font-size: 26px; padding: 10px 0"><b>Internship/Work</b></p>
+    <p style="font-size: 22px; padding: 10px 0"><b>Internship/Work</b></p>
 
      
     
-    <p style="font-size: 26px;">If the person believes that the cause of one’s treatment by peers or superiors resides within him/her, he or she may be more negatively affected because perceived accountability</p>
+    <p style="font-size: 22px;">If the person believes that the cause of one’s treatment by peers or superiors resides within him/her, he or she may be more negatively affected because perceived accountability</p>
     
     
-    <p style="font-size: 26px;">External locus of control refers to the beliefs that chance, fate, managers, supervisors, organizations and other 
+    <p style="font-size: 22px;">External locus of control refers to the beliefs that chance, fate, managers, supervisors, organizations and other 
 persons are more powerful to make decision about individual’s lives and outcomes (Rotter, 1966). Indeed 
 people with perceived external locus of control believe that fate, chance, and luck, friends, and managers 
 determine the outcomes which they themselves experience; so, they contribute their successes ,failures and 
@@ -115,7 +136,7 @@ control believe that external elements such as luck, chance and destiny are stro
 their failures or successes are not due to their own efforts. 
 
 </p>
-    <p style="font-size: 26px;">A person with an internal locus of control will look at financial challenges and ask themselves what they can do to improve their financial state through better investing and spending choices. A person with an external locus of control will point to society for not paying an adequate wage, businesses for charging prices that are just too high, and so on.</p>
+    <p style="font-size: 22px;">A person with an internal locus of control will look at financial challenges and ask themselves what they can do to improve their financial state through better investing and spending choices. A person with an external locus of control will point to society for not paying an adequate wage, businesses for charging prices that are just too high, and so on.</p>
 
 
 
@@ -125,14 +146,14 @@ their failures or successes are not due to their own efforts.
           
           
      <ons-row style="text-align: center; background-color: #cf3535; display: none;" id="external3">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
 
     
-    <p style="font-size: 26px; padding: 10px 0"><b>Personal</b></p>
+    <p style="font-size: 22px; padding: 10px 0"><b>Personal</b></p>
 
      
     
-    <p style="font-size: 26px;">A person with an external locus of control will instead look at others and conclude that those factors cannot be changed or helped.</p>
+    <p style="font-size: 22px;">A person with an external locus of control will instead look at others and conclude that those factors cannot be changed or helped.</p>
 
 
 
@@ -145,20 +166,20 @@ their failures or successes are not due to their own efforts.
 
 
                    <ons-row style="text-align: center; background-color: #3883d8" id="internal1">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
     
     
-    <p style="font-size: 26px; padding: 10px 0">For someone that feels more in control of their life, do these seem familiar to you?</p>    
+    <p style="font-size: 22px; padding: 10px 0">For someone that feels more in control of their life, do these seem familiar to you?</p>    
     
-    <p style="font-size: 26px; padding: 10px 0"><b>Academic</b></p>
+    <p style="font-size: 22px; padding: 10px 0"><b>Academic</b></p>
 
      
-<p style="font-size: 26px;">Performance in projects/ assignments or exams being attributed to your own actions- ability or effort.</p>
-    <p style="font-size: 26px;">Waking up and preparing an hour early/later to attend your seminars.</p>
-<p style="font-size: 26px;">Students with an “internal locus of control” generally believe that their success or failure is a result of the effort and hard work they invest in their education. Students with an “external locus of control” generally believe that their successes or failures result from external factors beyond their control, such as luck, fate, circumstance, injustice, bias, or teachers who are unfair, prejudiced, or unskilled. For example, students with an internal locus of control might blame poor grades on their failure to study, whereas students with an external locus of control may blame an unfair teacher or test for their poor performance.</p>
+<p style="font-size: 22px;">Performance in projects/ assignments or exams being attributed to your own actions- ability or effort.</p>
+    <p style="font-size: 22px;">Waking up and preparing an hour early/later to attend your seminars.</p>
+<p style="font-size: 22px;">Students with an “internal locus of control” generally believe that their success or failure is a result of the effort and hard work they invest in their education. Students with an “external locus of control” generally believe that their successes or failures result from external factors beyond their control, such as luck, fate, circumstance, injustice, bias, or teachers who are unfair, prejudiced, or unskilled. For example, students with an internal locus of control might blame poor grades on their failure to study, whereas students with an external locus of control may blame an unfair teacher or test for their poor performance.</p>
 
-<p style="font-size: 26px;">Placing the cause of the negative treatment by peers/classmates or professors outside yourself and rationalize their behavior.</p>
-<p style="font-size: 26px;">A person with an internal locus of control will look at the results from that exam and attribute those results to themselves, for better or worse. They will look at factors like their own study habits, their own note-taking, their own time spent asking questions, and so on.
+<p style="font-size: 22px;">Placing the cause of the negative treatment by peers/classmates or professors outside yourself and rationalize their behavior.</p>
+<p style="font-size: 22px;">A person with an internal locus of control will look at the results from that exam and attribute those results to themselves, for better or worse. They will look at factors like their own study habits, their own note-taking, their own time spent asking questions, and so on.
 </p>
 
     </ons-col>
@@ -167,14 +188,14 @@ their failures or successes are not due to their own efforts.
           
           
                      <ons-row style="text-align: center; background-color: #3883d8" id="internal2">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
     
-    <p style="font-size: 26px; padding: 10px 0"><b>Internship/Work</b></p>
+    <p style="font-size: 22px; padding: 10px 0"><b>Internship/Work</b></p>
 
      
-<p style="font-size: 26px;">If the person places the cause of the negative behaviors outside him/her, the behavior may be more easily rationalized and the negative outcomes may actually be less severe.
+<p style="font-size: 22px;">If the person places the cause of the negative behaviors outside him/her, the behavior may be more easily rationalized and the negative outcomes may actually be less severe.
 </p>
-<p style="font-size: 26px;">Individuals with high internal locus of 
+<p style="font-size: 22px;">Individuals with high internal locus of 
 control accept that their achievements and failures depend on their own efforts and endeavors or briefly they 
 have ability to determine their own outcomes and they are responsible for what happened. 
 </p>
@@ -185,29 +206,40 @@ have ability to determine their own outcomes and they are responsible for what h
           
           
                 <ons-row style="text-align: center; background-color: #3883d8"  id="internal3">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
     
-    <p style="font-size: 26px; padding: 10px 0"><b>Personal</b></p>
+    <p style="font-size: 22px; padding: 10px 0"><b>Personal</b></p>
 
      
-<p style="font-size: 26px;">A person with an internal locus of control will always look for ways to make challenging situations better in the future as a result of their own actions.
+<p style="font-size: 22px;">A person with an internal locus of control will always look for ways to make challenging situations better in the future as a result of their own actions.
 </p>
 
     </ons-col>
 
             </ons-row>         
-          
-
-           <ons-row style="text-align: center; background-color: #000">  
-<ons-col class="box1" width="100%" style="padding: 20px 0;">
-    
-    <p style="font-size: 26px; padding: 10px 0">Now that you've understood your perspective, click on the switch and understand a different perspective.
-    </p>
+                  
+                <ons-row style="text-align: center; background-color: #000; height: 80px;"  id="trigger22">  
+<ons-col class="box1" width="100%">
+    </ons-col>
+            </ons-row>         
+              
+        
+        
+           <ons-row style="text-align: center; background-color: #000" id="end2">  
+<ons-col class="box1" width="100%" style="padding: 10px 0 0 0;">
 
      <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto" onclick="smoothScroll(document.getElementById('top'));">
-             <p style="font-size: 20px; padding: 10px 20px;"><ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-up"></ons-icon>&nbsp;&nbsp;&nbsp;Back to top</p></div>
+             <p style="font-size: 20px; padding: 0;"><ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-up"></ons-icon>&nbsp;&nbsp;&nbsp;Back to top</p></div>
     
-    
+            <script>
+		// build scene
+                                new ScrollMagic.Scene({
+								triggerElement: "#trigger22",
+								triggerHook: 1, // show, when scrolled 10% into view
+											})
+											.setClassToggle("#end2", "end")
+											.addTo(controller);
+</script>
                <script>
 window.smoothScroll = function(target) {
     var scrollContainer = target;

@@ -10,7 +10,7 @@
 
   </ons-toolbar>
     <ons-list>
-       <ons-row style="text-align: center; background-color: darkblue;" id="top">  
+       <ons-row style="text-align: center; background-color: darkblue;" id="top1">  
            
                          <img src="areas.png" style="margin: auto; height: 40vh;">   
            </ons-row>
@@ -31,9 +31,9 @@
 
     </ons-row>    
                <ons-row style="text-align: center; background-color: #000;">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
+<ons-col class="box1" width="100%" id="switch1" style="height: 48px;">
     
-    <p style="font-size: 22px; padding: 10px 0"><span id="long">Long-term</span> <ons-switch checked id="switch"></ons-switch> <span id="short" class="active">Short-term</span></p>
+    <p style="font-size: 20px; margin-top: 10px;"><span id="long">Long-term</span> <ons-switch checked id="switch"></ons-switch> <span id="short" class="active2">Short-term</span></p>
     </ons-col>
 
     </ons-row>    
@@ -46,8 +46,8 @@
      $('#external4').fadeOut('fast');
        $('#external5').fadeOut('fast');
        $('#external6').fadeOut('fast');
-      $('#short').addClass('active');
-       $('#long').removeClass('active');
+      $('#short').addClass('active2');
+       $('#long').removeClass('active2');
   } else {
     $('#internal4').fadeOut('fast');
      $('#internal5').fadeOut('fast');
@@ -55,14 +55,22 @@
      $('#external4').fadeIn('fast');
        $('#external5').fadeIn('fast');
         $('#external6').fadeIn('fast');
-       $('#long').addClass('active');
-       $('#short').removeClass('active');
+       $('#long').addClass('active2');
+       $('#short').removeClass('active2');
   }                   
   });  </script>
     
-    
+    <script>
+		// build scene
+                                new ScrollMagic.Scene({
+								triggerElement: "#trigger444",
+								triggerHook: 0.5,
+											})
+											.setClassToggle("#switch1", "scroll")
+											.addTo(controller);
+</script>
    
-
+        <div id="trigger444"></div>
           
        
  <ons-row style="text-align: center; background-color: #cf3535; display: none;" id="external4">  
@@ -219,16 +227,32 @@
     </ons-col>
 
             </ons-row>         
-          
+              
+        
+                  
+                <ons-row style="text-align: center; background-color: #000; height: 80px;"  id="trigger11">  
+<ons-col class="box1" width="100%">
+    </ons-col>
+            </ons-row>         
+              
+        
 
-           <ons-row style="text-align: center; background-color: #000">  
-<ons-col class="box1" width="100%" style="padding: 20px 0;">
+           <ons-row style="text-align: center; background-color: #000" id="end1">  
+<ons-col class="box1" width="100%" style="padding: 10px 0 0 0;">
+
+     <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto" onclick="smoothScroll(document.getElementById('top1'));">
+             <p style="font-size: 20px; padding: 0;"><ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-up"></ons-icon>&nbsp;&nbsp;&nbsp;Back to top</p></div>
     
-    <p style="font-size: 22px; padding: 10px 0">Now that you've understood your perspective, click on the switch and understand a different perspective.
-    </p>
-
-     <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto" onclick="smoothScroll(document.getElementById('top'));">
-             <p style="font-size: 20px; padding: 10px 20px;"><ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-up"></ons-icon>&nbsp;&nbsp;&nbsp;Back to top</p></div>
+    
+        <script>
+		// build scene
+                                new ScrollMagic.Scene({
+								triggerElement: "#trigger11",
+								triggerHook: 1, // show, when scrolled 10% into view
+											})
+											.setClassToggle("#end1", "end")
+											.addTo(controller);
+</script>
     
     
                <script>

@@ -20,6 +20,44 @@
  
     <style> 
         
+        .range__input {
+        background-image: linear-gradient(#888,#888);
+        }
+        
+        .range {
+    background-size: 100% 30px;
+    border-radius: 30px;
+    background: #888;
+}
+        
+.range__input::-webkit-slider-thumb,.range__input::-webkit-moz-thumb,.range__input::-webkit-ms-thumb{
+    cursor:pointer;position:relative;height:28px;width:100px;background-color: darkblue;border:none;box-shadow:0 0 1px 0 rgba(0,0,0,.25),0 3px 2px rgba(0,0,0,.25);border-radius:30px;;margin:0;padding:0;box-sizing:border-box;-webkit-appearance:none;appearance:none;top:0;z-index:1
+        }
+        
+        #end1.end,#end2.end{
+            position: fixed;
+            bottom: 48px;
+            z-index: 999;
+            font-size: 10px;
+            background: #000;
+            width: 100%;
+        }
+        
+        
+        #switch1.scroll,#switch2.scroll{
+            position: fixed;
+            bottom: 0;
+            z-index: 999;
+            font-size: 10px;
+            background: #000;
+            width: 100%;
+        }
+        
+#text1.scroll,#text2.scroll
+        {
+            display: none;
+        }
+        
         .list-item__center{
         background-image: none;
         background-color: transparent;
@@ -27,16 +65,16 @@
 
 
         #short,#long,#internal,#external{
-            padding: 10px 20px;
+            padding: 0px 15px 3px 15px;
             border-radius: 30px;
             font-weight: bold;
         
         }    
         
-        .active {
-  background-color: #666;
-  color: white;
-    transform: translateX(-10px);
+        
+        .active2 {
+  background-color: #fff;
+  color: black;
     transition: all 0.5s ease;
 }
         
@@ -59,7 +97,7 @@ border: 3px solid transparent ;
         
         
         #range-1{
-            background-image: linear-gradient(#0076ff,#0076ff);
+            background: #888;
         }    
         
 .triangle {
