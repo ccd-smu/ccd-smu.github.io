@@ -9,7 +9,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+               <script>
+window.fn = {};
+window.fn.toggle = function(el) {
+  var elems = document.querySelectorAll(".accordion.active");
+[].forEach.call(elems, function(els) {
+  if (el != els) {
+  els.classList.toggle("active");
+    els.nextElementSibling.classList.toggle("show");
+  }
+});
+    el.classList.toggle("active");
+    el.nextElementSibling.classList.toggle("show");
+}
 
+}      
+    </script>
 
         <script>
     const loadPage = (page) => {
@@ -17,7 +32,38 @@
   document.querySelector('#navigator').bringPageTop(page, { animation: 'fade' });
 };
     </script>
- 
+     <script>  
+        window.fn = {};
+        window.fn.toggle = function(el) {
+            el.classList.toggle("active");
+            el.nextElementSibling.classList.toggle("show");
+        }    
+    </script>
+    <style>
+    .accordion {
+        transition: 0.4s;
+    }
+    .accordion:before {
+        margin-top: -3px;
+        content: '\02795';
+    }
+    .accordion.active:before {
+        content: "\2796";
+    }
+    div.panel {
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.6s ease-in-out;
+        opacity: 0;
+    }
+    div.panel.show {
+        opacity: 1;
+        max-height: 500px;
+    }
+    .list__item__center {
+        padding-left: 5px;
+    }
+    </style>
     <style> 
         
         .range__input {
