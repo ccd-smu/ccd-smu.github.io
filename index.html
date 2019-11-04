@@ -35,6 +35,8 @@ window.fn.toggle = function(el) {
     <style>
     .accordion {
         transition: 0.4s;
+        background: maroon;
+        color: white;
     }
     .accordion:before {
         margin-top: -3px;
@@ -48,6 +50,8 @@ window.fn.toggle = function(el) {
         overflow: hidden;
         transition: 0.6s ease-in-out;
         opacity: 0;
+        background: maroon;
+        color: white;
     }
     div.panel.show {
         opacity: 1;
@@ -72,7 +76,7 @@ window.fn.toggle = function(el) {
 }
         
 .range__input::-webkit-slider-thumb,.range__input::-webkit-moz-thumb,.range__input::-webkit-ms-thumb{
-    cursor: pointer;position:relative;height:28px;width:100px;background-color: black;border:none;box-shadow:0 0 1px 0 rgba(0,0,0,.25),0 3px 2px rgba(0,0,0,.25);border-radius:30px;;margin:0;padding:0;box-sizing:border-box;-webkit-appearance:none;appearance:none;top:0;z-index:1
+    cursor: pointer;position:relative;height:28px;width:100px;background-color: #4f81c7;border:none;box-shadow:0 0 1px 0 rgba(0,0,0,.25),0 3px 2px rgba(0,0,0,.25);border-radius:30px;;margin:0;padding:0;box-sizing:border-box;-webkit-appearance:none;appearance:none;top:0;z-index:1
         }
         
         #end1.end,#end2.end{
@@ -142,7 +146,7 @@ border: 3px solid transparent ;
         }    
         
 .triangle {
-    color: #ff7f4f;
+    color: #f8a978;
     width: 0;
     height: 0;
     margin-top: 0;
@@ -151,51 +155,6 @@ border: 3px solid transparent ;
     border-right: 50vw solid transparent;
 }
         
-        .dot {
-  height: 25px;
-  width: 25px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-animation: dot 2s infinite;
-}
-        
-@-webkit-keyframes dot {
-  0% {
-transform: scale(1);
-    opacity: 1;
-
-}
-  50% {
-transform: scale(0.5);
-    opacity: 1;
-
-}
-    
-  100% {
-transform: scale(1);
-    }
-}  
-        
-        
-    .dot2 {
-  height: 25px;
-  width: 25px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-border: 2px solid #bbb; 
-animation: dot2 2s infinite;
-}
-        
-@-webkit-keyframes dot2 {
-		0% {
-          box-shadow: 0 0 0 0px rgba(255, 255, 255, 1);
-     }
-     100% {
-          box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
-     }
-}    
         #btn1.hide
         {display: none;}
         

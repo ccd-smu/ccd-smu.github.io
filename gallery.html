@@ -16,23 +16,26 @@ var next = function() {
 
 
   <ons-toolbar>
-      <div class="left" style="background-color: white;">
+      <div class="left" style="background: #EAEAEA;">
   <ons-back-button></ons-back-button>
 </div>
-      <div class="center" style="background: linear-gradient(90deg, #FFF 50%, #000 50%)"><span style="color: #000">"Good Stress"</span> &nbsp; <span style="color: #fff">"Bad Stress"</span></div>
+      <div class="center" style="background: #EAEAEA; color: #000">Good Stress" "Bad Stress"</div>
       
-          <div class="right" style="background-color: #000">
+          <div class="right" style="background: #EAEAEA">
 </div>
   </ons-toolbar>
-<ons-list>
-    <ons-row style="background: black;">
+    
+<div id="trigger53"></div>    
+    
+<ons-list id="top53">
+    <ons-row style="background: #EAEAEA;">
     
     <ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
      
-<p style="font-size: 26px; padding: 10px 0;">A little bit of stress is not bad; Positive stress could give you energy, motivation and spark creativity; Also makes you more alert and helps you perform better in certain situations.</p>
+<p style="font-size: 26px; padding: 10px 0; color: #000">A little bit of stress is not bad; Positive stress could give you energy, motivation and spark creativity; Also makes you more alert and helps you perform better in certain situations.</p>
 
         
-<p style="font-size: 26px; padding: 10px 0;">Stress is only beneficial if it is short-lived. Excessive or prolonged stress can lead to illnesses such as heart disease and mental health problems such as anxiety and depression.</p>
+<p style="font-size: 26px; padding: 10px 0; color: #000">Stress is only beneficial if it is short-lived. Excessive or prolonged stress can lead to illnesses such as heart disease and mental health problems such as anxiety and depression.</p>
 
 
     </ons-col>
@@ -41,26 +44,28 @@ var next = function() {
     </ons-row>
     </ons-list>
 
-      <ons-carousel id="carousel" swipeable auto-scroll auto-scroll-ratio="0.1" style="background: #085078;">
+      <ons-carousel id="carousel" swipeable auto-scroll auto-scroll-ratio="0.1">
           
-        <ons-carousel-item style="background-color: #085078; text-align: center; position: relative" onclick="next()">
+        <ons-carousel-item style="text-align: center; position: relative" onclick="next()">
 
-        <ons-row style="width: 100%;">
+               <ons-fab ripple style="position: absolute; top: 45%; right: 0;">
+<ons-icon icon="md-chevron-right"></ons-icon>
+</ons-fab>  
             
-<ons-col class="box1" width="95%" style="padding: 20px 0; font-size: 26px">
+            
+        <ons-row style="width: 70%; margin: 0 auto; border-radius: 30px; background: #42b883; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)">
+            
+            
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
      <img src="eustress.png" width="400px;">
     <p style="font-size: 26px; padding: 10px 0"><b>Eustress (Positive Stress)</b></p>
 
      
-<p style="font-size: 26px;">Motivates, focuses energy</p>
-<p style="font-size: 26px;">Is perceived as within our coping abilities</p>
-<p style="font-size: 26px;">Feels exciting</p>
-<p style="font-size: 26px;">Improves performance</p>
+<p style="font-size: 26px; color: #fff; color: #000;">Motivates, focuses energy</p>
+<p style="font-size: 26px; color: #fff; color: #000;">Is perceived as within our coping abilities</p>
+<p style="font-size: 26px; color: #fff; color: #000;">Feels exciting</p>
+<p style="font-size: 26px; color: #fff; color: #000;">Improves performance</p>
     </ons-col>
-          
-                 <ons-col onclick="next()" class="box1" width="5%" style="padding: 20px 0; font-size: 26px;background: #085078;">     
-                 <ons-icon style="width: 25px; height: 25px; position: absolute; top: 250px; right: 0; color: #fff" icon="md-chevron-right">              
-                 </ons-icon></ons-col>
 
             
 </ons-row>
@@ -68,32 +73,33 @@ var next = function() {
           
           
           
-          <ons-carousel-item style="background-color: #763C9E; text-align: center; position: relative" onclick="prev()">
+          <ons-carousel-item style="text-align: center; position: relative" onclick="prev()">
 
                   
+               <ons-fab ripple style="position: absolute; top: 45%; left: 0;">
+<ons-icon icon="md-chevron-left"></ons-icon>
+</ons-fab>  
+            
               
-              <ons-row style="width: 100%; position: relative">
-
-             <ons-col onclick="prev()" class="box1" width="5%" style="padding: 20px 0; font-size: 26px;background: #763C9E;">     
-                 <ons-icon style="width: 25px; height: 25px; position: absolute; top: 250px; left: 0; color: #fff" icon="md-chevron-left">              
-                 </ons-icon></ons-col>
-
+              <ons-row style="width: 70%; margin: 0 auto; border-radius: 30px; background: #ff7e67; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)">
                   
-<ons-col class="box1" width="95%" style="padding: 20px 0; font-size: 26px; background: #763C9E;">
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px; background: #ff7e67; border-radius: 30px;">
     <img src="distress.png" width="400px">
     <p style="font-size: 26px; padding: 10px 0"><b>Distress (Negative Stress)</b></p>
 
      
-<p style="font-size: 26px;">Causes anxiety or concern</p>
-<p style="font-size: 26px;">Is perceived as outside of our coping abilities</p>
-<p style="font-size: 26px;">Feels unpleasant</p>
-<p style="font-size: 26px;">Decreases performance</p>
-<p style="font-size: 26px;">Can lead to mental and physical problems</p>
+<p style="font-size: 26px; color: #000;">Causes anxiety or concern</p>
+<p style="font-size: 26px; color: #000;">Is perceived as outside of our coping abilities</p>
+<p style="font-size: 26px; color: #000;">Feels unpleasant</p>
+<p style="font-size: 26px; color: #000;">Decreases performance</p>
+<p style="font-size: 26px; color: #000;">Can lead to mental and physical problems</p>
 
     </ons-col>
 
               
               </ons-row>
+              
+              
     </ons-carousel-item>
         </ons-carousel>
 <ons-list>    
@@ -101,26 +107,26 @@ var next = function() {
     
 
     
-    <ons-row style="background: black;">
+    <ons-row style="background: #EAEAEA;">
     
-    <ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
+    <ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px;">
      
-        <p style="font-size: 26px; padding: 10px 0;"><b>Questions to consider when you are assessing for stress:</b></p>
+        <p style="font-size: 26px; padding: 10px 0; color: #000"><b>Questions to consider when you are assessing for stress:</b></p>
 
         
-<p style="font-size: 26px; padding: 0;">How do you know when you are stressed?
+<p style="font-size: 26px; padding: 0; color: #000">How do you know when you are stressed?
 </p>
-<p style="font-size: 26px; padding: 0;">Where do you feel stress in your body?
+<p style="font-size: 26px; padding: 0; color: #000">Where do you feel stress in your body?
 </p>
-<p style="font-size: 26px; padding: 0;">What do you notice about your body, thoughts, and feelings when things are difficult?
+<p style="font-size: 26px; padding: 0; color: #000">What do you notice about your body, thoughts, and feelings when things are difficult?
 </p>
-<p style="font-size: 26px; padding: 0;">How do you behave when you are feeling stressed out?
+<p style="font-size: 26px; padding: 0; color: #000">How do you behave when you are feeling stressed out?
 </p>
-<p style="font-size: 26px; padding: 0;">How do you react negatively or proactively to stress?
+<p style="font-size: 26px; padding: 0; color: #000">How do you react negatively or proactively to stress?
 </p>
-<p style="font-size: 26px; padding: 0;">How do you currently cope with stress?
+<p style="font-size: 26px; padding: 0; color: #000">How do you currently cope with stress?
 </p>
-<p style="font-size: 26px; padding: 0;">Did your loved ones or friends make any comments of any change in your body or mood that you might not notice?
+<p style="font-size: 26px; padding: 0; color: #000">Did your loved ones or friends make any comments of any change in your body or mood that you might not notice?
 </p>
 
 
@@ -134,6 +140,52 @@ var next = function() {
     </ons-row>
 
     </ons-list>
+               <ons-row style="text-align: center; background-color: #000" id="end53">  
+<ons-col class="box1" width="100%" style="padding: 10px 0 0 0;">
 
+     <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto" onclick="smoothScroll(document.getElementById('top53'));">
+             <p style="font-size: 20px; padding: 0;"><ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-up"></ons-icon>&nbsp;&nbsp;&nbsp;Back to top</p></div>
+    
+    
+        <script>
+		// build scene
+                                new ScrollMagic.Scene({
+								triggerElement: "#trigger53",
+								triggerHook: 1, // show, when scrolled 10% into view
+											})
+											.setClassToggle("#end53", "end")
+											.addTo(controller);
+</script>
+    
+    
+               <script>
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}      
+    </script>
+    
+    
+    </ons-col>
+
+               </ons-row>
 
 </ons-page>

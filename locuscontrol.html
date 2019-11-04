@@ -8,46 +8,44 @@ slider.setAttribute('max', 20);
 
 var slider = document.getElementById("range-1");
 var output = document.getElementById("dispDiv");
-output.innerHTML = "<p style='font-size: 22px'><b>Neither external nor internal locus of control</b></p><p style='font-size: 22px'>Jacob, a 21 years old undergraduate, received an “A-” for his Final Statistic grade. He believes that it was a results of his hard work, effort and his awesome groupmates. They worked hard together for their final project thereafter, they also helped him in areas that he did not understand.</p>";
+output.innerHTML = "<p style='font-size: 22px; min-height: 30vh; color: #000;'><b>Neither external nor internal locus of control</b></p><p style='font-size: 22px; color: #000;'>Jacob, a 21 years old undergraduate, received an “A-” for his Final Statistic grade. He believes that it was a results of his hard work, effort and his awesome groupmates. They worked hard together for their final project thereafter, they also helped him in areas that he did not understand.</p>";
 
 slider.oninput = function() {
   switch (parseInt(this.value)) {
     case 0:
-      output.innerHTML = "<p style='font-size: 22px'><b>High internal locus of control</b></p><p style='font-size: 22px'>Pamela, a 20 years old undergraduate student, received an “A+” for her Final Statistics examination. She believes that she did very well because she spent 3 hours every night for a month to practise and revise. It was her hard work and effort that paid off.</p>";
+      output.innerHTML = "<p style='font-size: 22px; min-height: 30vh; color: #000;'><b>High internal locus of control</b></p><p style='font-size: 22px; color: #000;'>Pamela, a 20 years old undergraduate student, received an “A+” for her Final Statistics examination. She believes that she did very well because she spent 3 hours every night for a month to practise and revise. It was her hard work and effort that paid off.</p>";
       break;
     case 10:
-      output.innerHTML = "<p style='font-size: 22px'><b>Neither external nor internal locus of control</b></p><p style='font-size: 22px'>Jacob, a 21 years old undergraduate, received an “A-” for his Final Statistic grade. He believes that it was a results of his hard work, effort and his awesome groupmates. They worked hard together for their final project thereafter, they also helped him in areas that he did not understand.</p>"
+      output.innerHTML = "<p style='font-size: 22px; min-height: 30vh; color: #000;'><b>Neither external nor internal locus of control</b></p><p style='font-size: 22px; color: #000;'>Jacob, a 21 years old undergraduate, received an “A-” for his Final Statistic grade. He believes that it was a results of his hard work, effort and his awesome groupmates. They worked hard together for their final project thereafter, they also helped him in areas that he did not understand.</p>"
 ;
       break;
     case 20:
-      output.innerHTML = "<p style='font-size: 22px'><b>High external locus of control</b></p><p style='font-size: 22px'>Andrew, 21 years old, undergraduate believes that he  received a “C-” in his statistics exams because his professor does not like him and also, because he was late for the exam because of the heavy downpour on the exam day.</p>";
+      output.innerHTML = "<p style='font-size: 22px; min-height: 30vh; color: #000;'><b>High external locus of control</b></p><p style='font-size: 22px; color: #000;'>Andrew, 21 years old, undergraduate believes that he  received a “C-” in his statistics exams because his professor does not like him and also, because he was late for the exam because of the heavy downpour on the exam day.</p>";
       break;
 
     default:
-      output.innerHTML = "<p style='font-size: 22px'><b>Neither external nor internal locus of control</b></p><p style='font-size: 22px'>Jacob, a 21 years old undergraduate, received an “A-” for his Final Statistic grade. He believes that it was a results of his hard work, effort and his awesome groupmates. They worked hard together for their final project thereafter, they also helped him in areas that he did not understand.</p>";
+      output.innerHTML = "<p style='font-size: 22px; min-height: 30vh; color: #000;'><b>Neither external nor internal locus of control</b></p><p style='font-size: 22px; color: #000;'>Jacob, a 21 years old undergraduate, received an “A-” for his Final Statistic grade. He believes that it was a results of his hard work, effort and his awesome groupmates. They worked hard together for their final project thereafter, they also helped him in areas that he did not understand.</p>";
   }
 }      
 
            
     </script>
     
-    <ons-toolbar style="background-color: darkslateblue; color: #fff">
-      <div class="left" style="background-color: darkslateblue; color: #fff">
+    <ons-toolbar style="background-color: #fcfafa; color: #fff">
+      <div class="left" style="background-color: #4f81c7; color: #fff">
   <ons-back-button></ons-back-button>
 </div>
-    <div class="center" style="background-color: darkslateblue; color: #fff">L <span style="border-radius: 50%; border: solid white 5px;padding:0px; width: 10px; height: 10px; animation: dot3 2s infinite">&nbsp;&nbsp;&nbsp;&nbsp;</span>  cus of Control</div>
-        <div class="right" style="background-color: darkslateblue; color: #fff"></div>
+    <div class="center" style="background-color: #4f81c7; color: #fff">L <span style="border-radius: 50%; border: solid white 5px;padding:0px; width: 10px; height: 10px; animation: dot3 2s infinite">&nbsp;&nbsp;&nbsp;&nbsp;</span>  cus of Control</div>
+        <div class="right" style="background-color: #4f81c7; color: #fff"></div>
 
   </ons-toolbar>
-    
-    <ons-list>
-               <ons-row style="text-align: center; background-color: darkslateblue">  
+    <div id="trigger33"></div>
+    <ons-list id="top33">
+               <ons-row style="text-align: center; background-color: #fcfafa">  
 <ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
     
-    <p style="font-size: 22px; padding: 10px 0"><b></b></p>
-
      
-    <p style="font-size: 22px; padding: 20px 0">One helpful way to rationalise stressors and deal with stress is through understanding the <b>locus of control</b>.</p>
+    <p style="font-size: 22px; padding: 20px 0; color: #000">One helpful way to rationalise stressors and deal with stress is through understanding the <b>locus of control</b>.</p>
 
 
     </ons-col>
@@ -55,13 +53,12 @@ slider.oninput = function() {
     </ons-row>
         
         
-                       <ons-row style="text-align: center; background-color: darkslateblue">  
+                       <ons-row style="text-align: center; background-color: #fcfafa">  
 <ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
     
-    <p style="font-size: 22px; padding: 10px 0"><b></b></p>
 
      
-    <p style="font-size: 22px; padding: 20px 0">Locus of control defined as the general belief that individual’s successes, failures and outcomes are control by individual’s actions and behaviours (internal);or perhaps, people’s achievements , failures and outcomes are controlled by other forces like chance, luck and fate (external) (P. Spector, 1988). 
+    <p style="font-size: 22px; padding: 20px 0; color: #000">Locus of control defined as the general belief that individual’s successes, failures and outcomes are control by individual’s actions and behaviours (internal);or perhaps, people’s achievements , failures and outcomes are controlled by other forces like chance, luck and fate (external) (P. Spector, 1988). 
 </p>
 
 
@@ -70,13 +67,11 @@ slider.oninput = function() {
     </ons-row>
         
         
-<ons-row style="text-align: center; background: linear-gradient(160deg, darkslateblue 50%, darkslategrey 50%)">  
+<ons-row style="text-align: center; background-color: #4f81c7">  
 <ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
-    
-    <p style="font-size: 22px; padding: 10px 0"><b></b></p>
 
      
-    <p style="font-size: 22px; padding: 50px 0"><i><u><b>"When you are dealing with a challenge in your life, do you feel that you have control over the outcome? Or do you believe that you are simply at the hands of outside forces?"</b></u></i>
+    <p style="font-size: 22px; padding: 50px 0; color: #fff"><i><u><b>"When you are dealing with a challenge in your life, do you feel that you have control over the outcome? Or do you believe that you are simply at the hands of outside forces?"</b></u></i>
 </p>
 
 
@@ -85,37 +80,34 @@ slider.oninput = function() {
     </ons-row> 
         
         
-                       <ons-row style="text-align: center; background-color: darkslategrey">  
+                       <ons-row style="text-align: center; background-color: #fcfafa">  
 <ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
     
     <p style="font-size: 22px; padding: 10px 0"><b></b></p>
 
      
-    <p style="font-size: 22px; padding: 20px 0">If you believe that you have control over what happens, then you have what psychologists refer to as an <b>internal locus of control</b>. If you believe that you have no control over what happens and that external variables are to blame, then you have what is known as an <b>external locus of control</b>.
+    <p style="font-size: 22px; padding: 20px 0; text-align: left ;color: #000">If you believe that you have control over what happens, then you have what psychologists refer to as an <b>internal locus of control</b>. If you believe that you have no control over what happens and that external variables are to blame, then you have what is known as an <b>external locus of control</b>.
 </p>
 
 
     </ons-col>
 
     </ons-row>
-        <ons-row style="text-align: center; background: linear-gradient(20deg, darkslateblue 50%, darkslategrey 50%)">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
+        <ons-row style="text-align: center; background-color: #fcfafa">  
+<ons-col class="box1" width="50%" style="padding: 20px 0; font-size: 22px; border-radius: 30px;">
 
      
-    <p style="font-size: 22px; padding: 10px 0; text-align: left"><b>Internal locus of control</b> refers to when individuals believe that outcomes and their success and failures are the result of their own actions and efforts, and are able to control and manage their own lives by making decisions about the events, whilst having the ability to determine their own outcomes and being responsible for what happened.</p>
+    <p style="font-size: 22px; padding: 10px 0; text-align: left; color: #000"><b>Internal locus of control</b> refers to when individuals believe that outcomes and their success and failures are the result of their own actions and efforts, and are able to control and manage their own lives by making decisions about the events, whilst having the ability to determine their own outcomes and being responsible for what happened.</p>
 
 
     </ons-col>
 
-    </ons-row> 
-        
-        
-    <ons-row style="text-align: center; background-color: darkslateblue">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
+ 
+<ons-col class="box1" width="50%" style="padding: 20px 0; font-size: 22px; border-radius: 30px;">
     
 
      
-    <p style="font-size: 22px; padding: 20px 0"><b>External locus of control</b> refers to when individuals believe that 'external' factors such as fate, chance, and luck, friends, and managers determine the outcomes (successes or failures) which they themselves experience
+    <p style="font-size: 22px; padding: 20px 0; color: #000"><b>External locus of control</b> refers to when individuals believe that 'external' factors such as fate, chance, and luck, friends, and managers determine the outcomes (successes or failures) which they themselves experience
     </p>
 
     </ons-col>
@@ -123,34 +115,28 @@ slider.oninput = function() {
     </ons-row>
 
     
-     <ons-row style="text-align: center; background-color: darkgrey;">  
+     <ons-row style="text-align: center; background-color: #4f81c7;">  
 
 
 <ons-col class="box1" width="80%" style="padding: 20px 0; font-size: 22px">
-      <p style="font-size: 22px; padding: 10px 0"><b>Locus of Control</b></p>
+      <p style="font-size: 22px; padding: 10px 0; color: #fff"><b>Locus of Control</b></p>
       
     
    
-      <p style="font-size: 22px; margin-bottom: 20px">Locus of control exists on a continuum. No one has a 100% external or internal locus of control. Instead, most people lie somewhere on the continuum between the two extremes.<br>These are characteristics of people with dominant internal or external locus of control.</p>
+      <p style="font-size: 22px; margin-bottom: 20px; color: #fff">Locus of control exists on a continuum. No one has a 100% external or internal locus of control. Instead, most people lie somewhere on the continuum between the two extremes.<br>These are characteristics of people with dominant internal or external locus of control.</p>
               
     
-    <div class="box1" style="background: darkgreen; border-radius: 30px;">
+    <div class="box1" style="background-color: #f0d78c; border-radius: 30px; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)">
     
-         <div id='dispDiv' style='margin-top: 20px; color: white'></div>
+         <div id='dispDiv' style='margin-top: 20px; color: #000'></div>
     
     
           <ons-row style="margin-top: 20px; padding: 20px 0;">
-      <ons-col width="10%" style="text-align: center; line-height: 31px;">
-          <div class="dot"></div>
-      </ons-col>
       <ons-col style="position: relative">
           <ons-range id="range-1" style="width: 100%;" value="10"></ons-range>
         <div style="position: absolute; top: 6px; left: 5%; font-size: 13px; color: #000; z-index: 990;">internal</div>
           <div style="position: absolute; top: 6px; left: 45%; font-size: 13px; color: #000; z-index: 990;">neither</div>
           <div style="position: absolute; top: 6px; right: 5%; font-size: 13px; color: #000; z-index: 990;">external</div>
-      </ons-col>
-      <ons-col width="10%" style="text-align: center; line-height: 31px;">
-        <div class="dot2"></div>
       </ons-col>
     </ons-row>
     
@@ -159,10 +145,10 @@ slider.oninput = function() {
 
 
       
-    <p style="font-size: 22px; margin-top: 20px;"><b>Remember that you always have the ability to change your situation.</b> There is no situation that you are in that you can’t improve through your own personal action. Sure, it might seem hopeless at the moment, but there are better roads forward from here, no matter what the situation.</p> 
-    <p style="font-size: 22px"><b>Make a list of possible actions you can take in response to a difficult situation.</b> Everyone faces serious challenges at some point in their life. Rather than looking at that challenge as an impenetrable wall, instead look for things you can to to handle this difficult situation. </p>
+    <p style="font-size: 22px; margin-top: 40px; color: #fff"><b>Remember that you always have the ability to change your situation.</b> There is no situation that you are in that you can’t improve through your own personal action. Sure, it might seem hopeless at the moment, but there are better roads forward from here, no matter what the situation.</p> 
+    <p style="font-size: 22px; margin-top: 20px; color: #fff"><b>Make a list of possible actions you can take in response to a difficult situation.</b> Everyone faces serious challenges at some point in their life. Rather than looking at that challenge as an impenetrable wall, instead look for things you can to to handle this difficult situation. </p>
 
-    <p style="font-size: 22px; margin-bottom: 20px;"><b>Stop focusing on things that you cannot control about a situation, and when you catch yourself doing it, think instead about the aspects of the situation that you <i>can</i> control.</b> There are factors in every situation that you can’t control. You can’t control the personalities and responses of others. You can’t control natural events or physical accidents. So stop worrying about those things, because you can’t do much about them. Instead, look at what you can control – your responses to those situations, how you handle your emotions, and the daily choices you make. The better your responses and choices, the less impact those negative things you can’t control will have.</p>
+    <p style="font-size: 22px; margin: 20px 0; color: #fff"><b>Stop focusing on things that you cannot control about a situation, and when you catch yourself doing it, think instead about the aspects of the situation that you <i>can</i> control.</b> There are factors in every situation that you can’t control. You can’t control the personalities and responses of others. You can’t control natural events or physical accidents. So stop worrying about those things, because you can’t do much about them. Instead, look at what you can control – your responses to those situations, how you handle your emotions, and the daily choices you make. The better your responses and choices, the less impact those negative things you can’t control will have.</p>
 
  
 
@@ -173,21 +159,69 @@ slider.oninput = function() {
         
         
             
-    <ons-row style="text-align: center; background-color: darkslateblue">  
+    <ons-row style="text-align: center; background-color: #fcfafa">  
 <ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
     
-    <p style="font-size: 22px; padding: 10px 0"><b>How do I know where I am on the locus of control continuum?</b></p>
+    <p style="font-size: 22px; padding: 10px 0; color: #000;"><b>How do I know where I am on the locus of control continuum?</b></p>
 
      
-    <p style="font-size: 22px; padding: 20px 0">We're glad you asked. Click on the button below to find out!</p>
+    <p style="font-size: 22px; padding: 20px 0; color: #000;">We're glad you asked. Click on the button below to find out!</p>
 
     
     <div style="width: 50%; margin: auto" onclick="loadPage('locus.html')">
-        <div style="background: pink; color: black; font-size: 22px;"><p style="padding: 10px 0"><b>Locus of Control Index</b></p></div></div>
+        <div style="background: #de88a5; border-radius: 30px; margin-bottom: 15px; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)"><p style="padding: 10px 0; color: #000;"><b>Locus of Control Index</b></p></div></div>
 
     </ons-col>
 
     </ons-row>    
+        
+                       <ons-row style="text-align: center; background-color: #000" id="end33">  
+<ons-col class="box1" width="100%" style="padding: 10px 0 0 0;">
+
+     <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto" onclick="smoothScroll(document.getElementById('top33'));">
+             <p style="font-size: 20px; padding: 0;"><ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-up"></ons-icon>&nbsp;&nbsp;&nbsp;Back to top</p></div>
+    
+    
+        <script>
+		// build scene
+                                new ScrollMagic.Scene({
+								triggerElement: "#trigger33",
+								triggerHook: 1, // show, when scrolled 10% into view
+											})
+											.setClassToggle("#end33", "end")
+											.addTo(controller);
+</script>
+    
+    
+               <script>
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}      
+    </script>
+    
+    
+    </ons-col>
+
+               </ons-row>
         
         
     </ons-list>
