@@ -9,7 +9,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-               <script>
+
+
+        <script>
+    const loadPage = (page) => {
+  document.querySelector('#menu').close();
+  document.querySelector('#navigator').bringPageTop(page, { animation: 'fade' });
+};
+    </script>
+     <script>  
 window.fn = {};
 window.fn.toggle = function(el) {
   var elems = document.querySelectorAll(".accordion.active");
@@ -22,22 +30,7 @@ window.fn.toggle = function(el) {
     el.classList.toggle("active");
     el.nextElementSibling.classList.toggle("show");
 }
-
-}      
-    </script>
-
-        <script>
-    const loadPage = (page) => {
-  document.querySelector('#menu').close();
-  document.querySelector('#navigator').bringPageTop(page, { animation: 'fade' });
-};
-    </script>
-     <script>  
-        window.fn = {};
-        window.fn.toggle = function(el) {
-            el.classList.toggle("active");
-            el.nextElementSibling.classList.toggle("show");
-        }    
+        
     </script>
     <style>
     .accordion {
