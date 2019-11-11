@@ -63,15 +63,15 @@ var text;
 var results = document.getElementById("ICIscore").value;
 
 if (results<84) {
-document.getElementById("output").innerHTML = "Your choices indicate a belief that your life is controlled more by external forces than yourself, and the lower the value, the stronger that belief in the power of external forces"
+document.getElementById("output").innerHTML = "Your choices indicate a belief that your life is controlled <b>more by external forces</b> than yourself, and the lower the value, the stronger that belief in the power of external forces"
 }
       else if (results>84)
           {
-document.getElementById("output").innerHTML = "Your choices indicate a belief that you are in control of your own life, with higher values indicating stronger belief in your own power"
+document.getElementById("output").innerHTML = "Your choices indicate a belief that <b>you are in control</b> of your own life, with higher values indicating stronger belief in your own power"
 }
           else
           {
-document.getElementById("output").innerHTML = "Your choices indicate neither an internal nor external Locus of Control<br><br>"
+document.getElementById("output").innerHTML = "Your choices indicate <b>neither</b> an internal nor external Locus of Control<br><br>"
 }              
 }
 
@@ -453,7 +453,7 @@ I need someone else to praise my work before I am satisfied with what I've done.
     <div class="segment__button">Often</div>
   </div>
 </div>
-</ons-list-item><ons-list-item>
+</ons-list-item><ons-list-item style="color: #fff;">
 I am sure enough of my opinions to try to influence others.<br>
 <div class="segment" style="width: 100%; margin: 0 auto;" >
   <div class="segment__item">
@@ -792,24 +792,58 @@ When I am involved in something I try to find out all I can about what is going 
 </ons-list-item>
     
     
-    <ons-row style="text-align: center; background: #000">  
+    
+    <ons-row style="margin: 0; padding: 20px; background: #000;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: rgba(255,228,181,0.2);">
+    
+    <p style="color: #ffe4b5; font-size: 26px"><b>Your internal locus of control score is <br><input type="text" class="textarea" id="ICIscore" name="ICIscore" style="background: moccasin; color: #000; border-radius: 0; border: none; font-weight: bold"></b>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #ffe4b5">
+    
+    <p><span id="output"></span></p>
+      
+
+    </div>
+               
+
+    </ons-row>    
+    
+    
+    
+  <!--  <ons-row style="text-align: center; background: #000">  
 <ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">    
     
     <p style="text-align: left; font-size: 22px; color: #fff"><b>Your internal locus of control score is &nbsp;&nbsp;<input type="text" class="textarea" id="ICIscore" name="ICIscore" style="background: #0076ff; color: #fff; border-radius: 0; border: none;"></b></p>    
     
     <p style="text-align: left; font-size: 22px; padding: 20px 0"><span id="output"></span></p>
     
-        </ons-col></ons-row>
+        </ons-col></ons-row>-->
     
     
 </ons-list>
 
 </form>
+    
+    
+    
+                   <ons-row style="text-align: center; background-color: #000">  
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
+    
+    <p style="font-size: 26px; padding: 40px 0; color: #fff;"><b>If you do not see a number in the box above, you might have skipped one of the statements.</b></p>
+
+    </ons-col>
+
+    </ons-row>  
+    
+    
+    
            <ons-row style="text-align: center; background: #000;">  
 <ons-col class="box1" width="100%" style="padding: 10px 0;">
-    
-    <p style="font-size: 26px; padding: 10px 0; color: #fff">If you do not see a number in the box above, you might have skipped one of the statements.
-    </p>
+
 
      <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto" onclick="smoothScroll(document.getElementById('top3'));">
              <p style="font-size: 20px; padding: 10px 20px; color: #fff"><ons-icon style="border: 2px solid #fff; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-up"></ons-icon>&nbsp;&nbsp;&nbsp;Back to top</p></div>
