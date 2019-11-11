@@ -59,9 +59,7 @@ window.fn.toggle = function(el) {
     .list__item__center {
         padding-left: 5px;
     }
-    </style>
-    <style> 
-        
+
         .range__input {
         background-image: none;
     z-index: 999;
@@ -140,7 +138,7 @@ border: 3px solid transparent ;
 }              
         
         
-        #range-1{
+#range-1{
             background: #fff;
         }    
         
@@ -160,7 +158,6 @@ border: 3px solid transparent ;
         #btn1
         {display: block;}
         
-                
         #btn6.show
         {display: block;}
 
@@ -240,9 +237,7 @@ border: 3px solid transparent ;
       background-color: red;
   }
 }  
-        
-        
-        
+
     .digit {
 		opacity: 0;
 		-webkit-transform: translateX(-40px);
@@ -429,9 +424,6 @@ border: 3px solid transparent ;
     transform: translateX(-40x);
   }
 }  
-        
-        
-        
 						#reveal1,#reveal3 {
 							opacity: 0;
 		-webkit-transform: translateX(-40px);
@@ -473,6 +465,78 @@ border: 3px solid transparent ;
         .skew{
             transform: matrix(1,.2,0,1,0,0);
         }
+        
+        .half{
+        width: 50%
+        }
+        .third{
+        width: 30%
+        }
+        .twothird{
+        width: 70%
+        }
+        .left1{
+        text-align: left;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        }
+        .left1 p
+        {
+            font-size: 22px;
+            padding: 40px; 
+            color: #000; 
+            margin: 0;
+        }
+        .right1
+        {
+        text-align: left;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        }
+        .right1 p
+        {
+            font-size: 22px;
+            padding: 20px; 
+            color: #000; 
+            margin: 0;
+        }
+        
+@media only screen and (max-width: 600px) {
+  .half, .third, .twothird {
+    width: 100%;
+    }
+    .left1{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;        
+        }
+    .right1{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+        }
+            .left1 p
+        {
+            font-size: 22px;
+            padding: 40px 20px; 
+            color: #000; 
+            margin: 0;
+        }
+            .right1 p
+        {
+            font-size: 22px;
+            padding: 20px; 
+            color: #000; 
+            margin: 0;
+        }
+    
+}
+
+
+        
+        
 					</style>
 </head>
 <body>
