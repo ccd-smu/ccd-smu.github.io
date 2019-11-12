@@ -17,41 +17,63 @@
             
             
             
-                 <ons-row style="margin: 0; padding: 20px; background: #000;">  
+<ons-row style="margin: 0; padding: 20px; background: #000;">  
 <div class="box1 half left1" style="padding: 0; font-size: 22px; background: rgba(128,163,162,0.2); position: relative">
     
-    <p style="color: #fff; font-size: 26px"><b>Practicising Mindfulness
-        </b><br><br>
-
+    <p style="color: #fff; font-size: 26px"><b>Practicising Mindfulness</b>
         </p>
 
-                  <p style="color: #fff" id="more1">more</p> 
-        
-        <script>
+    <div class="large">
+            <script>
         $('#rotate').click(function(){
     $(this).toggleClass('rotated');
-$('#img').toggleClass('hide');              
+$('#img,#more').toggleClass('hide');   
   }); 
         </script>
-      <div class="tip" id="rotate" onclick=""><ons-icon icon="md-plus"></ons-icon></div>
+        <div class="tip" id="rotate" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more">more</p>
+    </div>
+    
+        <div class="small">
+            <script>
+        $('#srotate').click(function(){
+    $(this).toggleClass('rotated');
+$('#large1').toggleClass('expand');
+$('#large1').toggleClass('mobileheight');
+$('#img').toggleClass('hide'); 
+  }); 
+        </script>
+        <div class="tip" id="srotate" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore">more</p>
+    </div>
 
     
     </div>
                
-    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #80a3a2;position: relative;">
+    <div id="large1" class="box1 half right1 mobileheight" style="padding: 0; font-size: 22px; background: #80a3a2;">
         
- 
+   <div id="img" class="box1 half right1" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #fff;">
         
-    <img id="img" src="title.png" style="margin: auto; height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #fff;">   
+       <img src="title.png" height="100%" width="100%">   </div>
 
-    
-    <p>When you wake up in the morning, bring attention to your breathing. Instead of letting your mind be distracted of what’s happening around you, take mindful breaths. Focus on your breathing and sense the effects of breathing throughout your body.<br><br>
+    <p class="small" style="color: #fff; font-size: 26px"><b>Practicising Mindfulness</b>
+    </p>
+        
+    <p style="padding: 20px 40px">When you wake up in the morning, bring attention to your breathing. Instead of letting your mind be distracted of what’s happening around you, take mindful breaths. Focus on your breathing and sense the effects of breathing throughout your body.<br><br>
             Instead of rushing from one place to another, slow down and enjoy something special around you.<br><br>
             Try not to sit at your desk or keyboard for too long, take a break or walk around.<br><br>
             Once you return home, clearly demarcate your work and personal life so, focus on your personal life. Give yourself some time alone too.<br><br>
         Before you go to sleep, put away all distractions. Take some slow, mindful deep breaths.</p>
 
-      
+    <script>
+        $('#sclose1').click(function(){
+$('#srotate').toggleClass('rotated');            
+$('#large1').toggleClass('expand');
+$('#large1').toggleClass('mobileheight');
+$('#img').toggleClass('hide'); 
+  }); 
+        </script>
+       
+        <div class="small">
+            <div class="tip rotated" id="sclose1"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
 
     </div>
                
@@ -59,7 +81,7 @@ $('#img').toggleClass('hide');
     </ons-row>        
             
 
-
+<!--
     <ons-list-item tappable class="accordion" onclick="fn.toggle(this)" style="background: #354649"><p style="margin: 0;"><b>Practicising Mindfulness</b></p>
     </ons-list-item>
         <div class="panel">
@@ -141,7 +163,7 @@ Building and maintaining a network of close friends can improve your resilience 
 </ons-list-item>
                            </ons-col></ons-row>                           
         </div>
-
+-->
            <ons-row style="text-align: center; background: #80a3a2; height: 30vh" id="end10">  
                
     </ons-row>
