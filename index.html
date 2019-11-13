@@ -181,22 +181,22 @@ border: 3px solid transparent ;
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
 }
-        #img.hide
+        #img.hide, #img2.hide, #img3.hide
         {
             opacity: 0;
             transition: 0.3s;
         }
-        #img{
+        #img,#img2,#img3{
             opacity: 1;
         transition: 0.3s;
         }
         
-        #more.hide
+        #more.hide, #more2.hide
         {
             opacity: 0;
             transition: 0.3s;
         }
-       #more{
+       #more,#more2{
             opacity: 1;
         transition: 0.3s;
         }
@@ -519,25 +519,25 @@ border: 3px solid transparent ;
         .half{
         width: 50%;
         }
-        .left1, .left2{
+        .left1, .left2, .left3{
         text-align: left;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
         }
-        .left1 p
+        .left1 p, .left3 p
         {
             font-size: 22px;
             padding: 40px; 
             color: #000; 
             margin: 0;
         }
-        .right1, .right2
+        .right1, .right2, .right3
         {
         text-align: left;
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
         }
-        .right1 p
+        .right1 p, .right3 p
         {
             font-size: 22px;
             padding: 20px; 
@@ -569,10 +569,16 @@ border: 3px solid transparent ;
     .small{
         display: none;
     }
-        #large1
+        #large1, #large2, #large3, #large4, #large5
         {position: relative;
-               transition: 0.3s;
+               transition: 0.5s;
         }
+    .reverse{
+          display: -webkit-flex; /* Safari */
+  -webkit-flex-direction: row; /* Safari 6.1+ */
+  display: flex;
+  flex-direction: row;
+    }
         
 @media only screen and (max-width: 600px) {
   .half, .third, .twothird {
@@ -588,6 +594,19 @@ border: 3px solid transparent ;
     border-bottom-right-radius: 0px;        
         }
     .right1{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+        }
+    
+        .right3{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;        
+        }
+    .left3{
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border-top-left-radius: 0px;
@@ -613,24 +632,27 @@ border: 3px solid transparent ;
             color: #fff; 
             margin: 0;
         }
-    #large1.expand{
+    #large1.expand, #large2.expand, #large3.expand, #large4.expand,#large5.expand{
         position: fixed;
         left: 0;
         top: 0;
-        min-height: 100vh;
         width: 100%;
-        transition: 0.3s;
-        border-radius: 0;
+        transition: 0.5s;
+        padding: 40px;
         z-index: 999;
+    max-height: 100vh;
+    overflow-y: auto;
     }
     
-        #large1.expand p:nth-child(3){
-        padding: 0px 20px 0px 20px;
+        #large1.expand p:nth-child(3),#large2.expand p:nth-child(3),#large3.expand p:nth-child(3),#large4.expand p:nth-child(3),#large5.expand p:nth-child(3){
+        padding: 0px 40px 0px 40px;
         transition: 0.3s;
+        font-size: 18px;
     }
-            #large1.expand p:nth-child(2){
-        padding: 80px 20px 40px 20px;
+        #large1.expand p:nth-child(2),#large2.expand p:nth-child(2),#large3.expand p:nth-child(2),#large4.expand p:nth-child(2),#large5.expand p:nth-child(2){
+        padding: 80px 40px 20px 40px;
         transition: 0.3s;
+        font-size: 18px;
     }
     
     .mobileheight{
@@ -645,7 +667,13 @@ border: 3px solid transparent ;
     }
     .tip
     {
-     margin: 0 0 0 20px;
+     margin: 0 0 0 40px;
+    }
+    .reverse{
+          display: -webkit-flex; /* Safari */
+  -webkit-flex-direction: column-reverse; /* Safari 6.1+ */
+  display: flex;
+  flex-direction: column-reverse;
     }
         }
 
