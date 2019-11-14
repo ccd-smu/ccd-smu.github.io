@@ -55,7 +55,7 @@ $('#img').toggleClass('hide');
         
    <div id="img" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #fff;">
         
-       <div class="contain">
+       <div id="contain">
     <div class="watch-face">
   <div class="circle"></div>
   <div class="circle"></div>
@@ -109,7 +109,7 @@ $('#img').toggleClass('hide');
             <script>
         $('#rotate2').click(function(){
     $(this).toggleClass('rotated');
-$('#img2,#more2').toggleClass('hide');   
+$('#img2,#more2,#contain,#heart').toggleClass('hide');   
   }); 
         </script>
         <div class="tip" id="rotate2" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more2">more</p>
@@ -121,7 +121,8 @@ $('#img2,#more2').toggleClass('hide');
     $(this).toggleClass('rotated');
 $('#large2').toggleClass('expand');
 $('#large2').toggleClass('mobileheight');
-$('#img2').toggleClass('hide'); 
+$('#img2,#contain,#heart').toggleClass('hide');
+
   }); 
         </script>
         <div class="tip" id="srotate2" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore2">more</p>
@@ -133,7 +134,7 @@ $('#img2').toggleClass('hide');
     <div id="large2" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: #80a3a2;">
         
             <div id="img2" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #c33c33;"></div>
-        <div class="contain">
+        <div id="#contain">
       <div id="heart"></div>   </div>
 
     <p class="small" style="color: #fff;"><b>Adopt a healthy lifestyle</b>
@@ -181,7 +182,7 @@ $('#img2').toggleClass('hide');
             <script>
         $('#rotate3').click(function(){
     $(this).toggleClass('rotated');
-$('#img3,#more3').toggleClass('hide');   
+$('#img3,#more3,#contain2').toggleClass('hide');   
   }); 
         </script>
         <div class="tip" id="rotate3" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more3">more</p>
@@ -193,7 +194,7 @@ $('#img3,#more3').toggleClass('hide');
     $(this).toggleClass('rotated');
 $('#large3').toggleClass('expand');
 $('#large3').toggleClass('mobileheight');
-$('#img3').toggleClass('hide'); 
+$('#img3,#contain2').toggleClass('hide'); 
   }); 
         </script>
         <div class="tip" id="srotate3" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore3">more</p>
@@ -202,11 +203,11 @@ $('#img3').toggleClass('hide');
     
     </div>
                
-    <div id="large3" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: #000;">
+    <div id="large3" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: #80a3a2;">
         
    <div id="img3" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #000;">
         
-<div class="contain2" style="background: #000">
+<div id="contain3">
   <div class="bubble"></div>
   <div class="bubble"></div>
   <div class="bubble"></div>
