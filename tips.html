@@ -7,21 +7,33 @@
       
          <div class="right" style="background: #80a3a2; color: #fff"></div>
   </ons-toolbar>
+    <div id="test">
         <ons-list>
 
+            
+            <script>
+                
+function reload(){
+ 
+document.querySelector('#navigator').replacePage('tips.html',{animation: 'none'});
+  }; 
+                
+window.onresize = reload;
+
+            </script>
+            
        <ons-row style="text-align: center; background-color: #80a3a2; padding: 10px 0" id="top10">  
            
-                         <img src="over.png" style="margin: auto; height: 40vh;">   
-           </ons-row>
-    
-            
-            
+                         <img src="over.png" style="margin: auto; height: 40vh;"> 
+         </ons-row>
+
+
             
 <ons-row style="margin: 0; padding: 20px; background: #000;">  
 
-<div class="reverse">    
+<div class="reverse" style="width: 100%;">    
     
-<div class="box1 half left3" style="padding: 0; font-size: 22px; background: rgba(128,163,162,0.2); position: relative">
+<div id="right1" class="box1 half left3" style="padding: 0; font-size: 22px; background: rgba(128,163,162,0.2); position: relative">
     
     <p style="color: #fff; font-size: 26px"><b>Practicising Mindfulness</b>
         </p>
@@ -30,8 +42,8 @@
             <script>
         $('#rotate').click(function(){
     $(this).toggleClass('rotated');
-$('#img,#more').toggleClass('hide');   
-  }); 
+$('#img,#more,#contain').toggleClass('hide'); 
+}); 
         </script>
         <div class="tip" id="rotate" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more">more</p>
     </div>
@@ -42,7 +54,7 @@ $('#img,#more').toggleClass('hide');
     $(this).toggleClass('rotated');
 $('#large1').toggleClass('expand');
 $('#large1').toggleClass('mobileheight');
-$('#img').toggleClass('hide'); 
+$('#img,#contain').toggleClass('hide'); 
   }); 
         </script>
         <div class="tip" id="srotate" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore">more</p>
@@ -53,7 +65,7 @@ $('#img').toggleClass('hide');
                
     <div id="large1" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: #80a3a2;">
         
-   <div id="img" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #fff;">
+   <div id="img" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: transparent;">
         
        <div id="contain">
     <div class="watch-face">
@@ -76,14 +88,14 @@ $('#img').toggleClass('hide');
             Instead of rushing from one place to another, slow down and enjoy something special around you.<br><br>
             Try not to sit at your desk or keyboard for too long, take a break or walk around.<br><br>
             Once you return home, clearly demarcate your work and personal life so, focus on your personal life. Give yourself some time alone too.<br><br>
-        Before you go to sleep, put away all distractions. Take some slow, mindful deep breaths.</p>
+        Before you go to sleep, put away all distractions. Take some slow, mindful deep breaths.<br></p>
 
     <script>
         $('#sclose1').click(function(){
 $('#srotate').toggleClass('rotated');            
 $('#large1').toggleClass('expand');
 $('#large1').toggleClass('mobileheight');
-$('#img').toggleClass('hide'); 
+$('#img,#contain').toggleClass('hide'); 
   }); 
         </script>
        
@@ -98,7 +110,7 @@ $('#img').toggleClass('hide');
                         
 <ons-row style="margin: 0; padding: 20px; background: #000;">  
 
-<div class="reverse">    
+<div class="reverse" style="width: 100%;">    
     
 <div class="box1 half left3" style="padding: 0; font-size: 22px; background: rgba(128,163,162,0.2); position: relative">
     
@@ -109,7 +121,7 @@ $('#img').toggleClass('hide');
             <script>
         $('#rotate2').click(function(){
     $(this).toggleClass('rotated');
-$('#img2,#more2,#contain,#heart').toggleClass('hide');   
+$('#img2,#more2,#contain2,#heart').toggleClass('hide');   
   }); 
         </script>
         <div class="tip" id="rotate2" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more2">more</p>
@@ -121,7 +133,7 @@ $('#img2,#more2,#contain,#heart').toggleClass('hide');
     $(this).toggleClass('rotated');
 $('#large2').toggleClass('expand');
 $('#large2').toggleClass('mobileheight');
-$('#img2,#contain,#heart').toggleClass('hide');
+$('#img2,#contain2,#heart').toggleClass('hide');
 
   }); 
         </script>
@@ -133,13 +145,11 @@ $('#img2,#contain,#heart').toggleClass('hide');
                
     <div id="large2" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: #80a3a2;">
         
-            <div id="img2" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #c33c33;"></div>
-        <div id="#contain">
-      <div id="heart"></div>   </div>
+            <div id="img2" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #c33c33;">
+        <div id="#contain2">
+      <div id="heart"></div>   </div></div>
 
-    <p class="small" style="color: #fff;"><b>Adopt a healthy lifestyle</b>
-    </p>
-        
+        <p class="small" style="color: #fff;"><b>Adopt a healthy lifestyle</b></p>
     <p><b>Healthy diet:</b> Including fruits, vegetables, juice, fish and other healthy vegetables in your diet will reduce the negative effects that stress causes on the body.<br><br>
                 
                 <b>Be aware of your smoking and alcohol consumption as much as possible:</b> Although these things reduce stress initially, they cause severe damage in the long run.<br><br>
@@ -155,7 +165,7 @@ Sound sleep is important in order to stay stress-free as it keeps us physically 
 $('#srotate2').toggleClass('rotated');            
 $('#large2').toggleClass('expand');
 $('#large2').toggleClass('mobileheight');
-$('#img2').toggleClass('hide'); 
+$('#img2,#contain2,#heart').toggleClass('hide'); 
   }); 
         </script>
        
@@ -167,8 +177,7 @@ $('#img2').toggleClass('hide');
     </div>
     </ons-row>        
             
-
-     
+  
 <ons-row style="margin: 0; padding: 20px; background: #000;">  
 
 <div class="reverse" style="width: 100%;">    
@@ -182,7 +191,7 @@ $('#img2').toggleClass('hide');
             <script>
         $('#rotate3').click(function(){
     $(this).toggleClass('rotated');
-$('#img3,#more3,#contain2').toggleClass('hide');   
+$('#img3,#more3,#contain3').toggleClass('hide');   
   }); 
         </script>
         <div class="tip" id="rotate3" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more3">more</p>
@@ -194,7 +203,7 @@ $('#img3,#more3,#contain2').toggleClass('hide');
     $(this).toggleClass('rotated');
 $('#large3').toggleClass('expand');
 $('#large3').toggleClass('mobileheight');
-$('#img3,#contain2').toggleClass('hide'); 
+$('#img3,#contain3').toggleClass('hide'); 
   }); 
         </script>
         <div class="tip" id="srotate3" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore3">more</p>
@@ -218,14 +227,14 @@ $('#img3,#contain2').toggleClass('hide');
     <p class="small" style="color: #fff;"><b>Mindset</b>
     </p>
         
-    <p><b>Don’t be too hard on yourself:</b> Try to keep things in perspective. After all, we all have bad days.</p>
+    <p><b>Don’t be too hard on yourself</b><br><br>Try to keep things in perspective. After all, we all have bad days.<br><br></p>
 
     <script>
         $('#sclose3').click(function(){
 $('#srotate3').toggleClass('rotated');            
 $('#large3').toggleClass('expand');
 $('#large3').toggleClass('mobileheight');
-$('#img3').toggleClass('hide'); 
+$('#img3,#contain3').toggleClass('hide'); 
   }); 
         </script>
        
@@ -241,7 +250,7 @@ $('#img3').toggleClass('hide');
      
 <ons-row style="margin: 0; padding: 20px; background: #000;">  
 
-<div class="reverse">    
+<div class="reverse" style="width: 100%;">    
     
 <div class="box1 half left3" style="padding: 0; font-size: 22px; background: rgba(128,163,162,0.2); position: relative">
     
@@ -275,9 +284,23 @@ $('#img4').toggleClass('hide');
                
     <div id="large4" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: #80a3a2;">
         
-   <div id="img4" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #fff;">
+   <div id="img4" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #000;">
+       
+        <div id="contain4" class="overflow: hidden;">
+  
+            <div style="height: 60px; width: 40px; background: white; border-radius: 5px; padding: 5px;">
+                <div class="line" style="height: 5px; width: 30px; background: black; margin: 5px 2px;"></div>
+                
+                <div id="line2" class="line" style="height: 5px; width: 25px; background: black; margin: 5px 2px;"></div>
+                
+                <div id="line3" class="line" style="height: 5px; width: 20px; background: black; margin: 5px 2px;"></div>
+            </div>    
+            
+            
+       </div>
+
         
-       <img src="title.png" height="100%" width="100%">   </div>
+        </div>
 
     <p class="small" style="color: #fff;"><b>Reflect</b>
     </p>
@@ -430,4 +453,5 @@ window.smoothScroll = function(target) {
                </ons-row>
     
     </ons-list>
+    </div>
 </ons-page>
