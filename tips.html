@@ -12,7 +12,25 @@
 
             
             <script>
-                
+             document.addEventListener('init', function(event) {
+  var page = event.target;
+	var navi = document.querySelector('#myNavigator');
+	
+	// Master
+	navi.replacePage = function (page, options) {
+    return this.pushPage(page, options || {})
+      .then(function(resolvedValue) {
+        if (navi.pages.length > 1) {
+					// console.log('destroying');
+					// console.log(navi.pages[navi.pages.length - 2]);
+					navi.pages[navi.pages.length - 2]._destroy();
+					// console.log('destroyed')
+        }
+        this._updateLastPageBackButton();
+
+        return Promise.resolve(resolvedValue);
+      });
+  }   
 function reload(){
  
 document.querySelector('#navigator').replacePage('tips.html',{animation: 'none'});
