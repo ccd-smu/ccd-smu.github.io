@@ -12,16 +12,23 @@
 
             
             <script>
-             
-
                 
-window.onresize = document.querySelector('#navigator').replacePage('tips.html',{animation: 'none'});
+                
+                
+function reload(){
+    document.querySelector('#navigator').replacePage('tips.html',{animation: 'none'},{refresh: true});
+  }; 
+                
+        
+window.onresize = reload;
+
 
             </script>
             
        <ons-row style="text-align: center; background-color: #80a3a2; padding: 10px 0" id="top10">  
            
-                         <img src="over.png" style="margin: auto; height: 40vh;"> 
+                         <img src="over.png" style="margin: auto; height: 40vh;">
+         
          </ons-row>
 
 
@@ -37,24 +44,23 @@ window.onresize = document.querySelector('#navigator').replacePage('tips.html',{
 
     <div class="large">
             <script>
-        $('#rotate').click(function(){
-    $(this).toggleClass('rotated');
+       function rotate(){
+    $('#rotate').toggleClass('rotated');
 $('#img,#more,#contain').toggleClass('hide'); 
-}); 
+}
         </script>
-        <div class="tip" id="rotate" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more">more</p>
+        <div class="tip" id="rotate" onclick="rotate()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more">more</p>
     </div>
     
         <div class="small">
             <script>
-        $('#srotate').click(function(){
-    $(this).toggleClass('rotated');
+        function srotate(){
 $('#large1').toggleClass('expand');
 $('#large1').toggleClass('mobileheight');
 $('#img,#contain').toggleClass('hide'); 
-  }); 
+  }
         </script>
-        <div class="tip" id="srotate" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore">more</p>
+        <div class="tip" id="srotate" onclick="srotate()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore">more</p>
     </div>
 
     
@@ -88,16 +94,15 @@ $('#img,#contain').toggleClass('hide');
         Before you go to sleep, put away all distractions. Take some slow, mindful deep breaths.<br></p>
 
     <script>
-        $('#sclose1').click(function(){
-$('#srotate').toggleClass('rotated');            
+        function sclose1(){          
 $('#large1').toggleClass('expand');
 $('#large1').toggleClass('mobileheight');
 $('#img,#contain').toggleClass('hide'); 
-  }); 
+  }
         </script>
        
         <div class="small">
-            <div class="tip rotated" id="sclose1"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
+            <div class="tip rotated" id="sclose1" onclick="sclose1()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
 
     </div>
                
@@ -116,25 +121,24 @@ $('#img,#contain').toggleClass('hide');
 
     <div class="large">
             <script>
-        $('#rotate2').click(function(){
-    $(this).toggleClass('rotated');
+    function rotate2(){
+    $('#rotate2').toggleClass('rotated');
 $('#img2,#more2,#contain2,#heart').toggleClass('hide');   
-  }); 
+  }
         </script>
-        <div class="tip" id="rotate2" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more2">more</p>
+        <div class="tip" id="rotate2" onclick="rotate2()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more2">more</p>
     </div>
     
         <div class="small">
             <script>
-        $('#srotate2').click(function(){
-    $(this).toggleClass('rotated');
+function srotate2(){
 $('#large2').toggleClass('expand');
 $('#large2').toggleClass('mobileheight');
 $('#img2,#contain2,#heart').toggleClass('hide');
 
-  }); 
+  }
         </script>
-        <div class="tip" id="srotate2" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore2">more</p>
+        <div class="tip" id="srotate2" onclick="srotate2()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore2">more</p>
     </div>
 
     
@@ -158,16 +162,15 @@ Sound sleep is important in order to stay stress-free as it keeps us physically 
 </p>
 
     <script>
-        $('#sclose2').click(function(){
-$('#srotate2').toggleClass('rotated');            
+    function sclose2(){           
 $('#large2').toggleClass('expand');
 $('#large2').toggleClass('mobileheight');
 $('#img2,#contain2,#heart').toggleClass('hide'); 
-  }); 
+  }
         </script>
        
         <div class="small">
-            <div class="tip rotated" id="sclose2"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
+            <div class="tip rotated" id="sclose2" onclick="sclose2()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
 
     </div>
                
@@ -186,24 +189,23 @@ $('#img2,#contain2,#heart').toggleClass('hide');
 
     <div class="large">
             <script>
-        $('#rotate3').click(function(){
-    $(this).toggleClass('rotated');
+     function rotate3(){
+    $('#rotate3').toggleClass('rotated');
 $('#img3,#more3,#contain3').toggleClass('hide');   
-  }); 
+  }
         </script>
-        <div class="tip" id="rotate3" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more3">more</p>
+        <div class="tip" id="rotate3" onclick="rotate3()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more3">more</p>
     </div>
     
         <div class="small">
             <script>
-        $('#srotate3').click(function(){
-    $(this).toggleClass('rotated');
+function srotate3(){
 $('#large3').toggleClass('expand');
 $('#large3').toggleClass('mobileheight');
 $('#img3,#contain3').toggleClass('hide'); 
-  }); 
+  }
         </script>
-        <div class="tip" id="srotate3" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore3">more</p>
+        <div class="tip" id="srotate3" onclick="srotate3()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore3">more</p>
     </div>
 
     
@@ -227,16 +229,15 @@ $('#img3,#contain3').toggleClass('hide');
     <p><b>Don’t be too hard on yourself</b><br><br>Try to keep things in perspective. After all, we all have bad days.<br><br></p>
 
     <script>
-        $('#sclose3').click(function(){
-$('#srotate3').toggleClass('rotated');            
+function sclose3(){
 $('#large3').toggleClass('expand');
 $('#large3').toggleClass('mobileheight');
 $('#img3,#contain3').toggleClass('hide'); 
-  }); 
+  }
         </script>
        
         <div class="small">
-            <div class="tip rotated" id="sclose3"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
+            <div class="tip rotated" id="sclose3" onclick="sclose3()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
 
     </div>
                
@@ -256,24 +257,23 @@ $('#img3,#contain3').toggleClass('hide');
 
     <div class="large">
             <script>
-        $('#rotate4').click(function(){
-    $(this).toggleClass('rotated');
+function rotate4(){
+    $('#rotate4').toggleClass('rotated');
 $('#img4,#more4').toggleClass('hide');   
-  }); 
+  }
         </script>
-        <div class="tip" id="rotate4" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more4">more</p>
+        <div class="tip" id="rotate4" onclick="rotate4()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more4">more</p>
     </div>
     
         <div class="small">
             <script>
-        $('#srotate4').click(function(){
-    $(this).toggleClass('rotated');
+function srotate4(){
 $('#large4').toggleClass('expand');
 $('#large4').toggleClass('mobileheight');
 $('#img4').toggleClass('hide'); 
-  }); 
+  }
         </script>
-        <div class="tip" id="srotate4" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore4">more</p>
+        <div class="tip" id="srotate4" onclick="srotate4()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore4">more</p>
     </div>
 
     
@@ -314,16 +314,15 @@ What you did to make yourself feel better?<br>
 CLICK HERE FOR JOUNRAL</p>
 
     <script>
-        $('#sclose4').click(function(){
-$('#srotate4').toggleClass('rotated');            
+function sclose4(){          
 $('#large4').toggleClass('expand');
 $('#large4').toggleClass('mobileheight');
 $('#img4').toggleClass('hide'); 
-  }); 
+  }
         </script>
        
         <div class="small">
-            <div class="tip rotated" id="sclose4"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
+            <div class="tip rotated" id="sclose4" onclick="sclose4()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
 
     </div>
                
@@ -342,24 +341,23 @@ $('#img4').toggleClass('hide');
 
     <div class="large">
             <script>
-        $('#rotate5').click(function(){
-    $(this).toggleClass('rotated');
+function rotate5(){
+    $('#rotate5').toggleClass('rotated');
 $('#img5,#more5').toggleClass('hide');   
-  }); 
+  }
         </script>
-        <div class="tip" id="rotate5" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more5">more</p>
+        <div class="tip" id="rotate5" onclick="rotate5()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more5">more</p>
     </div>
     
         <div class="small">
             <script>
-        $('#srotate5').click(function(){
-    $(this).toggleClass('rotated');
+function srotate5(){
 $('#large5').toggleClass('expand');
 $('#large5').toggleClass('mobileheight');
 $('#img5').toggleClass('hide'); 
-  }); 
+  }
         </script>
-        <div class="tip" id="srotate5" onclick=""><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore5">more</p>
+        <div class="tip" id="srotate5" onclick="srotate5()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore5">more</p>
     </div>
 
     
@@ -380,16 +378,15 @@ People you talk to don’t have to be able to fix your stress. They simply need 
 Building and maintaining a network of close friends can improve your resilience to life’s stressors.</p>
 
     <script>
-        $('#sclose5').click(function(){
-$('#srotate5').toggleClass('rotated');            
+function sclose5(){           
 $('#large5').toggleClass('expand');
 $('#large5').toggleClass('mobileheight');
 $('#img5').toggleClass('hide'); 
-  }); 
+  }
         </script>
        
         <div class="small">
-            <div class="tip rotated" id="sclose5"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
+            <div class="tip rotated" id="sclose5" onclick="sclose5()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
 
     </div>
                
