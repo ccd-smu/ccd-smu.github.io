@@ -13,16 +13,16 @@
             
             <script>
                 
-                
-                
-function reload(){
-    document.querySelector('#navigator').replacePage('tips.html',{animation: 'none'},{refresh: true});
-  }; 
-                
-        
-window.onresize = reload;
+         document.addEventListener('init', function(event) {
+  var page = event.target;
 
+  if (page.id === 'tips') {
+    window.onresize = function() {
+          document.querySelector('#navigator').replacePage('tips.html',{animation: 'none'},{refresh: true});
 
+    };
+  } 
+});
             </script>
             
        <ons-row style="text-align: center; background-color: #80a3a2; padding: 10px 0" id="top10">  
@@ -33,7 +33,7 @@ window.onresize = reload;
 
 
             
-<ons-row style="margin: 0; padding: 20px; background: #000;">  
+<ons-row style="margin: 0; padding: 20px; background: #000;" id="one">  
 
 <div class="reverse" style="width: 100%;">    
     
@@ -366,15 +366,23 @@ $('#img5').toggleClass('hide');
     <div id="large5" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: #80a3a2;">
         
    <div id="img5" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #fff;">
+       <div id="contain5" style="height: 100%; overflow: hidden;">
+      <ons-icon class="social" icon="md-face"></ons-icon>
+        <ons-icon class="social" style="left: 50%; animation: rot2 3s infinite ease-out;" icon="md-face"></ons-icon>
+       <ons-icon class="social" style="left: 50%; animation: rot3 3s infinite ease-out;" icon="md-face"></ons-icon>
+       <ons-icon class="social" style="left: 50%; animation: rot4 3s infinite ease-out;" icon="md-face"></ons-icon>
+       <ons-icon class="social" style="left: 50%; animation: rot5 3s infinite ease-out;" icon="md-face"></ons-icon>
+       <ons-icon class="social" style="left: 50%; animation: rot6 3s infinite ease-out;" icon="md-face"></ons-icon>
         
-       <img src="title.png" height="100%" width="100%">   </div>
+       </div>
+        </div>
 
     <p class="small" style="color: #fff;"><b>Socialising</b>
     </p>
         
-    <p><b>Connect with others:</b><br>
-Spending quality time with another human being who makes you feel safe and understood will help to make you feel more calm.<br>
-People you talk to don’t have to be able to fix your stress. They simply need to be good listeners. <br>
+    <p><b>Connect with others</b><br><br>
+Spending quality time with another human being who makes you feel safe and understood will help to make you feel more calm.<br><br>
+People you talk to don’t have to be able to fix your stress. They simply need to be good listeners. <br><br>
 Building and maintaining a network of close friends can improve your resilience to life’s stressors.</p>
 
     <script>
@@ -395,7 +403,7 @@ $('#img5').toggleClass('hide');
                 
 
 
-           <ons-row style="text-align: center; background: #000; height: 30vh" id="end10">  
+           <ons-row style="text-align: center; background: #000; height: 30vh" id="trigger19">  
                
     </ons-row>
            <ons-row style="text-align: center; background-color: #000;" id="end10">  
@@ -408,7 +416,7 @@ $('#img5').toggleClass('hide');
         <script>
 		// build scene
                                 new ScrollMagic.Scene({
-								triggerElement: "#trigger11",
+								triggerElement: "#trigger19",
 								triggerHook: 1, // show, when scrolled 10% into view
 											})
 											.setClassToggle("#end10", "end")

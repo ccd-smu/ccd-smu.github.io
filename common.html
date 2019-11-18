@@ -144,6 +144,56 @@
 
 
     
+           <ons-row style="text-align: center; background: #000; height: 30vh" id="trigger111">  
+               
+    </ons-row>
+           <ons-row style="text-align: center; background-color: #000;" id="end111">  
+<ons-col class="box1" width="100%" style="padding: 10px 0 0 0;">
+
+     <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto" onclick="smoothScroll(document.getElementById('top10'));">
+             <p style="font-size: 20px; padding: 0;"><ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-up"></ons-icon>&nbsp;&nbsp;&nbsp;Back to top</p></div>
+    
+    
+        <script>
+		// build scene
+                                new ScrollMagic.Scene({
+								triggerElement: "#trigger111",
+								triggerHook: 1, // show, when scrolled 10% into view
+											})
+											.setClassToggle("#end111", "end")
+											.addTo(controller);
+</script>
+    
+    
+               <script>
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}      
+    </script>
+    
+    
+    </ons-col>
+
+               </ons-row>
 
        
     

@@ -12,18 +12,57 @@
   </div>
 </div>
     
-    <ons-list id="list">
+        <ons-row style="margin: 0; padding: 20px; background: #000;" onclick="loadPage('stressjournal2.html')">  
+                    
+            
+            
+            <div style="width: 80%; background: orange; margin: 0 auto; position: relative; height: 60px; overflow: hidden; z-index: 20">
+                            
+                <div style="width: 40%; background: white; margin: 0 auto; border-radius: 0 0 30px 30px; top: 0; height: 40px; overflow: hidden;">
+                    <div style="width: 100%; background: green; border-radius: 30px; top: 0; height: 30px; top: 10%; left: 0; position: absolute; z-index: 0">
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+               
+
+    </ons-row> 
+    
+    <ons-row onclick="loadPage('stressjournal2.html')">
         
         
-<ons-list-item onclick="loadPage('stressjournal2.html')"> 
-    <div class="left"><ons-icon icon="md-file-text" class="list-item__icon" size="20px"></ons-icon>
-</div>    
-<div class="center">My Stress Journal</div>
-<div class="right">
-<ons-icon icon="md-chevron-right"></ons-icon>
-</div>
-</ons-list-item>
         
+        <ons-col>
+            <p>My Stress Journal</p>
+            
+                    <div style="width: 80%; background: orange">
+            <div style="width: 40%; background: white">
+                
+            </div>
+            
+        </div>
+            
+        </ons-col>
+
+    </ons-row>
+    
+    
+        <ons-row onclick="loadPage('locus.html')">
+        <ons-col>
+            <p>Measuring my locus of control</p>
+            
+            
+            
+        </ons-col>
+
+    </ons-row>
+    
+    
+    <!--<ons-list id="list">
+        
+
     <ons-list-item onclick="loadPage('locus.html')"> 
     <div class="left"><ons-icon icon="md-ruler" class="list-item__icon" size="20px"></ons-icon>
 </div>    
@@ -33,5 +72,25 @@
 </div>
 </ons-list-item>
         
-  
+
+   
+    
+    <ons-row>
+        
+        <div style="width: 80%; background: orange">
+            <div style="width: 40%; background: white">
+                
+            </div>
+            
+        </div>
+        
+    </ons-row>
+     </ons-list>-->
+    
+    
+      <ons-toast id="myToast" animation="ascend" animation-options="{duration: 0.2, delay: 0.5}">
+  Hello there! We recommend that you read the accompanying chapters before you start on the activities.
+  <button onclick="myToast.hide()">ok</button>
+</ons-toast>
+    
 </ons-page>
