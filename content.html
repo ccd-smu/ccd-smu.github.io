@@ -30,31 +30,31 @@
            
            
      <ons-row style="width: 95%; margin: 0 auto;">                        
-                <div class="digit" style="animation-delay: 0s; width: 100%;" onclick="loadPage('common.html')">
-                <div class="box1" style="background: #000; border-radius: 30px; margin-bottom: 15px; overflow: hidden; height: 48px; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)"><p style="color: #fff; margin: 10px;;">Common <img src="sign_small.png" width="30px" style="vertical-align: middle"> of stress</p></div></div>
+                <div class="digit" style="opacity: 1; width: 100%;" onclick="loadPage('common.html')">
+                <div class="box1" style="background: #000; border-radius: 30px; margin-bottom: 15px; overflow: hidden; height: 48px; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)"><p style="color: #fff; margin: 10px;;">Common signs of stress</p></div></div>
                 
-          <div class="digit" style="animation-delay: 0.5s; width: 100%" onclick="loadPage('what.html')">
+          <div class="digit" style="opacity: 1; width: 100%" onclick="loadPage('what.html')">
                               <div class="box1" style=" background: #fcf9ea; border-radius: 30px; margin-bottom: 15px; overflow: hidden; height: 48px; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)"><p style="color: #000;">What can I do?</p></div></div>
 
          
-         <div class="digit" style="animation-delay: 1s; width: 100%" onclick="loadPage('gallery.html')">
+         <div class="digit" style="opacity: 1; width: 100%" onclick="loadPage('gallery.html')">
                     <div class="box1" style="background: #EAEAEA; border-radius: 30px; margin-bottom: 15px; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)">
                         <p style="color: #000">Good Stress / Bad Stress</p>
                     </div></div>
          
-          <div class="digit" style="animation-delay: 1.5s; width: 100%" onclick="loadPage('longshort.html')">
+          <div class="digit" style="opacity: 1; width: 100%" onclick="loadPage('longshort.html')">
                     <div class="box1" style=" background: #ffcbcb; border-radius: 30px; margin-bottom: 15px; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)">
                         <p style="color: #000">Long &amp; Short Term Stress</p>
                     </div></div>
 
-         <div class="digit" style="animation-delay: 2s; width: 100%" onclick="loadPage('locuscontrol.html')">
+         <div class="digit" style="opacity: 1; width: 100%" onclick="loadPage('locuscontrol.html')">
              <div class="box1" style="background: #4f81c7; border-radius: 30px; margin-bottom: 15px; overflow: hidden; height: 48px; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)"><p style="color: #fff">Locus of Control</p></div></div>
         
-         <div class="digit" style="animation-delay: 2.5s; width: 100%" onclick="loadPage('perspective.html')">
+         <div class="digit" style="opacity: 1; width: 100%" onclick="loadPage('perspective.html')">
              <div class="box1" style="background: #655989; border-radius: 30px; margin-bottom: 15px; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)"><p  style="color: #fff">A different 
                  <span class="skew" style="position: absolute;">perspective</span> <span style="color: transparent">perspective</span> on stressors</p></div></div>
          
-         <div class="digit" style="animation-delay: 3s; width: 100%" onclick="loadPage('tips.html')">
+         <div class="digit" style="opacity: 1; width: 100%" onclick="loadPage('tips.html')">
                               <div class="box1" style="background: #80a3a2; border-radius: 30px; margin-bottom: 15px; overflow: hidden; height: 48px; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)"><p style="color: #fff">Tips to handle stress</p></div></div>
 
            </ons-row>
@@ -62,21 +62,6 @@
 
 </ons-list>
 
-    <script>    
-            var controller = new ScrollMagic.Controller();
-  	// build scenes
-		var revealElements = document.getElementsByClassName("digit");
-		for (var i=0; i<revealElements.length; i++) { // create a scene for each element
-			new ScrollMagic.Scene({
-								triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
-								offset: -60,												 // start a little later
-								triggerHook: 1,
-							})
-							.setClassToggle(revealElements[i], "visible") // add class toggle
-							.addTo(controller);
-		}
-    
-    </script>  
     
         
         

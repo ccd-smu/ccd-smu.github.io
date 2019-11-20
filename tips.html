@@ -1,16 +1,19 @@
 <ons-page id="tips" style="min-height: 100vh; background: #80a3a2;">
+
+    
   <ons-toolbar>
-      <div class="left" style="background-color: #80a3a2; color: #fff">
+      <div class="left">
   <ons-back-button></ons-back-button>
 </div>
-    <div class="center" style="background-color: #80a3a2; color: #fff">Tips</div>
+    <div class="center">Tips</div>
       
-         <div class="right" style="background: #80a3a2; color: #fff"></div>
+              <div class="right">
+      </div>
   </ons-toolbar>
     <div id="test">
         <ons-list>
 
-            
+
             <script>
                 
          document.addEventListener('init', function(event) {
@@ -151,14 +154,14 @@ $('#img2,#contain2,#heart').toggleClass('hide');
       <div id="heart"></div>   </div></div>
 
         <p class="small" style="color: #fff;"><b>Adopt a healthy lifestyle</b></p>
-    <p><b>Healthy diet</b><br> Including fruits, vegetables, juice, fish and other healthy vegetables in your diet will reduce the negative effects that stress causes on the body.<br><br>
+    <p><b>Healthy diet</b><br> Including healthy fruits and vegetables in your diet will reduce the negative effects of stress on the body.<br><br>
                 
-                <b>Be aware of your smoking and alcohol consumption as much as possible</b><br>Although these things reduce stress initially, they cause severe damage in the long run.<br><br>
+                <b>Be aware of your smoking and alcohol consumption</b><br>Although these things reduce stress initially, they cause severe damage in the long run.<br><br>
 
-                <b>Regular exercise</b><br>Physical exercise can be effective in relieving stress. Even going out to get some fresh air and taking some light physical exercise, like walking to the shops, can help.<br><br>
+                <b>Regular exercise</b><br>Physical exercise can be effective in relieving stress. Even going out to get some fresh air and some light physical exercise, like shopping, can help.<br><br>
 
 <b>Try to get sound sleep</b><br>
-Sound sleep is important in order to stay stress-free as it keeps us physically and mentally fit. Not getting enough sleep will make you easily tired and will also lower your immune level.
+Sound sleep is important to stay stress-free as it keeps us physically and mentally fit. Not getting enough sleep will make you easily tired and lower your immunity.
 </p>
 
     <script>
@@ -413,9 +416,8 @@ $('#img5').toggleClass('hide');
            <ons-row style="text-align: center; background-color: #000;" id="end10">  
 <ons-col class="box1" width="100%" style="padding: 10px 0 0 0;">
 
-     <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto" onclick="smoothScroll(document.getElementById('top10'));">
-             <p style="font-size: 20px; padding: 0;"><ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-up"></ons-icon>&nbsp;&nbsp;&nbsp;Back to top</p></div>
-    
+       <ons-fab style="background: transparent; border: 2px solid #fff;" modifier="mini" style="position: fixed" onclick="smoothScroll(document.getElementById('top10'));" position="center bottom">
+<ons-icon icon="md-chevron-up"></ons-icon></ons-fab>
     
         <script>
 		// build scene

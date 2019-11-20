@@ -1,20 +1,41 @@
 <ons-page id="common">
-  <ons-toolbar style="background: #000;">
-      <div class="left" style="background: #000;">
-  <ons-back-button></ons-back-button>
+  <ons-toolbar id="top10">
+      <div class="left">
+  <ons-back-button>Back</ons-back-button>
 </div>
-    <div class="center" style="background: #000; color: #ffbbcc;">Signs of stress</div>
-      <div class="right" style="background: #000"></div>
+    <div class="center">Signs of stress</div>
+      <div class="right">
+          <ons-toolbar-button onclick="loadPage('what.html')">Next</ons-toolbar-button>
+      </div>
   </ons-toolbar>
-       <ons-row style="text-align: center; background: #000">  
-           
-                         <img src="signs.png" style="margin: auto; height: 40vh;">   
-           </ons-row>
     
-        
-        
-        
-             <ons-row style="margin: 0; padding: 20px; background: #000;">  
+
+    
+    
+                 <ons-row style="margin: 0; padding: 20px;background: black;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px;">
+    
+    <p style="color: #fff; font-size: 26px"><b><span style="font-size: 34px;">Common signs of stress</span>
+        </b><br><br><span style="color: #fff; font-size: 26px;">Below are some common stressors that people face every day. From the lsit below, you might be able to sort them into differe</span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: transparent;">
+    
+    <p>
+</p>
+
+      
+
+    </div>
+               
+
+    </ons-row>
+    
+    <ons-row style="margin: 0; padding: 20px; background: #000;">  
 <div class="box1 half left1" style="padding: 0; font-size: 22px; background: rgba(255,187,204,0.2);">
     
     <p style="color: #ffbbcc; font-size: 26px"><b>Common Stressors
@@ -147,12 +168,14 @@
            <ons-row style="text-align: center; background: #000; height: 30vh" id="trigger111">  
                
     </ons-row>
+    
+    
            <ons-row style="text-align: center; background-color: #000;" id="end111">  
 <ons-col class="box1" width="100%" style="padding: 10px 0 0 0;">
-
-     <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto" onclick="smoothScroll(document.getElementById('top10'));">
-             <p style="font-size: 20px; padding: 0;"><ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-up"></ons-icon>&nbsp;&nbsp;&nbsp;Back to top</p></div>
     
+    
+        <ons-fab style="background: transparent; border: 2px solid #fff;" modifier="mini" style="position: fixed" onclick="smoothScroll(document.getElementById('top10'));" position="center bottom">
+<ons-icon icon="md-chevron-up"></ons-icon></ons-fab>
     
         <script>
 		// build scene

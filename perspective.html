@@ -1,12 +1,14 @@
 <ons-page id="perspective">
   
   <ons-toolbar>
-      <div class="left" style="background: #2994b2; color: #fff">
+      <div class="left">
   <ons-back-button></ons-back-button>
 </div>
-    <div class="center" style="background: #2994b2; color: #fff;"><span class="skew" style="position: absolute;">perspective</span> <span style="color: transparent">perspective</span></div>
+    <div class="center"><span class="skew" style="position: absolute;">perspective</span> <span style="color: transparent">perspective</span></div>
       
-    <div class="right" style="background: #2994b2; color: #fff;"></div>
+          <div class="right">
+          <ons-toolbar-button onclick="loadPage('tips.html')">Next</ons-toolbar-button>
+      </div>
 
 
   </ons-toolbar>
@@ -212,8 +214,8 @@ have ability to determine their own outcomes and they are responsible for what h
            <ons-row style="text-align: center; background-color: #000" id="end2">  
 <ons-col class="box1" width="100%" style="padding: 10px 0 0 0;">
 
-     <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto" onclick="smoothScroll(document.getElementById('top'));">
-             <p style="font-size: 20px; padding: 0;"><ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-up"></ons-icon>&nbsp;&nbsp;&nbsp;Back to top</p></div>
+       <ons-fab style="background: transparent; border: 2px solid #fff;" modifier="mini" style="position: fixed" onclick="smoothScroll(document.getElementById('top'));" position="center bottom">
+<ons-icon icon="md-chevron-up"></ons-icon></ons-fab>
     
             <script>
 		// build scene

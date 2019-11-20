@@ -1,11 +1,13 @@
 <ons-page id="what">
   <ons-toolbar>
-      <div class="left" style="background-color: #000; color: #fff">
+      <div class="left">
   <ons-back-button></ons-back-button>
 </div>
-    <div class="center" style="background-color: #000; color: #fff">What can I do</div>
+    <div class="center">What can I do</div>
       
-         <div class="right" style="background-color: #000; color: #fff"></div>
+         <div class="right">
+          <ons-toolbar-button onclick="loadPage('gallery.html')">Next</ons-toolbar-button>
+      </div>
   </ons-toolbar>
     
 <div id="trigger23"></div>
@@ -165,16 +167,17 @@ Are you taking on too much? Are there things you are doing which could be handed
     
 
     
-     <ons-row style="text-align: center; background-color: #000; height: 50px;"> 
+     <ons-row style="text-align: center; background-color: #000; height: 150px;"> 
          
     </ons-row>
     
                <ons-row style="text-align: center; background-color: #000" id="end23">  
 <ons-col class="box1" width="100%" style="padding: 10px 0 0 0;">
 
-     <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto" onclick="smoothScroll(document.getElementById('top23'));">
-             <p style="font-size: 20px; padding: 0;"><ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-up"></ons-icon>&nbsp;&nbsp;&nbsp;Back to top</p></div>
-    
+
+         
+       <ons-fab style="background: transparent; border: 2px solid #fff;" modifier="mini" style="position: fixed" onclick="smoothScroll(document.getElementById('top23'));" position="center bottom">
+<ons-icon icon="md-chevron-up"></ons-icon></ons-fab>
     
         <script>
 		// build scene

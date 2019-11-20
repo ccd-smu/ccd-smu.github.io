@@ -16,13 +16,14 @@ var next = function() {
 
 
   <ons-toolbar>
-      <div class="left" style="background: #EAEAEA;">
+      <div class="left">
   <ons-back-button></ons-back-button>
 </div>
-      <div class="center" style="background: #EAEAEA; color: #000">Good/Bad Stress</div>
+      <div class="center">Good/Bad Stress</div>
       
-          <div class="right" style="background: #EAEAEA">
-</div>
+      <div class="right">
+          <ons-toolbar-button onclick="loadPage('longshort.html')">Next</ons-toolbar-button>
+      </div>
   </ons-toolbar>
     
 <div id="trigger53"></div>    
@@ -151,12 +152,12 @@ var next = function() {
     </ons-row>
 
     </ons-list>
-               <ons-row style="text-align: center; background-color: #000" id="end53">  
+               <ons-row style="text-align: center; background-color: #EAEAEA; height: 150px;" id="end53">  
 <ons-col class="box1" width="100%" style="padding: 10px 0 0 0;">
 
-     <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto" onclick="smoothScroll(document.getElementById('top53'));">
-             <p style="font-size: 20px; padding: 0;"><ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-up"></ons-icon>&nbsp;&nbsp;&nbsp;Back to top</p></div>
     
+           <ons-fab style="background: transparent; border: 2px solid #fff;" modifier="mini" style="position: fixed" onclick="smoothScroll(document.getElementById('top53'));" position="center bottom">
+<ons-icon icon="md-chevron-up"></ons-icon></ons-fab>
     
         <script>
 		// build scene
