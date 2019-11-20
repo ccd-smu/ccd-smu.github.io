@@ -151,13 +151,13 @@ $('#img2,#contain2,#heart').toggleClass('hide');
       <div id="heart"></div>   </div></div>
 
         <p class="small" style="color: #fff;"><b>Adopt a healthy lifestyle</b></p>
-    <p><b>Healthy diet:</b> Including fruits, vegetables, juice, fish and other healthy vegetables in your diet will reduce the negative effects that stress causes on the body.<br><br>
+    <p><b>Healthy diet</b><br> Including fruits, vegetables, juice, fish and other healthy vegetables in your diet will reduce the negative effects that stress causes on the body.<br><br>
                 
-                <b>Be aware of your smoking and alcohol consumption as much as possible:</b> Although these things reduce stress initially, they cause severe damage in the long run.<br><br>
+                <b>Be aware of your smoking and alcohol consumption as much as possible</b><br>Although these things reduce stress initially, they cause severe damage in the long run.<br><br>
 
-                <b>Regular exercise:</b>Physical exercise can be effective in relieving stress. Even going out to get some fresh air and taking some light physical exercise, like walking to the shops, can help.<br><br>
+                <b>Regular exercise</b><br>Physical exercise can be effective in relieving stress. Even going out to get some fresh air and taking some light physical exercise, like walking to the shops, can help.<br><br>
 
-<b>Try to get sound sleep:</b>
+<b>Try to get sound sleep</b><br>
 Sound sleep is important in order to stay stress-free as it keeps us physically and mentally fit. Not getting enough sleep will make you easily tired and will also lower your immune level.
 </p>
 
@@ -259,7 +259,7 @@ $('#img3,#contain3').toggleClass('hide');
             <script>
 function rotate4(){
     $('#rotate4').toggleClass('rotated');
-$('#img4,#more4').toggleClass('hide');   
+$('#img4,#more4,#buttonreflect').toggleClass('hide');   
   }
         </script>
         <div class="tip" id="rotate4" onclick="rotate4()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more4">more</p>
@@ -270,7 +270,7 @@ $('#img4,#more4').toggleClass('hide');
 function srotate4(){
 $('#large4').toggleClass('expand');
 $('#large4').toggleClass('mobileheight');
-$('#img4').toggleClass('hide'); 
+$('#img4,#buttonreflect').toggleClass('hide'); 
   }
         </script>
         <div class="tip" id="srotate4" onclick="srotate4()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore4">more</p>
@@ -302,17 +302,21 @@ $('#img4').toggleClass('hide');
     <p class="small" style="color: #fff;"><b>Reflect</b>
     </p>
         
-    <p><b>Start a Stress Journal</b><br>A stress journal can help you identify the regular stressors in your life and the way you deal with them. Each time you feel stressed, keep track of it in your journal. As you keep a daily log, you will begin to see patterns and common themes. 
+    <p><b>Start a Stress Journal</b><br><br>A stress journal can help you identify the regular stressors in your life and the way you deal with them. Each time you feel stressed, keep track of it in your journal. As you keep a daily log, you will begin to see patterns and common themes. 
                 
-<br>
+<br><br>
 Write down:<br>
 What caused your stress? (make a guess if you are unsure)<br>
 How you felt, both physically and emotionally?<br>
 How you acted in response?<br>
-What you did to make yourself feel better?<br>
+        What you did to make yourself feel better?<br>
                 
-CLICK HERE FOR JOUNRAL</p>
-
+</p>
+     <div id="buttonreflect" style="width: 100%; text-align: center; margin: 20px 0;">
+        <div class="box1" style="border: 2px solid #fff; border-radius: 30px; width: auto; margin: auto 0; padding: 0 20px; font-size: 18px" onclick="loadPage('stressjournal2.html')">Stress Journal Activity</div>
+         
+        </div>
+        
     <script>
 function sclose4(){          
 $('#large4').toggleClass('expand');
@@ -365,14 +369,14 @@ $('#img5').toggleClass('hide');
                
     <div id="large5" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: #80a3a2;">
         
-   <div id="img5" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #fff;">
+   <div id="img5" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #000;">
        <div id="contain5" style="height: 100%; overflow: hidden;">
       <ons-icon class="social" icon="md-face"></ons-icon>
-        <ons-icon class="social" style="left: 50%; animation: rot2 3s infinite ease-out;" icon="md-face"></ons-icon>
-       <ons-icon class="social" style="left: 50%; animation: rot3 3s infinite ease-out;" icon="md-face"></ons-icon>
-       <ons-icon class="social" style="left: 50%; animation: rot4 3s infinite ease-out;" icon="md-face"></ons-icon>
-       <ons-icon class="social" style="left: 50%; animation: rot5 3s infinite ease-out;" icon="md-face"></ons-icon>
-       <ons-icon class="social" style="left: 50%; animation: rot6 3s infinite ease-out;" icon="md-face"></ons-icon>
+        <ons-icon class="social" style="left: 50%; animation: rot2 3s infinite ease-in-out;" icon="md-face"></ons-icon>
+       <ons-icon class="social" style="left: 50%; animation: rot3 3s infinite ease-in-out;" icon="md-face"></ons-icon>
+       <ons-icon class="social" style="left: 50%; animation: rot4 3s infinite ease-in-out;" icon="md-face"></ons-icon>
+       <ons-icon class="social" style="left: 50%; animation: rot5 3s infinite ease-in-out;" icon="md-face"></ons-icon>
+       <ons-icon class="social" style="left: 50%; animation: rot6 3s infinite ease-in-out;" icon="md-face"></ons-icon>
         
        </div>
         </div>
