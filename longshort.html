@@ -1,7 +1,7 @@
 <ons-page id="longshort">
   
   <ons-toolbar>
-      <div class="left"" style="background-color: #ffcbcb; color: #fff"">
+      <div class="left">
   <ons-back-button></ons-back-button>
 </div>
     <div class="center">Long/Short Term Stress</div>
@@ -11,27 +11,43 @@
       </div>
 
   </ons-toolbar>
-    <ons-list>
-       <ons-row style="text-align: center; background-color: #ffcbcb;" id="top1">  
-           
-                         <img src="areas.png" style="margin: auto; height: 40vh;">   
-           </ons-row>
+    
+                      <ons-row id="top1" style="margin: 0; padding: 20px;background: #EAEAEA;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px;">
+    
+    <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">Stress can be classified into either long or short term.</span>
+        </b><br><br><span style="color: #000; font-size: 26px;">Another way to think about stressors is to see if the stressor will happen at a certain point in the future, or if it is ongoing and spread out over a certain duration.
+        </span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: transparent;">
+    
+    <p>
+</p>
+
+      
+
+    </div></ons-row>
+
+    
+
+
     
     
-           <ons-row style="text-align: center; background-color: #ffcbcb;">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
+                   <ons-row style="text-align: center; background-color: #eaeaea">  
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
     
-    <p style="font-size: 22px; padding: 10px 0; color: #000"><b>Long term (Chronic) stress vs. Short term (Acute) stress</b>
-    <br><br>
-        
-    The objective of this activity is to build range in your locus of control. If you belong strongly to one category (internal or external) and find yourself feeling stressed, you can consider adopting a different or "opposite" perspective.
-    <br><br>
-    This can help you rationalise your stressors, and understand that they might be areas that are within out outside of your control.
-    </p>
+    <p style="font-size: 26px; padding: 40px 0; color: #000;"><b>The section below shows examples of long and short term stressors, with some general tips to deal with them. </b></p>
 
     </ons-col>
 
-    </ons-row>    
+    </ons-row>  
+    
+     
                <ons-row style="text-align: center; background-color: #000;">  
 <ons-col class="box1" width="100%" id="switch1" style="height: 48px;">
     
@@ -43,20 +59,12 @@
   $('#switch').change(function(){
   if (this.checked) {
     $('#internal4').fadeIn('fast');
-     $('#internal5').fadeIn('fast');
-       $('#internal6').fadeIn('fast');
      $('#external4').fadeOut('fast');
-       $('#external5').fadeOut('fast');
-       $('#external6').fadeOut('fast');
       $('#short').addClass('active2');
        $('#long').removeClass('active2');
   } else {
     $('#internal4').fadeOut('fast');
-     $('#internal5').fadeOut('fast');
-       $('#internal6').fadeOut('fast');
      $('#external4').fadeIn('fast');
-       $('#external5').fadeIn('fast');
-        $('#external6').fadeIn('fast');
        $('#long').addClass('active2');
        $('#short').removeClass('active2');
   }                   
@@ -74,145 +82,296 @@
    
         <div id="trigger444"></div>
           
-       
- <ons-row style="text-align: center; background-color: #407088; display: none;" id="external4">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
-    
-    <p style="font-size: 22px; padding: 20px 0">Below are some long-term (chronic) stressors, along with some tips to manage them.</p>    
-    
-    
-    <p style="font-size: 22px; padding: 10px 0; background: #fff; border-radius: 30px 30px 0 0; color: #407088;"><b>Academic</b></p>
-        
-    <p style="font-size: 22px; padding: 10px; background: #407088; border: 1px solid #fff;">
-        Unhealthy competition with classmates and peers<br>
-        Being jealous when others succeed.<br>
 
-        High expectations on oneself and feeling demoralized when one does not succeed.</p>
-    
-    <p style="font-size: 22px; padding: 10px 0; background: #fff; color: #407088;"><b>Tips</b></p>
      
-     <p style="font-size: 22px; padding: 10px; background: #407088; border: 1px solid #fff; border-radius: 0 0 30px 30px;">Act gracefully. You can’t guarantee that you will always succeed, but you can take charge of how you feel.<br>
+     <div id="external4" style="display: none">
+         <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #fff;">
+    
+    <p style="color: #407088; font-size: 26px"><b>Academic</b></p>
+
+
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #407088">
+    
+    <p style="color: #fff">Unhealthy competition with classmates and peers<br>
+        Being jealous when others succeed.<br>
+        High expectations on oneself and feeling demoralized when one does not succeed
+</p>
+
+    
+    </div>
+
+    </ons-row>
+     
+        <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #fff;">
+    
+    <p style="color: #407088; font-size: 26px"><b>Tips</b></p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #407088">
+    
+    <p style="color: #fff">Act gracefully. You can’t guarantee that you will always succeed, but you can take charge of how you feel.<br>
         
     Focus on showing good character.<br>Be proud of others’ efforts and your own, no matter who comes out on top.<br>
 
    Create a vision/goals board and work towards your goals- do not feel disheartened if you fail at times, keep trying, change your perspective and never give up.<br>
 
-        See a professional/counsellor/therapist if you do not feel better.</p>
+        See a professional/counsellor/therapist if you do not feel better.
+</p>
+
     
-     </ons-col>
+    </div>
+               
 
     </ons-row>
-          
-     <ons-row style="text-align: center; background-color: #407088; display: none;" id="external5">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
-
-    
-    <p style="font-size: 22px; padding: 10px 0; background: #fff; border-radius: 30px 30px 0 0; color: #407088;"><b>Internship/Work</b></p>
-
-    
-    <p style="font-size: 22px; padding: 10px; background: #407088; border: 1px solid #fff;">Balancing social life vis-a-vis family and school<br>
-    Managing financial burden<br>High expectations on oneself<br>Being overcommitted </p>
-    
-    
-      <p style="font-size: 22px; padding: 10px 0; background: #fff; color: #407088;"><b>Tips</b></p>
-
-    <p style="font-size: 22px; padding: 10px; background: #407088; border: 1px solid #fff; border-radius: 0 0 30px 30px;">Choose to spend time with resilient and positive people<br>Improve your planning- start making daily check lists- take action by organizing your weekly activities<br>Get a Job that Doesn't Stress You out. Make a budget plan and stick to it<br>Learn relaxation techniques/ practice yoga/ meditation<br>Pay attention to your diet, exercise and sleep<br>Count your daily blessings by unleashing gratitude<br>See a professional/counsellor/therapist if you do not feel better</p>
-
-
-
-    </ons-col>
-
-    </ons-row>
-          
-          
-     <ons-row style="text-align: center; background-color: #407088; display: none;" id="external6">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
-
-    
-   <p style="font-size: 22px; padding: 10px 0; background: #fff; border-radius: 30px 30px 0 0; color: #407088;"><b>Personal</b></p>
-
      
+
+     <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #fff;">
     
-  <p style="font-size: 22px; padding: 10px; background: #407088; border: 1px solid #fff;">Increasing demands from work/ boss<br>Long hours at work 
+    <p style="color: #407088; font-size: 26px"><b>Personal</b></p>
+
+
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #407088">
+    
+    <p style="color: #fff">Balancing social life vis-a-vis family and school<br>
+    Managing financial burden<br>High expectations on oneself<br>Being overcommitted
 </p>
 
-    <p style="font-size: 22px; padding: 10px 0; background: #fff; color: #407088;"><b>Tips</b></p>
     
-   <p style="font-size: 22px; padding: 10px; background: #407088; border: 1px solid #fff; border-radius: 0 0 30px 30px;">Identify the aspects of the situation you can control and aspect you can’t.<br>Gently confront your boss to set mutual expectations and priorities.<br>Eat right and sleep well.<br>See a professional/counsellor/therapist if you do not feel better
-</p>
-
-    </ons-col>
+    </div>
 
     </ons-row>
-        
+     
+        <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #fff;">
+    
+    <p style="color: #407088; font-size: 26px"><b>Tips</b></p>
 
-        
+      
 
-
-                   <ons-row style="text-align: center; background-color: #4e3440" id="internal4">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #407088">
     
-    
-    <p style="font-size: 22px; padding: 10px 0">Below are some short-term (acute) stressors, along with some tips to manage them.</p>    
-    
-    <p style="font-size: 22px; padding: 10px 0; background: #fff; border-radius: 30px 30px 0 0; color: #4e3440;"><b>Academic</b></p>
-
-       <p style="font-size: 22px; padding: 10px; background: #4e3440; border: 1px solid #fff;">Exam anxiety before the start of the finals.<br>Impending deadlines of assignments and projects.</p>
-    
-  <p style="font-size: 22px; padding: 10px 0; background: #fff; color: #4e3440;"><b>Tips</b></p>
-    
-    <p style="font-size: 22px; padding: 10px; background: #4e3440; border: 1px solid #fff; border-radius: 0 0 30px 30px;">Manage time wisely- Get organized (draw up a time-table if it helps)<br>Create a good study environment- find a good study buddy who is encouraging.<br>Learn study skills from peers, classmates or professors.<br>Seek help from classmates/ peers/ professors if you do not understand any concept or skills.<br>Get enough sleep</p>
+    <p style="color: #fff">Choose to spend time with resilient and positive people<br>Improve your planning- start making daily check lists- take action by organizing your weekly activities<br>Get a Job that Doesn't Stress You out. Make a budget plan and stick to it<br>Learn relaxation techniques/ practice yoga/ meditation<br>Pay attention to your diet, exercise and sleep<br>Count your daily blessings by unleashing gratitude<br>See a professional/counsellor/therapist if you do not feel better
+</p>
 
     
-    </ons-col>
-
-    </ons-row>  
-          
-          
-                     <ons-row style="text-align: center; background-color: #4e3440" id="internal5">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
-    
-<p style="font-size: 22px; padding: 10px 0; background: #fff; border-radius: 30px 30px 0 0; color: #4e3440;"><b>Internship/Work</b></p>
-    
-       <p style="font-size: 22px; padding: 10px; background: #4e3440; border: 1px solid #fff;">New environment<br>Tight deadlines</p>
-    
-  <p style="font-size: 22px; padding: 10px 0; background: #fff; color: #4e3440;"><b>Tips</b></p>
-    <p style="font-size: 22px; padding: 10px; background: #4e3440; border: 1px solid #fff; border-radius: 0 0 30px 30px;">Spend a few minutes to do some deep breathing if you feel overwhelmed or tensed.<br>If you’re not working on an important project, handle your small tasks the second they come in – and figure out an efficient system to complete the tasks quickly.</p>
-
-    </ons-col>
+    </div>
+               
 
     </ons-row>
-          
-          
-                <ons-row style="text-align: center; background-color: #4e3440"  id="internal6">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
-    
-<p style="font-size: 22px; padding: 10px 0; background: #fff; border-radius: 30px 30px 0 0; color: #4e3440;"><b>Personal</b></p>
 
-       <p style="font-size: 22px; padding: 10px; background: #4e3440; border: 1px solid #fff;">Building new friendships (New environment/culture) 
+  
+     <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #fff;">
+    
+    <p style="color: #407088; font-size: 26px"><b>Internship/Work</b></p>
+
+
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #407088">
+    
+    <p style="color: #fff">Increasing demands from work/ boss<br>Long hours at work 
 </p>
-  <p style="font-size: 22px; padding: 10px 0; background: #fff; color: #4e3440;"><b>Tips</b></p>
-    <p style="font-size: 22px; padding: 10px; background: #4e3440; border: 1px solid #fff; border-radius: 0 0 30px 30px;">Join a Co-curricular activity or volunteer for a cause</p>
 
     
-    </ons-col>
+    </div>
 
-            </ons-row>         
-              
+    </ons-row>
+     
+        <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #fff;">
+    
+    <p style="color: #407088; font-size: 26px"><b>Tips</b></p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #407088">
+    
+    <p style="color: #fff">Identify the aspects of the situation you can control and aspect you can’t.<br>Gently confront your boss to set mutual expectations and priorities.<br>Eat right and sleep well.<br>See a professional/counsellor/therapist if you do not feel better
+</p>
+
+    
+    </div>
+               
+
+    </ons-row>
+
         
+    </div>
+        
+
+         
+     <div id="internal4">
+         <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #fff;">
+    
+    <p style="color: #4e3440; font-size: 26px"><b>Academic</b></p>
+
+
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #4e3440">
+    
+    <p style="color: #fff">Exam anxiety before the start of the finals.<br>Impending deadlines of assignments and projects.
+</p>
+
+    
+    </div>
+
+    </ons-row>
+     
+        <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #fff;">
+    
+    <p style="color: #4e3440; font-size: 26px"><b>Tips</b></p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #4e3440">
+    
+    <p style="color: #fff">Manage time wisely- Get organized (draw up a time-table if it helps)<br>Create a good study environment- find a good study buddy who is encouraging.<br>Learn study skills from peers, classmates or professors.<br>Seek help from classmates/ peers/ professors if you do not understand any concept or skills.<br>Get enough sleep
+</p>
+
+    
+    </div>
+               
+
+    </ons-row>
+     
+
+     <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #fff;">
+    
+    <p style="color: #4e3440; font-size: 26px"><b>Personal</b></p>
+
+
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #4e3440">
+    
+    <p style="color: #fff">Building new friendships<br>New environment/culture
+</p>
+
+    
+    </div>
+
+    </ons-row>
+     
+        <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #fff;">
+    
+    <p style="color: #4e3440; font-size: 26px"><b>Tips</b></p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #4e3440">
+    
+    <p style="color: #fff">Join a Co-curricular activity or volunteer for a cause</p>
+
+    
+    </div>
+               
+
+    </ons-row>
+
+  
+     <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #fff;">
+    
+    <p style="color: #4e3440; font-size: 26px"><b>Internship/Work</b></p>
+
+
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #4e3440">
+    
+    <p style="color: #fff">New environment<br>Tight deadlines</p>
+
+    
+    </div>
+
+    </ons-row>
+     
+        <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #fff;">
+    
+    <p style="color: #4e3440; font-size: 26px"><b>Tips</b></p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #4e3440">
+    
+    <p style="color: #fff">Spend a few minutes to do some deep breathing if you feel overwhelmed or tensed.<br>If you’re not working on an important project, handle your small tasks the second they come in – and figure out an efficient system to complete the tasks quickly.</p>
+
+    
+    </div>
+               
+
+    </ons-row>
+
+        
+    </div>
+                     <ons-row style="margin: 0; padding: 20px; background: #EAEAEA;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px;">
+    
+    <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">Long term (Chronic) stress</span>
+        </b><br><br><span style="color: #000; font-size: 26px;">Most people will experience some type of long term stress in their life. This type of stress involves something more substantial than short term stress and can be damaging.</span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: transparent;">
+    
+    <p style="color: #000; font-size: 26px; padding: 40px;"><b><span style="font-size: 34px;">Short Term (Acute) Stress</span>
+        </b><br><br><span style="color: #000; font-size: 26px;">The most common type of stress experienced is short term stress. Short term stress is harmless in small amounts; however, too much short term stress can cause feelings of exhaustion, worry and tension. </span>
+</p>
+
+
+      
+
+    </div></ons-row>
+
                   
-                <ons-row style="text-align: center; background-color: #000; height: 80px;"  id="trigger11">  
+                <ons-row style="text-align: center; background-color: #eaeaea; height: 100px;"  id="trigger11">  
 <ons-col class="box1" width="100%">
     </ons-col>
             </ons-row>         
               
         
 
-           <ons-row style="text-align: center; background-color: #000" id="end1">  
+           <ons-row style="text-align: center; background-color: #000; " id="end1">  
 <ons-col class="box1" width="100%" style="padding: 10px 0 0 0;">
 
-       <ons-fab style="background: transparent; border: 2px solid #fff;" modifier="mini" style="position: fixed" onclick="smoothScroll(document.getElementById('top1'));" position="center bottom">
-<ons-icon icon="md-chevron-up"></ons-icon></ons-fab>
+       <ons-fab style="background: transparent; border: 2px solid #000;" modifier="mini" style="position: fixed" onclick="smoothScroll(document.getElementById('top1'));" position="right bottom">
+<ons-icon style="color: #000" icon="md-chevron-up"></ons-icon></ons-fab>
     
     
         <script>
@@ -256,5 +415,5 @@ window.smoothScroll = function(target) {
 
                </ons-row>
      
-    </ons-list>
+    
 </ons-page>

@@ -215,6 +215,88 @@ body {
     opacity: 0;
   }
 }
+        
+        
+        @keyframes arot {
+	0% {
+		transform: rotate(0deg)
+		           translate(-50px)
+		           rotate(0deg);
+	}
+    	25% {
+		transform: rotate(120deg)
+		           translate(-50px) 
+		           rotate(-120deg);
+	}
+            
+            
+        75% {
+            		transform: rotate(0deg)
+		           translate(0)
+		           rotate(0deg);
+
+	}
+    100% {
+		transform: rotate(0deg)
+		           translate(-50px)
+		           rotate(0deg);
+	}
+}
+        
+            @keyframes arot2 {
+	0% {
+		transform: rotate(120deg)
+		           translate(-50px)
+		           rotate(-120deg);
+	}
+    	25% {
+		transform: rotate(240deg)
+		           translate(-50px) 
+		           rotate(-240deg);
+	}
+    75% {
+    		transform: rotate(240deg)
+		           translate(-50px) 
+		           rotate(-240deg);
+        opacity: 0;
+	}
+    100% {
+    		transform: rotate(240deg)
+		           translate(-50px) 
+		           rotate(-240deg);
+        opacity: 0;
+	}
+}
+            @keyframes arot3 {
+	0% {
+		transform: rotate(240deg)
+		           translate(-50px)
+		           rotate(-240deg);
+	}
+    	25% {
+		transform: rotate(360deg)
+		           translate(-50px) 
+		           rotate(-360deg);
+	}
+        75%{
+        		transform: rotate(360deg)
+		           translate(-50px) 
+		           rotate(-360deg);
+
+        opacity: 0;
+                }
+        100%{
+        		transform: rotate(360deg)
+		           translate(-50px) 
+		           rotate(-360deg); 
+
+        opacity: 0;
+                }
+}        
+        
+
+        
+        
         @keyframes rot {
 	0% {
 		transform: rotate(0deg)
@@ -290,6 +372,165 @@ body {
 	}
 }
 
+ @keyframes aarot {
+	0% {
+		transform: rotate(0deg)
+		           translate(-75px)
+		           rotate(0deg);
+	}
+    	50% {
+		transform: rotate(60deg)
+		           translate(-75px) 
+		           rotate(-60deg);
+	}
+     
+     	100% {
+		transform: rotate(0deg)
+		           translate(-75px)
+		           rotate(0deg);
+	}
+}
+        
+            @keyframes aarot2 {
+	0% {
+		transform: rotate(60deg)
+		           translate(-75px)
+		           rotate(-60deg);
+	}
+    	50% {
+		transform: rotate(120deg)
+		           translate(-75px) 
+		           rotate(-120deg);
+	}
+	100% {
+		transform: rotate(60deg)
+		           translate(-75px)
+		           rotate(-60deg);
+	}
+}
+            @keyframes aarot3 {
+	0% {
+		transform: rotate(120deg)
+		           translate(-75px)
+		           rotate(-120deg);
+	}
+    	50% {
+		transform: rotate(180deg)
+		           translate(-75px) 
+		           rotate(-180deg);
+	}
+	100% {
+		transform: rotate(120deg)
+		           translate(-75px)
+		           rotate(-120deg);
+	}
+}
+            @keyframes aarot4 {
+	0% {
+		transform: rotate(180deg)
+		           translate(-75px)
+		           rotate(-180deg);
+	}
+    	50% {
+		transform: rotate(240deg)
+		           translate(-75px) 
+		           rotate(-240deg);
+	}
+	100% {
+		transform: rotate(180deg)
+		           translate(-75px)
+		           rotate(-180deg);
+	}
+}
+            @keyframes aarot5 {
+	0% {
+		transform: rotate(240deg)
+		           translate(-75px)
+		           rotate(-240deg);
+	}
+    	50% {
+		transform: rotate(300deg)
+		           translate(-75px) 
+		           rotate(-300deg);
+	}
+	100% {
+		transform: rotate(240deg)
+		           translate(-75px)
+		           rotate(-240deg);
+	}
+}
+
+            @keyframes aarot6 {
+	0% {
+		transform: rotate(300deg)
+		           translate(-75px)
+		           rotate(-300deg);
+	}
+    	50% {
+		transform: rotate(360deg)
+		           translate(-75px) 
+		           rotate(-360deg);
+	}
+	100% {
+		transform: rotate(300deg)
+		           translate(-75px)
+		           rotate(-300deg);
+	}
+}
+        
+        
+        
+.asocial {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -20px;
+	font-size: 50px;
+	animation: arot 3s infinite ease-in-out;
+    color: #999
+}        
+        
+.tired {
+	animation: tired 3s infinite ease-in-out;
+}        
+        
+ @keyframes tired {
+	0% {
+	}
+    	50% {
+		transform: translateY(-5px)
+	}
+     
+     	100% {
+	}
+}
+                
+        
+        
+.bsocial {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -20px;
+	font-size: 50px;
+    color: #999
+}        
+.csocial {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -20px;
+	font-size: 50px;
+    color: #000;
+}  
+
+        
 .social {
 	width: 100%;
 	height: 100%;
@@ -351,6 +592,67 @@ body {
     transform: rotate(45deg);
     transition: 0.3s;
 }
+        
+            .tips{
+    display: inline-block;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    padding: 0;
+    margin: 0 0 0 40px;
+    width: 38px;
+    height: 38px;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: 0;
+    color: #fff;
+    background: #407088;
+    vertical-align: middle;
+    text-align: center;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    overflow: hidden;
+       transition: 0.3s;
+        }
+        
+    .tips:hover{
+    display: inline-block;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    padding: 0;
+    margin: 0 0 0 40px;
+    width: 38px;
+    height: 38px;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: 0;
+    background: transparent;
+    vertical-align: middle;
+    text-align: center;
+    border: 2px solid #407088;
+    color: #407088;
+    border-radius: 50%;
+    overflow: hidden;
+       transition: 0.3s;
+        }
+        .tips.rotated { 
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+        
+        #longwords1, #longwords2.show{
+            display: block;
+        }
+        
+        #longwords2, #longwords1.show{
+            display: none;
+        }
+        
         
     .accordion {
         transition: 0.4s;
@@ -787,7 +1089,7 @@ border: 3px solid transparent ;
 											transform: none;
 						}
         
-        #contain, #contain10 {
+        #contain, #contain10, #contain7{
   background: #000;
   display: flex;
   align-items: center;
