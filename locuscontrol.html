@@ -1,240 +1,446 @@
 <ons-page id="locuscontrol">
-          <script>
-var slider =  document.getElementById("range-1");
-slider.setAttribute('step', 10);
-slider.setAttribute('min', 0);
-slider.setAttribute('max', 20);
-              
-
-var slider = document.getElementById("range-1");
-var output = document.getElementById("dispDiv");
-output.innerHTML = "<p style='font-size: 22px; min-height: 30vh; color: #000;'><b>Neither external nor internal locus of control</b></p><p style='font-size: 22px; color: #000;'>Jacob, a 21 years old undergraduate, received an “A-” for his Final Statistic grade. He believes that it was a results of his hard work, effort and his awesome groupmates. They worked hard together for their final project thereafter, they also helped him in areas that he did not understand.</p>";
-
-slider.oninput = function() {
-  switch (parseInt(this.value)) {
-    case 0:
-      output.innerHTML = "<p style='font-size: 22px; min-height: 30vh; color: #000;'><b>High internal locus of control</b></p><p style='font-size: 22px; color: #000;'>Pamela, a 20 years old undergraduate student, received an “A+” for her Final Statistics examination. She believes that she did very well because she spent 3 hours every night for a month to practise and revise. It was her hard work and effort that paid off.</p>";
-      break;
-    case 10:
-      output.innerHTML = "<p style='font-size: 22px; min-height: 30vh; color: #000;'><b>Neither external nor internal locus of control</b></p><p style='font-size: 22px; color: #000;'>Jacob, a 21 years old undergraduate, received an “A-” for his Final Statistic grade. He believes that it was a results of his hard work, effort and his awesome groupmates. They worked hard together for their final project thereafter, they also helped him in areas that he did not understand.</p>"
-;
-      break;
-    case 20:
-      output.innerHTML = "<p style='font-size: 22px; min-height: 30vh; color: #000;'><b>High external locus of control</b></p><p style='font-size: 22px; color: #000;'>Andrew, 21 years old, undergraduate believes that he  received a “C-” in his statistics exams because his professor does not like him and also, because he was late for the exam because of the heavy downpour on the exam day.</p>";
-      break;
-
-    default:
-      output.innerHTML = "<p style='font-size: 22px; min-height: 30vh; color: #000;'><b>Neither external nor internal locus of control</b></p><p style='font-size: 22px; color: #000;'>Jacob, a 21 years old undergraduate, received an “A-” for his Final Statistic grade. He believes that it was a results of his hard work, effort and his awesome groupmates. They worked hard together for their final project thereafter, they also helped him in areas that he did not understand.</p>";
-  }
-}      
-    </script>
-    
-      <script>
-      
-        var prev = function() {
-  var carousel = document.getElementById('carousel2');
-  carousel2.prev();
-};
-
-var next = function() {
-  var carousel = document.getElementById('carousel2');
-  carousel2.next();
-};
-
-  </script>
-    
-    <ons-toolbar style="background-color: #4f81c7; color: #fff">
-      <div class="left" style="background-color: #4f81c7; color: #fff">
+    <ons-toolbar>
+      <div class="left">
   <ons-back-button></ons-back-button>
 </div>
-    <div class="center" style="background-color: #4f81c7; color: #fff">Locus of Control</div>
-        <div class="right" style="background-color: #4f81c7; color: #fff"></div>
+    <div class="center">Locus of Control</div>
+              <div class="right">
+          <ons-toolbar-button onclick="loadPage('perspective.html')">Next</ons-toolbar-button>
+      </div>
 
   </ons-toolbar>
     <div id="trigger33"></div>
-    <ons-list id="top33">
-               <ons-row style="text-align: center; background-color: #4f81c7">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
+<ons-row id="top33" style="margin: 0; padding: 20px;background: #EAEAEA;">  
+
+<div class="box1 half left1" style="padding: 0; font-size: 22px;">
     
-     
-    <p style="font-size: 22px; padding: 20px 0; color: #fff">One helpful way to rationalise stressors and deal with stress is through understanding the <b>locus of control</b>.</p>
-
-
-    </ons-col>
-
-    </ons-row>
-        
-        
-                       <ons-row style="text-align: center; background-color: #4f81c7">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
-    
-
-     
-    <p style="font-size: 22px; padding: 20px 0; color: #fff">Locus of control defined as the general belief that individual’s successes, failures and outcomes are control by individual’s actions and behaviours (internal);or perhaps, people’s achievements , failures and outcomes are controlled by other forces like chance, luck and fate (external) (P. Spector, 1988). 
+    <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">The Locus of Control</span>
+        </b><br><br><span style="color: #000; font-size: 26px;">is the general belief that an individual's successes, failures and outcomes are either controlled by their own actions or by other forces such as chance, luck and fate. (P. Spector, 1988). 
+        </span>
 </p>
 
-
-    </ons-col>
-
-    </ons-row>
-        
-        
-<ons-row style="text-align: center; background-color: #fcfafa">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
-
-     
-    <p style="font-size: 22px; padding: 50px 0; color: #000"><i><u><b>"When you are dealing with a challenge in your life, do you feel that you have control over the outcome? Or do you believe that you are simply at the hands of outside forces?"</b></u></i>
-</p>
-
-
-    </ons-col>
-
-    </ons-row> 
-        
-        
-<ons-row style="text-align: center; background-color: #fcfafa; padding-bottom: 40px;">  
-<ons-col class="box1" width="100%">
-        
-              <ons-carousel id="carousel2" swipeable auto-scroll auto-scroll-ratio="0.1" style="padding: 20px 0; background: #fcfafa;">
-          
-        <ons-carousel-item style="text-align: center; position: relative" onclick="next()">
-
-               <ons-fab ripple style="position: absolute; bottom: 0; right: 0;">
-<ons-icon icon="md-chevron-right"></ons-icon>
-</ons-fab>  
-            
-            
-        <ons-row style="width: 100%; margin: 0 auto; border-radius: 30px; background: transparent; border: 1px solid #64c4ed">
-            
-            
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
-    
-    
-    <p style="font-size: 22px; color: #fff; color: #000;">If you believe that you have control over what happens, then you have what psychologists refer to as an</p> 
-    
-    <p style="font-size: 22px; padding: 10px 0; background: #64c4ed; border-radius: 30px; margin: 20px; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)"><b>Internal Locus of Control</b></p>
-
-     
-    <p style="font-size: 22px; color: #fff; color: #000;">It refers to when individuals believe that outcomes and their success and failures are <b>the result of their own actions and efforts</b>, and are able to control and manage their own lives by making decisions about the events, whilst having the ability to determine their own outcomes and being responsible for what happened.</p>
-    
-        <p style="font-size: 22px; color: #000;"><br><br></p>
-    
-    </ons-col>
-
-            
-</ons-row>
-    </ons-carousel-item>
-          
-          
-          
-          <ons-carousel-item style="text-align: center; position: relative" onclick="prev()">
-
-                  
-               <ons-fab ripple style="position: absolute; bottom: 0; left: 0;">
-<ons-icon icon="md-chevron-left"></ons-icon>
-</ons-fab>  
-            
-              
-              <ons-row style="width: 100%; margin: 0 auto; border-radius: 30px; background: #64c4ed; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)">
-                  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px; background: #64c4ed; border-radius: 30px;">
-    
-    <p style="font-size: 22px; color: #000;">If you believe that you have <b>no control over what happens and that external variables are to blame</b>, then you have what is known as an</p>
-    
-    
-    <p style="font-size: 22px; padding: 10px 0; background: #fcfafa; border-radius: 30px; margin: 20px; color: #000; box-shadow:inset 0 4px 10px 0 rgba(0,0,0,0.2), inset 0 4px 20px 0 rgba(0,0,0,0.19)"><b>External Locus of control</b></p>
-
-     
-<p style="font-size: 22px; color: #000;">it refers to when individuals believe that 'external' factors such as fate, chance, and luck, friends, and managers determine the outcomes (successes or failures) which they themselves experience</p>
-    
-    <p style="font-size: 22px; color: #000;"><br><br></p>
-
-    </ons-col>
-
-              
-              </ons-row>
-              
-              
-    </ons-carousel-item>
-        </ons-carousel>
-    
-    </ons-col></ons-row>
-
-    
-     <ons-row style="text-align: center; background-color: #4f81c7;">  
-
-
-<ons-col class="box1" width="90%" style="padding: 20px 0; font-size: 22px">
-      <p style="font-size: 22px; padding: 10px 0; color: #fff"><b>Locus of Control</b></p>
       
-    
-   
-      <p style="font-size: 22px; margin-bottom: 20px; color: #fff">Locus of control exists on a continuum. No one has a 100% external or internal locus of control. Instead, most people lie somewhere on the continuum between the two extremes.<br>These are characteristics of people with dominant internal or external locus of control.</p>
-              
-    
-    <div class="box1" style="background-color: #f0d78c; border-radius: 30px; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19); margin: 20px 0">
-    
-         <div id='dispDiv' style='margin-top: 20px; color: #000'></div>
-    
-    
-          <ons-row style="margin-top: 20px; padding: 20px 0;">
-      <ons-col style="position: relative">
-          <ons-range id="range-1" style="width: 100%;" value="10"></ons-range>
-          <div style="position: absolute; top: 6px; left: 5%; font-size: 13px; color: #000; z-index: 990;"><b>INTERNAL</b></div>
-          <div style="position: absolute; top: 6px; left: 0; right: 0; margin-left: auto; margin-right: auto; font-size: 13px; color: #000; z-index: 990;"><b>NEITHER</b></div>
-          <div style="position: absolute; top: 6px; right: 5%; font-size: 13px; color: #000; z-index: 990;"><b>EXTERNAL</b></div>
-      </ons-col>
-    </ons-row>
-    
-    
+
     </div>
-
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: transparent;">
+    
+    <p>
+</p>
 
       
-    <p style="font-size: 22px; margin: 20px 0; color: #fff"><b>Remember that you always have the ability to change your situation.</b><br><br> There is no situation that you are in that you can’t improve through your own personal action. Sure, it might seem hopeless at the moment, but there are better roads forward from here, no matter what the situation.<br></p> 
-    <p style="font-size: 22px; margin: 20px 0; color: #fff"><b>Make a list of possible actions you can take in response to a difficult situation.</b><br><br> Everyone faces serious challenges at some point in their life. Rather than looking at that challenge as an impenetrable wall, instead look for things you can to to handle this difficult situation.<br></p>
 
-    <p style="font-size: 22px; margin: 20px 0; color: #fff"><b>Stop focusing on things that you cannot control about a situation, and when you catch yourself doing it, think instead about the aspects of the situation that you <i>can</i> control.</b><br><br> There are factors in every situation that you can’t control. You can’t control the personalities and responses of others. You can’t control natural events or physical accidents. So stop worrying about those things, because you can’t do much about them. Instead, look at what you can control – your responses to those situations, how you handle your emotions, and the daily choices you make. The better your responses and choices, the less impact those negative things you can’t control will have.<br></p>
+    </div></ons-row>
 
- 
-
-
-         </ons-col>
-
-    </ons-row>
-        
-        
-            
-    <ons-row style="text-align: center; background-color: #fcfafa">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 22px">
+       
+                   <ons-row style="text-align: center; background: #4f81c7">  
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
     
-    <p style="font-size: 22px; padding: 10px 0; color: #000;"><b>How do I know where I am on the locus of control continuum?</b></p>
-
-     
-    <p style="font-size: 22px; padding: 20px 0; color: #000;">We're glad you asked. Click on the button below to find out!</p>
-
-    
-    <div style="width: 80%; margin: auto" onclick="loadPage('locus.html')">
-        <div style="background: #de88a5; border-radius: 30px; margin-bottom: 15px; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)"><p style="padding: 10px 0; color: #000;"><b>Locus of Control Index</b></p></div></div>
+    <p style="font-size: 26px; padding: 40px 0; color: #fff;"><b>"When you are dealing with a challenge in your life, do you feel that you have control over the outcome? Or do you believe that you are simply at the hands of outside forces?"</b></p>
 
     </ons-col>
 
-    </ons-row>    
+    </ons-row>     
+    
+
+<ons-row style="text-align: center; background-color: #eaeaea">  
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
+    
+    <p style="font-size: 26px; padding: 40px 0 10px 0; color: #000;"><b>However</b><br> the locus of control exists on a continuum.</p>
+<svg xmlns="http://www.w3.org/2000/svg" width="75px" height="75px" viewBox="0 0 612 612"><path style="fill:#000" d="M175.2 239.6c0.1-2-0.5-3.9-1.8-5.4l-58.8-66.9c-1.3-1.5-3.1-2.4-5.1-2.5 -2-0.1-3.9 0.5-5.4 1.8 -27 23.8-49.5 51.8-66.7 83.3 -0.9 1.7-1.2 3.8-0.6 5.7 0.6 1.9 1.8 3.5 3.6 4.4l78.2 42.7c1.1 0.6 2.4 0.9 3.6 0.9 2.6 0 5.2-1.4 6.5-3.9 11.4-20.8 26.2-39.4 44.1-55.1C174.2 243.4 175.1 241.6 175.2 239.6z"/><path style="fill:#000" d="M201.5 214.8c1.3 2.5 3.9 3.9 6.6 3.9 1.2 0 2.4-0.3 3.5-0.9 21-11.1 43.5-18.4 67-21.6 4.1-0.6 6.9-4.3 6.4-8.4l-12-88.3c-0.6-4.1-4.3-6.9-8.4-6.4 -35.7 4.8-69.9 15.9-101.8 32.7 -3.6 1.9-5 6.4-3.1 10L201.5 214.8z"/><path style="fill:#000" d="M105.8 334.3l-86-23.3c-1.9-0.5-3.9-0.3-5.6 0.7s-3 2.6-3.5 4.5C3.6 342.3 0 369.3 0 396.5c0 4.7 0.1 9.3 0.3 14.3 0.2 4 3.5 7.1 7.4 7.1 0.1 0 0.2 0 0.4 0l89-4.1c2-0.1 3.8-1 5.1-2.4 1.3-1.5 2-3.4 1.9-5.3 -0.2-3.3-0.2-6.4-0.2-9.5 0-18 2.4-35.9 7-53.1C112.1 339.5 109.7 335.4 105.8 334.3z"/><path style="fill:#000" d="M438.7 120.7c-32.4-15.6-67-25.3-102.9-28.8 -2-0.2-3.9 0.4-5.4 1.7 -1.5 1.3-2.5 3.1-2.7 5l-8.6 88.7c-0.4 4.1 2.6 7.7 6.7 8.1 23.7 2.3 46.5 8.7 67.8 19 1 0.5 2.1 0.7 3.2 0.7 0.8 0 1.7-0.1 2.5-0.4 1.9-0.6 3.4-2 4.2-3.8l38.7-80.3C444 127 442.4 122.5 438.7 120.7z"/><path style="fill:#000" d="M569.6 245.3c0.5-1.9 0.2-3.9-0.8-5.6 -18.4-30.8-41.9-58-69.8-80.7 -1.5-1.2-3.5-1.8-5.4-1.6 -2 0.2-3.8 1.2-5 2.7l-56.2 69.1c-1.2 1.5-1.8 3.5-1.6 5.4 0.2 2 1.2 3.8 2.7 5 18.5 15 34 33 46.2 53.4 1.4 2.3 3.9 3.6 6.4 3.6 1.3 0 2.6-0.3 3.8-1.1l76.5-45.7C567.9 248.9 569.2 247.2 569.6 245.3z"/><path style="fill:#000" d="M598 304.9c-1.2-3.9-5.4-6.1-9.3-4.9l-85 26.6c-3.9 1.2-6.1 5.4-4.9 9.3 6.1 19.5 9.2 39.8 9.2 60.5 0 3-0.1 6.1-0.2 9.5 -0.1 2 0.6 3.9 1.9 5.3 1.3 1.5 3.2 2.3 5.1 2.4l89 4.1c0.1 0 0.2 0 0.4 0 3.9 0 7.2-3.1 7.4-7.1 0.2-5 0.3-9.6 0.3-14.3C612 365.3 607.3 334.5 598 304.9z"/><path style="fill:#000" id="track2" d="M305.7 380.8c-1.3 0-2.6 0-3.8 0.1l-120.6-71.2c-3-1.7-6.7-1.3-9.2 1.1 -2.5 2.4-3.1 6.1-1.5 9.1l65.8 123.4c-0.2 2.4-0.4 4.8-0.4 7.2 0 18.6 7.2 36.1 20.4 49.3 13.2 13.2 30.7 20.4 49.3 20.4 18.6 0 36.1-7.2 49.3-20.4 13.2-13.2 20.4-30.6 20.4-49.3 0-18.6-7.2-36.1-20.4-49.3C341.8 388 324.3 380.8 305.7 380.8z"/></svg>
+<p style="font-size: 26px; padding: 0 0 40px 0; color: #000;">No one has a 100% external or internal locus of control. Instead, most people lie somewhere on the continuum between the two extremes.</p>
+    </ons-col>
+    </ons-row>     
+    
         
-                       <ons-row style="text-align: center; background-color: #000" id="end33">  
+    
+            <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #4f81c7;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Internal Locus of Control
+        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;">refers to one's belief that they have <i>control over their own fate</i> and experiences</span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #000">It refers to when individuals believe that outcomes and their success and failures are <b>the result of their own actions and efforts</b>, and are able to control and manage their own lives by making decisions about the events, whilst having the ability to determine their own outcomes and being responsible for what happened.</p>
+
+      
+
+    </div>
+               
+
+    </ons-row>   
+                         
+    
+                <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #eaeaea;box-shadow: inset 0 0 0 5px #4f81c7;">
+    
+    <p style="color: #000; font-size: 26px"><b>External locus of control
+        </b><br><br><span style="color: #000; font-size: 22px; font-weight: 300;">refers to one's belief that they have <i>no control over what happens</i> and that <i>external variables or factors are to blame</i></span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+        <p style="color: #000">It refers to when individuals believe that <b>'external' factors such as fate, chance, and luck, friends, and managers</b> determine the outcomes (successes or failures) which they themselves experience.
+</p>
+
+      
+
+    </div>
+               
+
+    </ons-row>   
+                         
+    
+    
+    <ons-row style="text-align: center; background-color: #eaeaea">  
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px; margin-bottom: 20px;">
+    
+        <div class="righted" style="padding: 0; margin: 0 auto; text-align: center; border-radius: 30px; width: 95%" onclick="loadPage('locus.html')">
+    
+              <p class="" style="padding: 10px 40px; font-size: 22px"><b>Where do I exist on the continuum?</b></p>
+
+
+    </div>
+    
+
+    </ons-col>
+    </ons-row>     
+                    
+<ons-row style="text-align: center; background: #4f81c7">  
+<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">
+    
+    <p style="font-size: 26px; padding: 40px 0; color: #fff;"><b>Below are characteristics of people who exist on different points along the continuum</b></p>
+
+    </ons-col>
+
+    </ons-row>     
+    
+<ons-row style="margin: 0; padding: 20px; background: #4f81c7;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #f0d78c;">
+    <p style="color: #000; font-size: 26px; text-align: center">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="150" height="150" viewBox="0 0 449.000000 533.000000"
+ preserveAspectRatio="xMidYMid meet">
+<g transform="translate(0.000000,533.000000) scale(0.100000,-0.100000)"
+fill="#000" stroke="none">
+<path d="M1821 5319 c-59 -11 -205 -59 -211 -69 -3 -4 -23 -17 -45 -29 -142
+-75 -222 -140 -284 -231 -23 -33 -50 -69 -61 -80 -29 -29 -64 -103 -101 -215
+l-33 -100 -7 -430 c-7 -448 -19 -599 -70 -860 -10 -55 -19 -110 -19 -122 0
+-12 -3 -23 -8 -25 -10 -4 -72 -296 -72 -340 0 -19 6 -42 13 -51 6 -9 57 -30
+112 -47 55 -16 107 -34 115 -38 38 -23 440 -112 501 -112 24 0 1 -49 -84 -176
+-70 -105 -101 -143 -127 -156 -19 -9 -40 -22 -47 -27 -6 -6 -121 -63 -255
+-128 -134 -64 -245 -120 -248 -124 -10 -14 -95 -52 -169 -75 -97 -32 -307
+-134 -348 -171 -17 -15 -64 -55 -103 -88 -104 -87 -158 -168 -216 -322 -49
+-129 -54 -206 -54 -775 l0 -528 84 0 84 0 5 527 c4 425 7 542 20 598 18 81 50
+172 72 200 8 11 35 48 59 81 58 81 142 148 263 209 54 28 101 53 104 58 3 4
+45 21 93 38 100 35 428 190 452 213 28 29 27 17 -3 -17 -34 -39 -143 -192
+-143 -202 0 -8 -89 -137 -105 -150 -6 -5 -25 -31 -43 -57 -41 -59 -44 -123 -9
+-156 23 -21 31 -22 264 -22 l241 0 47 -62 c26 -34 56 -81 67 -103 12 -22 81
+-131 154 -242 73 -110 143 -219 156 -241 65 -112 90 -150 117 -181 17 -19 38
+-51 48 -70 31 -60 144 -235 161 -248 20 -17 104 -17 124 0 17 13 130 188 161
+248 10 19 31 51 48 70 16 18 55 77 86 129 31 52 116 185 188 295 73 110 141
+218 153 240 11 22 41 69 67 103 l47 62 242 0 c241 0 243 0 264 23 34 36 30 97
+-10 155 -18 26 -37 52 -43 57 -16 13 -105 142 -105 150 0 10 -109 163 -143
+202 -30 34 -31 46 -3 17 24 -23 352 -178 452 -213 48 -17 90 -34 93 -38 3 -5
+50 -30 104 -58 121 -61 205 -128 263 -209 24 -33 51 -70 59 -81 22 -28 54
+-119 72 -200 13 -56 16 -173 20 -598 l5 -527 79 0 80 0 -3 597 -3 598 -28 78
+c-60 170 -118 261 -227 352 -39 33 -86 73 -103 88 -41 37 -251 139 -348 171
+-74 23 -159 61 -169 75 -3 4 -114 60 -248 124 -134 65 -249 122 -255 128 -7 5
+-28 18 -47 27 -26 13 -57 51 -127 156 -85 127 -108 176 -84 176 61 0 463 89
+501 112 8 4 60 22 115 38 55 17 106 38 112 47 7 9 13 32 13 51 0 44 -62 336
+-72 340 -5 2 -8 13 -8 25 0 12 -9 67 -19 122 -51 261 -63 412 -70 860 l-7 430
+-33 100 c-37 112 -72 186 -101 215 -11 11 -38 47 -61 80 -62 91 -142 156 -284
+231 -22 12 -42 25 -45 29 -7 11 -153 58 -219 70 -65 12 -787 12 -850 -1z m849
+-193 c41 -10 98 -29 127 -41 119 -53 254 -172 332 -294 39 -60 91 -199 91
+-241 0 -10 6 -20 12 -22 10 -4 14 -111 19 -454 6 -372 11 -473 27 -589 23
+-158 62 -377 91 -508 l19 -88 -26 -10 c-66 -25 -474 -119 -518 -119 -2 0 -4
+24 -4 53 0 48 6 62 55 137 51 77 115 219 115 255 0 8 4 15 8 15 5 0 14 25 21
+55 30 133 43 254 48 457 l6 216 -28 26 c-15 14 -37 26 -49 26 -12 0 -69 5
+-128 10 -298 28 -537 165 -680 390 -48 74 -97 207 -113 303 l-6 37 -89 0 -90
+0 0 -48 c0 -141 102 -364 244 -535 79 -95 304 -239 441 -283 44 -14 133 -33
+197 -42 l117 -17 -4 -35 c-2 -19 -7 -84 -10 -145 -14 -291 -80 -501 -198 -630
+-110 -120 -234 -167 -447 -167 -213 0 -337 47 -447 167 -90 99 -146 234 -178
+430 -20 118 -39 463 -33 590 4 87 9 108 36 162 27 52 41 68 85 93 28 16 62 30
+74 30 50 0 53 7 53 101 l0 89 -50 0 c-27 0 -50 -4 -50 -10 0 -5 -9 -10 -21
+-10 -76 0 -223 -121 -275 -227 l-29 -58 -3 -265 c-4 -328 20 -600 62 -694 8
+-17 20 -49 27 -71 21 -70 65 -158 113 -229 40 -60 46 -75 46 -122 0 -30 -2
+-54 -4 -54 -44 0 -452 94 -518 119 l-26 10 19 88 c29 131 68 350 91 508 16
+116 21 217 27 589 5 343 9 450 19 454 6 2 12 12 12 22 0 42 52 181 91 241 78
+122 212 241 332 294 47 20 156 48 232 59 17 2 172 3 345 2 266 -2 327 -5 390
+-20z m-697 -2436 c9 0 17 -4 17 -9 0 -15 135 -31 260 -31 125 0 260 16 260 31
+0 5 8 9 18 9 9 0 43 11 75 24 l58 24 -3 -221 c-3 -248 -5 -254 -77 -326 -47
+-47 -124 -78 -243 -98 -78 -14 -98 -14 -175 0 -120 20 -197 51 -244 98 -72 72
+-74 78 -77 326 l-3 221 58 -24 c32 -13 66 -24 76 -24z m-279 -705 c15 -55 31
+-109 36 -120 6 -11 62 -227 125 -480 63 -253 119 -469 125 -480 10 -22 40
+-129 35 -123 -10 10 -102 155 -107 170 -8 18 -127 200 -137 208 -4 3 -23 32
+-42 65 -65 108 -150 240 -165 255 -12 12 -53 16 -200 20 l-185 5 53 75 c118
+164 238 339 238 347 0 4 26 40 58 80 31 39 73 96 92 125 l35 54 6 -50 c4 -28
+18 -96 33 -151z m1276 24 c21 -25 48 -63 59 -83 20 -36 125 -187 239 -346 l53
+-75 -185 -5 c-147 -4 -188 -8 -200 -20 -15 -15 -100 -147 -165 -255 -19 -33
+-38 -62 -42 -65 -10 -8 -129 -190 -137 -208 -5 -15 -97 -160 -107 -170 -5 -6
+25 101 35 123 6 11 62 227 125 480 63 253 119 469 125 480 18 39 70 252 70
+289 l0 37 46 -68 c26 -37 63 -89 84 -114z m-965 -69 c28 -8 53 -18 57 -24 5
+-7 70 -11 188 -11 118 0 183 4 188 11 4 6 30 16 57 24 28 7 62 19 78 27 23 12
+27 12 27 -1 0 -22 -108 -449 -118 -466 -5 -8 -58 -210 -118 -448 -60 -237
+-111 -432 -114 -432 -3 0 -54 195 -114 432 -60 238 -113 440 -118 448 -10 17
+-118 444 -118 466 0 13 4 13 28 1 15 -8 50 -20 77 -27z"/>
+<path d="M830 330 l0 -330 85 0 85 0 0 330 0 330 -85 0 -85 0 0 -330z"/>
+<path d="M3500 330 l0 -330 85 0 85 0 0 330 0 330 -85 0 -85 0 0 -330z"/>
+</g>
+</svg><br><span style="color: #000; font-size: 22px; font-weight: 300;">Someone with a high <i>internal</i> locus of control</span>
+    
+</p>
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #000">Pamela, a 20 years old undergraduate student, received an “A+” for her Final Statistics examination. She believes that she did very well because she spent 3 hours every night for a month to practise and revise. It was her hard work and effort that paid off.</p>
+
+      
+
+    </div>
+               
+
+    </ons-row>   
+                   
+<ons-row style="margin: 0; padding: 20px; background: #4f81c7;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #f0d78c;">
+
+    
+    <p style="color: #000; font-size: 26px; text-align: center">
+
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="150" height="150" viewBox="0 0 481.000000 533.000000"
+ preserveAspectRatio="xMidYMid meet">
+    
+<g transform="translate(0.000000,533.000000) scale(0.100000,-0.100000)"
+fill="#000" stroke="none">
+<path d="M1265 5305 c-24 -23 -25 -30 -25 -151 l0 -127 85 -86 85 -87 0 -207
+c0 -267 -17 -247 208 -247 188 0 198 3 232 70 l20 40 53 -35 c121 -81 78 -75
+539 -75 l413 0 125 -47 c69 -25 127 -50 130 -54 11 -16 172 -69 209 -69 27 0
+44 7 60 24 l22 23 -3 374 -3 374 -31 65 c-17 36 -49 82 -71 104 -48 44 -122
+96 -140 96 -7 0 -13 4 -13 8 0 29 -93 32 -974 32 l-897 0 -24 -25z m1759 -161
+c26 -4 70 -21 98 -38 42 -25 59 -43 83 -90 l30 -60 3 -249 c3 -239 3 -249 -15
+-242 -10 4 -72 27 -138 52 -66 25 -121 49 -123 54 -2 5 -193 9 -425 9 l-422 0
+-120 80 c-101 68 -126 80 -161 80 -54 0 -82 -23 -118 -99 l-30 -61 -48 0 -48
+0 0 183 0 182 -85 90 c-47 50 -85 96 -85 103 0 9 162 12 779 12 428 0 799 -3
+825 -6z"/>
+<path d="M1410 3673 c0 -607 1 -653 20 -728 19 -82 64 -204 78 -214 11 -9 82
+-120 82 -129 0 -16 124 -138 167 -165 39 -25 41 -28 30 -50 -7 -13 -20 -32
+-30 -42 -10 -9 -45 -54 -79 -99 -77 -102 -86 -111 -129 -124 -200 -62 -665
+-216 -669 -223 -3 -4 -48 -25 -100 -45 -124 -47 -358 -167 -380 -193 -3 -4
+-25 -22 -50 -41 -153 -116 -235 -212 -296 -345 -51 -110 -54 -155 -54 -736 l0
+-539 84 0 85 0 4 533 c3 471 5 539 21 592 16 55 59 143 76 155 4 3 30 33 58
+67 73 88 215 189 365 259 20 10 37 21 37 25 0 7 73 39 90 39 7 0 10 -296 10
+-835 l0 -835 85 0 85 0 0 873 1 872 79 26 80 25 0 -898 0 -898 90 0 90 0 0
+930 c0 796 2 930 14 930 8 0 16 4 18 9 2 5 82 34 178 64 l175 56 70 92 c39 51
+75 99 82 108 10 14 45 -18 250 -222 l239 -237 49 0 49 0 239 238 c205 203 240
+235 250 221 7 -9 44 -57 82 -108 l70 -92 175 -56 c96 -30 177 -59 178 -64 2
+-5 10 -9 18 -9 12 0 14 -134 14 -930 l0 -930 90 0 90 0 0 898 0 898 80 -25 79
+-26 1 -872 0 -873 85 0 85 0 0 835 c0 539 3 835 10 835 17 0 90 -32 90 -39 0
+-4 17 -15 38 -25 149 -70 291 -171 364 -259 28 -34 54 -64 58 -67 17 -12 60
+-100 76 -155 16 -53 18 -121 21 -592 l4 -533 75 0 74 0 0 598 0 597 -23 56
+c-58 140 -148 248 -307 369 -25 19 -47 37 -50 41 -22 26 -256 146 -380 193
+-52 20 -97 41 -100 45 -4 7 -469 161 -669 223 -43 13 -52 22 -129 124 -34 45
+-69 90 -79 99 -10 10 -23 29 -30 42 -11 22 -9 25 30 50 43 27 167 149 167 165
+0 9 71 120 82 129 14 10 59 132 78 214 18 74 20 120 20 648 l0 567 -90 0 -90
+0 0 -85 0 -85 -38 0 c-36 0 -38 2 -56 52 -21 61 -92 135 -163 169 -57 28 -192
+38 -257 19 -59 -17 -138 -73 -166 -119 -14 -22 -28 -41 -31 -41 -3 0 -12 -18
+-19 -40 l-13 -40 -82 0 -82 0 -13 40 c-7 22 -16 40 -19 40 -3 0 -17 19 -31 41
+-28 46 -107 102 -166 119 -65 19 -200 9 -257 -19 -71 -34 -142 -108 -163 -169
+-18 -50 -20 -52 -56 -52 l-38 0 0 165 0 165 -90 0 -90 0 0 -647z m645 376 c88
+-68 111 -116 89 -189 -34 -115 -166 -150 -250 -66 -70 70 -58 189 22 232 19
+10 34 22 34 26 0 16 82 14 105 -3z m825 2 c0 -3 15 -15 34 -25 80 -43 92 -162
+22 -232 -84 -84 -216 -49 -250 66 -22 74 0 119 90 190 22 17 104 18 104 1z
+m-1202 -273 c7 -23 23 -55 34 -71 28 -39 131 -114 168 -122 17 -4 30 -11 30
+-16 0 -12 167 -12 175 0 3 5 18 12 34 16 69 15 191 137 206 206 l7 29 83 0 83
+0 7 -29 c15 -69 137 -191 206 -206 16 -4 31 -11 34 -16 8 -12 175 -12 175 0 0
+5 13 12 30 16 37 8 140 83 168 122 11 16 27 48 34 71 12 40 15 42 51 42 l39 0
+-6 -37 c-3 -21 -8 -63 -12 -93 -15 -129 -109 -341 -182 -411 -67 -64 -165
+-149 -171 -149 -3 0 -17 25 -30 55 -13 30 -27 55 -31 55 -4 0 -22 33 -40 73
+-18 39 -40 78 -48 85 -12 9 -89 12 -307 12 -218 0 -295 -3 -307 -12 -8 -7 -30
+-46 -48 -85 -18 -40 -36 -73 -40 -73 -4 0 -18 -25 -31 -55 -13 -30 -27 -55
+-30 -55 -6 0 -104 85 -171 149 -73 70 -167 282 -182 411 -4 30 -9 72 -12 93
+l-6 37 39 0 c36 0 39 -2 51 -42z m998 -694 c38 -82 79 -154 93 -165 44 -35 99
+-26 184 31 76 51 197 162 256 235 l32 40 -6 -93 c-7 -112 -44 -244 -92 -332
+-23 -41 -70 -99 -127 -156 -108 -107 -201 -159 -361 -200 -144 -37 -336 -37
+-480 0 -160 41 -253 93 -361 200 -57 57 -104 115 -127 156 -48 88 -85 220 -92
+332 l-6 93 32 -40 c59 -73 180 -184 256 -235 85 -57 140 -66 184 -31 14 11 55
+83 93 165 l69 146 192 0 192 0 69 -146z m-453 -845 c85 -13 395 -6 446 10 19
+6 36 9 38 7 2 -1 -62 -69 -142 -150 l-146 -147 -62 56 c-83 72 -247 251 -224
+242 11 -4 51 -12 90 -18z"/>
+<path d="M1681 1801 c-20 -20 -21 -31 -21 -316 0 -285 1 -296 21 -316 19 -19
+30 -20 197 -17 l177 3 93 58 c51 31 123 74 160 94 37 20 76 42 86 49 17 11 24
+11 50 -5 17 -10 58 -33 90 -51 33 -18 100 -58 150 -89 l91 -56 177 -3 c167 -3
+178 -2 197 17 20 20 21 31 21 316 0 285 -1 296 -21 316 -19 19 -30 20 -197 17
+l-177 -3 -115 -71 c-63 -39 -142 -88 -175 -109 -32 -21 -64 -38 -70 -38 -6 0
+-38 17 -70 38 -33 21 -112 70 -175 109 l-115 71 -177 3 c-167 3 -178 2 -197
+-17z m307 -170 c15 -11 75 -48 134 -83 l106 -64 -46 -26 c-26 -15 -60 -37 -75
+-50 -15 -14 -56 -39 -90 -56 -48 -25 -75 -32 -119 -32 l-58 0 0 165 0 165 60
+0 c44 0 68 -5 88 -19z m1002 -146 l0 -165 -57 0 c-45 0 -72 7 -120 32 -34 17
+-75 42 -90 56 -15 13 -49 35 -75 50 l-46 26 120 72 c66 39 125 77 131 83 6 6
+39 11 74 11 l63 0 0 -165z"/>
+<path d="M2330 1065 l0 -85 85 0 85 0 0 85 0 85 -85 0 -85 0 0 -85z"/>
+<path d="M2330 730 l0 -90 85 0 85 0 0 90 0 90 -85 0 -85 0 0 -90z"/>
+<path d="M2330 400 l0 -90 85 0 85 0 0 90 0 90 -85 0 -85 0 0 -90z"/>
+</g>
+</svg>
+
+        
+<br><span style="color: #000; font-size: 22px; font-weight: 300;">Someone with a <i>balanced internal &amp; external</i> locus of control</span>
+    
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #000">Jacob, a 21 years old undergraduate, received an “A-” for his Final Statistic grade. He believes that it was a results of his hard work, effort and his awesome groupmates. They worked hard together for their final project thereafter, they also helped him in areas that he did not understand.</p>
+
+      
+
+    </div>
+               
+
+    </ons-row>   
+
+    
+<ons-row style="margin: 0; padding: 20px; background: #4f81c7;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #f0d78c;">
+
+    
+    <p style="color: #000; font-size: 26px; text-align: center">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="150" height="150" viewBox="0 0 466.000000 533.000000"
+ preserveAspectRatio="xMidYMid meet">
+<g transform="translate(0.000000,533.000000) scale(0.100000,-0.100000)"
+fill="#000" stroke="none">
+<path d="M2085 5316 c-157 -30 -296 -80 -360 -130 -11 -9 -43 -33 -71 -55 -70
+-54 -115 -112 -170 -217 -60 -117 -74 -185 -74 -366 l0 -148 88 0 89 0 6 143
+c7 170 26 242 91 342 37 57 59 79 123 121 43 28 102 61 131 73 67 28 222 61
+289 61 28 0 55 5 58 10 3 6 26 10 50 10 24 0 47 -4 50 -10 3 -5 30 -10 58 -10
+67 0 222 -33 289 -61 29 -12 88 -45 131 -73 64 -42 86 -64 123 -121 65 -100
+84 -172 91 -342 l6 -143 89 0 88 0 0 148 c0 181 -14 249 -74 366 -55 105 -100
+163 -170 217 -28 22 -60 46 -71 55 -45 34 -166 85 -265 110 -94 24 -127 27
+-315 30 -148 2 -231 -1 -280 -10z"/>
+<path d="M1795 4485 c-22 -9 -44 -21 -50 -28 -5 -6 -26 -23 -45 -36 -41 -27
+-86 -86 -103 -135 -11 -33 -13 -35 -37 -23 -14 7 -31 25 -38 40 -13 26 -15 27
+-103 27 l-89 0 0 -235 0 -235 39 -43 c36 -39 38 -47 44 -122 8 -96 36 -235 48
+-235 5 0 9 -9 9 -21 0 -33 87 -248 131 -321 22 -37 64 -98 94 -135 l55 -68 0
+-179 0 -179 -26 24 c-14 13 -32 36 -40 52 -14 26 -17 27 -99 27 l-84 0 -6 -37
+c-9 -55 -28 -127 -35 -133 -3 -3 -14 -25 -25 -49 -31 -70 -71 -119 -117 -142
+-24 -12 -45 -25 -48 -29 -9 -12 -388 -190 -463 -217 -39 -14 -74 -28 -77 -32
+-3 -3 -32 -17 -65 -30 -145 -58 -284 -141 -368 -219 -137 -128 -167 -166 -217
+-282 -78 -179 -80 -198 -80 -892 l0 -598 84 0 85 0 4 598 c3 500 7 608 20 662
+16 65 52 160 65 170 4 3 13 17 21 32 23 44 103 134 161 181 107 87 242 160
+404 219 119 43 277 114 286 127 3 5 79 44 171 88 l165 80 49 -43 c50 -44 178
+-114 208 -114 9 0 17 -4 17 -9 0 -11 123 -46 240 -68 137 -25 573 -25 710 0
+117 22 240 57 240 68 0 5 7 9 15 9 30 0 164 73 212 115 l47 42 165 -80 c92
+-44 168 -83 171 -88 9 -13 167 -84 286 -127 162 -59 297 -132 404 -219 58 -47
+138 -137 161 -181 8 -15 17 -29 21 -32 13 -10 49 -105 65 -170 13 -54 17 -162
+20 -662 l4 -598 80 0 80 0 -4 663 c-3 727 1 671 -68 829 -49 114 -80 152 -216
+280 -84 78 -223 161 -368 219 -33 13 -62 27 -65 30 -3 4 -38 18 -77 32 -75 27
+-454 205 -463 217 -3 4 -24 17 -48 29 -46 23 -86 72 -117 142 -11 24 -22 46
+-25 49 -7 6 -26 78 -35 133 l-6 37 -84 0 c-82 0 -85 -1 -99 -27 -8 -16 -26
+-39 -40 -52 l-26 -24 0 179 0 179 55 68 c30 37 72 98 94 135 44 73 131 288
+131 321 0 12 4 21 9 21 12 0 40 139 48 235 6 75 8 83 44 122 l39 43 0 235 0
+235 -89 0 c-88 0 -90 -1 -103 -27 -7 -15 -24 -33 -38 -40 -24 -12 -26 -10 -37
+23 -17 49 -62 108 -103 135 -19 13 -38 29 -43 36 -17 26 -107 45 -196 41 -90
+-5 -132 -19 -180 -64 -14 -13 -29 -24 -32 -24 -10 0 -99 -133 -99 -147 0 -10
+-24 -13 -85 -13 -61 0 -85 3 -85 13 0 14 -89 147 -99 147 -3 0 -18 11 -32 24
+-51 47 -89 60 -189 63 -66 2 -107 -2 -135 -12z m199 -194 c90 -51 104 -174 27
+-243 -82 -74 -203 -43 -245 63 -30 75 16 165 99 194 44 15 74 11 119 -14z
+m828 3 c35 -18 66 -59 78 -105 27 -98 -84 -206 -184 -178 -152 42 -159 242 -9
+294 40 14 70 11 115 -11z m-1228 -251 c12 -47 73 -130 120 -163 66 -45 118
+-60 206 -60 134 0 211 42 285 156 25 38 45 75 45 82 0 9 24 12 85 12 61 0 85
+-3 85 -12 0 -7 20 -44 45 -82 74 -114 151 -156 285 -156 88 0 140 15 206 60
+47 33 108 116 120 163 5 24 11 27 45 27 l39 0 0 -56 c0 -52 -3 -60 -38 -98
+-38 -42 -39 -43 -50 -162 -16 -182 -79 -401 -139 -491 -11 -15 -40 -59 -66
+-98 -142 -215 -325 -327 -532 -327 -216 0 -387 110 -550 352 -107 159 -167
+338 -187 564 -11 119 -12 120 -50 162 -35 38 -38 46 -38 98 l0 56 39 0 c34 0
+40 -3 45 -27z m378 -1294 c23 -12 48 -28 55 -35 8 -8 47 -24 86 -36 61 -20 94
+-23 222 -23 128 0 161 3 222 23 39 12 78 28 86 36 13 13 91 56 102 56 3 0 5
+-67 5 -149 l0 -149 -87 -21 c-203 -47 -453 -47 -655 0 l-88 21 0 149 c0 82 2
+149 5 149 3 0 24 -10 47 -21z m-247 -392 c111 -53 178 -73 302 -93 60 -9 116
+-20 125 -25 23 -12 353 -12 376 0 9 5 64 17 121 26 130 21 241 60 383 133 4 2
+16 -14 26 -35 19 -37 19 -39 2 -71 -24 -44 -58 -69 -149 -107 -160 -68 -338
+-98 -576 -98 -238 0 -416 30 -576 98 -91 38 -125 63 -149 107 -17 32 -17 34 2
+71 10 21 22 37 26 35 4 -2 43 -21 87 -41z"/>
+<path d="M2055 3561 c-77 -35 -145 -131 -145 -206 l0 -35 89 0 c88 0 90 1 103
+27 22 47 48 53 233 53 185 0 211 -6 233 -53 13 -26 15 -27 103 -27 l89 0 0 35
+c0 49 -22 97 -67 146 -68 75 -85 79 -358 79 -212 0 -245 -3 -280 -19z"/>
+<path d="M830 330 l0 -330 90 0 90 0 0 330 0 330 -90 0 -90 0 0 -330z"/>
+<path d="M3660 330 l0 -330 90 0 90 0 0 330 0 330 -90 0 -90 0 0 -330z"/>
+</g>
+</svg>
+        
+        <br><span style="color: #000; font-size: 22px; font-weight: 300;">Someone with a high <i>external</i> locus of control</span>
+    
+</p>
+
+      
+
+    </div>
+               
+<div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">   
+    <p style="color: #000">Andrew, 21 years old, undergraduate believes that he  received a “C-” in his statistics exams because his professor does not like him and also, because he was late for the exam due to the heavy downpour on the exam day.</p>
+</div>
+</ons-row>   
+    
+<ons-row style="margin: 0; padding: 20px; background: #4f81c7; height: 20px">
+</ons-row>   
+    
+    
+    
+<ons-row style="margin: 0; padding: 20px; background: #EAEAEA;">  
+<div class="box1 half left10" style="padding: 0; font-size: 22px;">
+    
+    <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">Remember that you always have the ability to change your situation.</span>
+        </b><br><br><span style="color: #000; font-size: 26px;">There is no situation that you are in that you can’t improve through your own personal action. Sure, it might seem hopeless at the moment, but there are better roads forward from here, no matter what the situation.</span></p>
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: transparent;">
+    
+    <p style="color: #000; font-size: 26px; padding: 40px;"><b><span style="font-size: 34px;">Make a list of possible actions <br>you can take in response to a difficult situation.</span>
+        </b><br><br><span style="color: #000; font-size: 26px;">Everyone faces serious challenges at some point in their life. Rather than looking at that challenge as an impenetrable wall, instead look for things you can to to handle this difficult situation.</span></p>
+    </div></ons-row>          
+    
+<ons-row style="margin: 0; padding: 20px; background: #EAEAEA;">  
+<div class="box1 half left10" style="padding: 0; font-size: 22px;">
+    
+    <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">Stop focusing on things that you cannot control about a situation, and when you catch yourself doing it, think instead about the aspects of the situation that you <i>can</i> control.</span>
+        </b><br><br><span style="color: #000; font-size: 26px;">There are factors in every situation that you can’t control. You can’t control the personalities and responses of others. You can’t control natural events or physical accidents. So stop worrying about those things, because you can’t do much about them. Instead, look at what you can control – your responses to those situations, how you handle your emotions, and the daily choices you make. The better your responses and choices, the less impact those negative things you can’t control will have.</span></p>
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: transparent;">
+    
+    <p style="color: #000; font-size: 26px; padding: 40px;"><b><span style="font-size: 34px;"></span>
+        </b><br><br><span style="color: #000; font-size: 26px;"></span></p>
+    </div></ons-row>          
+    
+  <ons-row style="text-align: center; background-color: #EAEAEA; height: 100px;"> 
+         
+    </ons-row>
+    
+        
+                       <ons-row style="text-align: center; background-color: #eaeaea" id="end33">  
 <ons-col class="box1" width="100%" style="padding: 10px 0 0 0;">
 
-    <ons-fab ripple onclick="document.querySelector('#navigator').popPage()" modifier="mini" style="position: fixed" position="bottom left">
-        <ons-icon icon="md-chevron-left"></ons-icon></ons-fab>
+       <ons-fab style="background: transparent; border: 2px solid #000;" modifier="mini" style="position: fixed" onclick="smoothScroll(document.getElementById('top33'));" position="center bottom">
+<ons-icon icon="md-chevron-up" style="color: #000;"></ons-icon></ons-fab>
      
-    <ons-fab ripple onclick="smoothScroll(document.getElementById('top33'));" modifier="mini" style="position: fixed" position="center bottom">
-<ons-icon icon="md-chevron-up"></ons-icon></ons-fab>
-
-    <ons-fab ripple onclick="loadPage('perspective.html')" modifier="mini" style="position: fixed" position="bottom right">
-<ons-icon icon="md-chevron-right"></ons-icon>
-</ons-fab>  
-    
-    
     
         <script>
 		// build scene
@@ -278,7 +484,6 @@ window.smoothScroll = function(target) {
                </ons-row>
         
         
-    </ons-list>
  
     
 </ons-page>
