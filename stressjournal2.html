@@ -7,7 +7,7 @@ function generateEmail() {
   var emailTo = $("#emailadd").val();
   var emailCC = $("#CC").val();
   var emailSubject = "My stress management entry on " + $("#theDate").val();
-  var emailBody = "Your stressor is " + $("#stressor").val() + "%0A%0A" + $("#area").val() + "To further help you manage your stressor, you can" + $("#question2").val() + "%0A%0AMy stressor should be " + $(".time:checked").val();
+  var emailBody = "My stressor is " + $("#stressor").val() + "%0A%0A" + $("#area").val() + "To further help you manage your stressor, you can" + $("#question2").val() + "%0A%0AMy stressor should be " + $(".time:checked").val();
     
     
     
@@ -49,15 +49,26 @@ function generateEmail() {
     </div></ons-row>
 
 
-<ons-list style="background: #eaeaea; padding: 0 40px">
+
     
-<ons-list-item>      
-    <b>Email</b>&nbsp;&nbsp;<input type="email" class="text-input" id="emailadd" style="width: 400px" placeholder="Your entry will be sent to this address">
-</ons-list-item>
- 
-<ons-list-item>    
-<b>Date</b>&nbsp;&nbsp;<input type="date" class="text-input " id="theDate">
-            <script>
+    
+<ons-row style="margin: 0; padding: 20px;background: #EAEAEA;">
+<div class="box1" style="padding: 0;">
+    
+    <p style="color: #000; text-align: left; margin: 0"><b><span style="font-size: 26px;">Email address</span>
+        </b><br><br><span style="color: #000; font-size: 22px; background: #fff"><input type="email" class="text-input" id="emailadd" style="width: 100%" placeholder="Your entry will be sent to this address">
+        </span></p>
+    </div>
+</ons-row>  
+    
+<ons-row style="margin: 0; padding: 20px;background: #EAEAEA;">
+<div class="box1" style="padding: 0;">
+    
+    <p style="color: #000; text-align: left; margin: 0"><b><span style="font-size: 26px;">Date</span>
+        </b><br><br><span style="color: #000; font-size: 22px; background: #fff"><input type="date" class="text-input " id="theDate" style=" color: #000; background: #fff;">
+        </span></p>
+    </div>
+                <script>
 var date = new Date();
 
 var day = date.getDate();
@@ -70,15 +81,24 @@ if (day < 10) day = "0" + day;
 var today = year + "-" + month + "-" + day;       
 document.getElementById("theDate").value = today;
     </script>
-</ons-list-item>   
+</ons-row>  
+    
+    
+<ons-row style="margin: 0; padding: 20px;background: #EAEAEA;">
+<div class="box1" style="padding: 0;">
+    
+    <p style="color: #000; text-align: left; margin: 0"><b><span style="font-size: 26px;">Describe your stressor</span>
+        </b><br><br><span style="color: #000; font-size: 22px; background: #fff"><input type="text" class="text-input" rows="3" id="stressor" placeholder="I am currently stressed about..." style="width: 100%;" >
+        </span></p>
+    </div>
+</ons-row>  
 
-<ons-list-item>    
-    <b>Describe your stressor</b>&nbsp;&nbsp;<input type="text" class="textarea" rows="3" id="stressor" placeholder="I am current feeling stressed about the things here" style="width: 100%" >
-</ons-list-item>      
-
-<ons-list-item> 
-<b>My stressor is</b>&nbsp;&nbsp;
-<select id="area" class="select-input">
+    
+<ons-row style="margin: 0; padding: 20px;background: #EAEAEA;">
+<div class="box1" style="padding: 0;">
+    
+    <p style="color: #000; text-align: left; margin: 0"><b><span style="font-size: 26px;">My stressor is</span>
+        </b><br><br><span style="color: #000; font-size: 22px; background: #fff"><select id="area" class="select-input">
 	<option value="For academic stress, we recommend that you: 
                    %0AManage time wisely%0A
                    Get organized (draw up a time-table if it helps)%0A
@@ -106,18 +126,46 @@ document.getElementById("theDate").value = today;
 ">work</option>
     <option value="For other types of stress aside from personal, academic and work, we cna only recommend general techniques to releif stress. We acknowledge that everyone has their own way of dealing with stress. Sometimes, you know yourself best.">unspecified</option>
           </select>
-</ons-list-item>      
-      
-<ons-list-item>
-<b>My stressor is</b>&nbsp;&nbsp;
-<radiogroup>      
-<input type="radio" name="time" class="time" value="something to think about in a few months time" id="later">Long term (something that will occur in them next few weeks/months/years)<br>
-<input type="radio" name="time" class="time" value="something to think about now" id="now">Short term (Something that will occur in the next few hours/days)
+        </span></p>
+    </div>
+</ons-row>      
+
+<ons-row style="margin: 0; padding: 20px;background: #EAEAEA;">
+<div class="box1" style="padding: 0;">
+    
+    <p style="color: #000; text-align: left; margin: 0"><b><span style="font-size: 26px;">My stressor is also</span>
+        </b><br><br><span style="color: #000; font-size: 22px; font-weight: 300">
+        <radiogroup>      
+        <input type="radio" name="time" class="time" value="something to think about in a few months time" id="later">Long term<br><span style="font-size: 12px"><b>(something that will occur in the next few weeks, months or years)</b></span><br>
+        <input type="radio" name="time" class="time" value="something to think about now" id="now">Short term<br><span style="font-size: 12px"><b>(something that will occur in the next few hours/days)</b></span>
     </radiogroup>
-</ons-list-item>    
+        </span></p>
+    </div>
+</ons-row>  
+    
+    
+    
+  
 <ons-list-item>
-Customer contact info
+I also tend to have a more 
+    
+    Internal
+    
+    External
+    
+    Neither internal nor external
+    
 <input type="text" class="textarea" id="question2" style="width: 100%">
+    
+    For someone who has a more internal locus of control, you should look beyond what you can do - step back and recognise factors outside your control that will influence or affect what is stressing you out.
+    
+    For someone who has a more external locus of control, you should look at some thing that you might be able to control. Try to se eif there is any way that you might be able to affect the outcome of the stressor. Looking at it from a different perspective can be empowering, and new possibilities might present themselves. Try something new.
+    
+    
+    
+    
+    locus of control.
+    
 </ons-list-item>
 
 <ons-list-item>    
@@ -131,7 +179,7 @@ Customer contact info
 <ons-list-item>
       <input type="submit" class="button" value="Generate email" onclick="generateEmail()">
     </ons-list-item>
-</ons-list>    
+
     
 
 </ons-page>
