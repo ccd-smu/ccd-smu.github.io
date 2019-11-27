@@ -1715,23 +1715,16 @@ position: absolute;
             
         }        
 					</style>
-    
-    <script>
-        function resett(){
-        document.querySelector('#navigator').resetToPage('home.html');
-document.querySelector('ons-splitter-mask').style.opacity = 0;
-    </script>
-    
 </head>
 <body>
     <ons-page>
 <ons-splitter>
   <!-- The side menu -->
-<ons-splitter-side id="menu" collapse>
+<ons-splitter-side id="menu" collapse swipable>
 
   <ons-page>
     <ons-list>
-      <ons-list-item onclick="resett()">
+      <ons-list-item onclick="document.querySelector('#navigator').resetToPage('home.html');">
         Home
       </ons-list-item>
        <ons-list-item onclick="loadPage('common.html')">
