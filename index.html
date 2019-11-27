@@ -1364,6 +1364,7 @@ display: none;
         transition-duration: 0.3s;
         }
         
+        
         .righted{
             box-shadow: inset 0 0 0 2px #000;
         }
@@ -1712,11 +1713,14 @@ position: absolute;
             background: transparent;
             color: #fff;
             
-        }
-
+        }        
 					</style>
     
-    
+    <script>
+        function resett(){
+        document.querySelector('#navigator').resetToPage('home.html');
+document.querySelector('ons-splitter-mask').style.opacity = 0;
+    </script>
     
 </head>
 <body>
@@ -1727,14 +1731,29 @@ position: absolute;
 
   <ons-page>
     <ons-list>
-      <ons-list-item onclick="loadPage('about.html')">
-        About
+      <ons-list-item onclick="resett()">
+        Home
       </ons-list-item>
        <ons-list-item onclick="loadPage('common.html')">
-        Common signs
+        Common signs of stress
       </ons-list-item> 
            <ons-list-item onclick="loadPage('what.html')">
        What can I do
+      </ons-list-item> 
+    <ons-list-item onclick="loadPage('gallery.html')">
+       Good &amp; Bad Stress
+      </ons-list-item>     
+    <ons-list-item onclick="loadPage('longshort.html')">
+      Long &amp; Short term stress
+      </ons-list-item> 
+        <ons-list-item onclick="loadPage('locuscontrol.html')">
+    The Locus of Control
+      </ons-list-item> 
+            <ons-list-item onclick="loadPage('perspectives.html')">
+   A different perspective on stress
+      </ons-list-item> 
+            <ons-list-item onclick="loadPage('tips.html')">
+      Tips to handle stress
       </ons-list-item> 
         
     </ons-list>
