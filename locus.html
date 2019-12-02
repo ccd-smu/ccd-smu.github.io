@@ -80,19 +80,19 @@ document.getElementById("output").innerHTML = "Your choices indicate <b>neither<
     
 
 
-  <ons-toolbar>
-      <div class="left" style="background: #000;">
+  <ons-toolbar id="top3">
+      <div class="left">
   <ons-back-button></ons-back-button>
 </div>
-    <div class="center" style="background: #000; color: moccasin">Internal Control Index</div> 
-      <div class="right" style="background: #000;"></div>
+    <div class="center">Internal Control Index</div> 
+      <div class="right"></div>
   </ons-toolbar>
 
     <ons-row style="margin: 0; padding: 20px; background: #000;">  
 <div class="box1 half left1" style="padding: 0; font-size: 22px; background: rgba(255,228,181,0.2);">
     
     <p style="color: #ffe4b5; font-size: 26px"><b>Legend
-        </b><br><br><span style="color: #fff; font-size: 22px;">Select the option that you identify with</span>
+        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Select the option that you most identify with</span>
 </p>
 
       
@@ -804,7 +804,7 @@ When I am involved in something I try to find out all I can about what is going 
                
     <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #ffe4b5">
     
-    <p><span id="output"></span></p>
+    <p><span id="output" style="font-weight: 300;"></span></p>
       
 
     </div>
@@ -814,15 +814,7 @@ When I am involved in something I try to find out all I can about what is going 
     
     
     
-  <!--  <ons-row style="text-align: center; background: #000">  
-<ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px">    
-    
-    <p style="text-align: left; font-size: 22px; color: #fff"><b>Your internal locus of control score is &nbsp;&nbsp;<input type="text" class="textarea" id="ICIscore" name="ICIscore" style="background: #0076ff; color: #fff; border-radius: 0; border: none;"></b></p>    
-    
-    <p style="text-align: left; font-size: 22px; padding: 20px 0"><span id="output"></span></p>
-    
-        </ons-col></ons-row>-->
-    
+
     
 </ons-list>
 
@@ -841,7 +833,7 @@ When I am involved in something I try to find out all I can about what is going 
     
     
     
-           <ons-row style="text-align: center; background: #000;">  
+           <ons-row style="text-align: center; background: #000; height: 150px;">  
 <ons-col class="box1" width="100%" style="padding: 10px 0;">
 
 
