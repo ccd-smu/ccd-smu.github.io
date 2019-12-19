@@ -11,6 +11,16 @@ var next = function() {
   var carousel = document.getElementById('carousel');
   carousel.next();
 };
+      
+        var prev2 = function() {
+  var carousel = document.getElementById('carousel2');
+  carousel.prev();
+};
+
+var next2 = function() {
+  var carousel = document.getElementById('carousel2');
+  carousel.next();
+};
 
   </script>
 
@@ -51,38 +61,44 @@ var next = function() {
       
 
     </div></ons-row>
-               
+    
+<ons-row style="position: relative; background: #EAEAEA;">     
+    
 
-                         
-            <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+    
+    <ons-carousel swipeable auto-scroll overscrollable id="carousel" style="padding: 0 0 0px 0; margin: 0 40px">
+        
+
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
 <div class="box1 half left1" style="padding: 0; font-size: 22px; background: #42b883;">
     
     <p style="color: #fff; font-size: 26px"><b>Eustress
-        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;">also known as <i>good</i> or <i>positive</i> stress</span>
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">also known as <i>good</i> or <i>positive</i> stress</span>
 </p>
 
       
 
     </div>
                
-    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+<div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
     
-    <p style="color: #000">Motivates, helps one to focus<br><br>Is perceived as within our coping abilities<br><br>Feels exciting<br><br>Improves performance
+    <p style="color: #000">&#8226;&nbsp;Motivates, helps one to focus<br>&#8226;&nbsp;Is perceived as within our coping abilities<br>&#8226;&nbsp;Feels exciting<br>&#8226;&nbsp;Improves performance
 </p>
 
-      
 
     </div>
-               
-
-    </ons-row>   
-                         
-    
-                <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+        
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
 <div class="box1 half left1" style="padding: 0; font-size: 22px; background: #ff7e67;">
     
     <p style="color: #fff; font-size: 26px"><b>Distress
-        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;">also known as <i>bad</i> or <i>negative</i> stress</span>
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">also known as <i>bad</i> or <i>negative</i> stress</span>
 </p>
 
       
@@ -91,16 +107,27 @@ var next = function() {
                
     <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
     
-    <p style="color: #000">Causes anxiety or concern<br><br>Is perceived as outside of our coping abilities<br><br>Feels unpleasant<br><br>Decreases performance<br><br>Can lead to mental and physical problems
+    <p style="color: #000">&#8226;&nbsp;Causes anxiety or concern<br>&#8226;&nbsp;Is perceived as outside of our coping abilities<br>&#8226;&nbsp;Feels unpleasant<br>&#8226;&nbsp;Decreases performance<br>&#8226;&nbsp;Can lead to mental and physical problems
 </p>
 
-      
+    </div>   
+        </ons-row>
+    </ons-carousel-item>
 
-    </div>
-               
+    
+  </ons-carousel>
+     
+            
+                         <ons-fab style="background: #fff; border: 2px solid #909090; top: 40%" modifier="mini" onclick="prev()" position="bottom left">
+        <ons-icon style="color: #909090" icon="md-chevron-left"></ons-icon>
+      </ons-fab>
+              <ons-fab style="background: #fff; border: 2px solid #909090; top: 40%" modifier="mini" onclick="next()" position="bottom right">
+        <ons-icon style="color: #909090" icon="md-chevron-right"></ons-icon>
+      </ons-fab>
 
-    </ons-row>   
+    </ons-row>
                          
+
                          
 <ons-row style="margin: 0; padding: 20px; background: #EAEAEA;">  
 <div class="box1 half left10" style="padding: 0; font-size: 22px;">
@@ -123,6 +150,140 @@ var next = function() {
       
 
     </div></ons-row>
+    
+<ons-row style="position: relative; background: #EAEAEA;">     
+    
+
+    
+    <ons-carousel swipeable auto-scroll overscrollable id="carousel2" style="padding: 0 0 0px 0; margin: 0 40px">
+        
+
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #42b883;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Good stress
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Examples</span>
+</p>
+
+      
+
+    </div>
+               
+<div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #000">&#8226;&nbsp;Receiving a promotion or raise at work.
+<br>&#8226;&nbsp;Starting a new job.
+<br>&#8226;&nbsp;Marriage.
+<br>&#8226;&nbsp;Buying a home.
+<br>&#8226;&nbsp;Having a child.
+<br>&#8226;&nbsp;Moving.
+<br>&#8226;&nbsp;Taking a vacation.
+<br>&#8226;&nbsp;Holiday seasons.
+<br>&#8226;&nbsp;Taking educational classes or learning a new hobby.
+
+</p>
+
+
+    </div>
+        </ons-row>
+    </ons-carousel-item>
+        
+            <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #42b883;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Good stress
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Example</span>
+</p>
+
+      
+
+    </div>
+               
+<div class="box1 half right1" style="padding: 0; font-size: 22px; background: #42b883">
+    
+    <p style="color: #fff; font-weight: 300"><i>Aaron is an accountant for over 3 years at one of  Forbes Top 500 Companies. Due to impending deadlines and boss’s high expectations, Aaron faces stress at work. However, Aaron feels that the stress motivates him and helps him to optimize his performance at work.
+        </i>
+
+</p>
+
+
+    </div>
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+        
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #ff7e67;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Bad stress
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Example</span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #000">&#8226;&nbsp;Losing contact with loved ones.
+<br>&#8226;&nbsp;The death of a family member.
+<br>&#8226;&nbsp;Hospitalization (oneself or a family member).
+<br>&#8226;&nbsp;Injury or illness (oneself or a family member).
+<br>&#8226;&nbsp;Being abused or neglected.
+<br>&#8226;&nbsp;Conflict in interpersonal relationships.
+<br>&#8226;&nbsp;Financial problems.
+<br>&#8226;&nbsp;Sleep problems.
+<br>&#8226;&nbsp;overscheduling.
+
+</p>
+
+    </div>   
+        </ons-row>
+    </ons-carousel-item>
+        
+            <ons-carousel-item style="padding: 0px">
+        
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #ff7e67;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Bad stress
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Examples</span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #ff7e67">
+    
+        <p style="color: #fff; font-weight: 300"><i>Ben is also an accountant for over 2.5 years at one of Forbes Top 500 Companies. As the financial year was coming to an end, Ben had to start closing the books. He started to feel anxious and worried excessively if he could could complete his task on time.  He started to have headaches and muscle aches. Because he was so stressed, he could not think logically and was not able to focus too.</i>
+</p>
+
+    </div>   
+        </ons-row>
+    </ons-carousel-item>
+
+
+    
+  </ons-carousel>
+     
+            
+                         <ons-fab style="background: #fff; border: 2px solid #909090; top: 40%" modifier="mini" onclick="prev2()" position="bottom left">
+        <ons-icon style="color: #909090" icon="md-chevron-left"></ons-icon>
+      </ons-fab>
+              <ons-fab style="background: #fff; border: 2px solid #909090; top: 40%" modifier="mini" onclick="next2()" position="bottom right">
+        <ons-icon style="color: #909090" icon="md-chevron-right"></ons-icon>
+      </ons-fab>
+
+    </ons-row>
+                         
+
+                                 
+
     
     
 

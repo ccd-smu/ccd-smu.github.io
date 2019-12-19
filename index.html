@@ -1394,6 +1394,8 @@ display: none;
         transition-duration: 0.3s;
         }
 
+        #sec1, #sec2, #sec3, #sec4, #sec5
+        {fill: #fff;}
         
     .small{
         display: none;
@@ -1421,6 +1423,20 @@ display: none;
     transform: rotate(90deg);
   }
 }
+        
+#sec {
+    transform-origin: 50% 75%;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+     transition-duration: 1s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+     transition-property: transform;
+}
+
+
 
         
         #buttonreflect{
@@ -1718,7 +1734,7 @@ position: absolute;
 <ons-splitter-side id="menu" collapse swipable>
   <ons-page>
     <ons-list>
-      <ons-list-item onclick="loadPage('home.html')">        Home
+      <ons-list-item onclick="loadPage('home.html')">Home
       </ons-list-item>
        <ons-list-item onclick="loadPage('common.html')">
         Common signs of stress
