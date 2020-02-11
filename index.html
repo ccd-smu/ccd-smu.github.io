@@ -1725,6 +1725,25 @@ position: absolute;
             color: #fff;
             
         }        
+#para11{
+        max-height: 60vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        transition: 1s ease;
+        padding-bottom: 80px;
+    } 
+#para11.expand {
+        max-height: none;
+        transition: 1s ease;
+    }  
+    
+#parabutton11{
+transform: rotate(0);
+    }
+    
+#parabutton11.expand{
+transform: rotate(180deg);
+    }
 					</style>
 </head>
 <body>
@@ -1751,7 +1770,7 @@ position: absolute;
         <ons-list-item onclick="loadPage('locuscontrol.html')">
     The Locus of Control
       </ons-list-item> 
-            <ons-list-item onclick="loadPage('perspectives.html')">
+            <ons-list-item onclick="loadPage('perspective.html')">
    A different perspective on stress
       </ons-list-item> 
             <ons-list-item onclick="loadPage('tips.html')">
