@@ -5,14 +5,12 @@
 <script>
 function generateEmail() {
   var emailTo = $("#emailadd").val();
-  var emailCC = $("#CC").val();
   var emailSubject = "My stress management entry on " + $("#theDate").val();
   var emailBody = "My stressor is " + $("#stressor").val() + "%0A%0A" + $("#area").val() + "%0A%0A" + $("#question2 input:checked").val() + "%0A%0The stressor is something that will happen " + $("#time input:checked").val();
     
     
     
-  location.href = "mailto:" + emailTo + "?" + 
-    (emailCC ? "cc=" + emailCC : "") + 
+  location.href = "mailto:" + emailTo + "?" +  
     (emailSubject ? "&subject=" + emailSubject : "") + 
     (emailBody ? "&body=" + emailBody : "");
 }
@@ -166,29 +164,7 @@ document.getElementById("theDate").value = today;
     </div>
 </ons-row>  
     
-    
-<ons-row style="margin: 0; padding: 20px;background: #EAEAEA;">
-<div class="box1" style="padding: 0;">
-    
-    <p style="color: #000; text-align: left; margin: 0"><b><span style="font-size: 26px;">One last thing</span>
-        </b>
-        
-        
-        <br><br><span style="color: #000; font-size: 22px; font-weight: 300;">
-For data collection purposes, please express if you consent to this information being sent to our Co-Curriculum Development team (<a href="mailto:cocurriculum@smu.edu.sg" style="color: #000">cocurriculum@smu.edu.sg</a>). Your data will be  kept confidential and you may write to us to withdraw your information within 14 days. <br>Don't worry, you will still be able to complete this without sending us any data.
-        </span>
-    <br><br>
-    <span style="color: #000; font-size: 22px; font-weight: 300">
-    <radiogroup>      
-<input type="radio" style="height: 25px; width: 25px" name="CC" value="co-curriculum@smu.edu.sg" id="CC">I agree<br>
-<input type="radio" style="height: 25px; width: 25px" name="CC" value="" id="CC">I disagree<br>      
-        </radiogroup>  </span>
-    
-        </p>
-    </div>
-</ons-row>  
-    
-    
+
     <ons-row style="text-align: center; background-color: #eaeaea">  
 <ons-col class="box1" width="100%" style="padding: 20px 0; font-size: 26px; margin-bottom: 20px;">
     
