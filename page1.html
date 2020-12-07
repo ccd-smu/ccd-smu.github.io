@@ -1,311 +1,1764 @@
-<ons-page id="page1" style="background-color: #655989;">
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/onsenui.min.css">
+  <link rel="stylesheet" href="css/onsen-css-components.min.css">
+    <link rel="stylesheet" href="https://github.com/xwtoh/xwtoh.github.io/css/examples.css">
+  <script src="js/onsenui.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
 
-           <script>
-window.smoothScroll = function(target) {
-    var scrollContainer = target;
-    do { //find scroll container
-        scrollContainer = scrollContainer.parentNode;
-        if (!scrollContainer) return;
-        scrollContainer.scrollTop += 1;
-    } while (scrollContainer.scrollTop == 0);
-    
-    var targetY = 0;
-    do { //find the top of target relatively to the container
-        if (target == scrollContainer) break;
-        targetY += target.offsetTop;
-    } while (target = target.offsetParent);
-    
-    scroll = function(c, a, b, i) {
-        i++; if (i > 30) return;
-        c.scrollTop = a + (b - a) / 30 * i;
-        setTimeout(function(){ scroll(c, a, b, i); }, 20);
-    }
-    // start scrolling
-    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-}      
+<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+
+<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+
+
+        <script>
+
+    const loadPage = (page) => {
+  document.querySelector('#menu').close();
+  document.querySelector('#navigator').bringPageTop(page, { animation: 'fade' });
+};
     </script>
-    
-<ons-fab id="btn1" ripple
-onclick="smoothScroll(document.getElementById('one'));document.getElementById('btn2').style.display = 'none';document.getElementById('btn2').style.display = 'block';" position="bottom right">
-<ons-icon icon="md-chevron-down"></ons-icon>
-</ons-fab>  
-           
-<ons-fab id="btn2" ripple style="display: none" onclick="smoothScroll(document.getElementById('trigger0'));document.getElementById('btn2').style.display = 'none';document.getElementById('btn3').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
-<ons-icon icon="md-chevron-down" class="ons-icon zmdi zmdi-chevron-down"></ons-icon>
-</span></ons-fab>    
-
-<ons-fab id="btn3" ripple style="display: none" onclick="smoothScroll(document.getElementById('trigger1'));document.getElementById('btn3').style.display = 'none';document.getElementById('btn4').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
-<ons-icon icon="md-chevron-down" class="ons-icon zmdi zmdi-chevron-down"></ons-icon>
-</span></ons-fab>       
-    
-<ons-fab id="btn4" ripple style="display: none" onclick="smoothScroll(document.getElementById('trigger10'));document.getElementById('btn4').style.display = 'none';document.getElementById('btn5').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
-<ons-icon icon="md-chevron-down" class="ons-icon zmdi zmdi-chevron-down"></ons-icon>
-</span></ons-fab>    
-    
-<ons-fab id="btn5" ripple style="display: none" onclick="smoothScroll(document.getElementById('last'));document.getElementById('btn5').style.display = 'none';document.getElementById('btn6').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
-<ons-icon icon="md-chevron-down" class="ons-icon zmdi zmdi-chevron-down"></ons-icon>
-</span></ons-fab> 
-    
-
-
-        
-  <ons-toolbar style="background-color: #655989; color: #fff">
-      <div class="left" style="background-color: #655989; color: #fff">
-  <ons-back-button></ons-back-button>
-</div>
-    <div class="center" style="background-color: #655989; color: #fff;">What is stress?</div>
-  </ons-toolbar>
-    <div id="zero"></div>
-       <ons-list id="reveal-elements" style="background-color: #ffcebb; text-align: center; width: 100%">
-           
-    
-           <ons-row width="100%">
-               
-                 <img src="title2.png" style="margin: auto; position: fixed; top: 44px; left: 50%; margin-left: -20vh; display: block; z-index: 999; max-height: 40vh;">
-               </ons-row>
-               <script>
-		// topbtnhide
-                                new ScrollMagic.Scene({
-								triggerElement: "#trigger",
-								triggerHook: 0, 
-                                offset: 50
-											})
-											.setClassToggle("#btn1,#btn6", "hide")
-                                    		.addIndicators() // add indicators (requires plugin)
-											.addTo(controller);
-</script>
-           
-
-
-               
-               	
-               
-                <ons-row width="100%" id="trigger" style="height: 100vh; background-color: #655989; position: relative;">
-                    
-                    
- 
-                    
-                    <div id="one" style="position: absolute; top: 30%; height: 10px"></div>
-               
-					<div id="destroybox" class="box1" style="padding: 0; position: absolute; top: 50%; height: 45vh">
-                                                      
-
-                        <ons-col class="box1" width="100%"><p style="font-size: 26px; padding: 0:">is a feeling of</p></ons-col>
-                        <ons-col id="destroy" class="redblink box1"><p style="font-size: 26px; padding: 20px 0; margin: auto;"><b>Abnormal Pressure</b></p></ons-col>					
-               
-               
-               </div>
-					<script>
-						$(function () { // wait for document ready
-							// init controller
-							var controller = new ScrollMagic.Controller({loglevel: 3});
-
-							// build scene
-							var scene = new ScrollMagic.Scene({triggerElement: "#destroybox", triggerHook: 0.5, offset: 0, duration: "55%"})
-                                            .setPin("#destroybox")
-                                            .setClassToggle("#destroybox", "visible") // add class toggle
-											.addTo(controller);
-                                            
-						});
-					</script>
-                    
-
-           </ons-row>
-           
-           <ons-row style="height: 100vh; background-color: #7a9eaf; position: relative;" id="trigger0">
-                
-               
-     
-<ons-row style="position: absolute; top: 0%" id="row10">     
-    <ons-row class="box1" id="reveal000" width="100%" ><p style="font-size: 26px; padding: 20px 0;">can be either</p></ons-row>
-                <ons-col width="50%" class="box1 white" id="reveal0"><p style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;"><b>Good</b><br>
-                   <br>known as Eustress<br>
-                    </p></ons-col>
-    
-                <ons-col width="50%" class="box1 black" id="reveal00"><p style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;"><b>Bad</b><br>
-                    <br>known as Distress</p></ons-col>
-</ons-row>
-                    
-                    
-    <ons-row style="height: 150px;">&nbsp;</ons-row>
-               					<script>
-							// build scene
-							new ScrollMagic.Scene({
-												triggerElement: "#trigger0",
-												triggerHook: 0.4, // show, when scrolled 10% into view
-												duration: "45%", // hide 10% before exiting view (80% + 10% from bottom)
-												offset: 0 // move trigger to center of element
-											})
-											.setClassToggle("#reveal0,#reveal00,#reveal000", "visible")
-                                            .setPin("#row10")
-											.addTo(controller);
-					</script>
-                    
-
-    
-</ons-row>
-               
-           
-           
-                <ons-row style="height: 60vh; background-color: #ffcebb;" id="trigger1">
-                
-               <ons-col class="box1" id="reveal0000" width="100%"><p style="font-size: 26px; padding: 20px 0; color: #000">can be from different aspects of your day to day life, or your choices.</p></ons-col>
-     
-<ons-row>               
-                <ons-col width="50%" class="box1" id="reveal1"><p class="red" style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;"><b>Academic</b></p></ons-col>
-    
-                <ons-col width="50%" class="box1" id="reveal2"><p class="blue" style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;"><b>Personal</b></p></ons-col>
-</ons-row>
-                    
-    
-<ons-row id="trigger2">      
-                <ons-col width="50%" class="box1" id="reveal3"><p class="orange" style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;"><b>Work</b></p></ons-col>
-                
-                <ons-col width="50%" class="box1" id="reveal4"><p class="green" style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;"><b>etc.</b></p></ons-col>
-</ons-row>
-                    
-    <ons-row style="height: 150px;">&nbsp;</ons-row>
-               					<script>
-							// build scene
-							new ScrollMagic.Scene({
-												triggerElement: "#trigger1",
-												triggerHook: 0.4, // show, when scrolled 10% into view
-												duration: "45%", // hide 10% before exiting view (80% + 10% from bottom)
-											})
-											.setClassToggle("#reveal1,#reveal2,#reveal3,#reveal4,#reveal0000", "visible")
-                                            .setPin("#trigger1")
-											.addTo(controller);
-					</script>
-                    
-
-    
-</ons-row>
-               
-        <ons-row style="height: 100vh; background-color: #de88a5;">                        
-  
-                                
-<div class="box1" id="trigger10"><p style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;">can be</p>
-                            
-<div id="animate10" class="box1" style="background: #655989; z-index: 99;">
-    <p style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;"><b>overwhelming</b></p>
-
-</div>
-                            
-              <p style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;">for you</p></div>                             
-
-<div class="spacer s2"></div>
-<script>
-		// build scene
-                                new ScrollMagic.Scene({
-								triggerElement: "#trigger10",
-								triggerHook: 0.5, // show, when scrolled 10% into view
-											})
-											.setClassToggle("#animate10,#trigger10", "visible")
-                                            .setPin("#trigger10")
-											.addTo(controller);
-</script>
-                                
-                   
-           </ons-row>
-
-  
- <ons-row style="height: 100vh; background-color: black; position: relative; z-index: 1">
-
-   <div class="box1" style="padding: 50px 0; position: absolute; top: 45%"><p style="font-size: 26px; padding: 0 10px 50px 10px;">Go back and choose the topic that most interests you</p></div>
-
-     <ons-col style="position: absolute; bottom: 0;">
-
-
-         <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto" onclick="smoothScroll(document.getElementById('zero'));document.getElementById('btn5').style.display = 'none';">
-             <p style="font-size: 20px; padding: 10px 20px;"><ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-up"></ons-icon>&nbsp;&nbsp;&nbsp;Back to top</p></div>
-         
-         
-         <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto" id="last" onclick="loadPage('content.html')">
-             <p style="font-size: 20px; padding: 10px 20px;"><ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-left"></ons-icon>&nbsp;&nbsp;&nbsp;Go back</p></div>
-         
-
-
-     </ons-col>
-
-    <script>    
-            var controller2 = new ScrollMagic.Controller();
-  	// build scenes
-		var revealElement = document.getElementsByClassName("digit2");
-		for (var i=0; i<revealElement.length; i++) { // create a scene for each element
-			new ScrollMagic.Scene({
-								triggerElement: revealElement[i], // y value not modified, so we can use element as trigger as well
-																				 // start a little later
-								triggerHook: 1,
-							})
-							.setClassToggle(revealElement[i], "visible") // add class toggle
-							.addTo(controller);
-		}
-    
-    </script>  
-    
-           </ons-row>
-           
-
-</ons-list>
-  <script>
-        
-        
-  ons.ready(function() {
-  var modal = document.querySelector('ons-modal');
-  modal.show();
-  });
-    function hideModal() {
-  var modal = document.querySelector('ons-modal');
-  modal.hide();
+     <script>  
+window.fn = {};
+window.fn.toggle = function(el) {
+  var elems = document.querySelectorAll(".accordion.active");
+[].forEach.call(elems, function(els) {
+  if (el != els) {
+  els.classList.toggle("active");
+    els.nextElementSibling.classList.toggle("show");
+  }
+});
+    el.classList.toggle("active");
+    el.nextElementSibling.classList.toggle("show");
 }
         
+    </script>
+    <style>
 
-</script> 
+    html, body {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+      body { overflow: hidden; }
+
+
+        .toast{
+           background: rgba(255, 255, 255, 0.8);
+        }
+        
+        .toast__message,.toast__button{
+            color: #000;
+        }
+        
     
+        .texting{
+            padding: 40px;
+        }
+        
+.line
+{ -webkit-animation: line 3s infinite; /* Safari 4+ */
+  -moz-animation:    line 3s infinite; /* Fx 5+ */
+  -o-animation:      line 3s infinite; /* Opera 12+ */
+  animation:         line 3s infinite; /* IE 10+, Fx 29+ */
+transform-origin:left;
+}
 
-    <ons-list id="list" onload="showModal">
+@-webkit-keyframes line {
+  0% {
+    transform: scaleX(0)
+  }
+  100% {
+   transform: scaleX(1)
+    }
+}  
+  
 
-</ons-list>
-<ons-modal direction="up" animation="lift" onclick="hideModal()">
+.book {
+  transform-style: preserve-3d;
+  position: relative;
+      width: 10vw;
+    height: 13vw;
+  cursor: pointer;
+  backface-visibility: visible;
+}
+
+.front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
+  transform-style: preserve-3d;
+  position: absolute;
+    width: 10vw;
+    height: 13vw;
+  top: 0; left: 0;
+  transform-origin: left center;
+  transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+}
+
+.front, .back {
+  background: navy;
+}
+
+.front, .page1, .page3, .page5 {
+  border-bottom-right-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.back, .page2, .page4, .page6 {
+  border-bottom-right-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.page1 { 
+  background: #efefef;
+}
+
+.page2 {
+  background: #efefef;
+}
+
+.page3 {
+  background: #f5f5f5;
+}
+
+.page4 {
+  background: #f5f5f5;
+}
+
+.page5 {
+  background: #fafafa;
+}
+
+.page6 {
+  background: #fdfdfd;
+}    
+
+.book:hover .front, .book:active .front {
+  transform: rotateY(-160deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page1, .book:active page1 {
+  transform: rotateY(-150deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page2, .book:active page2 {
+  transform: rotateY(-30deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page3, .book:active page3 {
+  transform: rotateY(-140deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page4, .book:active page4 {
+  transform: rotateY(-40deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page5, .book:active page5 {
+  transform: rotateY(-130deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page6, .book:active page6 {
+  transform: rotateY(-50deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .back, .book:active back {
+  transform: rotateY(-20deg) scale(1.1);
+}
+.bubble {
+  animation: expand 4s ease-in-out infinite;
+  border-radius: 50%;
+  display: inline-block;
+  transform-origin: center center;
+  margin: 0 3px;
+  width: 20px;
+  height: 20px;
+}
+
+.bubble:nth-child(1) {
+  background: #27ae60;
+}
+
+.bubble:nth-child(2) {
+  animation-delay: 500ms;
+  background: #f1c40f;
+  margin: 10px 20px;
+  height: 25px;
+  width: 25px;
+}
+
+.bubble:nth-child(3) {
+  animation-delay: 1000ms;
+  background: #e67e22;
+  margin: 30px 0px;
+  height: 40px;
+  width: 40px;
+}
+
+.bubble:nth-child(4) {
+  animation-delay: 1500ms;
+  background: #2980b9;
+  margin: 80px 20px;
+  height: 50px;
+  width: 50px;
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.55);
+  }
+  100%{
+    opacity: 0;
+  }
+}
+        
+        
+        @keyframes arot {
+	0% {
+		transform: rotate(0deg)
+		           translate(-50px)
+		           rotate(0deg);
+	}
+    	25% {
+		transform: rotate(120deg)
+		           translate(-50px) 
+		           rotate(-120deg);
+	}
+            
+            
+        75% {
+            		transform: rotate(0deg)
+		           translate(0)
+		           rotate(0deg);
+
+	}
+    100% {
+		transform: rotate(0deg)
+		           translate(-50px)
+		           rotate(0deg);
+	}
+}
+        
+            @keyframes arot2 {
+	0% {
+		transform: rotate(120deg)
+		           translate(-50px)
+		           rotate(-120deg);
+	}
+    	25% {
+		transform: rotate(240deg)
+		           translate(-50px) 
+		           rotate(-240deg);
+	}
+    75% {
+    		transform: rotate(240deg)
+		           translate(-50px) 
+		           rotate(-240deg);
+        opacity: 0;
+	}
+    100% {
+    		transform: rotate(240deg)
+		           translate(-50px) 
+		           rotate(-240deg);
+        opacity: 0;
+	}
+}
+            @keyframes arot3 {
+	0% {
+		transform: rotate(240deg)
+		           translate(-50px)
+		           rotate(-240deg);
+	}
+    	25% {
+		transform: rotate(360deg)
+		           translate(-50px) 
+		           rotate(-360deg);
+	}
+        75%{
+        		transform: rotate(360deg)
+		           translate(-50px) 
+		           rotate(-360deg);
+
+        opacity: 0;
+                }
+        100%{
+        		transform: rotate(360deg)
+		           translate(-50px) 
+		           rotate(-360deg); 
+
+        opacity: 0;
+                }
+}        
+        
+
+        
+        
+        @keyframes rot {
+	0% {
+		transform: rotate(0deg)
+		           translate(-100px)
+		           rotate(0deg);
+	}
+    	100% {
+		transform: rotate(60deg)
+		           translate(-100px) 
+		           rotate(-60deg);
+	}
+}
+        
+            @keyframes rot2 {
+	0% {
+		transform: rotate(60deg)
+		           translate(-100px)
+		           rotate(-60deg);
+	}
+    	100% {
+		transform: rotate(120deg)
+		           translate(-100px) 
+		           rotate(-120deg);
+	}
+}
+            @keyframes rot3 {
+	0% {
+		transform: rotate(120deg)
+		           translate(-100px)
+		           rotate(-120deg);
+	}
+    	100% {
+		transform: rotate(180deg)
+		           translate(-100px) 
+		           rotate(-180deg);
+	}
+}
+            @keyframes rot4 {
+	0% {
+		transform: rotate(180deg)
+		           translate(-100px)
+		           rotate(-180deg);
+	}
+    	100% {
+		transform: rotate(240deg)
+		           translate(-100px) 
+		           rotate(-240deg);
+	}
+}
+            @keyframes rot5 {
+	0% {
+		transform: rotate(240deg)
+		           translate(-100px)
+		           rotate(-240deg);
+	}
+    	100% {
+		transform: rotate(300deg)
+		           translate(-100px) 
+		           rotate(-300deg);
+	}
+}
+
+            @keyframes rot6 {
+	0% {
+		transform: rotate(300deg)
+		           translate(-100px)
+		           rotate(-300deg);
+	}
+    	100% {
+		transform: rotate(360deg)
+		           translate(-100px) 
+		           rotate(-360deg);
+	}
+}
+
+ @keyframes aarot {
+	0% {
+		transform: rotate(0deg)
+		           translate(-75px)
+		           rotate(0deg);
+	}
+    	50% {
+		transform: rotate(60deg)
+		           translate(-75px) 
+		           rotate(-60deg);
+	}
+     
+     	100% {
+		transform: rotate(0deg)
+		           translate(-75px)
+		           rotate(0deg);
+	}
+}
+        
+            @keyframes aarot2 {
+	0% {
+		transform: rotate(60deg)
+		           translate(-75px)
+		           rotate(-60deg);
+	}
+    	50% {
+		transform: rotate(120deg)
+		           translate(-75px) 
+		           rotate(-120deg);
+	}
+	100% {
+		transform: rotate(60deg)
+		           translate(-75px)
+		           rotate(-60deg);
+	}
+}
+            @keyframes aarot3 {
+	0% {
+		transform: rotate(120deg)
+		           translate(-75px)
+		           rotate(-120deg);
+	}
+    	50% {
+		transform: rotate(180deg)
+		           translate(-75px) 
+		           rotate(-180deg);
+	}
+	100% {
+		transform: rotate(120deg)
+		           translate(-75px)
+		           rotate(-120deg);
+	}
+}
+            @keyframes aarot4 {
+	0% {
+		transform: rotate(180deg)
+		           translate(-75px)
+		           rotate(-180deg);
+	}
+    	50% {
+		transform: rotate(240deg)
+		           translate(-75px) 
+		           rotate(-240deg);
+	}
+	100% {
+		transform: rotate(180deg)
+		           translate(-75px)
+		           rotate(-180deg);
+	}
+}
+            @keyframes aarot5 {
+	0% {
+		transform: rotate(240deg)
+		           translate(-75px)
+		           rotate(-240deg);
+	}
+    	50% {
+		transform: rotate(300deg)
+		           translate(-75px) 
+		           rotate(-300deg);
+	}
+	100% {
+		transform: rotate(240deg)
+		           translate(-75px)
+		           rotate(-240deg);
+	}
+}
+
+            @keyframes aarot6 {
+	0% {
+		transform: rotate(300deg)
+		           translate(-75px)
+		           rotate(-300deg);
+	}
+    	50% {
+		transform: rotate(360deg)
+		           translate(-75px) 
+		           rotate(-360deg);
+	}
+	100% {
+		transform: rotate(300deg)
+		           translate(-75px)
+		           rotate(-300deg);
+	}
+}
+        
+        
+        
+.asocial {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -20px;
+	font-size: 50px;
+	animation: arot 3s infinite ease-in-out;
+    color: #999
+}        
+        
+.tired {
+	animation: tired 3s infinite ease-in-out;
+}        
+        
+ @keyframes tired {
+	0% {
+	}
+    	50% {
+		transform: translateY(-5px)
+	}
+     
+     	100% {
+	}
+}
+                
+        
+        
+.bsocial {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -20px;
+	font-size: 50px;
+    color: #999
+}        
+.csocial {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -20px;
+	font-size: 50px;
+    color: #000;
+}  
+
+        
+.social {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -20px;
+	font-size: 50px;
+	animation: rot 3s infinite ease-in-out;
+    color: #999
+}
+        
+        .tip2{
+    display: inline-block;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    padding: 0;
+    margin: 0 0 40px 40px;
+    width: 38px;
+    height: 38px;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: 0;
+    color: #ffffff;
+    vertical-align: middle;
+    text-align: center;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    overflow: hidden;
+       transition: 0.3s;
+        }
+
+        .tip{
+    display: inline-block;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    padding: 0;
+    margin: 0 0 0 40px;
+    width: 38px;
+    height: 38px;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: 0;
+    color: #ffffff;
+    vertical-align: middle;
+    text-align: center;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    overflow: hidden;
+       transition: 0.3s;
+        }
+        .tip.rotated { 
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+        
+            .tips{
+    display: inline-block;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    padding: 0;
+    margin: 0 0 0 40px;
+    width: 38px;
+    height: 38px;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: 0;
+    color: #fff;
+    background: #407088;
+    vertical-align: middle;
+    text-align: center;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    overflow: hidden;
+       transition: 0.3s;
+        }
+        
+    .tips:hover{
+    display: inline-block;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    padding: 0;
+    margin: 0 0 0 40px;
+    width: 38px;
+    height: 38px;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: 0;
+    background: transparent;
+    vertical-align: middle;
+    text-align: center;
+    border: 2px solid #407088;
+    color: #407088;
+    border-radius: 50%;
+    overflow: hidden;
+       transition: 0.3s;
+        }
+        .tips.rotated { 
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+        
+        #longwords1, #longwords2.show{
+            display: block;
+        }
+        
+        #longwords2, #longwords1.show{
+            display: none;
+        }
+        
+        
+    .accordion {
+        transition: 0.4s;
+        color: #fff;
+    }
+    .accordion:before {
+        margin-top: -3px;
+        content: '\02795';
+    }
+    .accordion.active:before {
+        content: "\2796";
+    }
+    div.panel {
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.6s ease-in-out;
+        opacity: 0;
+        background: maroon;
+        color: white;
+    }
+    div.panel.show {
+        opacity: 1;
+        max-height: 500px;
+    }
+    .list__item__center {
+        padding-left: 5px;
+    }
+
+        
+        #end1.end,#end2.end{
+            position: fixed;
+            bottom: 48px;
+            z-index: 999;
+            font-size: 10px;
+            background: #000;
+            width: 100%;
+        }
+        
+        
+        #switch1.scroll,#switch2.scroll{
+            position: fixed;
+            bottom: 0;
+            z-index: 999;
+            font-size: 10px;
+            background: #000;
+            width: 100%;
+        }
+        
+#text1.scroll,#text2.scroll
+        {
+            display: none;
+        }
+        
+        .list-item__center{
+        background-image: none;
+        background-color: transparent;
+        }
+
+
+        #short,#long,#internal,#external{
+            padding: 0px 10px 3px 10px;
+            border-radius: 30px;
+            font-weight: bold;
+        
+        }    
+        
+        
+        .active2 {
+  background-color: #fff;
+  color: black;
+    transition: all 0.5s ease;
+}
+        
+        .switch__toggle
+        {background-color: #44db5e;
+        box-shadow: none;
+        }
+        
+@-webkit-keyframes dot3 {
+  0% {
+      border: 3px solid transparent;
+}
+  50% {
+border: 3px solid white ;
+    }
+  100% {
+border: 3px solid transparent ;
+    }
+}              
+        
+.triangle {
+    color: #f8a978;
+    width: 0;
+    height: 0;
+    margin-top: 0;
+    border-top: 100px solid #ff7f4f;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+}
+        #img.hide, #img2.hide, #img3.hide, #img4.hide, #img5.hide
+        {
+            opacity: 0;
+            transition: 0.3s;
+        }
+        #img,#img2,#img3,#img4,#img5{
+            opacity: 1;
+        transition: 0.3s;
+        }
+        
+        #more.hide, #more2.hide, #more3.hide, #more4.hide, #more5.hide
+        {
+            opacity: 0;
+            transition: 0.3s;
+        }
+       #more,#more2,#more3,#more4,#more5{
+            opacity: 1;
+        transition: 0.3s;
+        }
+        
+        
+        #btn1.hide
+        {display: none;}
+        
+        #btn1
+        {display: block;}
+        
+        #btn6.show
+        {display: block;}
+
+        .overwhelm {
+ -webkit-animation: ohm 2s infinite; /* Safari 4+ */
+  -moz-animation:    ohm 2s infinite; /* Fx 5+ */
+  -o-animation:      ohm 2s infinite; /* Opera 12+ */
+  animation:         ohm 2s infinite; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes ohm {
+  0% {
+    font-size: 100%;
+  }
+  25% {
+    font-size: 150%;  
+    }
+  40% {
+    font-size: 100%;
+  }
+  60% {
+    font-size: 150%;
+  }
+  100% {
+    font-size: 100%;
+    }
+}  
+        
+.redblink {
+ -webkit-animation: NAME-YOUR-ANIMATION 2s infinite; /* Safari 4+ */
+  -moz-animation:    NAME-YOUR-ANIMATION 2s infinite; /* Fx 5+ */
+  -o-animation:      NAME-YOUR-ANIMATION 2s infinite; /* Opera 12+ */
+  animation:         NAME-YOUR-ANIMATION 2s infinite; /* IE 10+, Fx 29+ */
+    align-content: center;
+}
+
+@-webkit-keyframes NAME-YOUR-ANIMATION {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+      background-color: red;
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}  
+        .redblink2 {
+ -webkit-animation: NAME 2s infinite; /* Safari 4+ */
+  -moz-animation:    NAME 2s infinite; /* Fx 5+ */
+  -o-animation:      NAME 2s infinite; /* Opera 12+ */
+  animation:         NAME 2s infinite; /* IE 10+, Fx 29+ */
+    align-content: center;
+}
+
+@-webkit-keyframes NAME {
+  0% {
+      background-color: red;
+  }
+  20% {
+      background-color: darkred;
+  }
+  40% {
+     background-color: red;
+  }
+  60% {
+      background-color: darkred;
+  }
+  100% {
+      background-color: red;
+  }
+}  
+
+	.digit {
+		opacity: 1;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+	}
+        
+        .digit2 {
+		opacity: 0;
+		-webkit-transform: translatey(-40px);
+			 -moz-transform: translatey(-40px);
+				-ms-transform: translatey(-40px);
+				 -o-transform: translatey(-40px);
+						transform: translatey(-40px);
+		-webkit-transition: all 0.6s ease-out;
+			 -moz-transition: all 0.6s ease-out;
+				-ms-transition: all 0.6s ease-out;
+				 -o-transition: all 0.6s ease-out;
+						transition: all 0.6s ease-out;
+	}
+	.digit2.visible {
+		opacity: 1;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+	}
+        
+    #destroybox {
+		opacity: 0;
+        		-webkit-transition: all 0.6s ease-out;
+			 -moz-transition: all 0.6s ease-out;
+				-ms-transition: all 0.6s ease-out;
+				 -o-transition: all 0.6s ease-out;
+						transition: all 0.6s ease-out;
+	}
+	#destroybox.visible{
+		opacity: 1;
+	} 
+        
+        #animate10.visible {
+ -webkit-animation: ovh 2s infinite; /* Safari 4+ */
+  -moz-animation:    ovh 2s infinite; /* Fx 5+ */
+  -o-animation:      ovh 2s infinite; /* Opera 12+ */
+  animation:         ovh 2s infinite; /* IE 10+, Fx 29+ */
+            		-webkit-transition: all 0.6s ease-out;
+			 -moz-transition: all 0.6s ease-out;
+				-ms-transition: all 0.6s ease-out;
+				 -o-transition: all 0.6s ease-out;
+						transition: all 0.6s ease-out;
+	}
+        
+        @-webkit-keyframes ovh {
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2.5);
+  }
+  75% {
+    transform: scale(1);
+  }
+}  
+	#animate10{
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+	}
+        
+        #reveal000,#reveal0000{opacity: 0}
+    
+                #reveal000.visible,#reveal0000.visible{opacity: 1}
+        
+    
+#reveal0,#link0 {
+    opacity: 0;
+ -webkit-animation: good 2s infinite; /* Safari 4+ */
+  -moz-animation:    good 2s infinite; /* Fx 5+ */
+  -o-animation:      good 2s infinite; /* Opera 12+ */
+  animation:         good 2s infinite; /* IE 10+, Fx 29+ */
+    align-content: center;
+                		-webkit-transition: all 0.6s ease-out;
+			 -moz-transition: all 0.6s ease-out;
+				-ms-transition: all 0.6s ease-out;
+				 -o-transition: all 0.6s ease-out;
+						transition: all 0.6s ease-out;
+}
+                            
+#reveal00,#link00 {
+    opacity: 0;
+ -webkit-animation: bad 2s infinite; /* Safari 4+ */
+  -moz-animation:    bad 2s infinite; /* Fx 5+ */
+  -o-animation:      bad 2s infinite; /* Opera 12+ */
+  animation:         bad 2s infinite; /* IE 10+, Fx 29+ */
+    align-content: center;
+                		-webkit-transition: all 0.6s ease-out;
+			 -moz-transition: all 0.6s ease-out;
+				-ms-transition: all 0.6s ease-out;
+				 -o-transition: all 0.6s ease-out;
+						transition: all 0.6s ease-out;
+}
+
+        
+@-webkit-keyframes good {
+  0% {
+    transform: scaleX(1);
+  }
+  20% {
+    transform: scaleX(1.1);
+  }
+  40% {
+    transform: scaleX(1);
+  }
+  60% {
+    transform: scaleX(1.1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}  
+        
+@-webkit-keyframes bad {
+  0% {
+    transform: scaleX(1.1);
+  }
+  20% {
+    transform: scaleX(1);
+  }
+  40% {
+    transform: scaleX(1.1);
+  }
+  60% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(1.1);
+  }
+}  
+
+  bar {
+ -webkit-animation: bar 2s infinite; /* Safari 4+ */
+  -moz-animation:    bar 2s infinite; /* Fx 5+ */
+  -o-animation:      bar 2s infinite; /* Opera 12+ */
+  animation:         bar 2s infinite; /* IE 10+, Fx 29+ */
+            -webkit-transition: all 0.6s ease-out;
+			 -moz-transition: all 0.6s ease-out;
+				-ms-transition: all 0.6s ease-out;
+				 -o-transition: all 0.6s ease-out;
+						transition: all 0.6s ease-out;
+}
+                   
+@-webkit-keyframes bar {
+  0% {
+    transform: translateX(-40x);
+  }
+  20% {
+    transform: translateX(0x);
+  }
+  40% {
+    transform: translateX(40x);
+  }
+  60% {
+    transform: translateX(0x);
+  }
+  100% {
+    transform: translateX(-40x);
+  }
+}  
+						#reveal1,#reveal3 {
+							opacity: 0;
+		-webkit-transform: translateX(-40px);
+			 -moz-transform: translateX(-40px);
+				-ms-transform: translateX(-40px);
+				 -o-transform: translateX(-40px);
+						transform: translateX(-40px);
+		-webkit-transition: all 0.6s ease-out;
+			 -moz-transition: all 0.6s ease-out;
+				-ms-transition: all 0.6s ease-out;
+				 -o-transition: all 0.6s ease-out;
+						transition: all 0.6s ease-out;
+						}
+                            
+                    #reveal2,#reveal4 {
+                        opacity: 0;
+		-webkit-transform: translateX(40px);
+			 -moz-transform: translateX(40px);
+				-ms-transform: translateX(40px);
+				 -o-transform: translateX(40px);
+						transform: translateX(40px);
+		-webkit-transition: all 0.6s ease-out;
+			 -moz-transition: all 0.6s ease-out;
+				-ms-transition: all 0.6s ease-out;
+				 -o-transition: all 0.6s ease-out;
+						transition: all 0.6s ease-out;
+						}
+                            
+						#reveal00.visible,#reveal0.visible,#reveal1.visible, #reveal2.visible, #reveal3.visible, #reveal4.visible {
+							opacity: 1;
+							-webkit-transform: none;
+								 -moz-transform: none;
+									-ms-transform: none;
+									 -o-transform: none;
+											transform: none;
+						}
+        
+        #contain, #contain10, #contain100, #contain7, #contain11{
+  background: #000;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+        #contain2,#contain3{
+  position: absolute;
+  top: 0%;
+  left: 25%;            
+height: 100%;
+width: 100%;
+}
+        
+#contain4 {
+  position: absolute;
+  top: 40%;
+  left: 45%;            
+height: 100%;
+width: 100%;
+}
+        
+#contain5{
+  position: absolute;
+  top: 0%;
+  left: 0%;            
+height: 100%;
+width: 100%;
+}
+
+.watch-face {
+  height: 125px;
+  width: 125px;
+  animation: pulse 4s cubic-bezier(0.5, 0, 0.5, 1) alternate infinite;
+}
+        
+#contain.hide,#contain2.hide,#contain3.hide,#contain4.hide,#heart.hide {
+display: none;
+}        
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    animation: heartbeat 1s infinite;
+    margin:0 auto
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 50px;
+    width: 50px;
+    height: 80px;
+    background: #fff;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+.circle {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  position: absolute;
+  mix-blend-mode: screen;
+  transform: translate(0, 0);
+  animation: center 6s infinite;
+}
+
+.circle:nth-child(odd) {
+  background: #61bea2;
+}
+
+.circle:nth-child(even) {
+  background: #529ca0;
+}
+
+.circle:nth-child(1) {
+  animation: circle-1 4s ease alternate infinite;
+}
+
+.circle:nth-child(2) {
+  animation: circle-2 4s ease alternate infinite;
+}
+
+.circle:nth-child(3) {
+  animation: circle-3 4s ease alternate infinite;
+}
+
+.circle:nth-child(4) {
+  animation: circle-4 4s ease alternate infinite;
+}
+
+.circle:nth-child(5) {
+  animation: circle-5 4s ease alternate infinite;
+}
+
+.circle:nth-child(6) {
+  animation: circle-6 4s ease alternate infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(.15) rotate(180deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes circle-1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-35px, -50px);
+  }
+}
+
+@keyframes circle-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(35px, 50px);
+  }
+}
+
+@keyframes circle-3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-60px, 0);
+  }
+}
+
+@keyframes circle-4 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(60px, 0);
+  }
+}
+
+@keyframes circle-5 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-35px, 50px);
+  }
+}
+
+@keyframes circle-6 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(35px, -50px);
+  }
+}
+        .skew{
+            transform: matrix(1,.2,0,1,0,0);
+        }
+        
+        .half{
+        width: 50%;
+        }
+        .left1, .left2, .left3, .left10{
+        text-align: left;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        }
+        .left1 p, .left3 p, .left10 p
+        {
+            font-size: 22px;
+            padding: 40px; 
+            color: #000; 
+            margin: 0;
+        }
+        .right1, .right2, .right3
+        {
+        text-align: left;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        }
+        .right1 p, .right3 p
+        {
+            font-size: 22px;
+            padding: 20px; 
+            color: #000; 
+            margin: 0;
+        }
+        
+        .right2, .left2{
+            font-size: 22px;
+            padding: 20px; 
+            color: #fff; 
+            margin: 0;
+        }
+        
+        .left2:hover{
+        color: #000;
+        background: #EAEAEA;
+        transition-timing-function: ease-in;
+        transition-duration: 0.3s;
+        }
+        
+        .right2:hover{
+        color: #000;
+        background: #ffcbcb;
+        transition-timing-function: ease-in;
+        transition-duration: 0.3s;
+        }
+        
+        
+        .righted{
+            box-shadow: inset 0 0 0 2px #000;
+        }
+                
+            .righted p{
+        color: #000;
+                        transition-timing-function: ease-out;
+        transition-duration: 0.3s;
+        }
+        .righted p:hover{
+        color: #fff;
+                    transition-timing-function: ease-out;
+        transition-duration: 0.3s;
+        }
+
+            .righted:hover{
+        color: #fff;
+        background: #4f81c7;
+        box-shadow: inset 0 0 0 2px #4f81c7;
+        transition-timing-function: ease-in;
+        transition-duration: 0.3s;
+        }
+        
+                .righted2{
+            box-shadow: inset 0 0 0 2px #fff;
+        }
+                
+            .righted2 p{
+        color: #fff;
+        transition-timing-function: ease-out;
+        transition-duration: 0.3s;
+        }
+        .righted2 p:hover{
+        color: #000;
+                    transition-timing-function: ease-out;
+        transition-duration: 0.3s;
+        }
+
+            .righted2:hover{
+        color: #000;
+        background: #fff;
+        box-shadow: inset 0 0 0 2px #fff;
+        transition-timing-function: ease-in;
+        transition-duration: 0.3s;
+        }
+
+        #sec1, #sec2, #sec3, #sec4, #sec5
+        {fill: #fff;}
+        
+    .small{
+        display: none;
+    }
+        #large1, #large2, #large3, #large4, #large5
+        {position: relative;
+               transition: 0.5s;
+        }
+    .reverse{
+          display: -webkit-flex; /* Safari */
+  -webkit-flex-direction: row; /* Safari 6.1+ */
+  display: flex;
+  flex-direction: row;
+    }
+#track,#track2 {
+  animation: loading-spinner 3s ease-in-out infinite;
+    transform-origin: 50% 75%;
+}
+
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+}
+        
+#sec {
+    transform-origin: 50% 75%;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+     transition-duration: 1s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+     transition-property: transform;
+}
+
+
+
+        
+        #buttonreflect{
+            opacity: 0;
+            transition: 0.3s;
+        }
+        
+        #buttonreflect > div:hover{
+            color: #182221;
+            background: #fff;
+            border: 2px solid transparent;
+             transition: 0.3s;
+        transition-timing-function: ease-out;
+        }
+        
+        #buttonreflect > div{
+            color: #fff;
+            background: transparent;
+            border: 2px solid #fff;
+             transition: 0.3s;
+        transition-timing-function: ease-out;
+        }
+        
+        #buttonreflect.hide{
+           opacity: 1;
+        transition: 0.3s;
+        }
+        
+        
+  input#later.time {
+   
+}
+        
+  input#now.time {
+
+}     
+        .image{
+            padding: 0 40px;
+        }      
+
+        
+@media only screen and (max-width: 850px) {
+   
+    #contain10,#contain11, #contain100{
+        padding: 20px 0;
+    }
+            .image{
+            padding: 20px 0;
+        }
+    .tip2
+    {
+     margin: 0 0 40px 40px;
+    }
+    
+            .texting{
+            padding: 20px;
+        }
+        
+    
+    .social {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	margin: -20px;
+	font-size: 60px;
+	animation: rot 3s infinite ease-in-out;
+}
+    
+    #contain2,#contain3 {
+  background: #000;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+    
+    #contain4 {
+  background: #000;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  top: 0%;
+}
     
     
-    <ons-fab ripple onclick="hideModal()" position="bottom right">
-<ons-icon icon="md-chevron-down"></ons-icon>
-</ons-fab>  
+    .bubble {
+  animation: expand 4s ease-in-out infinite;
+  border-radius: 50%;
+  display: inline-block;
+  transform-origin: center center;
+  margin: 0 3px;
+  width: 20px;
+  height: 20px;
+}
+
+.bubble:nth-child(1) {
+  background: #27ae60;
+     bottom: 5%;
+    left: 0;
+position: absolute;
+}
+
+.bubble:nth-child(2) {
+  animation-delay: 500ms;
+  background: #f1c40f;
+  bottom: 10%;
+    left: 5%;
+position: absolute;
+  margin: 10px;
+  height: 25px;
+  width: 25px;
+}
+
+.bubble:nth-child(3) {
+  animation-delay: 1000ms;
+  background: #e67e22;
+  bottom: 15%;
+    left: 10%;
+position: absolute;
+  margin: 20px;
+  height: 30px;
+  width: 30px;
+}
+
+.bubble:nth-child(4) {
+  animation-delay: 1500ms;
+  background: #2980b9;
+  bottom: 20%;
+    left: 10%;
+position: absolute;
+  margin: 50px;
+  height: 40px;
+  width: 40px;
+}
     
-  <div class="center" style="text-align: center; background: rgba(0,0,0,0.3); height: 100vh; position: relative">
-      
-      <ons-row>
-          
-          <ons-col>
-    <p class="card__title card--material__title" style="padding: 10vh 100px">
-How to navigate:
-          </p>
-          </ons-col>
-              </ons-row>
-      
-      <ons-row style="padding: 10vh 100px">
-      <p>
-          Scroll down slowly to see the animations, or click on the button the bottom right  
-          to play the animation in succession.
-          </p></ons-row>
-      
-            <ons-row style="padding: 10vh 100px;">
-                <ons-col>
-      <p>
-          Tap or click anywhere to dismiss.
-                    </p></ons-col></ons-row>
-      
-      
-      <ons-button size="30px"
-  icon="md-close" onclick="hideModal()" style="background: transparent; position: absolute; top: 0; right: 0;">
-</ons-button>
-      
-      
-            <img src="arrow.png" style="position: fixed; right: 0;bottom: 0; width: 40%;">   
+    #heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 20px;
+    width: 50px;
+    height: 80px;
+    background: #fff;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+  .half, .third, .twothird {
+    width: 100%;
+    }
+    .left2, .right2{
+        border-radius: 30px;
+    }
+    .left1{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;        
+        }
+    .right1{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+        }
+    
+        .right3{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;  
+    min-height: 250px;        
+    
+        }
+    .left3{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    min-height: 250px;
+        }
+            .left1 p
+        {
+            font-size: 22px;
+            padding: 40px 20px; 
+            color: #000; 
+            margin: 0;
+        }
+                .left10 p
+        {
+            font-size: 22px;
+            padding: 40px; 
+            color: #000; 
+            margin: 0;
+        }
+            .right1 p
+        {
+            font-size: 22px;
+            padding: 20px; 
+            color: #000; 
+            margin: 0;
+        }
+            .right2, .left2{
+            font-size: 22px;
+            padding: 20px; 
+            color: #fff; 
+            margin: 0;
+        }
+    #large1.expand, #large2.expand, #large3.expand, #large4.expand,#large5.expand{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        transition: 0.5s;
+        padding: 40px;
+        z-index: 999;
+    height: 100vh;
+    overflow-y: auto;
+    }
+    
+        #large1.expand p:nth-child(3),#large2.expand p:nth-child(3),#large3.expand p:nth-child(3),#large4.expand p:nth-child(3),#large5.expand p:nth-child(3){
+        padding: 0px 40px 0px 40px;
+        transition: 0.3s;
+        font-size: 18px;
+    }
+        #large1.expand p:nth-child(2),#large2.expand p:nth-child(2),#large3.expand p:nth-child(2),#large4.expand p:nth-child(2),#large5.expand p:nth-child(2){
+        padding: 80px 40px 20px 40px;
+        transition: 0.3s;
+        font-size: 18px;
+    }
+    
+    .mobileheight{
+        max-height: 20vh;
+        overflow: hidden;
+    }
+    .large{
+        display: none;
+    }
+    .small{
+        display: block;
+    }
+    .tip
+    {
+     margin: 0 0 0 40px;
+    }
+    .reverse{
+    display: -webkit-flex; /* Safari */
+  -webkit-flex-direction: column-reverse; /* Safari 6.1+ */
+  display: flex;
+  flex-direction: column-reverse;
+    }
+        }
+        
+        .question{
+            background: #fff;
+            color: #06212C;
+        }
+        
+        .question:hover,.question:active{
+            background: transparent;
+            color: #fff;
+            
+        }        
+#para11{
+        max-height: 60vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        transition: 1s ease;
+        padding-bottom: 80px;
+    } 
+#para11.expand {
+        max-height: none;
+        transition: 1s ease;
+    }  
+    
+#parabutton11{
+transform: rotate(0);
+    }
+    
+#parabutton11.expand{
+transform: rotate(180deg);
+    }
+					</style>
+
+</head>
+<body>
+    <ons-page>
+<ons-splitter>
+  <!-- The side menu -->
 
 
-  </div>
-</ons-modal>  
-
-</ons-page>
+  <!-- Everything not in the side menu -->
+  <ons-splitter-content>
+    <ons-navigator id="navigator" page="tips.html"></ons-navigator>
+  </ons-splitter-content>
+</ons-splitter>
+    </ons-page>
+</body>
+</html>
