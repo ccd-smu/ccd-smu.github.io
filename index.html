@@ -1,0 +1,2462 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="assets/paper_img/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>SMU Co-curricular Guide</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/ct-paper.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet" />    
+    <link href="assets/css/examples.css" rel="stylesheet" />
+    
+    
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>    
+    
+    <link href='http://fonts.googleapis.com/css?family=Oswald:300,600' rel='stylesheet' type='text/css'>
+
+<style>
+        h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-family: "Oswald", sans-serif;
+}
+    
+    label{background: #8A704C; padding: 7px 18px; color: #fff; font-weight: 500;}
+    
+    video{background: #dadada;}
+    
+    .tabbing{
+    border: 0;
+    border-radius: 0;
+    color: #e5e5e1;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0;
+    outline: none!important;
+    padding: 5px 12px;
+    position: relative; 
+    background-color: #4d4949;
+    text-shadow: 0 0 2px #000;
+    
+    }
+    
+    .flag{background-color: #c43c35;
+    border-radius: 3px;
+    color: #fff;
+    display: inline;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 3px;
+    padding: .22em .33em;
+    text-shadow: none;
+    text-transform: uppercase;
+    white-space: nowrap;}
+    
+        .flag2{
+    background: url(assets/paper_img/layout-box-bg-trans.png);
+    border-radius: 5px;
+    border: 1px solid #c2c1bc;
+    display: inline;
+    color: #000;
+    font-family: museo-sans-1,sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    outline-style: none!important;
+    margin: 0 0 6px;
+    padding: 0 8px;
+    }
+    
+    
+.round-time-bar {
+  margin: 15px 0 0 0;
+  overflow: hidden;
+}
+.round-time-bar div {
+  height: 5px;
+  transition: width 5s linear;
+  transform-origin: left center;
+  background: #151c55;
+ transform: scaleX(1);
+    transform-origin: left;
+    }
+    
+.round-time-bar div.clicked {
+transform: scaleX(0);
+transition: transform 5000ms linear;
+}
+    
+    .register-card a{border-radius: 20px}
+
+    
+    .btn{border: 0;border-radius: 0;}
+    
+    .coll{cursor: pointer;}
+    .coll:hover .btn{background: #090c26;}
+    
+    .tabb{position: absolute; bottom: 0; background: #151c55; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; width: 100%; height: 25%;text-align: center;}
+    
+    .tabb> h4{color: #fff;}
+    
+    .coll{margin: 5px;border-radius: 30px; position: relative; background-size: cover; max-width: 600px; height: 400px;}
+    
+    
+  .barr {height: 63px;position: fixed; top: 0; left: 0; background: #151c55; z-index: 999; width: 100%}
+    .barr> h4{margin: 21px 0; color: #fff; width: auto; display: inline-block}
+    .barr> a{border-radius: 50%;}
+        
+  .pagelabel, .pagelabel2, .pagelabel3 {height: auto;position: fixed; bottom: -252px; right: 15px; background: transparent; z-index: 999; margin: 0 }
+
+        
+  .pagelabel a, .pagelabel2 a, .pagelabel3 a {height: 36px;}
+
+.toggle-up {
+  transform: rotate(0);
+}
+    .barr-button {margin:13px 0;float: right;}
+    .large {display: none;}
+     .small {display: block;text-align: left;}
+    .modal .section {min-height: 100vh}
+    
+    
+    .notif, .notif2, .notifx, .notif2x, .notifxx, .notif2xx{position: fixed; top: calc(-100%); width: 100% ; z-index: 1000; background: #8A704C;
+    }    
+
+    .notif p, .notif2 p,.notifx p, .notif2x p,.notifxx p, .notif2xx p{font-size: 12px; color: #fff; padding: 15px 15px 0 15px;}
+            .register-card p {font-size: 12px;}
+
+    .useful{border-radius: 20px; float: right; display: inline-block;}
+    
+    @media (min-width: 768px) {
+          .barr {height: 70px;position: fixed; top: 0; left: 0; background: #151c55; z-index: 999;}
+        .barr-button {margin:17px 0;float: right; content: "back"}
+        .barr> a{border-radius: 20px;}
+        .small {display: none;}
+         .large {display: block;}
+        .notif p, .notif2 p,.notifx p, .notif2x p,.notifxx p, .notif2xx p{font-size: 16px; padding: 15px 15px 0 15px;}
+        .register-card p {font-size: 16px;}
+            .coll{margin: 5px;border-radius: 30px; position: relative; background-size: cover; max-width: 600px; height: 200px;}
+        .coll div h4 {margin: 10px 0;}
+    }
+    
+    
+    
+    
+    </style>
+
+
+</head>
+<body>
+<nav class="navbar navbar-ct-transparent" role="navigation-demo" id="demo-navbar" style="display: flex;">
+  <div class="container" id="banner">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+           <div class="logo-container">
+               <div class="logo">
+<img src="assets/paper_img/new_logo.svg" id="logo1">
+               </div>
+                              <div class="brand">
+<img src="assets/paper_img/oblique.svg" id="logo2">
+               </div>
+               
+            </div>                    
+      
+    
+    </div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navigation-example-1">
+      <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="documentation/tutorial-components.html" class="btn btn-danger btn-simple" style="display: none">Components</a>
+          </li>
+          <!-- <li>
+            <a href="tutorial.html" class="btn btn-danger btn-simple">Tutorial</a>
+          </li> -->
+          <li>
+            <a href="http://www.creative-tim.com/product/paper-kit" target="_blank" class="btn btn-danger btn-fill" style="display: none">Download</a>
+          </li>
+       </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-->
+</nav>
+
+
+<div class="wrapper">
+    
+    <!--
+    <div class="demo-header demo-header-image">
+            <div class="motto">
+                <h1 class="title-uppercase">Paper Kit</h1>
+                <h3>Make your mark with a new design.</h3>
+            </div>
+    </div>-->
+
+    <div class="main">
+        <div class="section">
+         <div class="container tim-container" style="height: 100vh">
+            <div class="tim-title">
+                <h2>Co-Curricular Guide</h2>
+            </div>
+
+                    <div class="tim-title">
+                        <h3>Choose one <br />
+                            <small>Pick the appropriate guide for the activity that you are embarking on </small>
+                        </h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+                        <div class="col-sm-4 col-md-4" style="padding: 0;">
+                            <div class="coll" id="button1" data-toggle="modal" data-target="#myModal" style="background: url(assets/paper_img/csp.jpg); background-repeat: no-repeat; background-size: cover;background-position: center;">
+                            <div class="tabb btn" id="box1" style="margin-bottom: 0; padding: 0;">
+                            <h4>Community&nbsp;Service</h4>
+
+                        </div>
+                            </div>
+                            
+                            </div>
+                            
+                            
+
+                        <div class="col-sm-4 col-md-4" style="padding: 0">
+                            <div class="coll" id="button2" data-toggle="modal" data-target="#myModal2" style="background: url(assets/paper_img/internships.jpg); background-repeat: no-repeat; background-size: cover;background-position: center;">
+                            <div class="tabb btn" style="margin-bottom: 0; padding: 0; position: absolute; bottom: 0;z-index: 2;">
+                            <h4>Internships</h4>
+
+                        </div>
+                            </div>
+                            
+                            </div>
+
+
+                        <div class="col-sm-4 col-md-4" style="padding: 0">
+                            <div class="coll" id="button3" data-toggle="modal" data-target="#myModal3" style="background: url(assets/paper_img/cca.jpg); background-repeat: no-repeat; background-size: cover;background-position: center;">
+                            <div class="tabb btn" style="margin-bottom: 0; padding: 0; position: absolute; bottom: 0;z-index: 2;">
+                            <h4>CCAs</h4>
+
+                        </div>
+                            </div>
+                            
+                            </div>
+
+                        </div>
+                    </div>
+                    <br />
+                
+                
+        <div class="row">
+            
+            <div class="container" style="padding: 20px 40px 80px 40px; background: #151c55;">
+            <h4 style="color: #fff">Useful links</h4>
+            <div class="col-md-12 row" style="background: #090c26; border-radius: 20px; padding: 0;">
+                <h5 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold; font-size: 16px;">RPU, CSU &amp; IRMs</h5>
+                <button class="btn btn-danger btn-fill useful" style="margin: 0">eLearn</button>
+                </div>
+              
+                
+            <div class="col-md-12 row" style="background: #090c26; border-radius: 20px; padding: 0; margin-top: 10px;">
+                <h5 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold; font-size: 16px;">Apply for CS/Internship</h5>
+                <button class="btn btn-danger btn-fill useful" style="margin: 0">OnTrac</button>
+                </div>
+                
+              
+            <div class="col-md-12 row" style="background: #090c26; border-radius: 20px; padding: 0; margin-top: 10px;">
+                <h5 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold; font-size: 16px;">Co-curricular record</h5>
+                <button class="btn btn-danger btn-fill useful" style="margin: 0">Anthology Portfolio</button>
+                </div>
+
+            </div>
+        </div>
+       
+
+
+         </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Modal 1 -->
+<div class="modal fade" style="background: #151c55" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    
+
+
+
+
+    <div class="barr" style="width: 100%">
+ <div class="container tim-container barr">
+<h4 style="margin: 21px 0; color: #fff; width: auto; display: inline-block">Community Service</h4>
+     <a data-dismiss="modal" target="#myModal" href="#" class="btn btn-danger btn-fill barr-button large">back</a>
+     <a data-dismiss="modal" target="#myModal" href="#" class="btn btn-danger btn-fill barr-button small" style="padding: 7px 12px;">&lt;</a>
+     
+    </div> 
+        
+        
+    </div>
+    
+
+    <div class="alert alert-danger notif" style="padding: 0">
+   
+                 <p>Make sure you score <b>at least 80% for each quiz</b>.
+                     You may check your scores in the <b>Class Progress</b> tab in eLearn.</p>
+<div class="round-time-bar">
+  <div></div>
+</div>
+    </div>
+          
+    <div class="alert alert-danger notif2" style="padding: 0">
+   
+                 <p>Make sure you activate your <b>Anthology Portfolio</b> account. Failure to do so might prevent your participation from being recorded.</p>
+<div class="round-time-bar">
+  <div></div>
+</div>
+    </div>
+      
+    <div class="pagelabel"  style="margin-bottom: 15px ">
+    
+       
+    <a class="btn btn-danger btn-fill large stepbtn"><b class="caret karat"></b>&nbsp;Steps</a>
+        
+    <a class="btn btn-danger btn-fill large" id="step1btn">Step 1</a>
+    <a class="btn btn-danger btn-fill large" id="step2btn">Step 2</a>
+        <a class="btn btn-danger btn-fill large" id="step3btn">Step 3</a>
+    
+       <a class="btn btn-danger btn-fill large" id="step4btn">Step 4</a>
+    <a class="btn btn-danger btn-fill large" id="step5btn">Step 5</a>
+        <a class="btn btn-danger btn-fill large" id="step6btn">Step 6</a>
+        <a class="btn btn-danger btn-fill large" id="step7btn">Step 7</a>
+    
+    
+     <a class="btn btn-danger btn-fill small stepbtns" style="padding: 7px 14px; margin: 0;" id="#stepbtns">?</a>
+
+         <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="step1btns">1</a>
+
+         <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="step2btns">2</a>
+
+    
+         <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="step3btns">3</a>
+
+             <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="step4btns">4</a>
+
+             <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="step5btns">5</a>
+
+             <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="step6btns">6</a>
+
+             <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="step7btns">7</a>
+
+    
+    
+   </div>
+    
+          
+        
+        
+
+<div class="wrapper">
+
+        <div class="section" style="padding: 70px 0;" id="step1">
+         <div class="container">
+
+                
+<div class="col-sm-6 register-card2" style="padding: 15px"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step1.mp4" type="video/mp4">
+</video>
+             </div>
+                     
+<div class="register-card col-sm-6 step"><label>Step 1</label>
+    <ul>
+    <li>Log on to eLearn</li>     <br>
+    <li>Search for <b>Co-Curricular Learning</b>, followed by the year of your admission - i.e. Co-Curricular Learning 2021, or click on the <b>Co-Curricular Learning</b> icon.</li> <br>
+    <li>Complete the <b>Reflective Practice Unit</b> by scoring at least 80% for the quiz.</li> <br>
+             
+             
+     </ul> 
+    
+    <a href="https://elearn.smu.edu.sg/d2l/loginh/" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0;">log on to eLearn</a>
+    
+    <div target="_blank"
+ class="btn btn-fill btn-block input btn-tooltip" id="input1" style="border-radius: 20px;margin: 10px 0;" data-toggle="tooltip" data-placement="bottom" title="sure you've scored 80%?"
+         
+         >I've done this</div>
+             </div>
+             </div>
+    
+    </div>
+        
+    
+    
+        <div class="section" style="padding: 70px 0;" id="step2">
+         <div class="container">
+             
+                          
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step2.mp4" type="video/mp4">
+</video></div>
+
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <label>Step 2</label>
+    <ul style="position: relative">
+        <li>Log on to eLearn</li><br>
+        <li>Go into the <b>Co-Curricular Learning</b> module</li><br>
+        <li>Click on <b>Activate Anthology Portfolio</b></li><br>
+     <i>This will activate your account on Anthology Portfolio, which will consolidate your your co-curricular experiences in SMU.</i><br>
+        
+        
+        
+        <br>
+
+
+    
+     </ul> 
+    
+    <a href="https://elearn.smu.edu.sg/d2l/loginh/" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0;">log on to eLearn</a>
+    
+    <div target="_blank"
+ class="btn btn-fill btn-block input" id="input2" style="border-radius: 20px;margin: 10px 0;">I've done this</div>
+             </div>
+             
+
+             </div>
+                
+
+            </div>
+        
+        <div class="section" style="padding: 70px 0 0 0" id="step3">
+         <div class="container">
+
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step3.mp4" type="video/mp4">
+</video></div>
+
+                     
+<div class="register-card col-sm-6 step"><label>Step 3</label>
+    <ul>
+    <li>Log on to eLearn</li>     <br>
+    <li>Search for <b>Co-Curricular Learning</b>, followed by the year of your admission - i.e. Co-Curricular Learning 2021, or click on the <b>Co-Curricular Learning</b> icon.</li> <br>
+        <li>Complete the <b>Community Service Units</b> by scoring <b>at least 80% for each quiz</b>.</li> <br>
+             
+             
+     </ul> 
+    
+    <a href="https://elearn.smu.edu.sg/d2l/loginh/" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0;">log on to eLearn</a>
+    
+    <div target="_blank"
+ class="btn btn-fill btn-block input" id="input3" style="border-radius: 20px;margin: 10px 0;">I've done this</div>
+             </div>
+
+
+            </div>
+         </div>        
+
+            <div class="section" style="padding: 70px 0 0 0" id="step4">
+         <div class="container">
+
+
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step4.mp4" type="video/mp4">
+</video>
+                <p style="list-style-type: none; border: 2px solid black; margin: 0; padding: 2px;"><b>Note:</b> You will only be able to access OnTrac II after your RPU &amp; CSU completion status has been updated. This is updated 6 times a day.</p> 
+                      <p style="background: #000; text-align: center; padding: 5px; color: #fff">Next update is at <span id="time"></span></p>
+            </div>
+             
+             
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <label>Step 4</label>
+    
+
+    <ul style="position: relative">
+
+        
+    <li>Click on <b>Community Service</b> and log in to <b>OnTrac II</b> to apply or propose a Community Service Project (CSP).</li><br>  
+        
+        <li>Source for a CSP, preferably one that allows you to fulfil all your hours; this will give you an opportunity to learn more about the case and beneficiaries you are serving.</li><br> 
+        
+
+<li>After applying or proposing, wait for approval from C4SR. Without approval, the community service hours will not be recognised</li>
+        
+
+
+    
+     </ul> 
+    
+    <a href="https://ontrac.smu.edu.sg/" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to OnTrac II</a>
+    
+    <div target="_blank"
+ class="btn btn-fill btn-block input" id="input4" style="border-radius: 20px;margin: 10px 0;">I've done this</div>
+             </div>
+                
+
+            </div>
+         </div>   
+    
+    
+    
+    
+    
+    
+            <div class="section" style="padding: 70px 0; min-height: auto; background: #fff; border: 5px solid #8A704C" id="step5">
+         <div class="container">
+
+
+<div class="col-sm-12 register-card" style="background: #fff; padding-bottom: 15px">
+    
+        <label>A note on Anthology Portfolio:</label>
+
+    <p>Anthology Portfolio is the platform which will document the outcomes of your co-curricular experiences, helping you 
+to consolidate your experiences across the co-curricular space in your undergraduate years, and cumulating in a 
+co-curricular transcript that will be meaningful for you and your future employer</p>  
+            
+    <p>On Anthology Portfolio, your community experiences are organised into <b>Placements</b>, which contain the Pre, Mid &amp; Post Activity requirements as shown.</p><br>
+    
+            <p style="display: block;">Each activity that you partake in will then be in its own Placement. If you have multiple CSPs, Internships or CCAs throughout your undergraduate years, you will end up with multiple placements.</p>
+
+    
+<div class="col-sm-12" style="position: relative; height: 20vh">
+    
+        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff;position: absolute; top: 0; left: 0; z-index: 3;
+">
+        <b>Placement</b> (CSP)<br><br>
+    
+    
+    
+     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
+        
+    Mid Activity check-in&nbsp;<span class="flag2">Assessment</span><br>
+        
+Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
+        
+</p>
+    
+        
+        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 10px; left: 10px; z-index: 2;
+">
+        <b>Placement</b> (CSP)<br><br>
+    
+    
+    
+     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
+        
+    Mid Activity check-in&nbsp;<span class="flag2">Assessment</span><br>
+        
+Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
+        
+</p>
+    
+        
+        
+        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 20px; left: 20px; z-index: 1;">
+        <b>Placement</b> (CSP)<br><br>
+    
+    
+     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
+        
+    Mid Activity check-in&nbsp;<span class="flag2">Assessment</span><br>
+        
+Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
+        
+</p>
+    
+    
+    </div>
+
+    
+<br>
+
+    
+             
+             </div>
+             
+            </div>
+         </div>   
+    
+    
+        
+    
+            <div class="section" style="padding: 70px 0 0 0">
+         <div class="container">
+
+<div class="col-sm-6 register-card2">
+    
+    
+    
+    <video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step5.mp4" type="video/mp4">
+</video><br>
+
+    <img src="assets/paper_img/placement%20ss.png" width="100%">
+    <img src="assets/paper_img/placement%20ss2.png" width="100%">
+
+             </div>
+             
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <label>Step 5</label>
+    <ul style="position: relative">
+        
+
+        
+        <li>On the <b>start date</b> of your CSP, you will be prompted to complete your <b>Pre-Activity LO Selection</b>, which is a <span class="flag2">Survey</span></li> <br>
+        
+        
+        <li>Go into Anthology Portfolio, click on <span class="tabbing">Upcoming</span> (on the top bar below the Dashboard header)</li><br>
+        
+        <li>There, you can view pending Surveys or Assesments. Click on <b>Take Survey/Assessment</b> that corresponds to your CSP.</li><br>
+         
+
+        <li><b>Note:</b> Look out for labels such as <span class="flag">DUE</span>, <span class="flag">OVERDUE</span> &amp; <span class="flag" style="background: #2a76b0
+">DUE SOON</span></li><br>
+        
+        <li>The learning objectives that your choose here will determine what you will be reflecting upon, and correspond to the attainment of your Graduate Learning Outcomes at the end of your co-curricular journey.</li><br>
+         
+
+     </ul> 
+
+             </div>
+                
+
+            </div>
+                
+                
+                
+                
+         <div class="container" style="padding-top: 60px;">
+
+<div class="col-sm-6 register-card2">
+        
+<video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step5b.mp4" type="video/mp4">
+</video>
+             
+             
+             </div>
+             
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <ul style="position: relative">
+        
+
+        
+        
+   
+        <li><b>Alternatively</b>, go into Anthology Portfolio, click on Menu (on the top right of the screen)</li><br>        
+        <li>Click on My Placements, and click on the CSP you're active in, and scroll down till you find the corresponding Pre-Activity LO Selection Survey.</li><br>        
+ 
+  
+        
+
+    
+     </ul> 
+    
+    <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to Anthology Portfolio</a>
+    
+    <div target="_blank"
+ class="btn btn-fill btn-block input" id="input5" style="border-radius: 20px;margin: 10px 0;">I've done this</div>
+             </div>
+                
+
+            </div>
+         </div>   
+    
+    
+    
+    
+    
+    
+    
+    
+               <div class="section" style="padding: 70px 0 0 0" id="step6">
+         <div class="container">
+
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step6.mp4" type="video/mp4">
+</video></div>
+             
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <label>Step 6</label>
+    <ul style="position: relative">
+        
+
+        
+        <li>On the <b>mid-point date</b> of your CSP, you will be prompted to complete your <b>Mid-Activity check-in</b>, which is an <span class="flag2">Assessment</span></li> <br>
+        
+        
+        <li>Go into Anthology Portfolio, click on <span class="tabbing">Upcoming</span> (on the top bar below the Dashboard header)</li><br>
+        
+        <li>There, you can view pending Surveys or Assesments. Click on <b>Take Survey/Assessment</b> that corresponds to your CSP.</li><br>
+         
+        <li><b>Note:</b> Look out for labels such as <span class="flag">DUE</span>, <span class="flag">OVERDUE</span> &amp; <span class="flag" style="background: #2a76b0
+">DUE SOON</span></li><br><br>
+        
+        <li>Within the Assessment page, cick on Yes if your chose LOs are relevant and you are on track.</li>
+        
+        <li>If your LOs are no longer relevant, you will be able to amend them when your write your <b>Post-Activity reflection</b> at the end of your Community Service.</li>     
+        
+        
+        <li>If you have other issues with your Community Serivce, please indicate them down in the comments box when doing this Assessment.</li>
+ 
+        <li><b>Alternatively</b>, go into Anthology Portfolio, click on Menu (on the top right of the screen)</li><br>        
+        <li>Click on My Placements, and click on the CSP you're active in, and scroll down till you find the corresponding Mid-Activity check-in Assessment.</li><br>        
+ 
+  
+        
+
+    
+     </ul> 
+    
+    <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to Anthology Portfolio</a>
+    
+    <div target="_blank"
+ class="btn btn-fill btn-block input" id="input6" style="border-radius: 20px;margin: 10px 0;">I've done this</div>
+             </div>
+                
+
+            </div>
+         </div>   
+    
+    
+    
+    
+                   <div class="section" style="padding: 70px 0 60px 0" id="step7">
+         <div class="container">
+
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step5.mp4" type="video/mp4">
+</video><br>
+             
+      
+    <img src="assets/paper_img/placement%20ss.png" width="100%">
+    <img src="assets/paper_img/placement%20ss2.png" width="100%">
+             
+             </div>
+             
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <label>Step 7</label>
+    <ul style="position: relative">
+        
+
+        
+        <li>On the <b>end date</b> of your CSP, you will be prompted to complete your <b>Post-Activity reflection</b>, which is a <span class="flag2">Survey</span></li> <br>
+        
+        <li>Go into Anthology Portfolio, click on <span class="tabbing">Upcoming</span> (on the top bar below the Dashboard header)</li><br>
+        
+        <li>There, you can view pending Surveys or Assesments. Click on <b>Take Survey/Assessment</b> that corresponds to your CSP.</li><br>
+         
+        <li><b>Note:</b> Look out for labels such as <span class="flag">DUE</span>, <span class="flag">OVERDUE</span> &amp; <span class="flag" style="background: #2a76b0
+">DUE SOON</span></li><br><br>
+        
+
+    
+     </ul> 
+    
+
+             </div>
+                
+
+            </div>         
+                       
+                       
+                       
+                       <div class="container" style="padding-top: 60px;">
+
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step5b.mp4" type="video/mp4">
+</video><br>
+             
+             
+             </div>
+             
+<div class="register-card col-sm-6" style="position: relative">
+
+    <ul style="position: relative">
+
+        <li><b>Alternatively</b>, go into Anthology Portfolio, click on Menu (on the top right of the screen)</li><br>        
+        <li>Click on My Placements, and click on the CSP you're active in, and scroll down till you find the corresponding Post-Activity reflection Survey.</li><br>        
+ 
+  
+        
+
+    
+     </ul> 
+    
+    <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to Anthology Portfolio</a>    
+    
+    
+    <a href="#"  data-dismiss="modal" target="#myModal" 
+ class="btn btn-fill btn-block" style="margin: 10px 0 10px 0">You're done!</a>
+    
+ 
+    
+    
+    
+    
+
+             </div>
+                
+
+            </div>
+                       
+                       
+         </div>   
+    
+    
+    
+    
+    
+        
+            <div class="section" style="padding: 70px 0; min-height: auto; background: #fff; border: 5px solid #8A704C;" id="end">
+                       <div class="container">
+
+
+<div class="col-sm-12 register-card" style="background: #fff; padding-bottom: 15px">
+    
+        <label>Coming soon</label>
+
+    <p>Your Community Service experience(s) will be assessed and form part of a co-curricular transcript, ready for you when you graduate.</p><br>
+    
+            <p style="display: block;">Each activity that you partake in will then be in its own Placement. If you have multiple CSPs, Internships or CCAs throughout your undergraduate years, you will end up with multiple placements.</p>
+
+    
+<div class="col-sm-12" style="position: relative; height: 30vh">
+    
+        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff;position: absolute; top: 0; left: 0; z-index: 3;
+">
+        <b>Placement</b> (CSP)<br><br>
+    
+    
+    
+     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
+        
+    Mid Activity check-in&nbsp;<span class="flag2">Assessment</span><br>
+        
+Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br><br>
+    Department Rubric&nbsp;<span class="flag2">Assessment</span><br><br>  <br> 
+    Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span><br>            
+            
+</p>
+    
+        
+        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 10px; left: 10px; z-index: 2;
+">
+        <b>Placement</b> (CSP)<br><br>
+    
+    
+    
+     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
+        
+    Mid Activity check-in&nbsp;<span class="flag2">Assessment</span><br>
+        
+Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br><br>
+    Department Rubric&nbsp;<span class="flag2">Assessment</span><br><br>  <br> 
+    Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span><br>            
+        
+</p>
+    
+        
+        
+        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 20px; left: 20px; z-index: 1;">
+        <b>Placement</b> (CSP)<br><br>
+    
+    
+     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
+        
+    Mid Activity check-in&nbsp;<span class="flag2">Assessment</span><br>
+        
+Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br><br>
+    Department Rubric&nbsp;<span class="flag2">Assessment</span><br><br>  <br> 
+    Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span><br>            
+</p>
+    
+    
+    </div>
+
+    
+<br>
+
+         <a data-dismiss="modal" target="#myModal" href="#" class="btn btn-danger btn-fill barr-button large">back</a>
+             
+             </div>
+             
+            </div>
+    
+    
+    
+    </div>
+    
+    
+    </div>
+<!--    end modal -->
+
+    </div>
+   <!-- Modal 1 end --> 
+    
+    
+    
+    <!-- Modal 2 -->
+<div class="modal fade" style="background: #151c55" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    
+
+
+
+
+    <div class="barr" style="width: 100%">
+ <div class="container tim-container barr">
+<h4 style="margin: 21px 0; color: #fff; width: auto; display: inline-block">Internships</h4>
+     <a data-dismiss="modal" target="#myModal2" href="#" class="btn btn-danger btn-fill barr-button large">back</a>
+     <a data-dismiss="modal" target="#myModal2" href="#" class="btn btn-danger btn-fill barr-button small" style="padding: 7px 12px;">&lt;</a>
+     
+    </div> 
+        
+        
+    </div>
+    
+
+    <div class="alert alert-danger notifx" style="padding: 0">
+   
+        <p>Make sure you score <b>at least 80% for each quiz</b>.
+                     You may check your scores in the <b>Class Progress</b> tab in eLearn.</p>
+<div class="round-time-bar">
+  <div></div>
+</div>
+    </div>
+          
+    <div class="alert alert-danger notif2x" style="padding: 0">
+   
+                 <p>Make sure you activate your <b>Anthology Portfolio</b> account. Failure to do so might prevent your participation from being recorded.</p>
+<div class="round-time-bar">
+  <div></div>
+</div>
+    </div>
+      
+    <div class="pagelabel2"  style="margin-bottom: 15px ">
+    
+       
+    <a class="btn btn-danger btn-fill large stepbtn2"><b class="caret karat2"></b>&nbsp;Steps</a>
+        
+    <a class="btn btn-danger btn-fill large" id="2step1btn">Step 1</a>
+    <a class="btn btn-danger btn-fill large" id="2step2btn">Step 2</a>
+        <a class="btn btn-danger btn-fill large" id="2step3btn">Step 3</a>
+    
+       <a class="btn btn-danger btn-fill large" id="2step4btn">Step 4</a>
+    <a class="btn btn-danger btn-fill large" id="2step5btn">Step 5</a>
+        <a class="btn btn-danger btn-fill large" id="2step6btn">Step 6</a>
+        <a class="btn btn-danger btn-fill large" id="2step7btn">Step 7</a>
+    
+    
+     <a class="btn btn-danger btn-fill small stepbtns2" style="padding: 7px 14px; margin: 0;" id="#2stepbtns">?</a>
+
+         <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="2step1btns">1</a>
+
+         <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="2step2btns">2</a>
+
+    
+         <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="2step3btns">3</a>
+
+             <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="2step4btns">4</a>
+
+             <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="2step5btns">5</a>
+
+             <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="2step6btns">6</a>
+
+             <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="2step7btns">7</a>
+
+    
+    
+   </div>
+    
+          
+        
+        
+
+<div class="wrapper">
+
+        <div class="section" style="padding: 70px 0;" id="2step1">
+         <div class="container">
+
+                
+<div class="col-sm-6 register-card2" style="padding: 15px"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step1.mp4" type="video/mp4">
+</video>
+             </div>
+                     
+<div class="register-card col-sm-6 step"><label>Step 1</label>
+    <ul>
+    <li>Log on to eLearn</li>     <br>
+    <li>Search for <b>Co-Curricular Learning</b>, followed by the year of your admission - i.e. Co-Curricular Learning 2021, or click on the <b>Co-Curricular Learning</b> icon.</li> <br>
+    <li>Complete the <b>Reflective Practice Unit</b> by scoring at least 80% for the quiz.</li> <br>
+             
+             
+     </ul> 
+    
+    <a href="https://elearn.smu.edu.sg/d2l/loginh/" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0;">log on to eLearn</a>
+    
+    <div target="_blank"
+ class="btn btn-fill btn-block input" id="2input1" style="border-radius: 20px;margin: 10px 0;">I've done this</div>
+             </div>
+             </div>
+    
+    </div>
+        
+    
+    
+        <div class="section" style="padding: 70px 0;" id="2step2">
+         <div class="container">
+             
+                          
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step2.mp4" type="video/mp4">
+</video></div>
+
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <label>Step 2</label>
+    <ul style="position: relative">
+        <li>Log on to eLearn</li><br>
+        <li>Go into the <b>Co-Curricular Learning</b> module</li><br>
+        <li>Click on <b>Activate Anthology Portfolio</b></li><br>
+     <i>This will activate your account on Anthology Portfolio, which will consolidate your your co-curricular experiences in SMU.</i><br>
+        
+        
+        
+        <br>
+
+
+    
+     </ul> 
+    
+    <a href="https://elearn.smu.edu.sg/d2l/loginh/" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0;">log on to eLearn</a>
+    
+    <div target="_blank"
+ class="btn btn-fill btn-block input" id="2input2" style="border-radius: 20px;margin: 10px 0;">I've done this</div>
+             </div>
+             
+
+             </div>
+                
+
+            </div>
+        
+        <div class="section" style="padding: 70px 0 0 0" id="2step3">
+         <div class="container">
+
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step3.mp4" type="video/mp4">
+</video></div>
+
+                     
+<div class="register-card col-sm-6 step"><label>Step 3</label>
+    <ul>
+    <li>Log on to eLearn</li>     <br>
+    <li>Search for <b>Co-Curricular Learning</b>, followed by the year of your admission - i.e. Co-Curricular Learning 2021, or click on the <b>Co-Curricular Learning</b> icon.</li> <br>
+        <li>Complete the <b>Internship Readiness Modules</b> by scoring at <b>least 80% for each quiz</b>, and completing the <b>3 mandatory assignments</b>.</li> <br>
+             
+             
+     </ul> 
+    
+    <a href="https://elearn.smu.edu.sg/d2l/loginh/" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0;">log on to eLearn</a>
+    
+    <div target="_blank"
+ class="btn btn-fill btn-block input" id="2input3" style="border-radius: 20px;margin: 10px 0;">I've done this</div>
+             </div>
+
+
+            </div>
+         </div>        
+
+            <div class="section" style="padding: 70px 0 0 0" id="2step4">
+         <div class="container">
+
+
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step4.mp4" type="video/mp4">
+</video>
+                <p style="list-style-type: none; border: 2px solid black; margin: 0; padding: 2px;"><b>Note:</b> You will only be able to access OnTrac II after your RPU &amp; IRM completion status has been updated. This is updated 6 times a day.</p> 
+              <p style="background: #000; text-align: center; padding: 5px; color: #fff">Next update is at <span id="time2"></span></p>
+            </div>
+             
+             
+<div class="register-card col-sm-6" style="position: relative">
+       
+    
+    <label>Step 4</label>
+    
+
+    <ul style="position: relative">
+
+        
+    <li>Click on <b>Undergraduate Career Services</b> and log in to <b>OnTrac II</b> to apply or propose an Internship.</li><br>  
+        
+        <li>Apply for internship opportunities (both local and overseas) posted on ONTRAC II. Alternatively, source for your own internships by submitting a self-proposal on OnTRAC II. Students with internship obligations as part of their scholarship, grants or awards are also required to submit a self-proposal for DKHMCC’s approval.</li><br>
+
+<li>After applying or proposing, wait for an internship offer to be made from the company you have indicated interest in</li><br>
+        
+<li>Log on to OnTrac II to accept (or reject) the offer
+</li>
+
+    
+     </ul> 
+    
+    <a href="https://ontrac.smu.edu.sg/" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to OnTrac II</a>
+    
+    <div target="_blank"
+ class="btn btn-fill btn-block input" id="2input4" style="border-radius: 20px;margin: 10px 0;">I've done this</div>
+             </div>
+                
+
+            </div>
+         </div>   
+    
+    
+    
+    
+    
+    
+            <div class="section" style="padding: 70px 0; min-height: auto; background: #fff; border: 5px solid #8A704C" id="2step5">
+         <div class="container">
+
+
+<div class="col-sm-12 register-card" style="background: #fff; padding-bottom: 15px">
+    
+        <label>A note on Anthology Portfolio:</label>
+
+    <p>Anthology Portfolio is the platform which will document the outcomes of your co-curricular experiences, helping you 
+to consolidate your experiences across the co-curricular space in your undergraduate years, and cumulating in a 
+co-curricular transcript that will be meaningful for you and your future employer</p>  
+            
+    <p>On Anthology Portfolio, your community experiences are organised into <b>Placements</b>, which contain the Pre, Mid &amp; Post Activity requirements as shown.</p><br>
+    
+            <p style="display: block;">Each activity that you partake in will then be in its own Placement. If you have multiple CSPs, Internships or CCAs throughout your undergraduate years, you will end up with multiple placements.</p>
+
+    
+<div class="col-sm-12" style="position: relative; height: 20vh">
+    
+        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff;position: absolute; top: 0; left: 0; z-index: 3;
+">
+        <b>Placement</b> (Internship)<br><br>
+    
+    
+    
+     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
+        
+    Mid Activity check-in&nbsp;<span class="flag2">Assessment</span><br>
+        
+Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
+        
+</p>
+    
+        
+        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 10px; left: 10px; z-index: 2;
+">
+        <b>Placement</b> (Internship)<br><br>
+    
+    
+    
+     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
+        
+    Mid Activity check-in&nbsp;<span class="flag2">Assessment</span><br>
+        
+Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
+        
+</p>
+    
+        
+        
+        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 20px; left: 20px; z-index: 1;">
+        <b>Placement</b> (Internship)<br><br>
+    
+    
+     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
+        
+    Mid Activity check-in&nbsp;<span class="flag2">Assessment</span><br>
+        
+Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
+        
+</p>
+    
+    
+    </div>
+
+    
+<br>
+
+    
+             
+             </div>
+             
+            </div>
+         </div>   
+    
+    
+        
+    
+            <div class="section" style="padding: 70px 0 0 0">
+         <div class="container">
+
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step5.mp4" type="video/mp4">
+</video><br>
+             
+      
+    <img src="assets/paper_img/placement%20ss.png" width="100%">
+    <img src="assets/paper_img/placement%20ss2.png" width="100%">
+    
+             </div>
+             
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <label>Step 5</label>
+    <ul style="position: relative">
+        
+
+        
+        <li>On the <b>start date</b> of your internship, you will be prompted to complete your <b>Pre-Activity LO Selection</b>, which is a <span class="flag2">Survey</span></li> <br>
+        
+        
+        <li>Go into Anthology Portfolio, click on <span class="tabbing">Upcoming</span> (on the top bar below the Dashboard header)</li><br>
+        
+        <li>There, you can view pending Surveys or Assesments. Click on <b>Take Survey/Assessment</b> that corresponds to your CSP.</li><br>
+         
+
+        <li><b>Note:</b> Look out for labels such as <span class="flag">DUE</span>, <span class="flag">OVERDUE</span> &amp; <span class="flag" style="background: #2a76b0
+">DUE SOON</span></li><br>
+        
+        <li>The learning objectives that your choose here will determine what you will be reflecting upon, and correspond to the attainment of your Graduate Learning Outcomes at the end of your co-curricular journey.</li><br>
+     </ul> 
+
+             </div>
+                
+
+            </div>
+                
+                
+                
+                
+         <div class="container" style="padding-top: 60px;">
+
+<div class="col-sm-6 register-card2">
+        
+<video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step5b.mp4" type="video/mp4">
+</video>
+             
+             
+             </div>
+             
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <ul style="position: relative">
+        
+
+        
+        
+   
+        <li><b>Alternatively</b>, go into Anthology Portfolio, click on Menu (on the top right of the screen)</li><br>        
+        <li>Click on My Placements, and click on the internship you're active in, and scroll down till you find the corresponding Pre-Activity LO Selection Survey.</li><br>        
+ 
+  
+        
+
+    
+     </ul> 
+    
+    <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to Anthology Portfolio</a>
+    
+    <div target="_blank"
+ class="btn btn-fill btn-block input" id="2input5" style="border-radius: 20px;margin: 10px 0;">I've done this</div>
+             </div>
+                
+
+            </div>
+         </div>   
+    
+    
+    
+    
+    
+    
+    
+    
+               <div class="section" style="padding: 70px 0 0 0" id="2step6">
+         <div class="container">
+
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step6.mp4" type="video/mp4">
+</video></div>
+             
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <label>Step 6</label>
+    <ul style="position: relative">
+        
+
+        
+        <li>On the <b>mid-point date</b> of your internship, you will be prompted to complete your <b>Mid-Activity check-in</b>, which is an <span class="flag2">Assessment</span></li> <br>
+        
+        
+        <li>Go into Anthology Portfolio, click on <span class="tabbing">Upcoming</span> (on the top bar below the Dashboard header)</li><br>
+        
+        <li>There, you can view pending Surveys or Assesments. Click on <b>Take Survey/Assessment</b> that corresponds to your internship.</li><br>
+         
+        <li><b>Note:</b> Look out for labels such as <span class="flag">DUE</span>, <span class="flag">OVERDUE</span> &amp; <span class="flag" style="background: #2a76b0
+">DUE SOON</span></li><br><br>
+        
+        <li>Within the Assessment page, cick on Yes if your chose LOs are relevant and you are on track.</li>
+        
+        <li>If your LOs are no longer relevant, you will be able to amend them when your write your <b>Post-Activity reflection</b> at the end of your internship.</li>     
+        
+        
+        <li>If you have other issues with your internship, please indicate them down in the comments box when doing this Assessment.</li>
+ 
+        <li><b>Alternatively</b>, go into Anthology Portfolio, click on Menu (on the top right of the screen)</li><br>        
+        <li>Click on My Placements, and click on the internship you're active in, and scroll down till you find the corresponding Mid-Activity check-in Assessment.</li><br>        
+ 
+  
+        
+
+    
+     </ul> 
+    
+    <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to Anthology Portfolio</a>
+    
+    <div target="_blank"
+ class="btn btn-fill btn-block input" id="2input6" style="border-radius: 20px;margin: 10px 0;">I've done this</div>
+             </div>
+                
+
+            </div>
+         </div>   
+    
+    
+    
+    
+                   <div class="section" style="padding: 70px 0 60px 0" id="2step7">
+         <div class="container">
+
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step5.mp4" type="video/mp4">
+</video><br>
+             
+      
+    <img src="assets/paper_img/placement%20ss.png" width="100%">
+    <img src="assets/paper_img/placement%20ss2.png" width="100%">
+             
+             </div>
+             
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <label>Step 7</label>
+    <ul style="position: relative">
+        
+
+        
+        <li>On the <b>end date</b> of your internship, you will be prompted to complete your <b>Post-Activity reflection</b>, which is a <span class="flag2">Survey</span></li> <br>
+        
+        <li>Go into Anthology Portfolio, click on <span class="tabbing">Upcoming</span> (on the top bar below the Dashboard header)</li><br>
+        
+        <li>There, you can view pending Surveys or Assesments. Click on <b>Take Survey/Assessment</b> that corresponds to your internship.</li><br>
+         
+        <li><b>Note:</b> Look out for labels such as <span class="flag">DUE</span>, <span class="flag">OVERDUE</span> &amp; <span class="flag" style="background: #2a76b0
+">DUE SOON</span></li><br><br>
+        
+
+    
+     </ul> 
+    
+
+             </div>
+                
+
+            </div>         
+                       
+                       
+                       
+                       <div class="container" style="padding-top: 60px;">
+
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step5b.mp4" type="video/mp4">
+</video><br>
+             
+             
+             </div>
+             
+<div class="register-card col-sm-6" style="position: relative">
+
+    <ul style="position: relative">
+
+        <li><b>Alternatively</b>, go into Anthology Portfolio, click on Menu (on the top right of the screen)</li><br>        
+        <li>Click on My Placements, and click on the CSP you're active in, and scroll down till you find the corresponding Post-Activity reflection Survey.</li><br>        
+ 
+  
+        
+
+    
+     </ul> 
+    
+    <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to Anthology Portfolio</a>    
+    
+    
+    <a href="#"  data-dismiss="modal" target="#myModal" 
+ class="btn btn-fill btn-block" style="margin: 10px 0 10px 0">You're done!</a>
+    
+ 
+    
+    
+    
+    
+
+             </div>
+                
+
+            </div>
+                       
+                       
+         </div>   
+    
+    
+    
+    
+    
+        
+            <div class="section" style="padding: 70px 0; min-height: auto; background: #fff; border: 5px solid #8A704C;" id="2end">
+                       <div class="container">
+
+
+<div class="col-sm-12 register-card" style="background: #fff; padding-bottom: 15px">
+    
+        <label>Coming soon</label>
+
+    <p>Your internship experience(s) will be assessed and form part of a co-curricular transcript, ready for you when you graduate.</p><br>
+    
+            <p style="display: block;">Each activity that you partake in will then be in its own Placement. If you have multiple CSPs, Internships or CCAs throughout your undergraduate years, you will end up with multiple placements.</p>
+
+    
+<div class="col-sm-12" style="position: relative; height: 30vh">
+    
+        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff;position: absolute; top: 0; left: 0; z-index: 3;
+">
+        <b>Placement</b> (Internship)<br><br>
+    
+    
+    
+     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
+        
+    Mid Activity check-in&nbsp;<span class="flag2">Assessment</span><br>
+        
+Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br><br>
+    Department Rubric&nbsp;<span class="flag2">Assessment</span><br><br>  <br> 
+    Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span><br>            
+            
+</p>
+    
+        
+        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 10px; left: 10px; z-index: 2;
+">
+        <b>Placement</b> (Internship)<br><br>
+    
+    
+    
+     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
+        
+    Mid Activity check-in&nbsp;<span class="flag2">Assessment</span><br>
+        
+Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br><br>
+    Department Rubric&nbsp;<span class="flag2">Assessment</span><br><br>  <br> 
+    Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span><br>            
+        
+</p>
+    
+        
+        
+        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 20px; left: 20px; z-index: 1;">
+        <b>Placement</b> (Internship)<br><br>
+    
+    
+     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
+        
+    Mid Activity check-in&nbsp;<span class="flag2">Assessment</span><br>
+        
+Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br><br>
+    Department Rubric&nbsp;<span class="flag2">Assessment</span><br><br>  <br> 
+    Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span><br>            
+</p>
+    
+    
+    </div>
+
+    
+<br>
+
+         <a data-dismiss="modal" target="#myModal" href="#" class="btn btn-danger btn-fill barr-button large">back</a>
+             
+             </div>
+             
+            </div>
+    
+    
+    
+    </div>
+    
+    
+    </div>
+<!--    end modal -->
+
+    </div>
+   <!-- Modal 2 end --> 
+    
+    
+    
+    
+    
+    
+       <!-- Modal 3 -->
+<div class="modal fade" style="background: #151c55" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    
+
+
+
+
+    <div class="barr" style="width: 100%">
+ <div class="container tim-container barr">
+     <h4 style="margin: 21px 0; color: #fff; width: auto; display: inline-block; cursor: pointer" id="button4">Co-curricular Activities *</h4>
+     <a data-dismiss="modal" target="#myModal3" href="#" class="btn btn-danger btn-fill barr-button large">back</a>
+     <a data-dismiss="modal" target="#myModal3" href="#" class="btn btn-danger btn-fill barr-button small" style="padding: 7px 12px;">&lt;</a>
+     
+    </div> 
+        
+        
+    </div>
+    
+
+    <div class="alert alert-danger notifxx" style="padding: 70px 0 0 0; z-index: 998">
+   
+        <p style="padding: 15px;"><b>*&nbsp;Note:</b> This section of the guide <b>does not apply</b> to Student Leaders under the Office of Student Life (OSL). Please approach your respective OSL managers for more information and the steps required.</p>
+    </div>
+          
+    <div class="alert alert-danger notif2xx" style="padding: 0">
+   
+                 <p>Make sure you activate your <b>Anthology Portfolio</b> account. Failure to do so might prevent your participation from being recorded.</p>
+<div class="round-time-bar">
+  <div></div>
+</div>
+    </div>
+      
+    <div class="pagelabel3"  style="margin-bottom: 15px ">
+    
+       
+    <a class="btn btn-danger btn-fill large stepbtn3"><b class="caret karat3"></b>&nbsp;Steps</a>
+        
+    <a class="btn btn-danger btn-fill large" id="3step1btn">Step 1</a>
+    <a class="btn btn-danger btn-fill large" id="3step2btn">Step 2</a>
+        <a class="btn btn-danger btn-fill large" id="3step3btn">Step 3</a>
+    
+       <a class="btn btn-danger btn-fill large" id="3step4btn">Step 4</a>
+    <a class="btn btn-danger btn-fill large" id="3step5btn">Step 5</a>
+        <a class="btn btn-danger btn-fill large" id="3step6btn">Step 6</a>
+        <a class="btn btn-danger btn-fill large" id="3step7btn">Step 7</a>
+    
+    
+     <a class="btn btn-danger btn-fill small stepbtns3" style="padding: 7px 14px; margin: 0;" id="#3stepbtns">?</a>
+
+         <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="3step1btns">1</a>
+
+         <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="3step2btns">2</a>
+
+    
+         <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="3step3btns">3</a>
+
+             <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="3step4btns">4</a>
+
+             <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="3step5btns">5</a>
+
+             <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="3step6btns">6</a>
+
+             <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="3step7btns">7</a>
+
+    
+    
+   </div>
+    
+          
+        
+        
+
+<div class="wrapper">
+
+        <div class="section" style="padding: 210px 0 70px 0;" id="3step1">
+         <div class="container">
+             
+                          
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step2.mp4" type="video/mp4">
+</video></div>
+
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <label>Step 1</label>
+    <ul style="position: relative">
+        <li>Log on to eLearn</li><br>
+        <li>Go into the <b>Co-Curricular Learning</b> module</li><br>
+        <li>Click on <b>Activate Anthology Portfolio</b></li><br>
+     <i>This will activate your account on Anthology Portfolio, which will consolidate your your co-curricular experiences in SMU.</i><br>
+        
+        
+        
+        <br>
+
+
+    
+     </ul> 
+    
+    <a href="https://elearn.smu.edu.sg/d2l/loginh/" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0;">log on to eLearn</a>
+    
+    <div target="_blank"
+ class="btn btn-fill btn-block input" id="3input1" style="border-radius: 20px;margin: 10px 0;">I've done this</div>
+             </div>
+             
+
+             </div>
+                
+
+            </div>
+    
+            <div class="section" style="padding: 70px 0; min-height: auto; background: #fff; border: 5px solid #8A704C" id="3step2">
+         <div class="container">
+
+
+<div class="col-sm-12 register-card" style="background: #fff; padding-bottom: 15px">
+    
+        <label>A note on Anthology Portfolio:</label>
+
+    <p>Anthology Portfolio is the platform which will document the outcomes of your co-curricular experiences, helping you 
+to consolidate your experiences across the co-curricular space in your undergraduate years, and cumulating in a 
+co-curricular transcript that will be meaningful for you and your future employer</p>  
+            
+    <p>On Anthology Portfolio, your community experiences are organised into <b>Placements</b>, which contain the Pre, Mid &amp; Post Activity requirements as shown.</p><br>
+    
+            <p style="display: block;">Each activity that you partake in will then be in its own Placement. If you have multiple CSPs, Internships or CCAs throughout your undergraduate years, you will end up with multiple placements.</p>
+
+    
+<div class="col-sm-12" style="position: relative; height: 20vh">
+    
+        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff;position: absolute; top: 0; left: 0; z-index: 3;
+">
+        <b>Placement</b> (CCAs)<br><br>
+    
+    
+    
+     Reflection Journal&nbsp;<span class="flag2">Journal</span><br>
+        
+        
+</p>
+    
+        
+        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 10px; left: 10px; z-index: 2;
+">
+        <b>Placement</b> (CCAs)<br><br>
+    
+    
+    
+    
+     Reflection Journal&nbsp;<span class="flag2">Journal</span><br>
+        
+        
+        
+</p>
+    
+        
+        
+        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 20px; left: 20px; z-index: 1;">
+        <b>Placement</b> (CCAs)<br><br>
+    
+  
+    
+     Reflection Journal&nbsp;<span class="flag2">Journal</span><br>
+        
+        
+        
+        
+</p>
+    
+    
+    </div>
+
+    
+<br>
+
+    
+             
+             </div>
+             
+            </div>
+         </div>   
+    
+    
+        
+    
+            <div class="section" style="padding: 70px 0 0 0">
+         <div class="container">
+
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step5.mp4" type="video/mp4">
+</video><br>
+             
+      
+    <img src="assets/paper_img/placement%20ss.png" width="100%">
+    <img src="assets/paper_img/placement%20ss2.png" width="100%">
+    
+             </div>
+             
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <label>Step 2</label>
+    <ul style="position: relative">
+        
+
+        
+        <li>After your activity, you are encouraged to write a <b>reflection</b>, which is a <span class="flag2">Journal</span></li> <br>
+        
+        
+        <li>Go into Anthology Portfolio, click on Menu (on the top right of the screen)</li><br>        
+        <li>Click on My Placements, and click on the corresponding CCA which you have 
+            
+            , and scroll down till you find the Reflection Journal entry under Journals.</li><br>  
+     </ul> 
+
+             </div>
+                
+
+            </div>
+                
+                
+                
+                
+         <div class="container" style="padding-top: 60px;">
+
+<div class="col-sm-6 register-card2">
+        
+<video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step5b.mp4" type="video/mp4">
+</video>
+             
+             
+             </div>
+             
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <ul style="position: relative">
+        
+
+        
+        
+   
+      
+ 
+  
+        
+
+    
+     </ul> 
+    
+    <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to Anthology Portfolio</a>
+    
+    <div target="_blank"
+ class="btn btn-fill btn-block input" id="2input5" style="border-radius: 20px;margin: 10px 0;">I've done this</div>
+             </div>
+                
+
+            </div>
+         </div>   
+    
+    
+    
+                   <div class="section" style="padding: 70px 0 60px 0" id="3step3">
+         <div class="container">
+
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step5.mp4" type="video/mp4">
+</video><br>
+             
+      
+    <img src="assets/paper_img/placement%20ss.png" width="100%">
+    <img src="assets/paper_img/placement%20ss2.png" width="100%">
+             
+             </div>
+             
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <label>Step 7</label>
+    <ul style="position: relative">
+        
+
+        
+        <li>On the <b>end date</b> of your internship, you will be prompted to complete your <b>Post-Activity reflection</b>, which is a <span class="flag2">Survey</span></li> <br>
+        
+        <li>Go into Anthology Portfolio, click on <span class="tabbing">Upcoming</span> (on the top bar below the Dashboard header)</li><br>
+        
+        <li>There, you can view pending Surveys or Assesments. Click on <b>Take Survey/Assessment</b> that corresponds to your internship.</li><br>
+         
+        <li><b>Note:</b> Look out for labels such as <span class="flag">DUE</span>, <span class="flag">OVERDUE</span> &amp; <span class="flag" style="background: #2a76b0
+">DUE SOON</span></li><br><br>
+        
+
+    
+     </ul> 
+    
+
+             </div>
+                
+
+            </div>         
+                       
+                       
+                       
+                       <div class="container" style="padding-top: 60px;">
+
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step5b.mp4" type="video/mp4">
+</video><br>
+             
+             
+             </div>
+             
+<div class="register-card col-sm-6" style="position: relative">
+
+    <ul style="position: relative">
+
+        <li><b>Alternatively</b>, go into Anthology Portfolio, click on Menu (on the top right of the screen)</li><br>        
+        <li>Click on My Placements, and click on the CSP you're active in, and scroll down till you find the corresponding Post-Activity reflection Survey.</li><br>        
+ 
+  
+        
+
+    
+     </ul> 
+    
+    <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to Anthology Portfolio</a>    
+    
+    
+    <a href="#"  data-dismiss="modal" target="#myModal" 
+ class="btn btn-fill btn-block" style="margin: 10px 0 10px 0">You're done!</a>
+    
+ 
+    
+    
+    
+    
+
+             </div>
+                
+
+            </div>
+                       
+                       
+         </div>   
+    
+    
+    
+    
+    
+        
+            <div class="section" style="padding: 70px 0; min-height: auto; background: #fff; border: 5px solid #8A704C;" id="3end">
+                       <div class="container">
+
+
+<div class="col-sm-12 register-card" style="background: #fff; padding-bottom: 15px">
+    
+        <label>Coming soon</label>
+
+    <p>Your CCA experience(s) will be assessed and form part of a co-curricular transcript, ready for you when you graduate.</p><br>
+    
+            <p style="display: block;">Each activity that you partake in will then be in its own Placement. If you have multiple CSPs, Internships or CCAs throughout your undergraduate years, you will end up with multiple placements.</p>
+
+    
+<div class="col-sm-12" style="position: relative; height: 30vh">
+    
+        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff;position: absolute; top: 0; left: 0; z-index: 3;
+">
+        <b>Placement</b> (CCA)<br><br>
+    
+    
+    
+  
+    
+     Reflection Journal&nbsp;<span class="flag2">Journal</span><br>
+        
+        
+    Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span><br>            
+            
+</p>
+    
+        
+        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 10px; left: 10px; z-index: 2;
+">
+        <b>Placement</b> (CCA)<br><br>
+    
+    
+   
+     Reflection Journal&nbsp;<span class="flag2">Journal</span><br>
+        
+        
+    Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span><br>              
+        
+</p>
+    
+        
+        
+        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 20px; left: 20px; z-index: 1;">
+        <b>Placement</b> (CCA)<br><br>
+    
+   
+     Reflection Journal&nbsp;<span class="flag2">Journal</span><br>
+        
+        
+    Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span><br>             
+</p>
+    
+    
+    </div>
+
+    
+<br>
+
+         <a data-dismiss="modal" target="#myModal" href="#" class="btn btn-danger btn-fill barr-button large">back</a>
+             
+             </div>
+             
+            </div>
+    
+    
+    
+    </div>
+    
+    
+    </div>
+<!--    end modal -->
+
+    </div>
+   <!-- Modal 3 end --> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
+	<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+
+	<!--  Plugins -->
+	<script src="assets/js/ct-paper-checkbox.js"></script>
+	<script src="assets/js/ct-paper-radio.js"></script>
+	<script src="assets/js/bootstrap-select.js"></script>
+	<script src="assets/js/bootstrap-datepicker.js"></script>
+
+	<script src="assets/js/ct-paper.js"></script>
+    
+    
+    
+    <script>
+        
+
+        document.getElementById('myModal')
+        .addEventListener('scroll', function(event) {
+    console.log("Scrolling");
+});
+        
+        
+$("#input1").click(function() {
+    const element = document.getElementById('step2');
+    
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+   $('.notif').animate({'top' : '0'});       
+    $('.round-time-bar div').addClass('clicked');
+    $('.notif').delay(5000).animate({'top' : '-100%'});
+    
+    setTimeout(function(){
+             $('.round-time-bar div').removeClass('clicked');}, 5500 );   
+
+});        
+    
+        $("#input2").click(function() {
+    const element = document.getElementById('step3');
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });       
+                
+        $("#input3").click(function() {
+    const element = document.getElementById('step4');
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+               
+   $('.notif2').animate({'top' : '0'});       
+    $('.round-time-bar div').addClass('clicked');
+    $('.notif2').delay(5000).animate({'top' : '-100%'});
+    
+    setTimeout(function(){
+             $('.round-time-bar div').removeClass('clicked');}, 5500 );   
+              
+        
+        });     
+              
+        $("#input4").click(function() {
+    const element = document.getElementById('step5');
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });      
+                      
+        $("#input5").click(function() {
+    const element = document.getElementById('step6');
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });          
+                
+        $("#input6").click(function() {
+    const element = document.getElementById('step7');
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });   
+        
+        
+        
+               
+$("#2input1").click(function() {
+    const element = document.getElementById('2step2');
+    
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+   $('.notifx').animate({'top' : '0'});       
+    $('.round-time-bar div').addClass('clicked');
+    $('.notifx').delay(5000).animate({'top' : '-100%'});
+    
+    setTimeout(function(){
+             $('.round-time-bar div').removeClass('clicked');}, 5500 );   
+
+});        
+    
+        $("#2input2").click(function() {
+    const element = document.getElementById('2step3');
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });       
+                
+        $("#2input3").click(function() {
+    const element = document.getElementById('2step4');
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+               
+   $('.notif2x').animate({'top' : '0'});       
+    $('.round-time-bar div').addClass('clicked');
+    $('.notif2x').delay(5000).animate({'top' : '-100%'});
+    
+    setTimeout(function(){
+             $('.round-time-bar div').removeClass('clicked');}, 5500 );   
+              
+        
+        });     
+              
+        $("#2input4").click(function() {
+    const element = document.getElementById('2step5');
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });      
+                      
+        $("#2input5").click(function() {
+    const element = document.getElementById('2step6');
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });          
+                
+        $("#2input6").click(function() {
+    const element = document.getElementById('2step7');
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });   
+        
+        
+        
+  $("#button3,#button4").click(function() {
+   $('.notifxx').animate({'top' : '0'});       
+    $('.notifxx').delay(8000).animate({'top' : '-100%'});
+});              
+        
+        
+        
+        
+        
+        
+$("#step1btn").click(function() {
+    const element = document.getElementById('step1')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+$("#step2btn").click(function() {
+    const element = document.getElementById('step2')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});     
+        
+$("#step3btn").click(function() {
+    const element = document.getElementById('step3')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+        $("#step4btn").click(function() {
+    const element = document.getElementById('step4')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+        $("#step5btn").click(function() {
+    const element = document.getElementById('step5')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+        $("#step6btn").click(function() {
+    const element = document.getElementById('step6')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+        
+                $("#step7btn").click(function() {
+    const element = document.getElementById('step7')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+        
+        
+        
+        
+$("#step1btns").click(function() {
+    const element = document.getElementById('step1')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});    
+$("#step2btns").click(function() {
+    const element = document.getElementById('step2')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});    
+$("#step3btns").click(function() {
+    const element = document.getElementById('step3')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+$("#step4btns").click(function() {
+    const element = document.getElementById('step4')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});    
+$("#step5btns").click(function() {
+    const element = document.getElementById('step5')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});    
+$("#step6btns").click(function() {
+    const element = document.getElementById('step6')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+        
+        $("#step7btns").click(function() {
+    const element = document.getElementById('step7')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+        
+                
+        
+        
+$("#2step1btn").click(function() {
+    const element = document.getElementById('2step1')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+$("#2step2btn").click(function() {
+    const element = document.getElementById('2step2')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});     
+        
+$("#2step3btn").click(function() {
+    const element = document.getElementById('2step3')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+        $("#2step4btn").click(function() {
+    const element = document.getElementById('2step4')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+        $("#2step5btn").click(function() {
+    const element = document.getElementById('2step5')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+        $("#2step6btn").click(function() {
+    const element = document.getElementById('2step6')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+        
+                $("#2step7btn").click(function() {
+    const element = document.getElementById('2step7')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+        
+        
+        
+        
+$("#2step1btns").click(function() {
+    const element = document.getElementById('2step1')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});    
+$("#2step2btns").click(function() {
+    const element = document.getElementById('2step2')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});    
+$("#2step3btns").click(function() {
+    const element = document.getElementById('2step3')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+$("#2step4btns").click(function() {
+    const element = document.getElementById('2step4')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});    
+$("#2step5btns").click(function() {
+    const element = document.getElementById('2step5')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});    
+$("#2step6btns").click(function() {
+    const element = document.getElementById('2step6')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+        
+        $("#2step7btns").click(function() {
+    const element = document.getElementById('2step7')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+        
+        
+        
+        
+              
+        
+$("#3step1btn").click(function() {
+    const element = document.getElementById('3step1')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+$("#3step2btn").click(function() {
+    const element = document.getElementById('3step2')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});     
+        
+$("#3step3btn").click(function() {
+    const element = document.getElementById('3step3')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+        $("#3step4btn").click(function() {
+    const element = document.getElementById('3step4')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+        $("#3step5btn").click(function() {
+    const element = document.getElementById('3step5')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+        $("#3step6btn").click(function() {
+    const element = document.getElementById('3step6')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+        
+                $("#3step7btn").click(function() {
+    const element = document.getElementById('3step7')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+        
+        
+        
+        
+$("#3step1btns").click(function() {
+    const element = document.getElementById('3step1')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});    
+$("#3step2btns").click(function() {
+    const element = document.getElementById('3step2')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});    
+$("#3step3btns").click(function() {
+    const element = document.getElementById('3step3')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});        
+$("#3step4btns").click(function() {
+    const element = document.getElementById('3step4')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});    
+$("#3step5btns").click(function() {
+    const element = document.getElementById('3step5')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});    
+$("#3step6btns").click(function() {
+    const element = document.getElementById('3step6')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+        
+        $("#3step7btns").click(function() {
+    const element = document.getElementById('3step7')
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+        
+          
+        
+        
+        
+        
+        
+        
+        
+        
+        jQuery.fn.clickToggle = function(a, b) {
+  return this.on("click", function(ev) { [b, a][this.$_io ^= 1].call(this, ev) })
+};
+        
+$('.stepbtn, .stepbtns').clickToggle(function(ev) {
+$('.pagelabel').animate({bottom: '+=252px'});
+$('.karat').toggleClass("toggle-up");
+
+}, function(ev) {
+$('.pagelabel').animate({bottom: '-=252px'});
+$('.karat').toggleClass("toggle-up");
+});
+       
+$('.stepbtn2, .stepbtns2').clickToggle(function(ev) {
+$('.pagelabel2').animate({bottom: '+=252px'});
+$('.karat2').toggleClass("toggle-up");
+
+}, function(ev) {
+$('.pagelabel2').animate({bottom: '-=252px'});
+$('.karat2').toggleClass("toggle-up");
+});
+
+
+$('.stepbtn3, .stepbtns3').clickToggle(function(ev) {
+$('.pagelabel3').animate({bottom: '+=252px'});
+$('.karat3').toggleClass("toggle-up");
+
+}, function(ev) {
+$('.pagelabel3').animate({bottom: '-=252px'});
+$('.karat3').toggleClass("toggle-up");
+});
+
+
+        
+switch (new Date().getHours()) {
+  case 0:
+    $('#time,#time2').html('4am');
+    break;
+  case 1:
+    $('#time,#time2').html('4am');
+    break;
+  case 2:
+    $('#time,#time2').html('4am');
+    break;
+  case 3:
+    $('#time,#time2').html('4am');
+    break;
+  case 4:
+    $('#time,#time2').html('8am');
+    break;
+  case 5:
+    $('#time,#time2').html('8am');
+    break;
+case 6:
+    $('#time,#time2').html('8am');
+    break;
+  case 7:
+    $('#time,#time2').html('8am');
+    break;
+  case 8:
+    $('#time,#time2').html('12pm');
+    break;
+  case 9:
+    $('#time,#time2').html('12pm');
+    break;
+  case 10:
+    $('#time,#time2').html('12pm');
+    break;
+  case 11:
+    $('#time,#time2').html('12pm');
+    break;  
+    
+case 12:
+    $('#time,#time2').html('4pm');
+    break;
+  case 13:
+    $('#time,#time2').html('4pm');  
+    break;
+  case 14:
+    $('#time,#time2').html('4pm');
+    break;
+  case 15:
+    $('#time,#time2').html('4pm');
+    break;
+  case 16:
+    $('#time,#time2').html('8pm');
+    break;
+  case 17:
+    $('#time,#time2').html('8pm');
+    break;
+case 18:
+    $('#time,#time2').html('8pm');
+    break;
+  case 19:
+    $('#time,#time2').html('8pm');
+    break;
+  case 20:
+    $('#time,#time2').html('12am');
+    break;
+  case 21:
+    $('#time,#time2').html('12am');
+    break;
+  case 22:
+    $('#time,#time2').html('12am');
+    break;
+  case 23:
+    $('#time,#time2').html('12am');
+}        
+        
+    </script>
+    
+</html>
