@@ -1,0 +1,1627 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="assets/paper_img/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>SMU Co-curricular Guide</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/ct-paper.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet" />    
+    <link href="assets/css/examples.css" rel="stylesheet" />
+    
+    
+
+    <!--     Fonts and icons     -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>    
+    <link href='https://fonts.googleapis.com/css?family=Oswald:300,600' rel='stylesheet' type='text/css'>
+
+<style>
+        h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-family: "Oswald", sans-serif;
+}
+    .glo{font-size: 80%; padding: 0 10px;}
+    
+    
+    .arrow-down {
+ width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-top: 20px solid #151c55;
+}
+
+    
+    .first1{margin-top: 63px;}
+    
+    .login2{
+        background: #81bc41;
+    border-color: #81bc41;
+    color: #2d343e;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.17;
+    margin-bottom: 10px;
+    overflow: visible;
+    padding: 0.9em 0.8em 0.7em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.1s linear all;
+    width: 100%;
+    transform: translateX(-20px);
+    }
+        .login3{
+        background: #097865;
+    border-color: #097865;
+    color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.17;
+    margin-bottom: 10px;
+    overflow: visible;
+    padding: 0.9em 0.8em 0.7em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.1s linear all;
+    width: 100%;
+    transform: translateX(-20px);
+    }
+    
+    label{background: #8A704C; padding: 7px 18px; color: #fff; font-weight: 500;}
+    
+    video{background: #dadada;}
+    
+    .tabbing{
+    border: 0;
+    border-radius: 0;
+    color: #e5e5e1;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0;
+    outline: none!important;
+    padding: 5px 12px;
+    position: relative; 
+    background-color: #4d4949;
+    text-shadow: 0 0 2px #000;
+    
+    }
+    
+    .flag{background-color: #c43c35;
+    border-radius: 3px;
+    color: #fff;
+    display: inline;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 3px;
+    padding: .22em .33em;
+    text-shadow: none;
+    text-transform: uppercase;
+    white-space: nowrap;}
+    
+        .flag2{
+    background: url(assets/paper_img/layout-box-bg-trans.png);
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #c2c1bc;
+    display: inline;
+    color: #000;
+    font-family: museo-sans-1,sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    outline-style: none!important;
+    margin: 0 0 6px;
+    padding: 0 8px;
+    }
+        
+        .flag3{
+ 
+    background-color: #225f8e;
+    background-image: linear-gradient(to bottom,#3d95d9,#225f8e);
+    border-color: #225f8e #225f8e #2e4e77;
+    font-size: 1.1rem;
+    padding: .4em .82em;
+background-repeat: repeat-x;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%), 0 1px 2px rgb(0 0 0 / 5%);
+     cursor: pointer;
+    display: inline-block;
+     font-weight: normal;
+    line-height: 1.17;
+    margin: 0;
+    overflow: visible;
+    position: relative;
+    text-align: center;
+    text-decoration: none; 
+            font-family: museo-sans-1,sans-serif;
+    }
+    
+    
+.round-time-bar {
+  margin: 15px 0 0 0;
+  overflow: hidden;
+}
+.round-time-bar div {
+  height: 5px;
+  transition: width 5s linear;
+  transform-origin: left center;
+  background: #151c55;
+ transform: scaleX(1);
+    transform-origin: left;
+    }
+    
+.round-time-bar div.clicked {
+transform: scaleX(0);
+transition: transform 5000ms linear;
+}
+    
+    .register-card a{border-radius: 20px}
+
+    
+    .btn{border: 0;border-radius: 0;}
+    
+    .coll{cursor: pointer;}
+    .coll:hover .btn{background: #090c26;}
+    
+    .tabb{position: absolute; background: #151c55; width: 100%; height: 100%;text-align: center;}
+    
+     .coll div h4 {margin: 50px 0; color: #fff}
+    
+    .coll{margin: 5px;border-radius: 30px; position: relative; background-size: cover; max-width: 600px; height: 200px;}
+    
+    
+  .barr {height: 63px;position: fixed; top: 0; left: 0; background: #151c55; z-index: 999; width: 100%}
+    .barr> h4{margin: 21px 0; color: #fff; width: auto; display: inline-block}
+    .barr> a{border-radius: 50%;}
+        
+
+
+.toggle-up {
+  transform: rotate(0);
+}
+    .barr-button {margin:13px 0;float: right;}
+    .large {display: none;}
+     .small {display: block;text-align: left;}
+    .modal .section {min-height: 100vh}
+    
+    
+    .notif, .notif2, .notifx, .notif2x, .notifxx, .notif2xx{position: fixed; top: calc(-100%); width: 100% ; z-index: 1000; background: #8A704C;
+    }    
+
+    .notif p, .notif2 p,.notifx p, .notif2x p,.notifxx p, .notif2xx p{font-size: 12px; color: #fff; padding: 15px 15px 0 15px;}
+            .register-card p,.register-card2 p {font-size: 12px;}
+
+    .useful{border-radius: 20px; float: right; display: inline-block;}
+    
+    @media (min-width: 768px) {
+        
+        
+          .first1{margin-top: 70px;}
+          .barr {height: 70px;position: fixed; top: 0; left: 0; background: #151c55; z-index: 999;}
+        .barr-button {margin:17px 0;float: right; content: "back"}
+        .barr> a{border-radius: 20px;}
+        .small {display: none;}
+         .large {display: block;}
+        .notif p, .notif2 p,.notifx p, .notif2x p,.notifxx p, .notif2xx p{font-size: 16px; padding: 15px 15px 0 15px;}
+        .register-card p,.register-card2 p {font-size: 16px;}
+            .coll{margin: 5px;border-radius: 30px; position: relative; background-size: cover; max-width: 600px; height: 200px;}
+        .coll div h4 {margin: 50px 0; color: #fff}
+    }
+    
+    
+    
+    
+    </style>
+
+
+</head>
+<body>
+
+        <div class="barr" style="width: 100%">
+ <div class="container tim-container barr">
+<h4 style="margin: 21px 0; color: #fff; width: auto; display: inline-block">Community Service &amp; Internships</h4>
+     <a data-dismiss="modal" target="#myModal" href="staff.html" class="btn btn-danger btn-fill barr-button large">back</a>
+     <a data-dismiss="modal" target="#myModal" href="staff.html" class="btn btn-danger btn-fill barr-button small" style="padding: 7px 12px;">&lt;</a>
+     
+    </div> 
+        
+        
+    </div>
+    
+
+    <div class="pagelabel"  style="margin-bottom: 15px ">
+    
+       
+    <a class="btn btn-danger btn-fill large stepbtn"><b class="caret karat"></b></a>
+        
+ <a class="btn btn-danger btn-fill small stepbtn"><b class="caret karat"></b></a>
+    
+   </div>
+    
+    <div id="intro"></div>
+          
+
+<div class="wrapper" style="padding: 18px 0">
+    
+                   
+        
+        
+        <div class="section" style="padding: 70px 0; min-height: auto; background: #fff; border: 5px solid #8A704C; margin: 0;">
+                       <div class="container">
+
+
+<div class="col-sm-12 register-card" style="background: #fff; padding-bottom: 15px">
+    
+        <label>Overview of Anthology Portfolio</label>
+
+    <p>
+        Anthology Portfolio is the platform where a student's co-curricular activities are documented and assessed. <br><br>
+        
+        Each co-curricular activity that a student is involved in is reflected as a single <b>Placement</b> entry within the student's Anthology Portfolio account (See Figure 1).
+        <br>
+    
+    </p><br>
+
+    
+<div class="col-sm-12" style="position: relative; height: 300px">
+    
+        <p class="col-sm-11 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff;position: absolute; top: 0; left: 0; z-index: 3;
+">
+        <b>Placement</b> (CSP/Internship)<br>
+    
+    
+    <label style="background: #151c55; width: 100%">
+     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
+        
+ Mid Activity check-in&nbsp;<span class="flag2">Survey</span><br>
+        
+        Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br></label>
+            
+<label style="background: #151c55; width: 100%">Department Rubric&nbsp;(if applicable)&nbsp;<span class="flag2">Assessment</span></label>
+    
+    
+    <br>
+            <label style="background: #151c55; width: 100%">Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span></label><br>            
+            
+</p>
+    
+        
+        <p class="col-sm-11 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 10px; left: 10px; z-index: 2;
+">
+           <b>Placement</b> (CSP/Internship)<br>
+    
+    
+    <label style="background: #151c55; width: 100%">
+     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
+        
+ Mid Activity check-in&nbsp;<span class="flag2">Survey</span><br>
+        
+        Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br></label>
+            
+<label style="background: #151c55; width: 100%">Department Rubric&nbsp;(if applicable)&nbsp;<span class="flag2">Assessment</span></label>
+    
+    
+    <br>
+            <label style="background: #151c55; width: 100%">Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span></label><br>    
+        
+</p>
+    
+        
+        
+<p class="col-sm-11 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 20px; left: 20px; z-index: 1;">
+
+      <b>Placement</b> (CSP/Internship)<br>
+    
+    
+    <label style="background: #151c55; width: 100%">
+     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
+        
+ Mid Activity check-in&nbsp;<span class="flag2">Survey</span><br>
+        
+        Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br></label>
+            
+<label style="background: #151c55; width: 100%">Department Rubric&nbsp;(if applicable)&nbsp;<span class="flag2">Assessment</span></label>
+    
+    
+    <br>
+            <label style="background: #151c55; width: 100%">Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span></label><br>    
+</p>
+    
+    
+    </div>
+
+    
+
+    <p>
+Students will make reference to the <b>SMU Graduate Learning Outcomes (GLOs)</b> when doing their reflection, and are assessed on these in your Department Rubric* and the Transformative Learning Rubric.
+      <br><br>  
+<i>**The Department Rubric is designed to be optional for staff, as an additional data point and affirmation of the student's achievement in the activity, which can be observed in person, or through the student's reflection.</i>
+    <br><br>
+    </p>
+    
+    
+    
+<div class="col-sm-12" style="position: relative; height: 400px">
+    
+        <p class="col-sm-11 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff;position: absolute; top: 0; left: 0; z-index: 3;
+">
+        <b>Placement</b> (CSP/Internship)<br>
+  
+    <label style="background: #151c55; width: 100%">   Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
+        
+ Mid Activity check-in&nbsp;<span class="flag2">Survey</span><br>
+        
+        Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
+            
+    <label class="glo" style="margin: 5px 5px 0 0;">GLO 2</label>
+    <label class="glo" style="margin: 0 5px;">GLO 3</label>
+    <label class="glo" style="margin: 0 5px;">GLO 4</label>
+    <label class="glo" style="margin: 0 5px;">GLO 5</label>
+            
+            </label>
+            
+<label style="background: #151c55; width: 100%">Department Rubric (if applicable)&nbsp;<span class="flag2">Assessment</span><br>
+            
+    <label class="glo" style="margin: 5px 5px 0 0;">GLO 2</label>
+    <label class="glo" style="margin: 0 5px;">GLO 3</label>
+    <label class="glo" style="margin: 0 5px;">GLO 4</label>
+    <label class="glo" style="margin: 0 5px;">GLO 5</label>
+            </label>
+    <br>                 
+<label style="background: #151c55; width: 100%">Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span><br>
+            
+
+    <label class="glo" style="margin: 5px 5px 0 0;">GLO 2</label>
+    <label class="glo" style="margin: 0 5px;">GLO 3</label>
+    <label class="glo" style="margin: 0 5px;">GLO 4</label>
+    <label class="glo" style="margin: 0 5px;">GLO 5</label>
+            </label>
+    <br>       
+            
+</p>
+    
+        
+        <p class="col-sm-11 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 10px; left: 10px; z-index: 2;
+">        <b>Placement</b> (CSP/Internship)<br>
+  
+    <label style="background: #151c55; width: 100%">   Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
+        
+ Mid Activity check-in&nbsp;<span class="flag2">Survey</span><br>
+        
+        Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
+            
+    <label class="glo" style="margin: 5px 5px 0 0;">GLO 2</label>
+    <label class="glo" style="margin: 0 5px;">GLO 3</label>
+    <label class="glo" style="margin: 0 5px;">GLO 4</label>
+    <label class="glo" style="margin: 0 5px;">GLO 5</label>
+            
+            </label>
+            
+<label style="background: #151c55; width: 100%">Department Rubric (if applicable)&nbsp;<span class="flag2">Assessment</span><br>
+            
+    <label class="glo" style="margin: 5px 5px 0 0;">GLO 2</label>
+    <label class="glo" style="margin: 0 5px;">GLO 3</label>
+    <label class="glo" style="margin: 0 5px;">GLO 4</label>
+    <label class="glo" style="margin: 0 5px;">GLO 5</label>
+            </label>
+    <br>                 
+<label style="background: #151c55; width: 100%">Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span><br>
+            
+    <label class="glo" style="margin: 5px 5px 0 0;">GLO 2</label>
+    <label class="glo" style="margin: 0 5px;">GLO 3</label>
+    <label class="glo" style="margin: 0 5px;">GLO 4</label>
+    <label class="glo" style="margin: 0 5px;">GLO 5</label>
+            </label>
+    <br> 
+</p>
+    
+        
+        
+        <p class="col-sm-11 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 20px; left: 20px; z-index: 1;">
+       <b>Placement</b> (CSP/Internship)<br>
+            
+    <label style="background: #151c55; width: 100%">   Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
+        
+ Mid Activity check-in&nbsp;<span class="flag2">Survey</span><br>
+        
+        Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
+            
+    <label class="glo" style="margin: 5px 5px 0 0;">GLO 2</label>
+    <label class="glo" style="margin: 0 5px;">GLO 3</label>
+    <label class="glo" style="margin: 0 5px;">GLO 4</label>
+    <label class="glo" style="margin: 0 5px;">GLO 5</label>
+            
+            </label>
+            
+<label style="background: #151c55; width: 100%">Department Rubric (if applicable)&nbsp;<span class="flag2">Assessment</span><br>
+            
+    <label class="glo" style="margin: 5px 5px 0 0;">GLO 2</label>
+    <label class="glo" style="margin: 0 5px;">GLO 3</label>
+    <label class="glo" style="margin: 0 5px;">GLO 4</label>
+    <label class="glo" style="margin: 0 5px;">GLO 5</label>
+            </label>
+    <br>                 
+<label style="background: #151c55; width: 100%">Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span><br>
+            
+    <label class="glo" style="margin: 5px 5px 0 0;">GLO 2</label>
+    <label class="glo" style="margin: 0 5px;">GLO 3</label>
+    <label class="glo" style="margin: 0 5px;">GLO 4</label>
+    <label class="glo" style="margin: 0 5px;">GLO 5</label>
+            </label>
+    <br> 
+</p>
+    
+    
+    </div>
+
+
+    
+    <p><br><br><br><br>
+    <p>
+At the end of their undergraduate years, students will have an aggregated assessment of all their co-curricular activities, reflected as achievement levels in accordance to the <b>SMU Graduate Learning Outcomes</b>.
+    <br><br>
+
+    
+    </p><br>
+             
+            </div>
+    
+    
+    
+    </div>
+    
+    </div>
+
+<div class="wrapper">
+
+        <div class="section" style="padding: 70px 0; min-height: 0; background: #fff; border: 5px solid #8A704C" id="step0">
+            
+            
+            
+            
+            
+            
+         <div class="container">
+
+                
+<div class="col-sm-12 register-card2" style="padding: 15px">
+    
+    <label style="width: 100%" class="btn btn-danger btn-fill" data-toggle="modal" data-target="#myModal1a">How to login to Anthology Portfolio</label>
+        <br>        <br>
+    <label style="width: 100%" class="btn btn-danger btn-fill" data-toggle="modal" data-target="#myModal1b">Searching for a student entry</label>    
+            <br>        <br>
+    <label style="width: 100%" class="btn btn-danger btn-fill" data-toggle="modal" data-target="#myModal1c">Assessing a student</label>
+               <br>        <br>
+    <label style="width: 100%" class="btn btn-danger btn-fill" data-toggle="modal" data-target="#myModal1d">Generating a report</label>
+   
+             </div>
+                     
+
+             </div>
+    
+    </div>
+ 
+    </div>
+<!--    end modal -->
+
+    </div>
+
+
+
+<!-- Modal 1a how to login -->
+<div class="modal fade" style="background: #151c55;" id="myModal1a" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    
+
+
+
+
+    <div class="barr" style="width: 100%">
+ <div class="container tim-container barr">
+<h4 style="margin: 21px 0; color: #fff; width: auto; display: inline-block">How to login</h4>
+     <a data-dismiss="modal" target="#myModal1a" href="#" class="btn btn-danger btn-fill barr-button large">back</a>
+     <a data-dismiss="modal" target="#myModal1a" href="#" class="btn btn-danger btn-fill barr-button small" style="padding: 7px 12px;">&lt;</a>
+     
+    </div> 
+        
+        
+    </div>
+    
+          
+                   
+<div class="wrapper">
+
+   
+         <div class="section" style="padding: 70px 0;" id="step1">
+         <div class="container" style="text-align: center;">
+<div class="register-card col-sm-12">
+    
+    <label>How to login to Anthology Portfolio</label><br><br>
+             </div>
+             
+             
+<div class="col-sm-6 register-card2"><img src="assets/paper_img/login.png" width="100%"></div>
+             
+<div class="register-card col-sm-6">
+        <label style="background: transparent; border: 2px solid #151c55; color: #151c55; width: 100%">If you are using your own staff account</label>
+    
+    <ul style="text-align: left;">
+        <br>
+        
+        
+        <div onclick="window.open('https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465');" class="login2">LOGIN VIA SHIBBOLETH</div>
+        
+    <li style="list-style: none;">&nbsp;</li>        
+    <li>Enter your SMU credentials to log in.</li> <br>
+   
+     </ul> 
+    
+    <label style="background: transparent; border: 2px solid #151c55; color: #151c55; width: 100%">If you are using a shared department account</label>
+    
+    <ul style="text-align: left;">
+        <br>
+
+    <div onclick="window.open('https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465&showfields=1');" class="login3">LOGIN</div>
+        
+    <li style="list-style: none;">&nbsp;</li>  
+
+    <li>Enter the shared login ID and password provided by CCD. On your first login, you are required to set a new password.</li> <br>
+   
+     </ul> 
+    
+        
+    <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465&showfields=1" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0;">login here</a>
+                   
+             </div>   
+             
+
+             </div></div>
+    
+        
+    
+    
+
+
+    
+    
+        
+ 
+    </div>
+<!--    end modal -->
+
+    </div>
+   <!-- Modal 1a end --> 
+    
+
+
+<!-- Modal 1b searching -->
+<div class="modal fade" style="background: #151c55;" id="myModal1b" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    
+
+
+
+
+    <div class="barr" style="width: 100%">
+ <div class="container tim-container barr">
+<h4 style="margin: 21px 0; color: #fff; width: auto; display: inline-block">Searching</h4>
+     <a data-dismiss="modal" target="#myModal1b" href="#" class="btn btn-danger btn-fill barr-button large">back</a>
+     <a data-dismiss="modal" target="#myModal1b" href="#" class="btn btn-danger btn-fill barr-button small" style="padding: 7px 12px;">&lt;</a>
+     
+    </div> 
+        
+        
+    </div>
+    
+          
+                   
+<div class="wrapper">
+
+   
+
+        <div class="section" style="padding: 70px 0;" id="step2">
+         <div class="container">
+             
+                          
+<div class="col-sm-12 register-card" style="text-align: center;">   
+    
+    <label>Searching for a student entry</label><br><br>
+             
+             </div>   
+             
+             
+             
+<div class="col-sm-6 register-card2">
+    
+
+    <video width="100%" height="100%" controls preload>
+        
+  <source src="assets/paper_img/searching.mp4" type="video/mp4">
+    
+
+</video>
+
+             <br>
+       
+             </div>
+
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <ul style="position: relative">
+        <li>If the internship/community service project has been approved, it will appear as a <b>Placement</b> within Anthology.</li><br>
+        
+        
+<li>Go into Anthology Portfolio, click on Menu (on the top right of the screen)</li><br>        
+        
+        <li>Click on <b>Experiential Learning</b>, and there will be a list of students with ongoing internships/community service projects.</li><br>
+    
+        <li>Click on <b>Search Placements</b>, and there will be a series of filters that can be input to help you find the placement or series of placement(s).</li>       
+    </ul>
+
+    <label style="background: transparent; border: 2px solid #151c55; color: #151c55; width: 100%;"><b>CCD's suggested workflow:</b><br>Sort student placements by <b>end date</b>, as that would signal when the department assessments (if applicable) are due.</label>
+        
+    <ul style="position: relative">
+        <br>
+        <li>You can filter placements by Start Dates, Stakeholders, and even custom fields such as Admit Term.
+        <br>
+        <br>
+            <b>Note:</b> To filter by custom fields, click on the <b>Filter using custom fields</b> dropdown.          <br>
+        <br>
+            To include more/less fields in the Placements list (for example, <b>end date</b> is not included by default), click <b>Include These Columns in Report</b> and check the relevant fields (such as end-date).  
+        </li><br>
+        
+            
+        <li>Alternatively, there is also a <b>search</b> box on the right, where you can search for keywords such as student names within the placements.</li><br> 
+        <br>
+
+
+    
+     </ul> 
+    
+
+             </div>
+             
+
+             </div>
+                
+
+            </div>
+    </div>
+<!--    end modal -->
+
+    </div>
+   <!-- Modal 1b end --> 
+    
+
+
+<!-- Modal 1c assessing -->
+<div class="modal fade" style="background: #151c55;" id="myModal1c" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    
+
+
+
+
+    <div class="barr" style="width: 100%">
+ <div class="container tim-container barr">
+<h4 style="margin: 21px 0; color: #fff; width: auto; display: inline-block">Assessing</h4>
+     <a data-dismiss="modal" target="#myModal1c" href="#" class="btn btn-danger btn-fill barr-button large">back</a>
+     <a data-dismiss="modal" target="#myModal1c" href="#" class="btn btn-danger btn-fill barr-button small" style="padding: 7px 12px;">&lt;</a>
+     
+    </div> 
+        
+        
+    </div>
+    
+          
+                   
+<div class="wrapper">
+
+
+        <div class="section" style="padding: 70px 0;" id="step3">
+         <div class="container">
+             
+                          
+<div class="col-sm-12 register-card" style="text-align: center;">   
+    
+    <label>Assessing a student</label><br><br>
+             
+             </div>   
+             
+             
+             
+<div class="col-sm-6 register-card2">
+    
+    <video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/viewing.mp4" type="video/mp4">
+</video>
+             
+    
+    
+<p style="background: #151c55; color: #fff; padding: 5px 20px; font-weight: bold">Viewing reflection</p>        
+     
+             </div>
+
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <ul style="position: relative">
+        <li>After 1 month from the end date of the internship/community service, the student should have completed their <b>reflection</b>.
+        </li><br> 
+        
+        
+<li>Go into Anthology Portfolio, click on Menu (on the top right of the screen)</li><br>        
+        
+        <li>Click on <b>Experiential Learning</b>, and there will be a list of students with ongoing internships/community service projects. Click on <b>View</b>.</li><br>
+        
+        
+    <li>If completed, the  <b>reflection</b> can be found inside the Placement entry, as a <span class="flag2">Survey</span> under the <b>Survey</b> heading.
+    
+        </li> 
+        
+    </ul>
+
+
+             </div>
+             
+      <div class="col-sm-12 register-card" style="border: 2px solid #151c55; padding: 20px; margin: 20px 0">          
+             
+<div class="col-sm-6 register-card2">
+
+
+<img src="assets/paper_img/rollup1.png" width="100%"> 
+<img src="assets/paper_img/rollup2.png" width="100%">   
+    
+<br>
+    
+             </div>
+
+<div class="register-card col-sm-6" style="position: relative">
+
+
+        
+          <label style="background: transparent; color: #151c55; width: 100%; text-align: left"><b>CCD's suggested workflow:</b><br>Click on <b>Download Roll-up</b>, download the entire student entry and you will only need to follow the next step to assess from the Placement entry.<br><br>The student's reflection will likewise be under the <b>Survey</b> header.</label>
+       
+    
+
+
+        
+    <a href="Sample_Internship.pdf" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0;">Sample roll-up</a>
+    
+
+    
+
+             </div>
+             
+             </div>         
+             
+             
+             
+<div class="col-sm-6 register-card2">
+    
+    <video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/assess.mp4" type="video/mp4">
+</video>
+             
+<p style="background: #151c55; color: #fff; padding: 5px 20px; font-weight: bold">Assessing</p>        
+    
+            
+    
+       
+             
+             </div>
+
+<div class="register-card col-sm-6" style="position: relative">
+
+        <ul style="position: relative">
+             <br>
+        <li>Read the <b>Post-Activity reflection Survey</b>, then click <b>Return</b>. This might bring you to the <b>Experiential Learning</b> page, so you will need to click on the Placement you were going to assess earlier, and then  <b>View</b>.
+
+    
+        </li><br>
+         
+        <li>Under the <b>Assessments</b> header, click on <b>&lt;Department&gt; Reflection Rubric</b> , and <b>Assess</b>.
+        </li><br>
+    
+    
+    
+    
+    </ul>
+        
+    
+
+    
+
+             </div>      
+
+             </div>
+                
+
+            </div>
+ 
+    </div>
+<!--    end modal -->
+
+    </div>
+   <!-- Modal 1c end --> 
+    
+
+<!-- Modal 1d reporting -->
+<div class="modal fade" style="background: #151c55;" id="myModal1d" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    
+
+
+
+
+    <div class="barr" style="width: 100%">
+ <div class="container tim-container barr">
+<h4 style="margin: 21px 0; color: #fff; width: auto; display: inline-block">Reporting</h4>
+     <a data-dismiss="modal" target="#myModal1d" href="#" class="btn btn-danger btn-fill barr-button large">back</a>
+     <a data-dismiss="modal" target="#myModal1d" href="#" class="btn btn-danger btn-fill barr-button small" style="padding: 7px 12px;">&lt;</a>
+     
+    </div> 
+        
+        
+    </div>
+    
+          
+                   
+<div class="wrapper">
+
+
+        <div class="section" style="padding: 70px 0;" id="step4">
+         <div class="container">
+             
+                          
+<div class="col-sm-12 register-card" style="text-align: center;">   
+    
+    <label>Generating a report</label><br><br>
+             
+             </div>   
+             
+             
+             
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/report.mp4" type="video/mp4">
+</video>
+             
+             
+             
+             </div>
+
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <ul style="position: relative">
+        <li>After the Placement has been closed, which can take up to 13 weeks from the end of the 
+activity, a report can be generated to show aggregated student information.
+        </li><br> 
+        
+<li>For example, information such as the student performance across GLOs, or other assessment information can be exported as a report.
+    </li> <br>      
+    <li>This information can be used to inform future projects or activities, to address areas that might be lacking in the co-curricular sphere.
+        </li><br>      
+        
+<li>Go into Anthology Portfolio, click on Menu (on the top right of the screen)</li><br>        
+        
+        <li>Click on <b>Reporting</b>, and the  <b>Student Results</b>. Click on <b>Result Search</b> and a dropdown with different fields will appear.</li><br>        
+        <li>Here, you may sort the student data depending on the report that you require. Students can be sorted by <b>Assessment Instruments</b>, <b>Outcome</b>, <b>Assessor</b> and other fields.</li><br>
+        
+    </ul>
+        
+    
+
+    
+
+             </div>
+             
+
+             </div>
+                
+
+            </div>
+        
+    </div>
+<!--    end modal -->
+
+    </div>
+   <!-- Modal 1d end --> 
+    
+
+
+       <!-- Modal 3 -->
+<div class="modal fade" style="background: #151c55" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    
+
+
+
+
+    <div class="barr" style="width: 100%">
+ <div class="container tim-container barr">
+     <h4 style="margin: 21px 0; color: #fff; width: auto; display: inline-block; cursor: pointer" id="button4">Co-curricular Activities *</h4>
+     <a data-dismiss="modal" target="#myModal3" href="#" class="btn btn-danger btn-fill barr-button large">back</a>
+     <a data-dismiss="modal" target="#myModal3" href="#" class="btn btn-danger btn-fill barr-button small" style="padding: 7px 12px;">&lt;</a>
+     
+    </div> 
+        
+        
+    </div>
+    
+
+    <div class="alert alert-danger notifxx" style="padding: 70px 0 0 0; z-index: 998">
+   
+        <p style="padding: 15px;"><b>*&nbsp;Note:</b> This section of the guide <b>does not apply</b> to students/managers under the Office of Student Life (OSL). Please approach OSL for more information and the steps required.</p>
+    </div>
+          
+    
+
+    
+      
+    <div id="3intro"></div>
+          
+                
+        <div class="section" style="padding: 70px 0; min-height: auto; background: #fff; border: 5px solid #8A704C;">
+                       <div class="container">
+
+
+<div class="col-sm-12 register-card" style="background: #fff; padding-bottom: 15px">
+    
+        <label>Introduction to Anthology Portfolio</label>
+
+    <p>Each student's co-curricular activity is indexed as a singular <b>Placement</b> within Anthology Portfolio.
+        <br>
+    
+    </p><br>
+
+    
+<div class="col-sm-12" style="position: relative; height: 300px">
+    
+        <p class="col-sm-11 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff;position: absolute; top: 0; left: 0; z-index: 3;
+">
+        <b>Placement</b> (CCA)<br>
+    
+    
+    <label style="background: #151c55; width: 100%">
+Reflection Journal&nbsp;<span class="flag2">Journal</span><br></label>
+            
+<label style="background: #151c55; width: 100%">Department Rubric&nbsp;(if applicable)&nbsp;<span class="flag2">Assessment</span></label>
+    
+    
+    <br>
+            <label style="background: #151c55; width: 100%">Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span></label><br>            
+            
+</p>
+    
+        
+        <p class="col-sm-11 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 10px; left: 10px; z-index: 2;
+">
+           <b>Placement</b> (CCA)<br>
+    
+    
+    
+    <label style="background: #151c55; width: 100%">
+Reflection Journal&nbsp;<span class="flag2">Journal</span><br></label>
+            
+<label style="background: #151c55; width: 100%">Department Rubric&nbsp;(if applicable)&nbsp;<span class="flag2">Assessment</span></label>
+    
+    
+    <br>
+            <label style="background: #151c55; width: 100%">Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span></label><br>    
+        
+</p>
+    
+        
+        
+<p class="col-sm-11 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 20px; left: 20px; z-index: 1;">
+
+      <b>Placement</b> (CCA)<br>
+    
+     
+    <label style="background: #151c55; width: 100%">
+Reflection Journal&nbsp;<span class="flag2">Journal</span><br></label>
+            
+<label style="background: #151c55; width: 100%">Department Rubric&nbsp;(if applicable)&nbsp;<span class="flag2">Assessment</span></label>
+    
+    
+    <br>
+            <label style="background: #151c55; width: 100%">Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span></label><br>    
+</p>
+    
+    
+    </div>
+
+    
+
+    <p>Students will make reference to the <b>SMU Graduate Learning Outcomes (GLOs)</b> when doing their reflection, and are assessed on these in your Department Rubric* and the Transformative Learning Rubric. 
+      <br><br>  
+    *The Department Rubric is designed to be optional for staff, as an additional data point and affirmation of the student's achievement in the activity, which can be observed in person, or through the student's reflection. 
+        <br><br>
+    Additionally, for short activities such as <b>workshops</b>, there will be no Department Rubric, and students will be automatically graded as "Exposure" (akin to a "Participation" grade) on the Transformative Learning Rubric.
+    <br><br>
+
+    
+    </p>
+    
+    
+    
+<div class="col-sm-12" style="position: relative; height: 400px">
+    
+        <p class="col-sm-11 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff;position: absolute; top: 0; left: 0; z-index: 3;
+">
+        <b>Placement</b> (CCA)<br>
+  
+    <label style="background: #151c55; width: 100%">Reflection Journal&nbsp;<span class="flag2">Journal</span><br>
+            
+    <label class="glo" style="margin: 5px 5px 0 0;">GLO 2</label>
+    <label class="glo" style="margin: 0 5px;">GLO 3</label>
+    <label class="glo" style="margin: 0 5px;">GLO 4</label>
+    <label class="glo" style="margin: 0 5px;">GLO 5</label>
+            
+            </label>
+            
+<label style="background: #151c55; width: 100%">Department Rubric (if applicable)&nbsp;<span class="flag2">Assessment</span><br>
+            
+    <label class="glo" style="margin: 5px 5px 0 0;">GLO 2</label>
+    <label class="glo" style="margin: 0 5px;">GLO 3</label>
+    <label class="glo" style="margin: 0 5px;">GLO 4</label>
+    <label class="glo" style="margin: 0 5px;">GLO 5</label>
+            </label>
+    <br>                 
+<label style="background: #151c55; width: 100%">Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span><br>
+            
+
+    <label class="glo" style="margin: 5px 5px 0 0;">GLO 2</label>
+    <label class="glo" style="margin: 0 5px;">GLO 3</label>
+    <label class="glo" style="margin: 0 5px;">GLO 4</label>
+    <label class="glo" style="margin: 0 5px;">GLO 5</label>
+            </label>
+    <br>       
+            
+</p>
+    
+        
+        <p class="col-sm-11 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 10px; left: 10px; z-index: 2;
+">        <b>Placement</b> (CCA)<br>
+  
+    <label style="background: #151c55; width: 100%">  Reflection Journal&nbsp;<span class="flag2">Journal</span><br>
+            
+    <label class="glo" style="margin: 5px 5px 0 0;">GLO 2</label>
+    <label class="glo" style="margin: 0 5px;">GLO 3</label>
+    <label class="glo" style="margin: 0 5px;">GLO 4</label>
+    <label class="glo" style="margin: 0 5px;">GLO 5</label>
+            
+            </label>
+            
+<label style="background: #151c55; width: 100%">Department Rubric (if applicable)&nbsp;<span class="flag2">Assessment</span><br>
+            
+    <label class="glo" style="margin: 5px 5px 0 0;">GLO 2</label>
+    <label class="glo" style="margin: 0 5px;">GLO 3</label>
+    <label class="glo" style="margin: 0 5px;">GLO 4</label>
+    <label class="glo" style="margin: 0 5px;">GLO 5</label>
+            </label>
+    <br>                 
+<label style="background: #151c55; width: 100%">Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span><br>
+            
+    <label class="glo" style="margin: 5px 5px 0 0;">GLO 2</label>
+    <label class="glo" style="margin: 0 5px;">GLO 3</label>
+    <label class="glo" style="margin: 0 5px;">GLO 4</label>
+    <label class="glo" style="margin: 0 5px;">GLO 5</label>
+            </label>
+    <br> 
+</p>
+    
+        
+        
+        <p class="col-sm-11 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 20px; left: 20px; z-index: 1;">
+       <b>Placement</b> (CCA)<br>
+            
+    <label style="background: #151c55; width: 100%">Reflection Journal&nbsp;<span class="flag2">Journal</span><br>
+            
+    <label class="glo" style="margin: 5px 5px 0 0;">GLO 2</label>
+    <label class="glo" style="margin: 0 5px;">GLO 3</label>
+    <label class="glo" style="margin: 0 5px;">GLO 4</label>
+    <label class="glo" style="margin: 0 5px;">GLO 5</label>
+            
+            </label>
+            
+<label style="background: #151c55; width: 100%">Department Rubric (if applicable)&nbsp;<span class="flag2">Assessment</span><br>
+            
+    <label class="glo" style="margin: 5px 5px 0 0;">GLO 2</label>
+    <label class="glo" style="margin: 0 5px;">GLO 3</label>
+    <label class="glo" style="margin: 0 5px;">GLO 4</label>
+    <label class="glo" style="margin: 0 5px;">GLO 5</label>
+            </label>
+    <br>                 
+<label style="background: #151c55; width: 100%">Transformative Learning Rubric&nbsp;<span class="flag2">Assessment</span><br>
+            
+    <label class="glo" style="margin: 5px 5px 0 0;">GLO 2</label>
+    <label class="glo" style="margin: 0 5px;">GLO 3</label>
+    <label class="glo" style="margin: 0 5px;">GLO 4</label>
+    <label class="glo" style="margin: 0 5px;">GLO 5</label>
+            </label>
+    <br> 
+</p>
+    
+    
+    </div>
+
+
+    
+    
+<div class="col-sm-12" style="position: relative; text-align: center">
+    
+    <div class="arrow-down" style="display: inline-block"></div>
+    
+    </div>
+    
+<div class="col-sm-12" style="position: relative; text-align: center">
+    <label style="background: #151c55; width: 100%">Final Co-curricular record<br>
+    
+        <label>GLO 2</label> <label style="background: #090c26;">Achievement level</label>  <br> 
+        
+        <label>GLO 3</label> <label style="background: #090c26;">Achievement level</label>  <br> 
+        
+        <label>GLO 4</label> <label style="background: #090c26;">Achievement level</label>  <br> 
+        
+        <label>GLO 5</label> <label style="background: #090c26;">Achievement level</label>  <br>  
+
+    </label> 
+    
+             </div>
+    
+
+    
+    <p><br><br><br><br>
+    <p>
+  At the end of their undergraduate years, students will have an aggregated assessment of all their co-curricular activities, reflected as achievement levels in accordance to the <b>SMU GLOs</b>.
+    <br><br>
+It is therefore necessary - when administering and planning for CCAs - to think about and address the <b>SMU GLOs</b>, which will be included in the reflection and assessment of students as they participate in the CCAs.
+    
+    </p><br>
+             
+            </div>
+    
+    
+    
+    </div>
+    
+    </div>
+
+
+<div class="wrapper">
+
+
+
+        <div class="section" style="padding: 70px 0; min-height: 0; background: #fff;  border: 5px solid #8A704C;" id="3step0">
+         <div class="container">
+
+                
+<div class="col-sm-12 register-card2" style="padding: 15px">
+    
+    <label style="width: 100%" class="btn btn-danger btn-fill" id="3step1btn">How to login to Anthology Portfolio</label>
+        <br>        <br>
+    <label style="width: 100%" class="btn btn-danger btn-fill" id="3step2btn">How to create a CCA/Student entry</label>
+       <br>        <br>
+        <label style="width: 100%" class="btn btn-danger btn-fill" id="3step3btn">Searching for a student entry</label>
+   
+           <br>        <br>
+        <label style="width: 100%" class="btn btn-danger btn-fill" id="3step4btn">Assessing a student</label>
+   
+               <br>        <br>
+        <label style="width: 100%" class="btn btn-danger btn-fill" id="3step5btn">Generating a report</label>
+   
+    
+             </div>
+                     
+
+             </div>
+    
+    </div>
+
+        
+         <div class="section" style="padding: 70px 0;" id="3step1">
+         <div class="container" style="text-align: center;">
+<div class="register-card col-sm-12">
+    
+    <label>How to login to Anthology Portfolio</label><br><br>
+             </div>
+             
+             
+<div class="col-sm-6 register-card2"><img src="assets/paper_img/login.png" width="100%"></div>
+             
+<div class="register-card col-sm-6">
+<label style="background: transparent; border: 2px solid #151c55; color: #151c55; width: 100%">If you are using your own staff account</label>
+    
+    
+    <ul style="text-align: left;">
+        <br>
+        
+        
+        <div onclick="window.open('https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465');" class="login2">LOGIN VIA SHIBBOLETH</div>
+        
+    <li style="list-style: none;">&nbsp;</li>        
+    <li>Enter your SMU credentials to log in.</li> <br>
+   
+     </ul> 
+    
+    <label style="background: transparent; border: 2px solid #151c55; color: #151c55; width: 100%">If you are using a shared department account</label>
+    
+    <ul style="text-align: left;">
+        <br>
+
+    <div onclick="window.open('https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465&showfields=1');" class="login3">LOGIN</div>
+        
+    <li style="list-style: none;">&nbsp;</li>  
+
+    <li>Enter the shared login ID and password provided by CCD. On your first login, you are required to set a new password.</li> <br>
+   
+     </ul> 
+        
+    <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465&showfields=1" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0;">login here</a>
+                   
+             </div>   
+             
+
+             </div></div>
+    
+        
+    
+    
+        <div class="section" style="padding: 70px 0;" id="3step2">
+         <div class="container">
+             
+                          
+<div class="col-sm-12 register-card" style="text-align: center;">   
+    
+    <label>How to create a CCA/Student entry</label><br><br>
+             
+             </div>   
+             
+             
+             
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step2.mp4" type="video/mp4">
+</video>
+             
+    
+    <p style="background: darkred; color: #fff; padding: 20px;"><b>Note:</b> Please ensure that only students that have matriculated <b>in 2021 and later</b> are included.</p>         
+             
+             </div>
+
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <ul style="position: relative">
+        <li><b>Before the activity</b>, inform students of the optional reflection that can be done. Students who choose to write a reflection can be better assessed and potentailly score more favourably on the Transformative Learning Rubric.</li><br>
+        
+        <li><b>After the activity</b>, fill in the <b>excel template</b> with the details relevant to the activity, and the list of students in the activity.
+        
+         <br> <br>    
+            <b><i>Note: Remember to indicate the SMU GLOs relevant to the activity. Students and staff will take reference and reflect or assess based on these GLOs.<br><br></i></b>
+        </li>    
+        
+
+        
+        <li>Send the completed template to CCD.<br><br>
+            <b><i>Note: CCD will take up to 1 week to create the Placements in Anthology, and you will be notified when the entries have been created.<br><br></i></b>
+        </li>
+        
+        <br>
+
+
+    
+     </ul> 
+    
+    <a href="non-cu%20activity%20template.xlsm" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0;">Excel template</a>
+             </div>
+             
+
+             </div>
+                
+
+            </div>
+        
+        <div class="section" style="padding: 70px 0;" id="3step3">
+         <div class="container">
+             
+                          
+<div class="col-sm-12 register-card" style="text-align: center;">   
+    
+    <label>Searching for a student entry</label><br><br>
+             
+             </div>   
+             
+             
+             
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/searching.mp4" type="video/mp4">
+</video>
+             
+                          
+    
+             
+             </div>
+
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <ul style="position: relative">
+        <li>Once the student activity entry has been created, it will appear as a <b>Placement</b> within Anthology.</li><br>
+        
+        
+<li>Go into Anthology Portfolio, click on Menu (on the top right of the screen)</li><br>        
+        
+        <li>Click on <b>Experiential Learning</b>, and there will be a list of students with ongoing internships/community service projects.</li><br>
+    
+        <li>Click on <b>Search Placements</b>, and there will be a series of filters that can be input to help you find the placement or series of placement(s).</li><br>        
+    </ul>
+
+    <label style="background: transparent; border: 2px solid #151c55; color: #151c55; width: 100%;"><b>CCD's suggested workflow:</b><br>Sort student placements by <b>end date</b>, as that would signal when the department assessments (if applicable) are due.</label>
+        
+    <ul style="position: relative">
+        <br>
+        <li>You can filter placements by Start Dates, Stakeholders, and even custom fields such as Admit Term.
+        <br>
+        <br>
+            <b>Note:</b> To filter by custom fields, click on the <b>Filter using custom fields</b> dropdown.          <br>
+        <br>
+            To include more/less fields in the Placements list (for example, <b>end date</b> is not included by default), click <b>Include These Columns in Report</b> and check the relevant fields (such as end-date).  
+        </li><br>
+        
+            
+        <li>Alternatively, there is also a <b>search</b> box on the right, where you can search for keywords such as student names within the placements.</li><br> 
+        <br>
+
+
+    
+     </ul> 
+    
+
+             </div>
+             
+
+             </div>
+                
+
+            </div>
+        
+       
+
+        <div class="section" style="padding: 70px 0;" id="3step4">
+         <div class="container">
+             
+                          
+<div class="col-sm-12 register-card" style="text-align: center;">   
+    
+    <label>Assessing a student</label><br><br>
+             
+             </div>   
+             
+             
+             
+<div class="col-sm-6 register-card2">
+    
+    <video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/viewing2.mp4" type="video/mp4">
+</video>
+             
+    
+    
+<p style="background: #151c55; color: #fff; padding: 5px 20px; font-weight: bold">Viewing reflection</p>        
+     
+             </div>
+
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <ul style="position: relative">
+        <li>After 1 month from the creation of the placement entry (and about 7 weeks from the end date of the activity), the student should have completed their <b>reflection</b>.
+        </li><br> 
+        
+        
+<li>Go into Anthology Portfolio, click on Menu (on the top right of the screen)</li><br>        
+        
+        <li>Click on <b>Experiential Learning</b>, and there will be a list of students with ongoing activities. Click on <b>View</b>.</li><br>
+        
+        
+    <li>If completed, the  <b>reflection</b> can be found inside the Placement entry, as a <span class="flag2">Journal</span> under the <b>Journal</b> heading.
+    
+        </li> 
+        
+    </ul>
+
+
+             </div>
+             
+      <div class="col-sm-12 register-card" style="border: 2px solid #151c55; padding: 20px; margin: 20px 0">          
+             
+<div class="col-sm-6 register-card2">
+
+
+<img src="assets/paper_img/rollup1.png" width="100%"> 
+<img src="assets/paper_img/rollup2.png" width="100%">   
+    
+<br>
+    
+             </div>
+
+<div class="register-card col-sm-6" style="position: relative">
+
+
+        
+          <label style="background: transparent; color: #151c55; width: 100%; text-align: left"><b>CCD's suggested workflow:</b><br>Click on <b>Download Roll-up</b>, download the entire student entry and you will only need to follow the next step to assess from the Placement entry.<br><br>The student's reflection will likewise be under the <b>Journal</b> header.</label>
+       
+    
+
+
+        
+    <a href="Sample_CCA.pdf" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0;">Sample roll-up</a>
+    
+
+    
+
+             </div>
+             
+             </div>         
+             
+             
+             
+<div class="col-sm-6 register-card2">
+    
+    <video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/assess2.mp4" type="video/mp4">
+</video>
+             
+<p style="background: #151c55; color: #fff; padding: 5px 20px; font-weight: bold">Assessing</p>        
+    
+            
+    
+       
+             
+             </div>
+
+<div class="register-card col-sm-6" style="position: relative">
+
+        <ul style="position: relative">
+             <br>
+        <li>Read the <b>Reflection Journal</b>, then click <b>Return</b>. This might bring you to the <b>Experiential Learning</b> page, so you will need to click on the Placement you were going to assess earlier, and then  <b>View</b>.
+
+    
+        </li><br>
+         
+        <li>Under the <b>Assessments</b> header, click on <b>&lt;Department&gt; Reflection Rubric</b> , and <b>Assess</b>.
+        </li><br>
+    
+    
+    
+    
+    </ul>
+        
+    
+
+    
+
+             </div>      
+
+             </div>
+                
+
+            </div>
+        
+
+    
+        
+        <div class="section" style="padding: 70px 0;" id="3step5">
+         <div class="container">
+             
+                          
+<div class="col-sm-12 register-card" style="text-align: center;">   
+    
+    <label>Generating a report</label><br><br>
+             
+             </div>   
+             
+             
+             
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/report.mp4" type="video/mp4">
+</video>
+             
+             
+             
+             </div>
+
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <ul style="position: relative">
+        <li>After the Placement has been closed, which can take up to 13 weeks from the end of the 
+activity, a report can be generated to show aggregated student information.
+        </li><br> 
+        
+<li>For example, information such as the student performance across GLOs, or other assessment information can be exported as a report.
+    </li> <br>      
+    <li>This information can be used to inform future projects or activities, to address areas that might be lacking in the co-curricular sphere.
+        </li><br>      
+        
+<li>Go into Anthology Portfolio, click on Menu (on the top right of the screen)</li><br>        
+        
+        <li>Click on <b>Reporting</b>, and the  <b>Student Results</b>. Click on <b>Result Search</b> and a dropdown with different fields will appear.</li><br>        
+        <li>Here, you may sort the student data depending on the report that you require. Students can be sorted by <b>Assessment Instruments</b>, <b>Outcome</b>, <b>Assessor</b> and other fields.</li><br>
+        
+    </ul>
+        
+    
+
+    
+
+             </div>
+             
+
+             </div>
+                
+
+            </div>
+        
+
+
+    
+    
+    </div>
+<!--    end modal -->
+
+    </div>
+   <!-- Modal 3 end --> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
+	<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+
+	<!--  Plugins -->
+	<script src="assets/js/ct-paper-checkbox.js"></script>
+	<script src="assets/js/ct-paper-radio.js"></script>
+	<script src="assets/js/bootstrap-select.js"></script>
+	<script src="assets/js/bootstrap-datepicker.js"></script>
+
+	<script src="assets/js/ct-paper.js"></script>
+    
+ 
+</html>
