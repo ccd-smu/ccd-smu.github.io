@@ -2164,8 +2164,10 @@ height: 90%;
     background-color: rgba(0, 0, 0, 0.45); }
 
   body {
-    position: relative;
-    font-size: 12px; }  
+    position: fixed;
+    font-size: 12px; 
+    width: 100%;
+    }  
     
     a.btn, .input {
     font-size: 12px; font-weight: bold; }
