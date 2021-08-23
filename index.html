@@ -345,13 +345,6 @@ transition: transform 5000ms linear;
 </div>
     </div>
           
-    <div class="alert alert-danger notif2" style="padding: 0">
-   
-                 <p>Make sure you activate your <b>Anthology Portfolio</b> account. Failure to do so might prevent your participation from being recorded.</p>
-<div class="round-time-bar">
-  <div></div>
-</div>
-    </div>
       
     <div class="pagelabel"  style="margin-bottom: 15px ">
     
@@ -1973,16 +1966,7 @@ element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         $("#input3").click(function() {
     const element = document.getElementById('step4');
 element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-               
-   $('.notif2').animate({'top' : '0'});       
-    $('.round-time-bar div').addClass('clicked');
-    $('.notif2').delay(5000).animate({'top' : '-100%'});
-    
-    setTimeout(function(){
-             $('.round-time-bar div').removeClass('clicked');}, 5500 );   
-              
-        
-        });     
+        });        
               
         $("#input4").click(function() {
     const element = document.getElementById('step5');
