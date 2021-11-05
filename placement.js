@@ -37,11 +37,11 @@ if (navigator.userAgent.match(/iPad|iPhone|iPod|Android|Windows Phone/i)) {
                 return -c/2 * (t*(t-2) - 1) + b;
             };
 
-            customScrollTo(($('#DataTables_Table_0').first().offset().top), 1000);
+            customScrollTo(($('#DataTables_Table_0').first().offset().top), 250);
 }else{
             $('html, body').animate({
                 scrollTop: ($('#DataTables_Table_0').first().offset().top)
-            }, 1000, function(){
+            }, 250, function(){
                 $('#DataTables_Table_0').clearQueue();
             });
 }   }, 1000);
