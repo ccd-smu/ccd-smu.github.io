@@ -5,7 +5,7 @@ setTimeout(function(){
 	$('.ckNotApplicable')[3].checked = true;
 	$('.txtScore:first option[value=Exposure]').attr('selected','selected');
 
- }, 1000);
+ }, 2000);
  
  
 var newdiv = document.createElement('div');
@@ -16,7 +16,7 @@ newdiv.style.width="200px";
 newdiv.style.height="auto";
 newdiv.style.position="absolute";
 newdiv.style.top="230px";
-newdiv.style.right="50px";
+newdiv.style.left="50px";
 newdiv.style.zIndex = "9999";
 newdiv.style.color = "#fff";
 newdiv.style.textAlign = "center";
