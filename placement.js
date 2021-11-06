@@ -52,6 +52,13 @@ if (navigator.userAgent.match(/iPad|iPhone|iPod|Android|Windows Phone/i)) {
   
         
 }, 4500);
+
+   setTimeout(function(){ 
+   	
+   	$('li a :contains('Assess')').trigger('click');
+  
+        
+}, 5000);
         
 
 return result;
