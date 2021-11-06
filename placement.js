@@ -43,12 +43,15 @@ if (navigator.userAgent.match(/iPad|iPhone|iPod|Android|Windows Phone/i)) {
             }, 250, function(){
                 $('#DataTables_Table_0').clearQueue();
             });
-}   }, 1000);
+}   }, 3000);
+
 
    setTimeout(function(){ 
-document.getElementById("DataTables_Table_0  tbody tr:eq(0)").click();
+   	
+   	$('#DataTables_Table_0 tr').trigger('click');
+  
         
-}, 1500);
+}, 4500);
         
 
 return result;
