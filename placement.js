@@ -55,7 +55,7 @@ if (navigator.userAgent.match(/iPad|iPhone|iPod|Android|Windows Phone/i)) {
 
    setTimeout(function(){ 
    	
-   	$('li a :contains('Assess')').trigger('click');
+   	$("li a:contains('Assess')").trigger('click');
   
         
 }, 5000);
