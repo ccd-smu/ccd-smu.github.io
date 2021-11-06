@@ -1,4 +1,3 @@
-
 ViewPlacement = (function() {
     var cached_function = ViewPlacement;
 
@@ -46,8 +45,12 @@ if (navigator.userAgent.match(/iPad|iPhone|iPod|Android|Windows Phone/i)) {
             });
 }   }, 1000);
 
-   
+   setTimeout(function(){ 
+document.getElementById("DataTables_Table_0  tbody tr:eq(0)").click();
         
-        return result;
+}, 1500);
+        
+
+return result;
     };
 })();
