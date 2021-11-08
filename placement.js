@@ -23,7 +23,7 @@ setTimeout(function(){
  var href = $('a:contains(Download Roll-up)').attr('href');
  href = href.slice(-11);
 
-const li = $('ul li');
+const li = $('li');
        
 for (let i = 0; i < li.length; i++) {
   if(li[i].innerText === 'Force Completion')
