@@ -20,9 +20,17 @@ GetFieldplacementActions = (function() {
 
 
 setTimeout(function(){ 
-                var href = $('a:contains(Download Roll-up)').attr('href');
-                 href = href.slice(-11);
-       $("ul.popover-menu", $popover).prepend("<li role='none'><a role='menuitem' tabindex='-1' style='position:relative;z-index:2004; background: #151c55' href=\"javascript:ViewPlacement('" + href + ';Assess()">' + "Assess (Workshop)" + "<\/a><\/li>");
+ var href = $('a:contains(Download Roll-up)').attr('href');
+ href = href.slice(-11);
+
+const li = $('ul li');
+       
+for (let i = 0; i < li.length; i++) {
+  if(li[i].innerText === 'Force Completion')
+  {
+      $("ul.popover-menu", $popover).prepend("<li role='none'><a role='menuitem' tabindex='-1' style='position:relative;z-index:2004; background: #151c55' href=\"javascript:ViewPlacement('" + href + ';Assess()">' + "Assess (Workshop)" + "<\/a><\/li>");
+};};
+ 
 }, 500);
 
 
