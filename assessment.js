@@ -5,9 +5,28 @@ setTimeout(function(){
 	$('.ckNotApplicable')[3].checked = true;
 	$('.txtScore:first option[value=Exposure]').attr('selected','selected');
 
- }, 2000);
+ }, 1500);
+ 
+
+ SaveStudentAssessment = (function() {
+    var cached_function = SaveStudentAssessment;
+    return function() {
+        // your code
+
+        var result = cached_function.apply(this, arguments); // use .apply() to call it
+   setTimeout(function(){ 
+   	location.href = 'https://shib.chalkandwire.com/ep2_smu/FieldPlacementList.aspx?cus=465';
+}, 1000);
+        
+
+        
+
+return result;
+    };
+})();
  
  
+/*
 var newdiv = document.createElement('div');
 newdiv.id="blabal";
 newdiv.style.background = "red";
@@ -26,7 +45,7 @@ document.body.appendChild(newdiv);
 
 $("#blabal").click(function(){
 location.href = 'https://shib.chalkandwire.com/ep2_smu/FieldPlacementList.aspx?cus=465';
+});*/
+
+
 });
-   });
-
-

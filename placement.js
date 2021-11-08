@@ -15,7 +15,7 @@ var currentId =$('#DataTables_Table_0 tbody tr').attr('id');
 goNav('my_assessments','allocationId='+currentId)
 
         
-}, 500);
+}, 100);
         
 }, 1000);
         
