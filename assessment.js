@@ -26,7 +26,6 @@ return result;
 })();
  
  
-/*
 var newdiv = document.createElement('div');
 newdiv.id="blabal";
 newdiv.style.background = "red";
@@ -45,7 +44,7 @@ document.body.appendChild(newdiv);
 
 $("#blabal").click(function(){
 location.href = 'https://shib.chalkandwire.com/ep2_smu/FieldPlacementList.aspx?cus=465';
-});*/
+});
 
 
 });
