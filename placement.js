@@ -1,9 +1,9 @@
 Assess = (function() {
 	  setTimeout(function() {
 var currentId =$('#DataTables_Table_0 tbody tr').attr('id'); 
- currentId = currentId.slice(-4);
+ currentId = currentId.replace(/[^0-9\.]/g, '');
 goNav('my_assessments','allocationId='+currentId)
-
+alert(currentId)
     }, 1000);
 
     });
