@@ -1,14 +1,6 @@
 $( document ).ready(function() {
-setTimeout(function(){
-	$('.ckNotApplicable')[1].checked = true;
-	$('.ckNotApplicable')[2].checked = true;
-	$('.ckNotApplicable')[3].checked = true;
-	$('.txtScore:first option[value=Exposure]').attr('selected','selected');
-
- }, 1500);
- 
-
- SaveStudentAssessment = (function() {
+	
+	 SaveStudentAssessment = (function() {
     var cached_function = SaveStudentAssessment;
     return function() {
         // your code
@@ -17,34 +9,56 @@ setTimeout(function(){
    setTimeout(function(){ 
    	location.href = 'https://shib.chalkandwire.com/ep2_smu/FieldPlacementList.aspx?cus=465';
 }, 1000);
-        
-
-        
 
 return result;
     };
 })();
- 
- 
-var newdiv = document.createElement('div');
-newdiv.id="blabal";
-newdiv.style.background = "red";
-newdiv.style.padding="13px 0";
-newdiv.style.width="200px";
-newdiv.style.height="auto";
-newdiv.style.position="absolute";
-newdiv.style.bottom="0";
-newdiv.style.left="0px";
-newdiv.style.zIndex = "9999";
-newdiv.style.color = "#fff";
-newdiv.style.textAlign = "center";
-newdiv.style.cursor = "pointer";
-newdiv.innerHTML = "Back to placements";
-document.body.appendChild(newdiv);
 
-$("#blabal").click(function(){
-location.href = 'https://shib.chalkandwire.com/ep2_smu/FieldPlacementList.aspx?cus=465';
+var GLOnum2 = localStorage.getItem('GLOnum');
+
+if(GLOnum2 == null){  }
+else {
+	
+var GLOnum = localStorage.getItem('GLOnum');
+
+var idid = localStorage.getItem('idid');
+
+if ($('#lblOwner:contains("' + idid + '")'))
+{
+setTimeout(function(){
+$('.ckNotApplicable').attr('checked', true);
+}, 1000);
+	
+} else {alert("Student mismatch")};
+
+
+if (GLOnum.includes("5"))
+{setTimeout(function(){
+	$('.txtScore:eq(3) option[value=Exposure]').attr('selected','selected');
+	$('.ckNotApplicable:eq(3)').attr('checked', false);
+}, 1500);};
+
+if (GLOnum.includes("4"))
+{setTimeout(function(){
+	$('.txtScore:eq(2) option[value=Exposure]').attr('selected','selected');
+	$('.ckNotApplicable:eq(2)').attr('checked', false);
+}, 1500);};
+	
+if (GLOnum.includes("3"))
+{setTimeout(function(){
+	$('.txtScore:eq(1) option[value=Exposure]').attr('selected','selected');
+	$('.ckNotApplicable:eq(1)').attr('checked', false);
+}, 1500);};
+	
+if (GLOnum.includes("2"))
+{setTimeout(function(){
+	$('.txtScore:eq(0) option[value=Exposure]').attr('selected','selected');
+	$('.ckNotApplicable:eq(0)').attr('checked', false);
+}, 1500);};
+
+
+
+};
+
 });
 
-
-});
