@@ -180,7 +180,7 @@ Assess1CU = (function() {
    //reflection//
    if(reflection  === 'Complete')
    {reflectwindow.style.background = "green"; 
-   reflectwindow.innerHTML = "Reflection complete";
+   reflectwindow.innerHTML = "Reflection complete (click to view)";
    reflectwindow.style.cursor = "pointer";
   status.appendChild(reflectwindow);} else 
   {reflectwindow.innerHTML = "Reflection incomplete";
@@ -226,6 +226,7 @@ Assess1CU = (function() {
           
           $("tr:contains('Post-activity Reflection') td").trigger('click');
     $('li a:contains("Delete Survey")').closest('li').remove(); 
+    $('li a:contains("Edit")').closest('li').remove(); 
     
     
         setTimeout(function(){ 
