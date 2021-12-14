@@ -1,7 +1,5 @@
 
 
-  $('#frmUpdate2').remove();
-  
   var what = $('#tblQuestion610').text().split(' ').length;
   
   var sowhat = $('#tblQuestion611').text().split(' ').length;
@@ -24,7 +22,6 @@
 
 
 window.onload = function() {
-
     var status = document.createElement('div');
     status.id="status";
     status.style.background = "black";
@@ -43,24 +40,63 @@ window.onload = function() {
     wordcount.style.width="200px";
     wordcount.innerHTML = what+sowhat+nowwhat + " words";
     
-    status.appendChild(wordcount);   
     
     var name1 = document.createElement('div');
     name1.style.padding="13px 0";
     name1.style.width="200px";
     name1.innerHTML = studentname;
     
-    status.appendChild(name1); 
     
     var name2 = document.createElement('div');
     name2.style.padding="13px 0";
     name2.style.width="200px";
     name2.innerHTML = placementname;
     
-    status.appendChild(name2);
+    
+	var GLOS = document.createElement('div');
+    GLOS.style.padding="13px 0";
+    GLOS.style.width="200px";
+    
+	if($("input:checkbox:eq(0)").prop('checked') == true || $("input:checkbox:eq(1)").prop('checked') == true){
+console.log("GLO2");
+var GLO2 = "2 ";
+}
+
+
+
+	if($("input:checkbox:eq(2)").prop('checked') == true || $("input:checkbox:eq(3)").prop('checked') == true){
+console.log("GLO3");
+var GLO3 = "3 ";
+}
+
+
+
+	if($("input:checkbox:eq(4)").prop('checked') == true || $("input:checkbox:eq(5)").prop('checked') == true || $("input:checkbox:eq(6)").prop('checked') == true){
+console.log("GLO4");
+var GLO4 = "4 ";
+}
+
+	if($("input:checkbox:eq(7)").prop('checked') == true || $("input:checkbox:eq(8)").prop('checked') == true || $("input:checkbox:eq(9)").prop('checked') == true){
+console.log("GLO5");
+var GLO5 = "5";
+}
+
+
+    GLOS.innerHTML = "GLO "+ GLO2 + GLO3 + GLO4 + GLO5;
+   status.appendChild(wordcount); 
+   status.appendChild(GLOS);
+   status.appendChild(name1);
+   status.appendChild(name2);
+   
+   
+   setTimeout(function(){ 
+   $('#frmUpdate2').remove();
+   }, 1000);
+
+  
 };
     
-  
+
   
   $('#lnkReturn').click(function() {
 
