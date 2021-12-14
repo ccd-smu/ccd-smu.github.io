@@ -1,20 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>jQuery Loading Local JSON File</title>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-</head> 
+<html>
+    <head>
+        <script language="JavaScript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+    </head>
 <body>
-    <script>
-    $(document).ready(function(){
-        $.getJSON("/test.json", function(data){
-            document.write(data.candidate + "<br>"); // Prints: Harry
-            document.write(data.age); // Prints: 14
-        }).fail(function(){
-            document.write("An error has occurred.");
-        });
-    });
-    </script> 
+
+<form id="jsonFile" name="jsonFile" enctype="multipart/form-data" method="post">
+
+  <fieldset>
+    <h2>Json File</h2>
+     <input type='file' id='fileinput'>
+     <input type='button' id='btnLoad' value='Load' onclick='loadFile();'>   
+
+  </fieldset>
+</form>
+
+<table id="TableCont" border="1">
+</table>
+
+</div>
+<script type="text/javascript">
+
+  function loadFile() {
+    var input, file, fr;
+
+    if (typeof window.FileReader !== 'function') {
+      alert("The file API isn't supported on this browser yet.");
+      return;
+    }
+
+    input = document.getElementById('fileinput');
+    if (!input) {
+      alert("Um, couldn't find the fileinput element.");
+    }
+    else if (!input.files) {
+      alert("This browser doesn't seem to support the `files` property of file inputs.");
+    }
+    else if (!input.files[0]) {
+      alert("Please select a file before clicking 'Load'");
+    }
+    else {
+      file = input.files[0];
+      fr = new FileReader();
+      fr.onload = receivedText;
+      fr.readAsText(file);
+    }
+
+    function receivedText(e) {
+      let lines = e.target.result;
+      var newArr = JSON.parse(lines); 
+console.log(newArr.custom_fields.name);
+
+
+
+  }};
+
+
+</script>
+
 </body>
 </html>
