@@ -327,7 +327,7 @@ AssessOSL = (function() {
              {alert("Not ready to grade ("+days+" days)");
              location.href = 'https://shib.chalkandwire.com/ep2_smu/FieldPlacementList.aspx?cus=465';
              } else 
-             {        var GLO = $('.keep-together h3:contains("GLO")').siblings().html().replace(/[^0-9\.]/g, '');
+             {var GLO = $('.keep-together h3:contains("GLO")').siblings().html().replace(/[^0-9\.]/g, '');
              localStorage.setItem('GLOnum', GLO);
              
              var idid = $('span.name:eq(1)').text().replace('_', '');
@@ -338,6 +338,8 @@ AssessOSL = (function() {
               currentId = currentId2.replace(/[^0-9\.]/g, '');
              
              var reflectionjournal = $('.journals-list tr td:nth-last-child(2)').text();
+
+             console.log(reflectionjournal);
      
      
              if(reflectionjournal == 0)
