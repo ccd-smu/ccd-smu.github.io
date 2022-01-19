@@ -320,10 +320,18 @@ AssessOSL = (function() {
           var days = Math.round(Math.abs(days));
           
           if (enddate > today) 
-          {var days = -days;};
-          
+          {var days = -days;
+          var text2 = $('span.flag.tag').text();
+          };
+
+          //nested if else (not workshop,internship or CSP), then check date
+            
+          if (text2 == 'Workshop' || text2 == 'Internship' || text2 == 'Community Service')
+          {alert("Not a CCA");
+             location.href = 'https://shib.chalkandwire.com/ep2_smu/FieldPlacementList.aspx?cus=465';
+             } else {
              //enddate//
-             if(days < 30)
+             if (days < 30)
              {alert("Not ready to grade ("+days+" days)");
              location.href = 'https://shib.chalkandwire.com/ep2_smu/FieldPlacementList.aspx?cus=465';
              } else 
@@ -351,7 +359,7 @@ AssessOSL = (function() {
           
           };
 
-                 
+        };    
 
       }, 1000);
       
