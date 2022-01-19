@@ -346,8 +346,6 @@ AssessOSL = (function() {
               currentId = currentId2.replace(/[^0-9\.]/g, '');
              
              var reflectionjournal = $('.journals-list tr td:nth-last-child(2)').text();
-
-             console.log(reflectionjournal);
      
      
              if(reflectionjournal == 0)

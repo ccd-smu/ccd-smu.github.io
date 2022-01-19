@@ -19,7 +19,7 @@ return result;
 
 var GLOnum2 = localStorage.getItem('GLOnum');
 
-if(GLOnum2){  }
+if(GLOnum2 = null){  }
 else {
    
 var GLOnum = localStorage.getItem('GLOnum');
