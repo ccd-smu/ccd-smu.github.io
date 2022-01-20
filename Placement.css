@@ -1,20 +1,32 @@
-.closing
-{background-image: url(https://shib.chalkandwire.com/ep2_smu/images/ui/ui-chevrons.png);
-    background-position-x: 0px;
-    background-position-y: -32px;
-    background-size: initial;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: rgb(68, 65, 65);
-    border: 0;
-    color: #fff;
-    display: block;
-    font-size: 1.8rem;
-    line-height: 1.78;
-    overflow: hidden;
-    text-indent: -500px;
-    width: 32px;
-}
+#CU:hover, #workshop:hover,#OSL:hover {
+    background: #151c55;
+    cursor: pointer;
+    opacity: 1;
+    }
+    
+    #CU, #OSL, #workshop
+    {
+        background: black;
+        opacity: 0.7;
+    }
+    
+    .closing
+    {background-image: url(https://shib.chalkandwire.com/ep2_smu/images/ui/ui-chevrons.png);
+        background-position-x: 0px;
+        background-position-y: -32px;
+        background-size: initial;
+        background-repeat-x: no-repeat;
+        background-repeat-y: no-repeat;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: rgb(68, 65, 65);
+        border: 0;
+        color: #fff;
+        display: block;
+        font-size: 1.8rem;
+        line-height: 1.78;
+        overflow: hidden;
+        text-indent: -500px;
+        width: 32px;
+    }
