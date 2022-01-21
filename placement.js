@@ -46,7 +46,7 @@ if(accountname === 'CCD cocurriculum'){
  for (let i = 0; i < li.length; i++) {
    if(li[i].innerText === 'Force Completion')
    {
-     $("ul.popover-menu", $popover).prepend("<li role='none'><a role='menuitem' tabindex='-1' style='position:relative;z-index:2004; background: red' href=#>" + "Login to CCD to Assess" + "<\/a><\/li>");
+     $("ul.popover-menu", $popover).prepend("<li role='none'><a role='menuitem' tabindex='-1' style='position:relative;z-index:2004; background: red' href='https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465&showfields=1'>" + "Login to CCD to Assess" + "<\/a><\/li>");
  };};
   
   
