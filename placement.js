@@ -2,16 +2,19 @@ function Assess() {
   button.appendChild(CU); 
   button.appendChild(workshop);
   button.appendChild(OSL);
-}
-
-
+};
+ 
+ 
 GetFieldplacementActions = (function() {
      var cached_function = GetFieldplacementActions;
      return function() {
          // your code
          var result = cached_function.apply(this, arguments); // use .apply() to call it
  
+   var accountname = $(".bd .name").text();
  
+if(accountname === 'CCD cocurriculum'){
+
  setTimeout(function(){ 
 
   
@@ -30,6 +33,28 @@ GetFieldplacementActions = (function() {
   
   
  }, 500);
+ 
+} else {
+ setTimeout(function(){ 
+
+  
+  var href = $('a:contains(Download Roll-up)').attr('href').replace(/[^0-9\\.]+/g, '');
+ 
+ 
+ const li = $('li');
+        
+ for (let i = 0; i < li.length; i++) {
+   if(li[i].innerText === 'Force Completion')
+   {
+     $("ul.popover-menu", $popover).prepend("<li role='none'><a role='menuitem' tabindex='-1' style='position:relative;z-index:2004; background: red' href='https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465&showfields=1'>" + "Login to CCD to Assess" + "<\/a><\/li>");
+ };};
+  
+  
+  
+  
+ }, 500);
+ 
+}
  
  
  return result;
@@ -71,7 +96,13 @@ GetFieldplacementActions = (function() {
    OSL.id= "OSL"
    OSL.style.padding="13px 0";
    OSL.style.width="200px";
-   OSL.innerHTML = "OSL";
+   OSL.innerHTML = "OSL";    
+   
+   var accname = document.createElement('div');
+   accname.id= "accname"
+   accname.style.padding="13px 0";
+   accname.style.width="200px";
+   accname.innerHTML = "You are not in the CCD account!";
    
 CU.onclick = function(){
   var text2 = $('span.flag.tag').text();
