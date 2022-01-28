@@ -64,8 +64,7 @@ if(accountname === 'CCD cocurriculum'){
  
    var studentname = localStorage.getItem('studentname');
    var placementname = localStorage.getItem('placementname');
-   
-   
+
    var button = document.createElement('div');
    button.id="button";
    button.style.background = "transparent";
@@ -178,35 +177,22 @@ CU.onclick = function(){
  
  var status = document.createElement('div');
  status.id="status";
- status.style.background = "red";
- status.style.height="auto";
- status.style.position="fixed";
- status.style.top="30%";
- status.style.right="0px";
- status.style.zIndex = "9999";
- status.style.color = "#fff";
- status.style.textAlign = "center";
  
  
  var appraisalwindow = document.createElement('div');
- appraisalwindow.style.padding="13px 0";
- appraisalwindow.style.width="200px";
+ appraisalwindow.id="appraisalwindow";
+
  
  var assesswindow = document.createElement('div');
- assesswindow.style.padding="13px 0";
- assesswindow.style.width="200px";
- 
+ assesswindow.id="assesswindow";
+
  var appointwindow = document.createElement('div');
- appointwindow.style.padding="13px 0";
- appointwindow.style.width="200px";
+ appointwindow.id="appointwindow";
  
  var datewindow = document.createElement('div');
- datewindow.style.padding="13px 0";
- datewindow.style.width="200px";
- 
+ datewindow.id="datewindow";
+
  var reflectwindow = document.createElement('div');
- reflectwindow.style.padding="13px 0";
- reflectwindow.style.width="200px";
  reflectwindow.id="reflection";
  
  //enddate//
@@ -265,7 +251,7 @@ CU.onclick = function(){
      
      setTimeout(function(){
          
-         $("tr:contains('Post-activity Reflection') td").trigger('click');
+  $("tr:contains('Post-activity Reflection') td").trigger('click');
    $('li a:contains("Delete Survey")').closest('li').remove(); 
    $('li a:contains("Edit")').closest('li').remove(); 
    
@@ -306,6 +292,8 @@ CU.onclick = function(){
     alert("Not a CSP or Internship");
          }
  };
+
+ 
 workshop.onclick = function(){
      
  $('.panelviewerback').addClass( $('.closing').attr('class') );
