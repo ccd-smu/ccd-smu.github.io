@@ -105,8 +105,7 @@ if(accountname === 'CCD cocurriculum'){
    
 CU.onclick = function(){
   var text2 = $('span.flag.tag').text();
-    if (text2 == 'Internship' || text2 == 'Community Service')
-         {
+    if (text2 == 'Internship' || text2 == 'Community Service'){
            
  $('.panelviewerback').addClass( $('.closing').attr('class') );
  
@@ -152,14 +151,23 @@ CU.onclick = function(){
  var appraisal3 = $('.keep-together h3:contains("Appraisal GLO3")').siblings().html();
  var appraisal4 = $('.keep-together h3:contains("Appraisal GLO4")').siblings().html();
  var appraisal5 = $('.keep-together h3:contains("Appraisal GLO5")').siblings().html();
- 
+
+ localStorage.setItem('appraisal', appraisal);
+ localStorage.setItem('appraisal1', appraisal1);
+ localStorage.setItem('appraisal2', appraisal2);
+ localStorage.setItem('appraisal3', appraisal3);
+ localStorage.setItem('appraisal4', appraisal4);
+ localStorage.setItem('appraisal5', appraisal5);
+
  var assessed = $("tr:contains('Assessment') td:last-child").html();
+ localStorage.setItem('assessed', assessed);
  
  var appointment = $('.keep-together h3:contains("Appointment")').siblings().html();
  
  var reflection = $("tr:contains('Post-activity Reflection') td:nth-last-child(2) span").html();
  
  var enddate3 = $('p.picker-selection:contains("0 Hours")').prev("p").html();
+ 
  
  
  var enddate2 = enddate3.slice(-10);
@@ -181,7 +189,7 @@ CU.onclick = function(){
  
  var appraisalwindow = document.createElement('div');
  appraisalwindow.id="appraisalwindow";
-
+ 
  
  var assesswindow = document.createElement('div');
  assesswindow.id="assesswindow";
@@ -252,20 +260,20 @@ CU.onclick = function(){
      setTimeout(function(){
          
   $("tr:contains('Post-activity Reflection') td").trigger('click');
-   $('li a:contains("Delete Survey")').closest('li').remove(); 
-   $('li a:contains("Edit")').closest('li').remove(); 
    
    
        setTimeout(function(){ 
            
-   var reflectionalert = $('.popover-inner li a:contains("Edit")').attr('href').replace(/[^0-9=]/g, "");
+  var reflectionalert = $('li a:contains("Edit")').attr('href').replace(/[^0-9=]/g, "");
  
   reflectionalertarray = reflectionalert.split('=')
  
   var topicid = reflectionalertarray[1]; 
  var departid = reflectionalertarray[2];
   var allocateid = reflectionalertarray[3]; 
-  
+
+console.log(reflectionalert);
+
  console.log(topicid + " "+ departid + " " + allocateid);
  
  
@@ -292,7 +300,6 @@ CU.onclick = function(){
     alert("Not a CSP or Internship");
          }
  };
-
  
 workshop.onclick = function(){
      

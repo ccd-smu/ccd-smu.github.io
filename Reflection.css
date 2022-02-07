@@ -1,0 +1,60 @@
+#status{
+	background: black;
+	opacity: 0.9;
+	height: auto;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 9999;
+	color: #fff;
+	text-align: center;
+}
+
+#wordcount, #name1, #name2, #GLOS, #approval, #copy1, #send1{
+	padding: 13px 0;
+	width: 200px;
+}
+#copy1, #send1{
+background: blue;
+}
+#reflection1{
+	padding: 13px 0;
+	width: auto;
+}
+
+
+#copy1:hover, #send1:hover {
+background: green;
+}
+
+
+#overall, #deptassess, #recommend{
+  float: left;
+  width: 33.33%;
+}
+
+#detail1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#approval, #send1, #copy1{
+	cursor: pointer;
+}
+
+#approval:hover{
+	background: green;
+}
+
+#detail1 {
+    width: calc(100% - 40px);
+	padding: 20px;
+	z-index: 9990;
+	color: #000;
+	text-align: left;
+	top: 0;
+	left: 0;
+	position: absolute;
+	background: #eaeaea;
+}
