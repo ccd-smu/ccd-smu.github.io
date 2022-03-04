@@ -1,5 +1,26 @@
 $( document ).ready(function() {
 	
+var button = document.createElement('div');
+   button.id="button";
+   button.style.background = "blue";
+   button.style.height="auto";
+   button.style.width="200px";
+   button.style.position="fixed";
+   button.style.bottom="0";
+   button.style.right="0";
+   button.style.zIndex = "9999";
+   button.style.color = "#fff";
+   button.style.textAlign = "center";
+   button.style.padding = "13px 0";
+   button.style.cursor = "pointer";
+   button.innerHTML = "back to placements";
+   document.body.appendChild(button);
+	  $(document).on('click', '#button', function() {  
+	  		  location.href = 'https://shib.chalkandwire.com/ep2_smu/FieldPlacementList.aspx?cus=465';
+	  	
+	  	});
+	
+	
 	SaveStudentAssessment = (function() {
    var cached_function = SaveStudentAssessment;
    return function() {
@@ -7,10 +28,7 @@ $( document ).ready(function() {
 
 	   var result = cached_function.apply(this, arguments); // use .apply() to call it
   setTimeout(function(){ 
-	  location.href = 'https://shib.chalkandwire.com/ep2_smu/FieldPlacementList.aspx?cus=465';
 	  localStorage.setItem('GLOnum', null);
-	  localStorage.setItem('idid', null);
-
 }, 1000);
 
 return result;

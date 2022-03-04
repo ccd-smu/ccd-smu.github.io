@@ -20,14 +20,38 @@
     color: #fff;
     text-align: center;
     }
-#appraisalwindow, #assesswindow, #appointwindow, #datewindow, #reflectwindow{
+#appraisalwindow, #assesswindow, #appointwindow, #datewindow, #reflectwindow, #reflection, #assess1{
     padding: 13px 0;
     width: 200px;
 }
 
+
+    #laststudent{
+    background: red;
+    height: auto;
+    position: fixed;
+    top: 30%;
+    right: 0;
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+    padding: 13px 0;
+    width: 200px;
+}
+
+
+#assess1{
+	background: green;
+	cursor: pointer;
+}
+
+
+#assess1:hover{
+	background: #006400;
+}
+
     
-    .closing
-    {background-image: url(https://shib.chalkandwire.com/ep2_smu/images/ui/ui-chevrons.png);
+.closing{background-image: url(https://shib.chalkandwire.com/ep2_smu/images/ui/ui-chevrons.png);
         background-position-x: 0px;
         background-position-y: -32px;
         background-size: initial;

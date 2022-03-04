@@ -3,7 +3,7 @@ function Assess() {
   button.appendChild(workshop);
   button.appendChild(OSL);
 };
- 
+
  
 GetFieldplacementActions = (function() {
      var cached_function = GetFieldplacementActions;
@@ -19,7 +19,6 @@ if(accountname === 'CCD cocurriculum'){
 
   
   var href = $('a:contains(Download Roll-up)').attr('href').replace(/[^0-9\\.]+/g, '');
- 
  
  const li = $('li');
         
@@ -102,6 +101,8 @@ if(accountname === 'CCD cocurriculum'){
    accname.style.padding="13px 0";
    accname.style.width="200px";
    accname.innerHTML = "You are not in the CCD account!";
+   
+   
    
 CU.onclick = function(){
   var text2 = $('span.flag.tag').text();
@@ -251,20 +252,32 @@ CU.onclick = function(){
   assesswindow.style.background = "green";
     status.appendChild(assesswindow);
   }; 
+  
+var assess1 = document.createElement('div');
+assess1.id="assess1";
+assess1.innerHTML = "Assess (after approval)";
+  
  
   document.body.appendChild(status);
+  
+   var idid = $('span.name:eq(1)').text().replace('_', '');
+
+localStorage.setItem('idid', idid);
+
+
+ $('th:contains(idid)').css('background-color', 'red');
+
  
  $('#reflection').click(function(){
-     
-     
+
      setTimeout(function(){
          
   $("tr:contains('Post-activity Reflection') td").trigger('click');
    
    
        setTimeout(function(){ 
-           
-  var reflectionalert = $('li a:contains("Edit")').attr('href').replace(/[^0-9=]/g, "");
+       
+  var reflectionalert = $('li a:contains("Edit")').attr('href').replace(/[^0-9=]/g, "");	
  
   reflectionalertarray = reflectionalert.split('=')
  
@@ -272,30 +285,36 @@ CU.onclick = function(){
  var departid = reflectionalertarray[2];
   var allocateid = reflectionalertarray[3]; 
 
-console.log(reflectionalert);
-
- console.log(topicid + " "+ departid + " " + allocateid);
- 
  
   // set click callback
  $('.popover-inner li a:contains("Edit")').click(function() {
- 
  location.href = "https://shib.chalkandwire.com/ep2_smu/DemographicsRun.aspx?cus=465&TopicId="+topicid+"&deptID="+departid+"&AllocationID="+allocateid;
- 
- 
  });
  // trigger click callback
- $('.popover-inner li a:contains("Edit")').click();
+
+//testings
+ window.open("https://shib.chalkandwire.com/ep2_smu/DemographicsRun.aspx?cus=465&TopicId="+topicid+"&deptID="+departid+"&AllocationID="+allocateid, "_blank");
+  var currentId2 =$('#DataTables_Table_0 tbody tr').attr('id'); 
+  currentId = currentId2.replace(/[^0-9\.]/g, '');
+   localStorage.setItem('currentId', currentId);
   
      }, 1000);
    
-   
+   status.appendChild(assess1);
          
      }, 1000);
      
-     
  
  });
+ 
+ 
+ $(document).on('click', '#assess1', function() {
+
+ var GLO =  localStorage.getItem('GLOnum');
+ goNav('my_assessments','allocationId='+currentId);
+  });
+ 
+ 
          } else {
     alert("Not a CSP or Internship");
          }
@@ -365,6 +384,7 @@ workshop.onclick = function(){
 
 
  };
+
 OSL.onclick = function(){
          
      $('.panelviewerback').addClass( $('.closing').attr('class') );
@@ -421,12 +441,12 @@ OSL.onclick = function(){
          
          if (enddate > today) 
          {var days = -days;
-         var text2 = $('span.flag.tag').text();
+         var text3 = $('span.flag.tag').text();
          };
 
          //nested if else (not workshop,internship or CSP), then check date
            
-         if (text2 == 'Workshop' || text2 == 'Internship' || text2 == 'Community Service')
+         if (text3 == 'Workshop' || text3 == 'Internship' || text3 == 'Community Service')
          {alert("Not a CCA");
             } else {
             //enddate//
@@ -458,5 +478,12 @@ OSL.onclick = function(){
        };    
 
      };
+ 
+var vtxt = localStorage.getItem('idid');
+alert(vtxt);
+if (vtxt == null) {} else {
+$("th:contains('" + vtxt + "')").css({"backgroundColor": "black", "color": "white"});
 
-
+ var laststudent = document.createElement('div');
+ laststudent.id="laststudent";
+};
