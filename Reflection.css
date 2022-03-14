@@ -23,7 +23,7 @@ background: blue;
 }
 
 
-#copy1:hover, #send1:hover {
+#copy1:hover, #send1:hover, #assess1:hover {
 background: green;
 }
 
@@ -39,7 +39,7 @@ background: green;
   clear: both;
 }
 
-#approval, #send1, #copy1{
+#approval, #send1, #copy1, #assess1{
 	cursor: pointer;
 }
 

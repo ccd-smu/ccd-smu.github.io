@@ -106,7 +106,10 @@ if(accountname === 'CCD cocurriculum'){
    
 CU.onclick = function(){
   var text2 = $('span.flag.tag').text();
-    if (text2 == 'Internship' || text2 == 'Community Service'){
+  console.log(text2);
+
+  
+    if (text2 == 'Internship' || text2 == 'InternshipInternship' || text2 == 'Community Service' || text2 == 'Community ServiceCommunity Service'){
            
  $('.panelviewerback').addClass( $('.closing').attr('class') );
  
@@ -159,6 +162,7 @@ CU.onclick = function(){
  localStorage.setItem('appraisal3', appraisal3);
  localStorage.setItem('appraisal4', appraisal4);
  localStorage.setItem('appraisal5', appraisal5);
+
 
  var assessed = $("tr:contains('Assessment') td:last-child").html();
  localStorage.setItem('assessed', assessed);
@@ -294,7 +298,7 @@ localStorage.setItem('idid', idid);
 
 //testings
  window.open("https://shib.chalkandwire.com/ep2_smu/DemographicsRun.aspx?cus=465&TopicId="+topicid+"&deptID="+departid+"&AllocationID="+allocateid, "_blank");
-  var currentId2 =$('#DataTables_Table_0 tbody tr').attr('id'); 
+  var currentId2 =$('#DataTables_Table_0 tbody tr:has(td:contains("CCD"))').attr('id'); 
   currentId = currentId2.replace(/[^0-9\.]/g, '');
    localStorage.setItem('currentId', currentId);
   
@@ -372,9 +376,10 @@ workshop.onclick = function(){
   currentId = currentId2.replace(/[^0-9\.]/g, '');
  
  var text = $('span.flag.tag').text();
- var comparingText = 'Workshop';
+   console.log(text);
  
- if(text == comparingText)
+
+ if (text == 'Workshop' || text == 'WorkshopWorkshop')
  {
  goNav('my_assessments','allocationId='+currentId);
  }
@@ -446,7 +451,7 @@ OSL.onclick = function(){
 
          //nested if else (not workshop,internship or CSP), then check date
            
-         if (text3 == 'Workshop' || text3 == 'Internship' || text3 == 'Community Service')
+         if (text3 == 'Workshop' || text3 == 'WorkshopWorkshop' || text3 == 'Internship' || text3 == 'InternshipInternship' || text3 == 'Community Service' || text3 == 'Community ServiceCommunity Service')
          {alert("Not a CCA");
             } else {
             //enddate//
@@ -480,10 +485,12 @@ OSL.onclick = function(){
      };
  
 var vtxt = localStorage.getItem('idid');
-alert(vtxt);
-if (vtxt == null) {} else {
-$("th:contains('" + vtxt + "')").css({"backgroundColor": "black", "color": "white"});
 
  var laststudent = document.createElement('div');
  laststudent.id="laststudent";
+ 
+ 
+if (vtxt == null) {} else {
+$("th:contains('" + vtxt + "')").css({"backgroundColor": "black", "color": "white"});
+
 };

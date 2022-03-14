@@ -10,11 +10,11 @@
   var placementname = $('li.userForm-summary-placement').text().replace(/PLACEMENT/g, '');
   
   var appraisal = localStorage.getItem('appraisal', appraisal);
-  var appraisal1 = localStorage.getItem('appraisal', appraisal1);
-  var appraisal2 = localStorage.getItem('appraisal', appraisal2);
-  var appraisal3 = localStorage.getItem('appraisal', appraisal3);
-  var appraisal4 = localStorage.getItem('appraisal', appraisal4);
-  var appraisal5 = localStorage.getItem('appraisal', appraisal5);  
+  var appraisal1 = localStorage.getItem('appraisal1', appraisal1);
+  var appraisal2 = localStorage.getItem('appraisal2', appraisal2);
+  var appraisal3 = localStorage.getItem('appraisal3', appraisal3);
+  var appraisal4 = localStorage.getItem('appraisal4', appraisal4);
+  var appraisal5 = localStorage.getItem('appraisal5', appraisal5);  
   
   var assessed = localStorage.getItem('assessed', assessed);
 
@@ -63,6 +63,7 @@ var GLOS = document.createElement('div');
 GLOS.id="GLOS";
 GLOS.innerHTML = "GLO "+ GLO2 + GLO3 + GLO4 + GLO5;
 var GLOXX = GLO2 + GLO3 + GLO4 + GLO5;
+localStorage.setItem('GLOnum', GLOXX);
 
 var approval = document.createElement('div');
 approval.id="approval";
@@ -78,20 +79,20 @@ detail1.innerHTML = "";
   
   var reflection1 = document.createElement('div');
   reflection1.id="reflection1";
-  reflection1.innerHTML = "<b>Student:</b> " + studentname + "<span style='color: #EAEAEA'>___</span><br><br><b>Placement:</b>"  + placementname + "<span style='color: #EAEAEA'>___</span><br><br><b>GLOs chosen:</b> " + GLO2 + GLO3 + GLO4 + GLO5 + "<span style='color: #EAEAEA'>___</span><br><br>"+ textwhat + "<span style='color: #EAEAEA'>___</span><br><br>"+ textsowhat + "<span style='color: #EAEAEA'>___</span><br><br>"+ textnowwhat + "<span style='color: #EAEAEA'>___</span><br><br><b>Word count:</b> " + wordnum + "<span style='color: #EAEAEA'>___</span>";
+  reflection1.innerHTML = "<b>Student:</b> " + studentname + "<span style='color: #EAEAEA'>‰‰‰</span><br><br><b>Placement:</b>"  + placementname + "<span style='color: #EAEAEA'>‰‰‰</span><br><br><b>GLOs chosen:</b> " + GLO2 + GLO3 + GLO4 + GLO5 + "<span style='color: #EAEAEA'>‰‰‰</span><br><br>"+ textwhat + "<span style='color: #EAEAEA'>‰‰‰</span><br><br>"+ textsowhat + "<span style='color: #EAEAEA'>‰‰‰</span><br><br>"+ textnowwhat + "<span style='color: #EAEAEA'>‰‰‰</span><br><br><b>Word count:</b> " + wordnum + "<span style='color: #EAEAEA'>‰‰‰</span>";
   
   var overall = document.createElement('div');
   overall.id="overall";
-  overall.innerHTML = "<br><br>"+ "<b><u>Appraisal (from organization/employer)</u></b><span style='color: #EAEAEA'>___</span><br>"+ "Overall grade: " + appraisal + "<span style='color: #EAEAEA'>___</span><br>GLO1: "+ appraisal1 + "<span style='color: #EAEAEA'>___</span><br>GLO2: "+ appraisal2 + "<span style='color: #EAEAEA'>___</span><br>GLO3: "+ appraisal3 + "<span style='color: #EAEAEA'>___</span><br>GLO4: "+ appraisal4 + "<span style='color: #EAEAEA'>___</span><br>GLO5: "+ appraisal5 + "<span style='color: #EAEAEA'>___</span>";
+  overall.innerHTML = "<b><u>Appraisal (from organization/employer)</u></b><span style='color: #EAEAEA'>‰‰‰</span><br>"+ "Overall grade: " + appraisal + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO1: "+ appraisal1 + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO2: "+ appraisal2 + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO3: "+ appraisal3 + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO4: "+ appraisal4 + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO5: "+ appraisal5 + "<span style='color: #EAEAEA'>‰‰‰</span>";
    
   
   //assessed//
   var deptassess = document.createElement('div');
   deptassess.id="deptassess";
   if(assessed  === '')
-  {deptassess.innerHTML =  "<br></br>" +"<b><u>Department DID NOT assess</u></b><span style='color: #EAEAEA'>___</span>";  
+  {deptassess.innerHTML = "<b><u>Department DID NOT assess</u></b><span style='color: #EAEAEA'>‰‰‰</span>";  
   } else 
-  { deptassess.innerHTML = "<br></br>" + "<b><u>Department Assesssed (please indicate)</u></b><span style='color: rgb(244,113,33)'>___%^&</span><br>GLO2: <select name=selectGLO2 id=selectGLO2><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(244,113,33)'>___</span><br>GLO3: <select name=selectGLO3 id=selectGLO3><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(244,113,33)'>___</span><br>GLO4: <select name=selectGLO4 id=selectGLO4><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(244,113,33)'>___</span><br>GLO5: <select name=selectGLO5 id=selectGLO5><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(244,113,33)'>___</span>";
+  { deptassess.innerHTML = "<b><u>Department Assesssed (please indicate)</u></b><span style='color: rgb(244,113,33)'>‰‰‰%^&</span><br>GLO2: <select name=selectGLO2 id=selectGLO2><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(244,113,33)'>‰‰‰</span><br>GLO3: <select name=selectGLO3 id=selectGLO3><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(244,113,33)'>‰‰‰</span><br>GLO4: <select name=selectGLO4 id=selectGLO4><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(244,113,33)'>‰‰‰</span><br>GLO5: <select name=selectGLO5 id=selectGLO5><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(244,113,33)'>‰‰‰</span>";
   deptassess.style.backgroundColor = "rgb(244,113,33)";
   }; 
  
@@ -100,7 +101,7 @@ detail1.innerHTML = "";
     var recommend = document.createElement('div');
     recommend.id="recommend";
     recommend.style.backgroundColor = "rgb(244,113,33)";
-    recommend.innerHTML = "<br></br>" + "<b><u>CCD recommendation (please indicate)</u></b><span style='color: rgb(244,113,33)'>___</span><br>GLO2: <select name=recommendGLO2 id=recommendGLO2><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(244,113,33)'>___</span><br>GLO3: <select name=recommendGLO3 id=recommendGLO3><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(244,113,33)'>___</span><br>GLO4: <select name=recommendGLO4 id=recommendGLO4><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(244,113,33)'>___</span><br>GLO5: <select name=recommendGLO5 id=recommendGLO5><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(244,113,33)'>___</span>";
+    recommend.innerHTML = "<b><u>CCD recommendation (please indicate)</u></b><span style='color: rgb(244,113,33)'>‰‰‰</span><br>GLO2: <select name=recommendGLO2 id=recommendGLO2><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(244,113,33)'>‰‰‰</span><br>GLO3: <select name=recommendGLO3 id=recommendGLO3><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(244,113,33)'>‰‰‰</span><br>GLO4: <select name=recommendGLO4 id=recommendGLO4><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(244,113,33)'>‰‰‰</span><br>GLO5: <select name=recommendGLO5 id=recommendGLO5><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(244,113,33)'>‰‰‰</span><br><b>Comments:</b><br><textarea rows='4' cols='50'></textarea>";
  
    
   
@@ -164,8 +165,7 @@ window.open(
           });
     
           $(document).on('click', '#assess1', function() {   
-      
-            localStorage.setItem('GLOnum', GLOXX);
+
  
  var currentId = localStorage.getItem('currentId');
  
