@@ -467,21 +467,22 @@ OSL.onclick = function(){
             
             var currentId2 =$('#DataTables_Table_0 tbody tr').attr('id'); 
              currentId = currentId2.replace(/[^0-9\.]/g, '');
-            
             var reflectionjournal = $('.journals-list tr td:nth-last-child(2)').text();
-            if(reflectionjournal == 0)
-            {
-            goNav('my_assessments','allocationId='+currentId);
-            }
+        	var member = $('.keep-together h3:contains("Membership Type")').siblings().html();
+
+            if(member == "Member"){
+            	if(reflectionjournal == 0)
+            {goNav('my_assessments','allocationId='+currentId);}
             else 
-            {alert("Reflection available!");};
-            
-            var member = $('.keep-together h3:contains("Membership Type")').siblings().html();
-            
-            if(member == "Member"){}
+            {alert("Reflection available!");};}
             else{
             	alert("Check OSL grading!");
             }
+    
+            
+            
+            
+
          
          };
 
