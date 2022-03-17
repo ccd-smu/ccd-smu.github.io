@@ -469,15 +469,19 @@ OSL.onclick = function(){
              currentId = currentId2.replace(/[^0-9\.]/g, '');
             
             var reflectionjournal = $('.journals-list tr td:nth-last-child(2)').text();
-            var member = $('.keep-together h3:contains("Membership Type")').siblings().html();
-            alert(member);
-    
             if(reflectionjournal == 0)
             {
             goNav('my_assessments','allocationId='+currentId);
             }
             else 
-            {alert("Reflection available!");}     
+            {alert("Reflection available!");};
+            
+            var member = $('.keep-together h3:contains("Membership Type")').siblings().html();
+            
+            if(member == "Member"){}
+            else{
+            	alert("Check OSL grading!");
+            }
          
          };
 
