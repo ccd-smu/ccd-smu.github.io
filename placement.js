@@ -469,7 +469,8 @@ OSL.onclick = function(){
              currentId = currentId2.replace(/[^0-9\.]/g, '');
             
             var reflectionjournal = $('.journals-list tr td:nth-last-child(2)').text();
-    
+            var member = $('.keep-together h3:contains("Membership Type")').siblings().html();
+            alert(member);
     
             if(reflectionjournal == 0)
             {
