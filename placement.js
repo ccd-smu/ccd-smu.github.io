@@ -18,7 +18,7 @@ if(accountname === 'CCD cocurriculum'){
  setTimeout(function(){ 
 
   
-  var href = $('a:contains(Download Roll-up)').attr('href').replace(/[^0-9\\.]+/g, '');
+  var href = $('.clicktable-menu').attr('id').replace(/[^0-9\\.]+/g, '');
  
  const li = $('li');
         
@@ -37,7 +37,7 @@ if(accountname === 'CCD cocurriculum'){
  setTimeout(function(){ 
 
   
-  var href = $('a:contains(Download Roll-up)').attr('href').replace(/[^0-9\\.]+/g, '');
+  var href = $('.clicktable-menu').attr('id').replace(/[^0-9\\.]+/g, '');
  
  
  const li = $('li');
