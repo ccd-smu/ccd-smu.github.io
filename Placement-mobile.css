@@ -9,6 +9,14 @@
         background: black;
         opacity: 0.7;
     }
+.content-nav-bar{
+    	display: none;
+    }
+    .popover .popover-inner{
+    min-width: 100px;
+    overflow: hidden;
+}
+
 
     #status{
     background: red;
@@ -39,10 +47,6 @@
     width: 200px;
 }
 
-.popover .popover-inner{
-    min-width: 100px;
-    overflow: hidden;
-}
 
 #assess1{
 	background: green;
