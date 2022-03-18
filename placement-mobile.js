@@ -297,10 +297,11 @@ localStorage.setItem('idid', idid);
  // trigger click callback
 
 //testings
- window.open("https://shib.chalkandwire.com/ep2_smu/DemographicsRun.aspx?cus=465&TopicId="+topicid+"&deptID="+departid+"&AllocationID="+allocateid, "_blank");
-  var currentId2 =$('#DataTables_Table_0 tbody tr:has(td:contains("CCD"))').attr('id'); 
+
+  var currentId2 =$('tr:has(td:contains("CCD"))').attr('id'); 
   currentId = currentId2.replace(/[^0-9\.]/g, '');
    localStorage.setItem('currentId', currentId);
+ window.open("https://shib.chalkandwire.com/ep2_smu/DemographicsRun.aspx?cus=465&TopicId="+topicid+"&deptID="+departid+"&AllocationID="+allocateid, "_blank");
   
      }, 1000);
    
@@ -372,7 +373,7 @@ workshop.onclick = function(){
  
  localStorage.setItem('idid', idid);
  
- var currentId2 =$('#DataTables_Table_0 tbody tr').attr('id'); 
+ var currentId2 =$('tr:has(td:contains("CCD"))').attr('id');  
   currentId = currentId2.replace(/[^0-9\.]/g, '');
  
  var text = $('span.flag.tag').text();
@@ -465,7 +466,7 @@ OSL.onclick = function(){
             
             localStorage.setItem('idid', idid);
             
-            var currentId2 =$('#DataTables_Table_0 tbody tr').attr('id'); 
+            var currentId2 =$('tr:has(td:contains("CCD"))').attr('id'); 
              currentId = currentId2.replace(/[^0-9\.]/g, '');
             var reflectionjournal = $('.journals-list tr td:nth-last-child(2)').text();
         	var member = $('.keep-together h3:contains("Membership Type")').siblings().html();
