@@ -254,6 +254,7 @@ CU.onclick = function(){
   } else 
   {assesswindow.innerHTML = "Department Assessed";
   assesswindow.style.background = "green";
+  assesswindow.style.cursor = "pointer";
     status.appendChild(assesswindow);
   }; 
   
