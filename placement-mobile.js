@@ -4,6 +4,24 @@ function Assess() {
   button.appendChild(OSL);
 };
 
+   
+var idid = localStorage.getItem('idid');
+var placementname = localStorage.getItem('placementname');
+
+if (typeof placementname === 'undefined'){} else {   
+   var last = document.createElement('div');
+   last.id="last";
+   last.innerHTML = idid + "<br>" + placementname;
+   document.body.appendChild(last);
+setInterval(function(){
+   
+   $('#placements-table th').each(function (i, e) {
+    var $e = $(e);
+    $e.html($e.html().split(idid).join('<span class="matching">' + idid + '</span>'));
+});}, 1000);
+  
+};
+  
  
 GetFieldplacementActions = (function() {
      var cached_function = GetFieldplacementActions;
@@ -61,8 +79,6 @@ if(accountname === 'CCD cocurriculum'){
  })();
  
  
-   var studentname = localStorage.getItem('studentname');
-   var placementname = localStorage.getItem('placementname');
 
    var button = document.createElement('div');
    button.id="button";
@@ -464,41 +480,31 @@ OSL.onclick = function(){
             localStorage.setItem('GLOnum', GLO);
             
             var idid = $('span.name:eq(1)').text().replace('_', '');
-            
             localStorage.setItem('idid', idid);
+            var placementname = $(".flag-noticeoversized").parent().text().replace(" Preassigned In Progress", "");
+            localStorage.setItem('placementname', placementname);
             
             var currentId2 =$('tr:has(td:contains("CCD"))').attr('id'); 
              currentId = currentId2.replace(/[^0-9\.]/g, '');
             var reflectionjournal = $('.journals-list tr td:nth-last-child(2)').text();
         	var member = $('.keep-together h3:contains("Membership Type")').siblings().html();
+        
 
-            if(member == "Member"){
-            	if(reflectionjournal == 0)
-            {goNav('my_assessments','allocationId='+currentId);}
-            else 
-            {alert("Reflection available!");};}
-            else{
+            if(member == "Member" || member == "Participant" || member == "Participants")
+            {if(reflectionjournal == 0)
+              {
+
+              	goNav('my_assessments','allocationId='+currentId);
+            }else{
+              alert("Reflection available!");
+          
+          };
+          }else{
             	alert("Check OSL grading!");
             }
-    
-            
-            
-            
 
-         
          };
 
        };    
 
      };
- 
-var vtxt = localStorage.getItem('idid');
-
- var laststudent = document.createElement('div');
- laststudent.id="laststudent";
- 
- 
-if (vtxt == null) {} else {
-$("th:contains('" + vtxt + "')").css({"backgroundColor": "black", "color": "white"});
-
-};
