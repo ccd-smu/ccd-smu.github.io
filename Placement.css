@@ -9,6 +9,14 @@
         background: black;
         opacity: 0.7;
     }
+.content-nav-bar{
+    	display: none;
+    }
+    .popover .popover-inner{
+    min-width: 100px;
+    overflow: hidden;
+}
+
 
     #status{
     background: red;
@@ -20,18 +28,24 @@
     color: #fff;
     text-align: center;
     }
+    
+    
+    
 #appraisalwindow, #assesswindow, #appointwindow, #datewindow, #reflectwindow, #reflection, #assess1{
     padding: 13px 0;
     width: 200px;
 }
 
+.matching{
+	background-color: #FFFF00;
+}
 
-    #laststudent{
+    #last{
     background: red;
     height: auto;
     position: fixed;
-    top: 30%;
-    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: 9999;
     color: #fff;
     text-align: center;

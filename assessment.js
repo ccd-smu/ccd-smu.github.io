@@ -44,6 +44,8 @@ var GLOnum = localStorage.getItem('GLOnum');
 
 var idid = localStorage.getItem('idid');
 
+var placementname = localStorage.getItem('placementname');
+
 if ($('#lblOwner:contains("' + idid + '")'))
 {
 setTimeout(function(){
@@ -76,8 +78,6 @@ if (GLOnum.includes("2"))
    $('.txtScore:eq(0) option[value=Exposure]').attr('selected','selected');
    $('.ckNotApplicable:eq(0)').attr('checked', false);
 }, 2000);};
-
-
 
 };
 
