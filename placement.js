@@ -472,12 +472,17 @@ OSL.onclick = function(){
             var reflectionjournal = $('.journals-list tr td:nth-last-child(2)').text();
         	var member = $('.keep-together h3:contains("Membership Type")').siblings().html();
 
-            if(member == "Member"){
-            	if(reflectionjournal == 0)
-            {goNav('my_assessments','allocationId='+currentId);}
-            else 
-            {alert("Reflection available!");};}
-            else{
+            if(member == "Member" || member == "Participant" || member == "Participants")
+            {if(reflectionjournal == 0)
+              {goNav('my_assessments','allocationId='+currentId);
+            }else{
+              alert("Reflection available!");
+              var placementname = $('h3 .well').text().split('"')[1]);
+              localStorage.setItem('placementname', placementname);
+              console.log(placementname);
+          
+          };
+          }else{
             	alert("Check OSL grading!");
             }
     
