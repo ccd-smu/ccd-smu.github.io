@@ -477,7 +477,7 @@ OSL.onclick = function(){
               {goNav('my_assessments','allocationId='+currentId);
             }else{
               alert("Reflection available!");
-              var placementname = $('h3 .well').text().split('"')[1]);
+              var placementname = $('h3 .well').text().split('"')[1];
               localStorage.setItem('placementname', placementname);
               console.log(placementname);
           
