@@ -4,23 +4,42 @@ function Assess() {
   button.appendChild(OSL);
 };
 
+$(document).on('load','.popover-inner',function(){
+	alert("test");
+});
+
+var type = "";
+
    
 var idid = localStorage.getItem('idid');
 var placementname = localStorage.getItem('placementname');
 
-if (typeof placementname === 'undefined'){} else {   
+if (typeof placementname === 'undefined' || placementname == null || $('.matching').length ) {} else {   
    var last = document.createElement('div');
    last.id="last";
-   last.innerHTML = idid + "<br>" + placementname;
+   last.innerHTML = "Last assessed: <br>"+ idid + "<br>" + placementname;
    document.body.appendChild(last);
-setInterval(function(){
    
+setInterval(function(){
    $('#placements-table th').each(function (i, e) {
     var $e = $(e);
     $e.html($e.html().split(idid).join('<span class="matching">' + idid + '</span>'));
-});}, 1000);
+});
+
+}, 1000);
+
   
 };
+
+var member = "member";
+
+setInterval(function(){
+   $('#placements-table th').each(function (i, e) {
+    var $e = $(e);
+    $e.html($e.html().split(member).join('<span class="matching">' + member + '</span>'));
+});
+	
+}, 1000);
   
  
 GetFieldplacementActions = (function() {
@@ -399,6 +418,8 @@ workshop.onclick = function(){
 
  if (text == 'Workshop' || text == 'WorkshopWorkshop')
  {
+ var type = "Workshop";
+localStorage.setItem('type', type);
  goNav('my_assessments','allocationId='+currentId);
  }
  else 
@@ -450,7 +471,8 @@ OSL.onclick = function(){
      
          });	  	
 
-
+var type = "OSL";
+localStorage.setItem('type', type);
 
          var enddate3 = $('p.picker-selection:contains("0 Hours")').prev("p").html();
  
