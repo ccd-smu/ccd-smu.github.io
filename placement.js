@@ -19,13 +19,39 @@ if (typeof placementname === 'undefined' || placementname == null || $('.matchin
 setInterval(function(){
    $('#placements-table th').each(function (i, e) {
     var $e = $(e);
-    $e.html($e.html().split(idid).join('<span class="matching">' + idid + '</span>'));
+    $e.html($e.html().split(idid).join('<span class="matching" id="match">' + idid + '</span>'));
 });
 
 }, 1000);
 
   
 };
+
+//Finds y value of given object
+function findPos(obj) {
+  var curtop = 0;
+  if (obj.offsetParent) {
+      do {
+          curtop += obj.offsetTop;
+      } while (obj = obj.offsetParent);
+  return [curtop];
+  }
+}
+
+$( "#last" ).click(function() {
+window.scroll(0,findPos(document.getElementById("match")))
+$("th:contains(" + idid + ")").parent('tr').next().trigger('click');
+
+setTimeout(function(){ 
+ var href2 = $('.clicktable-menu').attr('id').replace(/[^0-9\\.]+/g, '');
+ ViewPlacement(href2);
+ Assess();
+ 
+ }, 1500);
+ 
+
+});
+
 
  
 GetFieldplacementActions = (function() {
@@ -100,21 +126,21 @@ if(accountname === 'CCD cocurriculum'){
    var CU = document.createElement('div');
    CU.id="CU";
    CU.style.padding="13px 0";
-   CU.style.width="200px";
+   CU.style.width="100px";
    CU.innerHTML = "1CU";
    
    
    var workshop = document.createElement('div');
    workshop.id= "workshop"
    workshop.style.padding="13px 0";
-   workshop.style.width="200px";
+   workshop.style.width="100px";
    workshop.innerHTML = "Workshop";
    
    
    var OSL = document.createElement('div');
    OSL.id= "OSL"
    OSL.style.padding="13px 0";
-   OSL.style.width="200px";
+   OSL.style.width="100px";
    OSL.innerHTML = "OSL";    
    
    var accname = document.createElement('div');

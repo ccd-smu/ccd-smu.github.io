@@ -47,7 +47,7 @@ setTimeout(function(){
  ViewPlacement(href2);
  Assess();
  
- }, 2000);
+ }, 1500);
  
 
 });
