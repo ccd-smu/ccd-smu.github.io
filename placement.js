@@ -4,10 +4,6 @@ function Assess() {
   button.appendChild(OSL);
 };
 
-$(document).on('load','.popover-inner',function(){
-	alert("test");
-});
-
 var type = "";
 
    
@@ -31,16 +27,6 @@ setInterval(function(){
   
 };
 
-var member = "member";
-
-setInterval(function(){
-   $('#placements-table th').each(function (i, e) {
-    var $e = $(e);
-    $e.html($e.html().split(member).join('<span class="matching">' + member + '</span>'));
-});
-	
-}, 1000);
-  
  
 GetFieldplacementActions = (function() {
      var cached_function = GetFieldplacementActions;
@@ -141,9 +127,7 @@ if(accountname === 'CCD cocurriculum'){
    
 CU.onclick = function(){
   var text2 = $('span.flag.tag').text();
-  console.log(text2);
 
-  
     if (text2 == 'Internship' || text2 == 'InternshipInternship' || text2 == 'Community Service' || text2 == 'Community ServiceCommunity Service'){
            
  $('.panelviewerback').addClass( $('.closing').attr('class') );
@@ -206,7 +190,7 @@ CU.onclick = function(){
  
  var reflection = $("tr:contains('Post-activity Reflection') td:nth-last-child(2) span").html();
  
- var enddate3 = $('p.picker-selection:contains("0 Hours")').prev("p").html();
+ var enddate3 = $('p.picker-selection:contains("Hours")').prev("p").html();
  
  
  
@@ -413,8 +397,6 @@ workshop.onclick = function(){
   currentId = currentId2.replace(/[^0-9\.]/g, '');
  
  var text = $('span.flag.tag').text();
-   console.log(text);
- 
 
  if (text == 'Workshop' || text == 'WorkshopWorkshop')
  {
@@ -474,7 +456,7 @@ OSL.onclick = function(){
 var type = "OSL";
 localStorage.setItem('type', type);
 
-         var enddate3 = $('p.picker-selection:contains("0 Hours")').prev("p").html();
+         var enddate3 = $('p.picker-selection:contains("Hours")').prev("p").html();
  
  
          var enddate2 = enddate3.slice(-10);
