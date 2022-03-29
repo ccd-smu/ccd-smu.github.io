@@ -6,7 +6,18 @@ function Assess() {
 
 var type = "";
 
-   
+
+function elementInView(elem){
+  return $(window).scrollTop() < $(elem).offset().top + $(elem).height() ;
+};
+
+
+
+var timer;
+
+
+
+
 var idid = localStorage.getItem('idid');
 var placementname = localStorage.getItem('placementname');
 
@@ -46,13 +57,26 @@ setTimeout(function(){
  var href2 = $('.clicktable-menu').attr('id').replace(/[^0-9\\.]+/g, '');
  ViewPlacement(href2);
  Assess();
+ timer = setInterval(function(){if (elementInView($('.panel-viewer-bar')))
+    console.log('there it is, wooooohooooo!');
+    text4 = $('span.flag.tag').text();
+    
+ if (text4 == 'Workshop' || text4 == 'WorkshopWorkshop')
+ {$("#workshop").trigger('click');}
+               
+ else if (text4 == 'Workshop' || text4 == 'WorkshopWorkshop' || text4 == 'Internship' || text4 == 'InternshipInternship' || text4 == 'Community Service' || text4 == 'Community ServiceCommunity Service')
+{alert("1CU");}
+    
+    else{
+ 	$("#OSL").trigger('click');}
+ 	
+ 	
+ },"1000");
  
  }, 1500);
  
 
 });
-
-
  
 GetFieldplacementActions = (function() {
      var cached_function = GetFieldplacementActions;
@@ -80,7 +104,7 @@ if(accountname === 'CCD cocurriculum'){
   
   
   
- }, 500);
+ }, 1000);
  
 } else {
  setTimeout(function(){ 
@@ -100,7 +124,7 @@ if(accountname === 'CCD cocurriculum'){
   
   
   
- }, 500);
+ }, 1000);
  
 }
  
@@ -152,6 +176,7 @@ if(accountname === 'CCD cocurriculum'){
    
    
 CU.onclick = function(){
+	  clearInterval(timer);
   var text2 = $('span.flag.tag').text();
 
     if (text2 == 'Internship' || text2 == 'InternshipInternship' || text2 == 'Community Service' || text2 == 'Community ServiceCommunity Service'){
@@ -372,7 +397,7 @@ localStorage.setItem('idid', idid);
  };
  
 workshop.onclick = function(){
-     
+       clearInterval(timer);
  $('.panelviewerback').addClass( $('.closing').attr('class') );
  
  $( ".panel-viewer-bar > a:first" ).removeClass( "panel-viewer-back" );
@@ -438,6 +463,8 @@ localStorage.setItem('type', type);
  };
 
 OSL.onclick = function(){
+	
+	  clearInterval(timer);
          
      $('.panelviewerback').addClass( $('.closing').attr('class') );
      
