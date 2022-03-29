@@ -39,7 +39,18 @@ function findPos(obj) {
 }
 
 $( "#last" ).click(function() {
-window.scroll(0,findPos(document.getElementById("match")));};
+window.scroll(0,findPos(document.getElementById("match")))
+$("th:contains(" + idid + ")").parent('tr').next().trigger('click');
+
+setTimeout(function(){ 
+ var href2 = $('.clicktable-menu').attr('id').replace(/[^0-9\\.]+/g, '');
+ ViewPlacement(href2);
+ Assess();
+ 
+ }, 2000);
+ 
+
+});
 
 
  
