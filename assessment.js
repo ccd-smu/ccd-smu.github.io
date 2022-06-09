@@ -76,14 +76,24 @@ if (GLOnum.includes("2"))
 var type = localStorage.getItem('type');
 
 
-if (type.includes("OSL") || type.includes("Workshop")){
 SaveStudentAssessment();
-};
+
 
 };});
 	
 
+var timesRun = 0;
+var interval = setInterval(function(){
+    timesRun += 1;
+    if(timesRun === 5){
+        clearInterval(interval);
+    }
+	if($("#jGrowl").is(":visible")){
 
-	$("#assessment_details").live('blur', function () {
 location.href = 'https://shib.chalkandwire.com/ep2_smu/FieldPlacementList.aspx?cus=465';
-});
+var type = "";
+localStorage.setItem('type',type);
+	
+            }
+	
+}, 500); 

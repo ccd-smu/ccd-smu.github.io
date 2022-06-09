@@ -1,10 +1,10 @@
-#CU:hover, #workshop:hover,#OSL:hover {
+#CU:hover, #workshop:hover,#OSL:hover ,#SOCI:hover {
   background: #151c55;
   cursor: pointer;
   opacity: 1;
   }
   
-  #CU, #OSL, #workshop
+  #CU, #OSL, #workshop, #SOCI
   {
       background: black;
       opacity: 0.7;
@@ -34,8 +34,11 @@
   width: 200px;
 }
 
-.matching{
-background-color: red;
+.lastone{
+outline: 5px solid blue;
+}
+.nextone{
+outline: 5px solid red;
 }
 
   #last{
@@ -49,6 +52,34 @@ background-color: red;
   text-align: center;
   padding: 13px 0;
   width: 200px;
+  cursor: pointer;
+}
+
+  #start{
+  background: red;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  color: #fff;
+  text-align: center;
+  padding: 13px 0;
+  width: 100px;
+  cursor: pointer;
+}
+  #stop{
+  background: red;
+  height: auto;
+  position: fixed;
+  top: 44px;
+  left: 0;
+  z-index: 9999;
+  color: #fff;
+  text-align: center;
+  padding: 13px 0;
+  width: 100px;
+  cursor: pointer;
 }
 
 
