@@ -85,7 +85,7 @@ SaveStudentAssessment();
 var timesRun = 0;
 var interval = setInterval(function(){
     timesRun += 1;
-    if(timesRun === 5){
+    if(timesRun === 10){
         clearInterval(interval);
     }
 	if($("#jGrowl").is(":visible")){
