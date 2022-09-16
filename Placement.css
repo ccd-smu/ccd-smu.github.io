@@ -1,0 +1,135 @@
+    #last{
+    background: blue;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+    padding: 13px 0;
+    width: 200px;
+    cursor: pointer;
+}
+ #last:hover{
+ 	background: darkblue;
+ }
+
+    #help{
+    background: green;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+    padding: 13px 0;
+    width: 36px;
+    cursor: pointer;
+}
+
+.highlighthelp
+{
+	border: 2px red solid;
+}
+
+.statushelp{
+	background: red;
+    height: auto;
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+    padding: 13px 0;
+}
+
+.stakeholderhelp{
+	background: red;
+    height: auto;
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+    padding: 13px 0;
+
+}
+
+.assessable{
+color: green;
+}
+
+
+
+.lastone{
+ outline: 2px solid blue;
+ position: relative;
+ color: #000;
+}
+
+.lastone::after {
+  content: "Last assessed";
+  background: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%) translateY(-2px);
+  z-index: 999;
+  outline: 2px solid blue;
+  color: #fff;
+}
+
+    #status{
+    background: #000;
+    height: auto;
+    position: fixed;
+    top: 30%;
+    right: 0;
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+    }
+    
+    #loading{
+    	background: #000;
+    }
+    
+    
+#appraisalwindow, #datewindow, #reflectwindow, #reflection, #assess1, #loading{
+    padding: 13px 0;
+    width: 200px;
+}
+
+#appraisalwindow2{
+	text-align: left;
+	padding-left: 40px;
+}
+
+#reflection:hover {
+background: black;
+	
+}
+
+.closing{background-image: url(https://shib.chalkandwire.com/ep2_smu/images/ui/ui-chevrons.png);
+        background-position-x: 0px;
+        background-position-y: -32px;
+        background-size: initial;
+        background-repeat-x: no-repeat;
+        background-repeat-y: no-repeat;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: rgb(68, 65, 65);
+        border: 0;
+        color: #fff;
+        display: block;
+        font-size: 1.8rem;
+        line-height: 1.78;
+        overflow: hidden;
+        text-indent: -500px;
+        width: 32px;
+    }
