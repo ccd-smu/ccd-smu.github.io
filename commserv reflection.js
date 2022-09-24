@@ -146,6 +146,11 @@ if (GLOXX.includes("2"))
    $('#recommendGLO2 option[value=Exposure]').attr('selected','selected');
    
 }; 
+if (GLOXX.includes("2 3 4 5") || GLOXX == null)
+{
+   assess1.innerHTML='Student selected more than 3 LOs';
+   assess1.style.backgroundColor = "red";
+}; 		
     	
     },750)
     assess.innerHTML = "Close";
@@ -183,6 +188,23 @@ GLO3score == "NA" &
 GLO4score == "NA" &
 GLO5score == "NA") {
 	alert("At least 1 GLO required")
+	$('#assess1').css('background-color', 'red');
+
+} else if (GLO2score != "NA" & GLO3score != "NA" & GLO4score != "NA" & GLO5score != "NA"){
+
+if (confirm('Student chose more than 3 LOs, continue assessing?')) {
+	$('#assess1').css('background-color', '8a704c');
+window.localStorage.setItem('GLO2score',GLO2score);
+window.localStorage.setItem('GLO3score',GLO3score);
+window.localStorage.setItem('GLO4score',GLO4score);
+window.localStorage.setItem('GLO5score',GLO5score);
+
+var currentId = localStorage.getItem('currentId');
+goNav('my_assessments','allocationId='+currentId);
+} else {
+return false
+}
+	
 }else{
 
 
