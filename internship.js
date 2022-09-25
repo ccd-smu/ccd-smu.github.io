@@ -234,6 +234,7 @@ var my_css_class = { background : 'red', color : '#fff' , zIndex: '9999', cursor
 
 var status = document.createElement('div');
 status.id="status";
+status.innerHTML = "";
 
 var appraisalwindow = document.createElement('div');
 appraisalwindow.id="appraisalwindow";
