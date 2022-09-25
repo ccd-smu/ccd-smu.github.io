@@ -25,7 +25,6 @@ window.onload = function() {
   var status = document.createElement('div');
   status.id="status";
   document.body.appendChild(status);
-	
     var wordcount = document.createElement('div');
     wordcount.id="wordcount";
     wordcount.innerHTML = what+sowhat+nowwhat + " words";
@@ -98,7 +97,7 @@ assess1.innerHTML = "Assessment";
 
 detail1.appendChild(reflection1);
 detail1.appendChild(overall);
-
+}:
 	
    $( "#assess1").click(function() {
 	
@@ -138,8 +137,6 @@ else{
    $('#frmUpdate2').remove();
    }, 1000);
     
-};
-  
   $('#lnkReturn').click(function() {
 
 location.href = "https://shib.chalkandwire.com/ep2_smu/DemographicsRun.aspx?cus=465&TopicId="+topicid+"&deptID=0&AllocationID="+allocateid;
