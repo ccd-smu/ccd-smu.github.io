@@ -116,7 +116,6 @@ goNav('my_assessments','allocationId='+currentId);
 	
 if ($('#detail1').length === 0) {
 document.body.appendChild(detail1);
-recommend.appendChild(assess1);
 
 } else {
 	

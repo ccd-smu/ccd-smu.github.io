@@ -1,8 +1,8 @@
 
-    
-var what = $('#tblQuestion610').text().split(' ').length;
-var sowhat = $('#tblQuestion611').text().split(' ').length;
-var nowwhat = $('#tblQuestion612').text().split(' ').length;
+
+var what = $('#tblQuestion1253').text().split(' ').length;
+var sowhat = $('#tblQuestion1254').text().split(' ').length;
+var nowwhat = $('#tblQuestion1255').text().split(' ').length;
   
   var studentname = $('li.userForm-summary-student').text().replace(/CANDIDATE/g, '');    
   var placementname = $('li.userForm-summary-placement').text().replace(/PLACEMENT/g, '');
@@ -16,15 +16,15 @@ var nowwhat = $('#tblQuestion612').text().split(' ').length;
   
   var assessed = localStorage.getItem('assessed', assessed);
 
-  var textwhat = $('#tblQuestion610').text();
-  var textsowhat = $('#tblQuestion611').text();
-  var textnowwhat = $('#tblQuestion612').text();
+  var textwhat = $('#tblQuestion1253').text();
+  var textsowhat = $('#tblQuestion1254').text();
+  var textnowwhat = $('#tblQuestion1255').text();
 
-
-window.onload = function() {
-  var status = document.createElement('div');
-  status.id="status";
-  document.body.appendChild(status);
+  
+  window.onload = function() {
+    var status = document.createElement('div');
+    status.id="status";
+    document.body.appendChild(status);
     var wordcount = document.createElement('div');
     wordcount.id="wordcount";
     wordcount.innerHTML = what+sowhat+nowwhat + " words";
@@ -42,24 +42,24 @@ window.onload = function() {
     
     
     
-	if($("td:contains('Analyse the root causes of social issues faced by the community')").closest("td").next('td').find('i').attr('title') == "Checked" || $("td:contains('Demonstrate the ability to solve problems of varying levels of complexity')").closest("td").next('td').find('i').attr('title') == "Checked"){
+	if($("td:contains('Demonstrate ability to solve problems of varying levels of complexity')").closest("td").next('td').find('i').attr('title') == "Checked"){
 var GLO2 = "2 ";
 } else { var GLO2 = ""};
 
-	if($("td:contains('Demonstrate the ability to recognise and leverage on strengths of others to achieve shared goals')").closest("td").next('td').find('i').attr('title') == "Checked" || 
-	$("td:contains('Demonstate the ability to communicate effectively with different stakeholders to address a problem/issue')").closest("td").next('td').find('i').attr('title') == "Checked") {
+	if($("td:contains('Generate buy-in from team for your initiatives suggested')").closest("td").next('td').find('i').attr('title') == "Checked" || 
+	$("td:contains('Communicate effectively in oral and written forms with different stakeholders as needed')").closest("td").next('td').find('i').attr('title') == "Checked") {
 var GLO3 = "3 ";
 } else { var GLO3 = ""};
 
-	if($("td:contains('Display sensitivity towards individual and cultural differences and respect diverse perspectives of others')").closest("td").next('td').find('i').attr('title') == "Checked" || 
-	$("td:contains('Assess potential ethical conflicts in personal, professional and societal settings')").closest("td").next('td').find('i').attr('title') == "Checked"|| $("td:contains('Demonstrate commitment to act responsibility to address social concerns')").closest("td").next('td').find('i').attr('title') == "Checked") {
+	if($("td:contains('Assess potential ethical conflicts in personal, professional and societal settings')").closest("td").next('td').find('i').attr('title') == "Checked" || 
+	$("td:contains('Demonstrate a sense of responsibility for the broader impact of individual and collective actions')").closest("td").next('td').find('i').attr('title') == "Checked") {
 var GLO4 = "4 ";
 } else { var GLO4 = ""};
 
 
-	if($("td:contains('Demonstrate initiative to advance one's skills and knowledge to explore and expand one's own learning')").closest("td").next('td').find('i').attr('title') == "Checked" || 
-	$("td:contains('Apply self-appraisal and reflective thinking in the learning process')").closest("td").next('td').find('i').attr('title') == "Checked" || 
-	$("td:contains('Demonstrate ability to persevere through challenging circumstances')").closest("td").next('td').find('i').attr('title') == "Checked") {
+	if($("td:contains('Assimilate work habits and attitudes necessary for job success')").closest("td").next('td').find('i').attr('title') == "Checked" || 
+	$("td:contains('Commit to personal development and lifelong learning')").closest("td").next('td').find('i').attr('title') == "Checked" || 
+	$("td:contains('Develop a positive mindset to overcome setbacks in the face of disruption and challenges')").closest("td").next('td').find('i').attr('title') == "Checked") {
 var GLO5 = "5";
 } else { var GLO5 = ""};
 
@@ -88,8 +88,8 @@ detail1.innerHTML = "";
   var overall = document.createElement('div');
   overall.id="overall";
   overall.innerHTML = "<b><u>Appraisal (from organization/employer)</u></b><span style='color: #EAEAEA'>‰‰‰</span><br>"+ "Overall grade: " + appraisal + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO1: "+ appraisal1 + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO2: "+ appraisal2 + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO3: "+ appraisal3 + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO4: "+ appraisal4 + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO5: "+ appraisal5 + "<span style='color: #EAEAEA'>‰‰‰</span>";
- 
-  var allocateid = localStorage.getItem('allocateid');
+    
+	var allocateid = localStorage.getItem('allocateid');
 
 var assess1 = document.createElement('div');
 assess1.id="assess1";
@@ -98,25 +98,24 @@ assess1.innerHTML = "Assessment";
 detail1.appendChild(reflection1);
 detail1.appendChild(overall);
 
+
+$( "#assess1").click(function() {
 	
-   $( "#assess1").click(function() {
-	
-      if (GLOXX.includes("2 3 4 5") || GLOXX == null){
-         assess1.innerHTML='Student selected more than 3 LOs';
-         assess1.style.backgroundColor = "red";
-      
-         if (confirm('Student chose more than 3 LOs, continue assessing?')) {
-               $('#assess1').css('background-color', 'red');
-               var currentId = localStorage.getItem('currentId');
-               goNav('my_assessments','allocationId='+currentId);
-      }}; 
+if (GLOXX.includes("2 3 4 5") || GLOXX == null){
+   assess1.innerHTML='Student selected more than 3 LOs';
+   assess1.style.backgroundColor = "red";
+
+   if (confirm('Student chose more than 3 LOs, continue assessing?')) {
+	      $('#assess1').css('background-color', 'red');
+         var currentId = localStorage.getItem('currentId');
+         goNav('my_assessments','allocationId='+currentId);
+}};          
 var currentId = localStorage.getItem('currentId');
-goNav('my_assessments','allocationId='+currentId);
+goNav('my_assessments','allocationId='+currentId);	
     assess.innerHTML = "Close";
 	
 if ($('#detail1').length === 0) {
 document.body.appendChild(detail1);
-recommend.appendChild(assess1);
 
 } else {
 	
@@ -131,14 +130,14 @@ else{
 	
 }
 };
-  });
-
+  });                
+  
    setTimeout(function(){ 
    $('#frmUpdate2').remove();
    }, 1000);
-
-};
-
+    
+  };
+  
   $('#lnkReturn').click(function() {
 
 location.href = "https://shib.chalkandwire.com/ep2_smu/DemographicsRun.aspx?cus=465&TopicId="+topicid+"&deptID=0&AllocationID="+allocateid;
