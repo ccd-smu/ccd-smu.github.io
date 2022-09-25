@@ -1,7 +1,8 @@
 
-  var what = $('#tblQuestion610').text().split(' ').length;
-  var sowhat = $('#tblQuestion611').text().split(' ').length;
-  var nowwhat = $('#tblQuestion612').text().split(' ').length;
+    
+var what = $('#tblQuestion610').text().split(' ').length;
+var sowhat = $('#tblQuestion611').text().split(' ').length;
+var nowwhat = $('#tblQuestion612').text().split(' ').length;
   
   var studentname = $('li.userForm-summary-student').text().replace(/CANDIDATE/g, '');    
   var placementname = $('li.userForm-summary-placement').text().replace(/PLACEMENT/g, '');
@@ -18,12 +19,12 @@
   var textwhat = $('#tblQuestion610').text();
   var textsowhat = $('#tblQuestion611').text();
   var textnowwhat = $('#tblQuestion612').text();
-
   
-    var status = document.createElement('div');
-    status.id="status";
-    document.body.appendChild(status);
-    
+  
+window.onload = function() {
+   var status = document.createElement('div');
+   status.id="status";
+   document.body.appendChild(status);
     var wordcount = document.createElement('div');
     wordcount.id="wordcount";
     wordcount.innerHTML = what+sowhat+nowwhat + " words";
@@ -96,7 +97,6 @@ assess1.innerHTML = "Assessment";
 
 detail1.appendChild(reflection1);
 detail1.appendChild(overall);
-detail1.appendChild(recommend);
 
 	
    $( "#assess1").click(function() {
@@ -137,7 +137,7 @@ else{
    $('#frmUpdate2').remove();
    }, 1000);
     
-
+};
   
   $('#lnkReturn').click(function() {
 
