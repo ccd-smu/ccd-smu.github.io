@@ -91,31 +91,12 @@ detail1.innerHTML = "";
   var overall = document.createElement('div');
   overall.id="overall";
   overall.innerHTML = "<b><u>Appraisal (from organization/employer)</u></b><span style='color: #EAEAEA'>‰‰‰</span><br>"+ "Overall grade: " + appraisal + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO1: "+ appraisal1 + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO2: "+ appraisal2 + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO3: "+ appraisal3 + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO4: "+ appraisal4 + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO5: "+ appraisal5 + "<span style='color: #EAEAEA'>‰‰‰</span>";
- 
-
-    //recommend//
-    var recommend = document.createElement('div');
-    recommend.id="recommend";
-    recommend.style.backgroundColor = "rgb(21,28,85)";
-    recommend.style.color = "rgb(255,255,255)";
-    recommend.innerHTML = "<b><u>DKHMCC grading (please indicate)</u></b><span style='color: rgb(21,28,85)'>‰‰‰</span><br>GLO2: <select name=recommendGLO2 id=recommendGLO2><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(21,28,85)'>‰‰‰</span><br>GLO3: <select name=recommendGLO3 id=recommendGLO3><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(21,28,85)'>‰‰‰</span><br>GLO4: <select name=recommendGLO4 id=recommendGLO4><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(21,28,85)'>‰‰‰</span><br>GLO5: <select name=recommendGLO5 id=recommendGLO5><option value=NA>NA</option><option value=Transformation>Transformation</option><option value=Integration>Integration</option><option value=Exposure>Exposure</option></select><span style='color: rgb(21,28,85)'>‰‰‰</span>";
- 
-   
-
-
-     
-var copy1 = document.createElement('div');
-copy1.id="copy1";
-copy1.innerHTML = "Copy";
-
-
-var send1 = document.createElement('div');
-send1.id="send1";
-send1.innerHTML = "Send";
+    
+	var allocateid = localStorage.getItem('allocateid');
 
 var assess1 = document.createElement('div');
 assess1.id="assess1";
-assess1.innerHTML = "Assessment confirmation";
+assess1.innerHTML = "Assessment";
 
 detail1.appendChild(reflection1);
 detail1.appendChild(overall);
