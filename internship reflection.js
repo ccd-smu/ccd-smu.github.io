@@ -88,7 +88,12 @@ detail1.innerHTML = "";
   var overall = document.createElement('div');
   overall.id="overall";
   overall.innerHTML = "<b><u>Appraisal (from organization/employer)</u></b><span style='color: #EAEAEA'>‰‰‰</span><br>"+ "Overall grade: " + appraisal + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO1: "+ appraisal1 + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO2: "+ appraisal2 + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO3: "+ appraisal3 + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO4: "+ appraisal4 + "<span style='color: #EAEAEA'>‰‰‰</span><br>GLO5: "+ appraisal5 + "<span style='color: #EAEAEA'>‰‰‰</span>";
-    
+  
+      //recommend//
+      var recommend = document.createElement('div');
+      recommend.id="recommend";
+      recommend.style.backgroundColor = "rgb(21,28,85)";
+      recommend.style.color = "rgb(255,255,255)";
 	var allocateid = localStorage.getItem('allocateid');
 
 var assess1 = document.createElement('div');
@@ -97,16 +102,16 @@ assess1.innerHTML = "Assessment";
 
 detail1.appendChild(reflection1);
 detail1.appendChild(overall);
+detail1.appendChild(recommend);
 
-
-$( "#assess").click(function() {
+$(document).on('click', '#assess', function() {
 
   assess.innerHTML = "Close";
 
 if ($('#detail1').length === 0) {
 document.body.appendChild(detail1);
+detail1.appendChild(assess1);
 recommend.appendChild(assess1);
-
 } else {
 
 if ($('#detail1').is(':visible')){    
@@ -122,7 +127,8 @@ assess.innerHTML = "Close";
 };
 });
 
-$( "#assess1").click(function() {
+
+$(document).on('click', '#assess1', function() {
 	
 if (GLOXX.includes("2 3 4 5") || GLOXX == null){
    assess1.innerHTML='Student selected more than 3 LOs';
@@ -139,7 +145,8 @@ goNav('my_assessments','allocationId='+currentId);
 	
 if ($('#detail1').length === 0) {
 document.body.appendChild(detail1);
-
+recommend.appendChild(copy1);
+recommend.appendChild(assess1);
 } else {
 	
 if ($('#detail1').is(':visible')){    
