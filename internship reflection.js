@@ -1,7 +1,4 @@
-
-
-  var what = $('#tblQuestion1253').text().split(' ').length;
-  
+var what = $('#tblQuestion1253').text().split(' ').length;
   var sowhat = $('#tblQuestion1254').text().split(' ').length;
 
   var nowwhat = $('#tblQuestion1255').text().split(' ').length;
@@ -23,7 +20,6 @@
   var textnowwhat = $('#tblQuestion1255').text();
 
   
-window.onload = function() {
     var status = document.createElement('div');
     status.id="status";
     document.body.appendChild(status);
@@ -103,37 +99,21 @@ detail1.appendChild(overall);
 detail1.appendChild(recommend);
 
 
-$( "#assess").click(function() {
+$( "#assess1").click(function() {
 	
-	setTimeout(function(){
- 
-if (GLOXX.includes("5"))
-{
-	$('#recommendGLO5 option[value=Exposure]').attr('selected','selected');
-};
-
-if (GLOXX.includes("4"))
-{
-   $('#recommendGLO4 option[value=Exposure]').attr('selected','selected');
-};
-   
-if (GLOXX.includes("3"))
-{
-   $('#recommendGLO3 option[value=Exposure]').attr('selected','selected');
-};
-   
-if (GLOXX.includes("2"))
-{
-   $('#recommendGLO2 option[value=Exposure]').attr('selected','selected');
-   
-}; 
-if (GLOXX.includes("2 3 4 5") || GLOXX == null)
-{
+if (GLOXX.includes("2 3 4 5") || GLOXX == null){
    assess1.innerHTML='Student selected more than 3 LOs';
    assess1.style.backgroundColor = "red";
-}; 
-    	
-    },750)
+
+   if (confirm('Student chose more than 3 LOs, continue assessing?')) {
+	      $('#assess1').css('background-color', 'red');
+         var currentId = localStorage.getItem('currentId');
+         goNav('my_assessments','allocationId='+currentId);
+}};         
+
+    
+var currentId = localStorage.getItem('currentId');
+goNav('my_assessments','allocationId='+currentId);	
     assess.innerHTML = "Close";
 	
 if ($('#detail1').length === 0) {
@@ -153,59 +133,11 @@ else{
 	
 }
 };
-  });
-
-    
-$(document).on('click', '#assess1', function() {   
-
-var GLO2score = $('#recommendGLO2').val();
-var GLO3score = $('#recommendGLO3').val();
-var GLO4score = $('#recommendGLO4').val();
-var GLO5score = $('#recommendGLO5').val();
-
-if (GLO2score == "NA" &
-GLO3score == "NA" &
-GLO4score == "NA" &
-GLO5score == "NA") {
-	alert("At least 1 GLO required")
-	$('#assess1').css('background-color', 'red');
-} else if (GLO2score != "NA" & GLO3score != "NA" & GLO4score != "NA" & GLO5score != "NA"){
-
-if (confirm('Student chose more than 3 LOs, continue assessing?')) {
-	$('#assess1').css('background-color', '8a704c');
-window.localStorage.setItem('GLO2score',GLO2score);
-window.localStorage.setItem('GLO3score',GLO3score);
-window.localStorage.setItem('GLO4score',GLO4score);
-window.localStorage.setItem('GLO5score',GLO5score);
-
-var currentId = localStorage.getItem('currentId');
-goNav('my_assessments','allocationId='+currentId);
-} else {
-return false
-}
-	
-}
-	
-else{
-
-window.localStorage.setItem('GLO2score',GLO2score);
-window.localStorage.setItem('GLO3score',GLO3score);
-window.localStorage.setItem('GLO4score',GLO4score);
-window.localStorage.setItem('GLO5score',GLO5score);
-
-var currentId = localStorage.getItem('currentId');
-goNav('my_assessments','allocationId='+currentId);
+  });                
   
-};          
-                    
-});
-       
    setTimeout(function(){ 
    $('#frmUpdate2').remove();
    }, 1000);
-
-  
-  };
     
 
   
