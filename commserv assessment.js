@@ -36,7 +36,7 @@ return result;
 })();
 
 
-
+//
 	$("#assessment_details").on('focus', function () {
 
 

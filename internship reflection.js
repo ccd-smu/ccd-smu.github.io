@@ -135,13 +135,15 @@ if (GLOXX.includes("2 3 4 5") || GLOXX == null){
    assess1.style.backgroundColor = "red";
 
    if (confirm('Student chose more than 3 LOs, continue assessing?')) {
-	      $('#assess1').css('background-color', 'red');
-         var currentId = localStorage.getItem('currentId');
-         goNav('my_assessments','allocationId='+currentId);
-}};          
-var currentId = localStorage.getItem('currentId');
-goNav('my_assessments','allocationId='+currentId);	
-    assess.innerHTML = "Close";
+    $('#assess1').css('background-color', 'red');
+    var currentId = localStorage.getItem('allocationId');
+    goNav('my_assessments','allocationId='+currentId);
+    
+}}; 
+var currentId = localStorage.getItem('allocationId');
+goNav('my_assessments','allocationId='+currentId);
+
+assess.innerHTML = "Close";
 	
 if ($('#detail1').length === 0) {
 document.body.appendChild(detail1);

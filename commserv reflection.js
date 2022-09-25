@@ -102,15 +102,16 @@ assess1.innerHTML = "Assessment";
 
 detail1.appendChild(reflection1);
 detail1.appendChild(overall);
+detail1.appendChild(recommend);
 
-$( "#assess").click(function() {
+$(document).on('click', '#assess', function() {
 
     assess.innerHTML = "Close";
 
 if ($('#detail1').length === 0) {
 document.body.appendChild(detail1);
 detail1.appendChild(assess1);
-detail1.appendChild(recommend);
+recommend.appendChild(assess1);
 } else {
 
 if ($('#detail1').is(':visible')){    
@@ -135,11 +136,13 @@ else{
       
          if (confirm('Student chose more than 3 LOs, continue assessing?')) {
                $('#assess1').css('background-color', 'red');
-               var currentId = localStorage.getItem('currentId');
+               var currentId = localStorage.getItem('allocationId');
                goNav('my_assessments','allocationId='+currentId);
+               
       }}; 
-var currentId = localStorage.getItem('currentId');
+var currentId = localStorage.getItem('allocationId');
 goNav('my_assessments','allocationId='+currentId);
+
     assess.innerHTML = "Close";
 	
 if ($('#detail1').length === 0) {

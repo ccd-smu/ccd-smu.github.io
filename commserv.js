@@ -335,6 +335,8 @@ reflectionalertarray = reflectionalert.split('=')
 var topicid = reflectionalertarray[1]; 
 var departid = reflectionalertarray[2];
 var allocateid = reflectionalertarray[3]; 
+
+
 window.localStorage.setItem('allocateid', allocateid);
 // set click callback
 $('.popover-inner li a:contains("Edit")').click(function() {
@@ -352,7 +354,6 @@ window.open("https://shib.chalkandwire.com/ep2_smu/DemographicsRun.aspx?cus=465&
   
 
 });
-
 
 } else {reflectwindow.innerHTML = "Reflection incomplete";} 
 
