@@ -97,7 +97,7 @@ assess1.innerHTML = "Assessment";
 
 detail1.appendChild(reflection1);
 detail1.appendChild(overall);
-}:
+};
 	
    $( "#assess1").click(function() {
 	
