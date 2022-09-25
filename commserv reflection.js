@@ -98,7 +98,31 @@ assess1.innerHTML = "Assessment";
 detail1.appendChild(reflection1);
 detail1.appendChild(overall);
 
-	
+
+$( "#assess").click(function() {
+
+    assess.innerHTML = "Close";
+
+if ($('#detail1').length === 0) {
+document.body.appendChild(detail1);
+recommend.appendChild(assess1);
+
+} else {
+
+if ($('#detail1').is(':visible')){    
+      $("#detail1").hide();
+  $("#assess1").hide();
+  assess.innerHTML = "Assess";  }
+else{
+     $("#detail1").show();
+  $("#assess1").show();
+  assess.innerHTML = "Close";	
+
+}
+};
+  });
+
+
    $( "#assess1").click(function() {
 	
       if (GLOXX.includes("2 3 4 5") || GLOXX == null){
