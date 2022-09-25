@@ -334,13 +334,15 @@ reflectionalertarray = reflectionalert.split('=')
 var topicid = reflectionalertarray[1]; 
 var departid = reflectionalertarray[2];
 var allocateid = reflectionalertarray[3]; 
-
+window.localStorage.setItem('allocateid', allocateid);
 // set click callback
 $('.popover-inner li a:contains("Edit")').click(function() {
 location.href = "https://shib.chalkandwire.com/ep2_smu/DemographicsRun.aspx?cus=465&TopicId="+topicid+"&deptID="+departid+"&AllocationID="+allocateid;
 });
 // trigger click callback
-
+var currentId2 =$('tr:has(td:contains("DKHMCC Assessor"))').attr('id'); 
+currentId = currentId2.replace(/[^0-9\.]/g, '');
+window.localStorage.setItem('currentId', currentId);
 window.open("https://shib.chalkandwire.com/ep2_smu/DemographicsRun.aspx?cus=465&TopicId="+topicid+"&deptID="+departid+"&AllocationID="+allocateid, "_blank");
 
   }, 1000);
