@@ -15,7 +15,7 @@
 	  
 		$("#cfToggle a:contains('Toggle Open/Closed'),.toggle-panel-heading a:contains('Toggle Open/Closed')").trigger('click');
 	  
-	  $('#statusList,.form-field.full.line').addClass('highlighthelp');
+	  $('#statusList').addClass('highlighthelp');
 	  $("label:contains('Job code')").closest(".form-field.inline").addClass('highlighthelp');
 	  $("label:contains('Job code')").closest(".form-field.long.line").addClass('highlighthelp');
 	  
@@ -97,7 +97,15 @@ $("label:contains('Job code')").closest(".form-field.inline").append('<i>filter 
 	 $('#reportfields\\.rcf_1589').prop('checked', true);
 	 $('#reportfields\\.rcf_1590').prop('checked', true);
 	 $('#reportfields\\.rcf_1591').prop('checked', false);
-	 $('#reportfields\\.rcf_1909').prop('checked', false);	  	  	
+	 $('#reportfields\\.rcf_1909').prop('checked', true);
+	 
+	 //$('#lblStakeHolder').attr('value','_, Tan Poon Kian');
+	 
+	 
+	 $('#txtStakeHolder').attr('value',$('.name').text());
+	 $('#txtStakeHolder').keydown();
+
+	 
 	 
 	 $('#saveAsDefault').prop('checked', true);	 
 	 
@@ -106,6 +114,10 @@ $("label:contains('Job code')").closest(".form-field.inline").append('<i>filter 
 	   $('#ck_PlacementStatuses_0,#ck_PlacementStatuses_1,#ck_PlacementStatuses_2,#ck_PlacementStatuses_3,#ck_PlacementStatuses_4,#ck_PlacementStatuses_5').trigger('click');
 	   
 	  }, 800);
+	  setTimeout(function() {
+	  $('.ui-corner-all').trigger('click');}, 1000);
+	  
+	  
   });
   
 GetFieldplacementActions = (function() {
@@ -121,7 +133,7 @@ setTimeout(function(){
 const li = $('li');
 	   
 for (let i = 0; i < li.length; i++) {
-  if(li[i].innerText === 'Force Completion')
+  if(li[i].innerText === 'View')
   {
 	$("ul.popover-menu", $popover).prepend("<li role='none'><a role='menuitem' tabindex='-1' style='position:relative;z-index:2004; background: #151c55' href=\"javascript:ViewPlacement('" + href +"')"+ ';AssessCU()">' + "Assess" + "<\/a><\/li>");
 };};
