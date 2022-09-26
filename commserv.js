@@ -14,7 +14,7 @@ $( "#help" ).click(function() {
 	
 	  $("#cfToggle a:contains('Toggle Open/Closed'),.toggle-panel-heading a:contains('Toggle Open/Closed')").trigger('click');
 	
-	$('#statusList,.form-field.full.line').addClass('highlighthelp');
+	$('#statusList,#stakeholder-filter,.form-field.full.line').addClass('highlighthelp');
 	
 	$('#customfields\\.scf_761').parent().addClass('highlighthelp').append('<i>"Leader" is selected</i>');
 
@@ -22,19 +22,13 @@ $( "#help" ).click(function() {
 	
 	
 	$('#statusList').append('<i>"In Progress" is selected</i>');
- $('.form-field.full.line').append('<i>type "Community Service" and press enter</i>');
-
-
+	$('#stakeholder-filter').append('<i>Type and search for your name</i>');
 $("h2:contains('Include These Columns in Report')").closest(".form-field.long.line").append('<i>Default options for grading selected</i>');
-
-
  $('#ck_PlacementStatuses_0,#ck_PlacementStatuses_1,#ck_PlacementStatuses_3,#ck_PlacementStatuses_3,#ck_PlacementStatuses_4,#ck_PlacementStatuses_5').prop('checked', true);
  
 	 $('#ck_PlacementStatuses_2').prop('checked', false);
 
 	 $('#rbl_PlacementCandidateStatusesfilled').trigger('click');
-	
-	
 	
 	$('#reportfields\\.id').prop('checked', false);
 	$('#reportfields\\.name').prop('checked', true);
