@@ -1,3 +1,58 @@
 #button:hover{
 	background: #00008B;
-}
+}.border1,.border3{
+	outline: 2px solid #151c55;
+	position: relative;
+	color: #000;
+   }
+   .border2,.border4{
+	outline: 2px solid #8A704C;
+	position: relative;
+	color: #000;
+   }
+   
+   
+   .border1::after{
+	 content: "GLO 2";
+	 background: #151c55;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 transform: translateY(-100%) translateY(-2px);
+	 z-index: 999;
+	 outline: 2px solid #151c55;
+	 color: #fff;
+   }
+   .border2::after{
+	 content: "GLO 3";
+	 background: #8A704C;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 transform: translateY(-100%) translateY(-2px);
+	 z-index: 999;
+	 outline: 2px solid #8A704C;
+	 color: #fff;
+   }
+   .border3::after{
+	 content: "GLO 4";
+	 background: #151c55;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 transform: translateY(-100%) translateY(-2px);
+	 z-index: 999;
+	 outline: 2px solid #151c55;
+	 color: #fff;
+   }
+   .border4::after{
+	 content: "GLO 5";
+	 background: #151c55;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 transform: translateY(-100%) translateY(-2px);
+	 z-index: 999;
+	 outline: 2px solid #151c55;
+	 color: #fff;
+   }
