@@ -168,7 +168,6 @@ var tableappraisalGLO5 = $('#placements-table thead tr th:contains("Appraisal GL
 var assessmentspending = $('#placements-table thead tr th:contains("Assessments Pending")').index() + 1;
 
 $('tr>*:nth-child('+ surveyval +'):contains("3")').parent().addClass('assessable1');
-
 $('tr>*:nth-child('+ assessmentspending +'):contains("2")').parent().addClass('assessable2');
 
 $('tr>*:nth-child('+ overallappraisalgrade +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO1 +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO2 +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO3 +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO4 +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO5 +'):not(:empty)').parent().addClass('assessable3');
