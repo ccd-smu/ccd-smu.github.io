@@ -136,11 +136,11 @@ else{
       
          if (confirm('Student chose more than 3 LOs, continue assessing?')) {
                $('#assess1').css('background-color', 'red');
-               var currentId = localStorage.getItem('allocationId');
+               var currentId = localStorage.getItem('currentId');
                goNav('my_assessments','allocationId='+currentId);
                
       }}; 
-var currentId = localStorage.getItem('allocationId');
+var currentId = localStorage.getItem('currentId');
 goNav('my_assessments','allocationId='+currentId);
 
     assess.innerHTML = "Close";
@@ -172,6 +172,6 @@ else{
   
   $('#lnkReturn').click(function() {
 
-location.href = "https://shib.chalkandwire.com/ep2_smu/DemographicsRun.aspx?cus=465&TopicId="+topicid+"&deptID=0&AllocationID="+allocateid;
+location.href = "https://shib.chalkandwire.com/ep2_smu/DemographicsRun.aspx?cus=465&TopicId="+topicid+"&deptID=0&AllocationID="+allocationID;
 
 });
