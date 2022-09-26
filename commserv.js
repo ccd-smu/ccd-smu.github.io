@@ -14,7 +14,7 @@ $( "#help" ).click(function() {
 	
 	  $("#cfToggle a:contains('Toggle Open/Closed'),.toggle-panel-heading a:contains('Toggle Open/Closed')").trigger('click');
 	
-	$('#statusList,#stakeholder-filter,.form-field.full.line').addClass('highlighthelp');
+	$('#statusList').addClass('highlighthelp');
 	
 	$('#customfields\\.scf_761').parent().addClass('highlighthelp').append('<i>"Leader" is selected</i>');
 
@@ -22,7 +22,6 @@ $( "#help" ).click(function() {
 	
 	
 	$('#statusList').append('<i>"In Progress" is selected</i>');
-	$('#stakeholder-filter').append('<i>Type and search for your name</i>');
 $("h2:contains('Include These Columns in Report')").closest(".form-field.long.line").append('<i>Default options for grading selected</i>');
  $('#ck_PlacementStatuses_0,#ck_PlacementStatuses_1,#ck_PlacementStatuses_3,#ck_PlacementStatuses_3,#ck_PlacementStatuses_4,#ck_PlacementStatuses_5').prop('checked', true);
  
@@ -337,7 +336,7 @@ $('.popover-inner li a:contains("Edit")').click(function() {
 location.href = "https://shib.chalkandwire.com/ep2_smu/DemographicsRun.aspx?cus=465&TopicId="+topicid+"&deptID="+departid+"&AllocationID="+allocateid;
 });
 // trigger click callback
-var currentId2 =$('tr:has(td:contains("DKHMCC Assessor"))').attr('id'); 
+var currentId2 =$('tr:has(td:contains("C4SR Assessor"))').attr('id'); 
 currentId = currentId2.replace(/[^0-9\.]/g, '');
 window.localStorage.setItem('currentId', currentId);
 window.open("https://shib.chalkandwire.com/ep2_smu/DemographicsRun.aspx?cus=465&TopicId="+topicid+"&deptID="+departid+"&AllocationID="+allocateid, "_blank");

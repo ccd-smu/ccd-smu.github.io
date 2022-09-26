@@ -1,5 +1,4 @@
-
-  var help = document.createElement('div');
+var help = document.createElement('div');
   help.id="help";
   help.innerHTML = "?";
   document.body.appendChild(help);
@@ -152,13 +151,9 @@ return result;
 
 
   setInterval(function(){
-  
 //checks to see if placement in column has been assessed by external
- 
 var surveyval = $('#placements-table thead tr th:contains("Surveys Completed")').index() + 1;
-
 var overallappraisalgrade = $('#placements-table thead tr th:contains("Appraisal Overall Grade")').index() + 1;
-
 var tableappraisalGLO1 = $('#placements-table thead tr th:contains("Appraisal GLO1")').index() + 1;
 var tableappraisalGLO2 = $('#placements-table thead tr th:contains("Appraisal GLO2")').index() + 1;
 var tableappraisalGLO3 = $('#placements-table thead tr th:contains("Appraisal GLO3")').index() + 1;
@@ -183,15 +178,10 @@ if (idid !== null){
   var last = document.createElement('div');
   last.id="last";
   last.innerHTML = "Find next entry";
-  document.body.appendChild(last);
-  
-  
+  document.body.appendChild(last);  
 //show last assessed   
 setInterval(function(){
-  
-   
 $("tr:has(td:contains('"+ placementname +"'))").filter(":has(th:contains('"+ idid +"'))").eq(0).addClass("lastone");
-
 }, 500);
  
 }
@@ -384,7 +374,6 @@ if((appraisal  === '') && (appraisal1  === '') && (appraisal2  === '') && (appra
 }, 750); 
  
 //end data update
-
 
 
 $(document).on('click', '#assess1', function() {
