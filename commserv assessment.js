@@ -1,4 +1,3 @@
-
 	var assessfunction2 =  localStorage.getItem('assessfunction');
 	if (assessfunction2 == 1){
 
@@ -29,7 +28,7 @@ var button = document.createElement('div');
    return function() {
 	   // your code
 	   var result = cached_function.apply(this, arguments); // use .apply() to call it
-	  localStorage.setItem('GLOnum', null);
+	  //localStorage.setItem('GLOnum', null);
 
 return result;
    };
@@ -41,107 +40,65 @@ return result;
 
 
 var GLOXX = localStorage.getItem('GLOXX');
-var idid = localStorage.getItem('idid');
-var placementname = localStorage.getItem('placementname');
 
-if ($('#lblOwner:contains("' + idid + '")'))
-{
-$('.ckNotApplicable').attr('checked', true);
+$('.assessForm tbody tr>*:nth-last-child(2)').trigger('click');
+var allocationID =  window.localStorage.getItem('currentId');
 
-} else {alert("Student mismatch")};
+setInterval(function() {
 
-var GLO2score = window.localStorage.getItem('GLO2score');
-var GLO3score = window.localStorage.getItem('GLO3score');
-var GLO4score = window.localStorage.getItem('GLO4score');
-var GLO5score = window.localStorage.getItem('GLO5score');
- 	
- 	if (GLO2score == "NA" )
-{
-   $('.ckNotApplicable:eq(0)').attr('checked', true);
-};
-if (GLO3score == "NA" )
-{
-   $('.ckNotApplicable:eq(1)').attr('checked', true);
-};
-if (GLO4score == "NA" )
-{
-   $('.ckNotApplicable:eq(2)').attr('checked', true);
-};
-if (GLO5score == "NA" )
-{
-   $('.ckNotApplicable:eq(3)').attr('checked', true);
-};
- 
- //GLO2
-if (GLO2score.includes("Exposure"))
-{
-$('.txtScore:eq(0) option[value=Exposure]').attr('selected','selected');
-};
-if (GLO2score.includes("Integration"))
-{
-$('.txtScore:eq(0) option[value=Integration]').attr('selected','selected');
-};
-if (GLO2score.includes("Transformation"))
-{
-$('.txtScore:eq(0) option[value=Transformation]').attr('selected','selected');
-};
-//GLO3
-if (GLO3score.includes("Exposure"))
-{
-$('.txtScore:eq(1) option[value=Exposure]').attr('selected','selected');
-};
-if (GLO3score.includes("Integration"))
-{
-$('.txtScore:eq(1) option[value=Integration]').attr('selected','selected');
-};
-if (GLO3score.includes("Transformation"))
-{
-$('.txtScore:eq(1) option[value=Transformation]').attr('selected','selected');
-};
-//GLO4
-if (GLO4score.includes("Exposure"))
-{
-$('.txtScore:eq(2) option[value=Exposure]').attr('selected','selected');
-};
-if (GLO4score.includes("Integration"))
-{
-$('.txtScore:eq(2) option[value=Integration]').attr('selected','selected');
-};
-if (GLO4score.includes("Transformation"))
-{
-$('.txtScore:eq(2) option[value=Transformation]').attr('selected','selected');
-};
 
-//GLO5
-if (GLO5score.includes("Exposure"))
-{
-$('.txtScore:eq(3) option[value=Exposure]').attr('selected','selected');
-};
-if (GLO5score.includes("Integration"))
-{
-$('.txtScore:eq(3) option[value=Integration]').attr('selected','selected');
-};
-if (GLO5score.includes("Transformation"))
-{
-$('.txtScore:eq(3) option[value=Transformation]').attr('selected','selected');
-};	
- 	
- 
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1760]').addClass('border1');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1761]').addClass('border2');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1762]').addClass('border2');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1763]').addClass('border3');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1764]').addClass('border3');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1765]').addClass('border4');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1782]').addClass('border4');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1767]').addClass('border4');	
+
+$('.toggle-panel-content').css('display','block');
+$('.instrument-select-all-row').css('display','none');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1759]').css('display','none')
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1759]').closest('tr').next('tr').css('display','none');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1769]').css('display','none');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1769]').closest('tr').next('tr').css('display','none');
+
+if (!GLOXX.includes("2")){
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1760]').css('display','none');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1760]').closest('tr').next('tr').css('display','none');
+
+}
+if (!GLOXX.includes("3")){
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1761]').css('display','none');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1762]').css('display','none');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1761]').closest('tr').next('tr').css('display','none');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1762]').closest('tr').next('tr').css('display','none');
+}
+if (!GLOXX.includes("4")){
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1763]').css('display','none');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1764]').css('display','none');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1763]').closest('tr').next('tr').css('display','none');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1764]').closest('tr').next('tr').css('display','none');
+}
+if (!GLOXX.includes("5")){
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1765]').css('display','none');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1782]').css('display','none');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1767]').css('display','none');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1765]').closest('tr').next('tr').css('display','none');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1782]').closest('tr').next('tr').css('display','none');
+$('tr.criterion[data-criterion-id=crit'+allocationID+'_1767]').closest('tr').next('tr').css('display','none');
+}
+
+}, 500);
 
 
 
-   
 var type = localStorage.getItem('type');
 
 
-SaveStudentAssessment();
-
-
-
-	
 });
-	
 
+ 
 var timesRun = 0;
 var interval = setInterval(function(){
     timesRun += 1;
@@ -150,7 +107,6 @@ var interval = setInterval(function(){
     }
 	if($("#jGrowl").is(":visible")){
 
-location.href = 'https://shib.chalkandwire.com/ep2_smu/FieldPlacementList.aspx?cus=465';
 var type = "";
 localStorage.setItem('type',type);
 var assessfunction = 0;
