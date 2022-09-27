@@ -94,7 +94,7 @@ detail1.innerHTML = "";
       recommend.id="recommend";
       recommend.style.backgroundColor = "rgb(21,28,85)";
       recommend.style.color = "rgb(255,255,255)";
-	var allocationID = localStorage.getItem('allocationID');
+      var allocationID = localStorage.getItem('allocationID');
 
 var assess1 = document.createElement('div');
 assess1.id="assess1";
