@@ -43,10 +43,7 @@ var GLOXX = localStorage.getItem('GLOXX');
 
 $('.assessForm tbody tr>*:nth-last-child(2)').trigger('click');
 var allocationID =  window.localStorage.getItem('currentId');
-
 setInterval(function() {
-
-
 $('tr.criterion[data-criterion-id=crit'+allocationID+'_1760]').addClass('border1');
 $('tr.criterion[data-criterion-id=crit'+allocationID+'_1761]').addClass('border2');
 $('tr.criterion[data-criterion-id=crit'+allocationID+'_1762]').addClass('border2');
@@ -111,7 +108,7 @@ var type = "";
 localStorage.setItem('type',type);
 var assessfunction = 0;
 localStorage.setItem('assessfunction',assessfunction);
-
+var GLOXX = localStorage.setItem('GLOXX','');
          }
 
 }, 500); };

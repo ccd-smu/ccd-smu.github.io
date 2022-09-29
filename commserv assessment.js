@@ -43,9 +43,7 @@ var GLOXX = localStorage.getItem('GLOXX');
 
 
 var allocationID =  window.localStorage.getItem('currentId');
-
 setInterval(function() {
-
 
 $('tr.criterion[data-criterion-id=crit'+allocationID+'_2024]').addClass('border1');
 $('tr.criterion[data-criterion-id=crit'+allocationID+'_2025]').addClass('border2');
@@ -105,7 +103,7 @@ var type = "";
 localStorage.setItem('type',type);
 var assessfunction = 0;
 localStorage.setItem('assessfunction',assessfunction);
-
+var GLOXX = localStorage.setItem('GLOXX','');
          }
 
 }, 500); };
