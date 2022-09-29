@@ -72,7 +72,7 @@ color: green;
 }
 
 .lastone::after {
-  content: "Last assessed";
+  content: "Last accessed";
   background: blue;
   position: absolute;
   top: 0;
