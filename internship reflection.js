@@ -51,13 +51,13 @@ var GLO2 = "2 ";
 var GLO3 = "3 ";
 } else { var GLO3 = ""};
 
-	if($("td:contains('Assess potential ethical conflicts in personal, professional and societal settings')").closest("td").next('td').find('i').attr('title') == "Checked" || 
-	$("td:contains('Demonstrate a sense of responsibility for the broader impact of individual and collective actions')").closest("td").next('td').find('i').attr('title') == "Checked") {
+	if($("#gqrt1629").closest("td").next('td').find('i').attr('title') == "Checked" || 
+	$("#gqrt1630").closest("td").next('td').find('i').attr('title') == "Checked") {
 var GLO4 = "4 ";
 } else { var GLO4 = ""};
 
 
-	if($("td:contains('Assimilate work habits and attitudes necessary for job success')").closest("td").next('td').find('i').attr('title') == "Checked" || 
+	if($("#gqrt1629").closest("td").next('td').find('i').attr('title') == "Checked" || 
 	$("td:contains('Commit to personal development and lifelong learning')").closest("td").next('td').find('i').attr('title') == "Checked" || 
 	$("td:contains('Develop a positive mindset to overcome setbacks in the face of disruption and challenges')").closest("td").next('td').find('i').attr('title') == "Checked") {
 var GLO5 = "5";
