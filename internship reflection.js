@@ -46,8 +46,8 @@ var nowwhat = $('#tblQuestion1255').text().split(' ').length;
 var GLO2 = "2 ";
 } else { var GLO2 = ""};
 
-	if($("gqrt1626").closest("td").next('td').find('i').attr('title') == "Checked" || 
-	$("gqrt1627").closest("td").next('td').find('i').attr('title') == "Checked") {
+	if($("#gqrt1626").closest("td").next('td').find('i').attr('title') == "Checked" || 
+	$("#gqrt1627").closest("td").next('td').find('i').attr('title') == "Checked") {
 var GLO3 = "3 ";
 } else { var GLO3 = ""};
 
