@@ -80,7 +80,27 @@ $('.ckNotApplicable').eq(3).attr('checked', true);
 $('tr.criterion[data-criterion-id=crit'+allocationID+'_2027]').css('display','none');
 $('tr.criterion[data-criterion-id=crit'+allocationID+'_2027]').closest('tr').next('tr').css('display','none');
 }
-$('.txtScore option[value=Exposure]').attr('selected','selected');
+
+
+if (GLOnum.includes("2"))
+{
+   $('.txtScore:eq(0) option[value=Exposure]').attr('selected','selected');
+};
+
+if (GLOnum.includes("3"))
+{
+   $('.txtScore:eq(1) option[value=Exposure]').attr('selected','selected');
+};
+
+if (GLOnum.includes("4"))
+{
+   $('.txtScore:eq(2) option[value=Exposure]').attr('selected','selected');
+};
+
+if (GLOnum.includes("5"))
+{
+	$('.txtScore:eq(3) option[value=Exposure]').attr('selected','selected');
+};
 }, 500);
 
 
