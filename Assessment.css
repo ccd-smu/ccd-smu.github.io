@@ -47,12 +47,12 @@
    }
    .border4::after{
 	 content: "GLO 5";
-	 background: #151c55;
+	 background: #8A704C;
 	 position: absolute;
 	 top: 0;
 	 left: 0;
 	 transform: translateY(-100%) translateY(-2px);
 	 z-index: 999;
-	 outline: 2px solid #151c55;
+	 outline: 2px solid #8A704C;
 	 color: #fff;
    }
