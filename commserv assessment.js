@@ -40,8 +40,6 @@ $("#assessment_details").on('focus', function () {
 
 
 var GLOXX = localStorage.getItem('GLOXX');
-
-
 var allocationID =  window.localStorage.getItem('currentId');
 setInterval(function() {
 
