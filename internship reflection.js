@@ -42,12 +42,12 @@ var nowwhat = $('#tblQuestion1255').text().split(' ').length;
     
     
     
-	if($("td:contains('Demonstrate ability to solve problems of varying levels of complexity')").closest("td").next('td').find('i').attr('title') == "Checked"){
+	if($("#gqrt1624").closest("td").next('td').find('i').attr('title') == "Checked"){
 var GLO2 = "2 ";
 } else { var GLO2 = ""};
 
-	if($("td:contains('Generate buy-in from team for your initiatives suggested')").closest("td").next('td').find('i').attr('title') == "Checked" || 
-	$("td:contains('Communicate effectively in oral and written forms with different stakeholders as needed')").closest("td").next('td').find('i').attr('title') == "Checked") {
+	if($("gqrt1626").closest("td").next('td').find('i').attr('title') == "Checked" || 
+	$("gqrt1627").closest("td").next('td').find('i').attr('title') == "Checked") {
 var GLO3 = "3 ";
 } else { var GLO3 = ""};
 
@@ -57,9 +57,9 @@ var GLO4 = "4 ";
 } else { var GLO4 = ""};
 
 
-	if($("#gqrt1629").closest("td").next('td').find('i').attr('title') == "Checked" || 
-	$("td:contains('Commit to personal development and lifelong learning')").closest("td").next('td').find('i').attr('title') == "Checked" || 
-	$("td:contains('Develop a positive mindset to overcome setbacks in the face of disruption and challenges')").closest("td").next('td').find('i').attr('title') == "Checked") {
+	if($("#gqrt1632").closest("td").next('td').find('i').attr('title') == "Checked" || 
+	$("#gqrt1633").closest("td").next('td').find('i').attr('title') == "Checked" || 
+	$("#gqrt1634").closest("td").next('td').find('i').attr('title') == "Checked") {
 var GLO5 = "5";
 } else { var GLO5 = ""};
 
