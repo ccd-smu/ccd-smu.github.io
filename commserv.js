@@ -18,6 +18,8 @@ $( "#help" ).click(function() {
 	
 	$('#customfields\\.scf_761').parent().addClass('highlighthelp').append('<i>"Leader" is selected</i>');
 
+	$('#placements-table_filter').addClass('highlighthelp').append('<i>"Search for project name here</i>');;
+
 
 	
 	
