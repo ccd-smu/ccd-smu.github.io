@@ -28,7 +28,7 @@ var cached_function = SaveStudentAssessment;
 return function() {
    // your code
    var result = cached_function.apply(this, arguments); // use .apply() to call it
-  //localStorage.setItem('GLOnum', null);
+  //localStorage.setItem('GLOXX', null);
 
 return result;
 };
@@ -80,23 +80,23 @@ $('tr.criterion[data-criterion-id=crit'+allocationID+'_2255]').closest('tr').nex
 }
 
 
-if (GLOnum.includes("2"))
+if (GLOXX.includes("2"))
 {
    
    $('tr.criterion[data-criterion-id=crit'+allocationID+'_2252] .txtScore option[value=Exposure]').attr('selected','selected');
 };
 
-if (GLOnum.includes("3"))
+if (GLOXX.includes("3"))
 {
    $('tr.criterion[data-criterion-id=crit'+allocationID+'_2253] .txtScore option[value=Exposure]').attr('selected','selected');
 };
 
-if (GLOnum.includes("4"))
+if (GLOXX.includes("4"))
 {
    $('tr.criterion[data-criterion-id=crit'+allocationID+'_2254] .txtScore option[value=Exposure]').attr('selected','selected');
 };
 
-if (GLOnum.includes("5"))
+if (GLOXX.includes("5"))
 {
 	$('tr.criterion[data-criterion-id=crit'+allocationID+'_2255] .txtScore option[value=Exposure]').attr('selected','selected');
 };
