@@ -82,22 +82,23 @@ $('tr.criterion[data-criterion-id=crit'+allocationID+'_2255]').closest('tr').nex
 
 if (GLOnum.includes("2"))
 {
-   $('.txtScore:eq(0) option[value=Exposure]').attr('selected','selected');
+   
+   $('tr.criterion[data-criterion-id=crit'+allocationID+'_2252] .txtScore option[value=Exposure]').attr('selected','selected');
 };
 
 if (GLOnum.includes("3"))
 {
-   $('.txtScore:eq(1) option[value=Exposure]').attr('selected','selected');
+   $('tr.criterion[data-criterion-id=crit'+allocationID+'_2253] .txtScore option[value=Exposure]').attr('selected','selected');
 };
 
 if (GLOnum.includes("4"))
 {
-   $('.txtScore:eq(2) option[value=Exposure]').attr('selected','selected');
+   $('tr.criterion[data-criterion-id=crit'+allocationID+'_2254] .txtScore option[value=Exposure]').attr('selected','selected');
 };
 
 if (GLOnum.includes("5"))
 {
-	$('.txtScore:eq(3) option[value=Exposure]').attr('selected','selected');
+	$('tr.criterion[data-criterion-id=crit'+allocationID+'_2255] .txtScore option[value=Exposure]').attr('selected','selected');
 };
 }, 500);
 
