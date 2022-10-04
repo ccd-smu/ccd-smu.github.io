@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="assets/paper_img/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>SMU Co-curricular Guide</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/ct-paper.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet" />    
+    <link href="assets/css/examples.css" rel="stylesheet" />
+    
+    
+
+    <!--     Fonts and icons     -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>    
+    <link href='https://fonts.googleapis.com/css?family=Oswald:300,600' rel='stylesheet' type='text/css'>
+
+<style>
+        h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-family: "Oswald", sans-serif;
+}
+    .glo{font-size: 80%; padding: 0 10px;}
+    
+    
+    .arrow-down {
+ width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-top: 20px solid #151c55;
+}
+
+    
+    .first1{margin-top: 63px;}
+    
+    .login2{
+        background: #81bc41;
+    border-color: #81bc41;
+    color: #2d343e;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.17;
+    margin-bottom: 10px;
+    overflow: visible;
+    padding: 0.9em 0.8em 0.7em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.1s linear all;
+    width: 100%;
+    transform: translateX(-20px);
+    }
+        .login3{
+        background: #097865;
+    border-color: #097865;
+    color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.17;
+    margin-bottom: 10px;
+    overflow: visible;
+    padding: 0.9em 0.8em 0.7em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.1s linear all;
+    width: 100%;
+    transform: translateX(-20px);
+    }
+    
+    label{background: #8A704C; padding: 7px 18px; color: #fff; font-weight: 500; margin-top: 30px;}
+    
+    video{background: #dadada;}
+    
+    .tabbing{
+    border: 0;
+    border-radius: 0;
+    color: #e5e5e1;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0;
+    outline: none!important;
+    padding: 5px 12px;
+    position: relative; 
+    background-color: #4d4949;
+    text-shadow: 0 0 2px #000;
+    
+    }
+    
+    .flag{background-color: #c43c35;
+    border-radius: 3px;
+    color: #fff;
+    display: inline;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 3px;
+    padding: .22em .33em;
+    text-shadow: none;
+    text-transform: uppercase;
+    white-space: nowrap;}
+    
+        .flag2{
+    background: url(assets/paper_img/layout-box-bg-trans.png);
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #c2c1bc;
+    display: inline;
+    color: #000;
+    font-family: museo-sans-1,sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    outline-style: none!important;
+    margin: 0 0 6px;
+    padding: 0 8px;
+    }
+        
+        .flag3{
+ 
+    background-color: #225f8e;
+    background-image: linear-gradient(to bottom,#3d95d9,#225f8e);
+    border-color: #225f8e #225f8e #2e4e77;
+    font-size: 1.1rem;
+    padding: .4em .82em;
+background-repeat: repeat-x;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%), 0 1px 2px rgb(0 0 0 / 5%);
+     cursor: pointer;
+    display: inline-block;
+     font-weight: normal;
+    line-height: 1.17;
+    margin: 0;
+    overflow: visible;
+    position: relative;
+    text-align: center;
+    text-decoration: none; 
+            font-family: museo-sans-1,sans-serif;
+    }
+    
+    
+.round-time-bar {
+  margin: 15px 0 0 0;
+  overflow: hidden;
+}
+.round-time-bar div {
+  height: 5px;
+  transition: width 5s linear;
+  transform-origin: left center;
+  background: #151c55;
+ transform: scaleX(1);
+    transform-origin: left;
+    }
+    
+.round-time-bar div.clicked {
+transform: scaleX(0);
+transition: transform 5000ms linear;
+}
+    
+    .register-card a{border-radius: 20px}
+
+    
+    .btn{border: 0;border-radius: 0;}
+    
+    .coll{cursor: pointer;}
+    .coll:hover .btn{background: #090c26;}
+    
+    .tabb{position: absolute; background: #151c55; width: 100%; height: 100%;text-align: center;}
+    
+     .coll div h4 {margin: 50px 0; color: #fff}
+    
+    .coll{margin: 5px;border-radius: 30px; position: relative; background-size: cover; max-width: 600px; height: 200px;}
+    
+    
+  .barr {height: 63px;position: fixed; top: 0; left: 0; background: #151c55; z-index: 999; width: 100%}
+    .barr> h4{margin: 21px 0; color: #fff; width: auto; display: inline-block}
+    .barr> a{border-radius: 50%;}
+
+
+.toggle-up {
+  transform: rotate(0);
+}
+    .barr-button {margin:13px 0;float: right;}
+    .large {display: none;}
+     .small {display: block;text-align: left;}
+    .modal .section {min-height: 100vh}
+    
+    
+    .notif, .notif2, .notifx, .notif2x, .notifxx, .notif2xx{position: relative; top: 0; width: 100% ; z-index: 1000; background: #8A704C;
+    }    
+
+    .notif p, .notif2 p,.notifx p, .notif2x p,.notifxx p, .notif2xx p{font-size: 12px; color: #fff; padding: 15px 15px 0 15px;}
+            .register-card p,.register-card2 p {font-size: 12px;}
+
+    .useful{border-radius: 20px; float: right; display: inline-block;}
+    
+    @media (min-width: 768px) {
+          .first1{margin-top: 70px;}
+          .barr {height: 70px;position: fixed; top: 0; left: 0; background: #151c55; z-index: 999;}
+        .barr-button {margin:17px 0;float: right; content: "back"}
+        .barr> a{border-radius: 20px;}
+        .small {display: none;}
+         .large {display: block;}
+        .notif p, .notif2 p,.notifx p, .notif2x p,.notifxx p, .notif2xx p{font-size: 16px; padding: 15px 15px 0 15px;}
+        .register-card p,.register-card2 p {font-size: 16px;}
+            .coll{margin: 5px;border-radius: 30px; position: relative; background-size: cover; max-width: 600px; height: 200px;}
+        .coll div h4 {margin: 50px 0; color: #fff}
+    }
+    
+    
+    
+    
+    </style>
+
+
+</head>
+<body class="section">
+    <div class="barr" style="width: 100%">
+    
+
+    
+        
+ <div class="container tim-container barr">
+     <h4 style="margin: 21px 0; color: #fff; width: auto; display: inline-block; cursor: pointer" id="button4">Anthology Portfolio Tool</h4>
+     <a target="_self" href="staff.html" class="btn btn-danger btn-fill barr-button large">back</a>
+     <a target="_self" href="staff.html" class="btn btn-danger btn-fill barr-button small" style="padding: 7px 12px;">&lt;</a>
+ 
+         
+    </div> 
+        
+        
+    </div>
+
+
+
+<div class="wrapper">
+
+
+    <div class="main">
+        <div class="section">
+         <div class="container tim-container">
+
+                    <div class="row">
+                        <div class="col-md-12">
+    
+                   
+                
+<div class="section" style="padding: 70px 0 0 0; min-height: auto;">
+
+        
+<label style="width: 100%; margin-bottom: 0; background: #151c55; cursor:pointer;" class="btn-danger btn-fill" data-toggle="modal" data-target="#myModal0b"><b>Installation of Anthology Portofolio Tool</b>
+    </label>    
+    <div style="width: 100%; margin-top: 0; border: 2px solid #151c55; background: transparent; color: #151c55; text-align: left; padding: 20px; cursor:pointer;" data-toggle="modal" data-target="#myModal0b">
+    <li>Adding and installing browser extension</li>
+    <li>Removing/uninstalling tool</li>
+   
+    <i>This tool is for internal use only</i>
+    </div> 
+       
+        
+        
+    <label style="width: 100%; margin-bottom: 0; background: #151c55; cursor:pointer;" class="btn-danger btn-fill" data-toggle="modal" data-target="#myModal3aa"><b>How to use tool</b>
+    </label>    
+    <div style="width: 100%; margin-top: 0; border: 2px solid #151c55; background: transparent; color: #151c55; text-align: left; padding: 20px; cursor:pointer;" data-toggle="modal" data-target="#myModal3aa">
+     <li>Searching for placements</li>
+     <li>Reading reflections</li>
+     <li>Assessing student</li>
+    </div>
+
+    </div>
+   
+
+    
+    </div>
+    
+ 
+                        </div>
+                    </div>
+         </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Modal 0b -->
+<div class="modal fade" style="background: #151c55;" id="myModal0b" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    
+
+
+
+
+    <div class="barr" style="width: 100%">
+ <div class="container tim-container barr">
+<h4 style="margin: 21px 0; color: #fff; width: auto; display: inline-block">Installation</h4>
+     <a data-dismiss="modal" target="#myModal0b" href="#" class="btn btn-danger btn-fill barr-button large">back</a>
+     <a data-dismiss="modal" target="#myModal0b" href="#" class="btn btn-danger btn-fill barr-button small" style="padding: 7px 12px;">&lt;</a>
+     
+    </div> 
+        
+        
+    </div>
+    
+          
+                   
+<div class="wrapper first1">
+
+   
+
+
+                   
+                
+<div class="section" style="padding: 35px 0; min-height: auto; background: #fff;">
+                       <div class="container">
+
+
+<div class="col-sm-12 register-card" style="background: #fff; padding-bottom: 15px">
+    
+    
+    <label>Installation</label>    
+    
+   
+<p>We recommend choosing a browser that is used less often, to prevent any accidental interference with your daily work.</p><br>
+
+<a class="btn btn-fill" style="margin: 0 0 5px 0; position: relative;top: -30px; border-radius: 20px; width: auto;" href='https://www.google.com/intl/en_sg/chrome/' target="_blank">Download Chrome</a>
+<br>
+<a class="btn btn-fill" style="margin: 0 0 5px 0; position: relative;top: -30px; border-radius: 20px; width: auto;" href='https://www.microsoft.com/en-us/edge?r=1' target="_blank">Download Edge</a>
+
+<br>
+  <p>Follow the link below and install the browser extension (works for both browsers) and download the JSON file that will be needed later.</p><br>
+  <a class="btn btn-fill" style="margin: 0 0 5px 0; position: relative;top: -30px; border-radius: 20px; width: auto;" href='https://chrome.google.com/webstore/detail/user-javascript-and-css/nbhcbdghjpllgmfilhnhkllmkecfmpld' target="_blank">Extension (browse to this in the browser you intend to use)</a>
+  <br>
+  <a class="btn btn-fill" style="margin: 0 0 5px 0; position: relative;top: -30px; border-radius: 20px; width: auto;" href='DKHMCC.json' target="_blank" download>JSON file</a>
+  
+ 
+  <p>After installation, an icon should appear next to the address bar, as shown:</p>
+
+    <img src="assets/paper_img/tool1.png" width="100%"><br> <br> 
+
+    <p>Click on the browser extension icon, followed by the setting icon (shaped like a gear)</p>
+
+    <img src="assets/paper_img/tool2.png" width="100%"><br> <br> 
+
+    <p>A new page will open. Click on the “Settings” tab, followed by “Upload and apply” as shown.<br>
+        When prompted, select the JSON file downloaded at the start of this guide.
+
+
+    </p>
+
+    <img src="assets/paper_img/tool3.png" width="100%"><br> <br> 
+
+
+
+
+<br>
+
+<label style="background: red;">Deactivating the tool</label>    
+    
+<p>To disable the tool, click on the icon next to the address bar, then disable all of the options shown:</p>
+<img src="assets/paper_img/tool1.png" width="100%">
+<img src="assets/paper_img/tool2.png" width="100%">   
+    
+<img src="assets/paper_img/tool5.png" width="100%"><br> <br> 
+    
+
+<p>Alternatively, you can uninstall the browser extension entirely.</p>    
+    </div>
+    
+    </div>
+
+    </div>
+    
+    
+<!--    end modal -->
+
+    </div>
+    
+    
+    </div>
+   <!-- Modal 0b end --> 
+    
+
+<!-- Modal 3aa GLO -->
+<div class="modal fade" style="background: #151c55;" id="myModal3aa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    
+
+
+
+
+    <div class="barr" style="width: 100%">
+ <div class="container tim-container barr">
+<h4 style="margin: 21px 0; color: #fff; width: auto; display: inline-block">Identify GLOs</h4>
+     <a data-dismiss="modal" target="#myModal3aa" href="#" class="btn btn-danger btn-fill barr-button large">back</a>
+     <a data-dismiss="modal" target="#myModal3aa" href="#" class="btn btn-danger btn-fill barr-button small" style="padding: 7px 12px;">&lt;</a>
+     
+    </div> 
+        
+        
+    </div>
+    
+          
+                   
+<div class="wrapper first1">
+
+   
+
+        <div class="section" style="padding: 70px 0;" id="3step0">
+         <div class="container">
+             
+                          
+<div class="col-sm-12 register-card" style="text-align: center;">   
+
+    
+             
+             
+             
+<div class="col-sm-6 register-card2">
+    
+    
+        <label style="margin-bottom: 5px; width: 100% ; background: transparent; color: #151c55; font-weight: bold; border: 2px solid #151c55; position: relative">Disciplinary, <br>Multidisciplinary and <br>Interdisciplinary Knowledge*
+
+    <p style="text-align: left; color: grey; font-weight: 100; font-size: 80%; margin: 0">* not applicable to co-curricular activities</p>
+            
+ <div style="position: absolute; top: 0; left: 0px; background: #151c55; color: #fff; padding: 0 5px;">GLO 1*</div>   
+    
+</label>
+    
+    <label style="margin-top: 5px; width: 100%; background: transparent; color: #8A704C; font-weight: bold; border: 2px solid #8A704C; position: relative">Intellectual<br> and Creative Skills<br>
+    <ol type="a" style="text-align: left; color: grey; font-weight: 100; font-size: 80%">
+    <li>Critical thinking & problem solving</li>
+    <li>Innovation and Enterprising skills</li>
+    </ol>
+            
+         <div style="position: absolute; top: 0; left: 0px; background: #8A704C; color: #fff; padding: 0 5px;">GLO 2</div>   
+            
+            
+    </label>
+    
+    <label style="margin-top: 5px; width: 100% ;background: transparent; color: #151c55; font-weight: bold; border: 2px solid #151c55; position: relative">Interpersonal Skills<br>
+    <ol type="a" style="text-align: left; color: grey; font-weight: 100; font-size: 80%">
+    <li>Collaboration and leadership</li>
+    <li>Communication</li>
+    </ol>
+        
+         <div style="position: absolute; top: 0; left: 0px; background: #151c55; color: #fff; padding: 0 5px;">GLO 3</div>   
+            
+    </label>
+    
+<label style="margin-top: 5px; width: 100%; background: transparent; color: #8A704C; font-weight: bold; border: 2px solid #8A704C; position: relative;">Global Citizenship<br>
+    <ol type="a" style="text-align: left; color: grey; font-weight: 100; font-size: 80%">
+    <li>Intercultural understanding and sensitivity</li>
+    <li>Understanding of the Asian context</li>
+    <li>Ethics and social responsibility</li>
+	    <li>Understanding of sustainability issues</li>
+    </ol>
+                
+         <div style="position: absolute; top: 0; left: 0px; background: #8A704C; color: #fff; padding: 0 5px;">GLO 4</div>   
+
+</label>
+    
+        <label style="margin-top: 5px; width: 100%;background: transparent; color: #151c55; font-weight: bold; border: 2px solid #151c55; position: relative">Personal Mastery<br>
+    <ol type="a" style="text-align: left; color: grey; font-weight: 100; font-size: 80%">
+    <li>Self-directed learning</li>
+    <li>Resilience</li>
+    </ol>
+
+         <div style="position: absolute; top: 0; left: 0px; background: #151c55; color: #fff; padding: 0 5px;">GLO 5</div>   
+ </label>   
+             </div>
+
+<div class="register-card col-sm-6" style="position: relative; text-align: left;">
+
+    <label>Identify Graduate Learning Outcomes (GLOs)</label><br><br>
+    <ul style="position: relative">
+        <li>Identify the Graduate Learning Outcome(s) (GLOs) that match(es) the learning outcomes of the co-curricular activity.<br><i>This can be done in collaboration with the CCA mentor and/or CCA Exco, etc. </i></li><br>   
+        
+        <li>Indicate a minimum of 1 and a maximum of 4 GLOs</li><br>
+                   
+        <li>You can indicate GLOs 2-5. Choose GLOs that most students in the activity would have a chance to address.<br>
+        <i>
+        (GLO 1: Disciplinary and Multidisciplinary Knowledge will not apply to CCAs).</i>
+        </li><br>     
+
+          <li>Indicate the chosen GLOs in the template in <b>Step 2: Creating CCA/Student entries)</b>.</li><br> 
+        
+    </ul>
+             </div>
+             
+
+             </div>
+             
+             
+            </div>
+    </div>
+<!--    end modal -->
+
+    </div></div>
+   <!-- Modal 3aa end --> 
+
+</body>
+
+   <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
+	<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+
+	<!--  Plugins -->
+	<script src="assets/js/ct-paper-checkbox.js"></script>
+	<script src="assets/js/ct-paper-radio.js"></script>
+	<script src="assets/js/bootstrap-select.js"></script>
+	<script src="assets/js/bootstrap-datepicker.js"></script>
+
+	<script src="assets/js/ct-paper.js"></script>
+    
+</html>
