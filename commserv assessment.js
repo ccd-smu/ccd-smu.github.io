@@ -41,7 +41,7 @@ $("#assessment_details").on('focus', function () {
 
 var GLOXX = localStorage.getItem('GLOXX');
 var allocationID =  window.localStorage.getItem('currentId');
-setInterval(function() {
+setTimeout(function() {
 
 $('tr.criterion[data-criterion-id=crit'+allocationID+'_2024]').addClass('border1');
 $('tr.criterion[data-criterion-id=crit'+allocationID+'_2025]').addClass('border2');
@@ -99,7 +99,7 @@ if (GLOXX.includes("5"))
 {
 	$('tr.criterion[data-criterion-id=crit'+allocationID+'_2027] .txtScore option[value=Exposure]').attr('selected','selected');
 };
-}, 500);
+}, 800);
 
 
 
