@@ -1,0 +1,92 @@
+#status{
+	background: black;
+	opacity: 0.9;
+	height: auto;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 9999;
+	color: #fff;
+	text-align: center;
+}
+
+.highlight{
+	border: 2px dotted red;
+}
+
+#recommendGLO2,#recommendGLO3,#recommendGLO4,#recommendGLO5{
+	width: 100%;
+}
+
+#wordcount, #name1, #name2, #GLOS, #assess, #copy1, #send1, #assess1, #assess{
+	padding: 13px 0;
+	width: 200px;
+}
+
+#assess1,#copy1{
+	text-align: center;
+	width: 100%;
+	background: #8a704c;
+	color: #fff;
+	margin-top: 10px;
+}
+
+#reflection1{
+	padding: 13px 0;
+	width: auto;
+}
+
+
+#copy1:hover, #assess:hover {
+background: black;
+}
+
+ #assess1:hover {
+background: black;
+}
+
+
+
+#overall, #deptassess{
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+}
+
+
+#recommend{
+  float: left;
+  width: 95%;
+  padding: 20px;
+}
+
+#textarea{
+  width: 100%;
+}
+
+#detail1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#assess, #send1, #copy1, #assess1{
+	cursor: pointer;
+}
+
+#assess:hover{
+	background: green;
+}
+
+#detail1 {
+    width: calc(100% - 40px);
+    height: 300%;
+	padding: 20px;
+	z-index: 9990;
+	color: #000;
+	text-align: left;
+	top: 0;
+	left: 0;
+	position: absolute;
+	background: #eaeaea;
+}

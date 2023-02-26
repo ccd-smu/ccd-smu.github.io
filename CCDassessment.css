@@ -1,0 +1,54 @@
+#button:hover{
+	background: #00008B;
+}
+
+.dept2, .dept3, .dept4, .dept5 {
+	outline: 2px solid #8A704C;
+	position: relative;
+	color: #000;}
+
+.dept2::after {
+  content: attr(dept2);
+  background: #8A704C;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: 0 translateY(-2px);
+  z-index: 999;
+  outline: 2px solid #8A704C;
+  color: #fff;
+}
+
+.dept3::after {
+  content: attr(dept3);
+  background: #8A704C;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: 0 translateY(-2px);
+  z-index: 999;
+  outline: 2px solid #8A704C;
+  color: #fff;
+}
+.dept4::after {
+  content: attr(dept4);;
+  background: #8A704C;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: 0 translateY(-2px);
+  z-index: 999;
+  outline: 2px solid #8A704C;
+  color: #fff;
+}
+.dept5::after {
+  content: attr(dept5);
+  background: #8A704C;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: 0 translateY(-2px);
+  z-index: 999;
+  outline: 2px solid #8A704C;
+  color: #fff;
+}

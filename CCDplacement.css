@@ -1,0 +1,287 @@
+#status2{
+	background: black;
+	opacity: 0.9;
+	height: auto;
+	position: fixed;
+	bottom: 0;
+	right: 100px;
+	z-index: 9999;
+	color: #fff;
+	text-align: center;
+}
+
+.highlight{
+	border: 2px dotted red;
+}
+
+#recommendGLO2,#recommendGLO3,#recommendGLO4,#recommendGLO5{
+	width: 100%;
+}
+
+#wordcount, #name1, #name2, #GLOS, #assess, #copy1, #send1, #assess1, #assess{
+	padding: 13px 0;
+	width: 200px;
+}
+
+#close{
+ width: auto;
+ height: 20px;
+ position: absolute;
+ top: 0;
+ right: 0;
+cursor: pointer;
+background: #000;
+color: #fff;
+}
+
+#assess1,#copy1{
+	text-align: center;
+	width: 49.9%;
+	display: inline-block;
+	
+	background: #8a704c;
+	color: #fff;
+	margin-top: 10px;
+}
+
+#reflection1{
+	padding: 13px 0;
+	width: auto;
+}
+
+
+#copy1:hover, #assess:hover {
+background: black;
+}
+
+ #assess1:hover {
+background: black;
+}
+
+
+
+#overall, #deptassess{
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+}
+
+
+#recommend{
+  float: left;
+  width: 95%;
+  padding: 20px;
+}
+
+#textarea{
+  width: 100%;
+}
+
+#detail1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#assess, #send1, #copy1, #assess1{
+	cursor: pointer;
+}
+
+#assess:hover{
+	background: green;
+}
+
+#detail1 {
+    width:  auto;
+	height: auto;
+	padding: 0 100px 0 200px;
+	z-index: 9990;
+	color: #000;
+	text-align: left;
+	top: 0;
+	left: 0;
+	position: absolute;
+	background: #eaeaea;
+}  
+  
+  
+    #help1 {
+    background: green;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+    padding: 13px 0;
+    width: 100px;
+    cursor: pointer;
+}
+    #help2 {
+    background: green;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 100px;
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+    padding: 13px 0;
+    width: 100px;
+    cursor: pointer;
+}
+
+ #help1:hover, #help2:hover{
+ 	background: darkgreen;
+ }
+
+#CU:hover, #workshop:hover,#OSL:hover ,#SOCI:hover {
+    background: #151c55;
+    cursor: pointer;
+    opacity: 1;
+    }
+    
+    #CU, #OSL, #workshop, #SOCI
+    {
+        background: black;
+        opacity: 0.7;
+    }
+
+    .popover .popover-inner{
+    min-width: 100px;
+    overflow: hidden;
+}
+
+
+    #status{
+    background: red;
+    height: auto;
+    position: fixed;
+    top: 30%;
+    right: 0;
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+    }
+    
+    
+    
+#appraisalwindow, #assesswindow, #appointwindow, #datewindow, #reflectwindow, #reflection, #assess1{
+    padding: 13px 0;
+    width: 200px;
+}
+
+#reflection:hover{
+	background: darkgreen;
+}
+
+.lastone{
+ outline: 2px solid blue;
+ position: relative;
+ color: #000;
+}
+
+.lastone::after {
+  content: "Last accessed";
+  background: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%) translateY(-2px);
+  z-index: 999;
+  outline: 2px solid blue;
+  color: #fff;
+}
+
+.nextone{
+ outline: 2px solid red;
+}
+.first, .second{
+	color: green;
+}
+
+.assessable{
+color: green;
+font-size: 80;
+}
+
+.assessableforcecomplete{
+color: blue;	
+}
+
+    #last{
+    background: red;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+    padding: 13px 0;
+    width: 200px;
+    cursor: pointer;
+}
+
+    #start{
+    background: red;
+    height: auto;
+    position: fixed;
+    top: 44px;
+    left: 0;
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+    padding: 13px 0;
+    width: 100px;
+    cursor: pointer;
+}
+    #stop{
+    background: red;
+    height: auto;
+    position: fixed;
+    top: 88px;
+    left: 0;
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+    padding: 13px 0;
+    width: 100px;
+    cursor: pointer;
+}
+
+
+#assess1{
+	background: green;
+	cursor: pointer;
+}
+
+
+#assess1:hover{
+	background: #006400;
+}
+
+    
+.closing{background-image: url(https://shib.chalkandwire.com/ep2_smu/images/ui/ui-chevrons.png);
+        background-position-x: 0px;
+        background-position-y: -32px;
+        background-size: initial;
+        background-repeat-x: no-repeat;
+        background-repeat-y: no-repeat;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: rgb(68, 65, 65);
+        border: 0;
+        color: #fff;
+        display: block;
+        font-size: 1.8rem;
+        line-height: 1.78;
+        overflow: hidden;
+        tet-indent: -500px;
+        width: 32px;
+    }
+    
+    
+    
