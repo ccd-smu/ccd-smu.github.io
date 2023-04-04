@@ -47,7 +47,7 @@ var GLO2 = "2 ";
 } else { var GLO2 = ""};
 
 	if($("td:contains('Demonstrate the ability to recognise and leverage on strengths of others to achieve shared goals')").closest("td").next('td').find('i').attr('title') == "Checked" || 
-	$("td:contains('Demonstate the ability to communicate effectively with different stakeholders to address a problem/issue')").closest("td").next('td').find('i').attr('title') == "Checked") {
+	$("td:contains('Demonstrate the ability to communicate effectively with different stakeholders to address a problem/issue')").closest("td").next('td').find('i').attr('title') == "Checked") {
 var GLO3 = "3 ";
 } else { var GLO3 = ""};
 
