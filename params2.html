@@ -39,6 +39,19 @@
     window.localStorage.setItem('deptGLO4', GLO4score);
     window.localStorage.setItem('deptGLO5', GLO5score);
 
+    //
+    window.onload = function () {
+        var messageEle = document.getElementById('message');
+        function receiveMessage(e) {
+            if (e.origin !== "https://ccd-smu.github.io/")
+                return;
+            messageEle.innerHTML = "Message Received: " + e.data;
+        }
+        window.addEventListener('message', receiveMessage);
+    }
+    //
+
 
 </script>
 </html>
+
