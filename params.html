@@ -42,9 +42,9 @@
     //setTimeout(window.open("https://smu.chalkandwire.com/Assess2.aspx?allocationId=" + allocationID, "_target"), 1000);
 
 
-    var iframe = document.createElement("iframe");
+    var iframe = document.createElement("GLOnum");
     iframe.onload = function () {
-        iframe.contentWindow.postMessage(data, "https://smu.chalkandwire.com/");
+        iframe.contentWindow.postMessage(GLOnum + "&" + GLO2score + "&" + GLO3score + "&" + GLO4score + "&" + GLO5score, "https://smu.chalkandwire.com/");
     }
     iframe.src = "https://smu.chalkandwire.com/Assess2.aspx?allocationId=" + allocationID;
 
