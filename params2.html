@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Loading...</title>
+</head>
+<body>
+
+</body>
+
+
+<script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+<script>
+    const queryString = window.location.search;
+
+    const urlParams = new URLSearchParams(queryString);
+    const GLOnum = urlParams.get('GLOnum')
+    console.log(GLOnum);
+    const GLO2score = urlParams.get('GLO2score')
+    console.log(GLO2score);
+
+    const GLO3score = urlParams.get('GLO3score')
+    console.log(GLO3score);
+
+    const GLO4score = urlParams.get('GLO4score')
+    console.log(GLO4score);
+
+    const GLO5score = urlParams.get('GLO5score')
+    console.log(GLO5score);
+
+    const allocationID = urlParams.get('allocationID')
+    console.log(allocationID);
+
+    window.localStorage.setItem('GLOnum', GLOnum);
+    window.localStorage.setItem('deptGLO2', GLO2score);
+    window.localStorage.setItem('deptGLO3', GLO3score);
+    window.localStorage.setItem('deptGLO4', GLO4score);
+    window.localStorage.setItem('deptGLO5', GLO5score);
+
+
+</script>
+</html>
