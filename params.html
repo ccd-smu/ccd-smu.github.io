@@ -39,7 +39,14 @@
     window.localStorage.setItem('deptGLO4', GLO4score);
     window.localStorage.setItem('deptGLO5', GLO5score);
 
-    setTimeout(window.open("https://smu.chalkandwire.com/Assess2.aspx?allocationId=" + allocationID, "_blank"), 1000);
+    //setTimeout(window.open("https://smu.chalkandwire.com/Assess2.aspx?allocationId=" + allocationID, "_target"), 1000);
+
+
+    var iframe = document.createElement("iframe");
+    iframe.onload = function () {
+        iframe.contentWindow.postMessage(data, "https://smu.chalkandwire.com/");
+    }
+    iframe.src = "https://smu.chalkandwire.com/Assess2.aspx?allocationId=" + allocationID;
 
 </script>
 </html>
