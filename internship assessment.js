@@ -1,4 +1,43 @@
-var assessfunction2 =  localStorage.getItem('assessfunction');
+//INT
+
+const queryString = window.location.search;
+
+const urlParams = new URLSearchParams(queryString);
+const GLOnum = urlParams.get('GLOnum')
+console.log(GLOnum);
+const GLO2score = urlParams.get('GLO2score')
+console.log(GLO2score);
+
+const GLO3score = urlParams.get('GLO3score')
+console.log(GLO3score);
+
+const GLO4score = urlParams.get('GLO4score')
+console.log(GLO4score);
+
+const GLO5score = urlParams.get('GLO5score')
+console.log(GLO5score);
+
+const allocationId = urlParams.get('allocationId')
+console.log(allocationId);
+//
+
+
+if (!GLOnum) { } else {
+
+    window.localStorage.setItem('GLOXX', GLOnum);
+    window.localStorage.setItem('deptGLO2', GLO2score);
+    window.localStorage.setItem('deptGLO3', GLO3score);
+    window.localStorage.setItem('deptGLO4', GLO4score);
+    window.localStorage.setItem('deptGLO5', GLO5score);
+
+    window.localStorage.setItem('currentId', allocationId);
+
+    window.localStorage.setItem('assessfunction', 1);
+}
+
+//
+
+var assessfunction2 = localStorage.getItem('assessfunction');
 if (assessfunction2 == 1){
 
 var button = document.createElement('div');
@@ -20,36 +59,7 @@ document.body.appendChild(button);
           location.href = 'https://shib.chalkandwire.com/ep2_smu/FieldPlacementList.aspx?cus=465';
      
      });
-     //
-    const queryString = window.location.search;
-
-    const urlParams = new URLSearchParams(queryString);
-    const GLOnum = urlParams.get('GLOnum')
-    console.log(GLOnum);
-    const GLO2score = urlParams.get('GLO2score')
-    console.log(GLO2score);
-
-    const GLO3score = urlParams.get('GLO3score')
-    console.log(GLO3score);
-
-    const GLO4score = urlParams.get('GLO4score')
-    console.log(GLO4score);
-
-    const GLO5score = urlParams.get('GLO5score')
-    console.log(GLO5score);
-
-    const allocationID = urlParams.get('allocationID')
-    console.log(allocationID);
-
-    window.localStorage.setItem('GLOnum', GLOnum);
-    window.localStorage.setItem('deptGLO2', GLO2score);
-    window.localStorage.setItem('deptGLO3', GLO3score);
-    window.localStorage.setItem('deptGLO4', GLO4score);
-    window.localStorage.setItem('deptGLO5', GLO5score);
-
-    window.localStorage.setItem('currentId', allocationID);
-
-     //
+    
 SaveStudentAssessment = (function() {
 var cached_function = SaveStudentAssessment;
 return function() {
