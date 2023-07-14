@@ -2,3 +2,5 @@
 *.vsidx
 .vs/ccd-smu.github.io/FileContentIndex/read.lock
 .vs/slnx.sqlite
+.vs/ccd-smu.github.io/v17/.wsuo
+.vs/VSWorkspaceState.json
