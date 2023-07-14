@@ -39,9 +39,91 @@
             margin: 0 20px 0 0;
         }
         .circle p {
-            margin: auto;
+            margin: 12px 0;
             text-align: center;
+            font-size: 20px;
         }
+
+        .circle3 {
+            width: 128px;
+            height: 128px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: -20px;
+            z-index: 1;
+        }
+
+        .circle3 p {
+                margin: 0;
+                text-align: center;
+                font-size: 20px;
+                color: #fff;
+                font-size: 12px;
+                padding-top: 8px;
+        }
+
+        .circle2 {
+            width: 32px;
+            height: 32px;
+            background-color: #232D75;
+            border-radius: 50%;
+            margin: auto;
+            z-index: 2;
+            position: inherit;
+        }
+
+        .circle2 p {
+                margin: 0;
+                text-align: center;
+                font-size: 20px;
+                color: #fff;
+                font-size: 12px;
+                padding-top: 8px;
+        }
+
+        .dotted-line {
+            position: absolute;
+            left: 38px;
+            top: 60px;
+            width: 2px;
+            height: 100px;
+            /* dashed border */
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%2300E09EFF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+        }
+
+        .dotted-line3 {
+            position: absolute;
+            left: 38px;
+            top: 60px;
+            width: 2px;
+            height: 100px;
+            /* dashed border */
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23FFDE7EFF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+        }
+
+
+        .dotted-line2 {
+            position: absolute;
+            right: 0;
+            top: 60px;
+            width: 2px;
+            height: 100px;
+            /* dashed border */
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%2300E09EFF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+        }
+
+        .dotted-line4 {
+            position: absolute;
+            right: 0;
+            top: 60px;
+            width: 2px;
+            height: 100px;
+            /* dashed border */
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='white' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+        }
+
+
 
         label {
             background: #8A704C;
@@ -417,26 +499,260 @@
                         <h5 style="color: #232D75; font-size: 30px; font-weight: bold">
 
                             <div class="circle"><p>1</p></div>
+                            <div class="dotted-line" style="height: 400px;"></div>
                             A place to build your experiences
-                                
+
                         </h5>
-                        <p style="color: #232D75">
-                            The ICMS documents your co-curricular journey and the learning from these experiences.
-                            <br>
-                            Whilst you enjoy and engage in co-curricular activities, the Co-Curricular Transcript offers insights into the skillsets that you've developed outside of the classroom.
-                        </pstyle="color:>
+
+                        <div style="display:flex">
+                            <p style="color: #232D75; margin-left:69px; padding:40px 0">
+                                The ICMS documents your co-curricular journey and the learning from these experiences.
+                                <br><br>
+                                Whilst you enjoy and engage in co-curricular activities, the Co-Curricular Transcript offers insights into the skillsets that you've developed outside of the classroom.
+                            </p>
+                            <img src="assets/001.png" height="250" style="display:inline-block; padding: 20px">
+
+                        </div>
+                        <div class="col-sm-6 col-md-6" style="margin: auto; width: 50%; padding: 50px 10px; text-align: center;">
+                            <div class="circle2"><p><b>A</b></p></div>
+                            <img src="assets/003.png" width="64" style="margin: 20px">
+                            <p style="color: #FFF; text-align: center; color: #fff; padding: 0 20px;"><br>Track the progress of your community service, internships, clubs, events and more</p>
 
 
-                        <div class="col-sm-6 col-md-6" style="min-height:400px;background: url(assets/000.png); background-repeat: no-repeat; background-size: contain; background-position: center; ">
+                            <div class="dotted-line2 large" style="height: 300px;"></div>
+                        </div>
+
+
+                        <div class="col-sm-6 col-md-6" style="margin: auto; width: 50%; padding: 50px 10px; text-align: center;">
+                            <div class="circle2"><p><b>B</b></p></div>
+
+                            <img src="assets/004.png" width="64" style="margin: 20px">
+                            <p style="color: #FFF; text-align: center; color: #fff; padding: 0 20px;"><br>Log in to the <b>ICMS</b> > Menu > <b>My SMU Dashboard</b></p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="3" style="height: auto; background-color: #FF768C;">
+            <div class="container tim-container">
+
+                <div class="row" style="padding: 100px 0;">
+                    <div class="col-md-12">
+                        <h5 style="color: #fff; font-size: 30px; font-weight: bold">
+
+                            <div class="circle"><p style="color:#232D75">2</p></div>
+                            <div class="dotted-line3" style="height: 400px;"></div>
+                            Play for real
+
+                        </h5>
+
+                        <div style="display:flex">
+                            <p style="color: #fff; margin-left:69px; padding: 40px 0">
+                                Use the ICMS to enhance your co-curricular journey by reflecting on your experiences.
+                                <br><br>
+                                These will help you to talk about your experiences in the future, and enable you to showcase your achievements to impress prospective employers.
+                            </p>
+                            <img src="assets/005.png" height="250" style="display:inline-block; padding: 20px">
+
+                        </div>
+                        <div class="col-sm-6 col-md-6" style="margin: auto; width: 50%; padding: 50px 10px; text-align: center;">
+                            <div class="circle2"><p>A</p></div>
+
+                            <div class="circle3">
+                                <div style="padding-top: 25px; text-align:center">
+                                    <p style="background: #00E09E; color: #fff; padding: 8px 0; border-radius: 20px; top: 25px; width: 80px; margin: auto;font-size:14px;"><b>Reflection</b></p>
+                                </div>
+                                <div style="padding: 0; text-align:center; height:0">
+                                    <svg style="position:absolute;top:120px;" fill="#232D75" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 0l16 12.279-6.951 1.17 4.325 8.817-3.596 1.734-4.35-8.879-5.428 4.702z" /></svg>
+                                </div>
+                                <div style="padding-top: 8px; text-align:center">
+                                    <p style="background: #FFDE7E; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 80px; margin: auto; font-size: 8px;">&nbsp;</p>
+                                </div>
+                                <div style="padding-top: 8px; text-align:center">
+                                    <p style="background: #FFDE7E; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 80px; margin: auto; font-size: 8px;">&nbsp;</p>
+                                </div>
+
+
+                            </div>
+
+                            <p style="color: #FFF; text-align: center; color: #232D75; padding: 0 20px;"><br>Track the progress of your community service, internships, clubs, events and more</p>
+
+
+                            <div class="dotted-line4 large" style="height: 300px;"></div>
+                        </div>
+
+
+                        <div class="col-sm-6 col-md-6" style="margin: auto; width: 50%; padding: 50px 10px; text-align: center;">
+                            <div class="circle2"><p>B</p></div>
+                            <div class="circle3">
+                                <div style="width: 80px; text-align: left; margin: auto; text-align: left">
+                                    <div style="padding-top: 30px; text-align:center;">
+                                        <p style="background: #32849B; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 80px; margin: 0; font-size: 8px;">&nbsp;</p>
+                                    </div>
+                                    <div style="padding-top: 8px; text-align: center; left: 0 ">
+                                        <p style="background: #E36C08; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 60px; margin: 0; font-size: 8px;">&nbsp;</p>
+                                    </div>
+                                    <div style="padding: 0; text-align:center; height:0">
+                                        <svg style="position:absolute;top:120px;" fill="#232D75" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 0l16 12.279-6.951 1.17 4.325 8.817-3.596 1.734-4.35-8.879-5.428 4.702z" /></svg>
+                                    </div>
+                                    <div style="padding-top: 8px; text-align: center; left: 0 ">
+                                        <p style="background: #9547A7; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 40px; margin: 0; font-size: 8px;">&nbsp;</p>
+                                    </div>
+                                    <div style="padding-top: 8px; text-align: center; left: 0 ">
+                                        <p style="background: #77923C; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 20px; margin: 0; font-size: 8px;">&nbsp;</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p style="color: #FFF; text-align: center; color: #232D75; padding: 0 20px;"><br>Log in to the <b>ICMS</b> > Menu > <b>My SMU Dashboard</b></p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="4" style="height: auto; background-color: #fff;">
+            <div class="container tim-container">
+
+                <div class="row" style="padding: 100px 0;">
+                    <div class="col-md-12">
+                        <h5 style="color: #232D75; font-size: 30px; font-weight: bold">
+
+                            <div class="circle"><p>3</p></div>
+                            <div class="dotted-line" style="height: 400px;"></div>
+                            Uniquely yours
+
+                        </h5>
+
+                        <div style="display:flex">
+                            <p style="color: #232D75; margin-left:69px; padding: 40px 0">
+                                From 2025, graduating students will be issued a co-curricular transcript alongside the academic transcript.
+                                <br><br>
+                                Apart from simply documenting your activities, your co-curricular transcript will offer insight into the skillsets that you've have developed in the process.
+                            </p>
+                            <img src="assets/006.png" height="250" style="display:inline-block; padding: 20px">
+
+                        </div>
+                        <div class="col-sm-6 col-md-6" style="margin: auto; width: 50%; padding: 50px 10px; text-align: center;">
+                            <div class="circle2"><p>A</p></div>
+                            <img src="assets/007.png" width="64" style="margin: 20px">
+                            <p style="color: #FFF; text-align: center; color: #232D75; padding: 0 20px;"><br>With activities organised under their skills and outcomes instead of names, the transcript is easy to understand</p>
+
+
+                            <div class="dotted-line2 large" style="height: 300px;"></div>
+                        </div>
+
+
+                        <div class="col-sm-6 col-md-6" style="margin: auto; width: 50%; padding: 50px 10px; text-align: center;">
+                            <div class="circle2"><p>B</p></div>
+
+                            <img src="assets/008.png" width="64" style="margin: 20px">
+                            <p style="color: #FFF; text-align: center; color: #232D75; padding: 0 20px;">
+                                <br>Generate your own interim records via <b>My SMU Dashboard</b>
+                            </p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="5" style="height: auto; background-color: #3D4BAA;">
+            <div class="container tim-container">
+
+                <div class="row" style="padding: 50px 0;">
+                    <div class="col-md-12">
+                        <div class="col-sm-6 col-md-6" style="min-height:400px;background: url(assets/009.png); background-repeat: no-repeat; background-size: contain; background-position: center; ">
 
                         </div>
 
                         <div class="col-sm-6 col-md-6" style="margin: auto; width: 50%; padding: 0 50px;">
 
                             <h1 style="color:#FFF">
-                                What<br>is the<br><span style="color:#00E09E">ICMS?</span>
+                                Get<br>started<br><span style="color:#00E09E">now!</span>
                             </h1>
-                            <p style="color:#FFF">An introduction to the<br><span style="color:#00E09E">Integrated Co-curricular<br>Management System</span></p>
+                            <p style="color:#FFF"><br><span style="color:#00E09E">Pick the appropriate guide</span> for the activity that you are embarking on</p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="row" style="padding: 0 0 100px 0;">
+                    <div class="col-md-12">
+
+
+                        <div class="col-sm-6 col-md-6" style="margin: auto; width: 50%; padding: 50px 10px; text-align: center;" data-toggle="modal" data-target="#myModal">
+
+                            <div class="circle2"><p>A</p></div>
+
+                            <div class="circle3">
+                                <div style="padding-top: 25px; text-align:center">
+                                    <p style="background: #00E09E; color: #fff; padding: 8px 0; border-radius: 20px; top: 25px; width: 80px; margin: auto;font-size:14px;"><b>Reflection</b></p>
+                                </div>
+                                <div style="padding: 0; text-align:center; height:0">
+                                    <svg style="position:absolute;top:120px;" fill="#232D75" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 0l16 12.279-6.951 1.17 4.325 8.817-3.596 1.734-4.35-8.879-5.428 4.702z" /></svg>
+                                </div>
+                                <div style="padding-top: 8px; text-align:center">
+                                    <p style="background: #FFDE7E; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 80px; margin: auto; font-size: 8px;">&nbsp;</p>
+                                </div>
+                                <div style="padding-top: 8px; text-align:center">
+                                    <p style="background: #FFDE7E; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 80px; margin: auto; font-size: 8px;">&nbsp;</p>
+                                </div>
+
+
+                            </div>
+
+                            <p style="color: #FFF; text-align: center; color: #FFF; padding: 0 20px;"><br>Community Service</p>
+
+
+                            <div class="dotted-line4 large" style="height: 300px;"></div>
+                        </div>
+
+
+                        <div class="col-sm-6 col-md-6" style="margin: auto; width: 50%; padding: 50px 10px; text-align: center;"  data-toggle="modal" data-target="#myModal2">
+                            <div class="circle2"><p>B</p></div>
+                            <div class="circle3">
+                                <div style="width: 80px; text-align: left; margin: auto; text-align: left">
+                                    <div style="padding-top: 30px; text-align:center;">
+                                        <p style="background: #32849B; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 80px; margin: 0; font-size: 8px;">&nbsp;</p>
+                                    </div>
+                                    <div style="padding-top: 8px; text-align: center; left: 0 ">
+                                        <p style="background: #E36C08; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 60px; margin: 0; font-size: 8px;">&nbsp;</p>
+                                    </div>
+                                    <div style="padding: 0; text-align:center; height:0">
+                                        <svg style="position:absolute;top:120px;" fill="#232D75" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 0l16 12.279-6.951 1.17 4.325 8.817-3.596 1.734-4.35-8.879-5.428 4.702z" /></svg>
+                                    </div>
+                                    <div style="padding-top: 8px; text-align: center; left: 0 ">
+                                        <p style="background: #9547A7; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 40px; margin: 0; font-size: 8px;">&nbsp;</p>
+                                    </div>
+                                    <div style="padding-top: 8px; text-align: center; left: 0 ">
+                                        <p style="background: #77923C; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 20px; margin: 0; font-size: 8px;">&nbsp;</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p style="color: #FFF; text-align: center; color: #FFF; padding: 0 20px;"><br>Internships</b></p>
 
                         </div>
 
@@ -444,270 +760,110 @@
                     </div>
                 </div>
 
+
+                <div class="row" style="padding: 0 0 100px 0;">
+                    <div class="col-md-12">
+
+
+                        <div class="col-sm-6 col-md-6" style="margin: auto; width: 50%; padding: 50px 10px; text-align: center;"  data-toggle="modal" data-target="#myModal3">
+                            <div class="circle2"><p>A</p></div>
+
+                            <div class="circle3">
+                                <div style="padding-top: 25px; text-align:center">
+                                    <p style="background: #00E09E; color: #fff; padding: 8px 0; border-radius: 20px; top: 25px; width: 80px; margin: auto;font-size:14px;"><b>Reflection</b></p>
+                                </div>
+                                <div style="padding: 0; text-align:center; height:0">
+                                    <svg style="position:absolute;top:120px;" fill="#232D75" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 0l16 12.279-6.951 1.17 4.325 8.817-3.596 1.734-4.35-8.879-5.428 4.702z" /></svg>
+                                </div>
+                                <div style="padding-top: 8px; text-align:center">
+                                    <p style="background: #FFDE7E; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 80px; margin: auto; font-size: 8px;">&nbsp;</p>
+                                </div>
+                                <div style="padding-top: 8px; text-align:center">
+                                    <p style="background: #FFDE7E; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 80px; margin: auto; font-size: 8px;">&nbsp;</p>
+                                </div>
+
+
+                            </div>
+
+                            <p style="color: #FFF; text-align: center; color: #FFF; padding: 0 20px;"><br>other Co-Curricular<br>Activities</p>
+
+
+                            <div class="dotted-line4 large" style="height: 300px;"></div>
+                        </div>
+
+
+                        <div class="col-sm-6 col-md-6" style="margin: auto; width: 50%; padding: 50px 10px; text-align: center;">
+                            <!--
+
+      <div class="circle2"><p>B</p></div>
+      <div class="circle3">
+          <div style="width: 80px; text-align: left; margin: auto; text-align: left">
+              <div style="padding-top: 30px; text-align:center;">
+                  <p style="background: #32849B; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 80px; margin: 0; font-size: 8px;">&nbsp;</p>
+              </div>
+              <div style="padding-top: 8px; text-align: center; left: 0 ">
+                  <p style="background: #E36C08; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 60px; margin: 0; font-size: 8px;">&nbsp;</p>
+              </div>
+              <div style="padding: 0; text-align:center; height:0">
+                  <svg style="position:absolute;top:120px;" fill="#232D75" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 0l16 12.279-6.951 1.17 4.325 8.817-3.596 1.734-4.35-8.879-5.428 4.702z" /></svg>
+              </div>
+              <div style="padding-top: 8px; text-align: center; left: 0 ">
+                  <p style="background: #9547A7; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 40px; margin: 0; font-size: 8px;">&nbsp;</p>
+              </div>
+              <div style="padding-top: 8px; text-align: center; left: 0 ">
+                  <p style="background: #77923C; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 20px; margin: 0; font-size: 8px;">&nbsp;</p>
+              </div>
+          </div>
+
+      </div>
+
+      <p style="color: #FFF; text-align: center; color: #FFF; padding: 0 20px;"><br>Internships</b></p>
+        -->
+                        </div>
+
+
+                    </div>
+                </div>
 
             </div>
-        </div>
-
-
-
-
-
-        <div class="" style="height:auto; background-color: #fff;">
-            <div class="container tim-container">
-                <div class="row">
-                    <div class="col-md-12" style="padding: 0;">
-
-                        <div class="tim-title" style="margin: 90px 10px; width: 80%;">
-                            <p style="font-family: Libre Franklin, sans-serif; color:#888;font-weight: 900;">Pick the appropriate guide for the activity that you are embarking on</p>
-                        </div>
-                        <div class="col-sm-6 col-md-6" style="padding: 10px 0;">
-                            <div class="section" id="button1" data-toggle="modal" data-target="#myModal" style="height: 400px; background:url(assets/paper_img/csp.jpg); background-repeat: no-repeat; background-size: cover;background-position: center;padding: 50px 40px;margin:0 10px; border: 1px solid #f7f7f7; box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .05);transition: box-shadow 200ms ease;">
-                                <div class="tim-title" style="position: absolute; bottom: 0; padding: 20px; margin: 40px 0; width: auto; background: #151c55">
-                                    <p style="font-family: Libre Franklin, sans-serif; color:#fff; font-weight: 900; margin: 0">Commmunity Service</p>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                        <div class="col-sm-6 col-md-6" style="padding: 10px 0;">
-                            <div class="section" id="button2" data-toggle="modal" data-target="#myModal2" style="height: 400px; background:url(assets/paper_img/internships.jpg); background-repeat: no-repeat; background-size: cover;background-position: center;padding: 50px 40px;margin:0 10px; border: 1px solid #f7f7f7; box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .05);transition: box-shadow 200ms ease;">
-                                <div class="tim-title" style="position: absolute; bottom: 0; padding: 20px; margin: 40px 0; width: auto; background: #151c55">
-                                    <p style="font-family: Libre Franklin, sans-serif; color:#fff; font-weight: 900; margin: 0">Internships</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12" style="padding: 0;">
-
-
-                        <div class="col-sm-6 col-md-6" style="padding: 10px 0;">
-                            <div class="section" id="button3" data-toggle="modal" data-target="#myModal3" style="height: 400px; background:url(assets/paper_img/cca.jpg); background-repeat: no-repeat; background-size: cover;background-position: center;padding: 50px 40px;margin:0 10px; border: 1px solid #f7f7f7; box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .05);transition: box-shadow 200ms ease;">
-                                <div class="tim-title" style="position: absolute; bottom: 0; padding: 20px; margin: 40px 0; width: auto; background: #151c55">
-                                    <p style="font-family: Libre Franklin, sans-serif; color:#fff; font-weight: 900; margin: 0">other CCAs</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
                 </div>
 
-                <div class="tim-title" style="margin: 40px 10px; width: 80%;">
+  
 
-                </div>
+                <div class="row" style="padding-bottom:0; background-color: #151c55;">
+                    <div class="col-md-12" style="padding: 0; background-color: #151c55;">
 
-            </div>
-        </div>
-
-        <div class="" style="height:auto; background-color: #151c55;">
-            <div class="container tim-container">
-                <div class="tim-title" style="padding-top:90px">
-                    <h1 style="font-family: Libre Franklin, sans-serif; color:#fff; font-weight: 900;">An Integrated Co-curricular Management System (ICMS)</h1>
-                    <p style="font-family: Libre Franklin, sans-serif; color:#fff;font-weight: 900;">that consolidates all your co-curricular experiences</p>
-
-                </div>
-
-                <div class="row" style="padding-bottom:90px">
-                    <div class="col-md-12" style="padding: 0;">
-
-                        <div class="col-sm-6 col-md-6" style="padding: 10px 0;">
-                            <div class="section" style="background: #151c55;padding: 0px 0;margin:0 10px;">
-                                <div class="tim-title" style="margin: 40px 10px; width: 80%;">
-                                    <p style="font-weight: 900;color: #fff;"></p>
-
-                                    <p style="color: #fff;">Documents the outcomes of your co-curricular experience
-
-                                    <p style="color: #fff;">
-                                        Consolidates your experiences across the co-curricular space
-                                    </p>
-
-                                    <p style="color: #fff;">
-                                        Builds a co-curricular record that will be meaningful for you and your future employer
-                                    </p>
+                        <div class="col-md-8" style="min-height:600px; background: url(https://news.smu.edu.sg/sites/news.smu.edu.sg/files/styles/max_1300x1300/public/smu/news/Image-286_1.jpg?itok=JIZmyRPQ); background-repeat: no-repeat; background-size: cover;background-position: center;">
+                        </div>
+                        <div class="col-md-4" style="padding: 80px 20px;">
+                            <div class="section" style="background: #151c55;padding: 0px 0;margin:0 10px; text-align: center;">
+                                <div class="tim-title" style="margin: 0; width: auto;">
+                                    <h5 style="font-family: Libre Franklin, sans-serif; color:#fff; font-weight: 900; text-align: center;">SMU launches Integrated Co-Curricular Management System and Co-Curricular Transcript</h5>
+                                    <h5 style="font-family: Libre Franklin, sans-serif; color:#fff; font-weight: 100; text-align: center;">A first in Singapore, this new initiative strengthens the university’s mission to develop graduates with career-ready skills</h5>
 
 
-                                    <div class="tim-title" style="padding: 40px; width: 100%; border: 1px solid #fff; cursor: pointer;">
 
-                                        <h5 style="font-family: Libre Franklin, sans-serif; color:#fff; font-weight: 900; text-align: center;" onclick="location.href='https://smu.chalkandwire.com/Login.aspx'">Click here to log in to the ICMS</h5>
+                                    <div class="tim-title" id="button4" style="padding: 20px; width: 100%; border: 1px solid #fff;cursor: pointer;">
+
+                                        <h5 style="font-family: Libre Franklin, sans-serif; color:#fff; font-weight: 900; text-align: center;" onclick="location.href='https://news.smu.edu.sg/news/2023/04/12/smu-launches-integrated-co-curricular-management-system-and-co-curricular'">Read about the launch</h5>
                                     </div>
 
                                 </div>
                             </div>
 
-                        </div>
 
 
 
 
-                        <div class="col-sm-6 col-md-6" style="padding: 10px 0;">
-                            <div class="section" style="min-height:400px;background: url(dashboard3.png); background-repeat: no-repeat; background-size: contain;background-position: center;padding: 0;margin:0 10px;">
-
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <hr />
-            </div>
-        </div>
-
-        <div class="" style="height:auto; background-color: #151c55;">
-            <div class="container tim-container">
-                <div class="tim-title" style="padding-top:90px">
-                    <h1 style="font-family: Libre Franklin, sans-serif; color:#fff; font-weight: 900;">One SMU Dashboard</h1>
-                    <p style="font-family: Libre Franklin, sans-serif; color:#fff;font-weight: 900;">for all your activities</p>
-
-                </div>
-
-                <div class="row" style="padding-bottom:90px">
-                    <div class="col-md-12" style="padding: 0;">
-
-                        <div class="col-sm-6 col-md-6" style="padding: 10px 0;">
-                            <div class="section" style="background: #151c55;padding: 0px 0;margin:0 10px;">
-                                <div class="tim-title" style="margin: 40px 10px; width: 80%;">
-                                    <p style="font-weight: 900;color: #fff;"></p>
-
-                                    <p style="color: #fff;">
-                                        Track and complete your ongoing co-curricular activities
-                                    </p>
-
-                                    <p style="color: #fff;">
-                                        Check on your internship and community service participation
-                                    </p>
-
-                                    <p style="color: #fff;">
-                                        Submit reflections to enhance your experience and portfolio
-                                    </p>
-
-
-                                    <div class="tim-title" style="padding: 40px; width: 100%; border: 1px solid #fff; cursor: pointer;">
-
-                                        <h5 style="font-family: Libre Franklin, sans-serif; color:#fff; font-weight: 900; text-align: center;" onclick="location.href='https://smu.chalkandwire.com/Login.aspx'">ICMS > Menu > My SMU Dashboard</h5>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                        <div class="col-sm-6 col-md-6" style="padding: 10px 0;">
-                            <div class="section" style="min-height:400px;background: url(dashboard3.png); background-repeat: no-repeat; background-size: contain;background-position: center;padding: 0;margin:0 10px;">
-
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-                <hr />
-            </div>
-
-
-        </div>
-
-        <div class="" style="height:auto; background-color: #151c55;">
-            <div class="container tim-container">
-                <div class="tim-title" style="padding-top:90px">
-                    <h1 style="font-family: Libre Franklin, sans-serif; color:#fff; font-weight: 900;">One Co-curricular Transcript</h1>
-                    <p style="font-family: Libre Franklin, sans-serif; color:#fff;font-weight: 900;">issued upon graduation in 2025</p>
-
-                </div>
-
-                <div class="row" style="padding-bottom:90px">
-                    <div class="col-md-12" style="padding: 0;">
-
-                        <div class="col-sm-6 col-md-6" style="padding: 10px 0;">
-                            <div class="section" style="background: #151c55;padding: 0px 0;margin:0 10px;">
-                                <div class="tim-title" style="margin: 40px 10px; width: 80%;">
-                                    <p style="font-weight: 900;color: #fff;"></p>
-
-                                    <p style="color: #fff;">
-                                        Document your learning based on skills and knowledge
-                                    </p>
-
-                                    <p style="color: #fff;">
-                                        Beyond a simple listing of activities
-                                    </p>
-
-                                    <p style="color: #fff;">
-                                        Download an interim record at any time
-                                    </p>
-
-
-                                    <div class="tim-title" id="button4" style="padding: 40px; width: 100%; border: 1px solid #fff;cursor: pointer;">
-
-                                        <h5 style="font-family: Libre Franklin, sans-serif; color:#fff; font-weight: 900; text-align: center;">Download your Interim record</h5>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                        <div class="col-sm-6 col-md-6" style="padding: 10px 0;">
-                            <div class="section" style="min-height: 400px;background: url(sample.png); background-repeat: no-repeat; background-size: contain;background-position: center;padding: 0;margin:0 10px;">
-
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-
-        <div class="row" style="padding-bottom:0; background-color: #151c55;">
-            <div class="col-md-12" style="padding: 0; background-color: #151c55;">
-
-                <div class="col-md-8" style="min-height:600px; background: url(https://news.smu.edu.sg/sites/news.smu.edu.sg/files/styles/max_1300x1300/public/smu/news/Image-286_1.jpg?itok=JIZmyRPQ); background-repeat: no-repeat; background-size: cover;background-position: center;">
-                </div>
-                <div class="col-md-4" style="padding: 80px 20px;">
-                    <div class="section" style="background: #151c55;padding: 0px 0;margin:0 10px; text-align: center;">
-                        <div class="tim-title" style="margin: 0; width: auto;">
-                            <h5 style="font-family: Libre Franklin, sans-serif; color:#fff; font-weight: 900; text-align: center;">SMU launches Integrated Co-Curricular Management System and Co-Curricular Transcript</h5>
-                            <h5 style="font-family: Libre Franklin, sans-serif; color:#fff; font-weight: 100; text-align: center;">A first in Singapore, this new initiative strengthens the university’s mission to develop graduates with career-ready skills</h5>
-
-
-
-                            <div class="tim-title" id="button4" style="padding: 20px; width: 100%; border: 1px solid #fff;cursor: pointer;">
-
-                                <h5 style="font-family: Libre Franklin, sans-serif; color:#fff; font-weight: 900; text-align: center;" onclick="location.href='https://news.smu.edu.sg/news/2023/04/12/smu-launches-integrated-co-curricular-management-system-and-co-curricular'">Read about the launch</h5>
-                            </div>
 
                         </div>
                     </div>
-
-
-
-
-
-
                 </div>
+
+
+
+
             </div>
-        </div>
-
-
-
-
-    </div>
 
 
 
