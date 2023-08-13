@@ -31,6 +31,23 @@
     label{background: #8A704C; padding: 7px 18px; color: #fff; font-weight: 500;}
     
     video{background: #dadada;}
+
+    .circle3 {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 0px;
+            z-index: 1;
+        }
+
+        .circle3 p {
+                margin: 0;
+                text-align: center;
+                font-size: 8px;
+                color: #fff;
+                padding-top: 4px;
+        }
     
     .tabbing{
     border: 0;
@@ -123,7 +140,7 @@ transition: transform 5000ms linear;
     .btn{border: 0;border-radius: 0;}
     
     .coll{cursor: pointer;}
-    .coll:hover .btn{background: #090c26;}
+    .coll:hover .btn{background: #8A704C;}
     
     .tabb{position: absolute; bottom: 0; background: #151c55; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; width: 100%; height: 25%;text-align: center;}
     
@@ -135,12 +152,6 @@ transition: transform 5000ms linear;
   .barr {height: 63px;position: fixed; top: 0; left: 0; background: #151c55; z-index: 999; width: 100%}
     .barr> h4{margin: 21px 0; color: #fff; width: auto; display: inline-block}
     .barr> a{border-radius: 50%;}
-        
-  .pagelabel, .pagelabel2 {height: auto;position: fixed; bottom: -216px; right: 15px; background: transparent; z-index: 999; margin: 0 }
-    
-
-        
-  .pagelabel a, .pagelabel2 a {height: 36px;}
 
 .toggle-up {
   transform: rotate(0);
@@ -148,7 +159,7 @@ transition: transform 5000ms linear;
     .barr-button {margin:13px 0;float: right;}
     .large {display: none;}
      .small {display: block;text-align: left;}
-    .modal .section {min-height: 100vh}
+    .modal .section {min-height: auto}
     
     
     .notif, .notif2, .notifx, .notif2x, .notifxx, .notif2xx{position: fixed; top: calc(-100%); width: 100% ; z-index: 1000; background: #8A704C;
@@ -189,15 +200,15 @@ transition: transform 5000ms linear;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-           <div class="logo-container">
-               <div class="logo">
-<img src="assets/paper_img/new_logo.svg" id="logo1">
-               </div>
-                              <div class="brand">
+      <div class="logo-container">
+        <div class="logo">
+<img src="assets/paper_img/new_logo.svg" id="logo1" style="height:50%; margin-top: 12.5%;">
+        </div>
+                       <div class="brand">
 <img src="assets/paper_img/oblique.svg" id="logo2">
-               </div>
-               
-            </div>                    
+        </div>
+        
+     </div>                   
       
     
     </div>
@@ -232,102 +243,320 @@ transition: transform 5000ms linear;
 
     <div class="main">
         <div class="section">
-         <div class="container tim-container" style="height: 100vh">
-            <div class="tim-title">
-                <h2>Co-Curricular Guide</h2>
-            </div>
+            <div class="container tim-container" style="height: auto; background: #151c55;color:#fff">
+                <div class="tim-title" style="text-align: center;">
+                    <h4 style="font-size: 80px;">What is the ICMS?</h4>
+                    <p>An introduction to SMU's <span style="font-weight: bold; ">Integrated Co-curricular Management System</span></p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+
+
+                        <div class="col-sm-3 col-md-3" style="padding: 0;">
+
+                <div class="tim-title" style="text-align: center;">
+                   
+                    <img src="assets/001.png" height="250" style="display:inline-block; padding: 20px">
+
+
+                </div></div>
+
+                
+                <div class="col-sm-9 col-md-9" style="padding: 0;">
 
                     <div class="tim-title">
-                        <h3>Choose one <br />
-                            <small>Pick the appropriate guide for the activity that you are embarking on </small>
-                        </h3>
+                        <h4>All your co-curricular activities in one place</h4>
+                        <p>
+                            The ICMS documents your co-curricular journey and the learning from your co-curricular experiences.
+                        
+
+                        <div class="row" style="background: #090c26; border-radius: 20px; padding: 5px; display: flex; margin: 10px 0;">
+                            <img src="assets/003.png" width="32" style="margin: 10px 35px; display: inline-block;">
+                            <p style="color: #fff;display : inline-block; margin: auto; padding: 0 20px; font-weight: bold; font-size: 16px;">
+                                Track the progress of ALL your co-curricular activities – community service internships, student clubs and events and more.</p>
+                        </div>
+
+
+                    <div class="row" style="background: #090c26; border-radius: 20px; padding: 5px; display: flex; margin: 10px 0;">
+                        <div class="circle3" style="margin: 0 10px;">
+                           <div style="padding-top: 25px; text-align:center; width: 80px;">
+                               <p style="background: #8A704C; color: #fff; padding: 2px 0; border-radius: 0px; width: auto; margin: auto;font-size:10px;"><b>My SMU Dashboard</b></p>
+                           </div>
+                           <div style="padding: 0; text-align:center; height:0; position:relative;">
+                               <svg style="position:absolute;top:0;" fill="grey" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M4 0l16 12.279-6.951 1.17 4.325 8.817-3.596 1.734-4.35-8.879-5.428 4.702z"></path></svg>
+                           </div>
+                       </div>
+
+
+                        <p style="color: #fff;display : inline-block; margin: auto; padding: 0 20px; font-weight: bold; font-size: 16px;">Click on ‘My SMU Dashboard’ in ICMS to track the progress of your various co-curricular activities (CCAs), complete and submit reflections, generate an interim CCA record, and track the extent of your growth in the SMU Graduate Learning Outcomes.</p>
+                   </div>
+                   <div class="row" style="background: #090c26; border-radius: 20px; padding: 5px; display: flex; margin: 10px 0;">
+                       <div class="circle3" style="margin: 5px 15px;">
+                               <div style="padding-top: 12px; text-align:center;">
+                                   <p style="background: #32849B; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 72px; margin: 0; font-size: 6px;">&nbsp;</p>
+                               </div>
+                               <div style="padding-top: 6px; text-align: center; left: 0 ">
+                                   <p style="background: #E36C08; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 54px; margin: 0; font-size: 6px;">&nbsp;</p>
+                               </div>
+                               <div style="padding: 0; text-align:center; height:0; position:relative;">
+                                   <svg style="position:absolute;top:0;" fill="grey" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M4 0l16 12.279-6.951 1.17 4.325 8.817-3.596 1.734-4.35-8.879-5.428 4.702z"></path></svg>
+                               </div>
+                               <div style="padding-top: 6px; text-align: center; left: 0 ">
+                                   <p style="background: #9547A7; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 36px; margin: 0; font-size: 6px;">&nbsp;</p>
+                               </div>
+                               <div style="padding-top: 6px; text-align: center; left: 0 ">
+                                   <p style="background: #77923C; color: #fff; padding: 0; border-radius: 20px; top: 25px; width: 18px; margin: 0; font-size: 6px;">&nbsp;</p>
+                               </div>
+                           
+
+                       </div>
+
+
+
+                       <p style="color: #fff;display : inline-block; margin: auto; padding: 0 20px; font-weight: bold; font-size: 16px;">Gain insights into the skillsets that you have developed through your co-curricular involvement. You can track the extent of your growth in the SMU Graduate Learning Outcomes according to three levels of learning – Exposure, Integration and Transformation, with each level indicating a progressively more impactful experience.</p>
+                   </div>
+    
+    
+                    </div></div>
+                </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="col-sm-3 col-md-3" style="padding: 0;">
+
+                            <div class="tim-title" style="text-align: center;">
+                               
+                                <img src="assets/006.png" height="250" style="display:inline-block; padding: 20px">
+            
+            
+                            </div></div>
+
+                <div class="col-sm-9 col-md-9" style="padding: 9;">
+
+                <div class="tim-title">
+                    <h4>Uniquely yours</h4>
+                    <p>
+                        From the graduating cohort of 2025 onwards, ALL students will receive a Co-Curricular Transcript, which will complement their academic transcript. Other than documenting activities that students have participated in, this Transcript offers insights into the skillsets that they have developed in the process.
+                    </p>
+
+                    <div class="row" style="background: #090c26; border-radius: 20px; padding: 5px; display: flex; margin: 10px 0;">
+                        <img src="assets/007.png" width="32" height="32" style="margin: 15px 20px; display: inline-block;">
+
+                        <p style="color: #fff;display : inline-block; margin: auto; padding: 0 20px; font-weight: bold; font-size: 16px;">
+                            With all completed co-curricular activities organized according to skill and learning outcomes, it is easy to showcase the skillsets you have developed through your co-curricular involvement.
+
+                        </p>
+                   </div>
+
+                   <div class="row" style="background: #090c26; border-radius: 20px; padding: 5px; display: flex; margin: 10px 0;">
+                    <img src="assets/008.png" width="32" style="margin: 10px 20px; display: inline-block;">
+
+                   <p style="color: #fff;display : inline-block; margin: auto; padding: 0 20px; font-weight: bold; font-size: 16px;">Generate your own interim records via the useful links below, or on My SMU Dashboard.</p>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
+
+                </div></div>
+
+                </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+ 
+        <div class="section">
+            <div class="container tim-container" style="height: auto">
+                <div class="tim-title">
+                    <h4>Co-Curricular Guide</h4>
+                    <p>Pick the appropriate guide for the activity that you are embarking on
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
 
 
                         <div class="col-sm-4 col-md-4" style="padding: 0;">
                             <div class="coll" id="button1" data-toggle="modal" data-target="#myModal" style="background: url(assets/paper_img/csp.jpg); background-repeat: no-repeat; background-size: cover;background-position: center;">
-                            <div class="tabb btn" id="box1" style="margin-bottom: 0; padding: 0;">
-                            <h4>Community&nbsp;Service</h4>
+                                <div class="tabb btn" id="box1" style="margin-bottom: 0; padding: 0;">
+                                    <h4>Community&nbsp;Service</h4>
+
+                                </div>
+                            </div>
 
                         </div>
-                            </div>
-                            
-                            </div>
-                            
-                            
+
+
 
                         <div class="col-sm-4 col-md-4" style="padding: 0">
                             <div class="coll" id="button2" data-toggle="modal" data-target="#myModal2" style="background: url(assets/paper_img/internships.jpg); background-repeat: no-repeat; background-size: cover;background-position: center;">
-                            <div class="tabb btn" style="margin-bottom: 0; padding: 0; position: absolute; bottom: 0;z-index: 2;">
-                            <h4>Internships</h4>
+                                <div class="tabb btn" style="margin-bottom: 0; padding: 0; position: absolute; bottom: 0;z-index: 2;">
+                                    <h4>Internships</h4>
+
+                                </div>
+                            </div>
 
                         </div>
-                            </div>
-                            
-                            </div>
 
 
                         <div class="col-sm-4 col-md-4" style="padding: 0">
                             <div class="coll" id="button3" data-toggle="modal" data-target="#myModal3" style="background: url(assets/paper_img/cca.jpg); background-repeat: no-repeat; background-size: cover;background-position: center;">
-                            <div class="tabb btn" style="margin-bottom: 0; padding: 0; position: absolute; bottom: 0;z-index: 2;">
-                            <h4>CCAs</h4>
+                                <div class="tabb btn" style="margin-bottom: 0; padding: 0; position: absolute; bottom: 0;z-index: 2;">
+                                    <h4>CCAs</h4>
 
-                        </div>
-                            </div>
-                            
+                                </div>
                             </div>
 
                         </div>
 
-                        <div class="col-md-12">
-
-
-                            <div class="col-sm-12 col-md-12" style="padding: 0;">
-                                
-                                <div class="coll" id="button4" style="background: #151c55; max-width: 100%;">
-                                <div class="tabb btn" id="box4" style="margin-bottom: 0; padding: 0;">
-                                    <h4>Request for interim CCA record</h4>
-    
-                            </div>
-                                </div>
-                                
-                                </div>
-    
-                            </div>
                     </div>
-                    <br />
-                
-                
-        <div class="row">
-            
-            <div class="container" style="padding: 20px 40px 80px 40px; background: #151c55;">
-            <h4 style="color: #fff">Useful links</h4>
-            <div class="col-md-12 row" style="background: #090c26; border-radius: 20px; padding: 0;">
-                <h5 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold; font-size: 16px;">RPU, CSU &amp; IRMs</h5>
-                <button class="btn btn-danger btn-fill useful" style="margin: 0" onclick="location.href='https://elearn.smu.edu.sg/'">eLearn</button>
                 </div>
-              
-                
-            <div class="col-md-12 row" style="background: #090c26; border-radius: 20px; padding: 0; margin-top: 10px;">
-                <h5 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold; font-size: 16px;">Apply for CS/Internship</h5>
-                <button class="btn btn-danger btn-fill useful" style="margin: 0" onclick="location.href='https://ontrac.smu.edu.sg/'">OnTrac</button>
-                </div>
-                
-              
-            <div class="col-md-12 row" style="background: #090c26; border-radius: 20px; padding: 0; margin-top: 10px;">
-                <h5 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold; font-size: 16px;">Co-curricular record</h5>
-                <button class="btn btn-danger btn-fill useful" style="margin: 0" onclick="location.href='https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465'">ICMS (Anthology Portfolio)</button>
+                <br />
+
+
+                <div class="row">
+
+                    <div class="container" style="padding: 20px 40px 80px 40px; background: #151c55;">
+                        <h4 style="color: #fff">Useful links</h4>
+
+                        <div class="col-md-12 row" style="background: #090c26; border-radius: 20px; padding: 0;">
+                            <h5 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold; font-size: 16px;">Request for CCA interim record</h5>
+                            <button class="btn btn-danger btn-fill useful" style="margin: 0" onclick="location.href='https://forms.office.com/Pages/ResponsePage.aspx?id=ynmKyZpakUeiQ_Bq_WdGTVo0hFIoWr1FpSE3cEw9VyxUNzJONjQxSjFRVEE1UFpBNUNEMFBLOEM2SS4u'">Click here</button>
+                        </div>
+
+
+                        <div class="col-md-12 row" style="background: #090c26; border-radius: 20px; padding: 0; margin-top: 10px;">
+                            <h5 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold; font-size: 16px;">RPU, CSU &amp; IRMs</h5>
+                            <button class="btn btn-danger btn-fill useful" style="margin: 0" onclick="location.href='https://elearn.smu.edu.sg/'">eLearn</button>
+                        </div>
+
+
+                        <div class="col-md-12 row" style="background: #090c26; border-radius: 20px; padding: 0; margin-top: 10px;">
+                            <h5 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold; font-size: 16px;">Apply for CS/Internship</h5>
+                            <button class="btn btn-danger btn-fill useful" style="margin: 0" onclick="location.href='https://ontrac.smu.edu.sg/'">OnTrac</button>
+                        </div>
+
+
+                        <div class="col-md-12 row" style="background: #090c26; border-radius: 20px; padding: 0; margin-top: 10px;">
+                            <h5 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold; font-size: 16px;">Integrated Co-curricular Management System</h5>
+                            <button class="btn btn-danger btn-fill useful" style="margin: 0" onclick="location.href='https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465'">Login here</button>
+                        </div>
+
+                    </div>
                 </div>
 
+                <!--article-->
+
+                <div class="row" style="padding: 20px;">
+
+
+                </div>
+
+                    <div class="row" style="padding-bottom:0; background-color: #151c55;">
+                        <div class="col-md-12" style="padding: 0; background-color: #151c55;">
+
+                            <div class="col-sm-8 col-md-8" style="min-height:400px; background: url(https://news.smu.edu.sg/sites/news.smu.edu.sg/files/styles/max_1300x1300/public/smu/news/Image-286_1.jpg?itok=JIZmyRPQ); background-repeat: no-repeat; background-size: cover;background-position: center;">
+                            </div>
+                            <div class="col-sm-4 col-md-4" style="margin: auto;">
+                                    <div class="tim-title" style="margin: auto; padding: 40px 0">
+                                        <h4 style="text-align: center; color:#fff;">SMU launches Integrated Co-Curricular Management System and Co-Curricular Transcript</h4>
+                                        <p style="text-align: center; color: #fff;">A first in Singapore, this new initiative strengthens the university’s mission to develop graduates with career-ready skills</hp>
+                                            <p>&nbsp;</p>
+                                      <div style="text-align: center;">
+                                        <button class="btn btn-danger btn-fill" style="margin: 0; border-radius: 20px;" onclick="location.href='https://news.smu.edu.sg/news/2023/04/12/smu-launches-integrated-co-curricular-management-system-and-co-curricular'">Read more</button>
+                                      </div>
+
+                                </div>
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+<!--FAQs-->
+
+<div class="row" style="padding: 20px;">
+
+
+</div>
+
+<div class="row">
+
+    <div class="container" style="padding: 20px 40px 80px 40px; background: #151c55;">
+        <h4 style="color: #fff">Frequently Asked Questions</h4>
+
+        <div class="col-md-12 row" style="background: #090c26; border-radius: 20px; padding: 0px;">
+            <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold; font-size: 16px;">What can I do in the ICMS?</h4>
+            <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">
+                You can track the progress of your various co-curricular activities (CCAs), complete and submit reflections, generate an interim CCA record, and track the extent of your growth in the SMU Graduate Learning Outcomes.
+
+            </p>
+        </div>
+
+        <div class="col-md-12 row" style="background: #090c26; border-radius: 20px; padding: 0px; margin-top:10px">
+            <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold; font-size: 16px;">How does the co-curricular transcript help me?</h4>
+            <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">
+                Other than documenting the co-curricular activities that you have participated in, the co-curricular transcript complements your academic transcript and offers insights into the skillsets that you have developed through your co-curricular involvement. This allows you to showcase and articulate the career-ready skillsets you possess to potential employers, scholarship boards, etc.
+            </p>
+        </div>
+
+
+        <div class="col-md-12 row" style="background: #090c26; border-radius: 20px; padding: 0px; margin-top: 10px">
+            <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold; font-size: 16px;">Are reflections compulsory?</h4>
+            <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Reflections are compulsory for internships and community service, and are encouraged for other co-curricular activities</p>
+        </div>
+
+        <div class="col-md-12 row" style="background: #090c26; border-radius: 20px; padding: 0px; margin-top: 10px">
+            <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold; font-size: 16px;">How does writing a reflection help me?</h4>
+            <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">
+                While experience is the basis for learning, learning cannot take place without reflection. Many students complete co-curricular activities without even realizing how they have grown or what they have learnt. Reflecting on your co-curricular experiences enables you to document your learning, and in so doing, you will deepen your learning and personal growth.
+
+            </p>
+        </div>
+
+        <div class="col-md-12 row" style="background: #090c26; border-radius: 20px; padding: 0px; margin-top:10px">
+            <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold; font-size: 16px;">When can I get my co-curricular transcript?</h4>
+            <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Upon graduation, from 2025. However, interim CCA records can be generated now.</p>
+        </div>
+
+        <div class="col-md-12 row" style="background: #090c26; border-radius: 20px; padding: 0px; margin-top:10px">
+            <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold; font-size: 16px;">If I'm not involved in any CCA, does that mean I will not get a co-curricular transcript?</h4>
+            <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Every undergraduate in SMU is required to do at least 80 hours of community service and 12 weeks of internship to graduate - this means that every student will receive a co-curricular transcript with at least 2 entries upon graduation. </p>
+        </div>
+
+        <div class="col-md-12 row" style="background: #090c26; border-radius: 20px; padding: 0px; margin-top:10px">
+            <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold; font-size: 16px;">Does this mean I have to do extra CCAs on top of my academic workload?</h4>
+            <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Aside from the graduation requirements of 80 hours of community service and 12 weeks of internship, CCA involvement is encouraged but not mandatory.</p>
+        </div>
+
+        <div class="col-md-12 row" style="background: #090c26; border-radius: 20px; padding: 0px; margin-top:10px">
+            <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold; font-size: 16px;">Is the transcript formally endorsed by the university?</h4>
+            <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Yes. The co-curricular transcript will be issued alongside the academic transcript upon graduation. </p>
+        </div>
+
+        <div class="col-md-12 row" style="padding: 0px; margin-top:30px">
+            <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px; text-align: center">
+                Have queries on ICMS?<br>
+
+                Contact the Co-Curriculum Development team at <a href="mailto:icms@smu.edu.sg">icms@smu.edu.sg</a>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+
+                </div>
             </div>
-        </div>
-       
-
-
-         </div>
-        </div>
     </div>
 
 </div>
@@ -360,46 +589,14 @@ transition: transform 5000ms linear;
   <div></div>
 </div>
     </div>
-          
-      
-    <div class="pagelabel"  style="margin-bottom: 15px ">
-    
-       
-    <a class="btn btn-danger btn-fill large stepbtn"><b class="caret karat"></b>&nbsp;Steps</a>
-        
-    <a class="btn btn-danger btn-fill large" id="step1btn">Step 1</a>
-    <a class="btn btn-danger btn-fill large" id="step2btn">Step 2</a>
-        <a class="btn btn-danger btn-fill large" id="step3btn">Step 3</a>
-    
-       <a class="btn btn-danger btn-fill large" id="step4btn">Step 4</a>
-    <a class="btn btn-danger btn-fill large" id="step5btn">Step 5</a>
-        <a class="btn btn-danger btn-fill large" id="step6btn">Step 6</a>
-    
-    
-     <a class="btn btn-danger btn-fill small stepbtns" style="padding: 7px 14px; margin: 0;" id="#stepbtns">?</a>
-
-         <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="step1btns">1</a>
-
-         <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="step2btns">2</a>
-
-    
-         <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="step3btns">3</a>
-
-             <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="step4btns">4</a>
-
-             <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="step5btns">5</a>
-
-             <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="step6btns">6</a>
-
-   </div>
-    
-          
-        
-        
+            
 
 <div class="wrapper">
 
         <div class="section" style="padding: 70px 0;" id="step1">
+            <div class="row" style="background-color: #8A704C;color:#fff">
+            <h4 style="text-align:center; margin: 20px;">Complete your eLearn modules</h4>
+            </div>
          <div class="container">
 
                 
@@ -408,7 +605,10 @@ transition: transform 5000ms linear;
 </video>
              </div>
                      
-<div class="register-card col-sm-6 step"><label>Step 1</label>
+<div class="register-card col-sm-6 step">
+    
+    
+    <label>Step 1</label>
     <ul>
     <li>Log on to eLearn</li>     <br>
     <li>Search for <b>Co-Curricular Learning</b>, followed by the year of your admission - i.e. Co-Curricular Learning 2021, or click on the <b>Co-Curricular Learning</b> icon.</li> <br>
@@ -490,494 +690,196 @@ transition: transform 5000ms linear;
             </div>
          </div>        
 
-            <div class="section" style="padding: 70px 0 0 0" id="step3">
-         <div class="container">
+        <div class="section" style="padding: 0" id="step3">
 
-
-<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
-  <source src="assets/paper_img/step4.mp4" type="video/mp4">
-</video>
-                <p style="list-style-type: none; border: 2px solid black; margin: 0; padding: 2px;"><b>Note:</b> You will only be able to access OnTrac II after your RPU &amp; CSU completion status has been updated. This is updated 6 times a day.</p> 
-                      <p style="background: #000; text-align: center; padding: 5px; color: #fff">Next update is at <span id="time"></span></p>
+            <div class="row" style="background-color: #8A704C;color:#fff; margin-bottom: 70px;">
+                <h4 style="text-align: center; margin: 20px;">Plan your Community Service Project!</h4>
             </div>
-             
-             
-<div class="register-card col-sm-6" style="position: relative">
-
-    
-    <label>Step 3</label>
-    
-
-    <ul style="position: relative">
-
-        
-    <li>Click on <b>Community Service</b> and log in to <b>OnTrac II</b> to apply or propose a Community Service Project (CSP).</li><br>  
-        
-        <li>Source for a CSP, preferably one that allows you to fulfil all your hours; this will give you an opportunity to learn more about the case and beneficiaries you are serving.</li><br> 
-        
-
-<li>After applying or proposing, wait for approval from C4SR. Without approval, the community service hours will not be recognised</li>
-        
 
 
-    
-     </ul> 
-    
-    <a href="https://ontrac.smu.edu.sg/" target="_blank"
- class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to OnTrac II</a>
-    
-             </div>
-                
-
-            </div>
-         </div>   
-    
-    
-    
-    
-    
-    
-            <div class="section" style="padding: 70px 0; min-height: auto; background: #fff; border: 5px solid #8A704C" id="step4">
-         <div class="container">
+            <div class="container">
 
 
-<div class="col-sm-12 register-card" style="background: #fff; padding-bottom: 15px">
-    
-        <label>A note on the Integrated Co-curricular Management System (ICMS):</label>
-
-    <p>The ICMS will document the outcomes of your co-curricular experiences, helping you 
-to consolidate your experiences across the co-curricular space in your undergraduate years, and culminating in a 
-co-curricular record that will be meaningful for you and your future employer.</p>  
-            
-    <p>On the ICMS, your community service experiences are organised into <b>Placements</b>, which contain the Pre, Mid &amp; Post Activity requirements as shown.</p><br>
-    
-            <p style="display: block;">Each activity that you participate in will have its own Placement entry. As such, if you have more than one CSP/internship/CCA, you will see multiple placements reflected as there will be a Placement for each activity.</p>
-
-    
-<div class="col-sm-12" style="position: relative; height: 20vh">
-    
-        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff;position: absolute; top: 0; left: 0; z-index: 3;
-">
-        <b>Placement</b> (CSP)<br><br>
-    
-    
-    
-     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
-        
-    Mid Activity check-in&nbsp;<span class="flag2">Survey</span><br>
-        
-Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
-        
-</p>
-    
-        
-        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 10px; left: 10px; z-index: 2;
-">
-        <b>Placement</b> (CSP)<br><br>
-    
-    
-    
-     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
-        
-    Mid Activity check-in&nbsp;<span class="flag2">Survey</span><br>
-        
-Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
-        
-</p>
-    
-        
-        
-        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 20px; left: 20px; z-index: 1;">
-        <b>Placement</b> (CSP)<br><br>
-    
-    
-     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
-        
-    Mid Activity check-in&nbsp;<span class="flag2">Survey</span><br>
-        
-Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
-        
-</p>
-    
-    
-    </div>
-
-    
-<br>
-<label>Your account on the ICMS will automatically be activated before the start of your first co-curricular activity (Community Service Project, internship, or any other CCA). <br><br>You will receive an email with instructions on how to access the ICMS upon the activation of your account. </label>
-   
-    
-             
-             </div>
-             
-            </div>
-         </div>   
-    
-    
-        
-    
-            <div class="section" style="padding: 70px 0 0 0">
-         <div class="container">
-
-<div class="col-sm-6 register-card2">
-    
-    
-    
-    <video width="100%" height="100%" controls preload>
-  <source src="assets/paper_img/step5.mp4" type="video/mp4">
-</video><br>
-
-             </div>
-             
-<div class="register-card col-sm-6" style="position: relative">
-
-    
-    <label>Step 4</label>
-    <ul style="position: relative">
-        
-
-        
-        <li>On the <b>start date</b> of your CSP, you will be prompted to complete your <b>Pre-Activity Learning Objectives (LO) Selection</b>, which is a <span class="flag2">Survey</span></li> <br>
-        
-                
-        <li>The learning objectives (LOs) that you choose here set the focus of your experience. You will subsequently be reflecting upon your learning in relation to these identified learning objectives (LOs). These LOs are correspondingly mapped to SMU's <b>Graduate Learning Outcomes</b>.</li><br>
-        
-
-        <li>Go into the ICMS (Anthology Portfolio), click on <span class="tabbing">Upcoming</span> or  <span class="tabbing">Surveys</span> (on the top bar below the Dashboard header)</li><br>
-        
-        <li>There, you can view pending Surveys. Click on <span class="flag3">Take Survey</span> on the <b>Pre-Activity Learning Objectives (LO) Selection</b> that corresponds to your current CSP.</li><br>
-         
-
-     </ul> 
-
-             </div>
-                
+                <div class="col-sm-6 register-card2" style="padding: 15px;">
+                    <video width="100%" height="100%" controls preload>
+                        <source src="assets/paper_img/step4.mp4" type="video/mp4">
+                    </video>
+                    <p style="list-style-type: none; border: 2px solid black; margin: 0; padding: 2px;"><b>Note:</b> You will only be able to access OnTrac II after your RPU &amp; CSU completion status has been updated. This is updated 6 times a day.</p>
+                    <p style="background: #000; text-align: center; padding: 5px; color: #fff">Next update is at <span id="time"></span></p>
                 </div>
-             
-             
-                   <div class="container" style="padding-top: 60px;">
-             
-<div class="register-card2 col-sm-6" style="position: relative">
-
-    <img src="assets/paper_img/placement%20ss.png" width="100%">
-    <img src="assets/paper_img/placement%20ss2.png" width="100%">
-
-             </div>
-             
-<div class="register-card col-sm-6" style="position: relative">
-
-    <ul style="position: relative">
-        
 
 
-        <li><b>Note:</b> Look out for labels such as <span class="flag">DUE</span>, <span class="flag">OVERDUE</span> &amp; <span class="flag" style="background: #2a76b0
-">DUE SOON</span></li><br>
+                <div class="register-card col-sm-6" style="position: relative">
 
-         
 
-     </ul> 
+                    <label>Step 3</label>
 
-             </div>
-                
-             
-             
-             </div>
-             
-             
 
-       
-                
-                
-                
-                
-         <div class="container" style="padding-top: 60px;">
+                    <ul style="position: relative">
 
-<div class="col-sm-6 register-card2">
-        
-<video width="100%" height="100%" controls preload>
-  <source src="assets/paper_img/step5b.mp4" type="video/mp4">
-</video>
-             
-             
-             </div>
-             
-<div class="register-card col-sm-6" style="position: relative">
 
-    
-    <ul style="position: relative">
-        
+                        <li>Click on <b>Community Service</b> and log in to <b>OnTrac II</b> to apply or propose a Community Service Project (CSP).</li>
+                        <br>
 
-        
-        
-   
-        <li><b>Alternatively</b>, go into the ICMS (Anthology Portfolio), click on Menu (on the top right of the screen)</li><br>        
-        <li>Click on My Placements, and click on the CSP you're active in, and scroll down till you find the <b>Pre-activity selection of LOs (Community Service)</b>.</li><br>        
- 
-  
-        
+                        <li>Source for a CSP, preferably one that allows you to fulfil all your hours; this will give you an opportunity to learn more about the case and beneficiaries you are serving.</li>
+                        <br>
 
-    
-     </ul> 
-    
-    <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465" target="_blank"
- class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to the ICMS (Anthology Portfolio)</a>
-    
-             </div>
-                
+
+                        <li>After applying or proposing, wait for approval from C4SR. Without approval, the community service hours will not be recognised</li>
+
+
+
+
+                    </ul>
+
+                    <a href="https://ontrac.smu.edu.sg/" target="_blank"
+                       class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to OnTrac II</a>
+
+                </div>
+
 
             </div>
-         </div>   
+        </div>   
     
-    
-    
-    
-    
-    
-    
-    
-               <div class="section" style="padding: 70px 0 0 0" id="step5">
-         <div class="container">
 
-<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
-  <source src="assets/paper_img/step5.mp4" type="video/mp4">
-</video></div>
-             
-<div class="register-card col-sm-6" style="position: relative">
+            <div class="section" style="padding: 0" id="step4">
 
-    
-    <label>Step 5</label>
-    <ul style="position: relative">
-        
 
-        
-        <li>On the <b>mid-point date</b> of your CSP, you will be prompted to complete your <b>Mid-Activity check-in</b>, which is an <span class="flag2">Survey</span></li> <br>
-        
-        
-        <li>Go into the ICMS (Anthology Portfolio), click on <span class="tabbing">Upcoming</span> or  <span class="tabbing">Surveys</span> (on the top bar below the Dashboard header)</li><br>
-        
-        <li>There, you can view pending Surveys. Click on <span class="flag3">Take Survey</span> on the <b>Mid-Activity Check In</b> that corresponds to your current CSP.</li><br>
-         
-        <li><b>Note:</b> Look out for labels such as <span class="flag">DUE</span>, <span class="flag">OVERDUE</span> &amp; <span class="flag" style="background: #2a76b0
-">DUE SOON</span></li><br>
-     
-     </ul> 
+                <div class="row" style="background-color: #8A704C;color:#fff; margin-bottom: 70px;">
+                    <h4 style="text-align: center; margin: 20px;">Submit your reflections</h4>
+                </div>
 
-             </div>
-                
 
+                <div class="container">
+
+                    <div class="col-sm-6 register-card2">
+
+
+
+                        <img src="https://ccd-smu.github.io/dashboardbutton.png" style="width: 100%;"><br>
+
+
+                    </div>
+
+                    <div class="register-card col-sm-6" style="position: relative">
+
+
+                        <label>Step 4</label>
+
+                        <p>Complete all <b>3 mandatory reflections</b> to complete your community service experience, and ensure that it is recorded on your Co-Curricular Transcript.</p>
+
+                        <ul style="position: relative">
+                            <li>Pre-Activity LO selection</li>
+                            <li> Mid-Activity Check in</li>
+                            <li>Post-Activity Reflection</li>
+                        </ul>
+
+                        <p>Log in to ICMS > Menu > <b>My SMU Dashboard</b></p>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="container" style="padding-top: 60px;">
+
+                    <div class="register-card2 col-sm-6" style="position: relative">
+
+                        <img src="https://ccd-smu.github.io/dashboard3.png" width="100%">
+                    <p>&nbsp;</p>
+
+                        <img src="assets/reflectionss.png" style="width: 100%;"><br>
+
+                    </div>
+
+                    <div class="register-card col-sm-6" style="position: relative">
+
+                        <p>Find the community service entry, click on it, then click on the appropriate <b>Pre, Mid or Post Activity Reflection button</b></p>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+                <div class="container" style="padding-top: 60px;">
+
+                    <div class="col-sm-6 register-card2">
+
+                        <img src="assets/reflectionscsp.png" width="100%">
+
+                    </div>
+
+                    <div class="register-card col-sm-6" style="position: relative">
+                        <p>Complete your reflection. Remember to choose only <b>3 learning outcomes</b></p>
+
+
+                        <p>You'll need to repeat the same steps for your <b>Mid and Post-Activity reflections</b>.</p>
+                        <p style="background: darkred; color: #fff; padding: 20px;"><b>Note:</b> Please complete your Post-Activity reflection within <b>1 month from the end date</b> of your CSP.</p>
+
+
+
+                        <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465" target="_blank"
+                           class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to the ICMS (Anthology Portfolio)</a>
+
+                    </div>
+
+
+                </div>
             </div>
-                   
-         <div class="container">
-
-<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
-  <source src="assets/paper_img/step6.mp4" type="video/mp4">
-</video></div>
-             
-<div class="register-card col-sm-6" style="position: relative">
-
-    
-    <ul style="position: relative">
-        
-
- 
-        <li><b>Alternatively</b>, go into the ICMS (Anthology Portfolio), click on Menu (on the top right of the screen)</li><br>        
-        <li>Click on My Placements, and click on the CSP you're active in, and scroll down till you find the <b>Mid-activity Check In (Community Service)</b>.</li><br>        
- 
-  
-        
-
-        
-        <li>Within the <b>Mid-Activity check-in</b>, indicate <b>Yes</b> if you are on track to address the 3 LOs you chose, and write NIL in the comments box.</li><br>
-        
-        
-        <li>If you wish to amend your LOs, indicate <b>No</b>, and amend them when your write your <b>Post-Activity reflection</b> at the end of your Community Service.</li><br>
-             
-        
-        <li>If you have other issues with your Community Serivce, please indicate them down in the comments box when doing this Survey, or email your manager.</li><br>
-        
-
-    
-     </ul> 
-    
-    <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465" target="_blank"
- class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to the ICMS (Anthology Portfolio)</a>
-    
-             </div>
-                
-
-            </div>
-                   
-                   
-                   
-         </div>   
-    
-    
-    
-    
-                   <div class="section" style="padding: 70px 0 60px 0" id="step6">
-         <div class="container">
-
-<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
-  <source src="assets/paper_img/step5.mp4" type="video/mp4">
-</video>
-    <p style="background: darkred; color: #fff; padding: 20px;"><b>Note:</b> Please complete your reflection within <b>1 month from the end date</b> of your CSP.</p>
-<br>
-             
-      
-             </div>
-             
-<div class="register-card col-sm-6" style="position: relative">
-
-    
-    <label>Step 6</label>
-    <ul style="position: relative">
-        
-
-        
-        <li>On the <b>end date</b> of your CSP, you will be prompted to complete your <b>Post-Activity reflection</b>, which is a <span class="flag2">Survey</span></li> <br>
-         
-
-
-        <li>Go into the ICMS (Anthology Portfolio), click on <span class="tabbing">Upcoming</span> or  <span class="tabbing">Surveys</span> (on the top bar below the Dashboard header)</li><br>
-        
-        <li>There, you can view pending Surveys. Click on <span class="flag3">Take Survey</span> on the <b>Post-Activity Reflection</b> that corresponds to your current CSP.</li><br>
-    
-     </ul> 
-    
-
-             </div>
-                
-
-            </div>         
-                       
-        <div class="container" style="padding-top: 60px;">
-
-<div class="col-sm-6 register-card2">
-             
-      
-    <img src="assets/paper_img/placement%20ss.png" width="100%">
-    <img src="assets/paper_img/placement%20ss2.png" width="100%">
-             
-             </div>
-             
-<div class="register-card col-sm-6" style="position: relative">
-
-    
-    <ul style="position: relative">
 
 
 
-        <li><b>Note:</b> Look out for labels such as <span class="flag">DUE</span>, <span class="flag">OVERDUE</span> &amp; <span class="flag" style="background: #2a76b0
-">DUE SOON</span></li><br>
-
-    
-     </ul> 
-    
-
-             </div>
-                
-
-            </div>         
-                       
-                       
-                       
-                       <div class="container" style="padding-top: 60px;">
-
-<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
-  <source src="assets/paper_img/step7.mp4" type="video/mp4">
-</video><br>
-             
-             
-             </div>
-             
-<div class="register-card col-sm-6" style="position: relative">
-
-    <ul style="position: relative">
-
-        <li><b>Alternatively</b>, go into the ICMS (Anthology Portfolio), click on Menu (on the top right of the screen)</li><br>        
-        <li>Click on My Placements, and click on the CSP you're active in, and scroll down till you find the <b>Post-activity Reflection (Community Service)</b>.</li><br>        
- 
-  
-        
-
-    
-     </ul> 
-    
-    <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465" target="_blank"
- class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to the ICMS (Anthology Portfolio)</a>    
-    
-    
-    <a href="#"  data-dismiss="modal" target="#myModal" 
- class="btn btn-fill btn-block" style="margin: 10px 0 10px 0">You're done!</a>
-    
- 
-    
-    
-    
-    
-
-             </div>
-                
-
-            </div>
-                       
-                       
-         </div>   
-    
-    
-    
-    
-    
-        
             <div class="section" style="padding: 70px 0; min-height: auto; background: #fff; border: 5px solid #8A704C;" id="end">
-                       <div class="container">
+                <div class="container">
 
 
-<div class="col-sm-12 register-card" style="background: #fff; padding-bottom: 15px">
-    
-        <label>Your Co-curricular Transcript and Dashboard</label>
+                    <div class="col-sm-12 register-card" style="background: #fff; padding-bottom: 15px">
 
-    <p>Your community service experience(s) will be assessed using the Transformative Learning Rubric and form part of a co-curricular transcript, ready for you when you graduate.</p><br>
-    
-    <p style="text-align: left">
-        <label>Transformative Learning Rubric</label>
-            <br>
-        Achievement levels
-        </p>
-                
-<label style="background: #70AD47;text-align: left;"><span style="font-weight: bold; color: #fff; font-size: 140%">Exposure</span><br>The student displays a willingness to learn and grow by participating in the activity. He/She has an awareness of his/her current perspectives related to the GLO(s) and may be developing an understanding of what the GLO(s) entails.</label>
-<div class="arrow-down" style="border-top-color: grey"></div>
+                        <label>Your Co-curricular Transcript and Dashboard</label>
 
-<label style="background: #4DC58D;text-align: left;"><span style="font-weight: bold; color: #fff; font-size: 140%">Integration</span><br>The student can clearly articulate an understanding of the learning activity as it relates to the GLO(s) and its value for his/her life. The student is questioning, planning or beginning to expand upon previously held understandings of self, community, behaviour or environment.</label>
-<div class="arrow-down" style="border-top-color: grey"></div>
+                        <p>Your community service experience(s) will be assessed using the Transformative Learning Rubric and form part of a co-curricular transcript, ready for you when you graduate.</p><br>
 
-<label style="background: #5B73D5;text-align: left;"><span style="font-weight: bold; color: #fff; font-size: 140%">Transformation</span><br>The student provides strong evidence of a learning experience that resulted in profound growth or a major shift in values, beliefs or perspectives in the GLO(s), and this may be evident through changes in behaviour, speech or ability. </label>
+                        <p style="text-align: left">
+                            <label>Transformative Learning Rubric</label>
+                            <br>
+                            Achievement levels
+                        </p>
 
-            <div class="col-sm-12" style="position: relative;">
-                <img src="sample.png" width="100%"></div>
-    <p>For now, you can either generate an interim record, or access the SMU Dashboard - found within the menu on the left-hand column in the ICMS (Anthology Portfolio).</p><br>
-    <img src="dashboardbutton.png" width="100%"></div>
-    <img src="dashboard3.png" width="100%"></div>
+                        <label style="background: #70AD47;text-align: left;"><span style="font-weight: bold; color: #fff; font-size: 140%">Exposure</span><br>The student displays a willingness to learn and grow by participating in the activity. He/She has an awareness of his/her current perspectives related to the GLO(s) and may be developing an understanding of what the GLO(s) entails.</label>
+                        <div class="arrow-down" style="border-top-color: grey"></div>
 
-    
-<br>
+                        <label style="background: #4DC58D;text-align: left;"><span style="font-weight: bold; color: #fff; font-size: 140%">Integration</span><br>The student can clearly articulate an understanding of the learning activity as it relates to the GLO(s) and its value for his/her life. The student is questioning, planning or beginning to expand upon previously held understandings of self, community, behaviour or environment.</label>
+                        <div class="arrow-down" style="border-top-color: grey"></div>
 
-         <a data-dismiss="modal" target="#myModal" href="#" class="btn btn-danger btn-fill barr-button large">back</a>
-             
-             </div>
-             
+                        <label style="background: #5B73D5;text-align: left;"><span style="font-weight: bold; color: #fff; font-size: 140%">Transformation</span><br>The student provides strong evidence of a learning experience that resulted in profound growth or a major shift in values, beliefs or perspectives in the GLO(s), and this may be evident through changes in behaviour, speech or ability. </label>
+
+                    </div>
+                  
+                </div>
+
+
+                <br>
+
+                <a data-dismiss="modal" target="#myModal" href="#" class="btn btn-danger btn-fill barr-button large">back</a>
+
             </div>
-    
-    
-    
-    </div>
-    
-    
-    </div>
-<!--    end modal -->
 
+        </div>
+    
+    
+    
     </div>
-   <!-- Modal 1 end --> 
     
     
     
@@ -1009,49 +911,12 @@ Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
 </div>
     </div>
           
+    <div class="wrapper">
 
-      
-    <div class="pagelabel2"  style="margin-bottom: 15px ">
-    
-       
-    <a class="btn btn-danger btn-fill large stepbtn2"><b class="caret karat2"></b>&nbsp;Steps</a>
-        
-    <a class="btn btn-danger btn-fill large" id="2step1btn">Step 1</a>
-    <a class="btn btn-danger btn-fill large" id="2step2btn">Step 2</a>
-        <a class="btn btn-danger btn-fill large" id="2step3btn">Step 3</a>
-    
-       <a class="btn btn-danger btn-fill large" id="2step4btn">Step 4</a>
-    <a class="btn btn-danger btn-fill large" id="2step5btn">Step 5</a>
-        <a class="btn btn-danger btn-fill large" id="2step6btn">Step 6</a>
-    
-    
-     <a class="btn btn-danger btn-fill small stepbtns2" style="padding: 7px 14px; margin: 0;" id="#2stepbtns">?</a>
-
-         <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="2step1btns">1</a>
-
-         <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="2step2btns">2</a>
-
-    
-         <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="2step3btns">3</a>
-
-             <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="2step4btns">4</a>
-
-             <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="2step5btns">5</a>
-
-             <a class="btn btn-danger btn-fill small" style="padding: 7px 14px; margin: 0;" id="2step6btns">6</a>
-
-
-    
-    
-   </div>
-    
-          
-        
-        
-
-<div class="wrapper">
-
-        <div class="section" style="padding: 70px 0;" id="2step1">
+        <div class="section" style="padding: 70px 0;" id="step1">
+            <div class="row" style="background-color: #8A704C;color:#fff">
+            <h4 style="text-align:center; margin: 20px;">Complete your eLearn modules</h4>
+            </div>
          <div class="container">
 
                 
@@ -1060,7 +925,10 @@ Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
 </video>
              </div>
                      
-<div class="register-card col-sm-6 step"><label>Step 1</label>
+<div class="register-card col-sm-6 step">
+    
+    
+    <label>Step 1</label>
     <ul>
     <li>Log on to eLearn</li>     <br>
     <li>Search for <b>Co-Curricular Learning</b>, followed by the year of your admission - i.e. Co-Curricular Learning 2021, or click on the <b>Co-Curricular Learning</b> icon.</li> <br>
@@ -1071,14 +939,53 @@ Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
     
     <a href="https://elearn.smu.edu.sg/d2l/loginh/" target="_blank"
  class="btn btn-fill btn-block" style="margin: 30px 0 10px 0;">log on to eLearn</a>
-    
              </div>
              </div>
     
     </div>
         
+    
+    <!--
+        <div class="section" style="padding: 70px 0;" id="step2">
+         <div class="container">
+             
+                          
+<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
+  <source src="assets/paper_img/step2.mp4" type="video/mp4">
+</video></div>
+
+<div class="register-card col-sm-6" style="position: relative">
+
+    
+    <label>Step 2</label>
+    <ul style="position: relative">
+        <li>Log on to eLearn</li><br>
+        <li>Go into the <b>Co-Curricular Learning</b> module</li><br>
+        <li>Click on <b>Activate the ICMS (Anthology Portfolio)</b></li><br>
+        <i>This will activate your account On the ICMS, which will consolidate your your co-curricular experiences in SMU.<br><br> <b>Note that you will only need to do this once.</b></i><br>
         
-        <div class="section" style="padding: 70px 0 0 0" id="2step2">
+        
+        
+        <br>
+
+
+    
+     </ul> 
+    
+    <a href="https://elearn.smu.edu.sg/d2l/loginh/" target="_blank"
+ class="btn btn-fill btn-block" style="margin: 30px 0 10px 0;">log on to eLearn</a>
+    
+    <div target="_blank"
+ class="btn btn-fill btn-block input" id="input2" style="border-radius: 20px;margin: 10px 0;">I've done this</div>
+             </div>
+             
+
+             </div>
+                
+
+            </div>-->
+        
+        <div class="section" style="padding: 70px 0 0 0" id="step2">
          <div class="container">
 
 <div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
@@ -1090,13 +997,9 @@ Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
     <ul>
     <li>Log on to eLearn</li>     <br>
     <li>Search for <b>Co-Curricular Learning</b>, followed by the year of your admission - i.e. Co-Curricular Learning 2021, or click on the <b>Co-Curricular Learning</b> icon.</li> <br>
-        <li>Complete the <b>Internship Readiness Modules*</b> by scoring at <b>least 80% for each quiz</b>, and completing the <b>3 mandatory assignments</b>.</li> <br>
+        <li>Complete the <b>Internship Readiness Modules*</b> by scoring <b>at least 80% for each quiz</b>, and completing all the mandatory assignments.</li> <br>
              
-             
-     </ul> 
-    
-    
-    <p><b>*</b> this includes the e-Internship Guide &amp; e-Internship Briefing Quiz]</p>
+    </ul> <p><b>*</b> this includes the e-Internship Guide &amp; e-Internship Briefing Quiz]</p>
     
     <a href="https://elearn.smu.edu.sg/d2l/loginh/" target="_blank"
  class="btn btn-fill btn-block" style="margin: 30px 0 10px 0;">log on to eLearn</a>
@@ -1107,492 +1010,195 @@ Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
             </div>
          </div>        
 
-            <div class="section" style="padding: 70px 0 0 0" id="2step3">
-         <div class="container">
+        <div class="section" style="padding: 0" id="step3">
 
-
-<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
-  <source src="assets/paper_img/step4.mp4" type="video/mp4">
-</video>
-                <p style="list-style-type: none; border: 2px solid black; margin: 0; padding: 2px;"><b>Note:</b> You will only be able to access OnTrac II after your RPU &amp; IRM completion status has been updated. This is updated 6 times a day.</p> 
-              <p style="background: #000; text-align: center; padding: 5px; color: #fff">Next update is at <span id="time2"></span></p>
+            <div class="row" style="background-color: #8A704C;color:#fff; margin-bottom: 70px;">
+                <h4 style="text-align: center; margin: 20px;">Look for an internship!</h4>
             </div>
-             
-             
-<div class="register-card col-sm-6" style="position: relative">
-       
-    
-    <label>Step 3</label>
-    
-
-    <ul style="position: relative">
-
-        
-    <li>Click on <b>Undergraduate Career Services</b> and log in to <b>OnTrac II</b> to apply or propose an Internship.</li><br>  
-        
-        <li>Apply for internship opportunities (both local and overseas) posted on ONTRAC II. Alternatively, source for your own internships by submitting a self-proposal on OnTRAC II. Students with internship obligations as part of their scholarship, grants or awards are also required to submit a self-proposal for DKHMCC’s approval.</li><br>
-
-<li>After applying or proposing, wait for an internship offer to be made from the company you have indicated interest in</li><br>
-        
-<li>Log on to OnTrac II to accept (or reject) the offer
-</li>
-
-    
-     </ul> 
-    
-    <a href="https://ontrac.smu.edu.sg/" target="_blank"
- class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to OnTrac II</a>
-    
-             </div>
-                
-
-            </div>
-         </div>   
-    
-    
-    
-    
-    
-    
-            <div class="section" style="padding: 70px 0; min-height: auto; background: #fff; border: 5px solid #8A704C" id="2step4">
-         <div class="container">
 
 
-<div class="col-sm-12 register-card" style="background: #fff; padding-bottom: 15px">
-    
-        <label>A note on the Integrated Co-curricular Management System (ICMS)</label>
+            <div class="container">
 
-    <p>The ICMS will document the outcomes of your co-curricular experiences, helping you 
-to consolidate your experiences across the co-curricular space in your undergraduate years, and culminating in a 
-co-curricular record that will be meaningful for you and your future employer.</p>  
-            
-    <p>On the ICMS, your internship experiences are organised into <b>Placements</b>, which contain the Pre, Mid &amp; Post Activity requirements as shown.</p><br>
-    
-            <p style="display: block;">Each activity that you participate in will have its own Placement entry. As such, if you have more than one CSP/internship/CCA, you will see multiple placements reflected as there will be a Placement for each activity.</p>
 
-    
-<div class="col-sm-12" style="position: relative; height: 20vh">
-    
-        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff;position: absolute; top: 0; left: 0; z-index: 3;
-">
-        <b>Placement</b> (Internship)<br><br>
-    
-    
-    
-     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
-        
-    Mid Activity check-in&nbsp;<span class="flag2">Survey</span><br>
-        
-Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
-        
-</p>
-    
-        
-        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 10px; left: 10px; z-index: 2;
-">
-        <b>Placement</b> (Internship)<br><br>
-    
-    
-    
-     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
-        
-    Mid Activity check-in&nbsp;<span class="flag2">Survey</span><br>
-        
-Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
-        
-</p>
-    
-        
-        
-        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 20px; left: 20px; z-index: 1;">
-        <b>Placement</b> (Internship)<br><br>
-    
-    
-     Pre-Activity Learning Objective (LO) Selection&nbsp;<span class="flag2">Survey</span><br>
-        
-    Mid Activity check-in&nbsp;<span class="flag2">Survey</span><br>
-        
-Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
-        
-</p>
-    
-    
-    </div>
+                <div class="col-sm-6 register-card2" style="padding: 15px;">
+                    <video width="100%" height="100%" controls preload>
+                        <source src="assets/paper_img/step4.mp4" type="video/mp4">
+                    </video>
+                    <p style="list-style-type: none; border: 2px solid black; margin: 0; padding: 2px;"><b>Note:</b> You will only be able to access OnTrac II after your RPU &amp; CSU completion status has been updated. This is updated 6 times a day.</p>
+                    <p style="background: #000; text-align: center; padding: 5px; color: #fff">Next update is at <span id="time"></span></p>
+                </div>
 
-    
-<br>
-<label>Your account on the ICMS will automatically be activated before the start of your first co-curricular activity (Community Service Project, internship, or any other CCA).<br><br>You will receive an email with instructions on how to access the ICMS upon the activation of your account. </label>
-   
-    
-             
-             </div>
-             
-            </div>
-         </div>   
-    
-    
-        
-    
-            <div class="section" style="padding: 70px 0 0 0">
-         <div class="container">
 
-<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
-  <source src="assets/paper_img/step5i.mp4" type="video/mp4">
-</video><br>
-             
-             </div>
-             
-<div class="register-card col-sm-6" style="position: relative">
+                <div class="register-card col-sm-6" style="position: relative">
 
-    
-    <label>Step 4</label>
-    <ul style="position: relative">
-        
 
-        
-        <li>On the <b>start date</b> of your internship, you will be prompted to complete your <b>Pre-Activity Learning Objectives (LO) Selection</b>, which is a <span class="flag2">Survey</span></li> <br>
-        
-                
-        <li>The learning objectives (LOs) that you choose here set the focus of your experience. You will subsequently be reflecting upon your learning in relation to these identified learning objectives (LOs). These LOs are correspondingly mapped to SMU's <b>Graduate Learning Outcomes</b>.</li><br>
-        
-        
-        <li>Go into the ICMS (Anthology Portfolio), click on <span class="tabbing">Upcoming</span> or  <span class="tabbing">Surveys</span> (on the top bar below the Dashboard header)</li><br>
-        
-        <li>There, you can view pending Surveys. Click on <span class="flag3">Take Survey</span> on the <b>Pre-Activity Learning Objectives (LO) Selection</b> that corresponds to your current internship.</li><br>
-         
+                    <label>Step 3</label>
 
-     </ul> 
 
-             </div>
-                
+                    <ul style="position: relative">
+
+
+                        <li>Click on Undergraduate Career Services and log in to OnTrac II to apply or propose an Internship.</li>
+                        <br>
+                        <li>Apply for internship opportunities (both local and overseas) posted on ONTRAC II. Alternatively, source for your own internships by submitting a self-proposal on OnTRAC II. Students with internship obligations as part of their scholarship, grants or awards are also required to submit a self-proposal for DKHMCC’s approval.</li>
+                        <br>
+                        <li>After applying or proposing, wait for an internship offer to be made from the company you have indicated interest in</li>
+                        <br>
+                        <li>Log on to OnTrac II to accept (or reject) the offer</li>
+
+
+                    </ul>
+
+                    <a href="https://ontrac.smu.edu.sg/" target="_blank"
+                       class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to OnTrac II</a>
+
+                </div>
+
 
             </div>
-                
-                    <div class="container" style="padding-top: 60px;">
-
-<div class="col-sm-6 register-card2">
-             
-      
-    <img src="assets/paper_img/placement%20ss.png" width="100%">
-    <img src="assets/paper_img/placement%20ss2.png" width="100%">
+        </div>   
     
-             </div>
-             
-<div class="register-card col-sm-6" style="position: relative">
+
+            <div class="section" style="padding: 0" id="step4">
 
 
-    <ul style="position: relative">
+                <div class="row" style="background-color: #8A704C;color:#fff; margin-bottom: 70px;">
+                    <h4 style="text-align: center; margin: 20px;">Submit your reflections</h4>
+                </div>
 
 
-        <li><b>Note:</b> Look out for labels such as <span class="flag">DUE</span>, <span class="flag">OVERDUE</span> &amp; <span class="flag" style="background: #2a76b0
-">DUE SOON</span></li><br>
+                <div class="container">
 
-     </ul> 
+                    <div class="col-sm-6 register-card2">
 
-             </div>
-                
 
+
+                        <img src="https://ccd-smu.github.io/dashboardbutton.png" style="width: 100%;"><br>
+
+
+                    </div>
+
+                    <div class="register-card col-sm-6" style="position: relative">
+
+
+                        <label>Step 4</label>
+
+                        <p>Complete all <b>3 mandatory reflections</b> to complete your internship experience, and ensure that it is recorded on your Co-Curricular Transcript.</p>
+
+                        <ul style="position: relative">
+                            <li>Pre-Activity LO selection</li>
+                            <li> Mid-Activity Check in</li>
+                            <li>Post-Activity Reflection</li>
+                        </ul>
+
+                        <p>Log in to ICMS > Menu > <b>My SMU Dashboard</b></p>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="container" style="padding-top: 60px;">
+
+                    <div class="register-card2 col-sm-6" style="position: relative">
+
+                        <img src="https://ccd-smu.github.io/dashboard3.png" width="100%">
+                    <p>&nbsp;</p>
+
+                        <img src="assets/reflectionss.png" style="width: 100%;"><br>
+
+                    </div>
+
+                    <div class="register-card col-sm-6" style="position: relative">
+
+                        <p>Find the internship entry, click on it, then click on the appropriate <b>Pre, Mid or Post Activity Reflection button</b></p>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+                <div class="container" style="padding-top: 60px;">
+
+                    <div class="col-sm-6 register-card2">
+
+                        <img src="assets/reflectionscsp.png" width="100%">
+
+                    </div>
+
+                    <div class="register-card col-sm-6" style="position: relative">
+                        <p>Complete your reflection. Remember to choose only <b>3 learning outcomes</b></p>
+
+
+                        <p>You'll need to repeat the same steps for your <b>Mid and Post-Activity reflections</b>.</p>
+                        <p style="background: darkred; color: #fff; padding: 20px;"><b>Note:</b> Please complete your Post-Activity reflection within <b>1 month from the end date</b> of your internship.</p>
+
+
+
+                        <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465" target="_blank"
+                           class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to the ICMS (Anthology Portfolio)</a>
+
+                    </div>
+
+
+                </div>
             </div>
-                
-                
-                
-                
-         <div class="container" style="padding-top: 60px;">
-
-<div class="col-sm-6 register-card2">
-        
-<video width="100%" height="100%" controls preload>
-  <source src="assets/paper_img/step5ib.mp4" type="video/mp4">
-</video>
-             
-             
-             </div>
-             
-<div class="register-card col-sm-6" style="position: relative">
-
-    
-    <ul style="position: relative">
-        
-
-        
-        
-   
-        <li><b>Alternatively</b>, go into the ICMS (Anthology Portfolio), click on Menu (on the top right of the screen)</li><br>        
-        <li>Click on My Placements, and click on the internship you're active in, and scroll down till you find the  <b>Pre-activity selection of LOs (Internship)</b>.</li><br>        
- 
-  
-        
-
-    
-     </ul> 
-    
-    <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465" target="_blank"
- class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to the ICMS (Anthology Portfolio)</a>
-    
-             </div>
-                
-
-            </div>
-         </div>   
-    
-    
-    
-    
-    
-    
-    
-    
-               <div class="section" style="padding: 70px 0 0 0" id="2step5">
-         <div class="container">
-
-<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
-  <source src="assets/paper_img/step5i.mp4" type="video/mp4">
-</video></div>
-             
-<div class="register-card col-sm-6" style="position: relative">
-
-    
-    <label>Step 6</label>
-    <ul style="position: relative">
-        
-
-        
-        <li>On the <b>mid-point date</b> of your internship, you will be prompted to complete your <b>Mid-Activity check-in</b>, which is a <span class="flag2">Survey</span></li> <br>
-        
-        
-        <li>Go into the ICMS (Anthology Portfolio), click on <span class="tabbing">Upcoming</span> or  <span class="tabbing">Surveys</span> (on the top bar below the Dashboard header)</li><br>
-        
-        <li>There, you can view pending Surveys. Click on <span class="flag3">Take Survey</span> on the <b>Mid-Activity Check in</b> that corresponds to your current internship.</li><br>
-         
-        <li><b>Note:</b> Look out for labels such as <span class="flag">DUE</span>, <span class="flag">OVERDUE</span> &amp; <span class="flag" style="background: #2a76b0
-            ">DUE SOON</span></li><br>
-        
-        
-
-    
-     </ul> 
-    
-
-             </div>
-                
-
-            </div>
-                   
-     <div class="container">
-
-<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
-  <source src="assets/paper_img/step6i.mp4" type="video/mp4">
-</video></div>
-             
-<div class="register-card col-sm-6" style="position: relative">
-
-    
-    <ul style="position: relative">
-            
-        
-        <li><b>Alternatively</b>, go into the ICMS (Anthology Portfolio), click on Menu (on the top right of the screen)</li><br>        
-        <li>Click on My Placements, and click on the internship you're active in, and scroll down till you find the <b>Mid-activity Check In (Internship)</b>.</li><br>        
-    
-
-     
-        <li>Within the <b>Mid-Activity check-in</b>, indicate <b>Yes</b> if you are on track to address the 3 LOs you chose, and write NIL in the comments box.</li><br>
-        
-        
-        <li>If you wish to amend your LOs, indicate <b>No</b>, and amend them when your write your <b>Post-Activity reflection</b> at the end of your Internship.</li><br>
-             
-        
-        <li>If you have other issues with your Internship, please indicate them down in the comments box when doing this Survey, or email your manager.</li><br>
-
-  
-        
-
-    
-     </ul> 
-    
-    <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465" target="_blank"
- class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to the ICMS (Anthology Portfolio)</a>
-    
-             </div>
-                
-
-            </div>
-                   
-                   
-         </div>   
-    
-    
-    
-    
-                   <div class="section" style="padding: 70px 0 60px 0" id="2step6">
-         <div class="container">
-
-<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
-  <source src="assets/paper_img/step5i.mp4" type="video/mp4">
-</video>    <p style="background: darkred; color: #fff; padding: 20px;"><b>Note:</b> Please complete your reflection within <b>1 month from the end date</b> of your internship.</p><br>
-             
-    
-             
-             </div>
-             
-<div class="register-card col-sm-6" style="position: relative">
-
-    
-    <label>Step 6</label>
-    <ul style="position: relative">
-        
-
-        
-        <li>On the <b>end date</b> of your internship, you will be prompted to complete your <b>Post-Activity reflection</b>, which is a <span class="flag2">Survey</span></li> <br>
-        
-        <li>Go into the ICMS (Anthology Portfolio), click on <span class="tabbing">Upcoming</span> or  <span class="tabbing">Surveys</span> (on the top bar below the Dashboard header)</li><br>
-        
-        <li>There, you can view pending Surveys. Click on <span class="flag3">Take Survey</span> on the <b>Post-Activity Reflection</b> that corresponds to your current internship.</li><br>
-         
-
-    
-     </ul> 
-    
-
-             </div>
-                
-
-            </div>         
-                       
-                                <div class="container" style="padding-top: 60px;">
-
-<div class="col-sm-6 register-card2">
-      
-    <img src="assets/paper_img/placement%20ss.png" width="100%">
-    <img src="assets/paper_img/placement%20ss2.png" width="100%">
-             
-             </div>
-             
-<div class="register-card col-sm-6" style="position: relative">
-
-    
-    <ul style="position: relative">
-        
-
-         
-        <li><b>Note:</b> Look out for labels such as <span class="flag">DUE</span>, <span class="flag">OVERDUE</span> &amp; <span class="flag" style="background: #2a76b0
-">DUE SOON</span></li><br>
-        
-
-    
-     </ul> 
-    
-
-             </div>
-                
-
-            </div>         
-                       
-                       
-                       
-                       <div class="container" style="padding-top: 60px;">
-
-<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
-  <source src="assets/paper_img/step7i.mp4" type="video/mp4">
-</video><br>
-             
-             
-             </div>
-             
-<div class="register-card col-sm-6" style="position: relative">
-
-    <ul style="position: relative">
-
-        <li><b>Alternatively</b>, go into the ICMS (Anthology Portfolio), click on Menu (on the top right of the screen)</li><br>        
-        <li>Click on My Placements, and click on the CSP you're active in, and scroll down till you find the  <b>Post-activity selection of LOs (Internship)</b>.</li><br>        
- 
-  
-        
-
-    
-     </ul> 
-    
-    <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465" target="_blank"
- class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to the ICMS (Anthology Portfolio)</a>    
-    
-    
-    <a href="#"  data-dismiss="modal" target="#myModal2" 
- class="btn btn-fill btn-block" style="margin: 10px 0 10px 0">You're done!</a>
-    
- 
-    
-    
-    
-    
-
-             </div>
-                
-
-            </div>
-                       
-                       
-         </div>   
-    
-    
-    
-    
-    
-        
-            <div class="section" style="padding: 70px 0; min-height: auto; background: #fff; border: 5px solid #8A704C;" id="2end">
-                       <div class="container">
 
 
-<div class="col-sm-12 register-card" style="background: #fff; padding-bottom: 15px">
-    
-        <label>Your Co-curricular Transcript and Dashboard</label>
 
-        <p>Your internship experience(s) will be assessed using the Transformative Learning Rubric and form part of a co-curricular transcript, ready for you when you graduate.</p><br>
-    
-        <p style="text-align: left">
-            <label>Transformative Learning Rubric</label>
+            <div class="section" style="padding: 70px 0; min-height: auto; background: #fff; border: 5px solid #8A704C;" id="end">
+                <div class="container">
+
+
+                    <div class="col-sm-12 register-card" style="background: #fff; padding-bottom: 15px">
+
+                        <label>Your Co-curricular Transcript and Dashboard</label>
+
+                        <p>Your internship experience(s) will be assessed using the Transformative Learning Rubric and form part of a co-curricular transcript, ready for you when you graduate.</p><br>
+
+                        <p style="text-align: left">
+                            <label>Transformative Learning Rubric</label>
+                            <br>
+                            Achievement levels
+                        </p>
+
+                        <label style="background: #70AD47;text-align: left;"><span style="font-weight: bold; color: #fff; font-size: 140%">Exposure</span><br>The student displays a willingness to learn and grow by participating in the activity. He/She has an awareness of his/her current perspectives related to the GLO(s) and may be developing an understanding of what the GLO(s) entails.</label>
+                        <div class="arrow-down" style="border-top-color: grey"></div>
+
+                        <label style="background: #4DC58D;text-align: left;"><span style="font-weight: bold; color: #fff; font-size: 140%">Integration</span><br>The student can clearly articulate an understanding of the learning activity as it relates to the GLO(s) and its value for his/her life. The student is questioning, planning or beginning to expand upon previously held understandings of self, community, behaviour or environment.</label>
+                        <div class="arrow-down" style="border-top-color: grey"></div>
+
+                        <label style="background: #5B73D5;text-align: left;"><span style="font-weight: bold; color: #fff; font-size: 140%">Transformation</span><br>The student provides strong evidence of a learning experience that resulted in profound growth or a major shift in values, beliefs or perspectives in the GLO(s), and this may be evident through changes in behaviour, speech or ability. </label>
+
+                    </div>
+                  
+                </div>
+
+
                 <br>
-            Achievement levels
-            </p>
-                    
-    <label style="background: #70AD47;text-align: left;"><span style="font-weight: bold; color: #fff; font-size: 140%">Exposure</span><br>The student displays a willingness to learn and grow by participating in the activity. He/She has an awareness of his/her current perspectives related to the GLO(s) and may be developing an understanding of what the GLO(s) entails.</label>
-    <div class="arrow-down" style="border-top-color: grey"></div>
-    
-    <label style="background: #4DC58D;text-align: left;"><span style="font-weight: bold; color: #fff; font-size: 140%">Integration</span><br>The student can clearly articulate an understanding of the learning activity as it relates to the GLO(s) and its value for his/her life. The student is questioning, planning or beginning to expand upon previously held understandings of self, community, behaviour or environment.</label>
-    <div class="arrow-down" style="border-top-color: grey"></div>
-    
-    <label style="background: #5B73D5;text-align: left;"><span style="font-weight: bold; color: #fff; font-size: 140%">Transformation</span><br>The student provides strong evidence of a learning experience that resulted in profound growth or a major shift in values, beliefs or perspectives in the GLO(s), and this may be evident through changes in behaviour, speech or ability. </label>
-        
-    <div class="col-sm-12" style="position: relative;">
 
-        <label>Co-curricular Transcript</label>
-    <img src="sample.png" width="100%"></div>
-    <p>For now, you can either generate an interim record, or access the SMU Dashboard - found within the menu on the left-hand column in the ICMS (Anthology Portfolio).</p><br>
-    <img src="dashboardbutton.png" width="100%"></div>
+                <a data-dismiss="modal" target="#myModal" href="#" class="btn btn-danger btn-fill barr-button large">back</a>
 
-    <label>My SMU Dashboard</label>
-    <img src="dashboard3.png" width="100%"></div>
-
-
-    
-<br>
-
-         <a data-dismiss="modal" target="#myModal2" href="#" class="btn btn-danger btn-fill barr-button">back</a>
-             
-             </div>
-             
             </div>
-    
-    
-    
-    </div>
-    
-    
-    </div>
-<!--    end modal -->
 
+        </div>
+    
+    
+    
     </div>
-   <!-- Modal 2 end --> 
     
-    
+
     
     
     
@@ -1628,126 +1234,112 @@ Post-Activity reflection&nbsp;<span class="flag2">Survey</span><br>
 
 <div class="wrapper">
     
-            <div class="section" style="padding: 70px 0; min-height: auto; background: #fff; border: 5px solid #8A704C" id="3step1">
-         <div class="container">
-
-
-<div class="col-sm-12 register-card" style="background: #fff; padding-bottom: 15px; padding-top: 80px;">
-    
-        <label>A note on the Integrated Co-curricular Management System (ICMS)</label>
-
-    <p>The ICMS will document the outcomes of your co-curricular experiences, helping you 
-to consolidate your experiences across the co-curricular space in your undergraduate years, and culminating in a 
-co-curricular record that will be meaningful for you and your future employer.</p>  
-            
-    <p>On the ICMS, your co-curricular experiences are organised into <b>Placements</b>, which contain the optional Reflection journal as shown.</p><br>
-    
-            <p style="display: block;">Each activity that you participate in will have its own Placement entry. As such, if you have more than one CSP/internship/CCA, you will see multiple placements reflected as there will be a Placement for each activity.</p>
-
-    
-<div class="col-sm-12" style="position: relative; height: 20vh">
-    
-        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff;position: absolute; top: 0; left: 0; z-index: 3;
-">
-        <b>Placement</b> (CCAs)<br><br>
-    
-    
-    
-     Reflection Journal&nbsp;<span class="flag2">Journal</span><br>
-        
-        
-</p>
-    
-        
-        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 10px; left: 10px; z-index: 2;
-">
-        <b>Placement</b> (CCAs)<br><br>
-    
-    
-    
-    
-     Reflection Journal&nbsp;<span class="flag2">Journal</span><br>
-        
-        
-        
-</p>
-    
-        
-        
-        <p class="col-sm-8 card1" style="border: 2px solid black; margin: 0; padding: 10px; background: #fff; position: absolute; top: 20px; left: 20px; z-index: 1;">
-        <b>Placement</b> (CCAs)<br><br>
-    
-  
-    
-     Reflection Journal&nbsp;<span class="flag2">Journal</span><br>
-        
-        
-        
-        
-</p>
-    
-    
-    </div>
-
-    
-<br>
-
-<label>Your account on the ICMS will automatically be activated before the start of your first co-curricular activity (Community Service Project, internship, or any other CCA). <br><br>You will receive an email with instructions on how to access the ICMS upon the activation of your account. </label>
-             
-             </div>
-             
-            </div>
-         </div>   
-    
-    
-        
-    
             <div class="section" style="padding: 70px 0 0 0">
-         <div class="container">
+         <div class="container" style="margin-top: 80px;">
 
-<div class="col-sm-6 register-card2"><video width="100%" height="100%" controls preload>
-  <source src="assets/paper_img/step2c.mp4" type="video/mp4">
-</video>    <p style="background: darkred; color: #fff; padding: 20px;"><b>Note:</b> Please complete your reflection within <b>1 month from the end date</b> of your activity.</p><br>
-             
+<div class="col-sm-6 register-card2">
+    
+    <img src="https://ccd-smu.github.io/dashboardbutton.png" style="width: 100%;">    
+       
       
              </div>
              
 <div class="register-card col-sm-6" style="position: relative">
 
-    
-    <ul style="position: relative">
-        
+            
 
         
-        <li>After your CCA experience, you are encouraged to write a <b>reflection</b>, which is a <span class="flag2">Journal</span></li><br>
+        <p>After your CCA experience, you are encouraged to write a <b>reflection</b>, which is a <span class="flag2">Journal</span></p><br>
         
         
         
-        <li>You will be notified by an email from Anthology when your Placement has been created after your CCA experience, within which you may write the reflection</li><br>
+        <p>You will be notified via email from the ICMS when your entry has been created after your CCA experience, after which you may write the optional reflection</p><br>
         
         
         
         
-        <li>Go into the ICMS (Anthology Portfolio), click on Menu (on the top right of the screen)</li><br>        
-        
-        <li>Click on My Placements, and look for the CCA which you have participated in, and scroll down till you find the <b>Journal</b> heading.</li><br>          
-        
-        
-        <li>Click on <span class="flag3">New Journal Entry</span>. Then, you will be able to choose the appropriate <b>Graduate Learning Outcome (GLO)</b> to reflect upon, and write your refection using the <b>What, So What, &amp; Now What</b> format you've previously learnt in the RPU.</li><br> 
-        
-        
-        
-     </ul> 
     <a href="https://shib.chalkandwire.com/ep2_smu/Login.aspx?cus=465" target="_blank"
  class="btn btn-fill btn-block" style="margin: 30px 0 10px 0">log in to the ICMS (Anthology Portfolio)</a>
   
-    <a href="#"  data-dismiss="modal" target="#myModal3" 
- class="btn btn-fill btn-block" style="margin: 10px 0 10px 0">You're done!</a>
-    
              </div>
                 
 
             </div>
+
+            <div class="container" style="margin-top: 20px">
+
+                <div class="col-sm-6 register-card2">
+                    
+                    <img src="https://ccd-smu.github.io/dashboard3.png" style="width: 100%;">    
+                          
+                      
+                             </div>
+                             
+                <div class="register-card col-sm-6" style="position: relative">
+                
+                            
+
+                    
+                        <p>Log in to ICMS > Menu > <b>My SMU Dashboard</b></p><br>          
+                        
+                        <p>Find the CCA entry, click on it</p>
+
+                             </div>
+                                
+                
+                            </div>
+                   
+            <div class="container" style="margin-top: 20px">
+
+                                <div class="col-sm-6 register-card2">
+                                    
+                                    <img src="assets/optional.png" style="width: 100%;">    
+                                          
+                                      
+                                             </div>
+                                             
+                                <div class="register-card col-sm-6" style="position: relative">
+                                
+                                        
+                                        <p>Click on <b>Complete Optional Reflection</b></p><br> 
+                                        
+
+                                    
+                                             </div>
+                                                
+                                
+            </div>
+
+
+            <div class="container" style="margin-top: 20px">
+ 
+                <div class="col-sm-6 register-card2">
+                    
+                    <img src="assets/optional2.png" style="width: 100%;">    
+                          
+                      
+                             </div>
+                             
+                <div class="register-card col-sm-6" style="position: relative">
+                
+                        
+                        
+                        
+                        <p>Choose the appropriate <b>Graduate Learning Outcome (GLO)</b> to reflect upon, and write your reflection using the <b>What, So What, &amp; Now What</b> format you've previously learnt in the Reflective Practice Unit.</p><br> 
+                        
+
+                        <p style="background: darkred; color: #fff; padding: 20px;"><b>Note:</b> Please complete your reflection within <b>1 month from the end date</b> of your activity.</p><br>
+
+                        
+                    <a href="#"  data-dismiss="modal" target="#myModal3" 
+                 class="btn btn-fill btn-block" style="margin: 10px 0 10px 0">You're done!</a>
+                    
+                             </div>
+                                
+                
+</div>
+                            
+
                 
          </div>   
     
@@ -1779,18 +1371,6 @@ co-curricular record that will be meaningful for you and your future employer.</
 
 <label style="background: #5B73D5;text-align: left;"><span style="font-weight: bold; color: #fff; font-size: 140%">Transformation</span><br>The student provides strong evidence of a learning experience that resulted in profound growth or a major shift in values, beliefs or perspectives in the GLO(s), and this may be evident through changes in behaviour, speech or ability. </label>
 
-             <div class="col-sm-12" style="position: relative;">
-                <label>Co-curricular Transcript</label>
-                <img src="sample.png" width="100%"></div>
-                <p>For now, you can either generate an interim record, or access the SMU Dashboard - found within the menu on the left-hand column in the ICMS (Anthology Portfolio).</p><br>
-                <img src="dashboardbutton.png" width="100%"></div>
-            
-                <label>My SMU Dashboard</label>
-                <img src="dashboard3.png" width="100%"></div>
-             
-    
-    
-<br>
 
          <a data-dismiss="modal" target="#myModal3" href="#" class="btn btn-danger btn-fill barr-button">back</a>
              
@@ -2071,25 +1651,7 @@ element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         jQuery.fn.clickToggle = function(a, b) {
   return this.on("click", function(ev) { [b, a][this.$_io ^= 1].call(this, ev) })
 };
-        
-$('.stepbtn, .stepbtns').clickToggle(function(ev) {
-$('.pagelabel').animate({bottom: '+=216px'});
-$('.karat').toggleClass("toggle-up");
-
-}, function(ev) {
-$('.pagelabel').animate({bottom: '-=216px'});
-$('.karat').toggleClass("toggle-up");
-});
-       
-$('.stepbtn2, .stepbtns2').clickToggle(function(ev) {
-$('.pagelabel2').animate({bottom: '+=216px'});
-$('.karat2').toggleClass("toggle-up");
-
-}, function(ev) {
-$('.pagelabel2').animate({bottom: '-=216px'});
-$('.karat2').toggleClass("toggle-up");
-});
-
+    
 
    
 switch (new Date().getHours()) {
