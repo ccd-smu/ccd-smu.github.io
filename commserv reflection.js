@@ -136,12 +136,12 @@ else{
       
          if (confirm('Student chose more than 3 LOs, continue assessing?')) {
                $('#assess1').css('background-color', 'red');
-               var currentId = localStorage.getItem('currentId');
+               var currentId = localStorage.getItem('assesslink');
                goNav('my_assessments','allocationId='+currentId);
                
       }}; 
-var currentId = localStorage.getItem('currentId');
-goNav('my_assessments','allocationId='+currentId);
+      var currentId = localStorage.getItem('assesslink');
+      goNav('my_assessments','allocationId='+currentId);
 
     assess.innerHTML = "Close";
 	
