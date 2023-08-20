@@ -144,12 +144,12 @@ xhr.onreadystatechange = function() {
                 for (let j = 0; j < headers.length; j++) {
                     obj[headers[j]] = values[j];
                 }
-                data[obj['id']] = obj['assesslink'];
+                data[obj['id']] = obj['assesslink\r'];
             }
         }
 
         const inputField = href.split('.')[0];
-        const outputField = data[inputField];
+        const outputField = data[inputField].replace(".0\r", "");;
         window.localStorage.setItem('assesslink', outputField);
 
 		console.log(inputField);
