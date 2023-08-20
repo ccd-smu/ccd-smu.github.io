@@ -129,7 +129,7 @@ setTimeout(function(){
 
  var href = $('.clicktable-menu').attr('id').replace(/[^0-9\\.]+/g, '');
 const xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://ccd-smu.github.io/assesslink.csv', true);
+xhr.open('GET', 'https://ccd-smu.github.io/assesslinkint.csv', true);
 
 xhr.onreadystatechange = function() {
     if (xhr.readyState === 4 && xhr.status === 200) {
