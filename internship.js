@@ -195,7 +195,9 @@ var assessmentspending = $('#placements-table thead tr th:contains("Assessments 
 $('tr>*:nth-child('+ surveyval +'):contains("3")').parent().addClass('assessable1');
 $('tr>*:nth-child('+ assessmentspending +'):contains("2")').parent().addClass('assessable2');
 
-$('tr>*:nth-child('+ overallappraisalgrade +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO1 +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO2 +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO3 +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO4 +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO5 +'):not(:empty)').parent().addClass('assessable3');
+$('tr>*:nth-child('+ overallappraisalgrade +'):not(:empty):not(:contains("-")),tr>*:nth-child('+ tableappraisalGLO1 +'):not(:empty):not(:contains("-")),tr>*:nth-child('+ tableappraisalGLO2 +'):not(:empty):not(:contains("-")),tr>*:nth-child('+ tableappraisalGLO3 +'):not(:empty):not(:contains("-")),tr>*:nth-child('+ tableappraisalGLO4 +'):not(:empty):not(:contains("-")),tr>*:nth-child('+ tableappraisalGLO5 +'):not(:empty):not(:contains("-"))').parent().addClass('assessable3');
+
+
 
 $('.assessable1.assessable2.assessable3').addClass('assessable');
 
