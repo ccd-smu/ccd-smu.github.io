@@ -1,0 +1,99 @@
+{
+  "version": "3.49.24347.0",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    }
+  ],
+  "slides": [
+    {
+      "id": "6LM8XvpuGHG",
+      "title": "Untitled Slide",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "6KWPZ9j9NrL",
+      "title": "Menu",
+      "scene_index": "1.2"
+    },
+    {
+      "id": "6a4fqU8F7i7",
+      "title": "Places to Visit",
+      "scene_index": "1.3"
+    },
+    {
+      "id": "60mSCNzI30X",
+      "title": "Indonesian Food",
+      "scene_index": "1.4"
+    },
+    {
+      "id": "5sU6U7mSu8v",
+      "title": "Etiquette",
+      "scene_index": "1.5"
+    },
+    {
+      "id": "5eX4ApgfaDD",
+      "title": "Common Phrases",
+      "scene_index": "1.6"
+    },
+    {
+      "id": "6IdL18tJCfI",
+      "title": "Lake Toba",
+      "scene_index": "1.7"
+    },
+    {
+      "id": "65Ge3z1u1ht",
+      "title": "Prambanan",
+      "scene_index": "1.8"
+    },
+    {
+      "id": "68kp2b4N4m1",
+      "title": "Mount Bromo",
+      "scene_index": "1.9"
+    },
+    {
+      "id": "5UlIbKwVAjA",
+      "title": "Tanjung Puting",
+      "scene_index": "1.10"
+    },
+    {
+      "id": "61yjJ0C82JX",
+      "title": "Toraja",
+      "scene_index": "1.11"
+    },
+    {
+      "id": "5r5A86C2uSQ",
+      "title": "Borobudur",
+      "scene_index": "1.12"
+    },
+    {
+      "id": "67UnPcjVgxl",
+      "title": "Bali",
+      "scene_index": "1.13"
+    },
+    {
+      "id": "5hEP8wYYuW4",
+      "title": "Jakarta",
+      "scene_index": "1.14"
+    },
+    {
+      "id": "6oGO9TTnBaK",
+      "title": "Sumatra",
+      "scene_index": "1.15"
+    },
+    {
+      "id": "6nEas9dZEkb",
+      "title": "Komodo",
+      "scene_index": "1.16"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 1060,
+    "height": 658
+  },
+  "stage": {
+    "width": 800,
+    "height": 540
+  }
+}

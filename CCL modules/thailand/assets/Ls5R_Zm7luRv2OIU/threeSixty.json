@@ -1,0 +1,137 @@
+{
+  "version": "3.52.25247.0",
+  "course_id": "5pJuHlPSTB2_course_id",
+  "title": "1B Watercolour V3",
+  "thumbnail": "story_content/thumbnail.jpg",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    }
+  ],
+  "slides": [
+    {
+      "id": "63oRnjOtTJZ",
+      "title": "Cover",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "5xKVGkcB6wu",
+      "title": "Menu",
+      "scene_index": "1.2"
+    },
+    {
+      "id": "6deAWKCkLcv",
+      "title": "Thai Cuisine",
+      "scene_index": "1.3"
+    },
+    {
+      "id": "5rHhPEu00Ic",
+      "title": "Etiquette",
+      "scene_index": "1.4"
+    },
+    {
+      "id": "6eyBf0xBKkr",
+      "title": "Places to Visit",
+      "scene_index": "1.5"
+    },
+    {
+      "id": "5kwsbpBwVTo",
+      "title": "Doi Suthep",
+      "scene_index": "1.6"
+    },
+    {
+      "id": "60Sdi7z6QHx",
+      "title": "Wat Arun",
+      "scene_index": "1.7"
+    },
+    {
+      "id": "6SyGYxhGu4S",
+      "title": "Sukhothai",
+      "scene_index": "1.8"
+    },
+    {
+      "id": "6ak2e0Hukbr",
+      "title": "Islands",
+      "scene_index": "1.9"
+    },
+    {
+      "id": "6KBk9y8M9gS",
+      "title": "Ban Chiang",
+      "scene_index": "1.10"
+    },
+    {
+      "id": "5urQd9usUUv",
+      "title": "Ayutthaya",
+      "scene_index": "1.11"
+    },
+    {
+      "id": "62vY6vIL3hX",
+      "title": "Grand Palace",
+      "scene_index": "1.12"
+    },
+    {
+      "id": "5qf4jpxL6uk",
+      "title": "Khao Yai",
+      "scene_index": "1.13"
+    },
+    {
+      "id": "5ycsS8Djt0T",
+      "title": "DS Floating Market",
+      "scene_index": "1.14"
+    },
+    {
+      "id": "61UnlvfvdfK",
+      "title": "Common Thai Phrases 2",
+      "scene_index": "1.15"
+    },
+    {
+      "id": "66f1ZDfvFoE",
+      "title": "Greetings",
+      "scene_index": "1.16"
+    },
+    {
+      "id": "5yMsIS3rC3R",
+      "title": "Polite Particles",
+      "scene_index": "1.17"
+    },
+    {
+      "id": "5v8zaqCuT6K",
+      "title": "Introduction",
+      "scene_index": "1.18"
+    },
+    {
+      "id": "5duhkGL5Iq3",
+      "title": "Sorry",
+      "scene_index": "1.19"
+    },
+    {
+      "id": "5vGt74KMWNS",
+      "title": "Pleasantries",
+      "scene_index": "1.20"
+    },
+    {
+      "id": "6l0jNzUNHQG",
+      "title": "No problem",
+      "scene_index": "1.21"
+    },
+    {
+      "id": "6JdkA0WBSSs",
+      "title": "DIrections",
+      "scene_index": "1.22"
+    },
+    {
+      "id": "5kR4XZ577yZ",
+      "title": "Thank you",
+      "scene_index": "1.23"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 1060,
+    "height": 658
+  },
+  "stage": {
+    "width": 800,
+    "height": 540
+  }
+}

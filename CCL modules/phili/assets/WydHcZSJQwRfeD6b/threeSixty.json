@@ -1,0 +1,44 @@
+{
+  "version": "3.37.21453.0",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    }
+  ],
+  "slides": [
+    {
+      "id": "6HsyFzzUgSw",
+      "title": "Untitled Slide",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "6kxXPuPp2tV",
+      "title": "Filipino Concept of Shame",
+      "scene_index": "1.2"
+    },
+    {
+      "id": "66TkXYNXjpW",
+      "title": "Family and Filial Responsibility",
+      "scene_index": "1.3"
+    },
+    {
+      "id": "6auDfnAWH2x",
+      "title": "Social Values And Organisation",
+      "scene_index": "1.4"
+    },
+    {
+      "id": "6KWlJaJZdOb",
+      "title": "The Catholic Church",
+      "scene_index": "1.5"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 980,
+    "height": 658
+  },
+  "stage": {
+    "width": 720,
+    "height": 540
+  }
+}
