@@ -1,0 +1,32 @@
+{
+  "version": "3.62.27371.0",
+  "course_id": "6b0OJ0bZufD_course_id",
+  "title": "Countdown",
+  "thumbnail": "story_content/thumbnail.jpg",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    }
+  ],
+  "slides": [
+    {
+      "id": "6BtDBCs0Fhc",
+      "title": "Untitled Slide",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "6WkaSJWjHNB",
+      "title": "Multiple Choice",
+      "scene_index": "1.2"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 420,
+    "height": 551
+  },
+  "stage": {
+    "width": 400,
+    "height": 480
+  }
+}
