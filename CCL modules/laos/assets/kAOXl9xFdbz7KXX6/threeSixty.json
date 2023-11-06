@@ -1,0 +1,27 @@
+{
+  "version": "3.54.25674.0",
+  "course_id": "6KqfzIjJufD_course_id",
+  "title": "Thinklink",
+  "thumbnail": "story_content/thumbnail.jpg",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    }
+  ],
+  "slides": [
+    {
+      "id": "5WJ2YmaRQZZ",
+      "title": "Untitled Slide",
+      "scene_index": "1.1"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 980,
+    "height": 758
+  },
+  "stage": {
+    "width": 720,
+    "height": 640
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "version": "3.43.22859.0",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    }
+  ],
+  "slides": [
+    {
+      "id": "5ljsMT4uAY3",
+      "title": "Start",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "6PWd2QXw90J",
+      "title": "Vietnam",
+      "scene_index": "1.2"
+    },
+    {
+      "id": "6K0zkztxskO",
+      "title": "Norms",
+      "scene_index": "1.3"
+    },
+    {
+      "id": "5sntHQKkZFi",
+      "title": "Arts",
+      "scene_index": "1.4"
+    },
+    {
+      "id": "6mBEAKbe2pa",
+      "title": "History",
+      "scene_index": "1.5"
+    },
+    {
+      "id": "6QSuxfeeMik",
+      "title": "Festivals",
+      "scene_index": "1.6"
+    },
+    {
+      "id": "6Ss7qZGYRkk",
+      "title": "People",
+      "scene_index": "1.7"
+    },
+    {
+      "id": "6iHZQD7Fgkv",
+      "title": "Economy",
+      "scene_index": "1.8"
+    },
+    {
+      "id": "6f6WzmFzErD",
+      "title": "Political System",
+      "scene_index": "1.9"
+    },
+    {
+      "id": "6ezGVBwQb3o",
+      "title": "Religion",
+      "scene_index": "1.10"
+    },
+    {
+      "id": "6SlgdiSAFlu",
+      "title": "Geography",
+      "scene_index": "1.11"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 960,
+    "height": 1118
+  },
+  "stage": {
+    "width": 700,
+    "height": 1000
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "version": "3.68.28820.0",
+  "course_id": "5laFBVIz1Sr",
+  "title": "What are the 5 pillars of personal finance?",
+  "thumbnail": "story_content/thumbnail.jpg",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    }
+  ],
+  "slides": [
+    {
+      "id": "6YWosIdlp63",
+      "title": "Multiple Choice",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "6R7orsXnCoz",
+      "title": "Multiple Choice",
+      "scene_index": "1.2"
+    },
+    {
+      "id": "64nlcpyWpzZ",
+      "title": "Multiple Choice",
+      "scene_index": "1.3"
+    },
+    {
+      "id": "6Sc5PfpbYuh",
+      "title": "Multiple Choice",
+      "scene_index": "1.4"
+    },
+    {
+      "id": "6R6ajybSWQ6",
+      "title": "Multiple Choice",
+      "scene_index": "1.5"
+    },
+    {
+      "id": "5mqYX20Xk93",
+      "title": "Multiple Choice",
+      "scene_index": "1.6"
+    },
+    {
+      "id": "6PpRsWjMxHg",
+      "title": "Multiple Choice",
+      "scene_index": "1.7"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 980,
+    "height": 658
+  },
+  "stage": {
+    "width": 720,
+    "height": 540
+  }
+}

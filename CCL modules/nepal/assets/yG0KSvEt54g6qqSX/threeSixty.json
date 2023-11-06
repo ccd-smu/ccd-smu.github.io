@@ -1,0 +1,117 @@
+{
+  "version": "3.62.27371.0",
+  "course_id": "5khl5TBjxlJ",
+  "title": "1B Explore Nepal 3 Feb 23",
+  "thumbnail": "story_content/thumbnail.jpg",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    }
+  ],
+  "slides": [
+    {
+      "id": "665D8xh10ze",
+      "title": "Cover",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "6iMtqIaeai7",
+      "title": "Menu",
+      "scene_index": "1.2"
+    },
+    {
+      "id": "5XmHWQfTWxw",
+      "title": "Common phrases",
+      "scene_index": "1.3"
+    },
+    {
+      "id": "6XRizRqehMi",
+      "title": "Etiquette",
+      "scene_index": "1.4"
+    },
+    {
+      "id": "6OYN9UEaMcj",
+      "title": "Body Language Etiquette",
+      "scene_index": "1.5"
+    },
+    {
+      "id": "5iYUFLwYCDW",
+      "title": "Temple Etiquette",
+      "scene_index": "1.6"
+    },
+    {
+      "id": "6V7dPCvl6ld",
+      "title": "Meal Etiquette",
+      "scene_index": "1.7"
+    },
+    {
+      "id": "5vlzyrP8SzM",
+      "title": "Greetings Etiquette",
+      "scene_index": "1.8"
+    },
+    {
+      "id": "6FHYLpM81b9",
+      "title": "Social Norms Etiquette ",
+      "scene_index": "1.9"
+    },
+    {
+      "id": "5l4rl80Edm2",
+      "title": "Cuisine",
+      "scene_index": "1.10"
+    },
+    {
+      "id": "5jP8ET6HZhC",
+      "title": "Gorkha",
+      "scene_index": "1.11"
+    },
+    {
+      "id": "6byUUe9Qrl8",
+      "title": "Chitwan",
+      "scene_index": "1.12"
+    },
+    {
+      "id": "69kLVZLOuW9",
+      "title": "Chitwan",
+      "scene_index": "1.13"
+    },
+    {
+      "id": "6l3FETNkwj0",
+      "title": "Kathmandu",
+      "scene_index": "1.14"
+    },
+    {
+      "id": "5eETiYNSSFI",
+      "title": "Lumbini",
+      "scene_index": "1.15"
+    },
+    {
+      "id": "61bHGQbHpVR",
+      "title": "Mount Everest",
+      "scene_index": "1.16"
+    },
+    {
+      "id": "6qy9pRU99Yp",
+      "title": "Patan",
+      "scene_index": "1.17"
+    },
+    {
+      "id": "6WQbQJifAs8",
+      "title": "Sagarmatha 2",
+      "scene_index": "1.18"
+    },
+    {
+      "id": "6fkWIDgTMZM",
+      "title": "Pokhara",
+      "scene_index": "1.19"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 980,
+    "height": 658
+  },
+  "stage": {
+    "width": 720,
+    "height": 540
+  }
+}

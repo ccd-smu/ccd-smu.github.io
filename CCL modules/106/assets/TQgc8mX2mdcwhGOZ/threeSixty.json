@@ -1,0 +1,27 @@
+{
+  "version": "3.54.25674.0",
+  "course_id": "5qXj2SKVVvQ_course_id",
+  "title": "7 Habits",
+  "thumbnail": "story_content/thumbnail.jpg",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    }
+  ],
+  "slides": [
+    {
+      "id": "5p9eWzs98Yq",
+      "title": "Untitled Slide",
+      "scene_index": "1.1"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 980,
+    "height": 568
+  },
+  "stage": {
+    "width": 720,
+    "height": 450
+  }
+}

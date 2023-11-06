@@ -1,0 +1,72 @@
+{
+  "version": "3.68.28820.0",
+  "course_id": "5uv5vAKe6CW",
+  "title": "Untitled1",
+  "thumbnail": "story_content/thumbnail.jpg",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    }
+  ],
+  "slides": [
+    {
+      "id": "5tCINmQYJJR",
+      "title": "Main Page",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "6PeSjKPma7E",
+      "title": "QUIZ RESULTS",
+      "scene_index": "1.2"
+    },
+    {
+      "id": "6ZOfMp3YwOi",
+      "title": "Q1",
+      "scene_index": "1.3"
+    },
+    {
+      "id": "6Bvj9r7jQpw",
+      "title": "Q2",
+      "scene_index": "1.4"
+    },
+    {
+      "id": "5lkd3UZtwOC",
+      "title": "Q3",
+      "scene_index": "1.5"
+    },
+    {
+      "id": "6Z9lSidRYPS",
+      "title": "Q4",
+      "scene_index": "1.6"
+    },
+    {
+      "id": "5YQubskdXKC",
+      "title": "Q5",
+      "scene_index": "1.7"
+    },
+    {
+      "id": "6pQL8XvEihU",
+      "title": "Q6",
+      "scene_index": "1.8"
+    },
+    {
+      "id": "62I27nzod4Z",
+      "title": "Q7",
+      "scene_index": "1.9"
+    },
+    {
+      "id": "61M6eamDKPb",
+      "title": "Q8",
+      "scene_index": "1.10"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 980,
+    "height": 658
+  },
+  "stage": {
+    "width": 720,
+    "height": 540
+  }
+}

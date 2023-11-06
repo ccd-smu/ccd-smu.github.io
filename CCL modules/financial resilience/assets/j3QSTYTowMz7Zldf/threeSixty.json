@@ -1,0 +1,27 @@
+{
+  "version": "3.68.28820.0",
+  "course_id": "6QQ1sH4Qnn1",
+  "title": "Wants Needs and Debts",
+  "thumbnail": "story_content/thumbnail.jpg",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    }
+  ],
+  "slides": [
+    {
+      "id": "6nY7nlmtHf5",
+      "title": "Drag and Drop",
+      "scene_index": "1.1"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 980,
+    "height": 658
+  },
+  "stage": {
+    "width": 720,
+    "height": 540
+  }
+}

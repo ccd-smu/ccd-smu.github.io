@@ -1,0 +1,32 @@
+{
+  "version": "3.54.25674.0",
+  "course_id": "5x7pCAiFKoY_course_id",
+  "title": "Work Desk Interaction",
+  "thumbnail": "story_content/thumbnail.jpg",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    }
+  ],
+  "slides": [
+    {
+      "id": "6GuTekAzkNr",
+      "title": "Drag and Drop",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "6LDctdfpDxj",
+      "title": "Drag and Drop",
+      "scene_index": "1.2"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 980,
+    "height": 958
+  },
+  "stage": {
+    "width": 720,
+    "height": 840
+  }
+}

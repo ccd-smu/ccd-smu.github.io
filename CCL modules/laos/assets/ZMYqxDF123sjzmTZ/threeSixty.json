@@ -1,0 +1,102 @@
+{
+  "version": "3.54.25674.0",
+  "course_id": "5lpbDx8CN4t_course_id",
+  "title": "1A Laos Overview 4",
+  "thumbnail": "story_content/thumbnail.jpg",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    }
+  ],
+  "slides": [
+    {
+      "id": "6qRzCMHUg1L",
+      "title": "Cover",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "5YZ5k7BcuEY",
+      "title": "Menu",
+      "scene_index": "1.2"
+    },
+    {
+      "id": "5oHjTWgiWT8",
+      "title": "Economy",
+      "scene_index": "1.3"
+    },
+    {
+      "id": "5Zpz3bVWvV6",
+      "title": "History",
+      "scene_index": "1.4"
+    },
+    {
+      "id": "5efCRbSDxvp",
+      "title": "Religion",
+      "scene_index": "1.5"
+    },
+    {
+      "id": "5jl2ZOyJwiM",
+      "title": "Political System",
+      "scene_index": "1.6"
+    },
+    {
+      "id": "62k9lMuY3JY",
+      "title": "Traditional Arts",
+      "scene_index": "1.7"
+    },
+    {
+      "id": "67LZ8UsXX4L",
+      "title": "People",
+      "scene_index": "1.8"
+    },
+    {
+      "id": "5YXnLwiDrDY",
+      "title": "Geography",
+      "scene_index": "1.9"
+    },
+    {
+      "id": "6YubVHa5F7w",
+      "title": "Lao New Year",
+      "scene_index": "1.10"
+    },
+    {
+      "id": "6c9sRyObqjO",
+      "title": "Boat Racing Festival",
+      "scene_index": "1.11"
+    },
+    {
+      "id": "6dJ6cVsgJSN",
+      "title": "Hmong New Year",
+      "scene_index": "1.12"
+    },
+    {
+      "id": "6J1yUSrr2dz",
+      "title": "Buddhist Lent",
+      "scene_index": "1.13"
+    },
+    {
+      "id": "5vB6plTzdJW",
+      "title": "That Luang Festival",
+      "scene_index": "1.14"
+    },
+    {
+      "id": "6VVyXbSqPmz",
+      "title": "Rocket Festival",
+      "scene_index": "1.15"
+    },
+    {
+      "id": "6XmiY8VeRFx",
+      "title": "Festivals",
+      "scene_index": "1.16"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 1193,
+    "height": 818
+  },
+  "stage": {
+    "width": 933,
+    "height": 700
+  }
+}
