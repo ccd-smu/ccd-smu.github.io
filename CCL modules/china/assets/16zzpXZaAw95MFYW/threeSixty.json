@@ -1,0 +1,124 @@
+{
+  "version": "3.44.23192.0",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    }
+  ],
+  "slides": [
+    {
+      "id": "6Cm90aOKNFJ",
+      "title": "Cover Slide",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "5fuToWPhhnJ",
+      "title": "China Overview Menu",
+      "scene_index": "1.2"
+    },
+    {
+      "id": "67xMGCpPDcW",
+      "title": "Art Forms",
+      "scene_index": "1.3"
+    },
+    {
+      "id": "5mwdD9ehLNq",
+      "title": "Geography",
+      "scene_index": "1.4"
+    },
+    {
+      "id": "6lPBdgpRSD6",
+      "title": "Political System",
+      "scene_index": "1.5"
+    },
+    {
+      "id": "6YdaSZ0Gqkz",
+      "title": "Religion",
+      "scene_index": "1.6"
+    },
+    {
+      "id": "6VKRs2KSmLi",
+      "title": "Economy",
+      "scene_index": "1.7"
+    },
+    {
+      "id": "6Y8Xr5y7sms",
+      "title": "Norms & Values",
+      "scene_index": "1.8"
+    },
+    {
+      "id": "6oYK5qeuIhk",
+      "title": "Customs & Festivals",
+      "scene_index": "1.9"
+    },
+    {
+      "id": "6IJJiqkrHL7",
+      "title": "Dragon Boat Festival",
+      "scene_index": "1.10"
+    },
+    {
+      "id": "6byn3KvQgyN",
+      "title": "Mid Autumn Festival",
+      "scene_index": "1.11"
+    },
+    {
+      "id": "5qiBaGY4h4L",
+      "title": "Qing Ming Festival",
+      "scene_index": "1.12"
+    },
+    {
+      "id": "5VbhJI8GrTz",
+      "title": "Yuan Xiao",
+      "scene_index": "1.13"
+    },
+    {
+      "id": "64aMxSbIxB3",
+      "title": "CNY",
+      "scene_index": "1.14"
+    },
+    {
+      "id": "6RgFNWEvbx8",
+      "title": "Qixi Festival",
+      "scene_index": "1.15"
+    },
+    {
+      "id": "6c5DCY53XSX",
+      "title": "Hungry Ghost Festival",
+      "scene_index": "1.16"
+    },
+    {
+      "id": "6JPXgqbEw2v",
+      "title": "Double Ninth Festival",
+      "scene_index": "1.17"
+    },
+    {
+      "id": "6cvD4z0rrNL",
+      "title": "Winter Solstice",
+      "scene_index": "1.18"
+    },
+    {
+      "id": "64ZePe7vFue",
+      "title": "Chinese Zodiac Animals",
+      "scene_index": "1.19"
+    },
+    {
+      "id": "6ZvQlqPBj9D",
+      "title": "History",
+      "scene_index": "1.20"
+    },
+    {
+      "id": "60aWrSorMHQ",
+      "title": "People",
+      "scene_index": "1.21"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 1407,
+    "height": 978
+  },
+  "stage": {
+    "width": 1147,
+    "height": 860
+  }
+}

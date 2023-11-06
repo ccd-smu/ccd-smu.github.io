@@ -159,6 +159,38 @@ xhr.onreadystatechange = function() {
 };
 xhr.send();
 
+//reflection link
+
+xhr.open('GET', 'https://ccd-smu.github.io/reflinkint.csv', true);
+
+xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+        const lines = xhr.responseText.split('\n');
+        const headers = lines[0].split(',');
+        const data = {};
+
+        for (let i = 1; i < lines.length; i++) {
+            const values = lines[i].split(',');
+            if (values.length === headers.length) {
+                const obj = {};
+                for (let j = 0; j < headers.length; j++) {
+                    obj[headers[j]] = values[j];
+                }
+                data[obj['id']] = obj['reflink\r'];
+            }
+        }
+
+        const inputField = href.split('.')[0];
+        const outputField = data[inputField].replace(".0\r", "");;
+        window.localStorage.setItem('reflink', outputField);
+
+		console.log(inputField);
+		console.log(outputField);
+ 
+    }
+};
+xhr.send();
+
 const li = $('li');
 	   
 for (let i = 0; i < li.length; i++) {
