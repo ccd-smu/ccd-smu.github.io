@@ -128,68 +128,6 @@ GetFieldplacementActions = (function() {
 setTimeout(function(){ 
 
  var href = $('.clicktable-menu').attr('id').replace(/[^0-9\\.]+/g, '');
-const xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://ccd-smu.github.io/assesslinkint.csv', true);
-
-xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-        const lines = xhr.responseText.split('\n');
-        const headers = lines[0].split(',');
-        const data = {};
-
-        for (let i = 1; i < lines.length; i++) {
-            const values = lines[i].split(',');
-            if (values.length === headers.length) {
-                const obj = {};
-                for (let j = 0; j < headers.length; j++) {
-                    obj[headers[j]] = values[j];
-                }
-                data[obj['id']] = obj['assesslink\r'];
-            }
-        }
-
-        const inputField = href.split('.')[0];
-        const outputField = data[inputField].replace(".0\r", "");;
-        window.localStorage.setItem('assesslink', outputField);
-
-		console.log(inputField);
-		console.log(outputField);
- 
-    }
-};
-xhr.send();
-
-//reflection link
-
-xhr.open('GET', 'https://ccd-smu.github.io/reflinkint.csv', true);
-
-xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-        const lines = xhr.responseText.split('\n');
-        const headers = lines[0].split(',');
-        const data = {};
-
-        for (let i = 1; i < lines.length; i++) {
-            const values = lines[i].split(',');
-            if (values.length === headers.length) {
-                const obj = {};
-                for (let j = 0; j < headers.length; j++) {
-                    obj[headers[j]] = values[j];
-                }
-                data[obj['id']] = obj['reflink\r'];
-            }
-        }
-
-        const inputField = href.split('.')[0];
-        const outputField = data[inputField].replace(".0\r", "");;
-        window.localStorage.setItem('reflink', outputField);
-
-		console.log(inputField);
-		console.log(outputField);
- 
-    }
-};
-xhr.send();
 
 const li = $('li');
 	   
@@ -227,9 +165,7 @@ var assessmentspending = $('#placements-table thead tr th:contains("Assessments 
 $('tr>*:nth-child('+ surveyval +'):contains("3")').parent().addClass('assessable1');
 $('tr>*:nth-child('+ assessmentspending +'):contains("2")').parent().addClass('assessable2');
 
-$('tr>*:nth-child('+ overallappraisalgrade +'):not(:empty):not(:contains("-")),tr>*:nth-child('+ tableappraisalGLO1 +'):not(:empty):not(:contains("-")),tr>*:nth-child('+ tableappraisalGLO2 +'):not(:empty):not(:contains("-")),tr>*:nth-child('+ tableappraisalGLO3 +'):not(:empty):not(:contains("-")),tr>*:nth-child('+ tableappraisalGLO4 +'):not(:empty):not(:contains("-")),tr>*:nth-child('+ tableappraisalGLO5 +'):not(:empty):not(:contains("-"))').parent().addClass('assessable3');
-
-
+$('tr>*:nth-child('+ overallappraisalgrade +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO1 +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO2 +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO3 +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO4 +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO5 +'):not(:empty)').parent().addClass('assessable3');
 
 $('.assessable1.assessable2.assessable3').addClass('assessable');
 
