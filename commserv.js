@@ -15,12 +15,8 @@ $( "#help" ).click(function() {
 	  $("#cfToggle a:contains('Toggle Open/Closed'),.toggle-panel-heading a:contains('Toggle Open/Closed')").trigger('click');
 	
 	$('#statusList').addClass('highlighthelp');
-	
 	$('#customfields\\.scf_761').parent().addClass('highlighthelp').append('<i>"Leader" is selected</i>');
-
 	$('#placements-table_filter').addClass('highlighthelp').append('<i>"Search for project name here</i>');;
-
-
 	
 	
 	$('#statusList').append('<i>"In Progress" is selected</i>');
@@ -105,12 +101,13 @@ $("h2:contains('Include These Columns in Report')").closest(".form-field.long.li
    $('#saveAsDefault').prop('checked', true);	 
    
    $('#placements-search').append('<span style="background: red; color: #fff; padding: 5px"><i>click "Search"</i></span>');
-
 setTimeout(function() {
  $('#ck_PlacementStatuses_0,#ck_PlacementStatuses_1,#ck_PlacementStatuses_2,#ck_PlacementStatuses_3,#ck_PlacementStatuses_4,#ck_PlacementStatuses_5').trigger('click');
  
 }, 800);
-
+setTimeout(function() {
+	$('.ui-corner-all').trigger('click');}, 1000);
+  
 });
 
 GetFieldplacementActions = (function() {
@@ -123,41 +120,10 @@ setTimeout(function(){
 
 var href = $('.clicktable-menu').attr('id').replace(/[^0-9\\.]+/g, '');
 
-const xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://ccd-smu.github.io/assesslinkCSP.csv', true);
-
-xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-        const lines = xhr.responseText.split('\n');
-        const headers = lines[0].split(',');
-        const data = {};
-
-        for (let i = 1; i < lines.length; i++) {
-            const values = lines[i].split(',');
-            if (values.length === headers.length) {
-                const obj = {};
-                for (let j = 0; j < headers.length; j++) {
-                    obj[headers[j]] = values[j];
-                }
-                data[obj['id']] = obj['assesslink\r'];
-            }
-        }
-
-        const inputField = href.split('.')[0];
-        const outputField = data[inputField].replace(".0\r", "");;
-        window.localStorage.setItem('assesslink', outputField);
-
-		console.log(inputField);
-		console.log(outputField);
- 
-    }
-};
-xhr.send();
-
 const li = $('li');
 	 
 for (let i = 0; i < li.length; i++) {
-if(li[i].innerText === 'Force Completion')
+if(li[i].innerText === 'View')
 {
   $("ul.popover-menu", $popover).prepend("<li role='none'><a role='menuitem' tabindex='-1' style='position:relative;z-index:2004; background: #151c55' href=\"javascript:ViewPlacement('" + href +"')"+ ';AssessCU()">' + "Assess" + "<\/a><\/li>");
 };};
@@ -189,13 +155,12 @@ var assessmentspending = $('#placements-table thead tr th:contains("Assessments 
 var leaderornot = $('#placements-table thead tr th:contains("Job Title/ Appointment")').index() + 1;
 $('tr>*:nth-child('+ surveyval +'):contains("3")').parent().addClass('assessable1');
 $('tr>*:nth-child('+ assessmentspending +'):contains("2")').parent().addClass('assessable2');
+
 $('tr>*:nth-child('+ overallappraisalgrade +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO1 +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO2 +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO3 +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO4 +'):not(:empty),tr>*:nth-child('+ tableappraisalGLO5 +'):not(:empty)').parent().addClass('assessable3');
 
 $('tr>*:nth-child('+ leaderornot +'):contains("Leader")').parent().addClass('assessable4');
 $('.assessable1.assessable2.assessable3.assessable4').addClass('assessable');
 }, 1500);
-
-
 var idid = window.localStorage.getItem('idid');
 var placementname = window.localStorage.getItem('placementname');
 if (idid !== null){
@@ -373,7 +338,6 @@ var currentId2 =$('tr:has(td:contains("C4SR Assessor"))').attr('id');
 currentId = currentId2.replace(/[^0-9\.]/g, '');
 window.localStorage.setItem('currentId', currentId);
 window.open("https://shib.chalkandwire.com/ep2_smu/DemographicsRun.aspx?cus=465&TopicId="+topicid+"&deptID="+departid+"&AllocationID="+allocationID, "_blank");
-
   }, 1000);
 	  
   }, 1000);

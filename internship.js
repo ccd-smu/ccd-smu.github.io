@@ -169,8 +169,6 @@ $('tr>*:nth-child('+ overallappraisalgrade +'):not(:empty),tr>*:nth-child('+ tab
 
 $('.assessable1.assessable2.assessable3').addClass('assessable');
 
-
-
 }, 1500);
 var idid = window.localStorage.getItem('idid');
 var placementname = window.localStorage.getItem('placementname');

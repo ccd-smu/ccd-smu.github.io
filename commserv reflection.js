@@ -1,5 +1,3 @@
-
-    
 var what = $('#tblQuestion610').text().split(' ').length;
 var sowhat = $('#tblQuestion611').text().split(' ').length;
 var nowwhat = $('#tblQuestion612').text().split(' ').length;
@@ -136,11 +134,11 @@ else{
       
          if (confirm('Student chose more than 3 LOs, continue assessing?')) {
                $('#assess1').css('background-color', 'red');
-               var currentId = localStorage.getItem('assesslink');
+               var currentId = localStorage.getItem('currentId');
                goNav('my_assessments','allocationId='+currentId);
                
       }}; 
-      var currentId = localStorage.getItem('assesslink');
+      var currentId = localStorage.getItem('currentId');
       goNav('my_assessments','allocationId='+currentId);
 
     assess.innerHTML = "Close";

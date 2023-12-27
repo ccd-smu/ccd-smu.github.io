@@ -37,18 +37,17 @@ if (!GLOnum) { } else {
 
 //
 
-
 var assessfunction2 = localStorage.getItem('assessfunction');
-if (assessfunction2 == 1) {
+if (assessfunction2 == 1){
 
     var button = document.createElement('div');
-    button.id = "button";
+    button.id="button";
     button.style.background = "blue";
-    button.style.height = "auto";
-    button.style.width = "200px";
-    button.style.position = "fixed";
-    button.style.bottom = "0";
-    button.style.right = "0";
+    button.style.height="auto";
+    button.style.width="200px";
+    button.style.position="fixed";
+    button.style.bottom="0";
+    button.style.right="0";
     button.style.zIndex = "9999";
     button.style.color = "#fff";
     button.style.textAlign = "center";
@@ -56,14 +55,14 @@ if (assessfunction2 == 1) {
     button.style.cursor = "pointer";
     button.innerHTML = "back to placements";
     document.body.appendChild(button);
-    $(document).on('click', '#button', function () {
+    $(document).on('click', '#button', function() {
         location.href = 'https://shib.chalkandwire.com/ep2_smu/FieldPlacementList.aspx?cus=465';
 
     });
 
-    SaveStudentAssessment = (function () {
+    SaveStudentAssessment = (function() {
         var cached_function = SaveStudentAssessment;
-        return function () {
+        return function() {
             // your code
             var result = cached_function.apply(this, arguments); // use .apply() to call it
             //localStorage.setItem('GLOXX', null);
@@ -78,13 +77,13 @@ if (assessfunction2 == 1) {
 
 
         var GLOXX = localStorage.getItem('GLOXX');
-        var allocationID = window.localStorage.getItem('currentId');
-        setTimeout(function () {
+        var allocationID =  window.localStorage.getItem('currentId');
+        setTimeout(function() {
 
-            $('tr.criterion[data-criterion-id=crit' + allocationID + '_2024]').addClass('border1');
-            $('tr.criterion[data-criterion-id=crit' + allocationID + '_2025]').addClass('border2');
-            $('tr.criterion[data-criterion-id=crit' + allocationID + '_2026]').addClass('border3');
-            $('tr.criterion[data-criterion-id=crit' + allocationID + '_2027]').addClass('border4');
+            $('tr.criterion[data-criterion-id=crit'+allocationID+'_2024]').addClass('border1');
+            $('tr.criterion[data-criterion-id=crit'+allocationID+'_2025]').addClass('border2');
+            $('tr.criterion[data-criterion-id=crit'+allocationID+'_2026]').addClass('border3');
+            $('tr.criterion[data-criterion-id=crit'+allocationID+'_2027]').addClass('border4');
 
 
             if (!GLOXX.includes("2")) {
@@ -144,7 +143,7 @@ if (assessfunction2 == 1) {
 
 
     var timesRun = 0;
-    var interval = setInterval(function () {
+    var interval = setInterval(function(){
         timesRun += 1;
         if (timesRun === 10) {
             clearInterval(interval);
@@ -152,11 +151,10 @@ if (assessfunction2 == 1) {
         if ($("#jGrowl").is(":visible")) {
 
             var type = "";
-            localStorage.setItem('type', type);
+            localStorage.setItem('type',type);
             var assessfunction = 0;
-            localStorage.setItem('assessfunction', assessfunction);
-            var GLOXX = localStorage.setItem('GLOXX', '');
+            localStorage.setItem('assessfunction',assessfunction);
+            var GLOXX = localStorage.setItem('GLOXX','');
         }
 
-    }, 500);
-} 
+    }, 500); };
