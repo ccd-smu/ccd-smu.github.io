@@ -1,178 +1,152 @@
-var button = document.createElement('div');
-   button.id="button";
-   button.style.background = "blue";
-   button.style.height="auto";
-   button.style.width="200px";
-   button.style.position="fixed";
-   button.style.bottom="0";
-   button.style.right="0";
-   button.style.zIndex = "9999";
-   button.style.color = "#fff";
-   button.style.textAlign = "center";
-   button.style.padding = "13px 0";
-   button.style.cursor = "pointer";
-   button.innerHTML = "back to placements";
-   document.body.appendChild(button);
-	  $(document).on('click', '#button', function() {  
-	  		  location.href = 'https://shib.chalkandwire.com/ep2_smu/FieldPlacementList.aspx?cus=465';
-	  	
-	  	});
-	  	
-	SaveStudentAssessment = (function() {
-   var cached_function = SaveStudentAssessment;
-   return function() {
-	   // your code
-	   var result = cached_function.apply(this, arguments); // use .apply() to call it
-	  localStorage.setItem('GLOnum', null);
+//CSP   
 
-return result;
-   };
-})();
-	
+const queryString = window.location.search;
 
-	$("#assessment_details").on('focus', function () {
-
-var GLOnum2 = localStorage.getItem('GLOnum');
-var GLOnum = localStorage.getItem('GLOnum');
+const urlParams = new URLSearchParams(queryString);
+const GLOnum = urlParams.get('GLOnum')
 console.log(GLOnum);
+const GLO2score = urlParams.get('GLO2score')
+console.log(GLO2score);
 
-var allocationID =  window.localStorage.getItem('currentId');
+const GLO3score = urlParams.get('GLO3score')
+console.log(GLO3score);
 
-if(GLOnum2 = null){  }
-else {
-   
+const GLO4score = urlParams.get('GLO4score')
+console.log(GLO4score);
 
-var idid = localStorage.getItem('idid');
+const GLO5score = urlParams.get('GLO5score')
+console.log(GLO5score);
 
-var placementname = localStorage.getItem('placementname');
-
-var deptGLO2 = window.localStorage.getItem('deptGLO2');
-var deptGLO3 = window.localStorage.getItem('deptGLO3');
-var deptGLO4 = window.localStorage.getItem('deptGLO4');
-var deptGLO5 = window.localStorage.getItem('deptGLO5');
-
-var deptGLOs = deptGLO2+deptGLO3+deptGLO4+deptGLO5;
-console.log(deptGLOs);
-
-if ($('#lblOwner:contains("' + idid + '")'))
-{
-} else {alert("Student mismatch")};
+const allocationId = urlParams.get('allocationId')
+console.log(allocationId);
+//
 
 
-if (GLOnum.includes("5"))
-{
-	$('.txtScore:eq(3) option[value=Exposure]').attr('selected','selected');
-};
+if (!GLOnum) { } else {
 
-if (GLOnum.includes("4"))
-{
-   $('.txtScore:eq(2) option[value=Exposure]').attr('selected','selected');
-};
-   
-if (GLOnum.includes("3"))
-{
-   $('.txtScore:eq(1) option[value=Exposure]').attr('selected','selected');
-};
-   
-if (GLOnum.includes("2"))
-{
-   $('.txtScore:eq(0) option[value=Exposure]').attr('selected','selected');
-};
+    window.localStorage.setItem('GLOXX', GLOnum);
+    window.localStorage.setItem('deptGLO2', GLO2score);
+    window.localStorage.setItem('deptGLO3', GLO3score);
+    window.localStorage.setItem('deptGLO4', GLO4score);
+    window.localStorage.setItem('deptGLO5', GLO5score);
 
+    window.localStorage.setItem('currentId', allocationId);
 
-if (!GLOnum.includes("5"))
-{
-   $('.ckNotApplicable:eq(3)').attr('checked', true);
-};
+    window.localStorage.setItem('assessfunction', 1);
+}
 
-if (!GLOnum.includes("4"))
-{
-   $('.ckNotApplicable:eq(2)').attr('checked', true);
-};
-   
-if (!GLOnum.includes("3"))
-{
-   $('.ckNotApplicable:eq(1)').attr('checked', true);
-};
-   
-if (!GLOnum.includes("2"))
-{
-   $('.ckNotApplicable:eq(0)').attr('checked', true);
-};
+//
 
-if (deptGLO2 && GLOnum.includes("2")){
+var assessfunction2 = localStorage.getItem('assessfunction');
+if (assessfunction2 == 1){
 
-$('tr.criterion[data-criterion-id=crit'+allocationID+'_1465]').addClass('dept2');
-    $('.dept2').attr('dept2','Department recommendation: '+deptGLO2);
+    var button = document.createElement('div');
+    button.id="button";
+    button.style.background = "blue";
+    button.style.height="auto";
+    button.style.width="200px";
+    button.style.position="fixed";
+    button.style.bottom="0";
+    button.style.right="0";
+    button.style.zIndex = "9999";
+    button.style.color = "#fff";
+    button.style.textAlign = "center";
+    button.style.padding = "13px 0";
+    button.style.cursor = "pointer";
+    button.innerHTML = "back to placements";
+    document.body.appendChild(button);
+    $(document).on('click', '#button', function() {
+        location.href = 'https://shib.chalkandwire.com/ep2_smu/FieldPlacementList.aspx?cus=465';
 
-   $('.txtScore:eq(0) option[value='+deptGLO2+']').attr('selected','selected');
-};
+    });
 
-if (deptGLO3 && GLOnum.includes("3")){
-$('tr.criterion[data-criterion-id=crit'+allocationID+'_1466]').addClass('dept3');
-    $('.dept3').attr('dept3', 'Department recommendation: '+deptGLO3);
-    
-   $('.txtScore:eq(1) option[value='+deptGLO3+']').attr('selected','selected');
-};
+    SaveStudentAssessment = (function() {
+        var cached_function = SaveStudentAssessment;
+        return function() {
+            // your code
+            var result = cached_function.apply(this, arguments); // use .apply() to call it
+            //localStorage.setItem('GLOXX', null);
 
-if (deptGLO4 && GLOnum.includes("4")){
-$('tr.criterion[data-criterion-id=crit'+allocationID+'_1467]').addClass('dept4');
-    $('.dept4').attr('dept4','Department recommendation: '+deptGLO4);
-    
-   $('.txtScore:eq(2) option[value='+deptGLO4+']').attr('selected','selected');
-};
-
-if (deptGLO5 && GLOnum.includes("5")){
-$('tr.criterion[data-criterion-id=crit'+allocationID+'_1468]').addClass('dept5');
-    $('.dept5').attr('dept5','Department recommendation: '+deptGLO5);
-    
-   $('.txtScore:eq(3) option[value='+deptGLO5+']').attr('selected','selected');
-};
-
-var valuetype = localStorage.getItem('valuetype');
+            return result;
+        };
+    })();
 
 
-//allow staff input and assessment here
-//if OSL, and has other GLO including either 2 or 3, do not auto save
-//if SOCIs have assessment, do not auto save
- if (valuetype.includes("OSL") && GLOnum.includes("3")){
- 
-  var GLOnum = "";	
- 	
- } else if (valuetype.includes("OSL") && GLOnum.includes("2")){
- 	
- var GLOnum = "";
- 	
- } else if (valuetype.includes("SOCI") && (deptGLOs)){
- 	
-var deptGLO2 = "";
-var deptGLO3 = "";
-var deptGLO4 = "";
-var deptGLO5 = "";
-var deptGLOs = "";
- 
- 
- }else{
-SaveStudentAssessment();}
+    //
+    $("#assessment_details").on('focus', function () {
 
 
-};});
-	
+        var GLOXX = localStorage.getItem('GLOXX');
+        var allocationID =  window.localStorage.getItem('currentId');
+        setTimeout(function() {
 
-var timesRun = 0;
-var interval = setInterval(function(){
-    timesRun += 1;
-    if(timesRun === 10){
-        clearInterval(interval);
-    }
-  
-    
-	if($("#jGrowl").is(":visible")){
+            $('tr.criterion[data-criterion-id=crit'+allocationID+'_2024]').addClass('border1');
+            $('tr.criterion[data-criterion-id=crit'+allocationID+'_2025]').addClass('border2');
+            $('tr.criterion[data-criterion-id=crit'+allocationID+'_2026]').addClass('border3');
+            $('tr.criterion[data-criterion-id=crit'+allocationID+'_2027]').addClass('border4');
 
-location.href = 'https://shib.chalkandwire.com/ep2_smu/FieldPlacementList.aspx?cus=465';
-var type = "";
-localStorage.setItem('type',type);
+
+            if (!GLOXX.includes("2")) {
+
+
+                $('.ckNotApplicable').eq(0).attr('checked', true);
 
             }
-	
-}, 800); 
+            if (!GLOXX.includes("3")) {
+                $('.ckNotApplicable').eq(1).attr('checked', true);
+            }
+            if (!GLOXX.includes("4")) {
+
+
+                $('.ckNotApplicable').eq(2).attr('checked', true);
+
+            }
+            if (!GLOXX.includes("5")) {
+
+
+                $('.ckNotApplicable').eq(3).attr('checked', true);
+
+            }
+
+
+            if (GLOXX.includes("2")) {
+                $('tr.criterion[data-criterion-id=crit' + allocationID + '_2024] .txtScore option[value=Exposure]').attr('selected', 'selected');
+            };
+
+            if (GLOXX.includes("3")) {
+                $('tr.criterion[data-criterion-id=crit' + allocationID + '_2025] .txtScore option[value=Exposure]').attr('selected', 'selected');
+            };
+
+            if (GLOXX.includes("4")) {
+                $('tr.criterion[data-criterion-id=crit' + allocationID + '_2026] .txtScore option[value=Exposure]').attr('selected', 'selected');
+            };
+
+            if (GLOXX.includes("5")) {
+                $('tr.criterion[data-criterion-id=crit' + allocationID + '_2027] .txtScore option[value=Exposure]').attr('selected', 'selected');
+            };
+        }, 800);
+
+
+
+        var type = localStorage.getItem('type');
+
+
+    });
+
+
+    var timesRun = 0;
+    var interval = setInterval(function(){
+        timesRun += 1;
+        if (timesRun === 10) {
+            clearInterval(interval);
+        }
+        if ($("#jGrowl").is(":visible")) {
+
+            var type = "";
+            localStorage.setItem('type',type);
+            var assessfunction = 0;
+            localStorage.setItem('assessfunction',assessfunction);
+            var GLOXX = localStorage.setItem('GLOXX','');
+        }
+
+    }, 500); };
