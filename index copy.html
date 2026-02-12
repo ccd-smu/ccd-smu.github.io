@@ -24,6 +24,24 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald:300,600' rel='stylesheet' type='text/css'>
 
 <style>
+
+    /* FAQ accordion tweaks */
+#faqAccordion .panel-heading a {
+    text-decoration: none;
+}
+#faqAccordion .panel-heading a:hover {
+    background:#0a0e2b;   /* slightly darker on hover */
+}
+#faqAccordion .panel-title a::after {
+    content:"\f107";               /* Font‑Awesome chevron down */
+    font-family:'FontAwesome';
+    float:right;
+    transition:transform .2s;
+}
+#faqAccordion .panel-heading a[aria-expanded="true"]::after {
+    transform:rotate(180deg);
+}
+
         h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-family: "Oswald", sans-serif;
 }
