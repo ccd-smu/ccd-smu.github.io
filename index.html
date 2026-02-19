@@ -24,6 +24,24 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald:300,600' rel='stylesheet' type='text/css'>
 
 <style>
+
+    /* FAQ accordion tweaks */
+#faqAccordion .panel-heading a {
+    text-decoration: none;
+}
+#faqAccordion .panel-heading a:hover {
+    background:#0a0e2b;   /* slightly darker on hover */
+}
+#faqAccordion .panel-title a::after {
+    content:"\f107";               /* Font‑Awesome chevron down */
+    font-family:'FontAwesome';
+    float:right;
+    transition:transform .2s;
+}
+#faqAccordion .panel-heading a[aria-expanded="true"]::after {
+    transform:rotate(180deg);
+}
+
         h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-family: "Oswald", sans-serif;
 }
@@ -508,8 +526,8 @@ transition: transform 5000ms linear;
                        aria-expanded="true"
                        aria-controls="collapseOne"
                        class="collapsed"
-                       style="display:block; padding:7px 18px; color:#fff; font-weight:bold;">
-                        placeholder1
+                       style="display:block; padding:7px 18px; color:#fff; font-weight:bold;background-color: #151c55;">
+                        ICMS usage & placement (individual record) queries
                     </a>
                 </h4>
             </div>
@@ -520,7 +538,23 @@ transition: transform 5000ms linear;
                  aria-labelledby="headingOne">
                 <div class="panel-body" style="background:#090c26; color:#fff; padding:15px;">
                     <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
-                    You can track the progress of your various co‑curricular activities (CCAs), complete and submit reflections, generate an interim CCA record, and track the extent of your growth in the SMU Graduate Learning Outcomes.
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">What can I do in the ICMS?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">You can track the progress of your various co‑curricular activities (CCAs), complete and submit reflections, generate an interim CCA record, and track the extent of your growth in the SMU Graduate Learning Outcomes.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">I have completed my community service project/internship activities and reflections as required. Why is the status in the ICMS still reflected as ‘in progress’?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Before your community service project/ internship is completed, do ensure that all 3 reflections (Pre, Mid and Post) have been completed. Do also ensure you have selected only 3 learning outcomes for your Pre- and Post-Activity (ticking only 3 boxes).
+                    <br><br>As long as you have completed all of the above, do not worry if you see your community service project/internship placement status indicated as ‘in progress’ as the status will change to ‘completed’ by the time you graduate.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">I attended/participated in a co-curricular activity, but my participation is not reflected. What should I do?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">ICMS records are submitted by the staff in-charge, and you may check in with the staff in-charge for relevant records.</p>
+                    
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">If the relevant records are not reflected by the following semester, please email the ICMS at <a href="mailto:icms@smu.edu.sg">icms@smu.edu.sg</a> and we will follow up with the respective department for you.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">Can I have activities, events, workshops or competitions that I participated on my own outside of SMU be reflected in my CCT?</h4>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">As the CCT is an official document endorsed by SMU, only activities endorsed/ validated by a SMU staff are included in the CCT.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">If there is a discrepancy in my co-curricular records, what should I do? </h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">For any discrepancies, kindly email ICMS at  <a href="mailto:icms@smu.edu.sg">icms@smu.edu.sg</a>.</p>
                     <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
                 </div>
             </div>
@@ -537,8 +571,8 @@ transition: transform 5000ms linear;
                        href="#collapseTwo"
                        aria-expanded="false"
                        aria-controls="collapseTwo"
-                       style="display:block; padding:7px 18px; color:#fff; font-weight:bold;">
-                        placeholder2
+                       style="display:block; padding:7px 18px; color:#fff; font-weight:bold;background-color: #151c55;">
+                        Co-Curricular Transcript (CCT) queries
                     </a>
                 </h4>
             </div>
@@ -548,7 +582,26 @@ transition: transform 5000ms linear;
                  role="tabpanel"
                  aria-labelledby="headingTwo">
                 <div class="panel-body" style="background:#090c26; color:#fff; padding:15px;">
-                    Other than documenting the co‑curricular activities that you have participated in, the co‑curricular transcript complements your academic transcript and offers insights into the skillsets that you have developed through your co‑curricular involvement. This allows you to showcase and articulate the career‑ready skillsets you possess to potential employers, scholarship boards, etc.
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">Is the CCT endorsed by SMU?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Yes. The CCT will be issued alongside the academic transcript upon graduation.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">How does the CCT help me?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Other than documenting the co-curricular activities that you have participated in, the co-curricular transcript complements your academic transcript and offers insights into the skillsets that you have developed through your co-curricular involvement. This allows you to showcase and articulate the career-ready skillsets you possess to potential employers, scholarship boards, etc.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">When can I get my CCT?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">You will receive your CCT alongside your academic transcript upon your graduation.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">If I am not involved in any CCA, does that mean I will not get CCT?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Every undergraduate in SMU is required to do at least 80 hours of community service and 10 weeks of internship to graduate - this means that every student will receive a co-curricular transcript with at least 2 entries upon graduation.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">Does this mean I have to do extra CCAs on top of my academics?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Aside from the graduation requirements of 80 hours of community service and 10 weeks of internship, CCA involvement is encouraged but not mandatory.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->    
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">Are global exposure activities like overseas exchange programmes (e.g., ISEP) included in the CCT?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">If your global exposure activities are non-academic related, they will be included upon endorsement by an SMU staff.</p>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">If the global exposure activities are academic related, it will be reflected in your official academic transcript instead.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->  
                 </div>
             </div>
         </div>
@@ -564,8 +617,8 @@ transition: transform 5000ms linear;
                        href="#collapseThree"
                        aria-expanded="false"
                        aria-controls="collapseThree"
-                       style="display:block; padding:7px 18px; color:#fff; font-weight:bold;">
-                        placeholder3
+                       style="display:block; padding:7px 18px; color:#fff; font-weight:bold;background-color: #151c55;">
+                        Reflection queries
                     </a>
                 </h4>
             </div>
@@ -575,7 +628,16 @@ transition: transform 5000ms linear;
                  role="tabpanel"
                  aria-labelledby="headingThree">
                 <div class="panel-body" style="background:#090c26; color:#fff; padding:15px;">
-                    Reflections are compulsory for internships and community service, and are encouraged for other co‑curricular activities.
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">Are reflections compulsory?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Reflections are compulsory for internships and community service projects and are encouraged for other co-curricular activities.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">How does writing a reflection help me?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">While experience is the basis for learning, learning cannot take place without reflection. Many students complete co-curricular activities without even realizing how they have grown or what they have learnt. Reflecting on your co-curricular experiences enables you to document your learning, and in so doing, you will deepen your learning and personal growth.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">When is the deadline for me to complete my community service project/internship reflections?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Your reflections should be completed within 1 month of the community service project/internship end date.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
                 </div>
             </div>
         </div>
@@ -592,7 +654,7 @@ transition: transform 5000ms linear;
 
 
 </div>
-
+<!--
 <div class="row">
 
     <div class="container" style="padding: 20px 40px 80px 40px; background: #151c55;">
@@ -656,7 +718,7 @@ transition: transform 5000ms linear;
         </div>
 
     </div>
-</div>
+</div>-->
 
 
 

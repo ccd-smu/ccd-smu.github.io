@@ -24,6 +24,22 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald:300,600' rel='stylesheet' type='text/css'>
 
 <style>
+        /* FAQ accordion tweaks */
+#faqAccordion .panel-heading a {
+    text-decoration: none;
+}
+#faqAccordion .panel-heading a:hover {
+    background:#0a0e2b;   /* slightly darker on hover */
+}
+#faqAccordion .panel-title a::after {
+    content:"\f107";               /* Font‑Awesome chevron down */
+    font-family:'FontAwesome';
+    float:right;
+    transition:transform .2s;
+}
+#faqAccordion .panel-heading a[aria-expanded="true"]::after {
+    transform:rotate(180deg);
+}
         h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-family: "Oswald", sans-serif;
 }
@@ -349,6 +365,130 @@ transition: transform 5000ms linear;
             </div>
         </div>
        
+        <div class="row">
+<!-- ====================  FAQ – ACCORDION START  ==================== -->
+<div class="container" style="padding:20px 40px 80px 40px; background:#151c55;">
+    <h4 style="color:#fff;">Frequently Asked Questions</h4>
+
+    <!-- Bootstrap accordion wrapper -->
+    <div class="panel-group" id="faqAccordion" role="tablist" aria-multiselectable="true">
+
+        <!-- ---------- ITEM 1 ---------- -->
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title" style="margin:0;">
+                    <a role="button"
+                       data-toggle="collapse"
+                       data-parent="#faqAccordion"
+                       href="#collapseOne"
+                       aria-expanded="true"
+                       aria-controls="collapseOne"
+                       class="collapsed"
+                       style="display:block; padding:7px 18px; color:#fff; font-weight:bold;background-color: #151c55;">
+                        Placement queries
+                    </a>
+                </h4>
+            </div>
+
+            <div id="collapseOne"
+                 class="panel-collapse collapse"
+                 role="tabpanel"
+                 aria-labelledby="headingOne">
+                <div class="panel-body" style="background:#090c26; color:#fff; padding:15px;">
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">When should I submit the placement submission template?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">You are encouraged to submit the placement submission template <span style="font-weight: bold;">within 1 month</span> from the conclusion of the club membership,activities/events/competitions/workshops as students will be looking out for the entry to appear in ICMS.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">What should I include for placement submission(s)?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Do include the following:</p>
+                    <li>•	Club Membership & Leadership</li>
+                    <li>•	Activities/events/workshops held by the clubs that is also open to SMU participants outside of the club</li>
+                    <li>•	Activities/events/ workshops/competitions that are conducted externally but verifiable by staff (e.g., students representing SMU in an external competition)</li>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Do <span style="font-weight: bold;">NOT </span>include the following:</p>
+                    <li>•	Activities/events/workshops that are a regular part of the memberships (e.g., weekly meetings, training sessions, Annual General Meetings) </li>
+                    <li>•	Activities/events that are counted towards the fulfilment of Community Service Hours, as it will be recorded by the C4SR department</li>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">Is targeting more GLOs better for students?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Targeting more GLOs may not necessarily mean it is better for students. </p>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;"></p>The objective of the CCT is to enable students to engage in purposeful co-curricular learning, so it is more meaningful to only indicate the GLOs relevant to the activity. 
+                    </p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">How should I decide on what GLOs to select?</h4>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Prior to the start of the activity/ academic year, you should discuss with the student leader(s) which GLOs the CCA group should aim to develop/ focus on.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">When should my students proceed to write their reflection(s)? </h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Students may complete their reflections anytime upon the successful upload of the placements.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                     <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">Who should I include for the placement submission(s)?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Only undergraduate students who enrolled from year 2021 onwards. </p>
+
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">You may follow this email format when you submit placements: <span style="font-weight: bold;">(studentname)(year)@(school).smu.edu.sg</span></p>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">E.g., john.doe.2021@business.smu.edu.sg</p>
+</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------- ITEM 2 ---------- -->
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title" style="margin:0;">
+                    <a class="collapsed"
+                       role="button"
+                       data-toggle="collapse"
+                       data-parent="#faqAccordion"
+                       href="#collapseTwo"
+                       aria-expanded="false"
+                       aria-controls="collapseTwo"
+                       style="display:block; padding:7px 18px; color:#fff; font-weight:bold;background-color: #151c55;">
+                        Assessment queries
+                    </a>
+                </h4>
+            </div>
+
+            <div id="collapseTwo"
+                 class="panel-collapse collapse"
+                 role="tabpanel"
+                 aria-labelledby="headingTwo">
+                <div class="panel-body" style="background:#090c26; color:#fff; padding:15px;">
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">What are the 3 different levels of assessment?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Please download and refer to the Transformative Learning Rubric.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">Why should I assess students?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Assessing your students allows you to recognise and endorse those who have contributed meaningfully to your club or activity. </p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">When should I assess students?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">You may assess the students when they meet any of the following:</p>
+
+<li>•	Served as student leaders</li>
+<li>•	Submitted a Post-Activity Reflection</li>
+<li>•	Demonstrated personal growth from participating in the co-curricular experience</li>
+
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">What happens if I do not assess the students?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Students with no staff assessments will be given a default assessment of “Exposure”, akin to participation, for the selected GLOs.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+                    <h4 style="color: #fff;display : inline-block; margin: 0; padding: 7px 18px; font-weight: bold;">Do my assessment need to be the same for every GLOs?</h4><br>
+                    <p style="color: #fff;display : block; margin: 0; padding: 7px 18px; font-weight: auto; font-size: 16px;">Assessment levels can vary for each GLO selected. For example, a student may be assessed as “Transformation” for GLO2 – Intellectual and Creative Skills, but only as “Exposure” for GLO5 – Personal Mastery.</p>
+                    <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->  
+                </div>
+            </div>
+        </div>
+
+        <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+        <!-- Add more items here – just copy one of the blocks above and change
+             the IDs (headingFour / collapseFour, etc.) and the text.          -->
+        <!-- ----‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑---- -->
+
+    </div>
+</div>
+<!-- ====================  FAQ – ACCORDION END  ==================== -->
+
+
+
+</div>
 
 
          </div>
